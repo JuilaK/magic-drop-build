@@ -1,0 +1,3476 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Moon Knight</title>
+    <meta name="description" content="Moon Knight">
+    <meta name="keywords" content="Magic Drop, кейсы, CS GO, Steam, Стим, предметы, CS skin, Moon Knight">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon/favicon-48x48.png">
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Magic Drop">
+    <meta property="og:site_name" content="magicdrop.com">
+    <meta property="og:title" content="Moon Knight">
+    <meta property="og:description" content="Moon Knight">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/pic.jpg">
+    <meta property="og:image:alt" content="Moon Knight">
+    <meta property="og:url" content= "https://magicdrop.com">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preload" href="./fonts/Gotham-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Gotham-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Gotham-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <script defer src="./scripts/script.min.js"></script>
+</head>
+<body>
+    <header class="header js-header">
+	<div class="header__top">
+		<div class="header__top-left">
+			<div class="header__logo-wrap">
+				<a href="/" class="header__logo">
+					Main page
+				</a>
+			</div>
+			<div class="header__nav-wrap js-header-nav">
+				<div class="header__top-btns-wrap tablet">
+					
+						<a href=".#" class="btn btn--upper btn--lg header__steam-btn">
+							<svg aria-hidden="true">
+								<use xlink:href="images/sprite.svg#steam-yellow"></use>
+							</svg>
+							Steam
+						</a>
+					
+					
+				</div>
+				<nav class="header__nav">
+					<ul>
+						<li>
+							<a href="#" class="header__nav-link header__nav-link--active">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#cases"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#cases-yellow"></use>
+									</svg>
+								</span>
+								<span>Кейсы</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#magic-cards"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#magic-cards-yellow"></use>
+									</svg>
+								</span>
+								<span>Карточки</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#contracts"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#contracts-yellow"></use>
+									</svg>
+								</span>
+								<span>Контракты</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#upgrade"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#upgrade-yellow"></use>
+									</svg>
+								</span>
+								<span>Апгрейд</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#live-trades"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#live-trades-yellow"></use>
+									</svg>
+								</span>
+								<span>Live трейды</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#battles"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#battles-yellow"></use>
+									</svg>
+								</span>
+								<span>Сражения</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="header__top-btns">
+			<div class="header__select select js-select">
+				<button
+					class="btn select__button js-select-btn"
+					role="combobox"
+					aria-label="dropdown button"
+					aria-haspopup="listbox"
+					aria-expanded="false"
+					aria-controls="select-dropdown">
+					<span class="select__selected-value js-selected-value">
+						<svg aria-hidden="true">
+							<use xlink:href="images/sprite.svg#icon-eng-lang"></use>
+						</svg>
+						Eng
+					</span>
+				</button>
+				<div class="select__dropdown">
+					<ul role="listbox" class="select__dropdown-wrap">
+						<li role="option">
+							<input type="radio" id="rus-lang" name="lang"/>
+							<label for="rus-lang">
+								<span class="header__select-item-img">
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#icon-ru-lang"></use>
+									</svg>
+								</span>
+								RUS
+							</label>
+						</li>
+						<li role="option">
+							<input type="radio" id="eng-lang" name="lang" checked/>
+							<label for="eng-lang">
+								<span class="header__select-item-img">
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#icon-eng-lang"></use>
+									</svg>
+								</span>
+								Eng
+							</label>
+						</li>
+						<li role="option">
+							<input type="radio" id="ukr-lang" name="lang"/>
+							<label for="ukr-lang">
+								<span class="header__select-item-img">
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#icon-ukr-lang"></use>
+									</svg>
+								</span>
+								Ukr
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__top-btns-wrap desktop-lg">
+				
+					<a href=".#" class="btn btn--upper btn--lg header__steam-btn">
+						<svg aria-hidden="true">
+							<use xlink:href="images/sprite.svg#steam-yellow"></use>
+						</svg>
+						Steam
+					</a>
+				
+				
+			</div>
+			<button class="btn header__burger js-menu-burger-btn" aria-label="Открыть меню" aria-expanded="false">
+				<span class="header__burger-line"></span>
+			</button>
+		</div>
+	</div>
+	<div class="header__live">
+		<div class="header__live-users">
+			<svg aria-hidden="true" class="dark-grey">
+				<use xlink:href="images/sprite.svg#users-green"></use>
+			</svg>
+			<span class="header__live-users-count">1.740</span>
+			<span class="header__live-users-status">online</span>
+		</div>
+		<div class="header__live-btns">
+			<button type="button" class="header__live-btn btn btn--icon">
+				<span class="btn__svg-wrap">
+					<svg aria-hidden="true" class="dark-grey">
+						<use xlink:href="images/sprite.svg#crown"></use>
+					</svg>
+					<svg aria-hidden="true">
+						<use xlink:href="images/sprite.svg#crown-yellow"></use>
+					</svg>
+				</span>
+				Top
+			</button>
+			<button type="button" class="header__live-btn btn btn--icon btn--active">
+				<span class="btn__svg-wrap">
+					<svg aria-hidden="true" class="dark-grey">
+						<use xlink:href="images/sprite.svg#lightning"></use>
+					</svg>
+					<svg aria-hidden="true">
+						<use xlink:href="images/sprite.svg#lightning-yellow"></use>
+					</svg>
+				</span>
+				Live
+			</button>
+		</div>
+		<div class="header__live-list">
+			<div class="live-item live-item--common">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/360fx360f 2x"
+        alt="Caramel"
+        class="live-item__img">   
+    <span class="live-item__title">Caramel</span>
+    <span class="live-item__subtitle">UMP-45</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Caramel"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--covert">
+    <span class="live-item__badge"><span>x1.1</span></span>
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/360fx360f 2x"
+        alt="Syd Mead"
+        class="live-item__img">   
+    <span class="live-item__title">Syd Mead</span>
+    <span class="live-item__subtitle">AUG</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Syd Mead"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--milspec">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/360fx360f 2x"
+        alt="Heat"
+        class="live-item__img">   
+    <span class="live-item__title">Heat</span>
+    <span class="live-item__subtitle">MAC-10</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Heat"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--common">
+    <span class="live-item__badge"><span>x1.1</span></span>
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/360fx360f 2x"
+        alt="Cassette"
+        class="live-item__img">   
+    <span class="live-item__title">Cassette</span>
+    <span class="live-item__subtitle">P250</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Cassette"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--restricted">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/360fx360f 2x"
+        alt="Tacticat"
+        class="live-item__img">   
+    <span class="live-item__title">Tacticat</span>
+    <span class="live-item__subtitle">CZ75-Auto</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Tacticat"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--common">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09ulq5WYh8jiPLfFl2xU18h0juDU-MKj2VXhrkA_MmnwJIGRdVA4Ml3XrAPvw-q9g5O8vc_Iy3cw7CVw5y3cgVXp1sQwp5E7/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09ulq5WYh8jiPLfFl2xU18h0juDU-MKj2VXhrkA_MmnwJIGRdVA4Ml3XrAPvw-q9g5O8vc_Iy3cw7CVw5y3cgVXp1sQwp5E7/360fx360f 2x"
+        alt="Lead Collector"
+        class="live-item__img">   
+    <span class="live-item__title">Lead Collector</span>
+    <span class="live-item__subtitle">USP-S</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Lead Collector"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--gloves">
+    <span class="live-item__badge"><span>x1.1</span></span>
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/360fx360f 2x"
+        alt="Tiger Strike"
+        class="live-item__img">   
+    <span class="live-item__title">Tiger Strike</span>
+    <span class="live-item__subtitle">Specialist 100000</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Tiger Strike"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--milspec">
+    <span class="live-item__badge"><span>x1.1</span></span>
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhh3szFcDoV09G3mIaEhfrLP7LWnn8fu5QmiLvFoNz32wLl_xJuYmz2INSUdw4_MArV-ALvwey-g8DvuZuYymwj5HdAX4w01A/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhh3szFcDoV09G3mIaEhfrLP7LWnn8fu5QmiLvFoNz32wLl_xJuYmz2INSUdw4_MArV-ALvwey-g8DvuZuYymwj5HdAX4w01A/360fx360f 2x"
+        alt="Sonar"
+        class="live-item__img">   
+    <span class="live-item__title">Sonar</span>
+    <span class="live-item__subtitle">MAG-7</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Sonar"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--uncommon">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldfwPz3YShQ_NCzq42Ok_7hPvXUwjMFvJBy27HFpNWm0Fe2_BA5ZmD0I9edclNqaV6B_wK_ybq6hcC0ot2XnkAiK1X5/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldfwPz3YShQ_NCzq42Ok_7hPvXUwjMFvJBy27HFpNWm0Fe2_BA5ZmD0I9edclNqaV6B_wK_ybq6hcC0ot2XnkAiK1X5/360fx360f 2x"
+        alt="Ultraviolet"
+        class="live-item__img">   
+    <span class="live-item__title">Ultraviolet</span>
+    <span class="live-item__subtitle">MAC-10</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Ultraviolet"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--rare">
+    <span class="live-item__badge"><span>x1.1</span></span>
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/360fx360f 2x"
+        alt="Tiger Strike"
+        class="live-item__img">   
+    <span class="live-item__title">Tiger Strike</span>
+    <span class="live-item__subtitle">Specialist 100000</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Tiger Strike"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--classified">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/360fx360f 2x"
+        alt="Momentum"
+        class="live-item__img">   
+    <span class="live-item__title">Momentum</span>
+    <span class="live-item__subtitle">AUG</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Momentum"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--common">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/360fx360f 2x"
+        alt="Caramel"
+        class="live-item__img">   
+    <span class="live-item__title">Caramel</span>
+    <span class="live-item__subtitle">UMP-45</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Caramel"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--covert">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/360fx360f 2x"
+        alt="Syd Mead"
+        class="live-item__img">   
+    <span class="live-item__title">Syd Mead</span>
+    <span class="live-item__subtitle">AUG</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Syd Mead"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div><div class="live-item live-item--milspec">
+    
+    <img 
+        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/180fx180f" 
+        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/360fx360f 2x"
+        alt="Heat"
+        class="live-item__img">   
+    <span class="live-item__title">Heat</span>
+    <span class="live-item__subtitle">MAC-10</span>
+    <div class="live-item__hover">
+        <img 
+            src="./images/live-items/live-item-hover.png" 
+            srcset="./images/live-items/live-item-hover@2x.png 2x"
+            alt="Heat"
+            class="live-item__hover-img"> 
+        <div class="live-item__hover-info">
+            <span class="live-item__title">Moon Knight</span>   
+            <span class="live-item__subtitle">Aleksandr</span> 
+        </div>    
+    </div>
+</div>
+		</div>
+	</div>
+	<div class="header__promo ">
+		<div class="header__promo-wrap">
+			<ul class="header__promo-nav">
+				<li>
+					<a href=".#" class="header__promo-link">
+						<picture class="header__promo-img">
+							<source srcset="./images/icon-bonus.webp" type="image/webp">
+							<img src="./images/icon-bonus.png" alt="Бонус промокод">
+						</picture>
+						<span class="header__promo-link-info">
+							<span class="header__promo-link-title">Бонус</span>
+							<span class="header__promo-link-subtitle">Промокод</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href=".#" class="header__promo-link">
+						<picture class="header__promo-img">
+							<source srcset="./images/icon-wheel.webp" type="image/webp">
+							<img src="./images/icon-wheel.png" alt="Колесо. Spin the reel">
+						</picture>
+						<span>
+							<span class="header__promo-link-title">Колесо</span>
+							<span class="header__promo-link-subtitle">Вращать барабан</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href=".#" class="header__promo-link">
+						<picture class="header__promo-img">
+							<source srcset="./images/icon-raffles.webp" type="image/webp">
+							<img src="./images/icon-raffles.png" alt="Розыгрыши. Spin the reel">
+						</picture>
+						<span>
+							<span class="header__promo-link-title">Розыгрыши</span>
+							<span class="header__promo-link-subtitle">Вращать барабан</span>
+						</span>
+					</a>
+				</li>
+					
+			</ul>
+			
+			<div class="header__promo-controls">
+				<div>
+					<a href=".#" class="header__promo-social-link">
+						<svg aria-hidden="true" class="dark-grey">
+							<use xlink:href="images/sprite.svg#youtube"></use>
+						</svg>
+						Youtube
+					</a>
+					<a href=".#" class="header__promo-social-link">
+						<svg aria-hidden="true" class="dark-grey">
+							<use xlink:href="images/sprite.svg#tiktok"></use>
+						</svg>
+						TikTok
+					</a>
+					<a href=".#" class="header__promo-social-link">
+						<svg aria-hidden="true" class="dark-grey">
+							<use xlink:href="images/sprite.svg#twitter"></use>
+						</svg>
+						Twitter
+					</a>
+					<a href=".#" class="header__promo-social-link">
+						<svg aria-hidden="true" class="dark-grey">
+							<use xlink:href="images/sprite.svg#instagram"></use>
+						</svg>
+						Instagram
+					</a>
+				</div>
+				<div>
+					<button type="button" class="header__promo-btn btn btn--icon js-notifications-btn">
+						<svg aria-hidden="true" class="dark-grey">
+							<use xlink:href="images/sprite.svg#bell"></use>
+						</svg>
+						Уведомления
+						<span class="btn__info btn__info--red">2</span>
+					</button>
+					<button type="button" class="header__promo-btn btn">
+						<svg aria-hidden="true">
+							<use xlink:href="images/sprite.svg#support-green"></use>
+						</svg>
+						Поддержка
+						<span class="btn__info btn__info--green">4</span>
+					</button>
+					<button type="button" class="header__promo-btn btn btn--icon">
+						<svg aria-hidden="true" class="dark-grey">
+							<use xlink:href="images/sprite.svg#sound"></use>
+						</svg>
+						Звук
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <main>
+        <div class="case-hero container">
+    <button type="button" class="case-hero__provably-btn btn">
+        <svg aria-hidden="true" class="dark-grey">
+            <use xlink:href="images/sprite.svg#provably-fair"></use>
+        </svg>
+        Provably fair
+    </button>
+    <div class="case-hero__img-wrap">
+        <picture>
+            <source 
+                srcset="./images/bg/bg-case-hero.webp, ./images/bg/bg-case-hero@2x.webp 2x" 
+                type="image/webp">
+            <img 
+                src="./images/bg/bg-case-hero.jpg" 
+                srcset="./images/bg/bg-case-hero@2x.jpg 2x" 
+                alt="" 
+                aria-hidden="true"
+                class="case-hero__bg-img">
+        </picture>
+        <div class="case-hero__flag">
+            <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
+            <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
+            <button type="button" class="case-hero__flag-btn btn btn--icon">
+                <svg aria-hidden="true" class="light-grey">
+                    <use xlink:href="images/sprite.svg#question"></use>
+                </svg>
+                Info
+            </button>
+        </div>
+        <div class="case-hero__img-case">
+            <picture>
+                <source 
+                    srcset="./images/img-case.webp, ./images/img-case@2x.webp 2x" 
+                    type="image/webp">
+                <img 
+                    src="./images/img-case.png" 
+                    srcset="./images/img-case@2x.png 2x" 
+                    alt="" 
+                    aria-hidden="true"
+                    class="case-hero__img">
+            </picture>
+            <picture>
+                <source 
+                    srcset="./images/img-case-rock.webp, ./images/img-case-rock@2x.webp 2x" 
+                    type="image/webp">
+                <img 
+                    src="./images/img-case-rock.png" 
+                    srcset="./images/img-case-rock@2x.png 2x" 
+                    alt="" 
+                    aria-hidden="true"
+                    class="case-hero__img-rock">
+            </picture>
+        </div>
+    </div>
+    <div class="case-hero__controls">
+        
+        
+        
+            <button type="button" class="case-hero__btn btn btn--lg btn--bg-red">
+                <span class="case-hero__btn-text">
+                    No authorization
+                </span>
+            </button>
+            <button type="button" class="case-hero__btn btn btn--lg btn--bg-yellow">
+                Steam
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#steam-yellow"></use>
+                </svg>
+            </button>
+        
+    </div>
+</div>
+        <section class="container-sm">
+    <h2 class="section-title section-title--center section-title--light">
+        <svg aria-hidden="true" class="grey">
+            <use xlink:href="images/sprite.svg#crown-2"></use>
+        </svg>
+        Last Top Drop
+    </h2>
+    <div class="skins-list">
+        <article class="skin skin--rare  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+            alt="Tiger Strike"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Tiger Strike
+    </h3>
+    <div class="skin__subtitle">
+        Specialist 100000
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>100 566.24</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article><article class="skin skin--covert  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Syd Mead"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Syd Mead
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>100 566.24</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article><article class="skin skin--classified  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/400fx400f 2x"
+            alt="Momentum"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Momentum
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>100.24</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article><article class="skin skin--classified  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Water Element"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Water Element
+    </h3>
+    <div class="skin__subtitle">
+        Glock-18
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>100 566.24</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article><article class="skin skin--restricted  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/400fx400f 2x"
+            alt="Tacticat"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Tacticat
+    </h3>
+    <div class="skin__subtitle">
+        CZ75-Auto
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>100 566.24</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article><article class="skin skin--restricted  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Arctic Wolf"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Arctic Wolf
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>100 566</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article><article class="skin skin--restricted  js-skin">
+    <span class="skin__badge skin__badge--2.123"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Safety Net"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Safety Net
+    </h3>
+    <div class="skin__subtitle">
+        AK-47
+    </div>
+    
+        <span class="skin__price">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+            <span>10 056</span>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article>
+    </div>
+</section>
+        <section class="container">
+    <div class="section-header">
+        <div class="section-header__count-wrap">
+            <svg aria-hidden="true" class="dark-grey">
+                <use xlink:href="images/sprite.svg#key"></use>
+            </svg>
+            <div>
+                <span class="section-header__count">425881</span>
+                <span class="section-header__count-desc">Opened cases</span>
+            </div>
+        </div>
+        <h2 class="section-title section-title--center section-title--lg">
+            <svg aria-hidden="true" class="dark-grey">
+                <use xlink:href="images/sprite.svg#cases"></use>
+            </svg>
+            Contents of the case
+        </h2>
+        <div class="section-header__count-wrap">
+            <div>
+                <span class="section-header__count">48</span>
+                <span class="section-header__count-desc">Skins</span>
+            </div>
+            <svg aria-hidden="true" class="dark-grey">
+                <use xlink:href="images/sprite.svg#knife"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="skins-list skins-list--lg-card">
+        <article class="skin skin--uncommon skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/400fx400f 2x"
+            alt="Oxide Blaze"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Oxide Blaze
+    </h3>
+    <div class="skin__subtitle">
+        Desert Eagle
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--uncommon skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    100 000.24
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Facility Nega"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Facility Nega
+    </h3>
+    <div class="skin__subtitle">
+        P90
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--uncommon skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/400fx400f 2x"
+            alt="Magnesium"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Magnesium
+    </h3>
+    <div class="skin__subtitle">
+        M4A4
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--restricted skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    12 345
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/400fx400f 2x"
+            alt="Nitro"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Nitro
+    </h3>
+    <div class="skin__subtitle">
+        M4A1-S
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--restricted skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.679
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09ulq5WYh8jiPLfFl2xU18h0juDU-MKj2VXhrkA_MmnwJIGRdVA4Ml3XrAPvw-q9g5O8vc_Iy3cw7CVw5y3cgVXp1sQwp5E7/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09ulq5WYh8jiPLfFl2xU18h0juDU-MKj2VXhrkA_MmnwJIGRdVA4Ml3XrAPvw-q9g5O8vc_Iy3cw7CVw5y3cgVXp1sQwp5E7/400fx400f 2x"
+            alt="Arctic Wolf"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Arctic Wolf
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--restricted skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhh3szFcDoV09G3mIaEhfrLP7LWnn8fu5QmiLvFoNz32wLl_xJuYmz2INSUdw4_MArV-ALvwey-g8DvuZuYymwj5HdAX4w01A/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhh3szFcDoV09G3mIaEhfrLP7LWnn8fu5QmiLvFoNz32wLl_xJuYmz2INSUdw4_MArV-ALvwey-g8DvuZuYymwj5HdAX4w01A/400fx400f 2x"
+            alt="Safety Net"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Safety Net
+    </h3>
+    <div class="skin__subtitle">
+        AK-47
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--restricted skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Spider Lily"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Spider Lily
+    </h3>
+    <div class="skin__subtitle">
+        M4A4
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--restricted skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhh3szFcDoV09G3mIaEhfrLP7LWnn8fu5QmiLvFoNz32wLl_xJuYmz2INSUdw4_MArV-ALvwey-g8DvuZuYymwj5HdAX4w01A/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhh3szFcDoV09G3mIaEhfrLP7LWnn8fu5QmiLvFoNz32wLl_xJuYmz2INSUdw4_MArV-ALvwey-g8DvuZuYymwj5HdAX4w01A/400fx400f 2x"
+            alt="Random Accsdfsf"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Random Accsdfsf
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--restricted skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Pulse"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Pulse
+    </h3>
+    <div class="skin__subtitle">
+        FAMAS
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--classified skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/400fx400f 2x"
+            alt="Melondrama"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Melondrama
+    </h3>
+    <div class="skin__subtitle">
+        Dual Berettas
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--classified skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Asiimov"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Asiimov
+    </h3>
+    <div class="skin__subtitle">
+        P250
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--covert skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/400fx400f 2x"
+            alt="Roll Cage"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Roll Cage
+    </h3>
+    <div class="skin__subtitle">
+        FAMAS
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--covert skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000.65
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Asiimov"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Asiimov
+    </h3>
+    <div class="skin__subtitle">
+        P90
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article><article class="skin skin--rare skin--case-content js-skin">
+    
+    
+    
+        <div class="skin__tooltip tooltip tooltip--right tooltip--info">
+            <div class="tooltip__body" role="tooltip">
+                <div class="tooltip__line">
+                    <span>Шанс:</span>
+                    <span class="tooltip__line white">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#pie"></use>
+                        </svg>
+                        0.425
+                    </span>
+                </div>
+                <span class="tooltip__line white">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    1 000 000
+                </span>
+            </div>
+            <div class="tooltip__toggle js-chance-btn">
+                <svg aria-hidden="true" class="white">
+                    <use xlink:href="images/sprite.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+            alt="Tiger Strike"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Tiger Strike
+    </h3>
+    <div class="skin__subtitle">
+        Specialist 100000
+    </div>
+    
+    
+    
+        <div class="skin__table js-chance-table">
+            <div class="skin__table-wrap">
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line skin__table-line--red">
+                    <span class="skin__table-title">FT</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>1 137 567.24</span>
+                        <span class="skin__table-chance">0.0192%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+                <div class="skin__table-line">
+                    <span class="skin__table-title">MW</span>
+                    <span>
+                        <span class="skin__table-currency">P</span>
+                        <span>137 567.24</span>
+                        <span class="skin__table-chance">0.0232%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+</article>
+    </div>
+</section>
+    </main>
+    <footer class="footer container">
+    <div class="footer__logo-list">
+        <img src="./images/logos/logo-crypto.svg" alt="Logo Crypto">
+        <img src="./images/logos/logo-steam-skins.svg" alt="Logo Steam Skins">
+        <img src="./images/logos/logo-skinpay.svg" alt="Logo Skinpay">
+        <img src="./images/logos/logo-webmoney.svg" alt="Logo Webmoney">
+        <img src="./images/logos/logo-master-card.svg" alt="Logo Master Card">
+        <img src="./images/logos/logo-visa.svg" alt="Logo Visa">
+    </div>
+    <div class="footer__wrap">
+        <div class="footer__img">
+            <picture>
+                <source srcset="./images/img-footer-1.webp" type="image/webp">
+                <img src="./images/img-footer-1.png" alt="" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="footer__content">
+            <div class="footer__nav">
+                <ul>
+                    <li>
+                        <a href=".#" class="footer__link">Кейсы</a>
+                    </li>
+                    <li>
+                        <a href=".#" class="footer__link">Карточки</a>
+                    </li>
+                    <li>
+                        <a href=".#" class="footer__link">Контракты</a>
+                    </li>
+                    <li>
+                        <a href=".#" class="footer__link">Апгрейд</a>
+                    </li>
+                </ul>
+                <a href="/" class="footer__logo">
+					Main page
+				</a>
+            </div>
+            <div class="footer__user-info">
+                <div class="footer__user-info-links">
+                    <div class="footer__user-info-wrap">
+                        <ul>
+                            <li><a href=".#" class="footer__link">User Agreement</a></li>
+                            <li><a href=".#" class="footer__link">Privacy policy</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=".#" class="footer__link">FAQ</a></li>
+                            <li><a href=".#" class="footer__link">Earn money</a></li>
+                        </ul>
+
+                    </div>
+                    <p class="footer__user-info-text">
+                        TRUEGAME LIMITED PARTNERSHIP, юридическое лицо, зарегистрированное по адресу 23 Honey Lane, Buntingford, United Kingdom, SG9 9BQ
+                    </p>
+                </div>
+                <div class="footer__contacts">
+                    <a href="mailto:support@magic.com" class="footer__contacts-mail">support@magic.com</a>
+                    <div class="footer__contacts-social">
+                        <a href=".#" class="footer__contacts-social-link">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#youtube"></use>
+                            </svg>
+                            Youtube
+                        </a>
+                        <a href=".#" class="footer__contacts-social-link">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#tiktok"></use>
+                            </svg>
+                            TikTok
+                        </a>
+                        <a href=".#" class="footer__contacts-social-link">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#twitter"></use>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href=".#" class="footer__contacts-social-link">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#instagram"></use>
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content-img">
+                <picture class="footer__content-img-light">
+                    <source srcset="./images/img-footer-2-bg.webp" type="image/webp">
+                    <img src="./images/img-footer-2-bg.png" alt="" aria-hidden="true">
+                </picture>
+                <picture>
+                    <source srcset="./images/img-footer-2.webp" type="image/webp">
+                    <img src="./images/img-footer-2.png" alt="" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="notifications">
+    <div class="notification notification--success js-notification">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#copy-green"></use>
+        </svg>
+        <span>Promo code copied to clipboard!</span>
+    </div>
+    <div class="notification notification--error js-notification">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#warning-red"></use>
+        </svg>
+        <span>An error occurred, please try again.</span>
+    </div>
+</div>
+</body>
+</html>
