@@ -11798,6 +11798,9 @@ dd.upgrade__skin-price svg {
 
 .top-row__skin-img {
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .top-row__skin-img::before {
   -webkit-transform: translate(-50%, -50%);
@@ -11837,6 +11840,7 @@ dd.upgrade__skin-price svg {
   mix-blend-mode: lighten;
   overflow: hidden;
   z-index: 0;
+  will-change: transform;
 }
 .top-row__skin-bg img {
   -webkit-transform: translateX(-50%);
