@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Magic Drop | Апгрейды</title>
+    <title>Magic Drop | Топ игроков</title>
     <meta name="description" content="Magic Drop - Открытие кейсов CS:GO с моментальным выводом предметов себе в Steam!">
     <meta name="keywords" content="Magic Drop, кейсы, CS GO, Steam, Стим, предметы, CS skin">
     <meta name="format-detection" content="telephone=no">
@@ -15,11 +15,11 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <meta name="apple-mobile-web-app-title" content="Magic Drop">
     <meta property="og:site_name" content="magicdrop.com">
-    <meta property="og:title" content="Magic Drop | Апгрейды">
+    <meta property="og:title" content="Magic Drop | Топ игроков">
     <meta property="og:description" content="Magic Drop - Открытие кейсов CS:GO с моментальным выводом предметов себе в Steam!">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/pic.jpg">
-    <meta property="og:image:alt" content="Magic Drop | Апгрейды">
+    <meta property="og:image:alt" content="Magic Drop | Топ игроков">
     <meta property="og:url" content= "https://magicdrop.com">
     <meta property="og:locale" content="ru_RU">
     <link rel="preload" href="./fonts/Gotham-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -40,13 +40,45 @@
 			<div class="header__nav-wrap js-header-nav">
 				<div class="header__top-btns-wrap tablet">
 					
-						<a href=".#" class="btn btn--upper btn--lg header__steam-btn">
-							<svg aria-hidden="true">
-								<use xlink:href="images/sprite.svg#steam-yellow"></use>
-							</svg>
-							Steam
-						</a>
 					
+						<a href=".#" class="btn btn--purple btn--font-black">
+							<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
+							370
+						</a>
+						<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
+							<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
+							Pay
+							<span class="btn__plus-icon" aria-hidden="true">
+								<svg aria-hidden="true" class="white">
+									<use xlink:href="images/sprite.svg#plus"></use>
+								</svg>
+							</span>
+						</a>
+						<div class="header__profile">
+							<div>
+								<span class="header__profile-name">lok'tar ogar magicdrop-ru</span>
+								<span class="header__profile-money">
+									123 456,78
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+									</svg>
+								</span>
+							</div>
+							<div class="header__profile-img-wrap">
+								<button type="button" class="header__profile-img-btn">
+									<picture class="header__profile-img">
+										<source srcset="./images/avatar.webp" type="image/webp">
+										<img src="./images/avatar.jpg" class="image" alt="Avatar">
+									</picture>
+								</button>
+								<button type="button" class="btn btn--icon header__logout-btn">
+									<svg aria-hidden="true" class="black">
+										<use xlink:href="images/sprite.svg#logout"></use>
+									</svg>
+									Logout
+								</button>
+							</div>
+						</div>
 					
 				</div>
 				<nav class="header__nav">
@@ -202,13 +234,45 @@
 			</div>
 			<div class="header__top-btns-wrap desktop-lg">
 				
-					<a href=".#" class="btn btn--upper btn--lg header__steam-btn">
-						<svg aria-hidden="true">
-							<use xlink:href="images/sprite.svg#steam-yellow"></use>
-						</svg>
-						Steam
-					</a>
 				
+					<a href=".#" class="btn btn--purple btn--font-black">
+						<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
+						370
+					</a>
+					<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
+						<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
+						Pay
+						<span class="btn__plus-icon" aria-hidden="true">
+							<svg aria-hidden="true" class="white">
+								<use xlink:href="images/sprite.svg#plus"></use>
+							</svg>
+						</span>
+					</a>
+					<div class="header__profile">
+						<div>
+							<span class="header__profile-name">Aleksandr</span>
+							<span class="header__profile-money">
+								123 456,78
+								<svg aria-hidden="true">
+									<use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+								</svg>
+							</span>
+						</div>
+						<div class="header__profile-img-wrap">
+							<button type="button" class="header__profile-img-btn">
+								<picture class="header__profile-img">
+									<source srcset="./images/avatar.webp" type="image/webp">
+									<img src="./images/avatar.jpg" class="image" alt="Avatar">
+								</picture>
+							</button>
+							<button type="button" class="btn btn--icon header__logout-btn">
+								<svg aria-hidden="true" class="black">
+									<use xlink:href="images/sprite.svg#logout"></use>
+								</svg>
+								Logout
+							</button>
+						</div>
+					</div>
 				
 			</div>
 			<button class="btn header__burger js-menu-burger-btn" aria-label="Открыть меню" aria-expanded="false">
@@ -653,246 +717,662 @@
 	</div>
 </header>
     <main>
-        <div class="upgrade container-sm js-upgrade" style="--rotation-arrow-round: 75deg">
-    <h1 class="page-title page-title--upgrade">
-        <img src="./images/svg/upgrade-yellow-arrow.svg" alt="" aria-hidden="true">
-        Апгрейд
+        <section class="top-players container-sm">
+    <h1 class="page-title">
+        <svg aria-hidden="true" class="grey">
+            <use xlink:href="images/sprite.svg#trophy"></use>
+        </svg>
+        Top Players
     </h1>
-    <div class="upgrade__body">
-        <div class="upgrade__part-left">
-            <div class="tabs">
-                <div class="tab">
-                    <input 
-                        type="radio" 
-                        name="upgrade" 
-                        id="upgrade-skins"
-                        class="js-tab"
-                        checked>
-                    <label for="upgrade-skins">
-                        <div class="tab__svg">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#gun"></use>
-                            </svg>
-                            <svg aria-hidden="true" class="white">
-                                <use xlink:href="images/sprite.svg#gun"></use>
-                            </svg>
-                        </div>
-                        Скины
-                    </label>
-                </div>
-                <div class="tab">
-                    <input 
-                        type="radio" 
-                        name="upgrade" 
-                        id="upgrade-balance"
-                        class="js-tab"
-                        >
-                    <label for="upgrade-balance">
-                        <div class="tab__svg">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#coin-rub"></use>
-                            </svg>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                            </svg>
-                        </div>
-                        Баланс
-                    </label>
-                </div>
+    <div class="top-players__list">
+        <article class="top-players__item top-player top-player--classified top-player--gold">
+            <div class="top-player__place">
+                <span class="top-player__place-numb">1</span>
             </div>
-            <div class="upgrade__skin-container">
-                <div class="upgrade__skin " data-tab="upgrade-skins">
-                    
-                        <div class="upgrade__skin-empty">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#gun-arrow-up"></use>
-                            </svg>
-                            <p>Select one of your skins on the left to upgrade it and get a more expensive one</p>
-                        </div>
-                    
-                    
+            <a class="top-player__case">
+                <picture>
+                    <source srcset="./images/cases/case-1.webp" type="image/webp">
+                    <img src="./images/cases/case-1.jpg" alt="OPERATION BROKEN FANG CASE">
+                </picture>
+            </a>
+            <a class="top-player__user">
+                <picture>
+                    <source srcset="./images/avatar.webp" type="image/webp">
+                    <img src="./images/avatar.jpg" alt="Anton Petrov">
+                </picture>
+            </a>
+            <div class="top-player__img">
+                <div class="top-player__bg">
+                    <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
                 </div>
-                <div class="upgrade__skin" data-tab="upgrade-balance">
-                    <div class="upgrade__skin-balance">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                        </svg>
-                        <div class="upgrade__range-slider range-slider js-range-slider">
-                            <span class="range-slider__track js-range-track" id="range-track"></span>
-                            <input type="range" class="min" min="0" max="1000" value="0" step="0">
-                            <input type="range" class="max" min="0" max="1000" value="520" step="0">
-                            <div class="range-slider__min-value js-range-min"></div>
-                            <div class="range-slider__max-value js-range-max"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="upgrade__skin-footer">
-                    <div>
-                        <div class="upgrade__skin-footer-circle"></div>
-                        <div class="upgrade__skin-footer-line">
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <svg aria-hidden="true" class="upgrade__skin-logo">
-                        <use xlink:href="images/sprite.svg#logo-3d"></use>
-                    </svg>
-                    <div>
-                        <div class="upgrade__skin-footer-line">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="upgrade__skin-footer-circle"></div>
-                    </div>
-                </div>
+                <img 
+                    src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/200fx200f" 
+                    srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/400fx400f 2x"
+                    alt="Melondrama">      
             </div>
-        </div>
-        <div class="upgrade__part-center">
-            <button type="button" class="btn">
-                <svg aria-hidden="true" class="dark-grey">
-                    <use xlink:href="images/sprite.svg#brush"></use>
+            <h3 class="top-player__title">
+                Melondrama
+            </h3>
+            <div class="top-player__subtitle">
+                Dual Berettas
+            </div>
+            <span class="top-player__price">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
                 </svg>
-                Clear items
-            </button>
-            <div class="upgrade__provability">
-                <span class="upgrade__provability-numb">0%</span>
-                <div class="upgrade__provability-wrap">
-                    <div class="upgrade__wire upgrade__wire--rare">
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire.png" alt="" aria-hidden="true">
-                        </picture>
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire-rare.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire-rare.png" alt="" aria-hidden="true">
-                        </picture>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#wire-connect"></use>
-                        </svg>
-                    </div>
-                    <div class="upgrade__wire upgrade__wire--rare">
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire.png" alt="" aria-hidden="true">
-                        </picture>
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire-rare.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire-rare.png" alt="" aria-hidden="true">
-                        </picture>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#wire-connect"></use>
-                        </svg>
-                    </div>
-                    <div class="upgrade__provability-progress-wrap">
-                        <div 
-                            class="upgrade__provability-progress "
-                            style="--provability-zone:0%">
-                            <div class="upgrade__provability-arrow-wrap">
-                                <div class="upgrade__provability-arrow">
-                                    <img src="./images/svg/arrow-provability.svg" alt="" aria-hidden="true">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="upgrade__fail js-upgrade-fail">
-                        <img src="./images/img-loose.svg" alt="Loose"> 
-                    </div>
-                    <div class="upgrade__wire upgrade__wire--restricted">
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire.png" alt="" aria-hidden="true">
-                        </picture>
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire-restricted.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire-restricted.png" alt="" aria-hidden="true">
-                        </picture>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#wire-connect"></use>
-                        </svg>
-                    </div>
-                    <div class="upgrade__wire upgrade__wire--restricted">
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire.png" alt="" aria-hidden="true">
-                        </picture>
-                        <picture>
-                            <source srcset="./images/wires/img-upgrade-wire-restricted.webp" type="image/webp">
-                            <img src="./images/wires/img-upgrade-wire-restricted.png" alt="" aria-hidden="true">
-                        </picture>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#wire-connect"></use>
-                        </svg>
-                    </div>
-                </div>
-                <span class="upgrade__provability-text">Provability of success</span>
+                <span>100 000.24</span>
+            </span>
+        </article>
+        <article class="top-players__item top-player top-player--covert top-player--silver">
+            <div class="top-player__place">
+                <span class="top-player__place-numb">2</span>
             </div>
-            
-                <button type="button" class="upgrade__btn btn btn--bg-yellow btn--upper">
-                    Steam
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#steam-yellow"></use>
-                    </svg>
-                </button>
-              
-            
-        </div>
-        <div class="upgrade__part-right">
-            <button type="button" class="btn">
-                <svg aria-hidden="true" class="dark-grey">
-                    <use xlink:href="images/sprite.svg#lightning"></use>
+            <a class="top-player__case">
+                <picture>
+                    <source srcset="./images/cases/case-2.webp" type="image/webp">
+                    <img src="./images/cases/case-2.jpg" alt="OPERATION BROKEN FANG CASE">
+                </picture>
+            </a>
+            <a class="top-player__user">
+                <picture>
+                    <source srcset="./images/avatar-2.webp" type="image/webp">
+                    <img src="./images/avatar-2.jpg" alt="Anton Petrov">
+                </picture>
+            </a>
+            <div class="top-player__img">
+                <div class="top-player__bg">
+                    <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                </div>
+                <img 
+                    src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+                    srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+                    alt="Melondrama">      
+            </div>
+            <h3 class="top-player__title">
+                Melondrama
+            </h3>
+            <div class="top-player__subtitle">
+                Dual Berettas
+            </div>
+            <span class="top-player__price">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
                 </svg>
-                Быстро
-            </button>
-            <div class="upgrade__skin-container">
-                <div class="upgrade__skin ">
-                    
-                        <div class="upgrade__skin-empty">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#gun-arrow-down"></use>
-                            </svg>
-                            <p>Select a skin to upgrade from the list below</p>
-                        </div>
-                    
-                    
+                <span>100 000.24</span>
+            </span>
+        </article>
+        <article class="top-players__item top-player top-player--restricted top-player--bronze">
+            <div class="top-player__place">
+                <span class="top-player__place-numb">3</span>
+            </div>
+            <a class="top-player__case">
+                <picture>
+                    <source srcset="./images/cases/case-3.webp" type="image/webp">
+                    <img src="./images/cases/case-3.jpg" alt="OPERATION BROKEN FANG CASE">
+                </picture>
+            </a>
+            <a class="top-player__user">
+                <picture>
+                    <source srcset="./images/avatar-3.webp" type="image/webp">
+                    <img src="./images/avatar-3.jpg" alt="Anton Petrov">
+                </picture>
+            </a>
+            <div class="top-player__img">
+                <div class="top-player__bg">
+                    <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
                 </div>
-                <div class="upgrade__skin-footer">
-                    <div>
-                        <div class="upgrade__skin-footer-circle"></div>
-                        <div class="upgrade__skin-footer-line">
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <svg aria-hidden="true" class="upgrade__skin-logo">
-                        <use xlink:href="images/sprite.svg#logo-3d"></use>
-                    </svg>
-                    <div>
-                        <div class="upgrade__skin-footer-line">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="upgrade__skin-footer-circle"></div>
-                    </div>
+                <img 
+                    src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/200fx200f" 
+                    srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/400fx400f 2x"
+                    alt="Melondrama">      
+            </div>
+            <h3 class="top-player__title">
+                Пиксельный камуфляж «Розовый»
+            </h3>
+            <div class="top-player__subtitle">
+                Водительские перчатки
+            </div>
+            <span class="top-player__price">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+                <span>100 000.24</span>
+            </span>
+        </article>
+        <article class="top-players__item top-player top-player--milspec">
+            <div class="top-player__place">
+                <span class="top-player__place-numb">4</span>
+            </div>
+            <a class="top-player__case">
+                <picture>
+                    <source srcset="./images/cases/case-4.webp" type="image/webp">
+                    <img src="./images/cases/case-4.jpg" alt="OPERATION BROKEN FANG CASE">
+                </picture>
+            </a>
+            <a class="top-player__user">
+                <picture>
+                    <source srcset="./images/avatar-4.webp" type="image/webp">
+                    <img src="./images/avatar-4.jpg" alt="Anton Petrov">
+                </picture>
+            </a>
+            <div class="top-player__img">
+                <div class="top-player__bg">
+                    <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
                 </div>
+                <img 
+                    src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/200fx200f" 
+                    srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/400fx400f 2x"
+                    alt="Melondrama">      
+            </div>
+            <h3 class="top-player__title">
+                Пиксельный камуфляж «Розовый»
+            </h3>
+            <div class="top-player__subtitle">
+                Водительские перчатки
+            </div>
+            <span class="top-player__price">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+                <span>100 000.24</span>
+            </span>
+        </article>
+        <article class="top-players__item top-player top-player--uncommon">
+            <div class="top-player__place">
+                <span class="top-player__place-numb">5</span>
+            </div>
+            <a class="top-player__case">
+                <picture>
+                    <source srcset="./images/cases/case-1.webp" type="image/webp">
+                    <img src="./images/cases/case-1.jpg" alt="OPERATION BROKEN FANG CASE">
+                </picture>
+            </a>
+            <a class="top-player__user">
+                <picture>
+                    <source srcset="./images/avatar.webp" type="image/webp">
+                    <img src="./images/avatar.jpg" alt="Anton Petrov">
+                </picture>
+            </a>
+            <div class="top-player__img">
+                <div class="top-player__bg">
+                    <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                </div>
+                <img 
+                    src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+                    srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+                    alt="Melondrama">      
+            </div>
+            <h3 class="top-player__title">
+                Пиксельный камуфляж «Розовый»
+            </h3>
+            <div class="top-player__subtitle">
+                Водительские перчатки
+            </div>
+            <span class="top-player__price">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+                <span>100 000.24</span>
+            </span>
+        </article>
+    </div>
+</section>
+        <section class="nearest-top container-sm">
+    <h2 class="section-title">
+        <svg aria-hidden="true" class="dark-grey">
+            <use xlink:href="images/sprite.svg#user"></use>
+        </svg>
+        Nearest top players
+    </h2>
+    <div class="nearest-top__list">
+        <table class="nearest-top__table">
+            <thead>
+                <tr>
+                    <td>Place</td>
+                    <td>User</td>
+                    <td>Item</td>
+                    <td>Case</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="top-row top-row--covert">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">6</span>
             </div>
         </div>
-        <div class="upgrade__win upgrade__win--restricted js-upgrade-win">
-            <div class="upgrade__win-card">
-                <div class="upgrade__win-bg">
-                    <img src="./images/skins/bg.gif" alt="" aria-hidden="true">
-                </div>
-                <div class="upgrade__win-img">
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar.webp" type="image/webp">
+                    <img src="./images/avatar.jpg" alt="lok'tar ogar magicdrop-ru">
+                </picture>
+            </span>
+            lok'tar ogar magicdrop-ru
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
                     <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/200fx200f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/400fx400f 2x"
-                        alt="SCAR-20 | Jungle Whirlwind">
-                </div>
-                <span class="upgrade__win-title">Jungle Whirlwind</span>     
-                <span class="upgrade__win-subtitle">SCAR-20</span>  
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/100fx100f 2x"
+                        alt="Asiimov / P90">
+                </span>
+            </span>
+            <span class="top-row__name">Asiimov / P90</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-1.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="OPERATION BROKEN FANG CASE">
+                </picture>
+            </span>
+            OPERATION BROKEN FANG CASE
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            100 000.24
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--classified">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">7</span>
             </div>
         </div>
-    </div>  
-</div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar-2.webp" type="image/webp">
+                    <img src="./images/avatar-2.jpg" alt="Koolnes">
+                </picture>
+            </span>
+            Koolnes
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/100fx100f 2x"
+                        alt="Melondrama / Dual Berettas">
+                </span>
+            </span>
+            <span class="top-row__name">Melondrama / Dual Berettas</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-2.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Space Wanderer">
+                </picture>
+            </span>
+            Space Wanderer
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            1 000 000
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--restricted">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">8</span>
+            </div>
+        </div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar-3.webp" type="image/webp">
+                    <img src="./images/avatar-3.jpg" alt="BootFish">
+                </picture>
+            </span>
+            BootFish
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/100fx100f 2x"
+                        alt="Nitro / M4A1-S">
+                </span>
+            </span>
+            <span class="top-row__name">Nitro / M4A1-S</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-3.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Knight Moon">
+                </picture>
+            </span>
+            Knight Moon
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            1 000
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--milspec">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">9</span>
+            </div>
+        </div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar-4.webp" type="image/webp">
+                    <img src="./images/avatar-4.jpg" alt="BootFish">
+                </picture>
+            </span>
+            BootFish
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/100fx100f 2x"
+                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
+                </span>
+            </span>
+            <span class="top-row__name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-4.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Knight Moon Knight Moon">
+                </picture>
+            </span>
+            Knight Moon Knight Moon
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            56 789
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--rare">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">10</span>
+            </div>
+        </div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar-5.webp" type="image/webp">
+                    <img src="./images/avatar-5.jpg" alt="Batiscafff">
+                </picture>
+            </span>
+            Batiscafff
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/100fx100f 2x"
+                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
+                </span>
+            </span>
+            <span class="top-row__name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-1.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Space Wanderer">
+                </picture>
+            </span>
+            Space Wanderer
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            100 000.24
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--uncommon">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">11</span>
+            </div>
+        </div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar.webp" type="image/webp">
+                    <img src="./images/avatar.jpg" alt="Batiscafff">
+                </picture>
+            </span>
+            Batiscafff
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/100fx100f 2x"
+                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
+                </span>
+            </span>
+            <span class="top-row__name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-2.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Space Wanderer">
+                </picture>
+            </span>
+            Space Wanderer
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            100 000.24
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--common">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">12</span>
+            </div>
+        </div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar-2.webp" type="image/webp">
+                    <img src="./images/avatar-2.jpg" alt="Batiscafff">
+                </picture>
+            </span>
+            Batiscafff
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/100fx100f 2x"
+                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
+                </span>
+            </span>
+            <span class="top-row__name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-3.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Space Wanderer">
+                </picture>
+            </span>
+            Space Wanderer
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            100 000.24
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr><tr class="top-row top-row--gloves">
+    <td>
+        <div class="top-row__place">
+            <div class="top-row__place-wrap">
+                <span class="top-row__place-numb">13</span>
+            </div>
+        </div>
+    </td>
+    <td>
+        <a href=".#" class="top-row__user">
+            <span class="top-row__user-avatar">
+                <picture>
+                    <source srcset="./images/avatar-3.webp" type="image/webp">
+                    <img src="./images/avatar-3.jpg" alt="Batiscafff">
+                </picture>
+            </span>
+            Batiscafff
+        </a>
+    </td>
+    <td>
+        <span class="top-row__skin">
+            <span class="top-row__skin-img">
+                <span class="top-row__skin-img-wrap">
+                    <span class="top-row__skin-bg">
+                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
+                    </span>
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/50fx50f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/100fx100f 2x"
+                        alt="Tiger Strike / Specialist 100000">
+                </span>
+            </span>
+            <span class="top-row__name">Tiger Strike / Specialist 100000</span>
+        </span>
+    </td>
+    <td>
+        <a href=".#" class="top-row__case">
+            <span class="top-row__case-img">
+                <picture>
+                    <source srcset="./images/cases/case-4.webp" type="image/webp">
+                    <img src="@@caseSrcSetImage" alt="Space Wanderer">
+                </picture>
+            </span>
+            Space Wanderer
+        </a>
+    </td>
+    <td>
+        <span class="top-row__price">
+            100 000.24
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    </td>
+</tr>
+            </tbody>
+        </table>
+    </div>
+</section>
     </main>
     <footer class="footer container">
     <div class="footer__logo-list">
