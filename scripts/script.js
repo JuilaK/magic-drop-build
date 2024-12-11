@@ -155,11 +155,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const winSellBtn = document.querySelector('.js-win-sell-btn');
 
     winBtn && winBtn.addEventListener('click', () => {
-        roulettes.forEach(roulette => roulette.classList.add('case-hero__roulette--spin'));
-        setTimeout(() => {
-            roulettes.forEach(roulette => roulette.classList.remove('case-hero__roulette--spin'));
-            winBlock.classList.add('win--open');
-        }, 2000);
+        winBlock.classList.add('win--open');
     })
 
     winSellBtn && winSellBtn.addEventListener('click', () => {
