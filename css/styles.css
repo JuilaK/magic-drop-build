@@ -5718,6 +5718,11 @@ span.draw-item__start-price svg {
     height: auto;
   }
 }
+@media (max-width: 1024px) {
+  .case-hero {
+    padding-top: 7.2rem;
+  }
+}
 .case-hero--roulette {
   height: auto;
   padding-left: 24rem;
@@ -5760,6 +5765,11 @@ span.draw-item__start-price svg {
   .case-hero__img-wrap {
     margin-left: -3.2rem;
     margin-right: -3.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .case-hero__img-wrap {
+    height: calc(100% - 7.2rem);
   }
 }
 @media (max-width: 768px) {
@@ -5965,9 +5975,12 @@ span.draw-item__start-price svg {
     top: 3.2rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .case-hero__provably-btn {
-    left: 1.6rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
