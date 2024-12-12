@@ -793,6 +793,13 @@ img {
     fill: #8484A7;
   }
 }
+.btn > span {
+  color: #8484A7;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 129%;
+  white-space: nowrap;
+}
 .btn > svg,
 .btn > img {
   width: 2.4rem;
@@ -857,7 +864,7 @@ img {
   transition: transform 0.4s ease-out;
   transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
 }
-.btn__info {
+.btn .btn__info {
   position: absolute;
   top: -0.4rem;
   right: -0.4rem;
@@ -871,12 +878,12 @@ img {
   font-weight: 700;
   line-height: 1.4rem;
 }
-.btn__info--red {
+.btn .btn__info--red {
   text-shadow: 0 0.1rem 0 #FF0000, 0 0.1rem 0 #FF0000, 0 0.1rem 0 #FF0000, 0 0.1rem 0 #FF0000, 0.1rem 0 0 #FF0000, 0.1rem 0 0 #FF0000, 0.1rem 0 0 #FF0000, 0.1rem 0 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000, 0.1rem 0.1rem 0 #FF0000;
   background-color: #C1150A;
   border: thin solid #FF0000;
 }
-.btn__info--green {
+.btn .btn__info--green {
   text-shadow: 0 0.1rem 0 #8FFF00, 0 0.1rem 0 #8FFF00, 0 0.1rem 0 #8FFF00, 0 0.1rem 0 #8FFF00, 0.1rem 0 0 #8FFF00, 0.1rem 0 0 #8FFF00, 0.1rem 0 0 #8FFF00, 0.1rem 0 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00, 0.1rem 0.1rem 0 #8FFF00;
   background-color: #85DD16;
   border: thin solid #8FFF00;
@@ -908,6 +915,9 @@ img {
   padding: 0 1rem;
   font-size: 1.2rem;
 }
+.btn--sm > span {
+  font-size: 1.2rem;
+}
 .btn--sm svg {
   width: 1.6rem;
   height: 1.6rem;
@@ -920,6 +930,9 @@ img {
           column-gap: 0.2rem;
   height: 2.4rem;
   padding: 0 0.4rem;
+  font-size: 1.2rem;
+}
+.btn--xs > span {
   font-size: 1.2rem;
 }
 .btn--xs svg {
@@ -935,12 +948,15 @@ img {
   width: 4.8rem;
   font-size: 0;
 }
-.btn--upper {
+.btn--icon > span {
+  font-size: 0;
+}
+.btn--upper, .btn--upper > span {
   color: #FFFFFF;
   font-weight: 900;
   text-transform: uppercase;
 }
-.btn--font-black {
+.btn--font-black, .btn--font-black > span {
   font-weight: 900;
 }
 .btn--purple {
@@ -948,6 +964,9 @@ img {
           box-shadow: inset 0 0.2rem 0 0 #181825, inset 0 -0.2rem 0 0 #141421, 0 0 4.2rem 0 rgba(156, 25, 237, 0.24);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(156, 25, 237, 0)), to(rgba(156, 25, 237, 0.65))), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: linear-gradient(180deg, rgba(156, 25, 237, 0) 0%, rgba(156, 25, 237, 0.65) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
+  color: #FFFFFF;
+}
+.btn--purple > span {
   color: #FFFFFF;
 }
 .btn--purple::before {
@@ -1036,6 +1055,9 @@ img {
             box-shadow: none;
   }
 }
+.btn--red > span {
+  color: #FFFFFF;
+}
 .btn--yellow {
   border-radius: 0.8rem;
   border: 0.2rem solid #FFE500;
@@ -1052,6 +1074,9 @@ img {
     -webkit-box-shadow: 0 0 0.8rem 0 rgba(223, 36, 24, 0.45);
             box-shadow: 0 0 0.8rem 0 rgba(223, 36, 24, 0.45);
   }
+}
+.btn--yellow > span {
+  color: #0C0C1B;
 }
 .btn--blue {
   border-radius: 0.8rem;
@@ -1070,6 +1095,9 @@ img {
             box-shadow: 0 0 0.8rem 0 rgba(7, 74, 203, 0.5);
   }
 }
+.btn--blue > span {
+  color: #FFFFFF;
+}
 .btn--green {
   border-radius: 0.8rem;
   border: 0.2rem solid #AF0;
@@ -1087,10 +1115,16 @@ img {
             box-shadow: 0 0 0.8rem 0 rgba(155, 221, 22, 0.24);
   }
 }
+.btn--green > span {
+  color: #0C0C1B;
+}
 .btn--bg-blue {
   background: center/cover no-repeat url("../images/bg/bg-btn-blue.png"), linear-gradient(170deg, rgba(7, 74, 203, 0.8) 0%, rgba(18, 18, 31, 0) 60%), linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
   -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  color: #FFFFFF;
+}
+.btn--bg-blue > span {
   color: #FFFFFF;
 }
 .btn--bg-blue::before {
@@ -1116,6 +1150,9 @@ img {
   background: center/cover no-repeat url("../images/bg/bg-btn-green.png"), linear-gradient(170deg, rgba(133, 221, 22, 0.22) 0%, rgba(18, 18, 31, 0) 60%), linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
   -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  color: #FFFFFF;
+}
+.btn--bg-green > span {
   color: #FFFFFF;
 }
 .btn--bg-green::before {
@@ -1144,20 +1181,31 @@ img {
           box-shadow: 0 -0.2rem 0 0 #141421 inset;
   color: #FFFFFF;
 }
+.btn--bg-red > span {
+  color: #FFFFFF;
+}
 @media (any-hover: hover) {
   .btn--bg-red:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 16, 27, 0.25)), to(rgba(18, 18, 31, 0))), center/cover no-repeat url("../images/bg/bg-btn.jpg"), -webkit-gradient(linear, left top, left bottom, from(#222231), to(#12121F));
     background: linear-gradient(180deg, rgba(220, 16, 27, 0.25) 0%, rgba(18, 18, 31, 0) 100%), center/cover no-repeat url("../images/bg/bg-btn.jpg"), linear-gradient(180deg, #222231 0%, #12121F 100%);
+    -webkit-box-shadow: 0 -0.2rem 0 0 #141421 inset;
+            box-shadow: 0 -0.2rem 0 0 #141421 inset;
   }
 }
 .btn--bg-grey {
   background: center/cover no-repeat url("../images/bg/bg-btn.jpg");
   color: #FFFFFF;
 }
+.btn--bg-grey > span {
+  color: #FFFFFF;
+}
 .btn--bg-yellow {
   background: linear-gradient(170deg, rgba(221, 201, 22, 0.22) 0%, rgba(18, 18, 31, 0) 60%), center/cover no-repeat url("../images/bg/bg-btn.jpg"), linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
   -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  color: #FFFFFF;
+}
+.btn--bg-yellow > span {
   color: #FFFFFF;
 }
 .btn--bg-yellow::before {
@@ -1634,7 +1682,7 @@ input::placeholder {
     opacity: 1;
   }
 }
-.tooltip__body p {
+.tooltip__body p, .tooltip__body p > span {
   color: rgba(255, 255, 255, 0.35);
   font-size: 1.4rem;
 }
@@ -2272,8 +2320,10 @@ input::placeholder {
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
   margin-top: 0.4rem;
-  font-weight: 700;
   white-space: nowrap;
+}
+.header__profile-money span {
+  font-weight: 700;
 }
 .header__profile-money svg {
   width: 2.4rem;
@@ -4336,6 +4386,13 @@ input::placeholder {
   white-space: nowrap;
 }
 
+.case__full-count {
+  color: #505059;
+  font-size: 1rem;
+  line-height: 100%;
+  white-space: nowrap;
+}
+
 .case__title {
   font-size: 1.6rem;
   font-weight: 900;
@@ -4391,12 +4448,18 @@ input::placeholder {
     font-size: 1.4rem;
   }
 }
+.case__btn span {
+  font-size: 1.6rem;
+}
 @media (max-width: 768px) {
   .case__btn span {
     font-size: 1.4rem;
   }
 }
-.case__btn span:first-of-type {
+.case__btn span:first-of-type:last-of-type {
+  color: #FFFFFF;
+}
+.case__btn span:first-of-type:not(:last-of-type) {
   color: #3F3F4E;
   text-decoration-line: line-through;
 }
@@ -4716,6 +4779,12 @@ input::placeholder {
   line-height: 113%;
   white-space: nowrap;
 }
+.draw-item__user span,
+.draw-item__price span {
+  color: #8484A7;
+  line-height: 113%;
+  white-space: nowrap;
+}
 .draw-item__user svg,
 .draw-item__price svg {
   margin-right: 0.6rem;
@@ -4723,6 +4792,9 @@ input::placeholder {
 
 .draw-item__price {
   margin-left: 1rem;
+  color: #FFFFFF;
+}
+.draw-item__price span {
   color: #FFFFFF;
 }
 
@@ -4785,6 +4857,9 @@ span.draw-item__start-price {
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
   margin-left: 0.4rem;
+  color: #FFFFFF;
+}
+span.draw-item__start-price span {
   color: #FFFFFF;
 }
 span.draw-item__start-price svg {
@@ -6168,11 +6243,10 @@ span.draw-item__start-price svg {
   line-height: 100%;
   text-transform: uppercase;
 }
-.case-hero__btn.btn--bg-red .case-hero__btn-text {
+.case-hero__btn.btn--bg-red .case-hero__btn-text > span {
   color: #E92C36;
 }
-
-.case-hero__btn-text {
+.case-hero__btn .case-hero__btn-text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -6183,6 +6257,12 @@ span.draw-item__start-price svg {
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
   margin-left: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.case-hero__btn .case-hero__btn-text > span {
   color: #FFE500;
   font-size: 1.6rem;
   font-weight: 900;
@@ -8012,6 +8092,9 @@ span.win__item-currency {
     font-size: 1.2rem;
   }
 }
+.skin-table table thead td.text-right {
+  padding-right: 0;
+}
 .skin-table table tbody tr {
   height: 100%;
 }
@@ -8115,7 +8198,16 @@ span.win__item-currency {
           column-gap: 0.4rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: #ffe500;
+  white-space: nowrap;
+}
+.skin-table-item__price span {
+  color: #ffe500;
+  font-size: 1.4rem;
+  line-height: 100%;
   white-space: nowrap;
 }
 .skin-table-item__price svg {
@@ -8400,6 +8492,12 @@ span.win__item-currency {
   color: #ffe500;
   white-space: nowrap;
 }
+.trade__price span {
+  color: #ffe500;
+  font-size: 1.4rem;
+  line-height: 100%;
+  white-space: nowrap;
+}
 .trade__price svg {
   width: 1.6rem;
   height: 1.6rem;
@@ -8425,6 +8523,16 @@ span.win__item-currency {
         -ms-transform: scale(1.05);
             transform: scale(1.05);
   }
+  .trade__user:hover span {
+    color: #FFFFFF;
+  }
+}
+.trade__user span {
+  color: #8484A7;
+  -webkit-transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .trade__user-avatar {
@@ -8435,10 +8543,6 @@ span.win__item-currency {
           flex: 0 0 4rem;
   position: relative;
   border-radius: 0.8rem;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   overflow: hidden;
 }
 .trade__user-avatar::after {
@@ -8635,6 +8739,15 @@ span.win__item-currency {
 }
 @media (max-width: 480px) {
   .upgrade-card__skin-price {
+    font-size: 1rem;
+  }
+}
+.upgrade-card__skin-price span {
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .upgrade-card__skin-price span {
     font-size: 1rem;
   }
 }
@@ -9576,7 +9689,7 @@ span.win__item-currency {
   margin: 0;
   text-align: left;
 }
-.upgrade__skin-info dt, .upgrade__skin-info dd {
+.upgrade__skin-info dt, .upgrade__skin-info dd, .upgrade__skin-info dd > span {
   font-size: 1.2rem;
 }
 .upgrade__skin-info dt {
@@ -9608,6 +9721,10 @@ dd.upgrade__skin-price {
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
   margin-top: -0.2rem;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+dd.upgrade__skin-price span {
   color: #FFFFFF;
   font-weight: 900;
 }
@@ -11251,6 +11368,12 @@ dd.upgrade__skin-price svg {
     font-size: 1.8rem;
   }
 }
+.contract__info-price span {
+  color: #8484A7;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+}
 .contract__info-price svg {
   width: 3.2rem;
   height: 3.2rem;
@@ -11818,7 +11941,7 @@ dd.upgrade__skin-price svg {
   white-space: nowrap;
 }
 .nearest-top__table thead td:last-child {
-  padding-right: 0;
+  padding-right: 2.4rem;
   text-align: right;
 }
 .nearest-top__table tbody tr:first-child td {
@@ -11851,7 +11974,7 @@ dd.upgrade__skin-price svg {
     font-size: 1.2rem;
   }
 }
-.nearest-top__table tbody td:last-child span {
+.nearest-top__table tbody td:last-child > span {
   padding-right: 2.4rem;
 }
 
@@ -12113,6 +12236,11 @@ dd.upgrade__skin-price svg {
   color: #ffe500;
   white-space: nowrap;
 }
+.top-row__price > span {
+  color: #ffe500;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
 .top-row__price svg {
   width: 1.6rem;
   height: 1.6rem;
@@ -12134,11 +12262,22 @@ dd.upgrade__skin-price svg {
   .top-row__user:hover {
     color: #FFFFFF;
   }
+  .top-row__user:hover > span {
+    color: #FFFFFF;
+  }
   .top-row__user:hover .top-row__user-avatar {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
   }
+}
+.top-row__user span {
+  color: #8484A7;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .top-row__user-avatar {
@@ -12183,11 +12322,22 @@ dd.upgrade__skin-price svg {
   .top-row__case:hover {
     color: #FFFFFF;
   }
+  .top-row__case:hover > span {
+    color: #FFFFFF;
+  }
   .top-row__case:hover .top-row__case-img {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
   }
+}
+.top-row__case > span {
+  color: #8484A7;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .top-row__case-img {
@@ -12572,6 +12722,12 @@ dd.upgrade__skin-price svg {
     max-width: 100%;
   }
 }
+.modal__text > span {
+  color: #8484A7;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 128.5%;
+}
 .modal__text .yellow {
   color: #ffe500;
   font-size: inherit;
@@ -12628,6 +12784,11 @@ dd.upgrade__skin-price svg {
   -webkit-column-gap: 0.6rem;
      -moz-column-gap: 0.6rem;
           column-gap: 0.6rem;
+  color: #ffe500;
+  font-weight: 900;
+  text-shadow: 0 0 1.2rem rgba(255, 153, 0, 0.25);
+}
+.modal__btn-price > span {
   color: #ffe500;
   font-weight: 900;
   text-shadow: 0 0 1.2rem rgba(255, 153, 0, 0.25);
