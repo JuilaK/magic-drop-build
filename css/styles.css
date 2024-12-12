@@ -4865,7 +4865,7 @@ span.draw-item__start-price svg {
 .skins-list {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   grid-gap: 2.4rem 1.2rem;
   margin-top: 4.6rem;
 }
@@ -5297,6 +5297,7 @@ span.draw-item__start-price svg {
 .skin__img {
   position: relative;
   width: 80%;
+  aspect-ratio: 1;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -5710,13 +5711,13 @@ span.draw-item__start-price svg {
   position: relative;
   margin-top: -9.4rem;
   padding-top: 12.6rem;
-  height: 43.4rem;
+  min-height: 43.4rem;
 }
 @media (max-width: 1500px) {
   .case-hero {
     margin-top: 0;
     padding-top: 3.2rem;
-    height: auto;
+    min-height: auto;
   }
 }
 @media (max-width: 1024px) {
@@ -5862,6 +5863,8 @@ span.draw-item__start-price svg {
 .case-hero__img-sm {
   width: 28rem;
   height: 28rem;
+  margin-bottom: 2.4rem;
+  margin-top: 1.6rem;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: bottom;
