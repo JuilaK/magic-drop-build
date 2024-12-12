@@ -564,6 +564,10 @@ img {
   margin-top: 4rem;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .section-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8132,6 +8136,10 @@ span.win__item-currency {
   border-radius: 2.2rem;
 }
 
+.page-title + .trades {
+  margin-top: 3.2rem;
+}
+
 .trades__table {
   width: 100%;
   height: 100%;
@@ -8191,33 +8199,85 @@ span.win__item-currency {
   -webkit-box-shadow: 0.2rem 0 0 0 #45454f inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #45454f inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
 }
+.trade--common .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(69, 69, 79, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--common .trade__skin-bg {
+  background-color: #45454f;
+}
 .trade--covert .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #DD0F1B inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #DD0F1B inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
+}
+.trade--covert .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(221, 15, 27, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--covert .trade__skin-bg {
+  background-color: #DD0F1B;
 }
 .trade--milspec .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #0F23DD inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #0F23DD inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
 }
+.trade--milspec .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(15, 35, 221, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--milspec .trade__skin-bg {
+  background-color: #0F23DD;
+}
 .trade--restricted .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #510FDD inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #510FDD inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
+}
+.trade--restricted .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(81, 15, 221, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--restricted .trade__skin-bg {
+  background-color: #510FDD;
 }
 .trade--uncommon .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #00C2FF inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #00C2FF inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
 }
+.trade--uncommon .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 194, 255, 0.2) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--uncommon .trade__skin-bg {
+  background-color: #00C2FF;
+}
 .trade--rare .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #FFF500 inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #FFF500 inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
+}
+.trade--rare .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 245, 0, 0.3) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--rare .trade__skin-bg {
+  background-color: #FFF500;
+  -webkit-filter: brightness(2.2);
+          filter: brightness(2.2);
 }
 .trade--classified .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #FA00FF inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #FA00FF inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
 }
+.trade--classified .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(250, 0, 255, 0.4) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--classified .trade__skin-bg {
+  background-color: #FA00FF;
+}
 .trade--gloves .trade__skin {
   -webkit-box-shadow: 0.2rem 0 0 0 #B2FF00 inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
           box-shadow: 0.2rem 0 0 0 #B2FF00 inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.02) inset;
+}
+.trade--gloves .trade__skin-img::before {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(128, 255, 0, 0.3) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.trade--gloves .trade__skin-bg {
+  background-color: #B2FF00;
+  -webkit-filter: brightness(1.8);
+          filter: brightness(1.8);
 }
 
 .trade__skin {
@@ -8238,6 +8298,66 @@ span.win__item-currency {
   height: 4rem;
 }
 
+.trade__skin-img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.trade__skin-img::before {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: calc(100% + 1.6rem);
+  content: "";
+  display: block;
+  aspect-ratio: 1.3;
+  z-index: 0;
+}
+.trade__skin-img img {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+
+.trade__skin-img-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.trade__skin-bg {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 1.4rem);
+  height: calc(100% + 1.4rem);
+  display: block;
+  mix-blend-mode: lighten;
+  overflow: hidden;
+  z-index: 0;
+  will-change: transform;
+}
+.trade__skin-bg img {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: luminosity;
+}
+
 .trade__name {
   color: #8484A7;
   font-size: 1.4rem;
@@ -8253,6 +8373,9 @@ span.win__item-currency {
   -webkit-column-gap: 0.4rem;
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: #ffe500;
   white-space: nowrap;
 }
