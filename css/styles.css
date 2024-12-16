@@ -13827,7 +13827,7 @@ dd.upgrade__skin-price svg {
           filter: brightness(1.8);
 }
 
-.modal__skin-bg {
+.modal__skin-bg-wrap {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -13836,9 +13836,20 @@ dd.upgrade__skin-price svg {
   width: 24.8rem;
   height: 24.8rem;
   top: -1.6rem;
-  mix-blend-mode: lighten;
   overflow: hidden;
   z-index: 0;
+  mix-blend-mode: lighten;
+}
+
+.modal__skin-bg {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101%;
+  height: 101%;
 }
 .modal__skin-bg img {
   -webkit-transform: translateX(-50%);
