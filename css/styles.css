@@ -7305,6 +7305,11 @@ span.draw-item__start-price svg {
     margin-top: 0.4rem;
   }
 }
+.profile-header__user-id > span {
+  color: #8484A7;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
 
 .profile-header__copy-btn {
   background: none;
