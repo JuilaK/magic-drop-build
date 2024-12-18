@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Magic Drop | Provability Fair</title>
+    <title>Magic Drop | История пополнений</title>
     <meta name="description" content="Magic Drop - Открытие кейсов CS:GO с моментальным выводом предметов себе в Steam!">
     <meta name="keywords" content="Magic Drop, кейсы, CS GO, Steam, Стим, предметы, CS skin">
     <meta name="format-detection" content="telephone=no">
@@ -15,11 +15,11 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <meta name="apple-mobile-web-app-title" content="Magic Drop">
     <meta property="og:site_name" content="magicdrop.com">
-    <meta property="og:title" content="Magic Drop | Provability Fair">
+    <meta property="og:title" content="Magic Drop | История пополнений">
     <meta property="og:description" content="Magic Drop - Открытие кейсов CS:GO с моментальным выводом предметов себе в Steam!">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/pic.jpg">
-    <meta property="og:image:alt" content="Magic Drop | Provability Fair">
+    <meta property="og:image:alt" content="Magic Drop | История пополнений">
     <meta property="og:url" content= "https://magicdrop.com">
     <meta property="og:locale" content="ru_RU">
     <link rel="preload" href="./fonts/Gotham-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -41,10 +41,10 @@
 				<div class="header__top-btns-wrap tablet">
 					
 					
-						<a href=".#" class="btn btn--purple btn--font-black">
+						<!-- <a href=".#" class="btn btn--purple btn--font-black">
 							<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 							<span>370</span>
-						</a>
+						</a> -->
 						<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
 							<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
 							<span>Pay</span>
@@ -96,7 +96,7 @@
 								<span>Кейсы</span>
 							</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
 									<svg aria-hidden="true" class="dark-grey">
@@ -108,7 +108,7 @@
 								</span>
 								<span>Карточки</span>
 							</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
@@ -172,6 +172,19 @@
 									</svg>
 								</span>
 								<span>Топ игроки</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#provably-fair"></use>
+									</svg>
+									<svg aria-hidden="true" class="yellow">
+										<use xlink:href="images/sprite.svg#provably-fair"></use>
+									</svg>
+								</span>
+								<span>Provably fair</span>
 							</a>
 						</li>
 					</ul>
@@ -241,10 +254,10 @@
 			<div class="header__top-btns-wrap desktop-lg">
 				
 				
-					<a href=".#" class="btn btn--purple btn--font-black">
+					<!-- <a href=".#" class="btn btn--purple btn--font-black">
 						<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 						370
-					</a>
+					</a> -->
 					<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
 						<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
 						Pay
@@ -723,431 +736,141 @@
 	</div>
 </header>
     <main>
-        <div class="provably container-xs">
-            <h1 class="page-title">
-                <svg aria-hidden="true" class="grey">
-                    <use xlink:href="images/sprite.svg#provably-fair"></use>
-                </svg>
-                Шансы КЕЙСа Five-SeveN
-            </h1>
-            <p class="provably__desc">Мы используем алгоритм Provably Fair, который позволяет проверить каждый открытый кейс, апгрейд или контракт абсолютно всех пользователей сайта, гарантирует одинаковые и прозрачные шансы, сгенерированные одним и тем же набором правил. Наш девиз - честность, справедливость и прозрачность. Убедитесь в этом сами!</p>
-            <div class="provably__btn">
-                <a href=".#" class="btn">Узнать подробнее</a>
-            </div> 
-            <div class="provably__search search">
-                <label>
-                    Поиск по Roll ID
-                    <input type="text" placeholder="Поиск по Roll ID">
-                </label>
-                <button type="button" class="search__btn btn btn--icon">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#search"></use>
-                    </svg>
-                </button>
-            </div>
-            <section>
-                <div class="provably__header">
-                    <h2 class="section-title">Значения текущего периода</h2>
-                </div>
-            </section>   
-            <table class="provably-current">
-    <thead>
-        <tr>
-            <td>Параметр</td>
-            <td>Значение</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th><span>Client Seed</span></th>
-            <td><a href=".#">9d74baee85155e310a</a></td>
-        </tr>
-        <tr>
-            <th><span>Server Seed</span></th>
-            <td>
-                <span class="provably-current__seed">
-                    
-                    
-                        <span>********************************</span>
-                        <span class="provably-current__seed-info">
-                            <svg class="dark-grey">
-                                <use xlink:href="images/sprite.svg#eye-off"></use>
+        <section class="payment-history container-xs">
+    <h1 class="page-title page-title--history">
+        <svg aria-hidden="true" class="white">
+            <use xlink:href="images/sprite.svg#history"></use>
+        </svg>
+        История платежей
+    </h1>
+    <div class="payment-history__table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Метод оплаты</td>
+                    <td>Платежная система</td>
+                    <td>Дата</td>
+                    <td>Статус</td>
+                    <td class="text-right">Сумма зачисления</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="not-paid">Не оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
                             </svg>
-                            <span>Server Seed не раскрыт пользователем</span>
                         </span>
-                    
-                </span>
-            </td>
-        </tr>
-        <tr>
-            <th><span>Secret Salt</span></th>
-            <td>
-                
-                <span>**********</span>
-            </td>
-        </tr>
-        <tr>
-            <th><span>Public Hash</span></th>
-            <td><span class="provably-current__hash">6acb7b66c61bb3402a61d91156b3cb0170a265b80d517398238d485a106a1a65</span></td>
-        </tr>
-        <tr>
-            <th><span>Nonce</span></th>
-            <td><span>20</span></td>
-        </tr>
-    </tbody>
-</table>
-            <div class="provably-case">
-    <div class="provably-case__img-block">
-        <picture>
-            <source srcset="./images/cases/case-1.webp" type="image/webp">
-            <img src="./images/cases/case-1.jpg" alt="OPERATION BROKEN FANG CASE">
-        </picture>
-        <button type="button" class="btn btn--blue btn--sm">Открыть</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="paid">Оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="not-paid">Не оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="paid">Оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="not-paid">Не оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="paid">Оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="not-paid">Не оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>СБП</span></td>
+                    <td><span>Gamemoney</span></td>
+                    <td><span>12.12.2024 23:00</span></td>
+                    <td><span class="paid">Оплачен</span></td>
+                    <td>
+                        <span class="table__price">
+                            <span>100 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                            </svg>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="provably-case__info">
-        <div class="provably-case__roll">
-            <div class="provably-case__roll-info">
-                <span class="provably-case__roll-numb">9456801</span>
-                <span class="provably-case__roll-text">Сгенерированное значение Roll</span>
-            </div>
-            <div class="provably-case__roll-btns">
-                <button type="button" class="btn btn--sm">
-                    <svg aria-hidden="true" class="dark-grey">
-                        <use xlink:href="images/sprite.svg#copy-2"></use>
-                    </svg>
-                    Копировать JSON
-                </button>
-                <button type="button" class="btn btn--sm">
-                    <svg aria-hidden="true" class="dark-grey">
-                        <use xlink:href="images/sprite.svg#check-circle"></use>
-                    </svg>
-                    Проверить генерацию
-                </button>
-            </div>
-        </div>
-        <div class="provably-case__params">
-            <dl>
-                <dt>Кейс</dt>
-                <dd>OPERATION BROKEN FANG CASE</dd>
-                <dt>Стоимость</dt>
-                <dd>
-                    <span>100 000.24</span>
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                    </svg>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Временной диапазон</dt>
-                <dd>12.12.2024 22:01 - 13.12.2024 10:02</dd>
-                <dt>ID периода</dt>
-                <dd class="provably-case__params-id">8e4d0468347c37c69e30eec94a3d</dd>
-            </dl>
-        </div>
-    </div>
-</div>
-            <div class="provably-table">
-    <table class="provably-table__table">
-        <thead>
-            <tr>
-                <td>Название скина</td>
-                <td class="text-right">Стоимость</td>
-                <td>Диапазон</td>
-                <td class="text-right">Шанс</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="provably-row provably-row--covert ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/100fx100f 2x"
-                        alt="Asiimov / P90">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Asiimov / P90</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>100 000.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>1 - 5630</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>0.0563%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--classified provably-row--active">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/100fx100f 2x"
-                        alt="Melondrama / Dual Berettas">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Melondrama / Dual Berettas</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>1 100 000</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>5631 - 82067</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>0.7644%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--restricted ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/100fx100f 2x"
-                        alt="Nitro / M4A1-S">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Nitro / M4A1-S</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>1 100</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>82068 - 246889</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>1.6482%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--milspec ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/100fx100f 2x"
-                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>56 789</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>246890 - 989229</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>7.4234%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--rare ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/100fx100f 2x"
-                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>100 000.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>989229 - 1989229</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>10.4234%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--uncommon ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/100fx100f 2x"
-                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>100 000.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>1989229 - 2789229</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>16.4234%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--common ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/100fx100f 2x"
-                        alt="Пиксельный камуфляж «Розовый» / Водительские перчатки">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Пиксельный камуфляж «Розовый» / Водительские перчатки</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>100 000.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>2789229 - 3509229</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>26.4234%</span>
-        </span>
-    </td>
-</tr><tr class="provably-row provably-row--gloves ">
-    <td>
-        <span class="provably-row__skin">
-            <span class="provably-row__skin-img">
-                <span class="provably-row__skin-img-wrap">
-                    <span class="provably-row__skin-bg">
-                        <img src="./images/skins/bg-static.jpg" alt="" aria-hidden="true">
-                    </span>
-                    <img 
-                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/50fx50f" 
-                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/100fx100f 2x"
-                        alt="Tiger Strike / Specialist 100000">
-                </span>
-            </span>
-            <span class="provably-row__skin-name">Tiger Strike / Specialist 100000</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__price">
-            <span>100 000.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__range">
-            <span>3509229 - 4509229</span>
-        </span>
-    </td>
-    <td>
-        <span class="provably-row__chance">
-            <span>30.4234%</span>
-        </span>
-    </td>
-</tr>
-        </tbody>
-    </table>
-</div>
-<button type="button" class="provably-table__btn btn">
-    <svg aria-hidden="true" class="dark-grey">
-        <use xlink:href="images/sprite.svg#chevron-down-circle"></use>
-    </svg>
-    Загрузить еще
-</button>
-        </div>
+</section>
     </main>
     <footer class="footer container">
     <div class="footer__logo-list">
