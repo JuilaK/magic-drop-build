@@ -213,7 +213,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     })
 
-    supportBtnClose.addEventListener('click', () => {
+    !!supportBtnClose && supportBtnClose.addEventListener('click', () => {
         supportBody.classList.remove('support__body--open');
     });
     // END Display/hide support
@@ -250,7 +250,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const observer = new MutationObserver(() => {
         scrollToBottom();
     });
-    observer.observe(supportMessages, { childList: true, subtree: true });
+    !!supportMessages && observer.observe(supportMessages, { childList: true, subtree: true });
     // END Chat scroll
 
     // Upgrade
