@@ -203,13 +203,15 @@ window.addEventListener('DOMContentLoaded', () => {
     // END Tabs
 
     // Display/hide support
-    const supportBtn = document.querySelector('.js-support-btn');
+    const supportBtns = document.querySelectorAll('.js-support-btn');
     const supportBody = document.querySelector('.js-support-body');
     const supportBtnClose = document.querySelector('.js-support-close');
 
-    supportBtn.addEventListener('click', () => {
-        supportBody.classList.toggle('support__body--open');
-    });
+    supportBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            supportBody.classList.toggle('support__body--open');
+        });
+    })
 
     supportBtnClose.addEventListener('click', () => {
         supportBody.classList.remove('support__body--open');
