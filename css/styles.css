@@ -13095,14 +13095,57 @@ dd.upgrade__skin-price svg {
 
 .provably-table {
   margin-top: 1.6rem;
+}
+.provably-table + .provably-table {
+  margin-top: 4rem;
+}
+
+.provably-table__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.8rem 1.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 1.2rem 2.4rem 1.6rem;
+  border-radius: 1.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#111120)), #121221;
+  background: linear-gradient(180deg, #161622 0%, #111120 100%), #121221;
+  -webkit-box-shadow: 0 0.2rem 0 0 #181825 inset;
+          box-shadow: 0 0.2rem 0 0 #181825 inset;
+}
+.provably-table__header dt, .provably-table__header dd {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 128.6%;
+}
+.provably-table__header dt {
+  color: #323243;
+}
+.provably-table__header dd {
+  margin-left: 0;
+}
+
+.provably-table__header-id {
+  word-break: break-all;
+}
+
+.provably-table__wrap {
   overflow-x: auto;
 }
-.provably-table::-webkit-scrollbar {
+.provably-table__wrap::-webkit-scrollbar {
   height: 0.2rem;
   background-color: rgba(255, 255, 255, 0.04);
   border-radius: 2.2rem;
 }
-.provably-table::-webkit-scrollbar-thumb {
+.provably-table__wrap::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.24);
   border-radius: 2.2rem;
 }
@@ -13115,15 +13158,11 @@ dd.upgrade__skin-price svg {
 }
 .provably-table__table thead td {
   padding: 1.8rem 2.4rem 1.8rem 0;
-  border-bottom: thin solid #10101F;
   color: #8484A7;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 150%;
   white-space: nowrap;
-}
-.provably-table__table tbody tr:first-child td {
-  padding-top: 1.8rem;
 }
 .provably-table__table tbody td {
   padding: 0.4rem 0;
