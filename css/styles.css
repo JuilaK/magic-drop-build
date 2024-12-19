@@ -8249,11 +8249,14 @@ span.draw-item__start-price svg {
   inset: 0;
   content: "";
   display: block;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(22, 22, 34, 0)), to(rgba(22, 22, 34, 0.9)));
-  background: linear-gradient(180deg, rgba(22, 22, 34, 0) 60%, rgba(22, 22, 34, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(22, 22, 34, 0)), to(rgba(22, 22, 34, 0.9)));
+  background: linear-gradient(180deg, rgba(22, 22, 34, 0) 80%, rgba(22, 22, 34, 0.9) 100%);
   border-radius: 0.8rem;
   pointer-events: none;
   z-index: 2;
+}
+.skin-table--overlay .skin-table__wrap {
+  padding-bottom: 2.4rem;
 }
 .skin-table table {
   height: 100%;
@@ -8311,7 +8314,7 @@ span.draw-item__start-price svg {
 }
 
 .skin-table__wrap {
-  max-height: 20rem;
+  max-height: 34rem;
   overflow: auto;
 }
 .skin-table__wrap::-webkit-scrollbar {
@@ -15140,6 +15143,15 @@ dd.upgrade__skin-price svg {
   position: absolute;
   top: -4rem;
   right: 0;
+}
+.modal--sell-all .modal__btns, .modal--sell .modal__btns {
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+}
+.modal--sell-all .modal__btns .btn, .modal--sell .modal__btns .btn {
+  min-width: 0;
+  padding: 0 0.8rem;
 }
 .modal--contract-skin .modal__text {
   margin-top: 3.2rem;
