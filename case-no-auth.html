@@ -3518,5 +3518,123 @@
         <span>An error occurred, please try again.</span>
     </div>
 </div>
+    <div class="support">
+    <button type="button" class="support__btn js-support-btn">
+        <picture>  
+            <source 
+                srcset="./images/support-ru.webp ./images/support-ru@2x.webp 2x"
+                type="image/webp">
+            <img 
+                src="./images/support-ru.png" 
+                srcset="./images/support-ru@2x.png 2x" 
+                alt="Нужна помощь?">
+        </picture>
+        Нужна помощь?
+    </button>
+    <div class="support__body js-support-body">
+        <div class="support__header js-support-header">
+            <div class="support__tabs">
+                <input 
+                    type="radio" 
+                    name="support" 
+                    id="support-questions"
+                    class="js-tab"
+                    checked>
+                <label for="support-questions">
+                    <svg aria-hidden="true" class="grey">
+                        <use xlink:href="images/sprite.svg#question-2"></use>
+                    </svg>
+                    Вопросы
+                </label>
+                <input 
+                    type="radio" 
+                    name="support" 
+                    id="support-chat"
+                    class="js-tab">
+                <label for="support-chat">
+                    <svg aria-hidden="true" class="grey">
+                        <use xlink:href="images/sprite.svg#chat"></use>
+                    </svg>
+                    Чат
+                </label>
+            </div>
+            <div>
+                <span class="support__subtitle">
+                    <span>Technical</span>
+                    <span>Operator</span>
+                </span>
+                <span class="support__title">
+                    <span>Support</span>
+                    <span>Assistance</span>
+                </span>
+            </div>
+            <button type="button" class="support__close-btn js-support-close">
+                Закрыть окно
+                <span class="support__close-btn-icon"></span>
+            </button>
+        </div>
+        <div class="support__content">
+            <div data-tab="support-questions">
+                
+                    <div class="support__question-no-auth">
+                        <div class="support__question-img">
+                            <picture>  
+                                <source 
+                                    srcset="./images/img-question.webp ./images/img-question@2x.webp 2x"
+                                    type="image/webp">
+                                <img 
+                                    src="./images/img-question.png" 
+                                    srcset="./images/img-question@2x.png 2x" 
+                                    alt=""
+                                    aria-hidden="true">
+                            </picture>
+                        </div>
+                        <span class="support__question-title">Login to your account</span>
+                        <p class="support__question-desc">To ask a question or find an answer, you must log in to your Steam account.</p>
+                        <button type="button" class="support__question-btn btn btn--lg btn--upper">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#steam-yellow"></use>
+                            </svg>
+                            Steam
+                        </button>
+                    </div>
+                
+                
+            </div>
+            <div class="support__chat" data-tab="support-chat">
+                <div class="support__messages js-support-messages">
+                    <div class="support__message">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message support__message--right">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message support__message--right">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                </div>
+                <div class="support__send">
+                    <textarea class="support__send-textarea" placeholder="Enter your message..."></textarea>
+                    <button type="button" class="support__send-btn btn btn--icon btn--lg">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#telegram-yellow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -3600,5 +3600,148 @@
         <span>An error occurred, please try again.</span>
     </div>
 </div>
+    <div class="support">
+    <button type="button" class="support__btn js-support-btn">
+        <picture>  
+            <source 
+                srcset="./images/support-ru.webp ./images/support-ru@2x.webp 2x"
+                type="image/webp">
+            <img 
+                src="./images/support-ru.png" 
+                srcset="./images/support-ru@2x.png 2x" 
+                alt="Нужна помощь?">
+        </picture>
+        Нужна помощь?
+    </button>
+    <div class="support__body js-support-body">
+        <div class="support__header js-support-header">
+            <div class="support__tabs">
+                <input 
+                    type="radio" 
+                    name="support" 
+                    id="support-questions"
+                    class="js-tab"
+                    checked>
+                <label for="support-questions">
+                    <svg aria-hidden="true" class="grey">
+                        <use xlink:href="images/sprite.svg#question-2"></use>
+                    </svg>
+                    Вопросы
+                </label>
+                <input 
+                    type="radio" 
+                    name="support" 
+                    id="support-chat"
+                    class="js-tab">
+                <label for="support-chat">
+                    <svg aria-hidden="true" class="grey">
+                        <use xlink:href="images/sprite.svg#chat"></use>
+                    </svg>
+                    Чат
+                </label>
+            </div>
+            <div>
+                <span class="support__subtitle">
+                    <span>Technical</span>
+                    <span>Operator</span>
+                </span>
+                <span class="support__title">
+                    <span>Support</span>
+                    <span>Assistance</span>
+                </span>
+            </div>
+            <button type="button" class="support__close-btn js-support-close">
+                Закрыть окно
+                <span class="support__close-btn-icon"></span>
+            </button>
+        </div>
+        <div class="support__content">
+            <div data-tab="support-questions">
+                
+                
+                    <div class="support__accordion">
+                        <div class="support__accordion-item">
+                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
+                                <span class="support__accordion-numb">01.</span>
+                                <span class="support__accordion-title">Are there any age restrictions?</span>
+                            </button>
+                            <div class="support__accordion-content">
+                                <p>- Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.</p>
+                            </div>
+                        </div>
+                        <div class="support__accordion-item">
+                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
+                                <span class="support__accordion-numb">02.</span>
+                                <span class="support__accordion-title">Can I join as a spectator?</span>
+                            </button>
+                            <div class="support__accordion-content">
+                                <p>- Primarily CS:GO, but more games may be added.</p>
+                            </div>
+                        </div>
+                        <div class="support__accordion-item">
+                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
+                                <span class="support__accordion-numb">03.</span>
+                                <span class="support__accordion-title">What games are included in the events?</span>
+                            </button>
+                            <div class="support__accordion-content">
+                                <p>- Primarily CS:GO, but more games may be added.</p>
+                            </div>
+                        </div>
+                        <div class="support__accordion-item">
+                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
+                                <span class="support__accordion-numb">04.</span>
+                                <span class="support__accordion-title">Can I cancel my registration?</span>
+                            </button>
+                            <div class="support__accordion-content">
+                                <p>- Primarily CS:GO, but more games may be added.</p>
+                            </div>
+                        </div>
+                        <div class="support__accordion-item">
+                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
+                                <span class="support__accordion-numb">05.</span>
+                                <span class="support__accordion-title">Do you organize offline or online tournaments?</span>
+                            </button>
+                            <div class="support__accordion-content">
+                                <p>- Primarily CS:GO, but more games may be added.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="support__chat" data-tab="support-chat">
+                <div class="support__messages js-support-messages">
+                    <div class="support__message">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message support__message--right">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message support__message--right">
+                        <span class="support__message-author">Martin (Moderator)</span>
+                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                </div>
+                <div class="support__send">
+                    <textarea class="support__send-textarea" placeholder="Enter your message..."></textarea>
+                    <button type="button" class="support__send-btn btn btn--icon btn--lg">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#telegram-yellow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

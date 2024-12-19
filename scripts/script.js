@@ -192,9 +192,64 @@ window.addEventListener('DOMContentLoaded', () => {
                 currentChoiceBlock.classList.add('open');
             }
 
+            if (e.target.name === "support") {
+                const supportHeader = document.querySelector('.js-support-header');
+                supportHeader.classList.toggle('support__header--chat');
+                scrollToBottom();
+            }
+
         })
     })
     // END Tabs
+
+    // Display/hide support
+    const supportBtn = document.querySelector('.js-support-btn');
+    const supportBody = document.querySelector('.js-support-body');
+    const supportBtnClose = document.querySelector('.js-support-close');
+
+    supportBtn.addEventListener('click', () => {
+        supportBody.classList.toggle('support__body--open');
+    });
+
+    supportBtnClose.addEventListener('click', () => {
+        supportBody.classList.remove('support__body--open');
+    });
+    // END Display/hide support
+
+    // Accordions
+    const accordionBtns = document.querySelectorAll('.js-accordion-btn');
+
+    accordionBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            const content = btn.nextElementSibling;
+
+            if (!expanded) {
+                accordionBtns.forEach(accordion => {
+                    accordion.setAttribute('aria-expanded', false);
+                    accordion.nextElementSibling.style.maxHeight = '0';
+                })
+                btn.setAttribute('aria-expanded', !expanded);
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = '0';
+            }
+        });
+    });
+    // END Accordions
+
+    // Chat scroll
+    const supportMessages = document.querySelector('.js-support-messages');
+
+    function scrollToBottom() {
+        supportMessages.scrollTop = supportMessages.scrollHeight;
+    }
+
+    const observer = new MutationObserver(() => {
+        scrollToBottom();
+    });
+    observer.observe(supportMessages, { childList: true, subtree: true });
+    // END Chat scroll
 
     // Upgrade
     const upgradeBlock = document.querySelector('.js-upgrade');
