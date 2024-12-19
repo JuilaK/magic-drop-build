@@ -14841,6 +14841,11 @@ dd.upgrade__skin-price svg {
   border: none;
   cursor: pointer;
 }
+@media (any-hover: hover) {
+  .support__accordion-header:hover .support__accordion-title {
+    color: #ffe500;
+  }
+}
 .support__accordion-header[aria-expanded=true] .support__accordion-title {
   color: #ffe500;
 }
