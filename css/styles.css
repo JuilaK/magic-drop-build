@@ -2899,7 +2899,7 @@ textarea {
     padding-right: 1.6rem;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1280px) {
   .header__promo--with-input .header__promo-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3116,6 +3116,9 @@ textarea {
 }
 @media (max-width: 768px) {
   .header__promo-controls {
+    -webkit-column-gap: 0.8rem;
+       -moz-column-gap: 0.8rem;
+            column-gap: 0.8rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -3158,6 +3161,23 @@ textarea {
   }
 }
 
+.header__promo-code {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@media (max-width: 1280px) {
+  .header__promo-code {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+
 .promo-code {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3165,7 +3185,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 @media (max-width: 480px) {
   .promo-code {
@@ -4779,6 +4798,20 @@ textarea {
 .draw-item--classified .draw-item__progress-track {
   background: -webkit-gradient(linear, left top, right top, from(#FA00FF), color-stop(96.53%, #FA00FF), color-stop(98.7%, #F692FF), to(#FFF));
   background: linear-gradient(90deg, #FA00FF 0%, #FA00FF 96.53%, #F692FF 98.7%, #FFF 100%);
+}
+.draw-item--gloves .draw-item__img-wrap {
+  background: radial-gradient(65% 60% at 50% -35%, rgba(178, 255, 0, 0.5) 0%, rgba(26, 26, 38, 0) 100%);
+}
+.draw-item--gloves .draw-item__img-wrap::before {
+  background-color: #B2FF00;
+}
+.draw-item--gloves .draw-item__title-color {
+  border-color: #B2FF00;
+  color: #B2FF00;
+}
+.draw-item--gloves .draw-item__progress-track {
+  background: -webkit-gradient(linear, left top, right top, from(#B2FF00), color-stop(96.53%, #B2FF00), color-stop(98.7%, #dbff87), to(#FFF));
+  background: linear-gradient(90deg, #B2FF00 0%, #B2FF00 96.53%, #dbff87 98.7%, #FFF 100%);
 }
 
 .draw-item__content {
