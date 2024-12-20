@@ -5171,8 +5171,25 @@ span.draw-item__start-price svg {
   grid-gap: 2.4rem 1.2rem;
   margin-top: 4.6rem;
 }
+@media (max-width: 480px) {
+  .skins-list {
+    -ms-grid-columns: 1fr 1.2rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .skins-list--lg-card {
   grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+}
+@media (max-width: 768px) {
+  .skins-list--lg-card {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .skins-list--lg-card {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @-webkit-keyframes hideHoverImg {
@@ -5235,6 +5252,7 @@ span.draw-item__start-price svg {
 .skin {
   position: relative;
   padding: 0.8rem 2rem 1.6rem;
+  min-width: 0;
   border-radius: 1.2rem;
   cursor: pointer;
   text-align: center;
@@ -7818,8 +7836,20 @@ span.draw-item__start-price svg {
   grid-gap: 1.2rem 1rem;
   margin-top: 2.4rem;
 }
+@media (max-width: 480px) {
+  .profile__inventory-list {
+    grid-template-columns: repeat(auto-fill, minmax(13.6rem, 1fr));
+  }
+}
 .profile__inventory-list--best {
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1024px) {
+  .profile__inventory-list--best {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .profile__provably-btn {
@@ -7843,6 +7873,11 @@ span.draw-item__start-price svg {
   grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
   grid-gap: 2rem;
   margin-top: 2.4rem;
+}
+@media (max-width: 1024px) {
+  .profile__contracts-list {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  }
 }
 
 .profile__more-btn {
@@ -8102,6 +8137,7 @@ span.draw-item__start-price svg {
 }
 .contract-item__skin-price span {
   font-size: 1.4rem;
+  white-space: nowrap;
 }
 
 .contract-item__skin-list {
@@ -11748,6 +11784,12 @@ dd.upgrade__skin-price svg {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15.6rem, 1fr));
   grid-gap: 2.4rem;
+}
+@media (max-width: 480px) {
+  .contract-inventory__list {
+    -ms-grid-columns: 1fr 2.4rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .top-players {
