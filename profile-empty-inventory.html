@@ -920,46 +920,48 @@
     </li>
 </ul>
         <div class="profile__content">
-            <div class="profile__content-controls">
-                <label class="checkbox">
-                    <input type="checkbox" checked>
-                    <span>Доступно для продажи</span>
-                </label>
-                <button type="button" class="btn btn--bg-grey btn--upper" data-modal-trigger="sell-all">
-                    Продать все
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="profile__inventory">
-                
-                <section>
-                    <h2 class="profile__title">
-                        <svg aria-hidden="true" class="dark-grey">
-                            <use xlink:href="images/sprite.svg#inventory"></use>
+            <div class="profile__content--inventory">
+                <div class="profile__content-controls">
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span>Доступно для продажи</span>
+                    </label>
+                    <button type="button" class="btn btn--bg-grey btn--upper" data-modal-trigger="sell-all">
+                        Продать все
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
                         </svg>
-                        Inventory
-                    </h2>
+                    </button>
+                </div>
+                <div class="profile__inventory">
                     
-                        <div class="profile__empty">
-                            <picture>
-                                <source 
-                                    srcset="./images/img-empty.webp, ./images/img-empty@2x.webp 2x" 
-                                    type="image/webp">
-                                <img 
-                                    src="./images/img-empty.jpg" 
-                                    srcset="./images/img-empty@2x.jpg 2x" 
-                                    alt="" 
-                                    aria-hidden="true"
-                                    class="profile__empty-img">
-                            </picture>
-                            <h3 class="profile__empty-title">Инвентарь пуст</h3>
-                            <p class="profile__empty-desc">Открывайте кейсы, зарабатывайте скины в режимах или пополняйте баланс с помощью аккаунта Steam.</p>
-                        </div>
-                    
-                    
-                </section>
+                    <section>
+                        <h2 class="profile__title">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#inventory"></use>
+                            </svg>
+                            Inventory
+                        </h2>
+                        
+                            <div class="profile__empty">
+                                <picture>
+                                    <source 
+                                        srcset="./images/img-empty.webp, ./images/img-empty@2x.webp 2x" 
+                                        type="image/webp">
+                                    <img 
+                                        src="./images/img-empty.jpg" 
+                                        srcset="./images/img-empty@2x.jpg 2x" 
+                                        alt="" 
+                                        aria-hidden="true"
+                                        class="profile__empty-img">
+                                </picture>
+                                <h3 class="profile__empty-title">Инвентарь пуст</h3>
+                                <p class="profile__empty-desc">Открывайте кейсы, зарабатывайте скины в режимах или пополняйте баланс с помощью аккаунта Steam.</p>
+                            </div>
+                        
+                        
+                    </section>
+                </div>
             </div>
         </div>
     </div>

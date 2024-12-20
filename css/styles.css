@@ -7802,10 +7802,12 @@ span.draw-item__start-price svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   float: right;
+  margin-top: -1.2rem;
 }
 @media (max-width: 1024px) {
   .profile__content-controls {
     float: none;
+    margin-top: 0;
   }
 }
 
