@@ -577,6 +577,10 @@ img {
   white-space: nowrap;
 }
 
+.mt-32 {
+  margin-top: 3.2rem;
+}
+
 .mt-40 {
   margin-top: 4rem;
 }
@@ -951,6 +955,9 @@ img {
   height: 1.6rem;
   -ms-flex-preferred-size: 1.6rem;
       flex-basis: 1.6rem;
+}
+.btn--sm.btn--icon {
+  width: 3rem;
 }
 .btn--xs {
   -webkit-column-gap: 0.2rem;
@@ -12759,6 +12766,15 @@ dd.upgrade__skin-price svg {
 .provably-current--sm tbody td > span,
 .provably-current--sm tbody td > a {
   padding: 1.2rem 1.6rem 1.2rem 0;
+}
+
+.provably-current__client {
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+}
+.provably-current__client a {
+  word-break: break-all;
 }
 
 .provably-current__seed {

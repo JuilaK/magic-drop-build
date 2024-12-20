@@ -786,7 +786,17 @@
     <tbody>
         <tr>
             <th><span>Client Seed</span></th>
-            <td><a href=".#">9d74baee85155e310a</a></td>
+            <td>
+                <span class="provably-current__client">
+                    <a href=".#">9d74baee85155e310a</a>
+                    <button type="button" class="btn btn--sm btn--icon" data-modal-trigger="edit-client-seed">
+                        <svg aria-hidden="true" class="grey">
+                            <use xlink:href="images/sprite.svg#edit"></use>
+                        </svg>
+                        Редактировать
+                    </button>
+                </span>
+            </td>
         </tr>
         <tr>
             <th><span>Server Seed</span></th>
@@ -961,6 +971,34 @@
                     </tbody>
                 </table>
                 <div class="modal__btns">
+                    <button type="button" class="btn js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#close-circle"></use>
+                        </svg>
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal js-modal" data-modal-name="edit-client-seed">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Введите новый Client Seed</h2>
+                <input type="text" placeholder="Client seed" class="mt-32">
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--bg-blue js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#file-check-blue"></use>
+                        </svg>
+                        Сохранить
+                    </button>
                     <button type="button" class="btn js-modal-close">
                         <svg aria-hidden="true" class="dark-grey">
                             <use xlink:href="images/sprite.svg#close-circle"></use>
