@@ -4895,6 +4895,12 @@ textarea {
 }
 
 .draw-item__count-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -4908,7 +4914,9 @@ textarea {
 }
 @media (max-width: 768px) {
   .draw-item__count-price {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (max-width: 600px) {
@@ -4925,6 +4933,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 0.6rem;
+     -moz-column-gap: 0.6rem;
+          column-gap: 0.6rem;
   color: #8484A7;
   line-height: 113%;
   white-space: nowrap;
@@ -4934,10 +4945,6 @@ textarea {
   color: #8484A7;
   line-height: 113%;
   white-space: nowrap;
-}
-.draw-item__user svg,
-.draw-item__price svg {
-  margin-right: 0.6rem;
 }
 
 .draw-item__price {
@@ -13992,7 +13999,9 @@ dd.upgrade__skin-price svg {
 
 @media (max-width: 1500px) {
   .raffle__item .draw-item__count-price {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (max-width: 1280px) {
@@ -14002,7 +14011,9 @@ dd.upgrade__skin-price svg {
 }
 @media (max-width: 1024px) {
   .raffle__item .draw-item__count-price {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (max-width: 768px) {
