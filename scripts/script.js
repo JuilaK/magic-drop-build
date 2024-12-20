@@ -240,6 +240,22 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     // END Accordions
 
+    // Display/hide provably more text
+    const provablyMoreBtn = document.querySelector('.js-provably-more-btn');
+    const provablyMore = document.querySelector('.js-provably-more');
+    const provablyMoreText = document.querySelector('.js-provably-more-text');
+
+    !!provablyMoreBtn && provablyMoreBtn.addEventListener('click', () => {
+        if (provablyMore.style.maxHeight === '' || provablyMore.style.maxHeight === '0px') {
+            provablyMore.style.maxHeight = provablyMoreText.scrollHeight + 'px';
+            provablyMoreBtn.textContent = "Скрыть подробности";
+        } else {
+            provablyMore.style.maxHeight = '0';
+            provablyMoreBtn.textContent = "Узнать подробнее";
+        }
+    });
+    // END Display/hide provably more text
+
     // Chat scroll
     const supportMessages = document.querySelector('.js-support-messages');
 

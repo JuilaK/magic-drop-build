@@ -12686,6 +12686,25 @@ dd.upgrade__skin-price svg {
   text-align: center;
 }
 
+.provably__more-desc {
+  margin: 0 auto;
+  max-height: 0;
+  max-width: 66.4rem;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.provably__more-desc-wrap {
+  padding-top: 2.4rem;
+}
+.provably__more-desc-wrap p {
+  margin-bottom: 0.8rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  line-height: 128.6%;
+}
+
 .provably__btn {
   margin-top: 2.4rem;
   text-align: center;
