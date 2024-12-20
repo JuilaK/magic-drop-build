@@ -6088,8 +6088,11 @@ span.draw-item__start-price svg {
     top: 0;
   }
 }
-.case-hero--roulette-1 .win {
-  bottom: -2.4rem;
+@media (max-width: 480px) {
+  .case-hero--roulette-1 .win .win__item {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
 }
 
 .case-hero__img-wrap {
@@ -6916,13 +6919,8 @@ span.draw-item__start-price svg {
 
 .roulette-item__title {
   margin-top: -0.4rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 112.5%;
-}
-@media (max-width: 768px) {
-  .roulette-item__title {
-    font-size: 1.4rem;
-  }
 }
 
 .roulette-item__subtitle {
@@ -6953,8 +6951,25 @@ span.draw-item__start-price svg {
 
 .case-hero__roulettes-win {
   position: absolute;
-  inset: 0 0 -5.8rem 0;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 9.4rem;
+  border-radius: 2.4rem;
   z-index: 2;
+}
+@media (max-width: 1500px) {
+  .case-hero__roulettes-win {
+    margin-top: 2.4rem;
+  }
 }
 
 .win {
@@ -6973,6 +6988,9 @@ span.draw-item__start-price svg {
 .win__content {
   width: 100%;
   height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 2.4rem;
   border-radius: 2.4rem;
   border: 0.2rem solid rgba(40, 40, 60, 0.34);
@@ -6981,6 +6999,11 @@ span.draw-item__start-price svg {
           backdrop-filter: blur(0.6rem);
   overflow-y: auto;
   overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .win__content {
+    padding: 2.4rem 1.6rem;
+  }
 }
 .win__content::-webkit-scrollbar {
   width: 0.2rem;
@@ -7034,7 +7057,7 @@ span.draw-item__start-price svg {
 }
 @media (max-width: 768px) {
   .win__list {
-    gap: 1.6rem;
+    gap: 0.8rem;
   }
 }
 
@@ -7050,11 +7073,24 @@ span.draw-item__start-price svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 22.8rem;
-  padding: 0.8rem 1.6rem 2.4rem;
+  width: 33rem;
+  padding: 0 1.6rem 2.4rem;
   background-color: #1a1a26;
   border-radius: 1.6rem;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .win__item {
+    width: 21rem;
+  }
+}
+@media (max-width: 480px) {
+  .win__item {
+    width: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 0.8rem);
+            flex: 0 0 calc(50% - 0.8rem);
+  }
 }
 .win__item::before {
   -webkit-transform: translateX(-50%);
@@ -7068,6 +7104,11 @@ span.draw-item__start-price svg {
   top: -2.4rem;
   display: block;
   z-index: 0;
+}
+@media (max-width: 480px) {
+  .win__item::before {
+    width: 24rem;
+  }
 }
 .win__item--common .win__item-bg {
   background-color: #45454f;
@@ -7140,6 +7181,12 @@ span.draw-item__start-price svg {
   z-index: 0;
   will-change: transform;
 }
+@media (max-width: 480px) {
+  .win__item-bg {
+    width: 100%;
+    height: 100%;
+  }
+}
 .win__item-bg img {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -7155,11 +7202,23 @@ span.draw-item__start-price svg {
 }
 
 .win__item-img {
-  width: 15rem;
-  height: 15rem;
+  width: 30rem;
+  height: 30rem;
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .win__item-img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 480px) {
+  .win__item-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .win__item-info {
@@ -7178,9 +7237,15 @@ span.draw-item__start-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 0.4rem;
-     -moz-column-gap: 0.4rem;
-          column-gap: 0.4rem;
+  gap: 0.4rem;
+}
+@media (max-width: 480px) {
+  .win__item-buy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .win__item-price {
@@ -7250,6 +7315,7 @@ span.draw-item__start-price svg {
       flex-wrap: wrap;
   padding-bottom: 2.4rem;
   padding-top: 2.4rem;
+  border-radius: 2.4rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#0C0C1B), color-stop(90%, #0C0C1B), to(rgba(12, 12, 27, 0)));
   background: linear-gradient(180deg, #0C0C1B 0%, #0C0C1B 90%, rgba(12, 12, 27, 0) 100%);
 }
