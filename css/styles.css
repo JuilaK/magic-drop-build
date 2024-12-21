@@ -7929,15 +7929,6 @@ span.draw-item__start-price svg {
   padding-right: 1.2rem;
 }
 
-.profile__contracts {
-  margin-top: 1.2rem;
-}
-@media (max-width: 1024px) {
-  .profile__contracts {
-    margin-top: 2.4rem;
-  }
-}
-
 .profile__contracts-list {
   display: -ms-grid;
   display: grid;
