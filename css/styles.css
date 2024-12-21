@@ -15349,6 +15349,12 @@ dd.upgrade__skin-price svg {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
+@media (max-width: 480px) {
+  .modal--contract-skin .modal__btns .modal__sell-btn {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
 .modal--change-skin .modal__wrap {
   width: 60rem;
 }
