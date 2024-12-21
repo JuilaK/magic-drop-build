@@ -2440,6 +2440,7 @@ textarea {
 .header__profile-name {
   display: block;
   width: 10rem;
+  margin-left: auto;
   color: #8484A7;
   font-size: 1.4rem;
   font-weight: 700;
@@ -2447,6 +2448,7 @@ textarea {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: right;
 }
 
 .header__profile-money {
