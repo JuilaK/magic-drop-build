@@ -11826,6 +11826,11 @@ dd.upgrade__skin-price svg {
      -moz-column-gap: 0.8rem;
           column-gap: 0.8rem;
 }
+.contract__info-question svg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.4rem;
+          flex: 0 0 2.4rem;
+}
 .contract__info-question .contract__info-desc {
   line-height: 100%;
 }
