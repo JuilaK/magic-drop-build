@@ -7094,16 +7094,21 @@ span.draw-item__start-price svg {
           transform: translateX(-50%);
   position: absolute;
   left: 50%;
-  width: 30.8rem;
-  height: 100%;
   content: "";
-  top: -2.4rem;
+  top: 0;
   display: block;
+  width: 32rem;
+  aspect-ratio: 1;
   z-index: 0;
+}
+@media (max-width: 768px) {
+  .win__item::before {
+    width: 24rem;
+  }
 }
 @media (max-width: 480px) {
   .win__item::before {
-    width: 24rem;
+    width: 100%;
   }
 }
 .win__item--common .win__item-bg {
