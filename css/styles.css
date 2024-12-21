@@ -6417,6 +6417,13 @@ span.draw-item__start-price svg {
   line-height: 100%;
   text-transform: uppercase;
 }
+.case-hero__btn > span {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+}
 .case-hero__btn.btn--bg-red .case-hero__btn-text > span {
   color: #E92C36;
 }
