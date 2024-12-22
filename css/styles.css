@@ -710,11 +710,11 @@ img {
       -ms-flex: 0 0 3.2rem;
           flex: 0 0 3.2rem;
 }
-.page-title--provably, .page-title--history, .page-title--raffle {
+.page-title--provably, .page-title--history, .page-title--raffle, .page-title--text {
   color: #FFFFFF;
   font-size: 1.6rem;
 }
-.page-title--provably svg, .page-title--provably img, .page-title--history svg, .page-title--history img, .page-title--raffle svg, .page-title--raffle img {
+.page-title--provably svg, .page-title--provably img, .page-title--history svg, .page-title--history img, .page-title--raffle svg, .page-title--raffle img, .page-title--text svg, .page-title--text img {
   width: 2.4rem;
   height: 2.4rem;
   -webkit-box-flex: 0;
@@ -15146,6 +15146,191 @@ dd.upgrade__skin-price svg {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 128.6%;
+}
+
+.text-page {
+  margin: 0 auto;
+  padding: 4rem 3.2rem 0;
+  max-width: 76.4rem;
+}
+@media (max-width: 768px) {
+  .text-page {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
+.text-page__note {
+  margin-top: 3.2rem;
+  padding: 3rem 3.2rem;
+  border-radius: 1.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#111120)), #121221;
+  background: linear-gradient(180deg, #161622 0%, #111120 100%), #121221;
+  -webkit-box-shadow: 0 0.2rem 0 0 #181825 inset;
+          box-shadow: 0 0.2rem 0 0 #181825 inset;
+}
+@media (max-width: 768px) {
+  .text-page__note {
+    padding: 2rem 2.4rem;
+  }
+}
+.text-page__note h2 {
+  color: #ffe500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .text-page__note h2 {
+    font-size: 1.2rem;
+  }
+}
+.text-page__note p {
+  margin-top: 0.8rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+@media (max-width: 768px) {
+  .text-page__note p {
+    font-size: 1.2rem;
+  }
+}
+
+.text-page__body {
+  margin-top: 3.2rem;
+}
+.text-page__body p {
+  margin-top: 1.6rem;
+  color: #8484A7;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .text-page__body p {
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+  }
+}
+.text-page__body ol {
+  padding-left: 0;
+  counter-reset: item;
+  list-style: none;
+}
+.text-page__body ol li {
+  margin-top: 1.6rem;
+  color: #8484A7;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .text-page__body ol li {
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+  }
+}
+.text-page__body ol li::before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  float: left;
+  margin-right: 0.8rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 150%;
+}
+.text-page__body ol ol {
+  padding-left: 2.4rem;
+}
+@media (max-width: 768px) {
+  .text-page__body ol ol {
+    padding-left: 1.6rem;
+  }
+}
+.text-page__body ol h3 {
+  margin-top: 2.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .text-page__body ol h3 {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+  }
+}
+.text-page__body ol p {
+  margin-top: 0.8rem;
+}
+
+.text-page__data {
+  color: #494968;
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .text-page__data {
+    font-size: 1.2rem;
+  }
+}
+
+.text-page__table {
+  table-layout: fixed;
+}
+@media (max-width: 480px) {
+  .text-page__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .text-page__table tr th {
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .text-page__table tr td {
+    padding-bottom: 0.8rem;
+    padding-top: 0;
+  }
+}
+.text-page__table th {
+  width: 24rem;
+}
+@media (max-width: 768px) {
+  .text-page__table th {
+    width: 18rem;
+  }
+}
+@media (max-width: 480px) {
+  .text-page__table th {
+    width: auto;
+  }
+}
+.text-page__table th span {
+  padding: 1.2rem 2rem 1.2rem 0;
+}
+@media (max-width: 480px) {
+  .text-page__table th span {
+    border-top-left-radius: 0.8rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0.8rem;
+  }
+}
+.text-page__table td span {
+  padding: 1.2rem 2rem 1.2rem 0;
+  line-height: 140%;
+  word-break: break-word;
+}
+@media (max-width: 480px) {
+  .text-page__table td span {
+    padding-left: 2rem;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    border-top-right-radius: 0;
+  }
 }
 
 .notifications {
