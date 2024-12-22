@@ -11136,6 +11136,9 @@ dd.upgrade__skin-price svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1.6rem;
   margin-top: 3.2rem;
 }
@@ -11145,6 +11148,9 @@ dd.upgrade__skin-price svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
 }
 
@@ -11155,7 +11161,6 @@ dd.upgrade__skin-price svg {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-bottom: 6.6rem;
 }
 @media (max-width: 1280px) {
   .contract__container {
@@ -11359,6 +11364,7 @@ dd.upgrade__skin-price svg {
   -ms-grid-rows: (1fr)[2];
   grid-template-rows: repeat(2, 1fr);
   min-width: 0;
+  height: 41.2rem;
   border: 0.2rem solid #121221;
   border-radius: 1.2rem;
 }
