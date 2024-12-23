@@ -5596,7 +5596,7 @@ span.draw-item__start-price svg {
 }
 .skin--is-selected {
   mix-blend-mode: luminosity;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .skin__badge {
