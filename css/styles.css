@@ -11904,6 +11904,7 @@ dd.upgrade__skin-price svg {
 .contract__info-sign-field canvas {
   width: calc(100% - 4rem);
   height: 100%;
+  cursor: crosshair;
 }
 
 .contract__info-sign-btns {
