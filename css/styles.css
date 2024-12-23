@@ -11244,6 +11244,8 @@ dd.upgrade__skin-price svg {
   position: relative;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1;
+  grid-template-rows: 1;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -11427,15 +11429,36 @@ dd.upgrade__skin-price svg {
 
 .contract__container-bg {
   width: 100%;
-  height: 100%;
+  height: 41.2rem;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
-  grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/span 1;
   background: left top/100% 100% no-repeat url("../images/bg/bg-contract.jpg");
   border: 0.2rem solid #545B4B;
   border-radius: 1.2rem;
   overflow: hidden;
+}
+@media (max-width: 1280px) {
+  .contract__container-bg {
+    height: 48rem;
+  }
+}
+@media (max-width: 1024px) {
+  .contract__container-bg {
+    height: 44.921875vw;
+  }
+}
+@media (max-width: 768px) {
+  .contract__container-bg {
+    height: 49.4791666667vw;
+  }
+}
+@media (max-width: 480px) {
+  .contract__container-bg {
+    height: 58.3333333333vw;
+  }
 }
 
 .contract__items {
