@@ -2101,6 +2101,11 @@ textarea {
           flex: 0 0 1.6rem;
 }
 
+.clr-gradient,
+.clr-alpha span {
+  color: currentColor;
+}
+
 .header {
   overflow: hidden;
 }
