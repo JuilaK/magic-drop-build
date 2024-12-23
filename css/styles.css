@@ -11815,11 +11815,26 @@ dd.upgrade__skin-price svg {
     height: 13.4rem;
   }
 }
+.contract__info-sign-field canvas {
+  width: 100%;
+  height: 100%;
+}
 
-.contract__info-sign-btn {
+.contract__info-sign-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  inset: 0 0 0 auto;
+}
+.contract__info-sign-btns > .btn {
   width: 4rem;
   height: 4rem;
   background: none;
@@ -11827,7 +11842,7 @@ dd.upgrade__skin-price svg {
           box-shadow: none;
 }
 @media (any-hover: hover) {
-  .contract__info-sign-btn:hover {
+  .contract__info-sign-btns > .btn:hover {
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none;
