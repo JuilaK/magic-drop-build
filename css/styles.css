@@ -2158,6 +2158,44 @@ textarea {
             transform: rotate(1turn);
   }
 }
+.snow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.snow__icicles {
+  width: 100%;
+  height: 2rem;
+  background: left bottom/cover no-repeat url("../images/new-year/icicles.png");
+}
+
+.snow__snowflakes {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/new-year/snowflakes-1.svg"), url("../images/new-year/snowflakes-2.svg");
+  -webkit-animation: snow 30s linear infinite;
+          animation: snow 30s linear infinite;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 800px 1600px, 800px 800px;
+  }
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 800px 1600px, 800px 800px;
+  }
+}
 .header {
   overflow: hidden;
 }
@@ -2248,6 +2286,7 @@ textarea {
 .header__logo {
   width: 14.4rem;
   height: 3.8rem;
+  position: relative;
   display: block;
   background: center left/cover no-repeat url("../images/logos/logo.svg");
   font-size: 0;
@@ -2257,6 +2296,17 @@ textarea {
     width: 8rem;
     background-image: url("../images/logos/logo-short.svg");
   }
+}
+
+.new-year .header__logo::before {
+  position: absolute;
+  top: -1.2rem;
+  left: 0.8rem;
+  width: 3.6rem;
+  height: 2.8rem;
+  content: "";
+  display: block;
+  background: center/contain no-repeat url("../images/new-year/new-year-hat.png");
 }
 
 @media (max-width: 1500px) {
@@ -4549,15 +4599,8 @@ textarea {
   position: relative;
   display: block;
   margin-bottom: 2.4rem;
-  padding: 5.6rem 2.1rem 5.3rem;
   border-radius: 1.2rem;
-  border-radius: 1.2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#0C0C1B));
-  background: linear-gradient(180deg, #161622 0%, #0C0C1B 100%);
-  -webkit-box-shadow: 0 0.2rem 0 0 #181825 inset;
-          box-shadow: 0 0.2rem 0 0 #181825 inset;
   cursor: pointer;
-  text-align: center;
 }
 @media (max-width: 768px) {
   .case {
@@ -4580,6 +4623,46 @@ textarea {
 .case--unavailable {
   opacity: 0.3;
   pointer-events: none;
+}
+
+.case__body {
+  position: relative;
+  padding: 5.6rem 2.1rem 5.3rem;
+  border-radius: 1.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#0C0C1B));
+  background: linear-gradient(180deg, #161622 0%, #0C0C1B 100%);
+  -webkit-box-shadow: 0 0.2rem 0 0 #181825 inset;
+          box-shadow: 0 0.2rem 0 0 #181825 inset;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+}
+
+.new-year .case .case__body::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  aspect-ratio: 1;
+  content: "";
+  display: block;
+  opacity: 0.5;
+  -webkit-transform: translate(48%, -30%) rotate(20deg);
+      -ms-transform: translate(48%, -30%) rotate(20deg);
+          transform: translate(48%, -30%) rotate(20deg);
+  pointer-events: none;
+}
+.new-year .case:nth-child(4n+1) .case__body:before {
+  background: center/contain no-repeat url("../images/new-year/snowflake-1.png");
+}
+.new-year .case:nth-child(4n+2) .case__body:before {
+  background: center/contain no-repeat url("../images/new-year/snowflake-2.png");
+}
+.new-year .case:nth-child(4n+3) .case__body:before {
+  background: center/contain no-repeat url("../images/new-year/snowflake-3.png");
+}
+.new-year .case:nth-child(4n+4) .case__body:before {
+  background: center/contain no-repeat url("../images/new-year/snowflake-4.png");
 }
 
 .case__badge {
@@ -4796,6 +4879,21 @@ textarea {
     -ms-flex-preferred-size: 2rem;
         flex-basis: 2rem;
   }
+}
+
+.new-year .case__btn::before {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  width: 6.4rem;
+  height: 2.4rem;
+  content: "";
+  display: block;
+  top: -1rem;
+  background: top/contain no-repeat url("../images/new-year/snow.png");
+  pointer-events: none;
 }
 
 .case__unavailable-text {
