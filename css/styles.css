@@ -3386,19 +3386,13 @@ textarea {
 .footer__statistics-numb {
   display: block;
   color: #DDC916;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   line-height: 100%;
   white-space: nowrap;
 }
 @media (max-width: 1024px) {
   .footer__statistics-numb {
-    font-size: 2.8rem;
     text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .footer__statistics-numb {
-    font-size: 3.2rem;
   }
 }
 @media (max-width: 480px) {
@@ -3411,20 +3405,14 @@ textarea {
   display: block;
   margin-top: 0.4rem;
   color: #38384E;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 100%;
   white-space: nowrap;
 }
 @media (max-width: 1024px) {
   .footer__statistics-title {
     margin-top: 0.2rem;
-    font-size: 2rem;
     text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .footer__statistics-title {
-    font-size: 2rem;
   }
 }
 @media (max-width: 480px) {
