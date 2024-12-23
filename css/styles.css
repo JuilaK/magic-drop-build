@@ -2175,8 +2175,9 @@ textarea {
   position: absolute;
   inset: 0;
   background-image: url("../images/new-year/snowflakes-1.svg"), url("../images/new-year/snowflakes-2.svg");
-  -webkit-animation: snow 30s linear infinite;
-          animation: snow 30s linear infinite;
+  -webkit-animation: snow 15s linear infinite;
+          animation: snow 15s linear infinite;
+  will-change: contents;
 }
 
 @-webkit-keyframes snow {
@@ -2184,7 +2185,7 @@ textarea {
     background-position: 0px 0px, 0px 0px;
   }
   100% {
-    background-position: 800px 1600px, 800px 800px;
+    background-position: 800px 2400px, 800px 1600px;
   }
 }
 
@@ -2193,7 +2194,7 @@ textarea {
     background-position: 0px 0px, 0px 0px;
   }
   100% {
-    background-position: 800px 1600px, 800px 800px;
+    background-position: 800px 2400px, 800px 1600px;
   }
 }
 .header {
