@@ -381,43 +381,66 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     // END Click outside
 
-    // Double range slider
-    let minRangeValueGap = 1;
+    // Range slider
     const range = document.querySelector(".js-range-track");
-    const minval = document.querySelector(".js-range-min");
-    const maxval = document.querySelector(".js-range-max");
+    const rangeVal = document.querySelector(".js-range-value");
     const rangeInput = document.querySelectorAll(".js-range-slider input");
 
-    let minRange, maxRange, minPercentage, maxPercentage;
+    const rangeStyle = () => {
+        const percentage = `${(rangeInput[0].value / rangeInput[0].max) * 100}%`;
+        rangeVal.style.left = percentage;
+        range.style.width = percentage;
+    };
+
+    if (!!rangeInput.length) {
+        rangeStyle();
+    }
+
+    rangeInput && rangeInput.forEach((input) => {
+        input.addEventListener("input", () => {
+            rangeStyle();
+        });
+    });
+
+    // END Range slider
+
+    // Double range slider
+    let dMinRangeValueGap = 1;
+    const dRange = document.querySelector(".js-d-range-track");
+    const dMinval = document.querySelector(".js-d-range-min");
+    const dMaxval = document.querySelector(".js-d-range-max");
+    const dRangeInput = document.querySelectorAll(".js-d-range-slider input");
+
+    let dMinRange, dMaxRange, dMinPercentage, dMaxPercentage;
 
     const minRangeFill = () => {
-        range.style.left = (rangeInput[0].value / rangeInput[0].max) * 100 + "%";
+        dRange.style.left = (dRangeInput[0].value / dRangeInput[0].max) * 100 + "%";
     };
     const maxRangeFill = () => {
-        range.style.right =
-            100 - (rangeInput[1].value / rangeInput[1].max) * 100 + "%";
+        dRange.style.right =
+            100 - (dRangeInput[1].value / dRangeInput[1].max) * 100 + "%";
     };
     const MinVlaueBubbleStyle = () => {
-        minPercentage = (minRange / rangeInput[0].max) * 100;
-        minval.style.left = "calc(.3rem + " + minPercentage + "%)";
-        minval.style.transform = `translate(-50% - ${minPercentage / 2}%, -100%)`;
+        dMinPercentage = (dMinRange / dRangeInput[0].max) * 100;
+        dMinval.style.left = "calc(.3rem + " + dMinPercentage + "%)";
+        dMinval.style.transform = `translate(-50% - ${dMinPercentage / 2}%, -100%)`;
     };
     const MaxVlaueBubbleStyle = () => {
-        maxPercentage = 100 - (maxRange / rangeInput[1].max) * 100;
-        maxval.style.right = "calc(.1rem + " + maxPercentage + "%)";
-        maxval.style.transform = `translate(50% + ${maxPercentage / 2}%, -100%)`;
+        dMaxPercentage = 100 - (dMaxRange / dRangeInput[1].max) * 100;
+        dMaxval.style.right = "calc(.1rem + " + dMaxPercentage + "%)";
+        dMaxval.style.transform = `translate(50% + ${dMaxPercentage / 2}%, -100%)`;
     };
 
     const setMinValueOutput = () => {
-        minRange = parseInt(rangeInput[0].value);
-        minval.innerHTML = rangeInput[0].value;
+        dMinRange = parseInt(dRangeInput[0].value);
+        dMinval.innerHTML = dRangeInput[0].value;
     };
     const setMaxValueOutput = () => {
-        maxRange = parseInt(rangeInput[1].value);
-        maxval.innerHTML = rangeInput[1].value;
+        dMaxRange = parseInt(dRangeInput[1].value);
+        dMaxval.innerHTML = dRangeInput[1].value;
     };
 
-    if (rangeInput.length) {
+    if (dRangeInput.length) {
         setMinValueOutput();
         setMaxValueOutput();
         minRangeFill();
@@ -426,7 +449,7 @@ window.addEventListener('DOMContentLoaded', () => {
         MaxVlaueBubbleStyle();
     }
 
-    rangeInput && rangeInput.forEach((input) => {
+    dRangeInput && dRangeInput.forEach((input) => {
         input.addEventListener("input", (e) => {
             setMinValueOutput();
             setMaxValueOutput();
@@ -437,15 +460,15 @@ window.addEventListener('DOMContentLoaded', () => {
             MinVlaueBubbleStyle();
             MaxVlaueBubbleStyle();
 
-            if (maxRange - minRange < minRangeValueGap) {
+            if (dMaxRange - dMinRange < dMinRangeValueGap) {
             if (e.target.className === "min") {
-                rangeInput[0].value = maxRange - minRangeValueGap;
+                dRangeInput[0].value = dMaxRange - dMinRangeValueGap;
                 setMinValueOutput();
                 minRangeFill();
                 MinVlaueBubbleStyle();
                 e.target.style.zIndex = "2";
             } else {
-                rangeInput[1].value = minRange + minRangeValueGap;
+                dRangeInput[1].value = dMinRange + dMinRangeValueGap;
                 e.target.style.zIndex = "2";
                 setMaxValueOutput();
                 maxRangeFill();
