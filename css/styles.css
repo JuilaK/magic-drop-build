@@ -1646,22 +1646,20 @@ textarea {
   -webkit-transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
   transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
 }
-@media (any-hover: hover) {
-  .tooltip:hover::before {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: opacity 0.3s ease-out, visibility 0s;
-    transition: opacity 0.3s ease-out, visibility 0s;
-  }
-  .tooltip:hover .tooltip__toggle {
-    opacity: 0.5;
-  }
-  .tooltip:hover .tooltip__body {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out;
-    transition: opacity 0.3s ease-out, visibility 0s ease-out;
-  }
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
+}
+.tooltip:hover .tooltip__toggle {
+  opacity: 0.5;
+}
+.tooltip:hover .tooltip__body {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out;
 }
 .tooltip--info .tooltip__toggle {
   opacity: 0.25;
@@ -4000,33 +3998,31 @@ textarea {
   display: block;
   border-radius: 2.2rem;
 }
-@media (any-hover: hover) {
-  .live-item:hover .live-item__hover {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: opacity 0.4s ease-out, visibility 0s;
-    transition: opacity 0.4s ease-out, visibility 0s;
-  }
-  .live-item:hover .live-item__hover .live-item__title {
-    left: 0;
-    -webkit-transition: left 0.3s ease-out 0.2s;
-    transition: left 0.3s ease-out 0.2s;
-  }
-  .live-item:hover .live-item__hover .live-item__subtitle {
-    right: 0;
-    -webkit-transition: right 0.3s ease-out 0.2s;
-    transition: right 0.3s ease-out 0.2s;
-  }
-  .live-item:hover .live-item__hover-img {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
-    transition: opacity 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
-    transition: opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s;
-    transition: opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
-  }
+.live-item:hover .live-item__hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4s ease-out, visibility 0s;
+  transition: opacity 0.4s ease-out, visibility 0s;
+}
+.live-item:hover .live-item__hover .live-item__title {
+  left: 0;
+  -webkit-transition: left 0.3s ease-out 0.2s;
+  transition: left 0.3s ease-out 0.2s;
+}
+.live-item:hover .live-item__hover .live-item__subtitle {
+  right: 0;
+  -webkit-transition: right 0.3s ease-out 0.2s;
+  transition: right 0.3s ease-out 0.2s;
+}
+.live-item:hover .live-item__hover-img {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
+  transition: opacity 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
+  transition: opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s;
+  transition: opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s, -webkit-transform 0.3s ease-out 0.2s;
 }
 .live-item--common {
   background: left top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(32.98% 28.7% at 50% 37.04%, #0E0E17 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
@@ -5587,32 +5583,30 @@ span.draw-item__start-price svg {
   display: block;
   border-radius: 2.2rem;
 }
-@media (any-hover: hover) {
-  .skin:hover .skin__user {
-    pointer-events: all;
-  }
-  .skin:hover .skin__user-link {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation: displayHoverSkin 0.6s forwards;
-            animation: displayHoverSkin 0.6s forwards;
-    opacity: 1;
-    -webkit-transition: opacity 0s;
-    transition: opacity 0s;
-  }
-  .skin:hover .skin__add-btn,
-  .skin:hover .skin__remove-btn {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out, -webkit-transform 0.3s ease-out;
-    transition: opacity 0.3s ease-out, visibility 0s ease-out, -webkit-transform 0.3s ease-out;
-    transition: opacity 0.3s ease-out, visibility 0s ease-out, transform 0.3s ease-out;
-    transition: opacity 0.3s ease-out, visibility 0s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  }
+.skin:hover .skin__user {
+  pointer-events: all;
+}
+.skin:hover .skin__user-link {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: displayHoverSkin 0.6s forwards;
+          animation: displayHoverSkin 0.6s forwards;
+  opacity: 1;
+  -webkit-transition: opacity 0s;
+  transition: opacity 0s;
+}
+.skin:hover .skin__add-btn,
+.skin:hover .skin__remove-btn {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out, -webkit-transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out, -webkit-transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out, transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 .skin--common {
   background: left top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(32.98% 28.7% at 50% 37.04%, #0E0E17 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
@@ -5805,36 +5799,32 @@ span.draw-item__start-price svg {
 .skin--inventory {
   padding: 2.4rem 1.2rem 1.6rem;
 }
-@media (any-hover: hover) {
-  .skin--inventory:hover .skin__img > img {
-    opacity: 0;
-  }
-  .skin--inventory:hover .skin__case {
-    opacity: 1;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    pointer-events: all;
-    -webkit-animation: displayHoverImg 0.6s forwards;
-            animation: displayHoverImg 0.6s forwards;
-  }
+.skin--inventory:hover .skin__img > img {
+  opacity: 0;
+}
+.skin--inventory:hover .skin__case {
+  opacity: 1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  pointer-events: all;
+  -webkit-animation: displayHoverImg 0.6s forwards;
+          animation: displayHoverImg 0.6s forwards;
 }
 .skin--inventory .tooltip__body {
   max-width: 20rem;
 }
-@media (any-hover: hover) {
-  .skin--best:hover .skin__img > img {
-    opacity: 0;
-  }
-  .skin--best:hover .skin__case {
-    opacity: 1;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    pointer-events: all;
-    -webkit-animation: displayHoverImg 0.6s forwards;
-            animation: displayHoverImg 0.6s forwards;
-  }
+.skin--best:hover .skin__img > img {
+  opacity: 0;
+}
+.skin--best:hover .skin__case {
+  opacity: 1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  pointer-events: all;
+  -webkit-animation: displayHoverImg 0.6s forwards;
+          animation: displayHoverImg 0.6s forwards;
 }
 .skin--small {
   padding: 0.4rem 1.2rem 1.6rem;
