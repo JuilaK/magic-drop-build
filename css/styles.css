@@ -3364,8 +3364,8 @@ textarea {
 .promo-code__code-wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1.4rem 7rem;
-  grid-template-columns: auto 7rem;
+  -ms-grid-columns: auto 1.4rem auto;
+  grid-template-columns: repeat(2, auto);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
