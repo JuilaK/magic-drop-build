@@ -10875,6 +10875,11 @@ dd.upgrade__skin-price svg {
   }
 }
 
+@property --provability-zone {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 24.06%;
+}
 .upgrade__provability-progress {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -10909,6 +10914,7 @@ dd.upgrade__skin-price svg {
 .upgrade__provability-progress--active {
   --provability-zone: 24.06%;
   background: conic-gradient(#85DD16 var(--provability-zone), #931E17 0);
+  transition: --provability-zone 0.4s ease-out;
 }
 
 .upgrade__provability-arrow-wrap {
