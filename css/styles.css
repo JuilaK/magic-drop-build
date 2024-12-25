@@ -14370,9 +14370,32 @@ dd.upgrade__skin-price svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   padding-right: 1.6rem;
   border-radius: 0.8rem;
   background-color: rgba(50, 50, 67, 0.4);
+}
+
+.replenishment__bonus-progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(85deg, rgba(60, 87, 6, 0) 0%, #BAFF31 100%), left top/cover no-repeat url("../images/bg/bg-bonus.jpg");
+  border-radius: 0.8rem;
+  z-index: 0;
+}
+.replenishment__bonus-progress::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.8rem;
+  padding: 0.2rem;
+  background: linear-gradient(45deg, rgba(60, 87, 6, 0) 0%, #deff9b 100%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .replenishment__bonus-text {
@@ -14386,11 +14409,10 @@ dd.upgrade__skin-price svg {
   height: 100%;
   padding: 0.8rem 1.6rem;
   border-radius: 0.8rem;
-  background: left top/cover no-repeat url("../images/bg/bg-bonus.jpg");
   color: #375100;
-  text-shadow: 0 0.1rem 0 rgba(145, 205, 26, 0.42);
+  -webkit-text-stroke: 0.1rem rgba(131, 184, 25, 0.2);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 120%;
 }
 @media (max-width: 480px) {
@@ -14398,23 +14420,13 @@ dd.upgrade__skin-price svg {
     height: 4.8rem;
   }
 }
-.replenishment__bonus-text::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 0.8rem;
-  padding: 0.2rem;
-  background: linear-gradient(45deg, rgba(60, 87, 6, 0) 0%, #deff9b 100%);
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
 
 .replenishment__bonus-numb {
+  position: relative;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 112.5%;
+  -webkit-text-stroke: 0.1rem rgba(50, 50, 67, 0.4);
 }
 
 .replenishment__amount {
