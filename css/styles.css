@@ -16056,6 +16056,9 @@ dd.upgrade__skin-price svg {
   }
 }
 .modal--history .provably-current {
+  margin-top: 0;
+}
+.modal--history .provably-current + .provably-current {
   margin-top: 1.6rem;
 }
 .modal--history .provably-current + .modal__btns {
@@ -16163,6 +16166,21 @@ dd.upgrade__skin-price svg {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+}
+
+.modal__content-overflow {
+  margin-top: 1.6rem;
+  max-height: 31rem;
+  overflow-y: auto;
+}
+.modal__content-overflow::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 2.2rem;
+}
+.modal__content-overflow::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 2.2rem;
 }
 
 .modal__text {
