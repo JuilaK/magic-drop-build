@@ -784,11 +784,11 @@
                         </svg>
                         Settings
                     </button>
-                    <button type="button" class="btn btn--sm" data-modal-trigger="linking-telegram">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#telegram"></use>
+                    <button type="button" class="btn btn--sm" data-modal-trigger="promocode">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#discount"></use>
                         </svg>
-                        Telegram
+                        Promocode
                     </button>
                 </div>
             </div>
@@ -1458,6 +1458,34 @@
                             <use xlink:href="images/sprite.svg#close-circle"></use>
                         </svg>
                         Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal js-modal" data-modal-name="promocode">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Введите промокод</h2>
+                <input type="text" placeholder="Промокод" class="mt-32">
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--bg-blue js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#file-check-blue"></use>
+                        </svg>
+                        Активировать
+                    </button>
+                    <button type="button" class="btn js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#close-circle"></use>
+                        </svg>
+                        Закрыть
                     </button>
                 </div>
             </div>
