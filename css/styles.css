@@ -2457,14 +2457,6 @@ textarea {
     opacity: 1;
   }
 }
-.header__nav-link.header__nav-link--active {
-  margin-right: 0.6rem;
-}
-@media (max-width: 1500px) {
-  .header__nav-link.header__nav-link--active {
-    margin-right: 0;
-  }
-}
 .header__nav-link.header__nav-link--active .header__nav-link-svg svg:last-child {
   opacity: 1;
 }
