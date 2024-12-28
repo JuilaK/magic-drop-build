@@ -483,6 +483,9 @@ svg.white {
 svg.yellow {
   fill: #ffe500;
 }
+svg.green {
+  fill: #B2FF00;
+}
 
 .container {
   margin: 0 auto;
@@ -15920,6 +15923,12 @@ dd.upgrade__skin-price svg {
   border-color: #C81B25;
   -webkit-box-shadow: 0 0 4.2rem 0 rgba(200, 27, 37, 0.15), 0 0 1.2rem 0 rgba(200, 27, 37, 0.25);
           box-shadow: 0 0 4.2rem 0 rgba(200, 27, 37, 0.15), 0 0 1.2rem 0 rgba(200, 27, 37, 0.25);
+}
+.notification--warning {
+  background: rgba(221, 201, 22, 0.24);
+  border-color: #DDC916;
+  -webkit-box-shadow: 0 0 4.2rem 0 rgba(221, 201, 22, 0.15), 0 0 1.2rem 0 rgba(221, 201, 22, 0.25);
+          box-shadow: 0 0 4.2rem 0 rgba(221, 201, 22, 0.15), 0 0 1.2rem 0 rgba(221, 201, 22, 0.25);
 }
 
 .modal {
