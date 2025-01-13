@@ -12390,6 +12390,10 @@ dd.upgrade__skin-price svg {
   padding-top: 4rem;
 }
 
+.top-players__period {
+  margin-bottom: 3.2rem;
+}
+
 .top-players__list {
   display: -webkit-box;
   display: -ms-flexbox;
