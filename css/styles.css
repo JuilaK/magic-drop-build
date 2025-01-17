@@ -2822,8 +2822,6 @@ textarea {
           column-gap: 0.8rem;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
-  font-weight: 900;
-  text-transform: uppercase;
 }
 .header__select .select__dropdown label:hover .header__select-item-img,
 .header__select .select__dropdown input:checked + label .header__select-item-img {
