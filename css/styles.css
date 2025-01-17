@@ -1578,7 +1578,7 @@ textarea {
   top: calc(100% + 0.8rem);
   margin: 0;
   padding: 0.8rem;
-  width: 100%;
+  min-width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#181827));
   background: linear-gradient(180deg, #161622 0%, #181827 100%);
   border-radius: 0.8rem;
