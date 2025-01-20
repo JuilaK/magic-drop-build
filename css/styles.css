@@ -9302,10 +9302,16 @@ span.draw-item__start-price svg {
 }
 .trade__user span {
   color: #8484A7;
+  font-size: 1.4rem;
   -webkit-transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: color 0.3s ease-out, transform 0.3s ease-out;
   transition: color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .trade__user span {
+    font-size: 1.2rem;
+  }
 }
 
 .trade__user-avatar {
