@@ -12681,7 +12681,7 @@ dd.upgrade__skin-price svg {
   position: relative;
 }
 
-.top-player__bg {
+.top-player__bg-wrap {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -12690,10 +12690,21 @@ dd.upgrade__skin-price svg {
   left: 50%;
   width: 17.6rem;
   height: 17.6rem;
-  display: block;
   mix-blend-mode: lighten;
   overflow: hidden;
   z-index: 0;
+}
+
+.top-player__bg {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101%;
+  height: 101%;
+  display: block;
 }
 .top-player__bg img {
   -webkit-transform: translateX(-50%);
