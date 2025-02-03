@@ -7296,6 +7296,13 @@ span.draw-item__start-price svg {
   display: block;
   border-radius: 2.2rem;
 }
+.roulette-item--valuable::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: center top/100% 100% no-repeat url("../images/confetti.gif");
+}
 .roulette-item--common {
   background: left top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(32.98% 28.7% at 50% 37.04%, #0E0E17 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: left top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(32.98% 28.7% at 50% 37.04%, #0E0E17 0%, rgba(18, 18, 30, 0) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
