@@ -1358,6 +1358,9 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.8rem;
+          flex: 0 0 2.8rem;
   margin: 0;
   margin-top: -0.5rem;
   display: block;
@@ -2278,10 +2281,6 @@ textarea {
     background-position: 800px 2400px, 800px 1600px;
   }
 }
-.header {
-  overflow: hidden;
-}
-
 .header--menu-open .header__burger-line {
   opacity: 0;
 }
@@ -2844,6 +2843,9 @@ textarea {
 .header__select .select__dropdown label:hover .header__select-item-img,
 .header__select .select__dropdown input:checked + label .header__select-item-img {
   border: thin solid #85DD16;
+}
+.header__select .select__dropdown-wrap {
+  max-height: 29rem;
 }
 
 .header__select-item-img {
