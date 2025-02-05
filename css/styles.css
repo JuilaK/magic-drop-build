@@ -16875,12 +16875,19 @@ dd.upgrade__skin-price svg {
   width: 1.8rem;
   height: 1.8rem;
 }
+.case-free__tooltip .tooltip__body {
+  word-break: break-word;
+}
 @media (max-width: 480px) {
   .case-free__tooltip .tooltip__body {
     -webkit-transform: translateX(calc(50vw - 50% + 3.2rem));
         -ms-transform: translateX(calc(50vw - 50% + 3.2rem));
             transform: translateX(calc(50vw - 50% + 3.2rem));
   }
+}
+.case-free__tooltip .tooltip__body span {
+  white-space: wrap;
+  word-break: break-word;
 }
 
 .case-free__conditions {
