@@ -5150,17 +5150,13 @@ textarea {
   }
 }
 .draws-list__wrap::-webkit-scrollbar {
-  width: 0.5rem;
   height: 0.6rem;
-  background-color: #323243;
-  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 2.2rem;
 }
 .draws-list__wrap::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26263c), to(#1d1d2e));
-  background: linear-gradient(180deg, #26263c 0, #1d1d2e 100%);
-  border-radius: 0.8rem;
-  -webkit-box-shadow: inset 0 0.2rem 0 0 #2a2a41, inset 0 -0.2rem 0 0 #202031;
-          box-shadow: inset 0 0.2rem 0 0 #2a2a41, inset 0 -0.2rem 0 0 #202031;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 2.2rem;
 }
 
 .draw-item {
