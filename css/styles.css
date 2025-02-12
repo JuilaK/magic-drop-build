@@ -2889,11 +2889,13 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 1.1rem 0 1.1rem 3.2rem;
+  margin-top: -1rem;
+  padding: 2.2rem 0 1.1rem 3.2rem;
   background: -webkit-gradient(linear, left bottom, left top, from(#0a0a19), to(#0f0f1d));
   background: linear-gradient(360deg, #0a0a19 0%, #0f0f1d 100%);
   border-bottom: thin solid #141424;
   font-size: 0;
+  overflow-x: hidden;
 }
 @media (max-width: 768px) {
   .header__live {
@@ -4161,8 +4163,8 @@ textarea {
 .live-item--common {
   background: left top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(32.98% 28.7% at 50% 37.04%, #0E0E17 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: left top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(32.98% 28.7% at 50% 37.04%, #0E0E17 0%, rgba(18, 18, 30, 0) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 #151521, inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 #151521, inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 #151521, inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 #151521, inset 0 0.2rem 0 0 #181825;
 }
 .live-item--common::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(48, 46, 59, 0.55);
@@ -4184,8 +4186,8 @@ textarea {
 .live-item--covert {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #DD0F1B 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #DD0F1B 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(221, 15, 27, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(221, 15, 27, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(221, 15, 27, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(221, 15, 27, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--covert::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(221, 15, 27, 0.55);
@@ -4207,8 +4209,8 @@ textarea {
 .live-item--milspec {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #0F23DD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #0F23DD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(15, 35, 221, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(15, 35, 221, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(15, 35, 221, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(15, 35, 221, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--milspec::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(15, 35, 221, 0.55);
@@ -4230,8 +4232,8 @@ textarea {
 .live-item--restricted {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #510FDD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #510FDD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(81, 15, 221, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(81, 15, 221, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(81, 15, 221, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(81, 15, 221, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--restricted::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(81, 15, 221, 0.55);
@@ -4253,8 +4255,8 @@ textarea {
 .live-item--uncommon {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, rgba(0, 194, 255, 0.9) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, rgba(0, 194, 255, 0.9) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(0, 194, 255, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(0, 194, 255, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(0, 194, 255, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(0, 194, 255, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--uncommon::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(0, 194, 255, 0.55);
@@ -4275,8 +4277,8 @@ textarea {
 .live-item--rare {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #FFB800 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #FFB800 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(255, 245, 0, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(255, 245, 0, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(255, 245, 0, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(255, 245, 0, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--rare::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(255, 245, 0, 0.55);
@@ -4297,8 +4299,8 @@ textarea {
 .live-item--classified {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #FA00FF 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, #FA00FF 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(250, 0, 255, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(250, 0, 255, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(250, 0, 255, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(250, 0, 255, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--classified::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(250, 0, 255, 0.55);
@@ -4320,8 +4322,8 @@ textarea {
 .live-item--gloves {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, rgba(178, 255, 0, 0.5) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(80% 120% at 50% -41.18%, rgba(178, 255, 0, 0.5) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
-  -webkit-box-shadow: 0 -1rem 2.4rem 0 rgba(178, 255, 0, 0.15), inset 0 0.2rem 0 0 #181825;
-          box-shadow: 0 -1rem 2.4rem 0 rgba(178, 255, 0, 0.15), inset 0 0.2rem 0 0 #181825;
+  -webkit-box-shadow: 0 -0.4rem 2.4rem 0 rgba(178, 255, 0, 0.15), inset 0 0.2rem 0 0 #181825;
+          box-shadow: 0 -0.4rem 2.4rem 0 rgba(178, 255, 0, 0.15), inset 0 0.2rem 0 0 #181825;
 }
 .live-item--gloves::before {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(178, 255, 0, 0.55);
