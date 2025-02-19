@@ -829,12 +829,28 @@
 						Поддержка
 						<span class="btn__info btn__info--green">4</span>
 					</button>
-					<button type="button" class="header__promo-btn btn btn--icon">
-						<svg aria-hidden="true" class="dark-grey">
-							<use xlink:href="images/sprite.svg#sound"></use>
-						</svg>
-						Звук
-					</button>
+					<div class="header__volume">
+						<button type="button" class="header__promo-btn btn btn--icon">
+							<svg aria-hidden="true" class="dark-grey">
+								<use xlink:href="images/sprite.svg#sound"></use>
+							</svg>
+							Звук
+						</button>
+						<div class="header__volume-container">
+							<div class="header__volume-body">
+								<div class="header__volume-header">
+									<span>Громкость:</span>
+									<span class="header__volume-value js-range-value">60</span>
+								</div>
+								<div class="header__range-slider range-slider js-range-slider">
+									<span class="range-slider__track js-range-track"></span>
+									<input type="range" min="0" max="100" value="60" step="0">
+									<div class="range-slider__min-value">0</div>
+									<div class="range-slider__max-value">100</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
