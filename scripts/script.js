@@ -209,7 +209,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     supportBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            supportBody.classList.toggle('support__body--open');
+            !!supportBody && supportBody.classList.toggle('support__body--open');
         });
     })
 
@@ -222,7 +222,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const supportAttach = document.querySelector('.js-support-attach');
     let loaderAttach = document.createElement("div");
     loaderAttach.classList.add('loader');
-    supportAttach.addEventListener('click', () => {
+    supportAttach && supportAttach.addEventListener('click', () => {
         supportAttach.classList.add('hide');
         supportAttach.after(loaderAttach);
         setTimeout(() => {
