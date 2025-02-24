@@ -7255,6 +7255,14 @@ span.draw-item__start-price svg {
     padding: 1.2rem;
   }
 }
+.case-hero__roulette--vertical .roulette-item.roulette__win-item {
+  -webkit-animation: none;
+          animation: none;
+  z-index: auto;
+}
+.case-hero__roulette--vertical .roulette-item.roulette__win-item::after {
+  display: none;
+}
 @media (max-width: 480px) {
   .case-hero__roulette--vertical .roulette-item__title, .case-hero__roulette--vertical .roulette-item__subtitle {
     display: none;
@@ -7382,6 +7390,9 @@ span.draw-item__start-price svg {
           box-shadow: 0 0 1.2rem 0 rgba(48, 46, 59, 0.55);
   background-color: #302e3b;
 }
+.roulette-item--common.roulette__win-item::after {
+  border: 0.2rem solid #45454f;
+}
 .roulette-item--covert {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #DD0F1B 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #DD0F1B 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
@@ -7392,6 +7403,9 @@ span.draw-item__start-price svg {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(221, 15, 27, 0.55);
           box-shadow: 0 0 1.2rem 0 rgba(221, 15, 27, 0.55);
   background-color: #DD0F1B;
+}
+.roulette-item--covert.roulette__win-item::after {
+  border: 0.2rem solid #DD0F1B;
 }
 .roulette-item--milspec {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #0F23DD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.7% at 50% 37.04%, rgba(14, 14, 23, 0.45) 0%, rgba(18, 18, 30, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
@@ -7404,6 +7418,9 @@ span.draw-item__start-price svg {
           box-shadow: 0 0 1.2rem 0 rgba(15, 35, 221, 0.55);
   background-color: #0F23DD;
 }
+.roulette-item--milspec.roulette__win-item::after {
+  border: 0.2rem solid #0F23DD;
+}
 .roulette-item--restricted {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #510FDD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #510FDD 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
@@ -7414,6 +7431,9 @@ span.draw-item__start-price svg {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(81, 15, 221, 0.55);
           box-shadow: 0 0 1.2rem 0 rgba(81, 15, 221, 0.55);
   background-color: #510FDD;
+}
+.roulette-item--restricted.roulette__win-item::after {
+  border: 0.2rem solid #510FDD;
 }
 .roulette-item--uncommon {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, rgba(0, 194, 255, 0.8) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
@@ -7426,6 +7446,9 @@ span.draw-item__start-price svg {
           box-shadow: 0 0 1.2rem 0 rgba(0, 194, 255, 0.55);
   background-color: #00C2FF;
 }
+.roulette-item--uncommon.roulette__win-item::after {
+  border: 0.2rem solid #00C2FF;
+}
 .roulette-item--rare {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #FFB800 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #FFB800 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
@@ -7436,6 +7459,9 @@ span.draw-item__start-price svg {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(255, 245, 0, 0.55);
           box-shadow: 0 0 1.2rem 0 rgba(255, 245, 0, 0.55);
   background-color: #FFF500;
+}
+.roulette-item--rare.roulette__win-item::after {
+  border: 0.2rem solid #FFF500;
 }
 .roulette-item--classified {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, #FA00FF 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
@@ -7448,6 +7474,9 @@ span.draw-item__start-price svg {
           box-shadow: 0 0 1.2rem 0 rgba(250, 0, 255, 0.55);
   background-color: #FA00FF;
 }
+.roulette-item--classified.roulette__win-item::after {
+  border: 0.2rem solid #FA00FF;
+}
 .roulette-item--gloves {
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, rgba(178, 255, 0, 0.5) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: center top/cover no-repeat url("../images/live-items/bg-live-item.png"), radial-gradient(65% 110% at 50% -38%, rgba(178, 255, 0, 0.5) 0%, rgba(18, 18, 31, 0) 100%), radial-gradient(32.98% 28.71% at 49.27% 37.04%, rgb(14, 14, 23) 0%, rgb(18, 18, 30) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
@@ -7458,6 +7487,46 @@ span.draw-item__start-price svg {
   -webkit-box-shadow: 0 0 1.2rem 0 rgba(178, 255, 0, 0.55);
           box-shadow: 0 0 1.2rem 0 rgba(178, 255, 0, 0.55);
   background-color: #B2FF00;
+}
+.roulette-item--gloves.roulette__win-item::after {
+  border: 0.2rem solid #B2FF00;
+}
+
+@-webkit-keyframes scaleSkin {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes scaleSkin {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.roulette__win-item {
+  -webkit-animation: scaleSkin 0.3s ease-out 8.7s forwards;
+          animation: scaleSkin 0.3s ease-out 8.7s forwards;
+  z-index: 1;
+}
+.roulette__win-item:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  border-radius: 1.2rem;
+  opacity: 0;
+  -webkit-animation: fade 0.3s ease-out 8.7s forwards;
+          animation: fade 0.3s ease-out 8.7s forwards;
 }
 
 .roulette-item__img {
