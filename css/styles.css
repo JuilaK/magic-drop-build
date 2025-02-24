@@ -15734,10 +15734,48 @@ dd.upgrade__skin-price svg {
   position: relative;
 }
 
+.support__attach {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4.4rem;
+}
+.support__attach .loader {
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-width: 0.2rem;
+}
+
+.support__attach-btn {
+  padding: 1.4rem 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
+}
+.support__attach-btn.hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
+}
+.support__attach-btn svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
 .support__send-textarea {
   height: 6.8rem;
-  padding-top: 1.6rem;
-  padding-right: 7.2rem;
+  padding: 1.2rem 3.6rem 0.8rem;
+}
+.support__send-textarea:focus {
+  outline: none;
 }
 
 .support__send-btn {

@@ -218,6 +218,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     // END Display/hide support
 
+    // Display/hide support attach loader
+    const supportAttach = document.querySelector('.js-support-attach');
+    let loaderAttach = document.createElement("div");
+    loaderAttach.classList.add('loader');
+    supportAttach.addEventListener('click', () => {
+        supportAttach.classList.add('hide');
+        supportAttach.after(loaderAttach);
+        setTimeout(() => {
+            loaderAttach.remove();
+            supportAttach.classList.remove('hide');
+        }, 2000);
+    });
+    // END Display/hide support attach loader
+
     // Accordions
     const accordionBtns = document.querySelectorAll('.js-accordion-btn');
 
