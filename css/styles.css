@@ -5209,7 +5209,7 @@ span.header__volume-value {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc((100% - 5.2rem) / 5);
           flex: 0 0 calc((100% - 5.2rem) / 5);
-  min-width: 26rem;
+  min-width: 27rem;
 }
 @media (max-width: 480px) {
   .draws-list__wrap > * {
@@ -5456,9 +5456,9 @@ span.header__volume-value {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 0.6rem;
-     -moz-column-gap: 0.6rem;
-          column-gap: 0.6rem;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
   color: #8484A7;
   line-height: 113%;
   white-space: nowrap;
@@ -5466,12 +5466,21 @@ span.header__volume-value {
 .draw-item__user span,
 .draw-item__price span {
   color: #8484A7;
+  font-size: 1.4rem;
   line-height: 113%;
   white-space: nowrap;
 }
+.draw-item__user svg,
+.draw-item__price svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
 
 .draw-item__price {
-  margin-left: 1rem;
+  margin-left: 0.6rem;
   color: #FFFFFF;
 }
 .draw-item__price span {
@@ -5592,14 +5601,15 @@ span.draw-item__start-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1.2rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  gap: 1.2rem 0.8rem;
 }
 @media (max-width: 480px) {
   .draw-item__time-params {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -5669,6 +5679,11 @@ span.draw-item__start-price svg {
       -ms-flex-positive: 1;
           flex-grow: 1;
   color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .draw-item__time-btn {
+    width: 100%;
+  }
 }
 
 .draw-item__progress-bar {
@@ -15003,6 +15018,24 @@ dd.upgrade__skin-price svg {
     display: none;
   }
 }
+.raffle__item .draw-item__user,
+.raffle__item .draw-item__price {
+  -webkit-column-gap: 0.6rem;
+     -moz-column-gap: 0.6rem;
+          column-gap: 0.6rem;
+}
+.raffle__item .draw-item__user span,
+.raffle__item .draw-item__price span {
+  font-size: 1.6rem;
+}
+.raffle__item .draw-item__user svg,
+.raffle__item .draw-item__price svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.raffle__item .draw-item__price {
+  margin-left: 1rem;
+}
 .raffle__item .draw-item__rep {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -15082,6 +15115,23 @@ dd.upgrade__skin-price svg {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.2rem;
+}
+@media (max-width: 480px) {
+  .raffle__item .draw-item__time-params {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+  }
+}
+@media (max-width: 480px) {
+  .raffle__item .draw-item__time-btn {
+    width: auto;
+  }
 }
 
 .raffle__item-section {
