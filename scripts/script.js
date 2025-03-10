@@ -248,6 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 btn.setAttribute('aria-expanded', !expanded);
                 content.style.maxHeight = content.scrollHeight + 'px';
             } else {
+                btn.setAttribute('aria-expanded', !expanded);
                 content.style.maxHeight = '0';
             }
         });
