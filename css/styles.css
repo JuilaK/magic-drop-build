@@ -17515,7 +17515,7 @@ dd.upgrade__skin-price svg {
 
 .referral-header__statistics-numb {
   position: relative;
-  display: block;
+  display: inline-block;
   font-size: 2rem;
   font-weight: 900;
   white-space: nowrap;
