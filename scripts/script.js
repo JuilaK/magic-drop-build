@@ -145,7 +145,6 @@ window.addEventListener('DOMContentLoaded', () => {
             skin.querySelector('.js-chance-table').classList.toggle('skin__table--open');
         })
     });
-
     // END Open and close chance table
 
     // Spin and open/close win block
@@ -348,6 +347,8 @@ window.addEventListener('DOMContentLoaded', () => {
         upgradeFail.classList.remove('upgrade__fail--open')
     });
     // END Upgrade
+
+    // Create a contract
     const contractBtn = document.querySelector('.js-contract-btn');
     const contractContainer = document.querySelector('.js-contract-container');
 
@@ -362,8 +363,6 @@ window.addEventListener('DOMContentLoaded', () => {
             contractContainer.classList.remove('contract__container--create-anim');
         }, 1200);
     });
-    // Create a contract
-
     // END Create a contract
 
     // Click outside
@@ -494,6 +493,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     // END Double range slider
 
+    // Open case
+    const caseContainer = document.querySelector(".js-case-container");
+    const openCaseBtn = document.querySelector(".js-open-case");
+    const caseHero = document.querySelector(".js-case-hero");
+    const caseRoulette = document.querySelector(".js-case-hero-roulette");
+
+    !!openCaseBtn && openCaseBtn.addEventListener("click", () => {
+        caseContainer.classList.add("open");
+        setTimeout(() => {
+            caseHero.style.display = 'none';
+            caseRoulette.style.display = 'block';
+        }, 300);
+    });
+    //END Open case
 })
 
 function fix100vh() {
