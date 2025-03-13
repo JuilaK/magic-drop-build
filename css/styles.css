@@ -6780,7 +6780,8 @@ span.draw-item__start-price svg {
 .case-container {
   position: relative;
 }
-.case-container.open .case-hero__open-block {
+.case-container.open .case-hero__roulettes-list::before,
+.case-container.open .case-hero__roulettes-list::after {
   -webkit-animation: showLines 1.6s ease-out forwards;
           animation: showLines 1.6s ease-out forwards;
 }
@@ -7422,6 +7423,29 @@ span.draw-item__start-price svg {
   .case-hero__roulettes-list {
     margin-top: 3.2rem;
   }
+}
+.case-hero__roulettes-list::before, .case-hero__roulettes-list::after {
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 50%;
+  content: "";
+  display: block;
+  background-color: #0C0C1B;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+.case-hero__roulettes-list::before {
+  top: 0;
+  border-radius: 0.2rem 0.2rem 0 0;
+  border-bottom: 0.2rem solid #DDC916;
+}
+.case-hero__roulettes-list::after {
+  bottom: 0;
+  border-radius: 0 0 0.2rem 0.2rem;
+  border-top: 0.2rem solid #DDC916;
 }
 
 .roulettes-list--2 .roulette, .roulettes-list--3 .roulette, .roulettes-list--4 .roulette {
