@@ -17298,6 +17298,14 @@ dd.upgrade__skin-price svg {
     width: 100%;
   }
 }
+.modal__btns > a {
+  min-width: 16.8rem;
+}
+@media (max-width: 480px) {
+  .modal__btns > a {
+    width: 100%;
+  }
+}
 
 .modal__btn-price {
   display: -webkit-inline-box;
