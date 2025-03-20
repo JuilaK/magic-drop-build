@@ -8596,6 +8596,7 @@ span.draw-item__start-price svg {
 
 .win__item-text {
   margin-top: 0.8rem;
+  z-index: 1;
 }
 .win__item-text p {
   color: rgba(255, 255, 255, 0.5);
