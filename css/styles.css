@@ -18535,6 +18535,17 @@ dd.upgrade__skin-price svg {
   -webkit-box-shadow: 0 -0.2rem 0 0 #181825 inset;
           box-shadow: 0 -0.2rem 0 0 #181825 inset;
 }
+@media (max-width: 1024px) {
+  .referral__promo-create {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .referral__promo-create .referral__input {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30rem;
@@ -18629,18 +18640,20 @@ dd.upgrade__skin-price svg {
   display: flex;
   gap: 1.6rem;
 }
-
-.referral__tooltip:hover .tooltip__toggle {
-  opacity: 1;
+@media (max-width: 1024px) {
+  .referral__promocode {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
-.referral__tooltip .tooltip__toggle {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D2D), to(#171724));
-  background: linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
-  -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+.referral__promocode .referral__input {
+  min-width: 24rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .referral__create-btn {
     width: 100%;
   }
