@@ -1827,6 +1827,9 @@ textarea {
   width: 1.6rem;
   height: 1.6rem;
 }
+.tooltip__body span.white {
+  color: #FFFFFF;
+}
 .tooltip__body a {
   display: block;
   color: rgba(255, 255, 255, 0.35);
@@ -18043,8 +18046,33 @@ dd.upgrade__skin-price svg {
   }
 }
 
-.referral-header__user-name {
+.referral-header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem 1.6rem;
   margin-bottom: 1.6rem;
+}
+.referral-header__user .user-level {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .referral-header__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.referral-header__user-name {
   color: #8484A7;
   font-size: 2rem;
   font-weight: 900;
@@ -18085,6 +18113,72 @@ dd.upgrade__skin-price svg {
 .referral-header__user-params .user-level {
   padding: 1.2rem 1.6rem;
   font-size: 1.6rem;
+}
+
+.referral-header__scale {
+  width: 20rem;
+  height: 0.6rem;
+  position: relative;
+  margin-bottom: 2.4rem;
+  background-color: #1E1E2C;
+  border-radius: 1.2rem;
+}
+@media (max-width: 480px) {
+  .referral-header__scale {
+    width: 100%;
+    margin-bottom: 3.2rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.referral-header__scale-thumb {
+  height: 100%;
+  background-color: #494968;
+  border-radius: 2.2rem;
+}
+
+.referral-header__scale-marks {
+  position: absolute;
+  top: -0.2rem;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 0;
+  text-align: left;
+}
+
+.referral-header__scale-mark {
+  width: 0.6rem;
+  height: 1rem;
+  position: relative;
+  background-color: #494968;
+  border-radius: 0.1rem;
+}
+.referral-header__scale-mark--done {
+  background-color: #8484A7;
+}
+.referral-header__scale-mark:nth-child(2) .user-level {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.referral-header__scale-mark:last-child .user-level {
+  left: auto;
+  right: 0;
+}
+.referral-header__scale-mark .user-level {
+  position: absolute;
+  top: 1.4rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .referral-header__balance {
@@ -18408,6 +18502,15 @@ dd.upgrade__skin-price svg {
 .referral__input input {
   padding-left: 4.8rem;
 }
+.referral__input label {
+  position: absolute;
+  top: 0;
+  color: #494968;
+  font-size: 1.2rem;
+  -webkit-transform: translateY(calc(-100% - 0.4rem));
+      -ms-transform: translateY(calc(-100% - 0.4rem));
+          transform: translateY(calc(-100% - 0.4rem));
+}
 .referral__input--wallet-numb {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 32.4rem;
@@ -18418,10 +18521,10 @@ dd.upgrade__skin-price svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.6rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  gap: 1.6rem 2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 3.2rem;
@@ -18434,8 +18537,8 @@ dd.upgrade__skin-price svg {
 }
 .referral__promo-create .referral__input {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 36rem;
-          flex: 0 1 36rem;
+      -ms-flex: 0 1 30rem;
+          flex: 0 1 30rem;
 }
 @media (max-width: 1280px) {
   .referral__promo-create .referral__input {
@@ -18453,20 +18556,92 @@ dd.upgrade__skin-price svg {
   }
 }
 
-.referral__promo-create-btns {
+.referral__bonus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem 1.6rem;
+  margin-top: 1.6rem;
+}
+@media (max-width: 480px) {
+  .referral__bonus {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.referral__bonus .referral__input {
+  width: 8.8rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media (max-width: 480px) {
+  .referral__bonus .referral__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+.referral__discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .referral__discount {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+.referral__discount label {
+  position: absolute;
+  top: 0;
+  color: #494968;
+  font-size: 1.2rem;
+  -webkit-transform: translateY(calc(-100% - 0.4rem));
+      -ms-transform: translateY(calc(-100% - 0.4rem));
+          transform: translateY(calc(-100% - 0.4rem));
+}
+
+.referral__range-slider {
+  min-width: 12rem;
+}
+.referral__range-slider .range-slider__value {
+  top: -1.6rem;
+  color: #8FFF00;
+  font-size: 1.1rem;
+}
+.referral__range-slider .range-slider__track,
+.referral__range-slider input::-webkit-slider-thumb {
+  background-color: #8FFF00;
+}
+
+.referral__promocode {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.6rem;
 }
-@media (max-width: 480px) {
-  .referral__promo-create-btns {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+
+.referral__tooltip:hover .tooltip__toggle {
+  opacity: 1;
 }
+.referral__tooltip .tooltip__toggle {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D2D), to(#171724));
+  background: linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
+  -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+
 @media (max-width: 480px) {
-  .referral__promo-create-btns .btn {
+  .referral__create-btn {
     width: 100%;
   }
 }

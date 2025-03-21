@@ -396,21 +396,29 @@ window.addEventListener('DOMContentLoaded', () => {
     // END Click outside
 
     // Range slider
-    const range = document.querySelector(".js-range-track");
-    const rangeVal = document.querySelector(".js-range-value");
-    const rangeInput = document.querySelectorAll(".js-range-slider input");
+    const rangeSliders = document.querySelectorAll(".js-range-slider");
+    const rangeInputs = document.querySelectorAll(".js-range-slider input");
 
     const rangeStyle = () => {
-        const percentage = `${(rangeInput[0].value / rangeInput[0].max) * 100}%`;
-        rangeVal.style.left = percentage;
-        range.style.width = percentage;
+        rangeSliders.forEach(slider => {
+            const range = slider.querySelector(".js-range-track");
+            const rangeVal = slider.querySelector(".js-range-value");
+            const rangeInput = slider.querySelectorAll(".js-range-slider input");
+            const percentage = `${(rangeInput[0].value / rangeInput[0].max) * 100}%`;
+            rangeVal && (rangeVal.style.left = percentage);
+            range.style.width = percentage;
+
+            if(slider.classList.contains('referral__range-slider')) {
+                rangeVal.innerText = `${rangeInput[0].value}%`;
+            }
+        });
     };
 
-    if (!!rangeInput.length) {
+    if (!!rangeInputs.length) {
         rangeStyle();
     }
 
-    rangeInput && rangeInput.forEach((input) => {
+    rangeInputs && rangeInputs.forEach((input) => {
         input.addEventListener("input", () => {
             rangeStyle();
         });
