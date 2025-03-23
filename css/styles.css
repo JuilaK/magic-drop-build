@@ -8092,6 +8092,12 @@ span.draw-item__start-price svg {
   -webkit-transition: opacity 0.3s ease-out, visibility 0s;
   transition: opacity 0.3s ease-out, visibility 0s;
 }
+.win--open .win__item {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
 .win--open .win__item-img {
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
@@ -8187,6 +8193,131 @@ span.draw-item__start-price svg {
   padding: 1.6rem 1.6rem 2.4rem;
   background-color: #1a1a26;
   border-radius: 1.6rem;
+  opacity: 0;
+  -webkit-transform: translateY(1rem);
+      -ms-transform: translateY(1rem);
+          transform: translateY(1rem);
+  will-change: transform, opacity;
+}
+.win__item:nth-child(1) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
+  transition: opacity 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
+  transition: opacity 0.2s ease-out 0.2s, transform 0.2s ease-out 0.2s;
+  transition: opacity 0.2s ease-out 0.2s, transform 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
+}
+.win__item:nth-child(1) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 0.2s;
+  transition: -webkit-transform 1s ease-out 0.2s;
+  transition: transform 1s ease-out 0.2s;
+  transition: transform 1s ease-out 0.2s, -webkit-transform 1s ease-out 0.2s;
+}
+.win__item:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, -webkit-transform 0.2s ease-out 0.4s;
+  transition: opacity 0.2s ease-out 0.4s, -webkit-transform 0.2s ease-out 0.4s;
+  transition: opacity 0.2s ease-out 0.4s, transform 0.2s ease-out 0.4s;
+  transition: opacity 0.2s ease-out 0.4s, transform 0.2s ease-out 0.4s, -webkit-transform 0.2s ease-out 0.4s;
+}
+.win__item:nth-child(2) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 0.4s;
+  transition: -webkit-transform 1s ease-out 0.4s;
+  transition: transform 1s ease-out 0.4s;
+  transition: transform 1s ease-out 0.4s, -webkit-transform 1s ease-out 0.4s;
+}
+.win__item:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, -webkit-transform 0.2s ease-out 0.6s;
+  transition: opacity 0.2s ease-out 0.6s, -webkit-transform 0.2s ease-out 0.6s;
+  transition: opacity 0.2s ease-out 0.6s, transform 0.2s ease-out 0.6s;
+  transition: opacity 0.2s ease-out 0.6s, transform 0.2s ease-out 0.6s, -webkit-transform 0.2s ease-out 0.6s;
+}
+.win__item:nth-child(3) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 0.6s;
+  transition: -webkit-transform 1s ease-out 0.6s;
+  transition: transform 1s ease-out 0.6s;
+  transition: transform 1s ease-out 0.6s, -webkit-transform 1s ease-out 0.6s;
+}
+.win__item:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.8s, -webkit-transform 0.2s ease-out 0.8s;
+  transition: opacity 0.2s ease-out 0.8s, -webkit-transform 0.2s ease-out 0.8s;
+  transition: opacity 0.2s ease-out 0.8s, transform 0.2s ease-out 0.8s;
+  transition: opacity 0.2s ease-out 0.8s, transform 0.2s ease-out 0.8s, -webkit-transform 0.2s ease-out 0.8s;
+}
+.win__item:nth-child(4) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 0.8s;
+  transition: -webkit-transform 1s ease-out 0.8s;
+  transition: transform 1s ease-out 0.8s;
+  transition: transform 1s ease-out 0.8s, -webkit-transform 1s ease-out 0.8s;
+}
+.win__item:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 1s, -webkit-transform 0.2s ease-out 1s;
+  transition: opacity 0.2s ease-out 1s, -webkit-transform 0.2s ease-out 1s;
+  transition: opacity 0.2s ease-out 1s, transform 0.2s ease-out 1s;
+  transition: opacity 0.2s ease-out 1s, transform 0.2s ease-out 1s, -webkit-transform 0.2s ease-out 1s;
+}
+.win__item:nth-child(5) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 1s;
+  transition: -webkit-transform 1s ease-out 1s;
+  transition: transform 1s ease-out 1s;
+  transition: transform 1s ease-out 1s, -webkit-transform 1s ease-out 1s;
+}
+.win__item:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 1.2s, -webkit-transform 0.2s ease-out 1.2s;
+  transition: opacity 0.2s ease-out 1.2s, -webkit-transform 0.2s ease-out 1.2s;
+  transition: opacity 0.2s ease-out 1.2s, transform 0.2s ease-out 1.2s;
+  transition: opacity 0.2s ease-out 1.2s, transform 0.2s ease-out 1.2s, -webkit-transform 0.2s ease-out 1.2s;
+}
+.win__item:nth-child(6) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 1.2s;
+  transition: -webkit-transform 1s ease-out 1.2s;
+  transition: transform 1s ease-out 1.2s;
+  transition: transform 1s ease-out 1.2s, -webkit-transform 1s ease-out 1.2s;
+}
+.win__item:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 1.4s, -webkit-transform 0.2s ease-out 1.4s;
+  transition: opacity 0.2s ease-out 1.4s, -webkit-transform 0.2s ease-out 1.4s;
+  transition: opacity 0.2s ease-out 1.4s, transform 0.2s ease-out 1.4s;
+  transition: opacity 0.2s ease-out 1.4s, transform 0.2s ease-out 1.4s, -webkit-transform 0.2s ease-out 1.4s;
+}
+.win__item:nth-child(7) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 1.4s;
+  transition: -webkit-transform 1s ease-out 1.4s;
+  transition: transform 1s ease-out 1.4s;
+  transition: transform 1s ease-out 1.4s, -webkit-transform 1s ease-out 1.4s;
+}
+.win__item:nth-child(8) {
+  -webkit-transition: opacity 0.2s ease-out 1.6s, -webkit-transform 0.2s ease-out 1.6s;
+  transition: opacity 0.2s ease-out 1.6s, -webkit-transform 0.2s ease-out 1.6s;
+  transition: opacity 0.2s ease-out 1.6s, transform 0.2s ease-out 1.6s;
+  transition: opacity 0.2s ease-out 1.6s, transform 0.2s ease-out 1.6s, -webkit-transform 0.2s ease-out 1.6s;
+}
+.win__item:nth-child(8) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 1.6s;
+  transition: -webkit-transform 1s ease-out 1.6s;
+  transition: transform 1s ease-out 1.6s;
+  transition: transform 1s ease-out 1.6s, -webkit-transform 1s ease-out 1.6s;
+}
+.win__item:nth-child(9) {
+  -webkit-transition: opacity 0.2s ease-out 1.8s, -webkit-transform 0.2s ease-out 1.8s;
+  transition: opacity 0.2s ease-out 1.8s, -webkit-transform 0.2s ease-out 1.8s;
+  transition: opacity 0.2s ease-out 1.8s, transform 0.2s ease-out 1.8s;
+  transition: opacity 0.2s ease-out 1.8s, transform 0.2s ease-out 1.8s, -webkit-transform 0.2s ease-out 1.8s;
+}
+.win__item:nth-child(9) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 1.8s;
+  transition: -webkit-transform 1s ease-out 1.8s;
+  transition: transform 1s ease-out 1.8s;
+  transition: transform 1s ease-out 1.8s, -webkit-transform 1s ease-out 1.8s;
+}
+.win__item:nth-child(10) {
+  -webkit-transition: opacity 0.2s ease-out 2s, -webkit-transform 0.2s ease-out 2s;
+  transition: opacity 0.2s ease-out 2s, -webkit-transform 0.2s ease-out 2s;
+  transition: opacity 0.2s ease-out 2s, transform 0.2s ease-out 2s;
+  transition: opacity 0.2s ease-out 2s, transform 0.2s ease-out 2s, -webkit-transform 0.2s ease-out 2s;
+}
+.win__item:nth-child(10) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 2s;
+  transition: -webkit-transform 1s ease-out 2s;
+  transition: transform 1s ease-out 2s;
+  transition: transform 1s ease-out 2s, -webkit-transform 1s ease-out 2s;
 }
 @media (max-width: 768px) {
   .win__item {
@@ -8339,6 +8470,7 @@ span.draw-item__start-price svg {
   will-change: transform;
   border-radius: 1.6rem;
   overflow: hidden;
+  display: none;
 }
 
 .win__item-bg {
