@@ -8470,7 +8470,6 @@ span.draw-item__start-price svg {
   will-change: transform;
   border-radius: 1.6rem;
   overflow: hidden;
-  display: none;
 }
 
 .win__item-bg {
