@@ -6699,19 +6699,19 @@ span.draw-item__start-price svg {
             transform: translateX(-50%) scaleX(0) scaleY(1);
   }
   40%, 45% {
+    border-color: #DDC916;
     -webkit-transform: translateX(-50%) scaleX(1) scaleY(1);
             transform: translateX(-50%) scaleX(1) scaleY(1);
   }
   70% {
     border-color: #DDC916;
-    -webkit-transform: translateX(-50%) scaleX(1) scaleY(1);
-            transform: translateX(-50%) scaleX(1) scaleY(1);
   }
   90% {
     border-color: transparent;
+    -webkit-transform: translateX(-50%) scaleX(1) scaleY(0);
+            transform: translateX(-50%) scaleX(1) scaleY(0);
   }
   100% {
-    border-color: transparent;
     -webkit-transform: translateX(-50%) scaleX(1) scaleY(0);
             transform: translateX(-50%) scaleX(1) scaleY(0);
   }
@@ -6723,19 +6723,19 @@ span.draw-item__start-price svg {
             transform: translateX(-50%) scaleX(0) scaleY(1);
   }
   40%, 45% {
+    border-color: #DDC916;
     -webkit-transform: translateX(-50%) scaleX(1) scaleY(1);
             transform: translateX(-50%) scaleX(1) scaleY(1);
   }
   70% {
     border-color: #DDC916;
-    -webkit-transform: translateX(-50%) scaleX(1) scaleY(1);
-            transform: translateX(-50%) scaleX(1) scaleY(1);
   }
   90% {
     border-color: transparent;
+    -webkit-transform: translateX(-50%) scaleX(1) scaleY(0);
+            transform: translateX(-50%) scaleX(1) scaleY(0);
   }
   100% {
-    border-color: transparent;
     -webkit-transform: translateX(-50%) scaleX(1) scaleY(0);
             transform: translateX(-50%) scaleX(1) scaleY(0);
   }
@@ -8197,6 +8197,7 @@ span.draw-item__start-price svg {
   -webkit-transform: translateY(1rem);
       -ms-transform: translateY(1rem);
           transform: translateY(1rem);
+  will-change: transform, opacity;
 }
 .win__item:nth-child(1) {
   -webkit-transition: opacity 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
