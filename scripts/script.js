@@ -69,6 +69,14 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         })
     });
+    const notificationsCloseBtns = document.querySelectorAll('.js-notifications-close');
+    notificationsCloseBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const notificationItem = btn.closest('.js-notification')
+            notificationItem.classList.remove('notification--open')
+        })
+    })
+
     // END Open and Close notifications
 
     // Modal
