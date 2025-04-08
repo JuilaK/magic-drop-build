@@ -511,16 +511,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Open case
     const caseContainer = document.querySelector(".js-case-container");
+    const caseContainerMagic = document.querySelector(".js-case-container-magic");
     const openCaseBtn = document.querySelector(".js-open-case");
     const caseHero = document.querySelector(".js-case-hero");
     const caseRoulette = document.querySelector(".js-case-hero-roulette");
 
     !!openCaseBtn && openCaseBtn.addEventListener("click", () => {
-        caseContainer.classList.add("open");
-        setTimeout(() => {
-            caseHero.style.display = 'none';
-            caseRoulette.style.display = 'block';
-        }, 300);
+        if(!!caseContainer) {
+            caseContainer.classList.add("open");
+            setTimeout(() => {
+                caseHero.style.display = 'none';
+                caseRoulette.style.display = 'block';
+            }, 300);
+        } else if (!!caseContainerMagic) {
+            caseContainerMagic.classList.add("open");
+            setTimeout(() => {
+                caseHero.style.display = 'none';
+                caseRoulette.style.display = 'block';
+            }, 3300);
+        }
     });
     //END Open case
 })
