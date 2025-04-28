@@ -5084,6 +5084,11 @@ span.header__volume-value {
           animation: displayShadow 3s ease-out infinite;
 }
 
+.cases__item {
+  display: -ms-grid;
+  display: grid;
+}
+
 .case {
   position: relative;
   display: block;
