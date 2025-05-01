@@ -6974,8 +6974,6 @@ span.draw-item__start-price svg {
 @-webkit-keyframes hiddenCaseImg {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
     visibility: visible;
   }
   99% {
@@ -6983,16 +6981,14 @@ span.draw-item__start-price svg {
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
     visibility: hidden;
   }
 }
 @keyframes hiddenCaseImg {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
     visibility: visible;
   }
   99% {
@@ -7000,8 +6996,8 @@ span.draw-item__start-price svg {
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
     visibility: hidden;
   }
 }
@@ -7109,12 +7105,19 @@ span.draw-item__start-price svg {
 }
 .case-container--magic-1.open .case-hero__img, .case-container--magic-2.open .case-hero__img, .case-container--magic-3.open .case-hero__img {
   opacity: 1;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(7.2rem);
+      -ms-transform: translateY(7.2rem);
+          transform: translateY(7.2rem);
   visibility: visible;
   -webkit-animation: hiddenCaseImg 0.3s ease-out 3s forwards;
           animation: hiddenCaseImg 0.3s ease-out 3s forwards;
+}
+@media (max-width: 1500px) {
+  .case-container--magic-1.open .case-hero__img, .case-container--magic-2.open .case-hero__img, .case-container--magic-3.open .case-hero__img {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 .case-container--magic-1.open .case-hero__images picture {
   --imageScale: 1.05;
