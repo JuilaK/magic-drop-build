@@ -4561,6 +4561,35 @@ span.header__volume-value {
   background: linear-gradient(-90deg, #B2FF00 0%, rgba(117, 9, 100, 0) 100%);
 }
 
+.live-item__magic {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 0.3rem;
+  background-color: rgba(132, 132, 167, 0.6);
+  border-radius: 0.6rem;
+}
+@media (max-width: 768px) {
+  .live-item__magic {
+    top: 0.6rem;
+    left: 0.6rem;
+  }
+}
+.live-item__magic span {
+  margin-left: -0.1rem;
+  font-size: 1rem;
+}
+.live-item__magic svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
 .live-item__badge {
   position: absolute;
   top: 0.8rem;
