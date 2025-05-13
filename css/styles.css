@@ -5641,7 +5641,7 @@ span.header__volume-value {
 
 .draw-item__img {
   position: relative;
-  width: 80%;
+  width: 70%;
   z-index: 1;
 }
 
@@ -17428,7 +17428,7 @@ dd.upgrade__skin-price svg {
   padding: 3.8rem 6rem;
   max-width: 44rem;
   pointer-events: none;
-  z-index: 888;
+  z-index: 1000;
 }
 @media (max-width: 1024px) {
   .notifications {
@@ -17687,7 +17687,7 @@ dd.upgrade__skin-price svg {
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
   transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
-  z-index: 1000;
+  z-index: 888;
 }
 .modal--open {
   opacity: 1;
@@ -17705,10 +17705,12 @@ dd.upgrade__skin-price svg {
 .modal--open.modal--telegram-subscribe picture {
   -webkit-animation: scaleCase 0.8s ease-out 0.5s forwards;
           animation: scaleCase 0.8s ease-out 0.5s forwards;
+  will-change: transform;
 }
 .modal--open.modal--telegram-subscribe picture::before {
   -webkit-animation: fade 0.3s ease-out 1.3s forwards;
           animation: fade 0.3s ease-out 1.3s forwards;
+  will-change: transform;
 }
 @media (max-width: 480px) {
   .modal--consent {
