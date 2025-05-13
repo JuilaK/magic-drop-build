@@ -968,12 +968,12 @@
 						</svg>
 						Instagram
 					</a> -->
-					<a href=".#" class="header__promo-social-link">
+					<button type="button" class="header__promo-social-link btn btn--icon" data-modal-trigger="telegram-subscribe">
 						<svg aria-hidden="true" class="dark-grey">
 							<use xlink:href="images/sprite.svg#telegram"></use>
 						</svg>
 						Telegram
-					</a>
+					</button>
 				</div>
 				<div>
 					<button type="button" class="header__promo-btn btn btn--icon js-notifications-btn">
@@ -2254,6 +2254,41 @@
                             <use xlink:href="images/sprite.svg#close-circle"></use>
                         </svg>
                         Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal modal--telegram-subscribe js-modal" data-modal-name="telegram-subscribe">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <picture>
+                    <source srcset="./images/cases/telegram-case.webp" type="image/webp">
+                    <img src="./images/cases/telegram-case.png" alt="" aria-hidden="true">
+                </picture>
+                <h2 class="modal__title">Кейс в подарок за подписку!</h2>
+                <p class="modal__text">
+                    Подпишись на telegram-канал MagicDrop и получи бесплатно
+                    <a href="#" class="yellow">Кейс Телеграм</a>
+                </p>
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--bg-blue">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#telegram-blue"></use>
+                        </svg>
+                        Подписаться
+                    </button>
+                    <button type="button" class="btn js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#close-circle"></use>
+                        </svg>
+                        Закрыть
                     </button>
                 </div>
             </div>
