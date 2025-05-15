@@ -532,6 +532,45 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     //END Open case
+
+    // Open win cards
+    const openWinRareBtn = document.querySelector(".js-open-win-rare");
+    const winRare = document.querySelector(".js-win-rare");
+    const closeWinRareBtn = document.querySelector(".js-close-win-rare");
+    const winRareVideo = document.querySelector(".js-win-rare-video");
+    const winRareItems = document.querySelectorAll(".js-win-rare-item");
+    
+    !!openWinRareBtn && openWinRareBtn.addEventListener('click', () => {
+        winRare.classList.add('win-rare--open');
+        document.body.style.overflow = 'hidden';
+        // Фикс для Safari (иногда видео не растягивается)
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            winRareVideo.style.objectFit = 'cover';
+            winRareVideo.setAttribute('playsinline', '');
+            winRareVideo.setAttribute('webkit-playsinline', '');
+        }
+        winRareVideo.volume = 0.5;
+        winRareVideo.play();
+    });
+
+    !!closeWinRareBtn && closeWinRareBtn.addEventListener('click', () => {
+        winRare.classList.remove('win-rare--open');
+        document.body.style.overflow = '';
+        winRareItems.forEach(item => {
+            if (item.classList.contains('win-rare__item--open')) {
+                item.classList.remove('win-rare__item--open');
+            }
+        });
+    });
+
+    !!winRareItems && winRareItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (!item.classList.contains('win-rare__item--open')) {
+                item.classList.toggle('win-rare__item--open');
+            }
+        });
+    });
+    // END Open win card
 })
 
 function fix100vh() {

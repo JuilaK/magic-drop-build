@@ -19960,3 +19960,524 @@ dd.upgrade__skin-price svg {
 .notice__btn {
   margin-top: 1.6rem;
 }
+
+.win-rare {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  z-index: 20;
+}
+.win-rare--open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out;
+}
+.win-rare--open .win-rare__content {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out 4.8s;
+  transition: opacity 0.3s ease-out 4.8s;
+}
+.win-rare--open .win-rare__item {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.win-rare--open .win-rare__item:nth-child(1) {
+  -webkit-transition: opacity 0.2s ease-out 5.2s, -webkit-transform 0.2s ease-out 5.2s;
+  transition: opacity 0.2s ease-out 5.2s, -webkit-transform 0.2s ease-out 5.2s;
+  transition: opacity 0.2s ease-out 5.2s, transform 0.2s ease-out 5.2s;
+  transition: opacity 0.2s ease-out 5.2s, transform 0.2s ease-out 5.2s, -webkit-transform 0.2s ease-out 5.2s;
+}
+.win-rare--open .win-rare__item:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 5.4s, -webkit-transform 0.2s ease-out 5.4s;
+  transition: opacity 0.2s ease-out 5.4s, -webkit-transform 0.2s ease-out 5.4s;
+  transition: opacity 0.2s ease-out 5.4s, transform 0.2s ease-out 5.4s;
+  transition: opacity 0.2s ease-out 5.4s, transform 0.2s ease-out 5.4s, -webkit-transform 0.2s ease-out 5.4s;
+}
+.win-rare--open .win-rare__item:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 5.6s, -webkit-transform 0.2s ease-out 5.6s;
+  transition: opacity 0.2s ease-out 5.6s, -webkit-transform 0.2s ease-out 5.6s;
+  transition: opacity 0.2s ease-out 5.6s, transform 0.2s ease-out 5.6s;
+  transition: opacity 0.2s ease-out 5.6s, transform 0.2s ease-out 5.6s, -webkit-transform 0.2s ease-out 5.6s;
+}
+.win-rare--open .win-rare__item:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 5.8s, -webkit-transform 0.2s ease-out 5.8s;
+  transition: opacity 0.2s ease-out 5.8s, -webkit-transform 0.2s ease-out 5.8s;
+  transition: opacity 0.2s ease-out 5.8s, transform 0.2s ease-out 5.8s;
+  transition: opacity 0.2s ease-out 5.8s, transform 0.2s ease-out 5.8s, -webkit-transform 0.2s ease-out 5.8s;
+}
+.win-rare--open .win-rare__item:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 6s, -webkit-transform 0.2s ease-out 6s;
+  transition: opacity 0.2s ease-out 6s, -webkit-transform 0.2s ease-out 6s;
+  transition: opacity 0.2s ease-out 6s, transform 0.2s ease-out 6s;
+  transition: opacity 0.2s ease-out 6s, transform 0.2s ease-out 6s, -webkit-transform 0.2s ease-out 6s;
+}
+.win-rare--open .win-rare__item:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 6.2s, -webkit-transform 0.2s ease-out 6.2s;
+  transition: opacity 0.2s ease-out 6.2s, -webkit-transform 0.2s ease-out 6.2s;
+  transition: opacity 0.2s ease-out 6.2s, transform 0.2s ease-out 6.2s;
+  transition: opacity 0.2s ease-out 6.2s, transform 0.2s ease-out 6.2s, -webkit-transform 0.2s ease-out 6.2s;
+}
+.win-rare--open .win-rare__item:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
+  transition: opacity 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
+  transition: opacity 0.2s ease-out 6.4s, transform 0.2s ease-out 6.4s;
+  transition: opacity 0.2s ease-out 6.4s, transform 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
+}
+.win-rare--open .win-rare__item:nth-child(8) {
+  -webkit-transition: opacity 0.2s ease-out 6.6s, -webkit-transform 0.2s ease-out 6.6s;
+  transition: opacity 0.2s ease-out 6.6s, -webkit-transform 0.2s ease-out 6.6s;
+  transition: opacity 0.2s ease-out 6.6s, transform 0.2s ease-out 6.6s;
+  transition: opacity 0.2s ease-out 6.6s, transform 0.2s ease-out 6.6s, -webkit-transform 0.2s ease-out 6.6s;
+}
+.win-rare--open .win-rare__item:nth-child(9) {
+  -webkit-transition: opacity 0.2s ease-out 6.8s, -webkit-transform 0.2s ease-out 6.8s;
+  transition: opacity 0.2s ease-out 6.8s, -webkit-transform 0.2s ease-out 6.8s;
+  transition: opacity 0.2s ease-out 6.8s, transform 0.2s ease-out 6.8s;
+  transition: opacity 0.2s ease-out 6.8s, transform 0.2s ease-out 6.8s, -webkit-transform 0.2s ease-out 6.8s;
+}
+.win-rare--open .win-rare__item:nth-child(10) {
+  -webkit-transition: opacity 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+  transition: opacity 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+  transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s;
+  transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+}
+
+.win-rare__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.win-rare__video::-webkit-media-controls {
+  display: none !important;
+}
+.win-rare__video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+.win-rare__close-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  padding: 0.3rem;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (any-hover: hover) {
+  .win-rare__close-btn:hover .win-rare__close-btn-icon {
+    background-color: rgba(132, 132, 167, 0.4);
+  }
+}
+@media (max-width: 768px) {
+  .win-rare__close-btn {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0.3rem;
+  }
+}
+
+.win-rare__close-btn-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  position: relative;
+  display: block;
+  background-color: rgba(132, 132, 167, 0.12);
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .win-rare__close-btn-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}
+.win-rare__close-btn-icon::before, .win-rare__close-btn-icon::after {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.4rem;
+  height: 0.3rem;
+  content: "";
+  display: block;
+  background-color: #D9D9D9;
+  border-radius: 0.2rem;
+}
+@media (max-width: 768px) {
+  .win-rare__close-btn-icon::before, .win-rare__close-btn-icon::after {
+    width: 1.4rem;
+    height: 0.3rem;
+  }
+}
+.win-rare__close-btn-icon::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.win-rare__close-btn-icon::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.win-rare__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.4rem 4rem;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .win-rare__list {
+    gap: 1.6rem 2.4rem;
+  }
+}
+
+.win-rare__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  background-color: rgba(12, 12, 27, 0.3);
+  opacity: 0;
+  overflow-y: auto;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.win-rare__content::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 2.2rem;
+}
+.win-rare__content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 2.2rem;
+}
+.win-rare__content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.win-rare__item {
+  width: 25rem;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 1rem, 0);
+          transform: translate3d(0, 1rem, 0);
+  will-change: opacity;
+  -webkit-transition: opacity 0s, -webkit-transform 0s;
+  transition: opacity 0s, -webkit-transform 0s;
+  transition: opacity 0s, transform 0s;
+  transition: opacity 0s, transform 0s, -webkit-transform 0s;
+}
+@media (any-hover: hover) {
+  .win-rare__item:hover .win-rare__item-back {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+.win-rare__item--covert .win-rare__item-chance {
+  color: #FF575D;
+}
+.win-rare__item--milspec .win-rare__item-chance {
+  color: #55FFFF;
+}
+.win-rare__item--restricted .win-rare__item-chance {
+  color: #FF55FF;
+}
+.win-rare__item--rare .win-rare__item-chance {
+  color: #FFFF54;
+}
+.win-rare__item--classified .win-rare__item-chance {
+  color: #FF52FF;
+}
+.win-rare__item--open .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.win-rare__item--open .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 0.3s, visibility 0s;
+  transition: opacity 0.3s ease-out 0.3s, visibility 0s;
+}
+.win-rare__item--open.is-rare .win-rare__item-bg::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  display: block;
+  border-radius: 2.4rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+  background-size: 300% 300%;
+  -webkit-animation: diamondShine 3.6s ease-in-out infinite;
+          animation: diamondShine 3.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes diamondShine {
+  0% {
+    background-position: 100% 50%;
+    opacity: 0;
+  }
+  5%, 45% {
+    opacity: 0.5;
+  }
+  50%, 100% {
+    background-position: 0% 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes diamondShine {
+  0% {
+    background-position: 100% 50%;
+    opacity: 0;
+  }
+  5%, 45% {
+    opacity: 0.5;
+  }
+  50%, 100% {
+    background-position: 0% 50%;
+    opacity: 0;
+  }
+}
+.win-rare__item-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+  will-change: transform;
+}
+
+.win-rare__item-back {
+  width: 100%;
+  height: 100%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: center/100% 100% no-repeat url("../images/win-rare-bg/card-back.png");
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.win-rare__item-card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.win-rare__item-bg,
+.win-rare__item-card-wrapper {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.win-rare__item-card-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.4rem 2rem 3.6rem;
+}
+.win-rare__item-card-wrapper::before {
+  width: 100%;
+  height: 1.2rem;
+  content: "";
+  display: block;
+}
+
+.win-rare__item-img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.win-rare__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: drop-shadow(0 3rem 1.2rem rgba(12, 12, 27, 0.43));
+          filter: drop-shadow(0 3rem 1.2rem rgba(12, 12, 27, 0.43));
+}
+
+.win-rare__item-info {
+  position: relative;
+  margin-top: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.win-rare__item-subtitle,
+.win-rare__item-title {
+  font-size: 1.4rem;
+  line-height: 120%;
+}
+
+.win-rare__item-subtitle {
+  opacity: 0.6;
+}
+
+.win-rare__item-title {
+  font-weight: 700;
+}
+
+@-webkit-keyframes pulseChance {
+  0%, 100% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1);
+  }
+  50% {
+    -webkit-filter: brightness(2.5);
+            filter: brightness(2.5);
+    -webkit-transform: translateX(-50%) scale(1.05);
+            transform: translateX(-50%) scale(1.05);
+  }
+}
+
+@keyframes pulseChance {
+  0%, 100% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1);
+  }
+  50% {
+    -webkit-filter: brightness(2.5);
+            filter: brightness(2.5);
+    -webkit-transform: translateX(-50%) scale(1.05);
+            transform: translateX(-50%) scale(1.05);
+  }
+}
+.win-rare__item-chance {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 2.4rem;
+  font-size: 1.4rem;
+  -webkit-animation: pulseChance 2s ease-out infinite;
+          animation: pulseChance 2s ease-out infinite;
+}
+
+.win-rare__item-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  .win-rare__item-buy {
+    margin-top: 0.2rem;
+  }
+}
+
+.win-rare__item-price {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+  height: 2.6rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.12)), to(rgba(255, 255, 255, 0.12))), rgba(11, 11, 27, 0.14);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%), rgba(11, 11, 27, 0.14);
+  -webkit-backdrop-filter: blur(0.6rem);
+          backdrop-filter: blur(0.6rem);
+  border-radius: 0.6rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.04);
+}
+.win-rare__item-price span {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.win-rare__item-price svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.win-rare__item-btn {
+  height: 2.6rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
