@@ -2498,7 +2498,7 @@ textarea {
     transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s, -webkit-transform 0.3s ease-out;
     transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0s ease-out 0.3s;
     transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0s ease-out 0.3s, -webkit-transform 0.3s ease-out;
-    z-index: 999;
+    z-index: 888;
   }
 }
 @media (max-width: 768px) {
@@ -17687,7 +17687,7 @@ dd.upgrade__skin-price svg {
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
   transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
-  z-index: 888;
+  z-index: 999;
 }
 .modal--open {
   opacity: 1;
