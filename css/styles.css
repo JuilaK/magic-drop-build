@@ -7417,6 +7417,47 @@ span.draw-item__start-price svg {
   opacity: 0;
 }
 
+@-webkit-keyframes showCaseImg {
+  0% {
+    -webkit-transform: translateY(-12rem);
+            transform: translateY(-12rem);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes showCaseImg {
+  0% {
+    -webkit-transform: translateY(-12rem);
+            transform: translateY(-12rem);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .case-hero__img {
   position: relative;
   margin-top: -12.8rem;
@@ -7426,6 +7467,9 @@ span.draw-item__start-price svg {
      object-fit: contain;
   -o-object-position: bottom;
      object-position: bottom;
+  -webkit-animation: showCaseImg 0.5s linear 0.2s both;
+          animation: showCaseImg 0.5s linear 0.2s both;
+  will-change: transform, opacity;
   z-index: 1;
 }
 @media (max-width: 1500px) {
