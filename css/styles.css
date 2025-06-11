@@ -9439,6 +9439,23 @@ span.draw-item__start-price svg {
   height: 2rem;
 }
 
+.profile-header__user-date {
+  margin-left: 4rem;
+  margin-top: 0.4rem;
+  color: #8484A7;
+  font-size: 1.2rem;
+}
+@media (max-width: 480px) {
+  .profile-header__user-date {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+.profile-header__user-date span {
+  color: #8484A7;
+  font-size: 1.2rem;
+}
+
 .profile-header__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9449,7 +9466,7 @@ span.draw-item__start-price svg {
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
           column-gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.6rem;
 }
 @media (max-width: 480px) {
   .profile-header__btns {
