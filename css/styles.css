@@ -7815,6 +7815,16 @@ span.draw-item__start-price svg {
   line-height: 100%;
   text-transform: uppercase;
 }
+.case-hero__btn .case-hero__btn-text .case-hero__old-price {
+  margin-right: 0.4rem;
+  color: #3F3F4E;
+  text-decoration-line: line-through;
+}
+
+.case-hero__timer-container {
+  margin-top: 1.6rem;
+  text-align: center;
+}
 
 .case-hero__checkbox-wrap {
   display: -webkit-box;
@@ -18472,14 +18482,16 @@ dd.upgrade__skin-price svg {
   color: #FFFFFF;
 }
 
-.case-free__timer-title {
+.case-free__timer-title,
+.case-hero__timer-title {
   margin-top: 1.2rem;
   font-size: 1.2rem;
   line-height: 100%;
   color: #8484A7;
 }
 
-.case-free__timer {
+.case-free__timer,
+.case-hero__timer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18492,7 +18504,8 @@ dd.upgrade__skin-price svg {
   margin-top: 0.8rem;
 }
 
-.case-free__timer-item {
+.case-free__timer-item,
+.case-hero__timer-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18514,20 +18527,24 @@ dd.upgrade__skin-price svg {
   -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06), 0 0.2rem 0 0 #262638 inset;
           box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06), 0 0.2rem 0 0 #262638 inset;
 }
-.case-free__timer-item span {
+.case-free__timer-item span,
+.case-hero__timer-item span {
   display: block;
   font-weight: 900;
   line-height: 1.2rem;
   text-align: center;
   text-transform: uppercase;
 }
-.case-free__timer-item span:last-child {
+.case-free__timer-item span:last-child,
+.case-hero__timer-item span:last-child {
   margin-top: 0.2rem;
   color: #323243;
   font-size: 1rem;
 }
 
-.case-free__separator::before, .case-free__separator::after {
+.case-free__separator::before, .case-free__separator::after,
+.case-hero__separator::before,
+.case-hero__separator::after {
   width: 0.6rem;
   height: 0.6rem;
   content: "";
@@ -18537,7 +18554,8 @@ dd.upgrade__skin-price svg {
   border-radius: 0.2rem;
   opacity: 0.35;
 }
-.case-free__separator::after {
+.case-free__separator::after,
+.case-hero__separator::after {
   margin-top: 0.4rem;
 }
 
