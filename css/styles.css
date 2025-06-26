@@ -5042,12 +5042,9 @@ span.header__volume-value {
     margin-left: 1.6rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .cases-filters__range {
-    -ms-flex-preferred-size: 0.6rem;
-        flex-basis: 0.6rem;
-    margin-left: 0;
-    width: 100%;
+    display: none;
   }
 }
 
