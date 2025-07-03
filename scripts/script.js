@@ -10,6 +10,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (filtersContainer && filtersContainer.classList.contains('cases-filters--open-filters')) {
             filtersContainer.classList.remove('cases-filters--open-filters');
         }
+        setBalanceBlock();
+        balanceBlock.style.transform = window.innerWidth > 1024 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`;
+        setFilterSticky();
     });
 
     const header = document.querySelector('.js-header');
@@ -45,15 +48,54 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     // End Open and close menu
 
+    // Show and hidden Balance block
+    const balanceBlock = document.querySelector('.js-header-balance');
+
+    function setBalanceBlock() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const headerHeight = header.offsetHeight;
+        
+        if ((scrollTop >= headerHeight) && !balanceBlock.classList.contains('header__balance--show')) {
+            balanceBlock.classList.add('header__balance--show');
+        } else if ((scrollTop < headerHeight) && balanceBlock.classList.contains('header__balance--show')) {
+            balanceBlock.classList.remove('header__balance--show');
+        }
+    }
+
+    window.addEventListener('scroll', setBalanceBlock);
+    // END Show and hidden Balance block
+
     // Open and close filters
 
     const filtersContainer = document.querySelector('.js-cases-filters-container');
     const filtersBtn = document.querySelector('.js-cases-filters-btn');
     const filters = document.querySelector('.js-cases-filters');
+    const casesBlock = document.querySelector('.js-cases'); 
 
     filtersBtn && filtersBtn.addEventListener('click', () => {
         filtersContainer.classList.toggle('cases-filters--open-filters');
     });
+
+    function setFilterSticky() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const containerTop = casesBlock.offsetTop;
+        const containerBottom = casesBlock.offsetTop + casesBlock.offsetHeight - 200;
+        if ((containerTop <= scrollTop) && (containerBottom >= scrollTop) && (!filtersContainer.classList.contains('cases-filters--sticky'))) {
+            filtersContainer.classList.add('cases-filters--sticky');
+            setTimeout(() => {
+                balanceBlock.style.transform = window.innerWidth > 1024 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`
+            }, 100);
+        } else if (((containerTop > scrollTop) || (containerBottom < scrollTop)) && (filtersContainer.classList.contains('cases-filters--sticky'))) {
+            setTimeout(() => {
+                filtersContainer.classList.remove('cases-filters--sticky');
+                balanceBlock.style.transform = `translateX(-50%) translateY(0)`;
+            }, 100);
+        }
+    }
+
+    window.addEventListener('scroll', setFilterSticky);
+
+    setFilterSticky();
 
     // END Open and close filters
 
@@ -571,6 +613,42 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
     // END Open win card
+
+    const coefficientes = document.querySelectorAll(".js-coefficient");
+    let previousCheckedId = '';
+
+    !!coefficientes && coefficientes.forEach(coefficient => {
+
+        coefficient.addEventListener('change', (event) => {
+            let currentCheckedId = event.target.checked ? event.target.id : '';
+            
+            if (event.target.checked && (previousCheckedId != currentCheckedId) && !!previousCheckedId) {
+                const checkedInput = document.querySelector(`#${previousCheckedId}.js-coefficient`);
+                checkedInput.checked = false;
+                currentCheckedId = event.target.id;
+            }
+            previousCheckedId = currentCheckedId;
+        });
+    })
+    
+    // Case Accordions
+    const caseAccordionBtns = document.querySelectorAll('.js-case-accordion-btn');
+    
+    !!caseAccordionBtns && caseAccordionBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            const content = btn.parentElement.nextElementSibling;
+
+            if (!expanded) {
+                btn.setAttribute('aria-expanded', !expanded);
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                btn.setAttribute('aria-expanded', !expanded);
+                content.style.maxHeight = '0';
+            }
+        })
+    });
+    // END Case Accordions
 })
 
 function fix100vh() {

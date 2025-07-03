@@ -1017,6 +1017,34 @@
 			</div>
 		</div>
 	</div>
+	<div class="header__balance js-header-balance">
+		<div class="header__balance-wrap">
+			<a href=".#" class="header__pay-btn btn btn--sm btn--gr-yellow btn--icon">
+				<svg aria-hidden="true" class="black">
+					<use xlink:href="images/sprite.svg#plus"></use>
+				</svg>
+				Pay
+			</a>
+			<div class="header__profile">
+				<div>
+					<span class="header__profile-name">Aleksandr</span>
+					<span class="header__profile-money">
+						<span>123 456,78</span>
+						<svg aria-hidden="true">
+							<use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+						</svg>
+					</span>
+				</div>
+				<a href="#" class="header__profile-img-btn">
+					Перейти в профиль
+					<picture class="header__profile-img">
+						<source srcset="./images/avatar.webp" type="image/webp">
+						<img src="./images/avatar.jpg" class="image" alt="Avatar">
+					</picture>
+				</a>
+			</div>
+		</div>
+	</div>
 </header>
     <main>
         <div class="draws-list container">
@@ -1387,7 +1415,7 @@
         </div>
     </div>
 </div>
-        <section class="container">
+        <section class="cases container js-cases">
     <h2 class="sr-only">Cases</h2>
     <div class="cases-filters js-cases-filters-container">
         <button type="button" class="cases-filters__btn btn btn--icon tablet js-cases-filters-btn">
@@ -1505,7 +1533,8 @@
         </div>
     </div>
     <div class="cases-list">
-        <article class="case ">
+        <article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1529,7 +1558,8 @@
         </a>
     
     
-</article><article class="case case--unavailable">
+</article><article class="case case--unavailable js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header case__header--special">
@@ -1551,7 +1581,8 @@
     
         <span class="case__unavailable-text">Недоступно</span>
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         
         <div class="case__header case__header--special">
@@ -1579,7 +1610,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--hot">hot</span>
         <div class="case__header ">
@@ -1603,7 +1635,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1627,7 +1660,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1651,7 +1685,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         
         <div class="case__header ">
@@ -1675,7 +1710,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         
         <div class="case__header ">
@@ -1699,7 +1735,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--hot">hot</span>
         <div class="case__header ">
@@ -1723,7 +1760,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1749,16 +1787,26 @@
     
 </article>
     </div>
-</section>
-        <section class="container">
-    <h2 class="section-title section-title--magic">
-        <svg aria-hidden="true" class="yellow">
-            <use xlink:href="images/sprite.svg#magic"></use>
-        </svg>
-        Magic edition
-    </h2>
+    <div class="cases-header">
+        <h2 class="section-title section-title--magic">
+            <svg aria-hidden="true" class="yellow">
+                <use xlink:href="images/sprite.svg#magic"></use>
+            </svg>
+            Magic edition
+        </h2>
+        <button type="button" class="btn btn--sm js-case-accordion-btn" aria-expanded="true">
+            <span class="btn-title">
+                <span>Свернуть</span>
+                <span>Развернуть</span>
+            </span>
+            <svg aria-hidden="true" class="dark-grey">
+                <use xlink:href="images/sprite.svg#chevron-down"></use>
+            </svg>
+        </button>
+    </div>
     <div class="cases-list cases-list--magic-card">
-        <article class="case ">
+        <article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1782,7 +1830,7 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
     <div class="case__body">
         
         <div class="case__header ">
@@ -1806,7 +1854,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         
         <div class="case__header ">
@@ -1830,7 +1879,7 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
     <div class="case__body">
         <span class="case__badge case__badge--hot">hot</span>
         <div class="case__header ">
@@ -1854,7 +1903,7 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1878,7 +1927,7 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1904,16 +1953,26 @@
     
 </article>
     </div>
-</section>
-        <section class="container">
-    <h2 class="section-title">
-        <svg aria-hidden="true" class="dark-grey">
-            <use xlink:href="images/sprite.svg#crown-2"></use>
-        </svg>
-        Limited edition
-    </h2>
+    <div class="cases-header">
+        <h2 class="section-title">
+            <svg aria-hidden="true" class="grey">
+                <use xlink:href="images/sprite.svg#crown-2"></use>
+            </svg>
+            Limited edition
+        </h2>
+        <button type="button" class="btn btn--sm js-case-accordion-btn" aria-expanded="true">
+            <span class="btn-title">
+                <span>Свернуть</span>
+                <span>Развернуть</span>
+            </span>
+            <svg aria-hidden="true" class="dark-grey">
+                <use xlink:href="images/sprite.svg#chevron-down"></use>
+            </svg>
+        </button>
+    </div>
     <div class="cases-list cases-list--small-card">
-        <article class="case ">
+        <article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -1937,7 +1996,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         
         <div class="case__header ">
@@ -1961,7 +2021,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         
         <div class="case__header ">
@@ -1985,7 +2046,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--hot">hot</span>
         <div class="case__header ">
@@ -2009,7 +2071,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -2033,7 +2096,8 @@
         </a>
     
     
-</article><article class="case ">
+</article><article class="case  js-case-magic">
+    
     <div class="case__body">
         <span class="case__badge case__badge--new">new</span>
         <div class="case__header ">
@@ -2058,6 +2122,303 @@
     
     
 </article>
+    </div>
+    <div class="cases__retro-block">
+        <div class="cases-header">
+            <h2 class="section-title">
+                <svg aria-hidden="true" class="grey">
+                    <use xlink:href="images/sprite.svg#case"></use>
+                </svg>
+                Retro edition
+            </h2>
+            <button type="button" class="btn btn--sm js-case-accordion-btn" aria-expanded="true">
+                <span class="btn-title">
+                    <span>Свернуть</span>
+                    <span>Развернуть</span>
+                </span>
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#chevron-down"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="cases-list cases-list--small-card">
+            <article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--new">new</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">OPERATION BROKEN FANG CASE</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-5.webp" type="image/webp">
+            <img src="./images/cases/case-5.jpg" alt="OPERATION BROKEN FANG CASE">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>0.25</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-6.webp" type="image/webp">
+            <img src="./images/cases/case-6.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>13</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-5.webp" type="image/webp">
+            <img src="./images/cases/case-5.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            <span>35</span><span>28</span>
+            
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--hot">hot</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-6.webp" type="image/webp">
+            <img src="./images/cases/case-6.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>45</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--new">new</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-5.webp" type="image/webp">
+            <img src="./images/cases/case-5.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>67</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--new">new</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">OPERATION BROKEN FANG CASE</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-6.webp" type="image/webp">
+            <img src="./images/cases/case-6.jpg" alt="OPERATION BROKEN FANG CASE">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>0.25</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-5.webp" type="image/webp">
+            <img src="./images/cases/case-5.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>13</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-6.webp" type="image/webp">
+            <img src="./images/cases/case-6.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            <span>35</span><span>28</span>
+            
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--hot">hot</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-5.webp" type="image/webp">
+            <img src="./images/cases/case-5.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>45</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--new">new</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-6.webp" type="image/webp">
+            <img src="./images/cases/case-6.jpg" alt="Moon Knight">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>67</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article><article class="case  js-case-magic">
+    
+    <div class="case__body">
+        <span class="case__badge case__badge--new">new</span>
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">OPERATION BROKEN FANG CASE</h2>
+            </div>
+        </div>
+        <picture class="case__img">
+            <source srcset="./images/cases/case-5.webp" type="image/webp">
+            <img src="./images/cases/case-5.jpg" alt="OPERATION BROKEN FANG CASE">
+        </picture>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>0.25</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+</article>
+        </div>
     </div>
 </section>
     </main>

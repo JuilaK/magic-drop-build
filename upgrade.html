@@ -1017,6 +1017,34 @@
 			</div>
 		</div>
 	</div>
+	<div class="header__balance js-header-balance">
+		<div class="header__balance-wrap">
+			<a href=".#" class="header__pay-btn btn btn--sm btn--gr-yellow btn--icon">
+				<svg aria-hidden="true" class="black">
+					<use xlink:href="images/sprite.svg#plus"></use>
+				</svg>
+				Pay
+			</a>
+			<div class="header__profile">
+				<div>
+					<span class="header__profile-name">Aleksandr</span>
+					<span class="header__profile-money">
+						<span>123 456,78</span>
+						<svg aria-hidden="true">
+							<use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+						</svg>
+					</span>
+				</div>
+				<a href="#" class="header__profile-img-btn">
+					Перейти в профиль
+					<picture class="header__profile-img">
+						<source srcset="./images/avatar.webp" type="image/webp">
+						<img src="./images/avatar.jpg" class="image" alt="Avatar">
+					</picture>
+				</a>
+			</div>
+		</div>
+	</div>
 </header>
     <main>
         <div class="upgrade container-sm js-upgrade" style="--rotation-arrow-round: 75deg">
@@ -2183,17 +2211,49 @@
                         </svg>
                     </button>
                 </div>
+                <div class="range-inputs">
+                    <label class="range-inputs__min">
+                        Минимальная цена
+                        <input type="text" placeholder="0">
+                    </label>
+                    <span class="range-inputs__line" aria-hidden="true">-</span>
+                    <label class="range-inputs__max">
+                        Максимальная цена
+                        <input type="text" placeholder="1000">
+                    </label>
+                </div>
                 <div class="upgrade-items__filters-wrap">
-                    <div class="range-inputs">
-                        <label class="range-inputs__min">
-                            Минимальная цена
-                            <input type="text" placeholder="0">
-                        </label>
-                        <span class="range-inputs__line" aria-hidden="true">-</span>
-                        <label class="range-inputs__max">
-                            Максимальная цена
-                            <input type="text" placeholder="1000">
-                        </label>
+                    <div class="upgrade-items__coefficientes">
+                        <input 
+                            type="checkbox" 
+                            name="coefficientes" 
+                            id="coefficientes-1-5"
+                            class="js-coefficient">
+                        <label for="coefficientes-1-5">x1.5</label>
+                        <input 
+                            type="checkbox" 
+                            name="coefficientes" 
+                            id="coefficientes-2"
+                            class="js-coefficient">
+                        <label for="coefficientes-2">x2</label>
+                        <input 
+                            type="checkbox" 
+                            name="coefficientes" 
+                            id="coefficientes-3"
+                            class="js-coefficient">
+                        <label for="coefficientes-3">x3</label>
+                        <input 
+                            type="checkbox" 
+                            name="coefficientes" 
+                            id="coefficientes-5"
+                            class="js-coefficient">
+                        <label for="coefficientes-5">x5</label>
+                        <input 
+                            type="checkbox" 
+                            name="coefficientes" 
+                            id="coefficientes-10"
+                            class="js-coefficient">
+                        <label for="coefficientes-10">x10</label>
                     </div>
                     <label class="sort-checkbox">
                         <input type="checkbox" checked>
