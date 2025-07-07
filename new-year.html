@@ -45,6 +45,10 @@
 							<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 							<span>370</span>
 						</a> -->
+						<a href=".#" class="header__coin-btn btn">
+							<img src="./images/magic-coin.png" alt="" aria-hidden="true">
+							<span>25 370</span>
+						</a>
 						<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
 							<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
 							<span>Pay</span>
@@ -451,6 +455,10 @@
 						<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 						370
 					</a> -->
+					<a href=".#" class="header__coin-btn btn">
+						<img src="./images/magic-coin.png" alt="" aria-hidden="true">
+						<span>25 370</span>
+					</a>
 					<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
 						<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
 						Pay
@@ -915,7 +923,18 @@
 						</span>
 					</a>
 				</li>
-					
+				<li>
+					<a href=".#" class="header__promo-link">
+						<picture class="header__promo-img">
+							<source srcset="./images/icon-partner.webp" type="image/webp">
+							<img src="./images/icon-partner.png" alt="Партнеры. Пригласи друга">
+						</picture>
+						<span>
+							<span class="header__promo-link-title">Партнеры</span>
+							<span class="header__promo-link-subtitle">Пригласить друга</span>
+						</span>
+					</a>
+				</li>
 			</ul>
 			
 				<div class="header__promo-code promo-code">
@@ -1418,13 +1437,13 @@
         <section class="cases container js-cases">
     <h2 class="sr-only">Cases</h2>
     <div class="cases-filters js-cases-filters-container">
-        <button type="button" class="cases-filters__btn btn btn--icon tablet js-cases-filters-btn">
-            <svg aria-hidden="true" class="dark-grey">
-                <use xlink:href="images/sprite.svg#filter"></use>
+        <button type="button" class="cases-filters__btn btn btn--icon btn--bg-blue js-cases-filters-btn">
+            <svg aria-hidden="true" class="blue">
+                <use xlink:href="images/sprite.svg#filter-2"></use>
             </svg>
             Filters
         </button>
-        <div class="cases-filters__wrap js-cases-filters">
+        <div class="cases-filters__mob-view js-cases-filters">
             <div class="cases-filters__params">
                 <button type="button" class="cases-filters__btn btn btn--icon btn--active">
                     <span class="btn__svg-wrap">
@@ -1468,33 +1487,117 @@
                         aria-haspopup="listbox"
                         aria-expanded="false"
                         aria-controls="select-dropdown">
-                        <span class="select__selected-value">Weapon type</span>
+                        <span class="select__selected-value">Категория кейса</span>
                     </button>
                     <div class="select__dropdown">
                         <ul role="listbox" class="select__dropdown-wrap">
                             <li role="option">
-                                <input type="radio" id="knives" name="types"/>
-                                <label for="knives">Knives</label>
+                                <input type="radio" id="all-cases" name="types"/>
+                                <label for="all-cases">Все кейсы</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="gloves" name="types" checked/>
-                                <label for="gloves">Gloves</label>
+                                <input type="radio" id="free-cases" name="types" checked/>
+                                <label for="free-cases">Бесплатные кейсы</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="rifles" name="types"/>
-                                <label for="rifles">Rifles</label>
+                                <input type="radio" id="magic-cases" name="types"/>
+                                <label for="magic-cases">Магические кейсы</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="knives" name="types"/>
-                                <label for="knives">Knives</label>
+                                <input type="radio" id="hot-new-cases" name="types"/>
+                                <label for="hot-new-cases">Горячией новинки</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cases-filters__range-wrap">
+                    <div class="cases-filters__range-inputs">
+                        <label class="cases-filters__range-inputs-min">
+                            Min price value
+                            <input type="number" placeholder="0">
+                        </label>
+                        <span class="cases-filters__range-inputs-line" aria-hidden="true">-</span>
+                        <label class="cases-filters__range-inputs-max">
+                            Max price value
+                            <input type="number" placeholder="100000">
+                        </label>
+                    </div>
+                </div>
+                <label class="cases-filters__checkbox checkbox">
+                    <input type="checkbox" checked>
+                    <span>Доступные мне</span>
+                </label>
+            </div>
+            <button type="button" class="cases-filters__btn btn">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#brush"></use>
+                </svg>
+                Очистить
+            </button>
+        </div>
+        <div class="cases-filters__wrap">
+            <div class="cases-filters__params">
+                <button type="button" class="cases-filters__btn btn btn--icon btn--active">
+                    <span class="btn__svg-wrap">
+                        <svg aria-hidden="true" class="grey">
+                            <use xlink:href="images/sprite.svg#case"></use>
+                        </svg>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#case-yellow"></use>
+                        </svg>
+                    </span>
+                    Case
+                </button>
+                <button type="button" class="cases-filters__btn btn btn--icon">
+                    <span class="btn__svg-wrap">
+                        <svg aria-hidden="true" class="grey">
+                            <use xlink:href="images/sprite.svg#gun"></use>
+                        </svg>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gun-yellow"></use>
+                        </svg>
+                    </span>
+                    Gun
+                </button>
+                <div class="cases-filters__search search">
+                    <label>
+                        Name
+                        <input type="text" placeholder="Name">
+                    </label>
+                    <button type="button" class="search__btn btn btn--icon">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                        Search
+                    </button>
+                </div>
+                <div class="cases-filters__select select js-select">
+                    <button
+                        class="btn select__button js-select-btn"
+                        role="combobox"
+                        aria-label="dropdown button"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-controls="select-dropdown">
+                        <span class="select__selected-value">Категория кейса</span>
+                    </button>
+                    <div class="select__dropdown">
+                        <ul role="listbox" class="select__dropdown-wrap">
+                            <li role="option">
+                                <input type="radio" id="all-cases" name="types"/>
+                                <label for="all-cases">Все кейсы</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="gloves" name="types"/>
-                                <label for="gloves">Gloves</label>
+                                <input type="radio" id="free-cases" name="types" checked/>
+                                <label for="free-cases">Бесплатные кейсы</label>
                             </li>
                             <li role="option">
-                                <input type="radio" id="rifles" name="types"/>
-                                <label for="rifles">Rifles</label>
+                                <input type="radio" id="magic-cases" name="types"/>
+                                <label for="magic-cases">Магические кейсы</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="hot-new-cases" name="types"/>
+                                <label for="hot-new-cases">Горячией новинки</label>
                             </li>
                         </ul>
                     </div>
@@ -1521,14 +1624,15 @@
                 </div>
                 <label class="cases-filters__checkbox checkbox">
                     <input type="checkbox" checked>
-                    <span>Enough balance</span>
+                    <span>Доступные мне</span>
+                    <span>Доступно</span>
                 </label>
             </div>
             <button type="button" class="cases-filters__btn btn">
                 <svg aria-hidden="true" class="dark-grey">
                     <use xlink:href="images/sprite.svg#brush"></use>
                 </svg>
-                Clear
+                Очистить
             </button>
         </div>
     </div>

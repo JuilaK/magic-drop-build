@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
             filtersContainer.classList.remove('cases-filters--open-filters');
         }
         setBalanceBlock();
-        balanceBlock.style.transform = window.innerWidth > 1024 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`;
+        balanceBlock.style.transform = window.innerWidth > 768 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`;
         setFilterSticky();
     });
 
@@ -70,6 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const filtersContainer = document.querySelector('.js-cases-filters-container');
     const filtersBtn = document.querySelector('.js-cases-filters-btn');
     const filters = document.querySelector('.js-cases-filters');
+    const firstCasesList = document.querySelector('.js-cases-filters-container + .cases-list');
     const casesBlock = document.querySelector('.js-cases'); 
 
     filtersBtn && filtersBtn.addEventListener('click', () => {
@@ -78,18 +79,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function setFilterSticky() {
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        const containerTop = casesBlock.offsetTop;
+        const firstCasesListTop = firstCasesList.getBoundingClientRect().top;
         const containerBottom = casesBlock.offsetTop + casesBlock.offsetHeight - 200;
-        if ((containerTop <= scrollTop) && (containerBottom >= scrollTop) && (!filtersContainer.classList.contains('cases-filters--sticky'))) {
-            filtersContainer.classList.add('cases-filters--sticky');
+        if ((firstCasesListTop <= 0) && (containerBottom >= scrollTop) && (!filtersContainer.classList.contains('cases-filters--fixed'))) {
+            filtersContainer.classList.add('cases-filters--fixed');
             setTimeout(() => {
-                balanceBlock.style.transform = window.innerWidth > 1024 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`
-            }, 100);
-        } else if (((containerTop > scrollTop) || (containerBottom < scrollTop)) && (filtersContainer.classList.contains('cases-filters--sticky'))) {
+                balanceBlock.style.transform = window.innerWidth > 768 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`
+            }, 300);
+        } else if (((firstCasesListTop > 0) || (containerBottom < scrollTop)) && (filtersContainer.classList.contains('cases-filters--fixed'))) {
             setTimeout(() => {
-                filtersContainer.classList.remove('cases-filters--sticky');
+                filtersContainer.classList.remove('cases-filters--fixed');
                 balanceBlock.style.transform = `translateX(-50%) translateY(0)`;
-            }, 100);
+            }, 300);
         }
     }
 
