@@ -16908,6 +16908,105 @@ dd.upgrade__skin-price svg {
   max-width: 183rem;
 }
 
+.raffle__statictics {
+  margin-top: 3.2rem;
+  text-align: center;
+}
+
+.raffle__statictics-wrap {
+  display: inline-block;
+  min-width: calc((100% - 2.4rem) / 3);
+  padding: 3.2rem 4rem;
+  background: radial-gradient(70% 100% at 50% -40%, rgba(0, 56, 202, 0.5) 0%, rgba(18, 18, 31, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 31, 0.6)), to(rgba(18, 18, 31, 0))), center bottom/cover no-repeat url("../images/bg/bg-raffle-statistics.png");
+  background: radial-gradient(70% 100% at 50% -40%, rgba(0, 56, 202, 0.5) 0%, rgba(18, 18, 31, 0) 100%), linear-gradient(rgba(18, 18, 31, 0.6), rgba(18, 18, 31, 0)), center bottom/cover no-repeat url("../images/bg/bg-raffle-statistics.png");
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 0 0.2rem 0.1rem 0 rgba(73, 73, 104, 0.2);
+          box-shadow: 0 0.2rem 0.1rem 0 rgba(73, 73, 104, 0.2);
+}
+@media (max-width: 768px) {
+  .raffle__statictics-wrap {
+    padding: 2.4rem;
+  }
+}
+
+.raffle__statictics-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 1.6rem 3.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .raffle__statictics-list {
+    -webkit-column-gap: 2.4rem;
+       -moz-column-gap: 2.4rem;
+            column-gap: 2.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .raffle__statictics-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.raffle__statictics-item dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .raffle__statictics-item dd {
+    -webkit-column-gap: 0.4rem;
+       -moz-column-gap: 0.4rem;
+            column-gap: 0.4rem;
+  }
+}
+.raffle__statictics-item dd span {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+@media (max-width: 768px) {
+  .raffle__statictics-item dd span {
+    font-size: 2.4rem;
+  }
+}
+.raffle__statictics-item dd svg {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+@media (max-width: 768px) {
+  .raffle__statictics-item dd svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.raffle__statictics-item dt {
+  margin-top: 0.4rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 768px) {
+  .raffle__statictics-item dt {
+    font-size: 1.2rem;
+  }
+}
+
 .raffle__list {
   display: -ms-grid;
   display: grid;
