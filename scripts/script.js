@@ -14,6 +14,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (!!filtersContainer) {
             balanceBlock.style.transform = window.innerWidth > 768 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`;
         }
+        !!caseAccordionBtns && caseAccordionBtns.forEach(btn => {
+            updateCaseBlocksMaxHeight(btn);
+        });
         setFilterSticky();
     });
 
@@ -638,6 +641,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const caseAccordionBtns = document.querySelectorAll('.js-case-accordion-btn');
     
     !!caseAccordionBtns && caseAccordionBtns.forEach(btn => {
+        updateCaseBlocksMaxHeight(btn);
         btn.addEventListener('click', () => {
             const expanded = btn.getAttribute('aria-expanded') === 'true';
             const content = btn.parentElement.nextElementSibling;
@@ -651,6 +655,14 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         })
     });
+
+    function updateCaseBlocksMaxHeight(btnCase) {
+        const content = btnCase.parentElement.nextElementSibling;
+        const expanded = btnCase.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    }
     // END Case Accordions
 })
 
