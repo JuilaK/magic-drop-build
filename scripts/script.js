@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
             filtersContainer.classList.remove('cases-filters--open-filters');
         }
         setBalanceBlock();
-        if (!!filtersContainer) {
+        if (!!filtersContainer && filtersContainer.classList.contains('cases-filters--fixed')) {
             balanceBlock.style.transform = window.innerWidth > 768 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`;
         }
         !!caseAccordionBtns && caseAccordionBtns.forEach(btn => {
