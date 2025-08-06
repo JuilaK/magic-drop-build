@@ -25,7 +25,9 @@
     <link rel="preload" href="./fonts/Gotham-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/Gotham-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/Gotham-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./libs/splide/splide.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./libs/splide/splide.min.js"></script>
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
@@ -2061,15 +2063,43 @@
         </div>
     </div>
 </div>
-        <section class="container-sm">
-    <h2 class="section-title section-title--center section-title--light">
+        <section class="skins-slider splide container-sm" aria-labelledby="last-top-drop-cards">
+    <h2 id="last-top-drop-cards" class="section-title section-title--center section-title--light">
         <svg aria-hidden="true" class="grey">
             <use xlink:href="images/sprite.svg#crown-2"></use>
         </svg>
         Last Top Drop
     </h2>
-    <div class="skins-list">
-        <article class="skin skin--rare    js-skin">
+    <div class="skins-list__tabs">
+        <div class="skins-list__tabs-wrap tabs">
+            <div class="tab">
+                <input 
+                    type="radio" 
+                    name="drop" 
+                    id="last-drop"
+                    checked>
+                <label for="last-drop">Последний топ дроп</label>
+            </div>
+            <div class="tab">
+                <input 
+                    type="radio" 
+                    name="drop" 
+                    id="all-drop">
+                <label for="all-drop">Топ дроп за все время</label>
+            </div>
+            <div class="tab">
+                <input 
+                    type="radio" 
+                    name="drop" 
+                    id="your-drop">
+                <label for="your-drop">Ваш дроп</label>
+            </div>
+        </div>
+    </div>
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <article class="skin skin--rare     js-skin">
     <span class="skin__badge"><span>2.123</span></span>
     
     
@@ -2113,7 +2143,10 @@
     
     
     
-</article><article class="skin skin--covert    js-skin">
+</article>
+            </li>
+            <li class="splide__slide">
+                <article class="skin skin--covert     js-skin">
     <span class="skin__badge"><span>2.123</span></span>
     
     
@@ -2157,7 +2190,10 @@
     
     
     
-</article><article class="skin skin--classified    js-skin">
+</article>
+            </li>
+            <li class="splide__slide">
+                <article class="skin skin--classified     js-skin">
     <span class="skin__badge"><span>2.123</span></span>
     
     
@@ -2201,160 +2237,31 @@
     
     
     
-</article><article class="skin skin--classified    js-skin">
+</article>
+            </li>
+            <li class="splide__slide">
+                <article class="skin skin--rare     js-skin">
     <span class="skin__badge"><span>2.123</span></span>
     
     
     
     <div class="skin__img">
         <img 
-            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
-            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
-            alt="Water Element"> 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+            alt="Tiger Strike"> 
             
 
     </div>
     <h3 class="skin__title">
-        Water Element
+        Tiger Strike
     </h3>
     <div class="skin__subtitle">
-        Glock-18
+        Specialist 100000
     </div>
     
         <span class="skin__price">
             <span>100 566.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    
-    
-        <div class="skin__user">
-            <a href=".#" class="skin__user-link">
-                <div class="skin__user-avatar">
-                    <picture>
-                        <source srcset="./images/avatar.webp" type="image/webp">
-                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
-                    </picture>
-                </div>
-                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
-                <span class="skin__user-time">16 часов назад</span>
-            </a>
-        </div>
-    
-    
-    
-    
-</article><article class="skin skin--restricted    js-skin">
-    <span class="skin__badge"><span>2.123</span></span>
-    
-    
-    
-    <div class="skin__img">
-        <img 
-            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/200fx200f" 
-            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/400fx400f 2x"
-            alt="Tacticat"> 
-            
-
-    </div>
-    <h3 class="skin__title">
-        Tacticat
-    </h3>
-    <div class="skin__subtitle">
-        CZ75-Auto
-    </div>
-    
-        <span class="skin__price">
-            <span>100 566.24</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    
-    
-        <div class="skin__user">
-            <a href=".#" class="skin__user-link">
-                <div class="skin__user-avatar">
-                    <picture>
-                        <source srcset="./images/avatar.webp" type="image/webp">
-                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
-                    </picture>
-                </div>
-                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
-                <span class="skin__user-time">16 часов назад</span>
-            </a>
-        </div>
-    
-    
-    
-    
-</article><article class="skin skin--restricted    js-skin">
-    <span class="skin__badge"><span>2.123</span></span>
-    
-    
-    
-    <div class="skin__img">
-        <img 
-            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
-            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
-            alt="Arctic Wolf"> 
-            
-
-    </div>
-    <h3 class="skin__title">
-        Arctic Wolf
-    </h3>
-    <div class="skin__subtitle">
-        AUG
-    </div>
-    
-        <span class="skin__price">
-            <span>100 566</span>
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-            </svg>
-        </span>
-    
-    
-        <div class="skin__user">
-            <a href=".#" class="skin__user-link">
-                <div class="skin__user-avatar">
-                    <picture>
-                        <source srcset="./images/avatar.webp" type="image/webp">
-                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
-                    </picture>
-                </div>
-                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
-                <span class="skin__user-time">16 часов назад</span>
-            </a>
-        </div>
-    
-    
-    
-    
-</article><article class="skin skin--restricted    js-skin">
-    <span class="skin__badge"><span>2.123</span></span>
-    
-    
-    
-    <div class="skin__img">
-        <img 
-            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
-            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
-            alt="Safety Net"> 
-            
-
-    </div>
-    <h3 class="skin__title">
-        Safety Net
-    </h3>
-    <div class="skin__subtitle">
-        AK-47
-    </div>
-    
-        <span class="skin__price">
-            <span>10 056</span>
             <svg aria-hidden="true">
                 <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
             </svg>
@@ -2378,6 +2285,163 @@
     
     
 </article>
+            </li>
+            <li class="splide__slide">
+                <article class="skin skin--covert     js-skin">
+    <span class="skin__badge"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+            alt="Syd Mead"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Syd Mead
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+        <span class="skin__price">
+            <span>100 566.24</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article>
+            </li>
+            <li class="splide__slide">
+                <article class="skin skin--classified     js-skin">
+    <span class="skin__badge"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/400fx400f 2x"
+            alt="Momentum"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Momentum
+    </h3>
+    <div class="skin__subtitle">
+        AUG
+    </div>
+    
+        <span class="skin__price">
+            <span>100.24</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article>
+            </li>
+            <li class="splide__slide">
+                <article class="skin skin--rare     js-skin">
+    <span class="skin__badge"><span>2.123</span></span>
+    
+    
+    
+    <div class="skin__img">
+        <img 
+            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+            alt="Tiger Strike"> 
+            
+
+    </div>
+    <h3 class="skin__title">
+        Tiger Strike
+    </h3>
+    <div class="skin__subtitle">
+        Specialist 100000
+    </div>
+    
+        <span class="skin__price">
+            <span>100 566.24</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </span>
+    
+    
+        <div class="skin__user">
+            <a href=".#" class="skin__user-link">
+                <div class="skin__user-avatar">
+                    <picture>
+                        <source srcset="./images/avatar.webp" type="image/webp">
+                        <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                    </picture>
+                </div>
+                <span class="skin__user-name">lok'tar ogar magicdrop-ru</span>
+                <span class="skin__user-time">16 часов назад</span>
+            </a>
+        </div>
+    
+    
+    
+    
+</article>
+            </li>
+        </ul>
+    </div>
+    <div class="splide__arrows">
+        <button class="btn btn--icon splide__arrow splide__arrow--prev">
+			<svg aria-hidden="true" class="grey">
+                <use xlink:href="images/sprite.svg#chevron-right"></use>
+            </svg>
+            Предыдущий слайд
+		</button>
+		<button class="btn btn--icon splide__arrow splide__arrow--next">
+			<svg aria-hidden="true" class="grey">
+                <use xlink:href="images/sprite.svg#chevron-right"></use>
+            </svg>
+            Следующий слайд
+		</button>
     </div>
 </section>
         <section class="container">
@@ -2408,7 +2472,7 @@
         </div>
     </div>
     <div class="skins-list skins-list--lg-card">
-        <article class="skin skin--uncommon skin--case-content   js-skin">
+        <article class="skin skin--uncommon skin--case-content    js-skin">
     
     
     
@@ -2574,7 +2638,7 @@
     
     
     
-</article><article class="skin skin--uncommon skin--case-content   js-skin">
+</article><article class="skin skin--uncommon skin--case-content    js-skin">
     
     
     
@@ -2740,7 +2804,7 @@
     
     
     
-</article><article class="skin skin--uncommon skin--case-content   js-skin">
+</article><article class="skin skin--uncommon skin--case-content    js-skin">
     
     
     
@@ -2906,7 +2970,7 @@
     
     
     
-</article><article class="skin skin--restricted skin--case-content   js-skin">
+</article><article class="skin skin--restricted skin--case-content    js-skin">
     
     
     
@@ -3072,7 +3136,7 @@
     
     
     
-</article><article class="skin skin--restricted skin--case-content   js-skin">
+</article><article class="skin skin--restricted skin--case-content    js-skin">
     
     
     
@@ -3238,7 +3302,7 @@
     
     
     
-</article><article class="skin skin--restricted skin--case-content   js-skin">
+</article><article class="skin skin--restricted skin--case-content    js-skin">
     
     
     
@@ -3404,7 +3468,7 @@
     
     
     
-</article><article class="skin skin--restricted skin--case-content   js-skin">
+</article><article class="skin skin--restricted skin--case-content    js-skin">
     
     
     
@@ -3570,7 +3634,7 @@
     
     
     
-</article><article class="skin skin--restricted skin--case-content   js-skin">
+</article><article class="skin skin--restricted skin--case-content    js-skin">
     
     
     
@@ -3736,7 +3800,7 @@
     
     
     
-</article><article class="skin skin--restricted skin--case-content   js-skin">
+</article><article class="skin skin--restricted skin--case-content    js-skin">
     
     
     
@@ -3902,7 +3966,7 @@
     
     
     
-</article><article class="skin skin--classified skin--case-content   js-skin">
+</article><article class="skin skin--classified skin--case-content    js-skin">
     
     
     
@@ -4068,7 +4132,7 @@
     
     
     
-</article><article class="skin skin--classified skin--case-content   js-skin">
+</article><article class="skin skin--classified skin--case-content    js-skin">
     
     
     
@@ -4234,7 +4298,7 @@
     
     
     
-</article><article class="skin skin--covert skin--case-content   js-skin">
+</article><article class="skin skin--covert skin--case-content    js-skin">
     
     
     
@@ -4400,7 +4464,7 @@
     
     
     
-</article><article class="skin skin--covert skin--case-content   js-skin">
+</article><article class="skin skin--covert skin--case-content    js-skin">
     
     
     
@@ -4566,7 +4630,7 @@
     
     
     
-</article><article class="skin skin--rare skin--case-content   js-skin">
+</article><article class="skin skin--rare skin--case-content    js-skin">
     
     
     

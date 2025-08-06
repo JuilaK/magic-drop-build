@@ -20,6 +20,44 @@ window.addEventListener('DOMContentLoaded', () => {
         setFilterSticky();
     });
 
+    // Splide slider
+
+    const slideContainer = document.querySelector('.splide');
+
+    if (slideContainer) {
+        const splide = new Splide( '.splide', {
+            perPage: 7,
+            pagination: false,
+            padding: '2.4rem',
+            perMove: 1,
+            gap: '1.2rem',
+            paginationKeyboard: true,
+            breakpoints: {
+                1440: {
+                    padding: '1.6rem',
+                },
+                1223: {
+                    perPage: 6
+                },
+                1051: {
+                    perPage: 5
+                },
+                895: {
+                    perPage: 4
+                },
+                707: {
+                    perPage: 3
+                },
+                535: {
+                    perPage: 2
+                }
+            }
+        } );
+        splide.mount();
+    }
+
+    //END Splide slider
+
     const header = document.querySelector('.js-header');
     const headerNav = document.querySelector('.js-header-nav');
 

@@ -2298,6 +2298,13 @@ textarea {
   color: currentColor;
 }
 
+.splide:not(.is-overflow) .splide__arrows {
+  display: none;
+}
+.splide:not(.is-overflow) .splide__arrow:disabled {
+  pointer-events: none;
+}
+
 .loader-container {
   padding-bottom: 5.6rem;
   padding-top: 5.6rem;
@@ -6797,6 +6804,70 @@ span.draw-item__start-price svg {
   }
 }
 
+.skins-slider .splide__track {
+  padding-bottom: 1.6rem;
+  padding-top: 4.8rem;
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
+}
+@media (max-width: 1440px) {
+  .skins-slider .splide__track {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+  }
+}
+.skins-slider .skin__img {
+  aspect-ratio: 0.95;
+}
+.skins-slider .splide__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+}
+.skins-slider .splide__arrow {
+  position: relative;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+.skins-slider .splide__arrow:disabled {
+  pointer-events: none;
+}
+
+.skins-list__tabs {
+  position: relative;
+  margin-bottom: -2.4rem;
+  margin-top: 4.6rem;
+  padding-bottom: 0.4rem;
+  text-align: center;
+  overflow-x: auto;
+  z-index: 1;
+}
+.skins-list__tabs::-webkit-scrollbar {
+  height: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 2.2rem;
+}
+.skins-list__tabs::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 2.2rem;
+}
+
+.skins-list__tabs-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.skins-list__tabs-wrap label {
+  white-space: nowrap;
+}
+
 @-webkit-keyframes hideHoverImg {
   0% {
     -webkit-transform: translate(-50%, 0);
@@ -7426,6 +7497,7 @@ span.draw-item__start-price svg {
           animation: hideHoverSkin 0.4s forwards;
   -webkit-transition: opacity 0s linear 0.4s;
   transition: opacity 0s linear 0.4s;
+  will-change: transform, opacity;
 }
 
 .skin__user-avatar {
