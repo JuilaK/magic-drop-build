@@ -10853,6 +10853,51 @@ span.draw-item__start-price svg {
   line-height: 100%;
 }
 
+.profile-note {
+  margin-top: 2.4rem;
+  padding: 2.4rem 2rem;
+  border-radius: 0.8rem;
+  border: thin solid rgba(221, 201, 22, 0.8);
+  -webkit-box-shadow: 0 0 0.8rem 0 rgba(221, 201, 22, 0.1), 0 0 0.8rem 0 rgba(221, 201, 22, 0.1);
+          box-shadow: 0 0 0.8rem 0 rgba(221, 201, 22, 0.1), 0 0 0.8rem 0 rgba(221, 201, 22, 0.1);
+}
+
+.profile-note__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.profile-note__header svg {
+  width: 4rem;
+  height: 4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.profile-note__title {
+  font-size: 1.6rem;
+}
+
+.profile-note__title-attention {
+  display: block;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.profile-note__text p {
+  margin-top: 0.2rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  line-height: 120%;
+}
+
 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
