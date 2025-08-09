@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
             updateCaseBlocksMaxHeight(btn);
         });
         setFilterSticky();
+        setHeightForNoDropContent();
     });
 
     // Splide slider
@@ -57,6 +58,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     //END Splide slider
+
+    // Set height for Your Drop
+    function setHeightForNoDropContent() {
+        const noDropContent = document.querySelector('.js-no-drop-tab-content');
+        const skinsSlider = document.querySelector('.js-skins-slider .splide__list');
+        if(noDropContent && skinsSlider) {
+            noDropContent.style.height = `${skinsSlider.clientHeight}px`;
+        }
+    }
+
+    setHeightForNoDropContent();
+    
+    // END Set height for Your Drop
 
     const header = document.querySelector('.js-header');
     const headerNav = document.querySelector('.js-header-nav');

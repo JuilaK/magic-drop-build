@@ -7292,10 +7292,17 @@ span.draw-item__start-price svg {
   pointer-events: none;
 }
 
+.skins-slider__no-drop {
+  padding-top: 0.8rem;
+  color: #494968;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 .skins-list__tabs {
   position: relative;
   margin-bottom: -2.4rem;
-  margin-top: 4.6rem;
+  margin-top: 3.2rem;
   padding-bottom: 0.4rem;
   text-align: center;
   overflow-x: auto;
