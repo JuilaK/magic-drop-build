@@ -852,6 +852,16 @@ address {
 :root {
   --rotation-arrow-round: 0deg;
   --openings-count: 1;
+  --skin-drop-padding: 20;
+  --skin-drop-height: 191;
+  --skin-img-height: 115;
+}
+@media (max-width: 768px) {
+  :root {
+    --skin-drop-padding: 16;
+    --skin-drop-height: 206.7;
+    --skin-img-height: 117.25;
+  }
 }
 
 * {
@@ -7293,10 +7303,33 @@ span.draw-item__start-price svg {
 }
 
 .skins-slider__no-drop {
-  padding-top: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: radial-gradient(50% 70% at 50% 120%, rgba(73, 73, 104, 0.3) 0%, rgba(73, 73, 104, 0) 100%);
+  border-radius: 1.6rem;
+}
+.skins-slider__no-drop svg {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.8;
+}
+.skins-slider__no-drop p {
+  padding-bottom: 2.4rem;
+  padding-top: 1.2rem;
   color: #494968;
   font-size: 1.4rem;
-  text-align: center;
 }
 
 .skins-list__tabs {

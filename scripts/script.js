@@ -60,11 +60,27 @@ window.addEventListener('DOMContentLoaded', () => {
     //END Splide slider
 
     // Set height for Your Drop
+    const noDropContent = document.querySelector('.js-no-drop-tab-content');
+    const skinsSliderTrack = document.querySelector('.js-skins-slider .splide__track');
+    const skinsSliderArrows = document.querySelector('.js-skins-slider .splide__arrows');
+
     function setHeightForNoDropContent() {
-        const noDropContent = document.querySelector('.js-no-drop-tab-content');
-        const skinsSlider = document.querySelector('.js-skins-slider .splide__list');
-        if(noDropContent && skinsSlider) {
-            noDropContent.style.height = `${skinsSlider.clientHeight}px`;
+        const skinsSlider = document.querySelector('.js-skins-slider .splide__list, .js-skins-slider .splide__list-hidden');
+        const skinsSliderCount = !!skinsSlider && skinsSlider.querySelectorAll('.splide__slide.is-visible').length;
+        const skinsSliderTrackPadding = parseInt(getComputedStyle(skinsSliderTrack).paddingLeft, 10);
+        const skinPadding = getComputedStyle(document.documentElement).getPropertyValue('--skin-drop-padding');
+        const skinHeight = getComputedStyle(document.documentElement).getPropertyValue('--skin-drop-height');
+        const skinImgHeight = getComputedStyle(document.documentElement).getPropertyValue('--skin-img-height');
+
+        const skinImgWidths = 
+            !!skinsSliderTrack && 
+            ((skinsSliderTrack.clientWidth 
+            - (skinsSliderCount - 1)*12
+            - 2*skinsSliderTrackPadding)/skinsSliderCount
+            - 2*skinPadding)*0.8/0.95;
+
+        if(noDropContent && skinsSliderTrack) {
+            noDropContent.style.height = `${skinHeight - skinImgHeight + skinImgWidths + skinsSliderArrows.clientHeight}px`;
         }
     }
 
