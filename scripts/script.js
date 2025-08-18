@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
             updateCaseBlocksMaxHeight(btn);
         });
         setFilterSticky();
-        setHeightForNoDropContent();
+        !!noDropContent && setHeightForNoDropContent();
     });
 
     // Splide slider
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setHeightForNoDropContent();
+    !!noDropContent && setHeightForNoDropContent();
     
     // END Set height for Your Drop
 
