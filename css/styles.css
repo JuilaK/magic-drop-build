@@ -6360,7 +6360,9 @@ span.header__volume-value {
 }
 .case--unavailable {
   opacity: 0.3;
-  pointer-events: none;
+}
+.case--unavailable .case__body {
+  cursor: default;
 }
 
 .case__body {
@@ -6666,6 +6668,7 @@ span.header__volume-value {
   position: absolute;
   left: 50%;
   bottom: 0;
+  cursor: default;
   font-size: 1.8rem;
   text-transform: uppercase;
   -webkit-transform: translate(-50%, 50%);
@@ -10543,7 +10546,62 @@ span.draw-item__start-price svg {
   }
 }
 
+.case-text__close-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.4rem;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (any-hover: hover) {
+  .case-text__close-btn:hover .case-text__close-btn-icon {
+    background-color: rgba(132, 132, 167, 0.4);
+  }
+}
+
+.case-text__close-btn-icon {
+  width: 2.7rem;
+  height: 2.7rem;
+  position: relative;
+  display: block;
+  background-color: rgba(132, 132, 167, 0.12);
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.case-text__close-btn-icon::before, .case-text__close-btn-icon::after {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.4rem;
+  height: 0.3rem;
+  content: "";
+  display: block;
+  background-color: #D9D9D9;
+  border-radius: 0.2rem;
+}
+.case-text__close-btn-icon::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.case-text__close-btn-icon::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .case-text__content {
+  position: relative;
   padding: 3.2rem 4rem;
   border-radius: 1.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#111120)), #121221;
