@@ -652,6 +652,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Open win cards
     const openWinRareBtn = document.querySelector(".js-open-win-rare");
     const winRare = document.querySelector(".js-win-rare");
+    const winRareManyItems = document.querySelectorAll(".js-win-rare.win-rare--many-items .js-win-rare-item");
     const closeWinRareBtn = document.querySelector(".js-close-win-rare");
     const winRareVideo = document.querySelector(".js-win-rare-video");
     const winRareItems = document.querySelectorAll(".js-win-rare-item");
@@ -659,14 +660,16 @@ window.addEventListener('DOMContentLoaded', () => {
     !!openWinRareBtn && openWinRareBtn.addEventListener('click', () => {
         winRare.classList.add('win-rare--open');
         document.body.style.overflow = 'hidden';
-        // Фикс для Safari (иногда видео не растягивается)
-        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-            winRareVideo.style.objectFit = 'cover';
-            winRareVideo.setAttribute('playsinline', '');
-            winRareVideo.setAttribute('webkit-playsinline', '');
+        if (winRareVideo) {
+            // Фикс для Safari (иногда видео не растягивается)
+            if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                winRareVideo.style.objectFit = 'cover';
+                winRareVideo.setAttribute('playsinline', '');
+                winRareVideo.setAttribute('webkit-playsinline', '');
+            }
+            winRareVideo.volume = 0.5;
+            winRareVideo.play();
         }
-        winRareVideo.volume = 0.5;
-        winRareVideo.play();
     });
 
     !!closeWinRareBtn && closeWinRareBtn.addEventListener('click', () => {

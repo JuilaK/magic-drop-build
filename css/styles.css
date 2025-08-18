@@ -1800,6 +1800,26 @@ img {
     background: linear-gradient(170deg, rgba(221, 201, 22, 0.22) 0%, rgba(18, 18, 31, 0) 80%), center/cover no-repeat url("../images/bg/bg-btn.jpg"), linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
   }
 }
+.btn .btn-price {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+}
+.btn .btn-price > span {
+  color: #ffe500;
+  font-weight: 900;
+  text-shadow: 0 0 1.2rem rgba(255, 153, 0, 0.25);
+}
+.btn .btn-price svg {
+  width: 2rem;
+  height: 2rem;
+}
 
 input,
 textarea {
@@ -9037,6 +9057,12 @@ span.draw-item__start-price svg {
           justify-content: center;
   gap: 0.8rem;
   font-size: 0;
+}
+@media (max-width: 768px) {
+  .case-hero__multiple-btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .case-hero__multiple-btns .btn {
   width: 4.8rem;
@@ -21606,6 +21632,27 @@ dd.upgrade__skin-price svg {
   margin-top: 1.6rem;
 }
 
+@-webkit-keyframes openWinSkinCard {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes openWinSkinCard {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
 .win-rare {
   position: fixed;
   inset: 0;
@@ -21690,6 +21737,2077 @@ dd.upgrade__skin-price svg {
   transition: opacity 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
   transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s;
   transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+}
+.win-rare--open.win-rare--many-items .win-rare__content {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
+  transition: opacity 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
+  transition: opacity 0.2s ease-out 0.2s, transform 0.2s ease-out 0.2s;
+  transition: opacity 0.2s ease-out 0.2s, transform 0.2s ease-out 0.2s, -webkit-transform 0.2s ease-out 0.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 0.6s;
+  transition: -webkit-transform 0.3s ease-out 0.6s;
+  transition: transform 0.3s ease-out 0.6s;
+  transition: transform 0.3s ease-out 0.6s, -webkit-transform 0.3s ease-out 0.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 0.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 0.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, -webkit-transform 0.2s ease-out 0.4s;
+  transition: opacity 0.2s ease-out 0.4s, -webkit-transform 0.2s ease-out 0.4s;
+  transition: opacity 0.2s ease-out 0.4s, transform 0.2s ease-out 0.4s;
+  transition: opacity 0.2s ease-out 0.4s, transform 0.2s ease-out 0.4s, -webkit-transform 0.2s ease-out 0.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 0.8s;
+  transition: -webkit-transform 0.3s ease-out 0.8s;
+  transition: transform 0.3s ease-out 0.8s;
+  transition: transform 0.3s ease-out 0.8s, -webkit-transform 0.3s ease-out 0.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 0.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 0.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, -webkit-transform 0.2s ease-out 0.6s;
+  transition: opacity 0.2s ease-out 0.6s, -webkit-transform 0.2s ease-out 0.6s;
+  transition: opacity 0.2s ease-out 0.6s, transform 0.2s ease-out 0.6s;
+  transition: opacity 0.2s ease-out 0.6s, transform 0.2s ease-out 0.6s, -webkit-transform 0.2s ease-out 0.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 1s;
+  transition: -webkit-transform 0.3s ease-out 1s;
+  transition: transform 0.3s ease-out 1s;
+  transition: transform 0.3s ease-out 1s, -webkit-transform 0.3s ease-out 1s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 1s, visibility 0s;
+  transition: opacity 0.3s ease-out 1s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.8s, -webkit-transform 0.2s ease-out 0.8s;
+  transition: opacity 0.2s ease-out 0.8s, -webkit-transform 0.2s ease-out 0.8s;
+  transition: opacity 0.2s ease-out 0.8s, transform 0.2s ease-out 0.8s;
+  transition: opacity 0.2s ease-out 0.8s, transform 0.2s ease-out 0.8s, -webkit-transform 0.2s ease-out 0.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 1.2s;
+  transition: -webkit-transform 0.3s ease-out 1.2s;
+  transition: transform 0.3s ease-out 1.2s;
+  transition: transform 0.3s ease-out 1.2s, -webkit-transform 0.3s ease-out 1.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 1.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 1.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 1s, -webkit-transform 0.2s ease-out 1s;
+  transition: opacity 0.2s ease-out 1s, -webkit-transform 0.2s ease-out 1s;
+  transition: opacity 0.2s ease-out 1s, transform 0.2s ease-out 1s;
+  transition: opacity 0.2s ease-out 1s, transform 0.2s ease-out 1s, -webkit-transform 0.2s ease-out 1s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 1.4s;
+  transition: -webkit-transform 0.3s ease-out 1.4s;
+  transition: transform 0.3s ease-out 1.4s;
+  transition: transform 0.3s ease-out 1.4s, -webkit-transform 0.3s ease-out 1.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 1.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 1.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 1.2s, -webkit-transform 0.2s ease-out 1.2s;
+  transition: opacity 0.2s ease-out 1.2s, -webkit-transform 0.2s ease-out 1.2s;
+  transition: opacity 0.2s ease-out 1.2s, transform 0.2s ease-out 1.2s;
+  transition: opacity 0.2s ease-out 1.2s, transform 0.2s ease-out 1.2s, -webkit-transform 0.2s ease-out 1.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 1.6s;
+  transition: -webkit-transform 0.3s ease-out 1.6s;
+  transition: transform 0.3s ease-out 1.6s;
+  transition: transform 0.3s ease-out 1.6s, -webkit-transform 0.3s ease-out 1.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 1.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 1.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 1.4s, -webkit-transform 0.2s ease-out 1.4s;
+  transition: opacity 0.2s ease-out 1.4s, -webkit-transform 0.2s ease-out 1.4s;
+  transition: opacity 0.2s ease-out 1.4s, transform 0.2s ease-out 1.4s;
+  transition: opacity 0.2s ease-out 1.4s, transform 0.2s ease-out 1.4s, -webkit-transform 0.2s ease-out 1.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 1.8s;
+  transition: -webkit-transform 0.3s ease-out 1.8s;
+  transition: transform 0.3s ease-out 1.8s;
+  transition: transform 0.3s ease-out 1.8s, -webkit-transform 0.3s ease-out 1.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 1.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 1.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) {
+  -webkit-transition: opacity 0.2s ease-out 1.6s, -webkit-transform 0.2s ease-out 1.6s;
+  transition: opacity 0.2s ease-out 1.6s, -webkit-transform 0.2s ease-out 1.6s;
+  transition: opacity 0.2s ease-out 1.6s, transform 0.2s ease-out 1.6s;
+  transition: opacity 0.2s ease-out 1.6s, transform 0.2s ease-out 1.6s, -webkit-transform 0.2s ease-out 1.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 2s;
+  transition: -webkit-transform 0.3s ease-out 2s;
+  transition: transform 0.3s ease-out 2s;
+  transition: transform 0.3s ease-out 2s, -webkit-transform 0.3s ease-out 2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 2s, visibility 0s;
+  transition: opacity 0.3s ease-out 2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) {
+  -webkit-transition: opacity 0.2s ease-out 1.8s, -webkit-transform 0.2s ease-out 1.8s;
+  transition: opacity 0.2s ease-out 1.8s, -webkit-transform 0.2s ease-out 1.8s;
+  transition: opacity 0.2s ease-out 1.8s, transform 0.2s ease-out 1.8s;
+  transition: opacity 0.2s ease-out 1.8s, transform 0.2s ease-out 1.8s, -webkit-transform 0.2s ease-out 1.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 2.2s;
+  transition: -webkit-transform 0.3s ease-out 2.2s;
+  transition: transform 0.3s ease-out 2.2s;
+  transition: transform 0.3s ease-out 2.2s, -webkit-transform 0.3s ease-out 2.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 2.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 2.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) {
+  -webkit-transition: opacity 0.2s ease-out 2s, -webkit-transform 0.2s ease-out 2s;
+  transition: opacity 0.2s ease-out 2s, -webkit-transform 0.2s ease-out 2s;
+  transition: opacity 0.2s ease-out 2s, transform 0.2s ease-out 2s;
+  transition: opacity 0.2s ease-out 2s, transform 0.2s ease-out 2s, -webkit-transform 0.2s ease-out 2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 2.4s;
+  transition: -webkit-transform 0.3s ease-out 2.4s;
+  transition: transform 0.3s ease-out 2.4s;
+  transition: transform 0.3s ease-out 2.4s, -webkit-transform 0.3s ease-out 2.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 2.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 2.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) {
+  -webkit-transition: opacity 0.2s ease-out 2.2s, -webkit-transform 0.2s ease-out 2.2s;
+  transition: opacity 0.2s ease-out 2.2s, -webkit-transform 0.2s ease-out 2.2s;
+  transition: opacity 0.2s ease-out 2.2s, transform 0.2s ease-out 2.2s;
+  transition: opacity 0.2s ease-out 2.2s, transform 0.2s ease-out 2.2s, -webkit-transform 0.2s ease-out 2.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 2.6s;
+  transition: -webkit-transform 0.3s ease-out 2.6s;
+  transition: transform 0.3s ease-out 2.6s;
+  transition: transform 0.3s ease-out 2.6s, -webkit-transform 0.3s ease-out 2.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 2.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 2.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) {
+  -webkit-transition: opacity 0.2s ease-out 2.4s, -webkit-transform 0.2s ease-out 2.4s;
+  transition: opacity 0.2s ease-out 2.4s, -webkit-transform 0.2s ease-out 2.4s;
+  transition: opacity 0.2s ease-out 2.4s, transform 0.2s ease-out 2.4s;
+  transition: opacity 0.2s ease-out 2.4s, transform 0.2s ease-out 2.4s, -webkit-transform 0.2s ease-out 2.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 2.8s;
+  transition: -webkit-transform 0.3s ease-out 2.8s;
+  transition: transform 0.3s ease-out 2.8s;
+  transition: transform 0.3s ease-out 2.8s, -webkit-transform 0.3s ease-out 2.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 2.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 2.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) {
+  -webkit-transition: opacity 0.2s ease-out 2.6s, -webkit-transform 0.2s ease-out 2.6s;
+  transition: opacity 0.2s ease-out 2.6s, -webkit-transform 0.2s ease-out 2.6s;
+  transition: opacity 0.2s ease-out 2.6s, transform 0.2s ease-out 2.6s;
+  transition: opacity 0.2s ease-out 2.6s, transform 0.2s ease-out 2.6s, -webkit-transform 0.2s ease-out 2.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 3s;
+  transition: -webkit-transform 0.3s ease-out 3s;
+  transition: transform 0.3s ease-out 3s;
+  transition: transform 0.3s ease-out 3s, -webkit-transform 0.3s ease-out 3s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 3s, visibility 0s;
+  transition: opacity 0.3s ease-out 3s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) {
+  -webkit-transition: opacity 0.2s ease-out 2.8s, -webkit-transform 0.2s ease-out 2.8s;
+  transition: opacity 0.2s ease-out 2.8s, -webkit-transform 0.2s ease-out 2.8s;
+  transition: opacity 0.2s ease-out 2.8s, transform 0.2s ease-out 2.8s;
+  transition: opacity 0.2s ease-out 2.8s, transform 0.2s ease-out 2.8s, -webkit-transform 0.2s ease-out 2.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 3.2s;
+  transition: -webkit-transform 0.3s ease-out 3.2s;
+  transition: transform 0.3s ease-out 3.2s;
+  transition: transform 0.3s ease-out 3.2s, -webkit-transform 0.3s ease-out 3.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 3.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 3.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) {
+  -webkit-transition: opacity 0.2s ease-out 3s, -webkit-transform 0.2s ease-out 3s;
+  transition: opacity 0.2s ease-out 3s, -webkit-transform 0.2s ease-out 3s;
+  transition: opacity 0.2s ease-out 3s, transform 0.2s ease-out 3s;
+  transition: opacity 0.2s ease-out 3s, transform 0.2s ease-out 3s, -webkit-transform 0.2s ease-out 3s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 3.4s;
+  transition: -webkit-transform 0.3s ease-out 3.4s;
+  transition: transform 0.3s ease-out 3.4s;
+  transition: transform 0.3s ease-out 3.4s, -webkit-transform 0.3s ease-out 3.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 3.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 3.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) {
+  -webkit-transition: opacity 0.2s ease-out 3.2s, -webkit-transform 0.2s ease-out 3.2s;
+  transition: opacity 0.2s ease-out 3.2s, -webkit-transform 0.2s ease-out 3.2s;
+  transition: opacity 0.2s ease-out 3.2s, transform 0.2s ease-out 3.2s;
+  transition: opacity 0.2s ease-out 3.2s, transform 0.2s ease-out 3.2s, -webkit-transform 0.2s ease-out 3.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 3.6s;
+  transition: -webkit-transform 0.3s ease-out 3.6s;
+  transition: transform 0.3s ease-out 3.6s;
+  transition: transform 0.3s ease-out 3.6s, -webkit-transform 0.3s ease-out 3.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 3.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 3.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) {
+  -webkit-transition: opacity 0.2s ease-out 3.4s, -webkit-transform 0.2s ease-out 3.4s;
+  transition: opacity 0.2s ease-out 3.4s, -webkit-transform 0.2s ease-out 3.4s;
+  transition: opacity 0.2s ease-out 3.4s, transform 0.2s ease-out 3.4s;
+  transition: opacity 0.2s ease-out 3.4s, transform 0.2s ease-out 3.4s, -webkit-transform 0.2s ease-out 3.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 3.8s;
+  transition: -webkit-transform 0.3s ease-out 3.8s;
+  transition: transform 0.3s ease-out 3.8s;
+  transition: transform 0.3s ease-out 3.8s, -webkit-transform 0.3s ease-out 3.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 3.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 3.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) {
+  -webkit-transition: opacity 0.2s ease-out 3.6s, -webkit-transform 0.2s ease-out 3.6s;
+  transition: opacity 0.2s ease-out 3.6s, -webkit-transform 0.2s ease-out 3.6s;
+  transition: opacity 0.2s ease-out 3.6s, transform 0.2s ease-out 3.6s;
+  transition: opacity 0.2s ease-out 3.6s, transform 0.2s ease-out 3.6s, -webkit-transform 0.2s ease-out 3.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 4s;
+  transition: -webkit-transform 0.3s ease-out 4s;
+  transition: transform 0.3s ease-out 4s;
+  transition: transform 0.3s ease-out 4s, -webkit-transform 0.3s ease-out 4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 4s, visibility 0s;
+  transition: opacity 0.3s ease-out 4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) {
+  -webkit-transition: opacity 0.2s ease-out 3.8s, -webkit-transform 0.2s ease-out 3.8s;
+  transition: opacity 0.2s ease-out 3.8s, -webkit-transform 0.2s ease-out 3.8s;
+  transition: opacity 0.2s ease-out 3.8s, transform 0.2s ease-out 3.8s;
+  transition: opacity 0.2s ease-out 3.8s, transform 0.2s ease-out 3.8s, -webkit-transform 0.2s ease-out 3.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 4.2s;
+  transition: -webkit-transform 0.3s ease-out 4.2s;
+  transition: transform 0.3s ease-out 4.2s;
+  transition: transform 0.3s ease-out 4.2s, -webkit-transform 0.3s ease-out 4.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 4.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 4.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) {
+  -webkit-transition: opacity 0.2s ease-out 4s, -webkit-transform 0.2s ease-out 4s;
+  transition: opacity 0.2s ease-out 4s, -webkit-transform 0.2s ease-out 4s;
+  transition: opacity 0.2s ease-out 4s, transform 0.2s ease-out 4s;
+  transition: opacity 0.2s ease-out 4s, transform 0.2s ease-out 4s, -webkit-transform 0.2s ease-out 4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 4.4s;
+  transition: -webkit-transform 0.3s ease-out 4.4s;
+  transition: transform 0.3s ease-out 4.4s;
+  transition: transform 0.3s ease-out 4.4s, -webkit-transform 0.3s ease-out 4.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 4.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 4.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) {
+  -webkit-transition: opacity 0.2s ease-out 4.2s, -webkit-transform 0.2s ease-out 4.2s;
+  transition: opacity 0.2s ease-out 4.2s, -webkit-transform 0.2s ease-out 4.2s;
+  transition: opacity 0.2s ease-out 4.2s, transform 0.2s ease-out 4.2s;
+  transition: opacity 0.2s ease-out 4.2s, transform 0.2s ease-out 4.2s, -webkit-transform 0.2s ease-out 4.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 4.6s;
+  transition: -webkit-transform 0.3s ease-out 4.6s;
+  transition: transform 0.3s ease-out 4.6s;
+  transition: transform 0.3s ease-out 4.6s, -webkit-transform 0.3s ease-out 4.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 4.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 4.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) {
+  -webkit-transition: opacity 0.2s ease-out 4.4s, -webkit-transform 0.2s ease-out 4.4s;
+  transition: opacity 0.2s ease-out 4.4s, -webkit-transform 0.2s ease-out 4.4s;
+  transition: opacity 0.2s ease-out 4.4s, transform 0.2s ease-out 4.4s;
+  transition: opacity 0.2s ease-out 4.4s, transform 0.2s ease-out 4.4s, -webkit-transform 0.2s ease-out 4.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 4.8s;
+  transition: -webkit-transform 0.3s ease-out 4.8s;
+  transition: transform 0.3s ease-out 4.8s;
+  transition: transform 0.3s ease-out 4.8s, -webkit-transform 0.3s ease-out 4.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 4.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 4.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) {
+  -webkit-transition: opacity 0.2s ease-out 4.6s, -webkit-transform 0.2s ease-out 4.6s;
+  transition: opacity 0.2s ease-out 4.6s, -webkit-transform 0.2s ease-out 4.6s;
+  transition: opacity 0.2s ease-out 4.6s, transform 0.2s ease-out 4.6s;
+  transition: opacity 0.2s ease-out 4.6s, transform 0.2s ease-out 4.6s, -webkit-transform 0.2s ease-out 4.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 5s;
+  transition: -webkit-transform 0.3s ease-out 5s;
+  transition: transform 0.3s ease-out 5s;
+  transition: transform 0.3s ease-out 5s, -webkit-transform 0.3s ease-out 5s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 5s, visibility 0s;
+  transition: opacity 0.3s ease-out 5s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) {
+  -webkit-transition: opacity 0.2s ease-out 4.8s, -webkit-transform 0.2s ease-out 4.8s;
+  transition: opacity 0.2s ease-out 4.8s, -webkit-transform 0.2s ease-out 4.8s;
+  transition: opacity 0.2s ease-out 4.8s, transform 0.2s ease-out 4.8s;
+  transition: opacity 0.2s ease-out 4.8s, transform 0.2s ease-out 4.8s, -webkit-transform 0.2s ease-out 4.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 5.2s;
+  transition: -webkit-transform 0.3s ease-out 5.2s;
+  transition: transform 0.3s ease-out 5.2s;
+  transition: transform 0.3s ease-out 5.2s, -webkit-transform 0.3s ease-out 5.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 5.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 5.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) {
+  -webkit-transition: opacity 0.2s ease-out 5s, -webkit-transform 0.2s ease-out 5s;
+  transition: opacity 0.2s ease-out 5s, -webkit-transform 0.2s ease-out 5s;
+  transition: opacity 0.2s ease-out 5s, transform 0.2s ease-out 5s;
+  transition: opacity 0.2s ease-out 5s, transform 0.2s ease-out 5s, -webkit-transform 0.2s ease-out 5s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 5.4s;
+  transition: -webkit-transform 0.3s ease-out 5.4s;
+  transition: transform 0.3s ease-out 5.4s;
+  transition: transform 0.3s ease-out 5.4s, -webkit-transform 0.3s ease-out 5.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 5.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 5.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) {
+  -webkit-transition: opacity 0.2s ease-out 5.2s, -webkit-transform 0.2s ease-out 5.2s;
+  transition: opacity 0.2s ease-out 5.2s, -webkit-transform 0.2s ease-out 5.2s;
+  transition: opacity 0.2s ease-out 5.2s, transform 0.2s ease-out 5.2s;
+  transition: opacity 0.2s ease-out 5.2s, transform 0.2s ease-out 5.2s, -webkit-transform 0.2s ease-out 5.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 5.6s;
+  transition: -webkit-transform 0.3s ease-out 5.6s;
+  transition: transform 0.3s ease-out 5.6s;
+  transition: transform 0.3s ease-out 5.6s, -webkit-transform 0.3s ease-out 5.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 5.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 5.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) {
+  -webkit-transition: opacity 0.2s ease-out 5.4s, -webkit-transform 0.2s ease-out 5.4s;
+  transition: opacity 0.2s ease-out 5.4s, -webkit-transform 0.2s ease-out 5.4s;
+  transition: opacity 0.2s ease-out 5.4s, transform 0.2s ease-out 5.4s;
+  transition: opacity 0.2s ease-out 5.4s, transform 0.2s ease-out 5.4s, -webkit-transform 0.2s ease-out 5.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 5.8s;
+  transition: -webkit-transform 0.3s ease-out 5.8s;
+  transition: transform 0.3s ease-out 5.8s;
+  transition: transform 0.3s ease-out 5.8s, -webkit-transform 0.3s ease-out 5.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 5.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 5.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) {
+  -webkit-transition: opacity 0.2s ease-out 5.6s, -webkit-transform 0.2s ease-out 5.6s;
+  transition: opacity 0.2s ease-out 5.6s, -webkit-transform 0.2s ease-out 5.6s;
+  transition: opacity 0.2s ease-out 5.6s, transform 0.2s ease-out 5.6s;
+  transition: opacity 0.2s ease-out 5.6s, transform 0.2s ease-out 5.6s, -webkit-transform 0.2s ease-out 5.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 6s;
+  transition: -webkit-transform 0.3s ease-out 6s;
+  transition: transform 0.3s ease-out 6s;
+  transition: transform 0.3s ease-out 6s, -webkit-transform 0.3s ease-out 6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 6s, visibility 0s;
+  transition: opacity 0.3s ease-out 6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) {
+  -webkit-transition: opacity 0.2s ease-out 5.8s, -webkit-transform 0.2s ease-out 5.8s;
+  transition: opacity 0.2s ease-out 5.8s, -webkit-transform 0.2s ease-out 5.8s;
+  transition: opacity 0.2s ease-out 5.8s, transform 0.2s ease-out 5.8s;
+  transition: opacity 0.2s ease-out 5.8s, transform 0.2s ease-out 5.8s, -webkit-transform 0.2s ease-out 5.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 6.2s;
+  transition: -webkit-transform 0.3s ease-out 6.2s;
+  transition: transform 0.3s ease-out 6.2s;
+  transition: transform 0.3s ease-out 6.2s, -webkit-transform 0.3s ease-out 6.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 6.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 6.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) {
+  -webkit-transition: opacity 0.2s ease-out 6s, -webkit-transform 0.2s ease-out 6s;
+  transition: opacity 0.2s ease-out 6s, -webkit-transform 0.2s ease-out 6s;
+  transition: opacity 0.2s ease-out 6s, transform 0.2s ease-out 6s;
+  transition: opacity 0.2s ease-out 6s, transform 0.2s ease-out 6s, -webkit-transform 0.2s ease-out 6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 6.4s;
+  transition: -webkit-transform 0.3s ease-out 6.4s;
+  transition: transform 0.3s ease-out 6.4s;
+  transition: transform 0.3s ease-out 6.4s, -webkit-transform 0.3s ease-out 6.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 6.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 6.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) {
+  -webkit-transition: opacity 0.2s ease-out 6.2s, -webkit-transform 0.2s ease-out 6.2s;
+  transition: opacity 0.2s ease-out 6.2s, -webkit-transform 0.2s ease-out 6.2s;
+  transition: opacity 0.2s ease-out 6.2s, transform 0.2s ease-out 6.2s;
+  transition: opacity 0.2s ease-out 6.2s, transform 0.2s ease-out 6.2s, -webkit-transform 0.2s ease-out 6.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 6.6s;
+  transition: -webkit-transform 0.3s ease-out 6.6s;
+  transition: transform 0.3s ease-out 6.6s;
+  transition: transform 0.3s ease-out 6.6s, -webkit-transform 0.3s ease-out 6.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 6.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 6.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) {
+  -webkit-transition: opacity 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
+  transition: opacity 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
+  transition: opacity 0.2s ease-out 6.4s, transform 0.2s ease-out 6.4s;
+  transition: opacity 0.2s ease-out 6.4s, transform 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 6.8s;
+  transition: -webkit-transform 0.3s ease-out 6.8s;
+  transition: transform 0.3s ease-out 6.8s;
+  transition: transform 0.3s ease-out 6.8s, -webkit-transform 0.3s ease-out 6.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 6.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 6.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) {
+  -webkit-transition: opacity 0.2s ease-out 6.6s, -webkit-transform 0.2s ease-out 6.6s;
+  transition: opacity 0.2s ease-out 6.6s, -webkit-transform 0.2s ease-out 6.6s;
+  transition: opacity 0.2s ease-out 6.6s, transform 0.2s ease-out 6.6s;
+  transition: opacity 0.2s ease-out 6.6s, transform 0.2s ease-out 6.6s, -webkit-transform 0.2s ease-out 6.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 7s;
+  transition: -webkit-transform 0.3s ease-out 7s;
+  transition: transform 0.3s ease-out 7s;
+  transition: transform 0.3s ease-out 7s, -webkit-transform 0.3s ease-out 7s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 7s, visibility 0s;
+  transition: opacity 0.3s ease-out 7s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) {
+  -webkit-transition: opacity 0.2s ease-out 6.8s, -webkit-transform 0.2s ease-out 6.8s;
+  transition: opacity 0.2s ease-out 6.8s, -webkit-transform 0.2s ease-out 6.8s;
+  transition: opacity 0.2s ease-out 6.8s, transform 0.2s ease-out 6.8s;
+  transition: opacity 0.2s ease-out 6.8s, transform 0.2s ease-out 6.8s, -webkit-transform 0.2s ease-out 6.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 7.2s;
+  transition: -webkit-transform 0.3s ease-out 7.2s;
+  transition: transform 0.3s ease-out 7.2s;
+  transition: transform 0.3s ease-out 7.2s, -webkit-transform 0.3s ease-out 7.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 7.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 7.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) {
+  -webkit-transition: opacity 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+  transition: opacity 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+  transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s;
+  transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 7.4s;
+  transition: -webkit-transform 0.3s ease-out 7.4s;
+  transition: transform 0.3s ease-out 7.4s;
+  transition: transform 0.3s ease-out 7.4s, -webkit-transform 0.3s ease-out 7.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 7.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 7.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) {
+  -webkit-transition: opacity 0.2s ease-out 7.2s, -webkit-transform 0.2s ease-out 7.2s;
+  transition: opacity 0.2s ease-out 7.2s, -webkit-transform 0.2s ease-out 7.2s;
+  transition: opacity 0.2s ease-out 7.2s, transform 0.2s ease-out 7.2s;
+  transition: opacity 0.2s ease-out 7.2s, transform 0.2s ease-out 7.2s, -webkit-transform 0.2s ease-out 7.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 7.6s;
+  transition: -webkit-transform 0.3s ease-out 7.6s;
+  transition: transform 0.3s ease-out 7.6s;
+  transition: transform 0.3s ease-out 7.6s, -webkit-transform 0.3s ease-out 7.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 7.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 7.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) {
+  -webkit-transition: opacity 0.2s ease-out 7.4s, -webkit-transform 0.2s ease-out 7.4s;
+  transition: opacity 0.2s ease-out 7.4s, -webkit-transform 0.2s ease-out 7.4s;
+  transition: opacity 0.2s ease-out 7.4s, transform 0.2s ease-out 7.4s;
+  transition: opacity 0.2s ease-out 7.4s, transform 0.2s ease-out 7.4s, -webkit-transform 0.2s ease-out 7.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 7.8s;
+  transition: -webkit-transform 0.3s ease-out 7.8s;
+  transition: transform 0.3s ease-out 7.8s;
+  transition: transform 0.3s ease-out 7.8s, -webkit-transform 0.3s ease-out 7.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 7.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 7.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) {
+  -webkit-transition: opacity 0.2s ease-out 7.6s, -webkit-transform 0.2s ease-out 7.6s;
+  transition: opacity 0.2s ease-out 7.6s, -webkit-transform 0.2s ease-out 7.6s;
+  transition: opacity 0.2s ease-out 7.6s, transform 0.2s ease-out 7.6s;
+  transition: opacity 0.2s ease-out 7.6s, transform 0.2s ease-out 7.6s, -webkit-transform 0.2s ease-out 7.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 8s;
+  transition: -webkit-transform 0.3s ease-out 8s;
+  transition: transform 0.3s ease-out 8s;
+  transition: transform 0.3s ease-out 8s, -webkit-transform 0.3s ease-out 8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 8s, visibility 0s;
+  transition: opacity 0.3s ease-out 8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) {
+  -webkit-transition: opacity 0.2s ease-out 7.8s, -webkit-transform 0.2s ease-out 7.8s;
+  transition: opacity 0.2s ease-out 7.8s, -webkit-transform 0.2s ease-out 7.8s;
+  transition: opacity 0.2s ease-out 7.8s, transform 0.2s ease-out 7.8s;
+  transition: opacity 0.2s ease-out 7.8s, transform 0.2s ease-out 7.8s, -webkit-transform 0.2s ease-out 7.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 8.2s;
+  transition: -webkit-transform 0.3s ease-out 8.2s;
+  transition: transform 0.3s ease-out 8.2s;
+  transition: transform 0.3s ease-out 8.2s, -webkit-transform 0.3s ease-out 8.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 8.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 8.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) {
+  -webkit-transition: opacity 0.2s ease-out 8s, -webkit-transform 0.2s ease-out 8s;
+  transition: opacity 0.2s ease-out 8s, -webkit-transform 0.2s ease-out 8s;
+  transition: opacity 0.2s ease-out 8s, transform 0.2s ease-out 8s;
+  transition: opacity 0.2s ease-out 8s, transform 0.2s ease-out 8s, -webkit-transform 0.2s ease-out 8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 8.4s;
+  transition: -webkit-transform 0.3s ease-out 8.4s;
+  transition: transform 0.3s ease-out 8.4s;
+  transition: transform 0.3s ease-out 8.4s, -webkit-transform 0.3s ease-out 8.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 8.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 8.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) {
+  -webkit-transition: opacity 0.2s ease-out 8.2s, -webkit-transform 0.2s ease-out 8.2s;
+  transition: opacity 0.2s ease-out 8.2s, -webkit-transform 0.2s ease-out 8.2s;
+  transition: opacity 0.2s ease-out 8.2s, transform 0.2s ease-out 8.2s;
+  transition: opacity 0.2s ease-out 8.2s, transform 0.2s ease-out 8.2s, -webkit-transform 0.2s ease-out 8.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 8.6s;
+  transition: -webkit-transform 0.3s ease-out 8.6s;
+  transition: transform 0.3s ease-out 8.6s;
+  transition: transform 0.3s ease-out 8.6s, -webkit-transform 0.3s ease-out 8.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 8.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 8.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) {
+  -webkit-transition: opacity 0.2s ease-out 8.4s, -webkit-transform 0.2s ease-out 8.4s;
+  transition: opacity 0.2s ease-out 8.4s, -webkit-transform 0.2s ease-out 8.4s;
+  transition: opacity 0.2s ease-out 8.4s, transform 0.2s ease-out 8.4s;
+  transition: opacity 0.2s ease-out 8.4s, transform 0.2s ease-out 8.4s, -webkit-transform 0.2s ease-out 8.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 8.8s;
+  transition: -webkit-transform 0.3s ease-out 8.8s;
+  transition: transform 0.3s ease-out 8.8s;
+  transition: transform 0.3s ease-out 8.8s, -webkit-transform 0.3s ease-out 8.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 8.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 8.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) {
+  -webkit-transition: opacity 0.2s ease-out 8.6s, -webkit-transform 0.2s ease-out 8.6s;
+  transition: opacity 0.2s ease-out 8.6s, -webkit-transform 0.2s ease-out 8.6s;
+  transition: opacity 0.2s ease-out 8.6s, transform 0.2s ease-out 8.6s;
+  transition: opacity 0.2s ease-out 8.6s, transform 0.2s ease-out 8.6s, -webkit-transform 0.2s ease-out 8.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 9s;
+  transition: -webkit-transform 0.3s ease-out 9s;
+  transition: transform 0.3s ease-out 9s;
+  transition: transform 0.3s ease-out 9s, -webkit-transform 0.3s ease-out 9s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 9s, visibility 0s;
+  transition: opacity 0.3s ease-out 9s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) {
+  -webkit-transition: opacity 0.2s ease-out 8.8s, -webkit-transform 0.2s ease-out 8.8s;
+  transition: opacity 0.2s ease-out 8.8s, -webkit-transform 0.2s ease-out 8.8s;
+  transition: opacity 0.2s ease-out 8.8s, transform 0.2s ease-out 8.8s;
+  transition: opacity 0.2s ease-out 8.8s, transform 0.2s ease-out 8.8s, -webkit-transform 0.2s ease-out 8.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 9.2s;
+  transition: -webkit-transform 0.3s ease-out 9.2s;
+  transition: transform 0.3s ease-out 9.2s;
+  transition: transform 0.3s ease-out 9.2s, -webkit-transform 0.3s ease-out 9.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 9.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 9.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) {
+  -webkit-transition: opacity 0.2s ease-out 9s, -webkit-transform 0.2s ease-out 9s;
+  transition: opacity 0.2s ease-out 9s, -webkit-transform 0.2s ease-out 9s;
+  transition: opacity 0.2s ease-out 9s, transform 0.2s ease-out 9s;
+  transition: opacity 0.2s ease-out 9s, transform 0.2s ease-out 9s, -webkit-transform 0.2s ease-out 9s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 9.4s;
+  transition: -webkit-transform 0.3s ease-out 9.4s;
+  transition: transform 0.3s ease-out 9.4s;
+  transition: transform 0.3s ease-out 9.4s, -webkit-transform 0.3s ease-out 9.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 9.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 9.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) {
+  -webkit-transition: opacity 0.2s ease-out 9.2s, -webkit-transform 0.2s ease-out 9.2s;
+  transition: opacity 0.2s ease-out 9.2s, -webkit-transform 0.2s ease-out 9.2s;
+  transition: opacity 0.2s ease-out 9.2s, transform 0.2s ease-out 9.2s;
+  transition: opacity 0.2s ease-out 9.2s, transform 0.2s ease-out 9.2s, -webkit-transform 0.2s ease-out 9.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 9.6s;
+  transition: -webkit-transform 0.3s ease-out 9.6s;
+  transition: transform 0.3s ease-out 9.6s;
+  transition: transform 0.3s ease-out 9.6s, -webkit-transform 0.3s ease-out 9.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 9.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 9.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) {
+  -webkit-transition: opacity 0.2s ease-out 9.4s, -webkit-transform 0.2s ease-out 9.4s;
+  transition: opacity 0.2s ease-out 9.4s, -webkit-transform 0.2s ease-out 9.4s;
+  transition: opacity 0.2s ease-out 9.4s, transform 0.2s ease-out 9.4s;
+  transition: opacity 0.2s ease-out 9.4s, transform 0.2s ease-out 9.4s, -webkit-transform 0.2s ease-out 9.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 9.8s;
+  transition: -webkit-transform 0.3s ease-out 9.8s;
+  transition: transform 0.3s ease-out 9.8s;
+  transition: transform 0.3s ease-out 9.8s, -webkit-transform 0.3s ease-out 9.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 9.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 9.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) {
+  -webkit-transition: opacity 0.2s ease-out 9.6s, -webkit-transform 0.2s ease-out 9.6s;
+  transition: opacity 0.2s ease-out 9.6s, -webkit-transform 0.2s ease-out 9.6s;
+  transition: opacity 0.2s ease-out 9.6s, transform 0.2s ease-out 9.6s;
+  transition: opacity 0.2s ease-out 9.6s, transform 0.2s ease-out 9.6s, -webkit-transform 0.2s ease-out 9.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 10s;
+  transition: -webkit-transform 0.3s ease-out 10s;
+  transition: transform 0.3s ease-out 10s;
+  transition: transform 0.3s ease-out 10s, -webkit-transform 0.3s ease-out 10s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 10s, visibility 0s;
+  transition: opacity 0.3s ease-out 10s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) {
+  -webkit-transition: opacity 0.2s ease-out 9.8s, -webkit-transform 0.2s ease-out 9.8s;
+  transition: opacity 0.2s ease-out 9.8s, -webkit-transform 0.2s ease-out 9.8s;
+  transition: opacity 0.2s ease-out 9.8s, transform 0.2s ease-out 9.8s;
+  transition: opacity 0.2s ease-out 9.8s, transform 0.2s ease-out 9.8s, -webkit-transform 0.2s ease-out 9.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 10.2s;
+  transition: -webkit-transform 0.3s ease-out 10.2s;
+  transition: transform 0.3s ease-out 10.2s;
+  transition: transform 0.3s ease-out 10.2s, -webkit-transform 0.3s ease-out 10.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 10.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 10.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) {
+  -webkit-transition: opacity 0.2s ease-out 10s, -webkit-transform 0.2s ease-out 10s;
+  transition: opacity 0.2s ease-out 10s, -webkit-transform 0.2s ease-out 10s;
+  transition: opacity 0.2s ease-out 10s, transform 0.2s ease-out 10s;
+  transition: opacity 0.2s ease-out 10s, transform 0.2s ease-out 10s, -webkit-transform 0.2s ease-out 10s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 10.4s;
+  transition: -webkit-transform 0.3s ease-out 10.4s;
+  transition: transform 0.3s ease-out 10.4s;
+  transition: transform 0.3s ease-out 10.4s, -webkit-transform 0.3s ease-out 10.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 10.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 10.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) {
+  -webkit-transition: opacity 0.2s ease-out 10.2s, -webkit-transform 0.2s ease-out 10.2s;
+  transition: opacity 0.2s ease-out 10.2s, -webkit-transform 0.2s ease-out 10.2s;
+  transition: opacity 0.2s ease-out 10.2s, transform 0.2s ease-out 10.2s;
+  transition: opacity 0.2s ease-out 10.2s, transform 0.2s ease-out 10.2s, -webkit-transform 0.2s ease-out 10.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 10.6s;
+  transition: -webkit-transform 0.3s ease-out 10.6s;
+  transition: transform 0.3s ease-out 10.6s;
+  transition: transform 0.3s ease-out 10.6s, -webkit-transform 0.3s ease-out 10.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 10.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 10.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) {
+  -webkit-transition: opacity 0.2s ease-out 10.4s, -webkit-transform 0.2s ease-out 10.4s;
+  transition: opacity 0.2s ease-out 10.4s, -webkit-transform 0.2s ease-out 10.4s;
+  transition: opacity 0.2s ease-out 10.4s, transform 0.2s ease-out 10.4s;
+  transition: opacity 0.2s ease-out 10.4s, transform 0.2s ease-out 10.4s, -webkit-transform 0.2s ease-out 10.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 10.8s;
+  transition: -webkit-transform 0.3s ease-out 10.8s;
+  transition: transform 0.3s ease-out 10.8s;
+  transition: transform 0.3s ease-out 10.8s, -webkit-transform 0.3s ease-out 10.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 10.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 10.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) {
+  -webkit-transition: opacity 0.2s ease-out 10.6s, -webkit-transform 0.2s ease-out 10.6s;
+  transition: opacity 0.2s ease-out 10.6s, -webkit-transform 0.2s ease-out 10.6s;
+  transition: opacity 0.2s ease-out 10.6s, transform 0.2s ease-out 10.6s;
+  transition: opacity 0.2s ease-out 10.6s, transform 0.2s ease-out 10.6s, -webkit-transform 0.2s ease-out 10.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 11s;
+  transition: -webkit-transform 0.3s ease-out 11s;
+  transition: transform 0.3s ease-out 11s;
+  transition: transform 0.3s ease-out 11s, -webkit-transform 0.3s ease-out 11s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 11s, visibility 0s;
+  transition: opacity 0.3s ease-out 11s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) {
+  -webkit-transition: opacity 0.2s ease-out 10.8s, -webkit-transform 0.2s ease-out 10.8s;
+  transition: opacity 0.2s ease-out 10.8s, -webkit-transform 0.2s ease-out 10.8s;
+  transition: opacity 0.2s ease-out 10.8s, transform 0.2s ease-out 10.8s;
+  transition: opacity 0.2s ease-out 10.8s, transform 0.2s ease-out 10.8s, -webkit-transform 0.2s ease-out 10.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 11.2s;
+  transition: -webkit-transform 0.3s ease-out 11.2s;
+  transition: transform 0.3s ease-out 11.2s;
+  transition: transform 0.3s ease-out 11.2s, -webkit-transform 0.3s ease-out 11.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 11.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 11.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) {
+  -webkit-transition: opacity 0.2s ease-out 11s, -webkit-transform 0.2s ease-out 11s;
+  transition: opacity 0.2s ease-out 11s, -webkit-transform 0.2s ease-out 11s;
+  transition: opacity 0.2s ease-out 11s, transform 0.2s ease-out 11s;
+  transition: opacity 0.2s ease-out 11s, transform 0.2s ease-out 11s, -webkit-transform 0.2s ease-out 11s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 11.4s;
+  transition: -webkit-transform 0.3s ease-out 11.4s;
+  transition: transform 0.3s ease-out 11.4s;
+  transition: transform 0.3s ease-out 11.4s, -webkit-transform 0.3s ease-out 11.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 11.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 11.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) {
+  -webkit-transition: opacity 0.2s ease-out 11.2s, -webkit-transform 0.2s ease-out 11.2s;
+  transition: opacity 0.2s ease-out 11.2s, -webkit-transform 0.2s ease-out 11.2s;
+  transition: opacity 0.2s ease-out 11.2s, transform 0.2s ease-out 11.2s;
+  transition: opacity 0.2s ease-out 11.2s, transform 0.2s ease-out 11.2s, -webkit-transform 0.2s ease-out 11.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 11.6s;
+  transition: -webkit-transform 0.3s ease-out 11.6s;
+  transition: transform 0.3s ease-out 11.6s;
+  transition: transform 0.3s ease-out 11.6s, -webkit-transform 0.3s ease-out 11.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 11.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 11.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) {
+  -webkit-transition: opacity 0.2s ease-out 11.4s, -webkit-transform 0.2s ease-out 11.4s;
+  transition: opacity 0.2s ease-out 11.4s, -webkit-transform 0.2s ease-out 11.4s;
+  transition: opacity 0.2s ease-out 11.4s, transform 0.2s ease-out 11.4s;
+  transition: opacity 0.2s ease-out 11.4s, transform 0.2s ease-out 11.4s, -webkit-transform 0.2s ease-out 11.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 11.8s;
+  transition: -webkit-transform 0.3s ease-out 11.8s;
+  transition: transform 0.3s ease-out 11.8s;
+  transition: transform 0.3s ease-out 11.8s, -webkit-transform 0.3s ease-out 11.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 11.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 11.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) {
+  -webkit-transition: opacity 0.2s ease-out 11.6s, -webkit-transform 0.2s ease-out 11.6s;
+  transition: opacity 0.2s ease-out 11.6s, -webkit-transform 0.2s ease-out 11.6s;
+  transition: opacity 0.2s ease-out 11.6s, transform 0.2s ease-out 11.6s;
+  transition: opacity 0.2s ease-out 11.6s, transform 0.2s ease-out 11.6s, -webkit-transform 0.2s ease-out 11.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 12s;
+  transition: -webkit-transform 0.3s ease-out 12s;
+  transition: transform 0.3s ease-out 12s;
+  transition: transform 0.3s ease-out 12s, -webkit-transform 0.3s ease-out 12s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 12s, visibility 0s;
+  transition: opacity 0.3s ease-out 12s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) {
+  -webkit-transition: opacity 0.2s ease-out 11.8s, -webkit-transform 0.2s ease-out 11.8s;
+  transition: opacity 0.2s ease-out 11.8s, -webkit-transform 0.2s ease-out 11.8s;
+  transition: opacity 0.2s ease-out 11.8s, transform 0.2s ease-out 11.8s;
+  transition: opacity 0.2s ease-out 11.8s, transform 0.2s ease-out 11.8s, -webkit-transform 0.2s ease-out 11.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 12.2s;
+  transition: -webkit-transform 0.3s ease-out 12.2s;
+  transition: transform 0.3s ease-out 12.2s;
+  transition: transform 0.3s ease-out 12.2s, -webkit-transform 0.3s ease-out 12.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 12.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 12.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) {
+  -webkit-transition: opacity 0.2s ease-out 12s, -webkit-transform 0.2s ease-out 12s;
+  transition: opacity 0.2s ease-out 12s, -webkit-transform 0.2s ease-out 12s;
+  transition: opacity 0.2s ease-out 12s, transform 0.2s ease-out 12s;
+  transition: opacity 0.2s ease-out 12s, transform 0.2s ease-out 12s, -webkit-transform 0.2s ease-out 12s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 12.4s;
+  transition: -webkit-transform 0.3s ease-out 12.4s;
+  transition: transform 0.3s ease-out 12.4s;
+  transition: transform 0.3s ease-out 12.4s, -webkit-transform 0.3s ease-out 12.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 12.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 12.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) {
+  -webkit-transition: opacity 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, transform 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 12.6s;
+  transition: -webkit-transform 0.3s ease-out 12.6s;
+  transition: transform 0.3s ease-out 12.6s;
+  transition: transform 0.3s ease-out 12.6s, -webkit-transform 0.3s ease-out 12.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 12.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 12.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) {
+  -webkit-transition: opacity 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, transform 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 12.8s;
+  transition: -webkit-transform 0.3s ease-out 12.8s;
+  transition: transform 0.3s ease-out 12.8s;
+  transition: transform 0.3s ease-out 12.8s, -webkit-transform 0.3s ease-out 12.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 12.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 12.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) {
+  -webkit-transition: opacity 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, transform 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 13s;
+  transition: -webkit-transform 0.3s ease-out 13s;
+  transition: transform 0.3s ease-out 13s;
+  transition: transform 0.3s ease-out 13s, -webkit-transform 0.3s ease-out 13s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 13s, visibility 0s;
+  transition: opacity 0.3s ease-out 13s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) {
+  -webkit-transition: opacity 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, transform 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 13.2s;
+  transition: -webkit-transform 0.3s ease-out 13.2s;
+  transition: transform 0.3s ease-out 13.2s;
+  transition: transform 0.3s ease-out 13.2s, -webkit-transform 0.3s ease-out 13.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 13.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 13.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) {
+  -webkit-transition: opacity 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, transform 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 13.4s;
+  transition: -webkit-transform 0.3s ease-out 13.4s;
+  transition: transform 0.3s ease-out 13.4s;
+  transition: transform 0.3s ease-out 13.4s, -webkit-transform 0.3s ease-out 13.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 13.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 13.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) {
+  -webkit-transition: opacity 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, transform 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 13.6s;
+  transition: -webkit-transform 0.3s ease-out 13.6s;
+  transition: transform 0.3s ease-out 13.6s;
+  transition: transform 0.3s ease-out 13.6s, -webkit-transform 0.3s ease-out 13.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 13.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 13.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) {
+  -webkit-transition: opacity 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, transform 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 13.8s;
+  transition: -webkit-transform 0.3s ease-out 13.8s;
+  transition: transform 0.3s ease-out 13.8s;
+  transition: transform 0.3s ease-out 13.8s, -webkit-transform 0.3s ease-out 13.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 13.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 13.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) {
+  -webkit-transition: opacity 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, transform 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 14s;
+  transition: -webkit-transform 0.3s ease-out 14s;
+  transition: transform 0.3s ease-out 14s;
+  transition: transform 0.3s ease-out 14s, -webkit-transform 0.3s ease-out 14s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 14s, visibility 0s;
+  transition: opacity 0.3s ease-out 14s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) {
+  -webkit-transition: opacity 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, transform 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 14.2s;
+  transition: -webkit-transform 0.3s ease-out 14.2s;
+  transition: transform 0.3s ease-out 14.2s;
+  transition: transform 0.3s ease-out 14.2s, -webkit-transform 0.3s ease-out 14.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 14.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 14.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) {
+  -webkit-transition: opacity 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, transform 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 14.4s;
+  transition: -webkit-transform 0.3s ease-out 14.4s;
+  transition: transform 0.3s ease-out 14.4s;
+  transition: transform 0.3s ease-out 14.4s, -webkit-transform 0.3s ease-out 14.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 14.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 14.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) {
+  -webkit-transition: opacity 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, transform 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 14.6s;
+  transition: -webkit-transform 0.3s ease-out 14.6s;
+  transition: transform 0.3s ease-out 14.6s;
+  transition: transform 0.3s ease-out 14.6s, -webkit-transform 0.3s ease-out 14.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 14.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 14.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) {
+  -webkit-transition: opacity 0.2s ease-out 14.4s, -webkit-transform 0.2s ease-out 14.4s;
+  transition: opacity 0.2s ease-out 14.4s, -webkit-transform 0.2s ease-out 14.4s;
+  transition: opacity 0.2s ease-out 14.4s, transform 0.2s ease-out 14.4s;
+  transition: opacity 0.2s ease-out 14.4s, transform 0.2s ease-out 14.4s, -webkit-transform 0.2s ease-out 14.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 14.8s;
+  transition: -webkit-transform 0.3s ease-out 14.8s;
+  transition: transform 0.3s ease-out 14.8s;
+  transition: transform 0.3s ease-out 14.8s, -webkit-transform 0.3s ease-out 14.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 14.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 14.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) {
+  -webkit-transition: opacity 0.2s ease-out 14.6s, -webkit-transform 0.2s ease-out 14.6s;
+  transition: opacity 0.2s ease-out 14.6s, -webkit-transform 0.2s ease-out 14.6s;
+  transition: opacity 0.2s ease-out 14.6s, transform 0.2s ease-out 14.6s;
+  transition: opacity 0.2s ease-out 14.6s, transform 0.2s ease-out 14.6s, -webkit-transform 0.2s ease-out 14.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 15s;
+  transition: -webkit-transform 0.3s ease-out 15s;
+  transition: transform 0.3s ease-out 15s;
+  transition: transform 0.3s ease-out 15s, -webkit-transform 0.3s ease-out 15s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 15s, visibility 0s;
+  transition: opacity 0.3s ease-out 15s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) {
+  -webkit-transition: opacity 0.2s ease-out 14.8s, -webkit-transform 0.2s ease-out 14.8s;
+  transition: opacity 0.2s ease-out 14.8s, -webkit-transform 0.2s ease-out 14.8s;
+  transition: opacity 0.2s ease-out 14.8s, transform 0.2s ease-out 14.8s;
+  transition: opacity 0.2s ease-out 14.8s, transform 0.2s ease-out 14.8s, -webkit-transform 0.2s ease-out 14.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 15.2s;
+  transition: -webkit-transform 0.3s ease-out 15.2s;
+  transition: transform 0.3s ease-out 15.2s;
+  transition: transform 0.3s ease-out 15.2s, -webkit-transform 0.3s ease-out 15.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 15.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 15.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) {
+  -webkit-transition: opacity 0.2s ease-out 15s, -webkit-transform 0.2s ease-out 15s;
+  transition: opacity 0.2s ease-out 15s, -webkit-transform 0.2s ease-out 15s;
+  transition: opacity 0.2s ease-out 15s, transform 0.2s ease-out 15s;
+  transition: opacity 0.2s ease-out 15s, transform 0.2s ease-out 15s, -webkit-transform 0.2s ease-out 15s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 15.4s;
+  transition: -webkit-transform 0.3s ease-out 15.4s;
+  transition: transform 0.3s ease-out 15.4s;
+  transition: transform 0.3s ease-out 15.4s, -webkit-transform 0.3s ease-out 15.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 15.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 15.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) {
+  -webkit-transition: opacity 0.2s ease-out 15.2s, -webkit-transform 0.2s ease-out 15.2s;
+  transition: opacity 0.2s ease-out 15.2s, -webkit-transform 0.2s ease-out 15.2s;
+  transition: opacity 0.2s ease-out 15.2s, transform 0.2s ease-out 15.2s;
+  transition: opacity 0.2s ease-out 15.2s, transform 0.2s ease-out 15.2s, -webkit-transform 0.2s ease-out 15.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 15.6s;
+  transition: -webkit-transform 0.3s ease-out 15.6s;
+  transition: transform 0.3s ease-out 15.6s;
+  transition: transform 0.3s ease-out 15.6s, -webkit-transform 0.3s ease-out 15.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 15.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 15.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) {
+  -webkit-transition: opacity 0.2s ease-out 15.4s, -webkit-transform 0.2s ease-out 15.4s;
+  transition: opacity 0.2s ease-out 15.4s, -webkit-transform 0.2s ease-out 15.4s;
+  transition: opacity 0.2s ease-out 15.4s, transform 0.2s ease-out 15.4s;
+  transition: opacity 0.2s ease-out 15.4s, transform 0.2s ease-out 15.4s, -webkit-transform 0.2s ease-out 15.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 15.8s;
+  transition: -webkit-transform 0.3s ease-out 15.8s;
+  transition: transform 0.3s ease-out 15.8s;
+  transition: transform 0.3s ease-out 15.8s, -webkit-transform 0.3s ease-out 15.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 15.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 15.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) {
+  -webkit-transition: opacity 0.2s ease-out 15.6s, -webkit-transform 0.2s ease-out 15.6s;
+  transition: opacity 0.2s ease-out 15.6s, -webkit-transform 0.2s ease-out 15.6s;
+  transition: opacity 0.2s ease-out 15.6s, transform 0.2s ease-out 15.6s;
+  transition: opacity 0.2s ease-out 15.6s, transform 0.2s ease-out 15.6s, -webkit-transform 0.2s ease-out 15.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 16s;
+  transition: -webkit-transform 0.3s ease-out 16s;
+  transition: transform 0.3s ease-out 16s;
+  transition: transform 0.3s ease-out 16s, -webkit-transform 0.3s ease-out 16s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 16s, visibility 0s;
+  transition: opacity 0.3s ease-out 16s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) {
+  -webkit-transition: opacity 0.2s ease-out 15.8s, -webkit-transform 0.2s ease-out 15.8s;
+  transition: opacity 0.2s ease-out 15.8s, -webkit-transform 0.2s ease-out 15.8s;
+  transition: opacity 0.2s ease-out 15.8s, transform 0.2s ease-out 15.8s;
+  transition: opacity 0.2s ease-out 15.8s, transform 0.2s ease-out 15.8s, -webkit-transform 0.2s ease-out 15.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 16.2s;
+  transition: -webkit-transform 0.3s ease-out 16.2s;
+  transition: transform 0.3s ease-out 16.2s;
+  transition: transform 0.3s ease-out 16.2s, -webkit-transform 0.3s ease-out 16.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 16.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 16.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) {
+  -webkit-transition: opacity 0.2s ease-out 16s, -webkit-transform 0.2s ease-out 16s;
+  transition: opacity 0.2s ease-out 16s, -webkit-transform 0.2s ease-out 16s;
+  transition: opacity 0.2s ease-out 16s, transform 0.2s ease-out 16s;
+  transition: opacity 0.2s ease-out 16s, transform 0.2s ease-out 16s, -webkit-transform 0.2s ease-out 16s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 16.4s;
+  transition: -webkit-transform 0.3s ease-out 16.4s;
+  transition: transform 0.3s ease-out 16.4s;
+  transition: transform 0.3s ease-out 16.4s, -webkit-transform 0.3s ease-out 16.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 16.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 16.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) {
+  -webkit-transition: opacity 0.2s ease-out 16.2s, -webkit-transform 0.2s ease-out 16.2s;
+  transition: opacity 0.2s ease-out 16.2s, -webkit-transform 0.2s ease-out 16.2s;
+  transition: opacity 0.2s ease-out 16.2s, transform 0.2s ease-out 16.2s;
+  transition: opacity 0.2s ease-out 16.2s, transform 0.2s ease-out 16.2s, -webkit-transform 0.2s ease-out 16.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 16.6s;
+  transition: -webkit-transform 0.3s ease-out 16.6s;
+  transition: transform 0.3s ease-out 16.6s;
+  transition: transform 0.3s ease-out 16.6s, -webkit-transform 0.3s ease-out 16.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 16.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 16.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) {
+  -webkit-transition: opacity 0.2s ease-out 16.4s, -webkit-transform 0.2s ease-out 16.4s;
+  transition: opacity 0.2s ease-out 16.4s, -webkit-transform 0.2s ease-out 16.4s;
+  transition: opacity 0.2s ease-out 16.4s, transform 0.2s ease-out 16.4s;
+  transition: opacity 0.2s ease-out 16.4s, transform 0.2s ease-out 16.4s, -webkit-transform 0.2s ease-out 16.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 16.8s;
+  transition: -webkit-transform 0.3s ease-out 16.8s;
+  transition: transform 0.3s ease-out 16.8s;
+  transition: transform 0.3s ease-out 16.8s, -webkit-transform 0.3s ease-out 16.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 16.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 16.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) {
+  -webkit-transition: opacity 0.2s ease-out 16.6s, -webkit-transform 0.2s ease-out 16.6s;
+  transition: opacity 0.2s ease-out 16.6s, -webkit-transform 0.2s ease-out 16.6s;
+  transition: opacity 0.2s ease-out 16.6s, transform 0.2s ease-out 16.6s;
+  transition: opacity 0.2s ease-out 16.6s, transform 0.2s ease-out 16.6s, -webkit-transform 0.2s ease-out 16.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 17s;
+  transition: -webkit-transform 0.3s ease-out 17s;
+  transition: transform 0.3s ease-out 17s;
+  transition: transform 0.3s ease-out 17s, -webkit-transform 0.3s ease-out 17s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 17s, visibility 0s;
+  transition: opacity 0.3s ease-out 17s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) {
+  -webkit-transition: opacity 0.2s ease-out 16.8s, -webkit-transform 0.2s ease-out 16.8s;
+  transition: opacity 0.2s ease-out 16.8s, -webkit-transform 0.2s ease-out 16.8s;
+  transition: opacity 0.2s ease-out 16.8s, transform 0.2s ease-out 16.8s;
+  transition: opacity 0.2s ease-out 16.8s, transform 0.2s ease-out 16.8s, -webkit-transform 0.2s ease-out 16.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 17.2s;
+  transition: -webkit-transform 0.3s ease-out 17.2s;
+  transition: transform 0.3s ease-out 17.2s;
+  transition: transform 0.3s ease-out 17.2s, -webkit-transform 0.3s ease-out 17.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 17.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 17.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) {
+  -webkit-transition: opacity 0.2s ease-out 17s, -webkit-transform 0.2s ease-out 17s;
+  transition: opacity 0.2s ease-out 17s, -webkit-transform 0.2s ease-out 17s;
+  transition: opacity 0.2s ease-out 17s, transform 0.2s ease-out 17s;
+  transition: opacity 0.2s ease-out 17s, transform 0.2s ease-out 17s, -webkit-transform 0.2s ease-out 17s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 17.4s;
+  transition: -webkit-transform 0.3s ease-out 17.4s;
+  transition: transform 0.3s ease-out 17.4s;
+  transition: transform 0.3s ease-out 17.4s, -webkit-transform 0.3s ease-out 17.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 17.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 17.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) {
+  -webkit-transition: opacity 0.2s ease-out 17.2s, -webkit-transform 0.2s ease-out 17.2s;
+  transition: opacity 0.2s ease-out 17.2s, -webkit-transform 0.2s ease-out 17.2s;
+  transition: opacity 0.2s ease-out 17.2s, transform 0.2s ease-out 17.2s;
+  transition: opacity 0.2s ease-out 17.2s, transform 0.2s ease-out 17.2s, -webkit-transform 0.2s ease-out 17.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 17.6s;
+  transition: -webkit-transform 0.3s ease-out 17.6s;
+  transition: transform 0.3s ease-out 17.6s;
+  transition: transform 0.3s ease-out 17.6s, -webkit-transform 0.3s ease-out 17.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 17.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 17.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) {
+  -webkit-transition: opacity 0.2s ease-out 17.4s, -webkit-transform 0.2s ease-out 17.4s;
+  transition: opacity 0.2s ease-out 17.4s, -webkit-transform 0.2s ease-out 17.4s;
+  transition: opacity 0.2s ease-out 17.4s, transform 0.2s ease-out 17.4s;
+  transition: opacity 0.2s ease-out 17.4s, transform 0.2s ease-out 17.4s, -webkit-transform 0.2s ease-out 17.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 17.8s;
+  transition: -webkit-transform 0.3s ease-out 17.8s;
+  transition: transform 0.3s ease-out 17.8s;
+  transition: transform 0.3s ease-out 17.8s, -webkit-transform 0.3s ease-out 17.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 17.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 17.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) {
+  -webkit-transition: opacity 0.2s ease-out 17.6s, -webkit-transform 0.2s ease-out 17.6s;
+  transition: opacity 0.2s ease-out 17.6s, -webkit-transform 0.2s ease-out 17.6s;
+  transition: opacity 0.2s ease-out 17.6s, transform 0.2s ease-out 17.6s;
+  transition: opacity 0.2s ease-out 17.6s, transform 0.2s ease-out 17.6s, -webkit-transform 0.2s ease-out 17.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 18s;
+  transition: -webkit-transform 0.3s ease-out 18s;
+  transition: transform 0.3s ease-out 18s;
+  transition: transform 0.3s ease-out 18s, -webkit-transform 0.3s ease-out 18s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 18s, visibility 0s;
+  transition: opacity 0.3s ease-out 18s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) {
+  -webkit-transition: opacity 0.2s ease-out 17.8s, -webkit-transform 0.2s ease-out 17.8s;
+  transition: opacity 0.2s ease-out 17.8s, -webkit-transform 0.2s ease-out 17.8s;
+  transition: opacity 0.2s ease-out 17.8s, transform 0.2s ease-out 17.8s;
+  transition: opacity 0.2s ease-out 17.8s, transform 0.2s ease-out 17.8s, -webkit-transform 0.2s ease-out 17.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 18.2s;
+  transition: -webkit-transform 0.3s ease-out 18.2s;
+  transition: transform 0.3s ease-out 18.2s;
+  transition: transform 0.3s ease-out 18.2s, -webkit-transform 0.3s ease-out 18.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 18.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 18.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) {
+  -webkit-transition: opacity 0.2s ease-out 18s, -webkit-transform 0.2s ease-out 18s;
+  transition: opacity 0.2s ease-out 18s, -webkit-transform 0.2s ease-out 18s;
+  transition: opacity 0.2s ease-out 18s, transform 0.2s ease-out 18s;
+  transition: opacity 0.2s ease-out 18s, transform 0.2s ease-out 18s, -webkit-transform 0.2s ease-out 18s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 18.4s;
+  transition: -webkit-transform 0.3s ease-out 18.4s;
+  transition: transform 0.3s ease-out 18.4s;
+  transition: transform 0.3s ease-out 18.4s, -webkit-transform 0.3s ease-out 18.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 18.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 18.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) {
+  -webkit-transition: opacity 0.2s ease-out 18.2s, -webkit-transform 0.2s ease-out 18.2s;
+  transition: opacity 0.2s ease-out 18.2s, -webkit-transform 0.2s ease-out 18.2s;
+  transition: opacity 0.2s ease-out 18.2s, transform 0.2s ease-out 18.2s;
+  transition: opacity 0.2s ease-out 18.2s, transform 0.2s ease-out 18.2s, -webkit-transform 0.2s ease-out 18.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 18.6s;
+  transition: -webkit-transform 0.3s ease-out 18.6s;
+  transition: transform 0.3s ease-out 18.6s;
+  transition: transform 0.3s ease-out 18.6s, -webkit-transform 0.3s ease-out 18.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 18.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 18.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) {
+  -webkit-transition: opacity 0.2s ease-out 18.4s, -webkit-transform 0.2s ease-out 18.4s;
+  transition: opacity 0.2s ease-out 18.4s, -webkit-transform 0.2s ease-out 18.4s;
+  transition: opacity 0.2s ease-out 18.4s, transform 0.2s ease-out 18.4s;
+  transition: opacity 0.2s ease-out 18.4s, transform 0.2s ease-out 18.4s, -webkit-transform 0.2s ease-out 18.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 18.8s;
+  transition: -webkit-transform 0.3s ease-out 18.8s;
+  transition: transform 0.3s ease-out 18.8s;
+  transition: transform 0.3s ease-out 18.8s, -webkit-transform 0.3s ease-out 18.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 18.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 18.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) {
+  -webkit-transition: opacity 0.2s ease-out 18.6s, -webkit-transform 0.2s ease-out 18.6s;
+  transition: opacity 0.2s ease-out 18.6s, -webkit-transform 0.2s ease-out 18.6s;
+  transition: opacity 0.2s ease-out 18.6s, transform 0.2s ease-out 18.6s;
+  transition: opacity 0.2s ease-out 18.6s, transform 0.2s ease-out 18.6s, -webkit-transform 0.2s ease-out 18.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 19s;
+  transition: -webkit-transform 0.3s ease-out 19s;
+  transition: transform 0.3s ease-out 19s;
+  transition: transform 0.3s ease-out 19s, -webkit-transform 0.3s ease-out 19s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 19s, visibility 0s;
+  transition: opacity 0.3s ease-out 19s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) {
+  -webkit-transition: opacity 0.2s ease-out 18.8s, -webkit-transform 0.2s ease-out 18.8s;
+  transition: opacity 0.2s ease-out 18.8s, -webkit-transform 0.2s ease-out 18.8s;
+  transition: opacity 0.2s ease-out 18.8s, transform 0.2s ease-out 18.8s;
+  transition: opacity 0.2s ease-out 18.8s, transform 0.2s ease-out 18.8s, -webkit-transform 0.2s ease-out 18.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 19.2s;
+  transition: -webkit-transform 0.3s ease-out 19.2s;
+  transition: transform 0.3s ease-out 19.2s;
+  transition: transform 0.3s ease-out 19.2s, -webkit-transform 0.3s ease-out 19.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 19.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 19.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) {
+  -webkit-transition: opacity 0.2s ease-out 19s, -webkit-transform 0.2s ease-out 19s;
+  transition: opacity 0.2s ease-out 19s, -webkit-transform 0.2s ease-out 19s;
+  transition: opacity 0.2s ease-out 19s, transform 0.2s ease-out 19s;
+  transition: opacity 0.2s ease-out 19s, transform 0.2s ease-out 19s, -webkit-transform 0.2s ease-out 19s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 19.4s;
+  transition: -webkit-transform 0.3s ease-out 19.4s;
+  transition: transform 0.3s ease-out 19.4s;
+  transition: transform 0.3s ease-out 19.4s, -webkit-transform 0.3s ease-out 19.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 19.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 19.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) {
+  -webkit-transition: opacity 0.2s ease-out 19.2s, -webkit-transform 0.2s ease-out 19.2s;
+  transition: opacity 0.2s ease-out 19.2s, -webkit-transform 0.2s ease-out 19.2s;
+  transition: opacity 0.2s ease-out 19.2s, transform 0.2s ease-out 19.2s;
+  transition: opacity 0.2s ease-out 19.2s, transform 0.2s ease-out 19.2s, -webkit-transform 0.2s ease-out 19.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 19.6s;
+  transition: -webkit-transform 0.3s ease-out 19.6s;
+  transition: transform 0.3s ease-out 19.6s;
+  transition: transform 0.3s ease-out 19.6s, -webkit-transform 0.3s ease-out 19.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 19.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 19.6s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) {
+  -webkit-transition: opacity 0.2s ease-out 19.4s, -webkit-transform 0.2s ease-out 19.4s;
+  transition: opacity 0.2s ease-out 19.4s, -webkit-transform 0.2s ease-out 19.4s;
+  transition: opacity 0.2s ease-out 19.4s, transform 0.2s ease-out 19.4s;
+  transition: opacity 0.2s ease-out 19.4s, transform 0.2s ease-out 19.4s, -webkit-transform 0.2s ease-out 19.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 19.8s;
+  transition: -webkit-transform 0.3s ease-out 19.8s;
+  transition: transform 0.3s ease-out 19.8s;
+  transition: transform 0.3s ease-out 19.8s, -webkit-transform 0.3s ease-out 19.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 19.8s, visibility 0s;
+  transition: opacity 0.3s ease-out 19.8s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) {
+  -webkit-transition: opacity 0.2s ease-out 19.6s, -webkit-transform 0.2s ease-out 19.6s;
+  transition: opacity 0.2s ease-out 19.6s, -webkit-transform 0.2s ease-out 19.6s;
+  transition: opacity 0.2s ease-out 19.6s, transform 0.2s ease-out 19.6s;
+  transition: opacity 0.2s ease-out 19.6s, transform 0.2s ease-out 19.6s, -webkit-transform 0.2s ease-out 19.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 20s;
+  transition: -webkit-transform 0.3s ease-out 20s;
+  transition: transform 0.3s ease-out 20s;
+  transition: transform 0.3s ease-out 20s, -webkit-transform 0.3s ease-out 20s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 20s, visibility 0s;
+  transition: opacity 0.3s ease-out 20s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) {
+  -webkit-transition: opacity 0.2s ease-out 19.8s, -webkit-transform 0.2s ease-out 19.8s;
+  transition: opacity 0.2s ease-out 19.8s, -webkit-transform 0.2s ease-out 19.8s;
+  transition: opacity 0.2s ease-out 19.8s, transform 0.2s ease-out 19.8s;
+  transition: opacity 0.2s ease-out 19.8s, transform 0.2s ease-out 19.8s, -webkit-transform 0.2s ease-out 19.8s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 20.2s;
+  transition: -webkit-transform 0.3s ease-out 20.2s;
+  transition: transform 0.3s ease-out 20.2s;
+  transition: transform 0.3s ease-out 20.2s, -webkit-transform 0.3s ease-out 20.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 20.2s, visibility 0s;
+  transition: opacity 0.3s ease-out 20.2s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) {
+  -webkit-transition: opacity 0.2s ease-out 20s, -webkit-transform 0.2s ease-out 20s;
+  transition: opacity 0.2s ease-out 20s, -webkit-transform 0.2s ease-out 20s;
+  transition: opacity 0.2s ease-out 20s, transform 0.2s ease-out 20s;
+  transition: opacity 0.2s ease-out 20s, transform 0.2s ease-out 20s, -webkit-transform 0.2s ease-out 20s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 20.4s;
+  transition: -webkit-transform 0.3s ease-out 20.4s;
+  transition: transform 0.3s ease-out 20.4s;
+  transition: transform 0.3s ease-out 20.4s, -webkit-transform 0.3s ease-out 20.4s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) .win-rare__item-buy {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 20.4s, visibility 0s;
+  transition: opacity 0.3s ease-out 20.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item.is-rare .win-rare__item-bg::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  display: block;
+  border-radius: 1.6rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+  background-size: 300% 300%;
+  -webkit-animation: diamondShine 3.6s ease-in-out infinite;
+          animation: diamondShine 3.6s ease-in-out infinite;
+}
+.win-rare--many-items .win-rare__content {
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+.win-rare--many-items .win-rare__content .container {
+  display: block;
+}
+.win-rare--many-items .win-rare__list {
+  gap: 1.6rem;
+}
+.win-rare--many-items .win-rare__item {
+  width: 18rem;
+  pointer-events: none;
+}
+.win-rare--many-items .win-rare__item-card-wrapper {
+  padding: 1.6rem 1.2rem 2.4rem;
+}
+.win-rare--many-items .win-rare__item-chance {
+  top: 1.6rem;
+  font-size: 1.2rem;
+}
+.win-rare--many-items .win-rare__item-info {
+  margin-top: 0.4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.win-rare--many-items .win-rare__item-subtitle,
+.win-rare--many-items .win-rare__item-title {
+  font-size: 1.3rem;
+}
+.win-rare--many-items .win-rare__item-price {
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.win-rare--many-items .win-rare__item-price span {
+  font-size: 1.2rem;
+}
+.win-rare--many-items .win-rare__item-price svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.win-rare--many-items .win-rare__item-btn {
+  padding: 0 0.6rem;
+  height: 2.4rem;
+  pointer-events: all;
+}
+.win-rare--many-items .win-rare__item-buy {
+  margin-top: 0.4rem;
+}
+.win-rare--many-items .win-rare__item-price {
+  height: 2.4rem;
 }
 
 .win-rare__video {
@@ -21802,6 +23920,30 @@ dd.upgrade__skin-price svg {
   }
 }
 
+.win-rare__header {
+  text-align: center;
+}
+.win-rare__header svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.win-rare__title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.win-rare__desc {
+  margin: 0.4rem auto 3.2rem;
+  max-width: 46rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  line-height: 120%;
+  text-align: center;
+}
+
 .win-rare__content {
   width: 100%;
   height: 100%;
@@ -21850,6 +23992,13 @@ dd.upgrade__skin-price svg {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
+  }
+}
+@media (any-hover: hover) and (max-width: 480px) {
+  .win-rare__item:hover {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
 .win-rare__item--covert .win-rare__item-chance {
@@ -21962,6 +24111,10 @@ dd.upgrade__skin-price svg {
           transform: rotateY(180deg);
 }
 
+.win-rare__item-bg img {
+  display: block;
+}
+
 .win-rare__item-bg,
 .win-rare__item-card-wrapper {
   -ms-grid-column: 1;
@@ -21983,6 +24136,7 @@ dd.upgrade__skin-price svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2.4rem 2rem 3.6rem;
+  min-width: 0;
 }
 .win-rare__item-card-wrapper::before {
   width: 100%;
@@ -22006,15 +24160,21 @@ dd.upgrade__skin-price svg {
 
 .win-rare__item-info {
   position: relative;
-  margin-top: 0.8rem;
+  margin: 0.8rem auto 0;
   padding-left: 2rem;
   padding-right: 2rem;
+  max-width: 100%;
 }
 
 .win-rare__item-subtitle,
 .win-rare__item-title {
+  max-width: 100%;
   font-size: 1.4rem;
   line-height: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .win-rare__item-subtitle {
@@ -22077,13 +24237,13 @@ dd.upgrade__skin-price svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.4rem;
-  margin-top: 0.4rem;
+  margin-top: 0.8rem;
   opacity: 0;
   visibility: hidden;
 }
 @media (max-width: 768px) {
   .win-rare__item-buy {
-    margin-top: 0.2rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -22125,4 +24285,11 @@ dd.upgrade__skin-price svg {
   height: 2.6rem;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: pointer;
+}
+
+.win-rare__btn {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
 }
