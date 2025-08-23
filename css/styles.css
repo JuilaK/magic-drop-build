@@ -24059,6 +24059,9 @@ dd.upgrade__skin-price svg {
             transform: none;
   }
 }
+.win-rare__item--common .win-rare__item-chance {
+  color: #c3c3c3;
+}
 .win-rare__item--covert .win-rare__item-chance {
   color: #FF575D;
 }
