@@ -10163,6 +10163,18 @@ span.draw-item__start-price svg {
   transition: transform 1s ease-out 2s;
   transition: transform 1s ease-out 2s, -webkit-transform 1s ease-out 2s;
 }
+.win__item:nth-child(11) {
+  -webkit-transition: opacity 0.2s ease-out 2.2s, -webkit-transform 0.2s ease-out 2.2s;
+  transition: opacity 0.2s ease-out 2.2s, -webkit-transform 0.2s ease-out 2.2s;
+  transition: opacity 0.2s ease-out 2.2s, transform 0.2s ease-out 2.2s;
+  transition: opacity 0.2s ease-out 2.2s, transform 0.2s ease-out 2.2s, -webkit-transform 0.2s ease-out 2.2s;
+}
+.win__item:nth-child(11) .win__item-img {
+  -webkit-transition: -webkit-transform 1s ease-out 2.2s;
+  transition: -webkit-transform 1s ease-out 2.2s;
+  transition: transform 1s ease-out 2.2s;
+  transition: transform 1s ease-out 2.2s, -webkit-transform 1s ease-out 2.2s;
+}
 @media (max-width: 768px) {
   .win__item {
     width: 21rem;
@@ -21796,6 +21808,12 @@ dd.upgrade__skin-price svg {
   transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s;
   transition: opacity 0.2s ease-out 7s, transform 0.2s ease-out 7s, -webkit-transform 0.2s ease-out 7s;
 }
+.win-rare--open .win-rare__item:nth-child(11) {
+  -webkit-transition: opacity 0.2s ease-out 7.2s, -webkit-transform 0.2s ease-out 7.2s;
+  transition: opacity 0.2s ease-out 7.2s, -webkit-transform 0.2s ease-out 7.2s;
+  transition: opacity 0.2s ease-out 7.2s, transform 0.2s ease-out 7.2s;
+  transition: opacity 0.2s ease-out 7.2s, transform 0.2s ease-out 7.2s, -webkit-transform 0.2s ease-out 7.2s;
+}
 .win-rare--open.win-rare--many-items .win-rare__content {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-out;
@@ -21815,7 +21833,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 0.6s;
   transition: transform 0.3s ease-out 0.6s, -webkit-transform 0.3s ease-out 0.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 0.6s, visibility 0s;
@@ -21835,7 +21855,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 0.8s;
   transition: transform 0.3s ease-out 0.8s, -webkit-transform 0.3s ease-out 0.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(2) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 0.8s, visibility 0s;
@@ -21855,7 +21877,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 1s;
   transition: transform 0.3s ease-out 1s, -webkit-transform 0.3s ease-out 1s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(3) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 1s, visibility 0s;
@@ -21875,7 +21899,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 1.2s;
   transition: transform 0.3s ease-out 1.2s, -webkit-transform 0.3s ease-out 1.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(4) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 1.2s, visibility 0s;
@@ -21895,7 +21921,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 1.4s;
   transition: transform 0.3s ease-out 1.4s, -webkit-transform 0.3s ease-out 1.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(5) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 1.4s, visibility 0s;
@@ -21915,7 +21943,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 1.6s;
   transition: transform 0.3s ease-out 1.6s, -webkit-transform 0.3s ease-out 1.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(6) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 1.6s, visibility 0s;
@@ -21935,7 +21965,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 1.8s;
   transition: transform 0.3s ease-out 1.8s, -webkit-transform 0.3s ease-out 1.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(7) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 1.8s, visibility 0s;
@@ -21955,7 +21987,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 2s;
   transition: transform 0.3s ease-out 2s, -webkit-transform 0.3s ease-out 2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(8) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 2s, visibility 0s;
@@ -21975,7 +22009,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 2.2s;
   transition: transform 0.3s ease-out 2.2s, -webkit-transform 0.3s ease-out 2.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(9) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 2.2s, visibility 0s;
@@ -21995,7 +22031,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 2.4s;
   transition: transform 0.3s ease-out 2.4s, -webkit-transform 0.3s ease-out 2.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(10) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 2.4s, visibility 0s;
@@ -22015,7 +22053,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 2.6s;
   transition: transform 0.3s ease-out 2.6s, -webkit-transform 0.3s ease-out 2.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(11) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 2.6s, visibility 0s;
@@ -22035,7 +22075,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 2.8s;
   transition: transform 0.3s ease-out 2.8s, -webkit-transform 0.3s ease-out 2.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(12) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 2.8s, visibility 0s;
@@ -22055,7 +22097,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 3s;
   transition: transform 0.3s ease-out 3s, -webkit-transform 0.3s ease-out 3s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(13) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 3s, visibility 0s;
@@ -22075,7 +22119,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 3.2s;
   transition: transform 0.3s ease-out 3.2s, -webkit-transform 0.3s ease-out 3.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(14) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 3.2s, visibility 0s;
@@ -22095,7 +22141,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 3.4s;
   transition: transform 0.3s ease-out 3.4s, -webkit-transform 0.3s ease-out 3.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(15) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 3.4s, visibility 0s;
@@ -22115,7 +22163,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 3.6s;
   transition: transform 0.3s ease-out 3.6s, -webkit-transform 0.3s ease-out 3.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(16) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 3.6s, visibility 0s;
@@ -22135,7 +22185,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 3.8s;
   transition: transform 0.3s ease-out 3.8s, -webkit-transform 0.3s ease-out 3.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(17) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 3.8s, visibility 0s;
@@ -22155,7 +22207,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 4s;
   transition: transform 0.3s ease-out 4s, -webkit-transform 0.3s ease-out 4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(18) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 4s, visibility 0s;
@@ -22175,7 +22229,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 4.2s;
   transition: transform 0.3s ease-out 4.2s, -webkit-transform 0.3s ease-out 4.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(19) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 4.2s, visibility 0s;
@@ -22195,7 +22251,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 4.4s;
   transition: transform 0.3s ease-out 4.4s, -webkit-transform 0.3s ease-out 4.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(20) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 4.4s, visibility 0s;
@@ -22215,7 +22273,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 4.6s;
   transition: transform 0.3s ease-out 4.6s, -webkit-transform 0.3s ease-out 4.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(21) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 4.6s, visibility 0s;
@@ -22235,7 +22295,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 4.8s;
   transition: transform 0.3s ease-out 4.8s, -webkit-transform 0.3s ease-out 4.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(22) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 4.8s, visibility 0s;
@@ -22255,7 +22317,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 5s;
   transition: transform 0.3s ease-out 5s, -webkit-transform 0.3s ease-out 5s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(23) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 5s, visibility 0s;
@@ -22275,7 +22339,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 5.2s;
   transition: transform 0.3s ease-out 5.2s, -webkit-transform 0.3s ease-out 5.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(24) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 5.2s, visibility 0s;
@@ -22295,7 +22361,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 5.4s;
   transition: transform 0.3s ease-out 5.4s, -webkit-transform 0.3s ease-out 5.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(25) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 5.4s, visibility 0s;
@@ -22315,7 +22383,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 5.6s;
   transition: transform 0.3s ease-out 5.6s, -webkit-transform 0.3s ease-out 5.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(26) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 5.6s, visibility 0s;
@@ -22335,7 +22405,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 5.8s;
   transition: transform 0.3s ease-out 5.8s, -webkit-transform 0.3s ease-out 5.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(27) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 5.8s, visibility 0s;
@@ -22355,7 +22427,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 6s;
   transition: transform 0.3s ease-out 6s, -webkit-transform 0.3s ease-out 6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(28) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 6s, visibility 0s;
@@ -22375,7 +22449,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 6.2s;
   transition: transform 0.3s ease-out 6.2s, -webkit-transform 0.3s ease-out 6.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(29) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 6.2s, visibility 0s;
@@ -22395,7 +22471,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 6.4s;
   transition: transform 0.3s ease-out 6.4s, -webkit-transform 0.3s ease-out 6.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(30) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 6.4s, visibility 0s;
@@ -22415,7 +22493,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 6.6s;
   transition: transform 0.3s ease-out 6.6s, -webkit-transform 0.3s ease-out 6.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(31) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 6.6s, visibility 0s;
@@ -22435,7 +22515,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 6.8s;
   transition: transform 0.3s ease-out 6.8s, -webkit-transform 0.3s ease-out 6.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(32) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 6.8s, visibility 0s;
@@ -22455,7 +22537,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 7s;
   transition: transform 0.3s ease-out 7s, -webkit-transform 0.3s ease-out 7s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(33) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 7s, visibility 0s;
@@ -22475,7 +22559,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 7.2s;
   transition: transform 0.3s ease-out 7.2s, -webkit-transform 0.3s ease-out 7.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(34) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 7.2s, visibility 0s;
@@ -22495,7 +22581,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 7.4s;
   transition: transform 0.3s ease-out 7.4s, -webkit-transform 0.3s ease-out 7.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(35) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 7.4s, visibility 0s;
@@ -22515,7 +22603,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 7.6s;
   transition: transform 0.3s ease-out 7.6s, -webkit-transform 0.3s ease-out 7.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(36) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 7.6s, visibility 0s;
@@ -22535,7 +22625,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 7.8s;
   transition: transform 0.3s ease-out 7.8s, -webkit-transform 0.3s ease-out 7.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(37) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 7.8s, visibility 0s;
@@ -22555,7 +22647,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 8s;
   transition: transform 0.3s ease-out 8s, -webkit-transform 0.3s ease-out 8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(38) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 8s, visibility 0s;
@@ -22575,7 +22669,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 8.2s;
   transition: transform 0.3s ease-out 8.2s, -webkit-transform 0.3s ease-out 8.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(39) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 8.2s, visibility 0s;
@@ -22595,7 +22691,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 8.4s;
   transition: transform 0.3s ease-out 8.4s, -webkit-transform 0.3s ease-out 8.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(40) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 8.4s, visibility 0s;
@@ -22615,7 +22713,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 8.6s;
   transition: transform 0.3s ease-out 8.6s, -webkit-transform 0.3s ease-out 8.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(41) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 8.6s, visibility 0s;
@@ -22635,7 +22735,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 8.8s;
   transition: transform 0.3s ease-out 8.8s, -webkit-transform 0.3s ease-out 8.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(42) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 8.8s, visibility 0s;
@@ -22655,7 +22757,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 9s;
   transition: transform 0.3s ease-out 9s, -webkit-transform 0.3s ease-out 9s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(43) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 9s, visibility 0s;
@@ -22675,7 +22779,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 9.2s;
   transition: transform 0.3s ease-out 9.2s, -webkit-transform 0.3s ease-out 9.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(44) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 9.2s, visibility 0s;
@@ -22695,7 +22801,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 9.4s;
   transition: transform 0.3s ease-out 9.4s, -webkit-transform 0.3s ease-out 9.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(45) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 9.4s, visibility 0s;
@@ -22715,7 +22823,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 9.6s;
   transition: transform 0.3s ease-out 9.6s, -webkit-transform 0.3s ease-out 9.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(46) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 9.6s, visibility 0s;
@@ -22735,7 +22845,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 9.8s;
   transition: transform 0.3s ease-out 9.8s, -webkit-transform 0.3s ease-out 9.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(47) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 9.8s, visibility 0s;
@@ -22755,7 +22867,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 10s;
   transition: transform 0.3s ease-out 10s, -webkit-transform 0.3s ease-out 10s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(48) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 10s, visibility 0s;
@@ -22775,7 +22889,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 10.2s;
   transition: transform 0.3s ease-out 10.2s, -webkit-transform 0.3s ease-out 10.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(49) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 10.2s, visibility 0s;
@@ -22795,7 +22911,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 10.4s;
   transition: transform 0.3s ease-out 10.4s, -webkit-transform 0.3s ease-out 10.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(50) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 10.4s, visibility 0s;
@@ -22815,7 +22933,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 10.6s;
   transition: transform 0.3s ease-out 10.6s, -webkit-transform 0.3s ease-out 10.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(51) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 10.6s, visibility 0s;
@@ -22835,7 +22955,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 10.8s;
   transition: transform 0.3s ease-out 10.8s, -webkit-transform 0.3s ease-out 10.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(52) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 10.8s, visibility 0s;
@@ -22855,7 +22977,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 11s;
   transition: transform 0.3s ease-out 11s, -webkit-transform 0.3s ease-out 11s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(53) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 11s, visibility 0s;
@@ -22875,7 +22999,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 11.2s;
   transition: transform 0.3s ease-out 11.2s, -webkit-transform 0.3s ease-out 11.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(54) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 11.2s, visibility 0s;
@@ -22895,7 +23021,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 11.4s;
   transition: transform 0.3s ease-out 11.4s, -webkit-transform 0.3s ease-out 11.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(55) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 11.4s, visibility 0s;
@@ -22915,7 +23043,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 11.6s;
   transition: transform 0.3s ease-out 11.6s, -webkit-transform 0.3s ease-out 11.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(56) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 11.6s, visibility 0s;
@@ -22935,7 +23065,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 11.8s;
   transition: transform 0.3s ease-out 11.8s, -webkit-transform 0.3s ease-out 11.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(57) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 11.8s, visibility 0s;
@@ -22955,7 +23087,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 12s;
   transition: transform 0.3s ease-out 12s, -webkit-transform 0.3s ease-out 12s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(58) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 12s, visibility 0s;
@@ -22975,7 +23109,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 12.2s;
   transition: transform 0.3s ease-out 12.2s, -webkit-transform 0.3s ease-out 12.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(59) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 12.2s, visibility 0s;
@@ -22995,7 +23131,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 12.4s;
   transition: transform 0.3s ease-out 12.4s, -webkit-transform 0.3s ease-out 12.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(60) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 12.4s, visibility 0s;
@@ -23015,7 +23153,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 12.6s;
   transition: transform 0.3s ease-out 12.6s, -webkit-transform 0.3s ease-out 12.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(61) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 12.6s, visibility 0s;
@@ -23035,7 +23175,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 12.8s;
   transition: transform 0.3s ease-out 12.8s, -webkit-transform 0.3s ease-out 12.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(62) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 12.8s, visibility 0s;
@@ -23055,7 +23197,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 13s;
   transition: transform 0.3s ease-out 13s, -webkit-transform 0.3s ease-out 13s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(63) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 13s, visibility 0s;
@@ -23075,7 +23219,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 13.2s;
   transition: transform 0.3s ease-out 13.2s, -webkit-transform 0.3s ease-out 13.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(64) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 13.2s, visibility 0s;
@@ -23095,7 +23241,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 13.4s;
   transition: transform 0.3s ease-out 13.4s, -webkit-transform 0.3s ease-out 13.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(65) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 13.4s, visibility 0s;
@@ -23115,7 +23263,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 13.6s;
   transition: transform 0.3s ease-out 13.6s, -webkit-transform 0.3s ease-out 13.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(66) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 13.6s, visibility 0s;
@@ -23135,7 +23285,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 13.8s;
   transition: transform 0.3s ease-out 13.8s, -webkit-transform 0.3s ease-out 13.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(67) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 13.8s, visibility 0s;
@@ -23155,7 +23307,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 14s;
   transition: transform 0.3s ease-out 14s, -webkit-transform 0.3s ease-out 14s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(68) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 14s, visibility 0s;
@@ -23175,7 +23329,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 14.2s;
   transition: transform 0.3s ease-out 14.2s, -webkit-transform 0.3s ease-out 14.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(69) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 14.2s, visibility 0s;
@@ -23195,7 +23351,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 14.4s;
   transition: transform 0.3s ease-out 14.4s, -webkit-transform 0.3s ease-out 14.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(70) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 14.4s, visibility 0s;
@@ -23215,7 +23373,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 14.6s;
   transition: transform 0.3s ease-out 14.6s, -webkit-transform 0.3s ease-out 14.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(71) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 14.6s, visibility 0s;
@@ -23235,7 +23395,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 14.8s;
   transition: transform 0.3s ease-out 14.8s, -webkit-transform 0.3s ease-out 14.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(72) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 14.8s, visibility 0s;
@@ -23255,7 +23417,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 15s;
   transition: transform 0.3s ease-out 15s, -webkit-transform 0.3s ease-out 15s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(73) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 15s, visibility 0s;
@@ -23275,7 +23439,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 15.2s;
   transition: transform 0.3s ease-out 15.2s, -webkit-transform 0.3s ease-out 15.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(74) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 15.2s, visibility 0s;
@@ -23295,7 +23461,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 15.4s;
   transition: transform 0.3s ease-out 15.4s, -webkit-transform 0.3s ease-out 15.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(75) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 15.4s, visibility 0s;
@@ -23315,7 +23483,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 15.6s;
   transition: transform 0.3s ease-out 15.6s, -webkit-transform 0.3s ease-out 15.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(76) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 15.6s, visibility 0s;
@@ -23335,7 +23505,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 15.8s;
   transition: transform 0.3s ease-out 15.8s, -webkit-transform 0.3s ease-out 15.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(77) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 15.8s, visibility 0s;
@@ -23355,7 +23527,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 16s;
   transition: transform 0.3s ease-out 16s, -webkit-transform 0.3s ease-out 16s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(78) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 16s, visibility 0s;
@@ -23375,7 +23549,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 16.2s;
   transition: transform 0.3s ease-out 16.2s, -webkit-transform 0.3s ease-out 16.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(79) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 16.2s, visibility 0s;
@@ -23395,7 +23571,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 16.4s;
   transition: transform 0.3s ease-out 16.4s, -webkit-transform 0.3s ease-out 16.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(80) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 16.4s, visibility 0s;
@@ -23415,7 +23593,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 16.6s;
   transition: transform 0.3s ease-out 16.6s, -webkit-transform 0.3s ease-out 16.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(81) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 16.6s, visibility 0s;
@@ -23435,7 +23615,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 16.8s;
   transition: transform 0.3s ease-out 16.8s, -webkit-transform 0.3s ease-out 16.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(82) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 16.8s, visibility 0s;
@@ -23455,7 +23637,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 17s;
   transition: transform 0.3s ease-out 17s, -webkit-transform 0.3s ease-out 17s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(83) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 17s, visibility 0s;
@@ -23475,7 +23659,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 17.2s;
   transition: transform 0.3s ease-out 17.2s, -webkit-transform 0.3s ease-out 17.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(84) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 17.2s, visibility 0s;
@@ -23495,7 +23681,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 17.4s;
   transition: transform 0.3s ease-out 17.4s, -webkit-transform 0.3s ease-out 17.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(85) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 17.4s, visibility 0s;
@@ -23515,7 +23703,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 17.6s;
   transition: transform 0.3s ease-out 17.6s, -webkit-transform 0.3s ease-out 17.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(86) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 17.6s, visibility 0s;
@@ -23535,7 +23725,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 17.8s;
   transition: transform 0.3s ease-out 17.8s, -webkit-transform 0.3s ease-out 17.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(87) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 17.8s, visibility 0s;
@@ -23555,7 +23747,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 18s;
   transition: transform 0.3s ease-out 18s, -webkit-transform 0.3s ease-out 18s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(88) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 18s, visibility 0s;
@@ -23575,7 +23769,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 18.2s;
   transition: transform 0.3s ease-out 18.2s, -webkit-transform 0.3s ease-out 18.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(89) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 18.2s, visibility 0s;
@@ -23595,7 +23791,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 18.4s;
   transition: transform 0.3s ease-out 18.4s, -webkit-transform 0.3s ease-out 18.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(90) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 18.4s, visibility 0s;
@@ -23615,7 +23813,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 18.6s;
   transition: transform 0.3s ease-out 18.6s, -webkit-transform 0.3s ease-out 18.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(91) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 18.6s, visibility 0s;
@@ -23635,7 +23835,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 18.8s;
   transition: transform 0.3s ease-out 18.8s, -webkit-transform 0.3s ease-out 18.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(92) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 18.8s, visibility 0s;
@@ -23655,7 +23857,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 19s;
   transition: transform 0.3s ease-out 19s, -webkit-transform 0.3s ease-out 19s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(93) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 19s, visibility 0s;
@@ -23675,7 +23879,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 19.2s;
   transition: transform 0.3s ease-out 19.2s, -webkit-transform 0.3s ease-out 19.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(94) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 19.2s, visibility 0s;
@@ -23695,7 +23901,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 19.4s;
   transition: transform 0.3s ease-out 19.4s, -webkit-transform 0.3s ease-out 19.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(95) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 19.4s, visibility 0s;
@@ -23715,7 +23923,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 19.6s;
   transition: transform 0.3s ease-out 19.6s, -webkit-transform 0.3s ease-out 19.6s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(96) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 19.6s, visibility 0s;
@@ -23735,7 +23945,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 19.8s;
   transition: transform 0.3s ease-out 19.8s, -webkit-transform 0.3s ease-out 19.8s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(97) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 19.8s, visibility 0s;
@@ -23755,7 +23967,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 20s;
   transition: transform 0.3s ease-out 20s, -webkit-transform 0.3s ease-out 20s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(98) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 20s, visibility 0s;
@@ -23775,7 +23989,9 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 20.2s;
   transition: transform 0.3s ease-out 20.2s, -webkit-transform 0.3s ease-out 20.2s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(99) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 20.2s, visibility 0s;
@@ -23795,11 +24011,35 @@ dd.upgrade__skin-price svg {
   transition: transform 0.3s ease-out 20.4s;
   transition: transform 0.3s ease-out 20.4s, -webkit-transform 0.3s ease-out 20.4s;
 }
-.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) .win-rare__item-buy {
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(100) .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 20.4s, visibility 0s;
   transition: opacity 0.3s ease-out 20.4s, visibility 0s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(101) {
+  -webkit-transition: opacity 0.2s ease-out 20.2s, -webkit-transform 0.2s ease-out 20.2s;
+  transition: opacity 0.2s ease-out 20.2s, -webkit-transform 0.2s ease-out 20.2s;
+  transition: opacity 0.2s ease-out 20.2s, transform 0.2s ease-out 20.2s;
+  transition: opacity 0.2s ease-out 20.2s, transform 0.2s ease-out 20.2s, -webkit-transform 0.2s ease-out 20.2s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(101) .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out 20.6s;
+  transition: -webkit-transform 0.3s ease-out 20.6s;
+  transition: transform 0.3s ease-out 20.6s;
+  transition: transform 0.3s ease-out 20.6s, -webkit-transform 0.3s ease-out 20.6s;
+}
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(101) .win-rare__item-buy,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(101) .win-rare__item-sold,
+.win-rare--open.win-rare--many-items .win-rare__item:nth-child(101) .win-rare__item-tooltip {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 20.6s, visibility 0s;
+  transition: opacity 0.3s ease-out 20.6s, visibility 0s;
 }
 .win-rare--open.win-rare--many-items .win-rare__item.is-rare .win-rare__item-bg::after {
   position: absolute;
@@ -24287,6 +24527,24 @@ dd.upgrade__skin-price svg {
           animation: pulseChance 2s ease-out infinite;
 }
 
+.win-rare__item-sold {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.4rem;
+  padding: 0 0.6rem;
+  height: 2.6rem;
+  background-color: #323243;
+  border: thin solid #494968;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
 .win-rare__item-buy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24347,6 +24605,42 @@ dd.upgrade__skin-price svg {
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
+}
+
+.win-rare__item-tooltip {
+  margin-top: 0.4rem;
+  pointer-events: all;
+  opacity: 0;
+  visibility: hidden;
+}
+.win-rare__item-tooltip .tooltip__body {
+  max-width: 100%;
+}
+
+.win-rare__sum {
+  margin: 4rem auto -1.6rem;
+  text-align: center;
+}
+.win-rare__sum p {
+  display: inline-block;
+  color: #8484A7;
+  font-size: 1.4rem;
+}
+.win-rare__sum span {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.win-rare__sum-bg p {
+  padding: 2rem 2.4rem;
+  border-radius: 1.2rem;
+  background: radial-gradient(49.26% 69.79% at 50% 0%, rgba(82, 82, 112, 0.3) 0%, rgba(26, 26, 38, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#1D1D2D), to(#171724)), rgba(22, 22, 35, 0.01);
+  background: radial-gradient(49.26% 69.79% at 50% 0%, rgba(82, 82, 112, 0.3) 0%, rgba(26, 26, 38, 0) 100%), linear-gradient(180deg, #1D1D2D 0%, #171724 100%), rgba(22, 22, 35, 0.01);
+  -webkit-box-shadow: 0 0.2rem 0 0 #181825 inset;
+          box-shadow: 0 0.2rem 0 0 #181825 inset;
+}
+.win-rare__sum-bg span {
+  font-weight: 700;
 }
 
 .win-rare__btn {
