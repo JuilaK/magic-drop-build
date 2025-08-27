@@ -24607,6 +24607,9 @@ dd.upgrade__skin-price svg {
 }
 
 .win-rare__item-tooltip {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-top: 0.4rem;
   pointer-events: all;
   opacity: 0;
@@ -24617,7 +24620,7 @@ dd.upgrade__skin-price svg {
   border-color: #202031 transparent transparent;
 }
 .win-rare__item-tooltip .tooltip__body {
-  max-width: 100%;
+  width: 18rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 71, 0.8)), to(#202031));
   background: linear-gradient(180deg, rgba(54, 54, 71, 0.8) 0%, #202031 100%);
 }
