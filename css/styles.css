@@ -24611,9 +24611,10 @@ dd.upgrade__skin-price svg {
   pointer-events: all;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
 }
 .win-rare__item-tooltip::before {
-  border-color: rgba(32, 32, 49, 0.9);
+  border-color: #202031 transparent transparent;
 }
 .win-rare__item-tooltip .tooltip__body {
   max-width: 100%;
