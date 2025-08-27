@@ -24534,7 +24534,6 @@ dd.upgrade__skin-price svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0.4rem;
   padding: 0 0.6rem;
   height: 2.6rem;
   background-color: #323243;
@@ -24613,8 +24612,13 @@ dd.upgrade__skin-price svg {
   opacity: 0;
   visibility: hidden;
 }
+.win-rare__item-tooltip::before {
+  border-color: rgba(32, 32, 49, 0.9);
+}
 .win-rare__item-tooltip .tooltip__body {
   max-width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 71, 0.8)), to(#202031));
+  background: linear-gradient(180deg, rgba(54, 54, 71, 0.8) 0%, #202031 100%);
 }
 
 .win-rare__sum {
@@ -24627,8 +24631,24 @@ dd.upgrade__skin-price svg {
   font-size: 1.4rem;
 }
 .win-rare__sum span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
   color: #FFFFFF;
   font-size: 1.4rem;
+}
+.win-rare__sum svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .win-rare__sum-bg p {
