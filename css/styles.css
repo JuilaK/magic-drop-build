@@ -2198,7 +2198,7 @@ textarea {
   content: "";
   bottom: calc(100% + 0.2rem);
   display: block;
-  border-color: rgba(255, 255, 255, 0.2) transparent transparent;
+  border-color: rgba(255, 255, 255, 0.12) transparent transparent;
   border-style: solid;
   border-width: 0.8rem 0.8rem 0;
   opacity: 0;
@@ -12866,6 +12866,26 @@ span.draw-item__start-price svg {
             transform: rotate(calc(2160deg + var(--rotation-arrow-round)));
   }
 }
+@-webkit-keyframes fastRoundArrow {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(calc(1080deg + var(--rotation-arrow-round)));
+            transform: rotate(calc(1080deg + var(--rotation-arrow-round)));
+  }
+}
+@keyframes fastRoundArrow {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(calc(1080deg + var(--rotation-arrow-round)));
+            transform: rotate(calc(1080deg + var(--rotation-arrow-round)));
+  }
+}
 @-webkit-keyframes pulseSparks {
   0% {
     opacity: 0;
@@ -12953,6 +12973,10 @@ span.draw-item__start-price svg {
   -webkit-animation: roundArrow 7s ease-out forwards;
           animation: roundArrow 7s ease-out forwards;
 }
+.upgrade--win.upgrade--fast .upgrade__provability-arrow {
+  -webkit-animation: fastRoundArrow 0.75s ease-out forwards;
+          animation: fastRoundArrow 0.75s ease-out forwards;
+}
 .upgrade--fail .upgrade__wire::before {
   -webkit-animation: pulseSparks 0.4s linear 0.3s;
           animation: pulseSparks 0.4s linear 0.3s;
@@ -12983,6 +13007,29 @@ span.draw-item__start-price svg {
 .upgrade--fail .upgrade__provability-arrow::before {
   -webkit-animation: pulseSparks 0.3s linear 5.5s 4 forwards, shakeSparks 0.1s linear 5.5s 12;
           animation: pulseSparks 0.3s linear 5.5s 4 forwards, shakeSparks 0.1s linear 5.5s 12;
+}
+.upgrade--fail.upgrade--fast .upgrade__provability-arrow {
+  -webkit-animation: fastRoundArrow 0.75s ease-out forwards;
+          animation: fastRoundArrow 0.75s ease-out forwards;
+}
+.upgrade--fail.upgrade--fast .upgrade__provability-arrow::before {
+  -webkit-animation: pulseSparks 0.3s linear 0.75s 4 forwards, shakeSparks 0.1s linear 0.75s 12;
+          animation: pulseSparks 0.3s linear 0.75s 4 forwards, shakeSparks 0.1s linear 0.75s 12;
+}
+.upgrade--fast .upgrade__wire {
+  opacity: 0;
+}
+.upgrade--fast .upgrade__provability-progress-wrap {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+@media (max-width: 1024px) {
+  .upgrade--fast .upgrade__provability-progress-wrap {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 .upgrade__body {
@@ -13068,6 +13115,51 @@ span.draw-item__start-price svg {
     grid-row: 3;
     padding-top: 0;
   }
+}
+
+.upgrade__fast-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D2D), to(#171724));
+  background: linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
+  -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.upgrade__fast-checkbox input {
+  display: none;
+}
+.upgrade__fast-checkbox input:checked + .upgrade__fast-svg svg:nth-child(2) {
+  opacity: 1;
+}
+
+.upgrade__fast-svg {
+  position: relative;
+}
+.upgrade__fast-svg svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.upgrade__fast-svg svg:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 .upgrade__skin-container {
@@ -13525,6 +13617,8 @@ dd.upgrade__skin-price svg {
   height: 8rem;
   position: absolute;
   overflow: hidden;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 @media (max-width: 1024px) {
   .upgrade__wire {
@@ -13791,6 +13885,10 @@ dd.upgrade__skin-price svg {
   border-radius: 50%;
   -webkit-box-shadow: 0 -0.4rem 0.2rem 0 rgba(46, 46, 70, 0.24) inset, 0 0.4rem 0.2rem 0 #2C2C40 inset, 0 0.4rem 0.8rem 0 #2A2A3D inset, 0 0.6rem 0 0 #10101F, 0 0.8rem 0 0 #111121, 0 1.8rem 3.2rem 0 #0A0A18;
           box-shadow: 0 -0.4rem 0.2rem 0 rgba(46, 46, 70, 0.24) inset, 0 0.4rem 0.2rem 0 #2C2C40 inset, 0 0.4rem 0.8rem 0 #2A2A3D inset, 0 0.6rem 0 0 #10101F, 0 0.8rem 0 0 #111121, 0 1.8rem 3.2rem 0 #0A0A18;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   z-index: 1;
 }
 @media (max-width: 1024px) {
@@ -14000,6 +14098,40 @@ dd.upgrade__skin-price svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.upgrade__btns-wrap {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+  bottom: -4.8rem;
+  margin-top: 0.8rem;
+}
+@media (max-width: 1024px) {
+  .upgrade__btns-wrap {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 1.6rem;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+.upgrade__btns-wrap .upgrade__btn {
+  position: static;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-top: 0;
 }
 
 .upgrade__win {

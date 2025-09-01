@@ -1264,17 +1264,33 @@
             </div>
               
             
-                <button type="button" class="upgrade__btn btn btn--bg-grey btn--upper js-upgrade-btn" disabled>
-                    upgrade
-                    <span class="btn__svg-wrap">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#arrow-upgrade-up-yellow"></use>
-                        </svg>
-                        <svg aria-hidden="true" class="dark-grey">
-                            <use xlink:href="images/sprite.svg#arrow-upgrade-up"></use>
-                        </svg>
-                    </span>
-                </button>
+                <div class="upgrade__btns-wrap">
+                    <button type="button" class="upgrade__btn btn btn--bg-grey btn--upper js-upgrade-btn" disabled>
+                        upgrade
+                        <span class="btn__svg-wrap">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow-upgrade-up-yellow"></use>
+                            </svg>
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#arrow-upgrade-up"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <label class="upgrade__fast-checkbox tooltip tooltip--right js-upgrade-fast">
+                        <div class="tooltip__body" role="tooltip">
+                            <p>Быстрый апгрейд</p>
+                        </div>
+                        <input type="checkbox" class="js-upgrade-fast-checkbox">
+                        <span class="upgrade__fast-svg tooltip__toggle">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#lightning"></use>
+                            </svg>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#lightning-yellow"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
                 <div class="upgrade__btns js-upgrade-btns">
                     <button type="button" class="btn btn--bg-grey btn--upper js-upgrade-repeat-btn">
                         Повторить
@@ -1475,12 +1491,6 @@
                         <input 
                             type="checkbox" 
                             name="coefficientes" 
-                            id="coefficientes-1-5"
-                            class="js-coefficient">
-                        <label for="coefficientes-1-5">x1.5</label>
-                        <input 
-                            type="checkbox" 
-                            name="coefficientes" 
                             id="coefficientes-2"
                             class="js-coefficient">
                         <label for="coefficientes-2">x2</label>
@@ -1496,12 +1506,6 @@
                             id="coefficientes-5"
                             class="js-coefficient">
                         <label for="coefficientes-5">x5</label>
-                        <input 
-                            type="checkbox" 
-                            name="coefficientes" 
-                            id="coefficientes-10"
-                            class="js-coefficient">
-                        <label for="coefficientes-10">x10</label>
                     </div>
                     <label class="sort-checkbox">
                         <input type="checkbox" checked>

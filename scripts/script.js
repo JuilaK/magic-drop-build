@@ -417,14 +417,18 @@ window.addEventListener('DOMContentLoaded', () => {
     const upgradeSellBtn = document.querySelector('.js-upgrade-sell-btn');
     const upgradeRepeatBtn = document.querySelector('.js-upgrade-repeat-btn');
     const upgradeCloseBtn = document.querySelector('.js-upgrade-close-btn');
+    const uprgadeFast = document.querySelector('.js-upgrade-fast');
+    const uprgadeFastCheckbox = document.querySelector('.js-upgrade-fast-checkbox');
 
     upgradeBtn && upgradeBtn.addEventListener('click', () => {
         upgradeBlock.classList.add('upgrade--win');
+        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : 7000;
         setTimeout(() => {
             upgradeBtn.classList.add('upgrade__btn--hide');
+            uprgadeFast.classList.add('upgrade__btn--hide');
             upgradeBtns.classList.add('upgrade__btns--show');
             upgradeWin.classList.add('upgrade__win--open');
-        }, 7000);
+        }, duration);
         
     });
 
@@ -433,11 +437,13 @@ window.addEventListener('DOMContentLoaded', () => {
             upgradeBlock.classList.remove('upgrade--win');
         }
         upgradeBtn.classList.remove('upgrade__btn--hide');
+        uprgadeFast.classList.add('upgrade__btn--hide');
         upgradeBtns.classList.remove('upgrade__btns--show');
         upgradeWin.classList.remove('upgrade__win--open')
     });
 
     upgradeRepeatBtn && upgradeRepeatBtn.addEventListener('click', () => {
+        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 1750 : 9000;
         if (upgradeBlock.classList.contains('upgrade--win')) {
             upgradeBlock.classList.remove('upgrade--win');
         }
@@ -446,6 +452,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         if (upgradeBtn.classList.contains('upgrade__btn--hide')) {
             upgradeBtn.classList.remove('upgrade__btn--hide');
+            uprgadeFast.classList.remove('upgrade__btn--hide');
             upgradeBtns.classList.remove('upgrade__btns--show');
         }
         if (upgradeWin.classList.contains('upgrade__win--open')) {
@@ -457,8 +464,9 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             upgradeFail.classList.add('upgrade__fail--open');
             upgradeBtn.classList.add('upgrade__btn--hide');
+            uprgadeFast.classList.add('upgrade__btn--hide');
             upgradeFailBtns.classList.add('upgrade__btns--show');
-        }, 9000);
+        }, duration);
         
     });
 
@@ -467,8 +475,17 @@ window.addEventListener('DOMContentLoaded', () => {
             upgradeBlock.classList.remove('upgrade--fail');
         }
         upgradeBtn.classList.remove('upgrade__btn--hide');
+        uprgadeFast.classList.remove('upgrade__btn--hide');
         upgradeFailBtns.classList.remove('upgrade__btns--show');
         upgradeFail.classList.remove('upgrade__fail--open')
+    });
+
+    !!uprgadeFastCheckbox && uprgadeFastCheckbox.addEventListener('change', () => {
+        if (!!uprgadeFastCheckbox.checked) {
+            upgradeBlock.classList.add('upgrade--fast');
+        } else {
+            upgradeBlock.classList.remove('upgrade--fast');
+        }
     });
     // END Upgrade
 
