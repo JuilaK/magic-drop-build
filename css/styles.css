@@ -851,6 +851,7 @@ address {
 
 :root {
   --rotation-arrow-round: 0deg;
+  --rotation-arrow-duration: 0s;
   --openings-count: 1;
   --skin-drop-padding: 20;
   --skin-drop-height: 191;
@@ -12722,33 +12723,38 @@ span.draw-item__start-price svg {
     clip-path: inset(0 0 0 0);
   }
 }
-@-webkit-keyframes displayRevertHalfWire {
+@property --rotation-arrow-percent {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@-webkit-keyframes displayRevertPartWire {
   from {
     clip-path: inset(0 0 0 100%);
   }
   to {
-    clip-path: inset(0 0 0 50%);
+    clip-path: inset(0 0 0 var(--rotation-arrow-percent));
   }
 }
-@keyframes displayRevertHalfWire {
+@keyframes displayRevertPartWire {
   from {
     clip-path: inset(0 0 0 100%);
   }
   to {
-    clip-path: inset(0 0 0 50%);
+    clip-path: inset(0 0 0 var(--rotation-arrow-percent));
   }
 }
-@-webkit-keyframes hiddenRevertHalfWire {
+@-webkit-keyframes hiddenRevertPartWire {
   from {
-    clip-path: inset(0 0 0 50%);
+    clip-path: inset(0 0 0 var(--rotation-arrow-percent));
   }
   to {
     clip-path: inset(0 0 0 100%);
   }
 }
-@keyframes hiddenRevertHalfWire {
+@keyframes hiddenRevertPartWire {
   from {
-    clip-path: inset(0 0 0 50%);
+    clip-path: inset(0 0 0 var(--rotation-arrow-percent));
   }
   to {
     clip-path: inset(0 0 0 100%);
@@ -12970,43 +12976,44 @@ span.draw-item__start-price svg {
           animation: displayRevertWire 3s ease-out 4s forwards, pulseWire 2s ease-out 4s infinite;
 }
 .upgrade--win .upgrade__provability-arrow {
-  -webkit-animation: roundArrow 7s ease-out forwards;
-          animation: roundArrow 7s ease-out forwards;
+  -webkit-animation: roundArrow var(--rotation-arrow-duration) ease-out forwards;
+          animation: roundArrow var(--rotation-arrow-duration) ease-out forwards;
 }
 .upgrade--win.upgrade--fast .upgrade__provability-arrow {
   -webkit-animation: fastRoundArrow 0.75s ease-out forwards;
           animation: fastRoundArrow 0.75s ease-out forwards;
 }
 .upgrade--fail .upgrade__wire::before {
-  -webkit-animation: pulseSparks 0.4s linear 0.3s;
-          animation: pulseSparks 0.4s linear 0.3s;
+  -webkit-animation: pulseSparks 0.3s linear 0.3s;
+          animation: pulseSparks 0.3s linear 0.3s;
 }
 .upgrade--fail .upgrade__wire::after {
-  -webkit-animation: pulseSparks 0.4s linear 1.8s;
-          animation: pulseSparks 0.4s linear 1.8s;
+  -webkit-animation: pulseSparks 0.3s linear 1.8s;
+          animation: pulseSparks 0.3s linear 1.8s;
 }
 .upgrade--fail .upgrade__wire picture + picture img {
-  -webkit-animation: displayWire 3s ease-out forwards, pulseWire 2s ease-out infinite, hiddenWire 1s ease-out 8s forwards;
-          animation: displayWire 3s ease-out forwards, pulseWire 2s ease-out infinite, hiddenWire 1s ease-out 8s forwards;
+  -webkit-animation: displayWire 3s ease-out forwards, pulseWire 2s ease-out infinite, hiddenWire 1s ease-out calc(var(--rotation-arrow-duration) + 2s) forwards;
+          animation: displayWire 3s ease-out forwards, pulseWire 2s ease-out infinite, hiddenWire 1s ease-out calc(var(--rotation-arrow-duration) + 2s) forwards;
 }
 .upgrade--fail .upgrade__wire:nth-last-child(2)::before, .upgrade--fail .upgrade__wire:last-child::before {
-  -webkit-animation: pulseSparks 0.4s linear 4.3s;
-          animation: pulseSparks 0.4s linear 4.3s;
+  -webkit-animation: pulseSparks 0.3s linear 4.2s;
+          animation: pulseSparks 0.3s linear 4.2s;
 }
 .upgrade--fail .upgrade__wire:nth-last-child(2)::after, .upgrade--fail .upgrade__wire:last-child::after {
   -webkit-animation: none;
           animation: none;
 }
 .upgrade--fail .upgrade__wire:nth-last-child(2) picture + picture img, .upgrade--fail .upgrade__wire:last-child picture + picture img {
-  -webkit-animation: displayRevertHalfWire 1.5s ease-out 4s forwards, pulseHalfWire 3.5s ease-out 4s forwards, hiddenRevertHalfWire 1s ease-out 7s forwards;
-          animation: displayRevertHalfWire 1.5s ease-out 4s forwards, pulseHalfWire 3.5s ease-out 4s forwards, hiddenRevertHalfWire 1s ease-out 7s forwards;
+  --rotation-arrow-percent: math.div(var(--rotation-arrow-duration) - 4s, var(--rotation-arrow-duration));
+  -webkit-animation: displayRevertPartWire calc(var(--rotation-arrow-duration) - 4s) ease-out 4s forwards, pulseHalfWire calc(var(--rotation-arrow-duration) - 3s) ease-out 4s forwards, hiddenRevertPartWire 1s ease-out calc(var(--rotation-arrow-duration) + 1s) forwards;
+          animation: displayRevertPartWire calc(var(--rotation-arrow-duration) - 4s) ease-out 4s forwards, pulseHalfWire calc(var(--rotation-arrow-duration) - 3s) ease-out 4s forwards, hiddenRevertPartWire 1s ease-out calc(var(--rotation-arrow-duration) + 1s) forwards;
 }
 .upgrade--fail .upgrade__provability-arrow {
-  animation: roundArrow 5.5s ease-out forwards, roundArrow 3s ease-in 6.7s reverse forwards;
+  animation: roundArrow var(--rotation-arrow-duration) ease-out forwards, roundArrow calc(var(--rotation-arrow-duration) / 2 - 0.5s) ease-in calc(var(--rotation-arrow-duration) + 1.2s) reverse forwards;
 }
 .upgrade--fail .upgrade__provability-arrow::before {
-  -webkit-animation: pulseSparks 0.3s linear 5.5s 4 forwards, shakeSparks 0.1s linear 5.5s 12;
-          animation: pulseSparks 0.3s linear 5.5s 4 forwards, shakeSparks 0.1s linear 5.5s 12;
+  -webkit-animation: pulseSparks 0.3s linear var(--rotation-arrow-duration) 4 forwards, shakeSparks 0.1s linear var(--rotation-arrow-duration) 12;
+          animation: pulseSparks 0.3s linear var(--rotation-arrow-duration) 4 forwards, shakeSparks 0.1s linear var(--rotation-arrow-duration) 12;
 }
 .upgrade--fail.upgrade--fast .upgrade__provability-arrow {
   -webkit-animation: fastRoundArrow 0.75s ease-out forwards;

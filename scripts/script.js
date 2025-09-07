@@ -421,8 +421,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const uprgadeFastCheckbox = document.querySelector('.js-upgrade-fast-checkbox');
 
     upgradeBtn && upgradeBtn.addEventListener('click', () => {
+        const angle = getComputedStyle(upgradeBlock).getPropertyValue('--rotation-arrow-round');
+        const durationAnimation = (6*360 + parseInt(angle))/360;
+        document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
+
         upgradeBlock.classList.add('upgrade--win');
-        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : 7000;
+        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
         setTimeout(() => {
             upgradeBtn.classList.add('upgrade__btn--hide');
             uprgadeFast.classList.add('upgrade__btn--hide');
@@ -443,7 +447,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     upgradeRepeatBtn && upgradeRepeatBtn.addEventListener('click', () => {
-        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 1750 : 9000;
+        const angle = getComputedStyle(upgradeBlock).getPropertyValue('--rotation-arrow-round');
+        const durationAnimation = (6*360 + parseInt(angle))/360;
+        document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
+
+        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 1750 : (durationAnimation + 2)*1000;
         if (upgradeBlock.classList.contains('upgrade--win')) {
             upgradeBlock.classList.remove('upgrade--win');
         }
