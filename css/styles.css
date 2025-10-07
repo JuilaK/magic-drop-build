@@ -19805,6 +19805,222 @@ dd.upgrade__skin-price svg {
 .modal--telegram-subscribe .modal__text a {
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  .modal--conditions {
+    padding: 1.6rem 0;
+  }
+}
+.modal--conditions .modal__wrap {
+  width: 60rem;
+}
+@media (max-width: 768px) {
+  .modal--conditions .modal__wrap {
+    width: 95%;
+  }
+}
+.modal--conditions .modal__text {
+  margin-top: 0.8rem;
+}
+.modal--conditions .conditions-block {
+  margin-top: 2.4rem;
+}
+.modal--conditions .conditions-block--fail .conditions__btns-text {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out;
+}
+.modal--conditions .conditions-block--fail .conditions__btns-wrap .btn:first-child {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.modal--conditions .condition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+  position: relative;
+  padding: 1.2rem 0 1.2rem 2.6rem;
+  border-bottom: thin solid #323243;
+}
+@media (max-width: 768px) {
+  .modal--conditions .condition {
+    -webkit-column-gap: 0.8rem;
+       -moz-column-gap: 0.8rem;
+            column-gap: 0.8rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .modal--conditions .condition {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 0.8rem;
+  }
+}
+.modal--conditions .condition:first-child {
+  padding-top: 0;
+}
+.modal--conditions .condition:first-child::before {
+  top: 0;
+}
+@media (max-width: 768px) {
+  .modal--conditions .condition:first-child::before {
+    top: 0.1rem;
+  }
+}
+.modal--conditions .condition::before {
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: thin solid #8484A7;
+  border-radius: 1rem;
+}
+@media (max-width: 768px) {
+  .modal--conditions .condition::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 1.3rem;
+  }
+}
+.modal--conditions .condition--success::before, .modal--conditions .condition--fail::before {
+  width: 2rem;
+  height: 2rem;
+  left: -0.2rem;
+  border: none;
+}
+@media (max-width: 768px) {
+  .modal--conditions .condition--success::before, .modal--conditions .condition--fail::before {
+    width: 1.6rem;
+    height: 1.6rem;
+    top: 1.2rem;
+  }
+}
+.modal--conditions .condition--success::before {
+  background: center/contain no-repeat url("../images/sprite.svg#check-circle-green");
+}
+.modal--conditions .condition--fail::before {
+  background: center/contain no-repeat url("../images/sprite.svg#close-circle-red");
+}
+.modal--conditions .condition span {
+  color: #8484A7;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 129%;
+}
+@media (max-width: 768px) {
+  .modal--conditions .condition span {
+    font-size: 1.3rem;
+  }
+}
+.modal--conditions .condition span .white {
+  color: #FFFFFF;
+}
+.modal--conditions .condition span a {
+  color: #1161FA;
+}
+@media (max-width: 768px) {
+  .modal--conditions .condition span a {
+    font-size: 1.3rem;
+  }
+}
+.modal--conditions .condition .tooltip__toggle {
+  color: #494968;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 129%;
+}
+@media (max-width: 480px) {
+  .modal--conditions .condition .tooltip__body {
+    left: -0.4rem;
+    right: auto;
+    width: 70vw;
+  }
+  .modal--conditions .condition .tooltip__body::before {
+    left: 0.8rem;
+  }
+}
+.modal--conditions .condition__avatars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.2rem;
+     -moz-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+.modal--conditions .condition__avatars img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .modal--conditions .condition__avatars img:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+.modal--conditions .conditions__btns-wrap {
+  position: relative;
+  margin-top: 3.6rem;
+}
+.modal--conditions .conditions__btns-text {
+  position: absolute;
+  top: -0.8rem;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+}
+@media (max-width: 370px) {
+  .modal--conditions .conditions__btns-text {
+    top: -0.6rem;
+  }
+}
+.modal--conditions .conditions__btns-text,
+.modal--conditions .conditions__btns-text span {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 129%;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .modal--conditions .conditions__btns-text,
+  .modal--conditions .conditions__btns-text span {
+    font-size: 1.2rem;
+    line-height: 110%;
+  }
+}
+.modal--conditions .modal__btns {
+  padding-top: 0;
+}
 .modal textarea {
   height: auto;
 }
@@ -19959,6 +20175,13 @@ dd.upgrade__skin-price svg {
   color: #ffe500;
   font-size: inherit;
   line-height: inherit;
+}
+
+.modal__note {
+  color: #DD0F1B;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .modal__link {
