@@ -19834,6 +19834,42 @@ dd.upgrade__skin-price svg {
   opacity: 0.3;
   pointer-events: none;
 }
+.modal--conditions .conditions-block--loading ul {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+}
+.modal--conditions .conditions-block--loading .conditions__list .loader-container {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
+}
+.modal--conditions .conditions__list {
+  position: relative;
+}
+.modal--conditions .conditions__list .loader-container {
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+}
+.modal--conditions .conditions__list ul {
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
+}
 .modal--conditions .condition {
   display: -webkit-box;
   display: -ms-flexbox;
