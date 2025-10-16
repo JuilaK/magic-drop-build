@@ -4306,7 +4306,7 @@ textarea {
 
 .header__volume {
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 .header__volume:hover .header__volume-container {
   opacity: 1;
