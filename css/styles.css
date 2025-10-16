@@ -8691,6 +8691,14 @@ span.draw-item__start-price svg {
             transform: translateX(0);
   }
 }
+.case-container.open:has(.roulettes-list--3) .case-hero__bg-img, .case-container.open:has(.roulettes-list--4) .case-hero__bg-img, .case-container.open:has(.roulettes-list--10) .case-hero__bg-img {
+  -webkit-animation: hiddenRhombus 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.5s;
+          animation: hiddenRhombus 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.5s;
+}
+.case-container.open:has(.roulettes-list--3) picture:nth-of-type(2) .case-hero__bg-img, .case-container.open:has(.roulettes-list--4) picture:nth-of-type(2) .case-hero__bg-img, .case-container.open:has(.roulettes-list--10) picture:nth-of-type(2) .case-hero__bg-img {
+  -webkit-animation: hiddenRhombus2 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus2 0.2s ease-out both 0.5s;
+          animation: hiddenRhombus2 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus2 0.2s ease-out both 0.5s;
+}
 @media (max-width: 1500px) {
   .case-container.open .case-hero__bg-img {
     -webkit-animation: hiddenRhombus 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.5s;
@@ -8924,6 +8932,35 @@ span.draw-item__start-price svg {
   border-top: 0.2rem solid #DDC916;
 }
 
+@-webkit-keyframes shadowSingleWinItem {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shadowSingleWinItem {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .case-hero {
   position: relative;
   margin-top: -9.4rem;
@@ -8995,6 +9032,7 @@ span.draw-item__start-price svg {
 .case-hero--roulette-1 .win .win__item-back {
   width: 100%;
   height: 100%;
+  position: relative;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -9022,9 +9060,16 @@ span.draw-item__start-price svg {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
+.case-hero--roulette-1 .win .win__item-card::after {
+  content: "";
+}
 .case-hero--roulette-1 .win--open .win__item {
   -webkit-transform: scale(1) rotateY(-570deg);
           transform: scale(1) rotateY(-570deg);
+}
+.case-hero--roulette-1 .win--open .win__item .win__item-card::after {
+  -webkit-animation: shadowSingleWinItem 1.2s ease-out both;
+          animation: shadowSingleWinItem 1.2s ease-out both;
 }
 .case-hero--roulette-1 .win--open .win__item .win__item-img {
   -webkit-transition: -webkit-transform 1s ease-out 0.3s;
@@ -9063,6 +9108,7 @@ span.draw-item__start-price svg {
   bottom: 3.2rem;
   left: 0;
   text-align: center;
+  z-index: 0;
 }
 @media (max-width: 1500px) {
   .case-hero__rhombus {
@@ -9850,7 +9896,7 @@ span.draw-item__start-price svg {
   padding-bottom: 2.8rem;
   padding-top: 2.8rem;
   border-radius: 2.4rem;
-  background: rgba(40, 40, 60, 0.34);
+  background: rgba(30, 30, 44, 0.9);
   -webkit-backdrop-filter: blur(0.6rem);
           backdrop-filter: blur(0.6rem);
   overflow: hidden;
@@ -10307,10 +10353,10 @@ span.draw-item__start-price svg {
           flex-grow: 1;
   padding: 2.4rem;
   border-radius: 2.4rem;
-  border: 0.2rem solid rgba(40, 40, 60, 0.34);
-  background-color: rgba(40, 40, 60, 0.34);
-  -webkit-backdrop-filter: blur(0.6rem);
-          backdrop-filter: blur(0.6rem);
+  border: 0.2rem solid rgba(30, 30, 44, 0.6);
+  background-color: rgba(30, 30, 44, 0.6);
+  -webkit-backdrop-filter: blur(1.2rem);
+          backdrop-filter: blur(1.2rem);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -10535,6 +10581,11 @@ span.draw-item__start-price svg {
 .win__item--common .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, #45454f 0%, rgba(10, 10, 26, 0) 100%);
 }
+.win__item--common .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(69, 69, 79, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(69, 69, 79, 0.5);
+  border: thin solid #45454f;
+}
 .win__item--covert .win__item-chance {
   background-color: rgba(221, 15, 27, 0.2);
   border: thin solid #DD0F1B;
@@ -10544,6 +10595,11 @@ span.draw-item__start-price svg {
 }
 .win__item--covert .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(221, 15, 27, 0.7) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.win__item--covert .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(221, 15, 27, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(221, 15, 27, 0.5);
+  border: thin solid #DD0F1B;
 }
 .win__item--milspec .win__item-chance {
   background-color: rgba(15, 35, 221, 0.2);
@@ -10555,6 +10611,11 @@ span.draw-item__start-price svg {
 .win__item--milspec .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(15, 35, 221, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
 }
+.win__item--milspec .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(15, 35, 221, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(15, 35, 221, 0.5);
+  border: thin solid #0F23DD;
+}
 .win__item--restricted .win__item-chance {
   background-color: rgba(81, 15, 221, 0.2);
   border: thin solid #510FDD;
@@ -10565,6 +10626,11 @@ span.draw-item__start-price svg {
 .win__item--restricted .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(81, 15, 221, 0.7) 0%, rgba(10, 10, 26, 0) 100%);
 }
+.win__item--restricted .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(81, 15, 221, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(81, 15, 221, 0.5);
+  border: thin solid #510FDD;
+}
 .win__item--uncommon .win__item-chance {
   background-color: rgba(0, 194, 255, 0.2);
   border: thin solid #00C2FF;
@@ -10574,6 +10640,11 @@ span.draw-item__start-price svg {
 }
 .win__item--uncommon .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(0, 194, 255, 0.3) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.win__item--uncommon .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(0, 194, 255, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(0, 194, 255, 0.5);
+  border: thin solid #00C2FF;
 }
 .win__item--rare .win__item-chance {
   background-color: rgba(255, 245, 0, 0.2);
@@ -10587,6 +10658,11 @@ span.draw-item__start-price svg {
 .win__item--rare .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(255, 215, 0, 0.7) 0%, rgba(10, 10, 26, 0) 100%);
 }
+.win__item--rare .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(255, 245, 0, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(255, 245, 0, 0.5);
+  border: thin solid #FFF500;
+}
 .win__item--classified .win__item-chance {
   background-color: rgba(250, 0, 255, 0.2);
   border: thin solid #FA00FF;
@@ -10596,6 +10672,11 @@ span.draw-item__start-price svg {
 }
 .win__item--classified .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(250, 0, 255, 0.4) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.win__item--classified .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(250, 0, 255, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(250, 0, 255, 0.5);
+  border: thin solid #FA00FF;
 }
 .win__item--gloves .win__item-chance {
   background-color: rgba(178, 255, 0, 0.2);
@@ -10608,6 +10689,11 @@ span.draw-item__start-price svg {
 }
 .win__item--gloves .win__item-card::before {
   background: radial-gradient(45% 50% at 50% 45%, rgba(128, 255, 0, 0.4) 0%, rgba(10, 10, 26, 0) 100%);
+}
+.win__item--gloves .win__item-card::after {
+  -webkit-box-shadow: 0 0 4rem 1.6rem rgba(178, 255, 0, 0.5);
+          box-shadow: 0 0 4rem 1.6rem rgba(178, 255, 0, 0.5);
+  border: thin solid #B2FF00;
 }
 
 .win__item-card {
@@ -10648,6 +10734,15 @@ span.draw-item__start-price svg {
   .win__item-card::before {
     width: 100%;
   }
+}
+.win__item-card::after {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.6rem;
+  -webkit-transition: -webkit-box-shadow 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+  transition: -webkit-box-shadow 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+  transition: box-shadow 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+  transition: box-shadow 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8), -webkit-box-shadow 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8);
 }
 @media (max-width: 768px) {
   .win__item-card {
