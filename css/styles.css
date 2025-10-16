@@ -9108,7 +9108,7 @@ span.draw-item__start-price svg {
   bottom: 3.2rem;
   left: 0;
   text-align: center;
-  z-index: 0;
+  z-index: -1;
 }
 @media (max-width: 1500px) {
   .case-hero__rhombus {
