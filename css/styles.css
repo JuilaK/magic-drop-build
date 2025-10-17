@@ -8653,12 +8653,40 @@ span.draw-item__start-price svg {
     opacity: 1;
   }
 }
+@-webkit-keyframes showRoulette2 {
+  0% {
+    -webkit-transform: translate(30%, 0);
+            transform: translate(30%, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes showRoulette2 {
+  0% {
+    -webkit-transform: translate(30%, 0);
+            transform: translate(30%, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 .case-container {
   position: relative;
 }
 .case-container.open .case-hero__roulette {
   -webkit-animation: showRoulette 0.8s both;
           animation: showRoulette 0.8s both;
+}
+.case-container.open .case-hero__roulette.another-animation {
+  -webkit-animation: showRoulette2 0.2s ease-in both;
+          animation: showRoulette2 0.2s ease-in both;
 }
 .case-container.open .case-hero__roulette-btn {
   -webkit-animation: showRouletteBtn 0.3s cubic-bezier(0.47, 1.8, 0.4, 0.8) both;
@@ -9064,8 +9092,8 @@ span.draw-item__start-price svg {
   content: "";
 }
 .case-hero--roulette-1 .win--open .win__item {
-  -webkit-transform: scale(1) rotateY(-570deg);
-          transform: scale(1) rotateY(-570deg);
+  -webkit-transform: scale(1) rotateY(-540deg);
+          transform: scale(1) rotateY(-540deg);
 }
 .case-hero--roulette-1 .win--open .win__item .win__item-card::after {
   -webkit-animation: shadowSingleWinItem 1.2s ease-out both;
@@ -9699,6 +9727,13 @@ span.draw-item__start-price svg {
   }
 }
 
+.roulettes-list--1 .roulette__win-item {
+  -webkit-animation: none;
+          animation: none;
+}
+.roulettes-list--1 .roulette__win-item:after {
+  content: none;
+}
 .roulettes-list--2 .roulette, .roulettes-list--3 .roulette, .roulettes-list--4 .roulette {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc((100% - 2rem) / 2);
