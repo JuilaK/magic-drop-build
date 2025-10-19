@@ -9030,6 +9030,21 @@ span.draw-item__start-price svg {
     top: 0;
   }
 }
+@media (max-width: 1024px) {
+  .case-hero--roulette-1 .win .win__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .case-hero--roulette-1 .win .win__list {
+    width: 100%;
+  }
+}
 .case-hero--roulette-1 .win .win__item {
   display: -ms-grid;
   display: grid;
@@ -9045,6 +9060,11 @@ span.draw-item__start-price svg {
   transition: transform 0.8s ease-out;
   transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
   will-change: transform;
+}
+@media (max-width: 1024px) {
+  .case-hero--roulette-1 .win .win__item {
+    margin-top: auto;
+  }
 }
 @media (max-width: 768px) {
   .case-hero--roulette-1 .win .win__item {
@@ -9068,10 +9088,9 @@ span.draw-item__start-price svg {
   background: center/100% 100% no-repeat url("../images/win-rare-bg/card-back.png");
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 .case-hero--roulette-1 .win .win__item-card {
   position: relative;
@@ -9085,11 +9104,27 @@ span.draw-item__start-price svg {
   grid-row: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+          transform: rotateY(180deg) translate3d(0, 0, 0);
+  will-change: transform;
 }
 .case-hero--roulette-1 .win .win__item-card::after {
   content: "";
+}
+@media (max-width: 768px) {
+  .case-hero--roulette-1 .win .win__item-card::before {
+    width: 32rem;
+  }
+}
+@media (max-width: 480px) {
+  .case-hero--roulette-1 .win .win__item-card::before {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .case-hero--roulette-1 .win .win__item-bg {
+    top: -4.8rem;
+  }
 }
 .case-hero--roulette-1 .win--open .win__item {
   -webkit-transform: scale(1) rotateY(-540deg);
@@ -10860,11 +10895,6 @@ span.draw-item__start-price svg {
           transform: translate3d(0, 0, 0) rotate(-15deg);
 }
 @media (max-width: 768px) {
-  .win__item-img {
-    width: 20rem;
-  }
-}
-@media (max-width: 480px) {
   .win__item-img {
     width: 100%;
   }
