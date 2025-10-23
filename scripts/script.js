@@ -763,7 +763,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 function fix100vh() {
-    const vh = document.documentElement.clientHeight * 0.01;
+    const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
