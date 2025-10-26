@@ -25692,7 +25692,7 @@ dd.upgrade__skin-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 39rem;
+  width: 36rem;
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -25703,12 +25703,12 @@ dd.upgrade__skin-price svg {
 }
 @media (max-width: 1280px) {
   .main-banner__hero-wrap {
-    width: 36rem;
+    width: 32rem;
   }
 }
 @media (max-width: 1024px) {
   .main-banner__hero-wrap {
-    width: 44%;
+    width: 42%;
     padding-top: 3.2rem;
   }
 }
@@ -25772,7 +25772,7 @@ dd.upgrade__skin-price svg {
   }
 }
 .main-banner__img {
-  width: 39rem;
+  width: 36rem;
   aspect-ratio: 1.48;
   margin-bottom: 3.2rem;
   -webkit-animation: displayBannerImg 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.2s both;
@@ -25796,13 +25796,13 @@ dd.upgrade__skin-price svg {
 }
 @media (max-width: 1280px) {
   .main-banner__img {
-    width: 36rem;
+    width: 32rem;
     margin-bottom: 1.6rem;
   }
 }
 @media (max-width: 1024px) {
   .main-banner__img {
-    width: 30rem;
+    width: 28rem;
   }
 }
 @media (max-width: 768px) {
