@@ -922,6 +922,9 @@ svg.white {
 svg.yellow {
   fill: #ffe500;
 }
+svg.dark-yellow {
+  fill: #ccb800;
+}
 svg.green {
   fill: #B2FF00;
 }
@@ -1240,7 +1243,7 @@ img {
   color: #8484A7;
 }
 .section-title--magic {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   -webkit-animation: displayTextShadow 3s ease-out infinite;
           animation: displayTextShadow 3s ease-out infinite;
 }
@@ -5577,6 +5580,9 @@ span.header__volume-value {
     padding-top: 6.4rem;
   }
 }
+.cases .section-title {
+  color: #8484A7;
+}
 
 .cases-header {
   display: -webkit-box;
@@ -5647,6 +5653,7 @@ span.header__volume-value {
 .cases__retro-block .section-title {
   margin-top: 0;
   color: #8484A7;
+  z-index: 1;
 }
 .cases__retro-block .case__body {
   padding-bottom: 3.2rem;
