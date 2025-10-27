@@ -25630,7 +25630,7 @@ dd.upgrade__skin-price svg {
   max-width: 192rem;
   margin: 0 auto;
   width: 100%;
-  padding-left: 16vw;
+  padding-left: 36rem;
   aspect-ratio: 2.8;
   background-position: bottom right;
   background-size: cover;
@@ -25649,6 +25649,7 @@ dd.upgrade__skin-price svg {
 }
 @media (max-width: 1900px) {
   .main-banner__hero {
+    padding-left: 16vw;
     aspect-ratio: 2.5;
   }
 }
