@@ -154,12 +154,25 @@ window.addEventListener('DOMContentLoaded', () => {
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const firstCasesListTop = !!firstCasesList && firstCasesList.getBoundingClientRect().top;
         const containerBottom = !!casesBlock && (casesBlock.offsetTop + casesBlock.offsetHeight - 200);
-        if (!!firstCasesList && ((firstCasesListTop <= 0) && (containerBottom >= scrollTop) && (!filtersContainer.classList.contains('cases-filters--fixed')))) {
+
+        if (
+            !!firstCasesList && 
+            ((firstCasesListTop <= 0) && 
+            (containerBottom >= scrollTop) && 
+            (!filtersContainer.classList.contains('cases-filters--fixed')))
+        ) {
             filtersContainer.classList.add('cases-filters--fixed');
             setTimeout(() => {
                 balanceBlock.style.transform = window.innerWidth > 768 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`
             }, 300);
-        } else if ((!!firstCasesList && ((firstCasesListTop > 0) || (containerBottom < scrollTop)) && (filtersContainer.classList.contains('cases-filters--fixed')))) {
+        } else if (
+            (!!firstCasesList && 
+            ((firstCasesListTop > 0) || (containerBottom < scrollTop)) && 
+            (filtersContainer.classList.contains('cases-filters--fixed')))
+        ) {
+            const activeInput = filtersContainer.querySelector('input:focus');
+            if (activeInput) activeInput.blur();
+
             setTimeout(() => {
                 filtersContainer.classList.remove('cases-filters--fixed');
                 balanceBlock.style.transform = `translateX(-50%) translateY(0)`;
