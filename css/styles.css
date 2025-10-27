@@ -5397,6 +5397,27 @@ span.header__volume-value {
     margin-top: -0.2rem;
   }
 }
+.live-item.active-feed-item::after {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  content: "A";
+  display: inline-block;
+  background-color: #ccb800;
+  border-radius: 0.6rem;
+  color: #0C0C1B;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .live-item.active-feed-item::after {
+    top: 0.6rem;
+    left: 0.6rem;
+  }
+}
 
 .live-item__magic {
   position: absolute;
