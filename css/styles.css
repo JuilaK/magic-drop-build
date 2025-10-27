@@ -25602,8 +25602,8 @@ dd.upgrade__skin-price svg {
   margin-top: -9.6rem;
   padding-bottom: 6.4rem;
   margin-bottom: 6.4rem;
-  -webkit-box-shadow: 0 0.8rem 10rem rgba(73, 73, 104, 0.4);
-          box-shadow: 0 0.8rem 10rem rgba(73, 73, 104, 0.4);
+  -webkit-box-shadow: 0 0.8rem 8rem rgba(73, 73, 104, 0.2);
+          box-shadow: 0 0.8rem 8rem rgba(73, 73, 104, 0.2);
 }
 @media (max-width: 1280px) {
   .main-banner {
@@ -25644,14 +25644,14 @@ dd.upgrade__skin-price svg {
     background-image: image-set(url("../images/main-banner.webp") 1x, url("../images/main-banner@2x.webp") 2x);
   }
 }
+@media (max-width: 1900px) {
+  .main-banner__hero {
+    aspect-ratio: 2.5;
+  }
+}
 @media (max-width: 1500px) {
   .main-banner__hero {
     padding-left: 4vw;
-    aspect-ratio: 2.4;
-  }
-}
-@media (max-width: 1280px) {
-  .main-banner__hero {
     aspect-ratio: 2.2;
   }
 }
