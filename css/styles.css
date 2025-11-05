@@ -12218,11 +12218,27 @@ span.draw-item__start-price svg {
 }
 
 .contract-item__price {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 112.5%;
+}
+.contract-item__price svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-top: -0.2rem;
 }
 
 .contract-item__price-text {
