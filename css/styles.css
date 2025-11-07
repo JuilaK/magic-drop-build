@@ -21417,6 +21417,23 @@ dd.upgrade__skin-price svg {
   text-transform: uppercase;
 }
 
+.case-free__conditions-balance {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+.case-free__conditions-balance svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-top: -0.1rem;
+}
+
 .case-free__tooltip .tooltip__toggle {
   display: -webkit-box;
   display: -ms-flexbox;
