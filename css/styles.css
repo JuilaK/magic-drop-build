@@ -21241,8 +21241,25 @@ dd.upgrade__skin-price svg {
   color: #8484A7;
   font-size: 1.4rem;
 }
-.case-free__balance-info .green {
+
+.case-free__balance-numb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+.case-free__balance-numb span {
   color: #8FFF00;
+}
+.case-free__balance-numb svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-top: -0.1rem;
 }
 
 .case-free__balance-bar {
