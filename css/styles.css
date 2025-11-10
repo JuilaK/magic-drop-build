@@ -2495,6 +2495,12 @@ textarea {
   display: block;
   background: center/contain no-repeat url("../images/sprite.svg#coin-rub-grey");
 }
+.range-inputs--dollar label::before {
+  background: center/contain no-repeat url("../images/sprite.svg#coin-dollar-grey");
+}
+.range-inputs--md label::before {
+  background: center/contain no-repeat url("../images/sprite.svg#coin-md-grey");
+}
 
 .range-inputs__min::before {
   left: 1.2rem;
@@ -6245,33 +6251,7 @@ span.header__volume-value {
 }
 
 .cases-filters__range-inputs {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   width: 22rem;
-}
-@media (max-width: 480px) {
-  .cases-filters__range-inputs {
-    width: auto;
-  }
-}
-.cases-filters__range-inputs label {
-  display: block;
-  width: 50%;
-  font-size: 0;
-}
-.cases-filters__range-inputs label::before {
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
-  width: 1.6rem;
-  height: 1.6rem;
-  content: "";
-  display: block;
-  background: center/contain no-repeat url("../images/sprite.svg#coin-rub-grey");
 }
 .cases-filters__range-inputs input {
   -webkit-transition: height 0.3s ease-out, width 0.3s ease-out;
@@ -13256,20 +13236,23 @@ span.draw-item__start-price svg {
 }
 
 .upgrade-card__footer-title,
-.upgrade-card__footer-value {
+.upgrade-card__footer-value,
+.upgrade-card__footer-value span {
   font-size: 1.4rem;
   line-height: 128.5%;
   white-space: nowrap;
 }
 @media (max-width: 480px) {
   .upgrade-card__footer-title,
-  .upgrade-card__footer-value {
+  .upgrade-card__footer-value,
+  .upgrade-card__footer-value span {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 370px) {
   .upgrade-card__footer-title,
-  .upgrade-card__footer-value {
+  .upgrade-card__footer-value,
+  .upgrade-card__footer-value span {
     font-size: 1rem;
   }
 }
@@ -13279,7 +13262,23 @@ span.draw-item__start-price svg {
 }
 
 .upgrade-card__footer-value {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
   color: #8484A7;
+}
+.upgrade-card__footer-value span {
+  color: #8484A7;
+}
+.upgrade-card__footer-value svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .upgrade-card__footer-tooltip {
