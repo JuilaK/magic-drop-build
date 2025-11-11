@@ -2493,9 +2493,11 @@ textarea {
   height: 1.6rem;
   content: "";
   display: block;
+}
+.range-inputs--rub label::before {
   background: center/contain no-repeat url("../images/sprite.svg#coin-rub-grey");
 }
-.range-inputs--dollar label::before {
+.range-inputs--usd label::before {
   background: center/contain no-repeat url("../images/sprite.svg#coin-dollar-grey");
 }
 .range-inputs--md label::before {
