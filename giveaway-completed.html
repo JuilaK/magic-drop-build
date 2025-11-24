@@ -46,9 +46,11 @@
 							<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 							<span>370</span>
 						</a> -->
-						<a href=".#" class="header__coin-btn btn">
-							<img src="./images/magic-coin.png" alt="" aria-hidden="true">
-							<span>25 370</span>
+						<a href=".#" class="header__coin-btn">
+							<svg aria-hidden="true">
+								<use xlink:href="images/sprite.svg#token-yellow"></use>
+							</svg>
+							<span>370</span>
 						</a>
 						<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
 							<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
@@ -483,9 +485,11 @@
 						<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 						370
 					</a> -->
-					<a href=".#" class="header__coin-btn btn">
-						<img src="./images/magic-coin.png" alt="" aria-hidden="true">
-						<span>25 370</span>
+					<a href=".#" class="header__coin-btn">
+						<svg aria-hidden="true">
+							<use xlink:href="images/sprite.svg#token-yellow"></use>
+						</svg>
+						<span>370</span>
 					</a>
 					<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
 						<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
@@ -1066,6 +1070,12 @@
 	</div>
 	<div class="header__balance js-header-balance">
 		<div class="header__balance-wrap">
+			<a href=".#" class="header__coin-btn">
+				<svg aria-hidden="true">
+					<use xlink:href="images/sprite.svg#token-yellow"></use>
+				</svg>
+				<span>370</span>
+			</a>
 			<a href=".#" class="header__pay-btn btn btn--sm btn--gr-yellow btn--icon">
 				<svg aria-hidden="true" class="black">
 					<use xlink:href="images/sprite.svg#plus"></use>
@@ -1094,7 +1104,7 @@
 	</div>
 </header>
     <main>
-        <div class="giveaway ">
+        <div class="giveaway giveaway--completed">
     <div class="giveaway__banner">
         <div class="container-md">
             <h1 class="giveaway__banner-title">CS2 skins <span>giveaway</span></h1>
@@ -1158,8 +1168,22 @@
                 <div class="giveaway__raffle-info-header">
                     <span class="giveaway__raffle-info-title">Каждый час</span>
                     
+                        <span class="giveaway__raffle-info-status">
+                            <svg aria-hidden="true" class="grey">
+                                <use xlink:href="images/sprite.svg#check-circle"></use>
+                            </svg>
+                            Завершено
+                        </span>
+                    
                 </div>
                 <dl>
+                    
+                        <div class="giveaway__raffle-info-item">
+                            <dt>Хэш:</dt>
+                            <dd>
+                                <span class="giveaway__raffle-info-hash">#2a008c08663b6044765bac17</span>
+                            </dd>
+                        </div>
                     
                     <div class="giveaway__raffle-info-item">
                         <dt>Количество участников:</dt>
@@ -1270,6 +1294,40 @@
                             <th><span>Nonce:</span></th>
                             <td><span>4</span></td>
                         </tr>
+                        
+                            <tr>
+                                <th><span>Победитель:</span></th>
+                                <td>
+                                    <a href=".#" class="giveaway__provably-table-user">
+                                        <span class="giveaway__provably-table-avatar">
+                                            <picture>
+                                                <source srcset="./images/avatar.webp" type="image/webp">
+                                                <img src="./images/avatar.jpg" alt="Avatar">
+                                            </picture>
+                                        </span>
+                                        <span>lok'tar ogar magicdrop-ru</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><span>Алгоритм Provably Fair:</span></th>
+                                <td>
+                                    <span class="giveaway__provably-table-btns">
+                                        <a href="#" class="btn btn--sm">
+                                            <svg aria-hidden="true" class="dark-grey">
+                                                <use xlink:href="images/sprite.svg#copy-2"></use>
+                                            </svg>
+                                            Скопировать JSON
+                                        </a>
+                                        <a href="#" class="btn btn--sm">
+                                            <svg aria-hidden="true" class="dark-grey">
+                                                <use xlink:href="images/sprite.svg#check-circle"></use>
+                                            </svg>
+                                            Проверить генерацию
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
                         
                     </tbody>
                 </table>

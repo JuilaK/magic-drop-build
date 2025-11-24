@@ -26195,6 +26195,13 @@ dd.upgrade__skin-price svg {
   transition: background-color 0.3s ease-out;
 }
 
+.giveaway--completed .giveaway__ticket {
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
 .giveaway__banner {
   padding-bottom: 40.9rem;
   padding-top: 11.6rem;
@@ -26567,9 +26574,46 @@ dd.upgrade__skin-price svg {
   }
 }
 
+.giveaway__raffle-info-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+}
+
 .giveaway__raffle-info-title {
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.giveaway__raffle-info-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  border: thin solid #8484A7;
+  border-radius: 0.8rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.giveaway__raffle-info-status svg {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .giveaway__raffle-info dl {
@@ -26629,6 +26673,9 @@ dd.upgrade__skin-price svg {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
+.giveaway__raffle-info-item:has(.giveaway__raffle-info-hash) {
+  margin-top: 1.6rem;
+}
 
 .giveaway__raffle-info-count {
   font-size: 1.2rem;
@@ -26639,6 +26686,10 @@ dd.upgrade__skin-price svg {
 .giveaway__raffle-info-count span:last-child {
   color: #8484A7;
   font-size: 1.2rem;
+}
+
+.giveaway__raffle-info-hash {
+  font-size: 1.4rem;
 }
 
 .giveaway__provably {
@@ -26714,6 +26765,110 @@ dd.upgrade__skin-price svg {
 .giveaway__provably-skin input:checked + .giveaway__provably-skin-content::before {
   opacity: 1;
 }
+.giveaway__provably-skin--common .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #45454f 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--common .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #45454f;
+          box-shadow: inset 0 -0.2rem 0 0 #45454f;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--common .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(69, 69, 79, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(69, 69, 79, 0.2);
+  }
+}
+.giveaway__provably-skin--covert .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #DD0F1B 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--covert .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #DD0F1B;
+          box-shadow: inset 0 -0.2rem 0 0 #DD0F1B;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--covert .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(221, 15, 27, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(221, 15, 27, 0.2);
+  }
+}
+.giveaway__provably-skin--milspec .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #0F23DD 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--milspec .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #0F23DD;
+          box-shadow: inset 0 -0.2rem 0 0 #0F23DD;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--milspec .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(15, 35, 221, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(15, 35, 221, 0.2);
+  }
+}
+.giveaway__provably-skin--restricted .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #510FDD 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--restricted .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #510FDD;
+          box-shadow: inset 0 -0.2rem 0 0 #510FDD;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--restricted .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(81, 15, 221, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(81, 15, 221, 0.2);
+  }
+}
+.giveaway__provably-skin--uncommon .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #00C2FF 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--uncommon .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #00C2FF;
+          box-shadow: inset 0 -0.2rem 0 0 #00C2FF;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--uncommon .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(0, 194, 255, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(0, 194, 255, 0.2);
+  }
+}
+.giveaway__provably-skin--rare .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #FFB800 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--rare .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #FFF500;
+          box-shadow: inset 0 -0.2rem 0 0 #FFF500;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--rare .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(255, 245, 0, 0.3);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(255, 245, 0, 0.3);
+  }
+}
+.giveaway__provably-skin--classified .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #FA00FF 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--classified .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #FA00FF;
+          box-shadow: inset 0 -0.2rem 0 0 #FA00FF;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--classified .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(250, 0, 255, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(250, 0, 255, 0.2);
+  }
+}
+.giveaway__provably-skin--gloves .giveaway__provably-skin-content {
+  background: radial-gradient(70% 110% at 50% -42%, #B2FF00 0%, rgba(18, 18, 31, 0.2) 100%), center top/cover no-repeat url("../images/bg/bg-raffle-skin.jpg");
+}
+.giveaway__provably-skin--gloves .giveaway__provably-skin-content::before {
+  -webkit-box-shadow: inset 0 -0.2rem 0 0 #B2FF00;
+          box-shadow: inset 0 -0.2rem 0 0 #B2FF00;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin--gloves .giveaway__provably-skin-content:hover {
+    -webkit-box-shadow: 0 0 0.05rem 0.2rem rgba(178, 255, 0, 0.2);
+            box-shadow: 0 0 0.05rem 0.2rem rgba(178, 255, 0, 0.2);
+  }
+}
 
 .giveaway__provably-skin-numb {
   position: absolute;
@@ -26727,6 +26882,7 @@ dd.upgrade__skin-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: center/cover no-repeat url("../images/bg/bg-raffle-skin-empty.jpg");
   color: #353749;
   font-size: 1.4rem;
   z-index: 0;
@@ -26747,16 +26903,17 @@ dd.upgrade__skin-price svg {
           justify-content: space-between;
   position: relative;
   padding: 0 1.3rem;
+  border-radius: 0.8rem;
   cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-out;
+  transition: -webkit-box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
 }
 .giveaway__provably-skin-content::before {
   position: absolute;
   inset: 0;
   content: "";
-  -webkit-box-shadow: inset 0 0.2rem 0 0 #202032, inset 0 -0.2rem 0 0 #191927, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06), inset 0 -0.4rem 0 0 #ffe500;
-          box-shadow: inset 0 0.2rem 0 0 #202032, inset 0 -0.2rem 0 0 #191927, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06), inset 0 -0.4rem 0 0 #ffe500;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d1d2d), to(#171724)), -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 45, 0.15)), to(rgba(23, 23, 36, 0.15))), rgba(11, 11, 24, 0.45);
-  background: linear-gradient(180deg, #1d1d2d 0%, #171724 100%), linear-gradient(180deg, rgba(29, 29, 45, 0.15) 0%, rgba(23, 23, 36, 0.15) 100%), rgba(11, 11, 24, 0.45);
   border-radius: 0.8rem;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-out;
@@ -26769,6 +26926,17 @@ dd.upgrade__skin-price svg {
   position: relative;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-skin-content:hover img {
+    -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
 }
 
 .giveaway__provably-skin-title {
@@ -26793,7 +26961,7 @@ dd.upgrade__skin-price svg {
 .giveaway__provably-table th, .giveaway__provably-table td {
   padding: 0.2rem 0;
 }
-.giveaway__provably-table th > span, .giveaway__provably-table td > span {
+.giveaway__provably-table th > span, .giveaway__provably-table th > a, .giveaway__provably-table td > span, .giveaway__provably-table td > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26814,7 +26982,7 @@ dd.upgrade__skin-price svg {
   line-height: 120%;
 }
 @media (max-width: 768px) {
-  .giveaway__provably-table th > span, .giveaway__provably-table td > span {
+  .giveaway__provably-table th > span, .giveaway__provably-table th > a, .giveaway__provably-table td > span, .giveaway__provably-table td > a {
     padding: 1.2rem;
     font-size: 1.2rem;
   }
@@ -26835,10 +27003,12 @@ dd.upgrade__skin-price svg {
     white-space: wrap;
   }
 }
-.giveaway__provably-table tr td > span {
+.giveaway__provably-table tr td > span,
+.giveaway__provably-table tr td > a {
   border-left: none;
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
+  color: #494968;
   word-break: break-all;
 }
 
@@ -26850,7 +27020,7 @@ dd.upgrade__skin-price svg {
       flex-wrap: wrap;
 }
 .giveaway__provably-table-skin span {
-  color: #323243;
+  color: #494968;
   font-size: 1.4rem;
 }
 @media (max-width: 768px) {
@@ -26881,6 +27051,85 @@ dd.upgrade__skin-price svg {
 }
 .giveaway__provably-table-skin--gloves span:last-child {
   color: #B2FF00;
+}
+
+.giveaway__provably-table-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 0.8rem !important;
+     -moz-column-gap: 0.8rem !important;
+          column-gap: 0.8rem !important;
+  color: #494968;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .giveaway__provably-table-user:hover {
+    color: #FFFFFF;
+  }
+  .giveaway__provably-table-user:hover .trade__user-avatar {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .giveaway__provably-table-user:hover span {
+    color: #FFFFFF;
+  }
+}
+.giveaway__provably-table-user span {
+  color: #494968;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+  transition: color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .giveaway__provably-table-user span {
+    font-size: 1.2rem;
+  }
+}
+
+.giveaway__provably-table-avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.giveaway__provably-table-avatar::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  display: block;
+  border: 0.2rem solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.8rem;
+}
+.giveaway__provably-table-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.giveaway__provably-table-btns {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1.2rem !important;
+     -moz-column-gap: 1.2rem !important;
+          column-gap: 1.2rem !important;
+  row-gap: 0.8rem;
 }
 
 .giveaway__rules {
@@ -26947,6 +27196,48 @@ dd.upgrade__skin-price svg {
 .giveaway__ticket {
   position: relative;
   aspect-ratio: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+.giveaway__ticket--open {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.giveaway__ticket--open.giveaway__ticket--fail .giveaway__ticket-user {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  transition: outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s;
+  transition: outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+}
+.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user {
+  -webkit-box-shadow: 0 0 1.6rem 0.2rem rgba(255, 229, 0, 0.5);
+          box-shadow: 0 0 1.6rem 0.2rem rgba(255, 229, 0, 0.5);
+  outline-color: rgba(255, 229, 0, 0.5);
+  -webkit-transition: outline-color 0.3s ease-out 0.5s, -webkit-box-shadow 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out;
+  transition: outline-color 0.3s ease-out 0.5s, -webkit-box-shadow 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out 0.5s, outline-color 0.3s ease-out 0.5s, transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out 0.5s, outline-color 0.3s ease-out 0.5s, transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out;
+}
+.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user::after {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130%;
+  height: 130%;
+  content: "";
+  background: center/contain no-repeat url("../images/explode.gif");
+  -webkit-animation: explode 1.6s ease-out forwards;
+          animation: explode 1.6s ease-out forwards;
+  z-index: 0;
 }
 
 .giveaway__ticket-free {
@@ -26970,6 +27261,11 @@ dd.upgrade__skin-price svg {
   color: #323243;
   cursor: pointer;
   font-size: 2.4rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  will-change: transform;
   z-index: 0;
   -webkit-transition: border-color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: border-color 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -26994,6 +27290,11 @@ dd.upgrade__skin-price svg {
   height: 100%;
   outline: 0.2rem solid rgba(255, 255, 255, 0);
   border-radius: 1.2rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+          transform: rotateY(180deg) translate3d(0, 0, 0);
+  will-change: transform;
   -webkit-transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out;
@@ -27001,9 +27302,8 @@ dd.upgrade__skin-price svg {
 }
 .giveaway__ticket-user:hover {
   outline-color: rgba(255, 255, 255, 0.7);
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
+          transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
 }
 .giveaway__ticket-user picture {
   width: 100%;

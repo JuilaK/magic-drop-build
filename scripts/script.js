@@ -773,6 +773,33 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
     // END Case Accordions
+
+    // Tickets
+    const ticketsContainer = document.querySelector('.giveaway--completed .js-giveaway-tickets');
+    const tickets = document.querySelectorAll('.js-ticket');
+
+    !!tickets && tickets.forEach(ticket => {
+        ticket.addEventListener('click', () => {
+            if (!ticket.classList.contains('giveaway__ticket--open')) {
+                ticket.classList.add('giveaway__ticket--open')
+            }
+        });
+    });
+
+    const observerTickets = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                tickets.forEach((ticket, i) => {
+                    setTimeout(() => {
+                        ticket.click();
+                    }, i*75);
+                });
+                observerTickets.unobserve(ticketsContainer);
+            }
+        });
+        }, {});
+    !!ticketsContainer && observerTickets.observe(ticketsContainer);  
+    // END Tickets
 })
 
 function fix100vh() {
