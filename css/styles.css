@@ -26674,6 +26674,7 @@ dd.upgrade__skin-price svg {
           flex: 0 0 auto;
 }
 .giveaway__raffle-info-item:has(.giveaway__raffle-info-hash) {
+  margin-bottom: 1.4rem;
   margin-top: 1.6rem;
 }
 
@@ -26745,6 +26746,7 @@ dd.upgrade__skin-price svg {
 .giveaway__provably-skin {
   position: relative;
   min-width: 16.5rem;
+  max-width: 20rem;
   min-height: 5.6rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 45, 0.15)), to(rgba(23, 23, 36, 0.15))), rgba(11, 11, 24, 0.45);
   background: linear-gradient(180deg, rgba(29, 29, 45, 0.15) 0%, rgba(23, 23, 36, 0.15) 100%), rgba(11, 11, 24, 0.45);
@@ -26920,6 +26922,11 @@ dd.upgrade__skin-price svg {
   transition: opacity 0.3s ease-out;
   z-index: 0;
 }
+.giveaway__provably-skin-content > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 .giveaway__provably-skin-content img {
   width: 5.6rem;
   height: 5.6rem;
@@ -26941,14 +26948,32 @@ dd.upgrade__skin-price svg {
 
 .giveaway__provably-skin-title {
   position: relative;
+  max-width: 10rem;
   font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+  .giveaway__provably-skin-title {
+    max-width: 90%;
+  }
 }
 
 .giveaway__provably-skin-subtitle {
   position: relative;
+  max-width: 10rem;
   margin-top: 0.4rem;
   color: #353749;
   font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+  .giveaway__provably-skin-subtitle {
+    max-width: 90%;
+  }
 }
 
 .giveaway__provably-table table {
@@ -26985,6 +27010,25 @@ dd.upgrade__skin-price svg {
   .giveaway__provably-table th > span, .giveaway__provably-table th > a, .giveaway__provably-table td > span, .giveaway__provably-table td > a {
     padding: 1.2rem;
     font-size: 1.2rem;
+  }
+}
+.giveaway__provably-table th {
+  width: 26%;
+  min-width: 22rem;
+}
+@media (max-width: 768px) {
+  .giveaway__provably-table th {
+    min-width: 20rem;
+  }
+}
+@media (max-width: 480px) {
+  .giveaway__provably-table th {
+    min-width: 10rem;
+  }
+}
+@media (max-width: 370px) {
+  .giveaway__provably-table th {
+    min-width: 8rem;
   }
 }
 .giveaway__provably-table tr {
