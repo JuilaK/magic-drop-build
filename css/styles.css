@@ -26587,6 +26587,7 @@ dd.upgrade__skin-price svg {
   -webkit-column-gap: 1.6rem;
      -moz-column-gap: 1.6rem;
           column-gap: 1.6rem;
+  min-height: 3rem;
 }
 
 .giveaway__raffle-info-title {
@@ -26614,6 +26615,9 @@ dd.upgrade__skin-price svg {
 .giveaway__raffle-info-status svg {
   width: 1.6rem;
   height: 1.6rem;
+}
+.giveaway__raffle-info-status--hidden {
+  display: none;
 }
 
 .giveaway__raffle-info dl {
