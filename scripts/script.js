@@ -23,10 +23,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Splide slider
 
-    const slideContainer = document.querySelector('.splide');
+    const slideContainer = document.querySelector('.skins-slider.splide');
+    const slideDrawItemContainer = document.querySelector('.draw-item__slider');
 
     if (slideContainer) {
-        const splide = new Splide( '.splide', {
+        const splide = new Splide( '.skins-slider.splide', {
             perPage: 7,
             pagination: false,
             padding: '2.4rem',
@@ -55,6 +56,28 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         } );
         splide.mount();
+    }
+
+    if (slideDrawItemContainer) {
+        const sliders = document.querySelectorAll('.draw-item__slider');
+        for (let index = 0; index < sliders.length; index++) {
+            const drawSplide = new Splide( `[data-skin-slider="${index}"]`, {
+                perPage: 1,
+                type: 'loop',
+                paginationKeyboard: true,
+                autoplay: true,
+                interval: 2500,
+            } );
+            drawSplide.mount();
+            drawSplide.on('move', () => {
+                const activeSlide = drawSplide.Components.Elements.slides[drawSplide.index];
+                const activeSlideType = activeSlide.dataset.slideSkinType;
+                setTimeout(() => {
+                    drawSplide.root.offsetParent.setAttribute('data-skin-type', activeSlideType);
+                }, 50);
+            });
+            
+        }
     }
 
     //END Splide slider
