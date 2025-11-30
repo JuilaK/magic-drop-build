@@ -3355,7 +3355,32 @@ textarea {
 }
 
 .header__coin-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+  height: 4.8rem;
+  margin-right: 1.2rem;
   padding: 0 1.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 229, 0, 0)), to(rgba(255, 229, 0, 0.25))), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
+  background: linear-gradient(180deg, rgba(255, 229, 0, 0) 0%, rgba(255, 229, 0, 0.25) 100%), linear-gradient(180deg, #161622 0%, #12121f 100%);
+  border: 0.2rem solid #ffe500;
+  border-radius: 0.8rem;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-out;
+  transition: -webkit-box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .header__coin-btn:hover {
+    -webkit-box-shadow: inset 0 4.8rem 0 rgba(255, 229, 0, 0.18);
+            box-shadow: inset 0 4.8rem 0 rgba(255, 229, 0, 0.18);
+  }
 }
 @media (max-width: 1280px) {
   .header__coin-btn {
@@ -3374,8 +3399,13 @@ textarea {
             order: 1;
   }
 }
+.header__coin-btn svg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
 .header__coin-btn span {
-  color: #ffe500;
+  font-size: 1.4rem;
   font-weight: 900;
 }
 
@@ -4518,6 +4548,26 @@ span.header__volume-value {
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
+}
+.header__balance-wrap .header__coin-btn {
+  height: 3.6rem;
+  margin-right: 0.8rem;
+  padding: 0 0.6rem;
+}
+@media (max-width: 768px) {
+  .header__balance-wrap .header__coin-btn {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    height: 3rem;
+  }
+}
+.header__balance-wrap .header__coin-btn svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.header__balance-wrap .header__coin-btn span {
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .header__balance-wrap .header__pay-btn {
@@ -5900,7 +5950,7 @@ span.header__volume-value {
 .cases-filters--fixed .cases-filters__wrap .cases-filters__checkbox span {
   font-size: 1.2rem;
 }
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   .cases-filters--fixed .cases-filters__wrap .cases-filters__checkbox {
     display: none;
   }
@@ -5952,7 +6002,7 @@ span.header__volume-value {
     display: inline-block;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   .cases-filters--fixed .cases-filters__mob-view .cases-filters__checkbox {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
