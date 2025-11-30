@@ -6956,6 +6956,9 @@ span.header__volume-value {
 .draw-item--giveaway {
   position: relative;
 }
+.draw-item--giveaway .draw-item__content {
+  margin-bottom: 1.6rem;
+}
 .draw-item--giveaway .draw-item__frequency {
   display: block;
   text-align: center;
