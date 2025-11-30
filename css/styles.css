@@ -26719,15 +26719,20 @@ dd.upgrade__skin-price svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 0.6rem;
-     -moz-column-gap: 0.6rem;
-          column-gap: 0.6rem;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
   margin-top: 0.4rem;
 }
 .giveaway__skin-item-price svg {
+  width: 1.6rem;
+  height: 1.6rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+.giveaway__skin-item-price span {
+  font-size: 1.2rem;
 }
 
 .giveaway__raffle-info {
@@ -27426,10 +27431,11 @@ dd.upgrade__skin-price svg {
 .giveaway__ticket--open.giveaway__ticket--fail .giveaway__ticket-user {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
-  transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
-  transition: outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s;
-  transition: outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s;
+  transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
 }
 .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user {
   -webkit-box-shadow: 0 0 1.6rem 0.2rem rgba(255, 229, 0, 0.5);
@@ -27515,6 +27521,7 @@ dd.upgrade__skin-price svg {
   transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  overflow: hidden;
 }
 .giveaway__ticket-user:hover {
   outline-color: rgba(255, 255, 255, 0.7);
