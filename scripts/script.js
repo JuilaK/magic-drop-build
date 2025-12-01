@@ -25,8 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const slideContainer = document.querySelector('.skins-slider.splide');
     const slideDrawItemContainer = document.querySelector('.draw-item__slider');
+    const slideGiveawaysItemContainer = document.querySelector('.giveaways-distr__slider');
 
-    if (slideContainer) {
+    if (!!slideContainer) {
         const splide = new Splide( '.skins-slider.splide', {
             perPage: 7,
             pagination: false,
@@ -58,10 +59,10 @@ window.addEventListener('DOMContentLoaded', () => {
         splide.mount();
     }
 
-    if (slideDrawItemContainer) {
+    if (!!slideDrawItemContainer) {
         const sliders = document.querySelectorAll('.draw-item__slider');
         for (let index = 0; index < sliders.length; index++) {
-            const drawSplide = new Splide( `[data-skin-slider="${index}"]`, {
+            const drawSplide = new Splide( `.draw-item__slider[data-skin-slider="${index}"]`, {
                 perPage: 1,
                 type: 'loop',
                 paginationKeyboard: true,
@@ -74,6 +75,29 @@ window.addEventListener('DOMContentLoaded', () => {
                 const activeSlideType = activeSlide.dataset.slideSkinType;
                 setTimeout(() => {
                     drawSplide.root.offsetParent.setAttribute('data-skin-type', activeSlideType);
+                }, 50);
+            });
+            
+        }
+    }
+
+    if (!!slideGiveawaysItemContainer) {
+        const sliders = document.querySelectorAll('.giveaways-distr__slider');
+        for (let index = 0; index < sliders.length; index++) {
+            const giveawaysSplide = new Splide( `.giveaways-distr__slider[data-skin-slider="${index}"]`, {
+                perPage: 1,
+                type: 'loop',
+                paginationKeyboard: true,
+                autoplay: true,
+                interval: 2500,
+            } );
+            giveawaysSplide.mount();
+            giveawaysSplide.on('move', () => {
+                const activeSlide = giveawaysSplide.Components.Elements.slides[giveawaysSplide.index];
+                const activeSlideType = activeSlide.dataset.slideSkinType;
+                setTimeout(() => {
+                    giveawaysSplide.root.offsetParent.setAttribute('data-skin-type', activeSlideType);
+                    console.dir(giveawaysSplide);
                 }, 50);
             });
             
