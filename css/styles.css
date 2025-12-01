@@ -7562,11 +7562,12 @@ span.draw-item__start-price svg {
   width: 100%;
 }
 .draw-item__participate-btn picture {
+  margin-bottom: -0.2rem;
   margin-left: -0.6rem;
 }
 .draw-item__participate-btn img {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
