@@ -7245,7 +7245,7 @@ span.header__volume-value {
   line-height: 100%;
 }
 .draw-item__title span:first-child:not(:last-child) {
-  max-width: 10rem;
+  max-width: 15rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -28011,7 +28011,7 @@ dd.upgrade__skin-price svg {
   line-height: 100%;
 }
 .giveaways-distr__title span:first-child:not(:last-child) {
-  max-width: 10rem;
+  max-width: 15rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
