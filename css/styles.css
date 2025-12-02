@@ -7022,6 +7022,22 @@ span.header__volume-value {
 .draw-item--giveaway .draw-item__price span {
   line-height: 100%;
 }
+.draw-item--fast {
+  position: relative;
+}
+.draw-item--fast::after {
+  position: absolute;
+  top: 0.8rem;
+  left: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  content: url("../images/sprite.svg#lightning-yellow");
+}
+@media (max-width: 480px) {
+  .draw-item--fast::after {
+    left: 0.8rem;
+  }
+}
 
 .draw-item__slider .splide__track {
   margin-left: -1.6rem;
@@ -19369,40 +19385,6 @@ dd.upgrade__skin-price svg {
   }
 }
 
-.raffle-winner__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 0.4rem;
-     -moz-column-gap: 0.4rem;
-          column-gap: 0.4rem;
-  margin-top: 0.8rem;
-  color: #8484A7;
-  font-size: 1.4rem;
-  -webkit-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
-}
-@media (any-hover: hover) {
-  .raffle-winner__link:hover {
-    color: #FFFFFF;
-  }
-  .raffle-winner__link:hover svg {
-    fill: #FFFFFF;
-  }
-}
-.raffle-winner__link svg {
-  width: 1.6rem;
-  height: 1.6rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  -webkit-transition: fill 0.3s ease-out;
-  transition: fill 0.3s ease-out;
-}
-
 .raffle-winner__user {
   display: block;
   padding-bottom: 1.6rem;
@@ -27585,6 +27567,30 @@ dd.upgrade__skin-price svg {
           animation: explode 1.6s ease-out forwards;
   z-index: 0;
 }
+.giveaway__ticket--close {
+  pointer-events: none;
+}
+.giveaway__ticket--close::after, .giveaway__ticket--close::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 0.3rem;
+  content: "";
+  display: block;
+  background-color: rgba(116, 13, 26, 0.55);
+  z-index: 1;
+}
+.giveaway__ticket--close::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.giveaway__ticket--close::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
 
 .giveaway__ticket-free {
   position: absolute;
@@ -27674,34 +27680,48 @@ dd.upgrade__skin-price svg {
 }
 
 .giveaways__list {
-  margin-top: 3.2rem;
-}
-.giveaways__list > .section-title {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2.4rem;
-  text-align: center;
-}
-
-.giveaways__list-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(46.4rem, 1fr) 1.2rem minmax(46.4rem, 1fr) 1.2rem minmax(46.4rem, 1fr);
   grid-template-columns: repeat(3, minmax(46.4rem, 1fr));
   gap: 3.2rem 1.2rem;
+  margin-top: 2.4rem;
 }
 @media (max-width: 1500px) {
-  .giveaways__list-grid {
+  .giveaways__list {
     -ms-grid-columns: (minmax(47.2rem, 1fr))[2];
     grid-template-columns: repeat(2, minmax(47.2rem, 1fr));
   }
 }
 @media (max-width: 1024px) {
-  .giveaways__list-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  .giveaways__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+}
+
+.giveaways__item-section {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+.giveaways__item-section .section-title {
+  margin-top: 0;
+}
+
+.giveaways__winner-list {
+  margin-top: 1.6rem;
+}
+.giveaways__winner-list .giveaways-distr:not(:first-child) {
+  margin-top: 0.8rem;
+}
+
+.giveaways__item-btn {
+  margin-top: 0.8rem;
 }
 
 .giveaways-distr {
@@ -27848,7 +27868,7 @@ dd.upgrade__skin-price svg {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 17rem;
           flex: 0 0 17rem;
-  padding-bottom: 4.8rem;
+  padding-bottom: 2.4rem;
 }
 @media (max-width: 480px) {
   .giveaways-distr__slider {
@@ -27909,6 +27929,7 @@ dd.upgrade__skin-price svg {
   margin-left: 0;
   margin-right: 0;
   padding-top: 3.8rem;
+  padding-bottom: 2.4rem;
   text-align: center;
 }
 @media (max-width: 480px) {
@@ -27965,6 +27986,7 @@ dd.upgrade__skin-price svg {
           flex-grow: 1;
   padding-top: 3.4rem;
   text-align: left;
+  min-width: 0;
 }
 @media (max-width: 480px) {
   .giveaways-distr__info {
@@ -28061,6 +28083,7 @@ dd.upgrade__skin-price svg {
      -moz-column-gap: 0.6rem;
           column-gap: 0.6rem;
   margin-left: 0;
+  min-width: 0;
 }
 .giveaways-distr__info-tokens-item dd span {
   color: #8484A7;
@@ -28074,6 +28097,58 @@ dd.upgrade__skin-price svg {
 }
 .giveaways-distr__info-tokens-item .white {
   color: #FFFFFF;
+}
+
+.giveaways-distr__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.6rem;
+     -moz-column-gap: 0.6rem;
+          column-gap: 0.6rem;
+  min-width: 0;
+}
+@media (any-hover: hover) {
+  .giveaways-distr__user:hover .giveaways-distr__user-avatar {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.giveaways-distr__user-avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  display: block;
+  margin-bottom: -0.3rem;
+  margin-top: -0.3rem;
+  border-radius: 0.8rem;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  overflow: hidden;
+}
+.giveaways-distr__user-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.giveaways-distr__user-name {
+  color: #FFFFFF !important;
+  font-size: 1.4rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .giveaways-distr__progress-bar {
@@ -28129,4 +28204,17 @@ dd.upgrade__skin-price svg {
 .giveaways-distr__participate-count span:first-child {
   color: #FFFFFF;
   font-size: 1.6rem;
+}
+
+.giveaways-distr__link {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .giveaways-distr__link {
+    margin-top: 2.4rem;
+  }
+}
+.giveaways-distr__link svg {
+  width: 2rem;
+  height: 2rem;
 }

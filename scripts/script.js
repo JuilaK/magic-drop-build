@@ -97,7 +97,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 const activeSlideType = activeSlide.dataset.slideSkinType;
                 setTimeout(() => {
                     giveawaysSplide.root.offsetParent.setAttribute('data-skin-type', activeSlideType);
-                    console.dir(giveawaysSplide);
                 }, 50);
             });
             
