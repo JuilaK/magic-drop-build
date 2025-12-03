@@ -7239,9 +7239,9 @@ span.header__volume-value {
 }
 
 .draw-item__title {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -7251,20 +7251,18 @@ span.header__volume-value {
   row-gap: 0.4rem;
   margin-top: 0.4rem;
   font-size: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .draw-item__title span {
   display: inline-block;
   color: #323243;
   font-size: 1.4rem;
   line-height: 100%;
-}
-.draw-item__title span:first-child:not(:last-child) {
-  max-width: 15rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.draw-item__title span:last-child:not(:first-child) {
+  min-width: 6rem;
 }
 
 .draw-item__title-color {
@@ -27378,6 +27376,10 @@ dd.upgrade__skin-price svg {
 }
 .giveaway__provably-table-skin--gloves span:last-child {
   color: #B2FF00;
+}
+
+.giveaway__provably-table .giveaway__provably-table-hash {
+  color: #FFFFFF;
 }
 
 .giveaway__provably-table-user {
