@@ -27028,9 +27028,9 @@ dd.upgrade__skin-price svg {
 }
 @media (max-width: 480px) {
   .giveaway__provably-skins {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
