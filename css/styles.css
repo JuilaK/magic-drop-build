@@ -7184,6 +7184,11 @@ span.header__volume-value {
   line-height: 113%;
   text-transform: uppercase;
 }
+@media (max-width: 480px) {
+  .draw-item__frequency {
+    font-size: 1.3rem;
+  }
+}
 
 .draw-item__count-price {
   display: -webkit-box;
@@ -18898,6 +18903,11 @@ dd.upgrade__skin-price svg {
 @media (max-width: 480px) {
   .raffle__item .draw-item__info {
     padding-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .raffle__item .draw-item__frequency {
+    font-size: 1.6rem;
   }
 }
 .raffle__item .draw-item__title {
