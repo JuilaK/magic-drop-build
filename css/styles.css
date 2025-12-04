@@ -6862,6 +6862,29 @@ span.header__volume-value {
   border-radius: 2.2rem;
 }
 
+.draws-list__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.2rem;
+     -moz-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+  margin-bottom: 2.8rem;
+  color: #8484A7;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 90%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.draws-list__title svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
 .draw-item {
   display: -webkit-box;
   display: -ms-flexbox;
