@@ -949,6 +949,20 @@ svg.red {
   }
 }
 
+.container-xl {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 256rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+@media (max-width: 1280px) {
+  .container-xl {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
 .container-md {
   margin: 0 auto;
   width: 100%;
@@ -10165,28 +10179,28 @@ span.draw-item__start-price svg {
           transform: translateX(-50%);
   position: absolute;
   left: 50%;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
   content: "";
   display: block;
   background: center/contain no-repeat url("../images/sprite.svg#arrow-roulette");
   z-index: 1;
 }
 .case-hero__roulette::before {
-  top: 0;
+  top: 0.4rem;
 }
 .case-hero__roulette::after {
-  bottom: 0;
+  bottom: 0.4rem;
   -webkit-transform: translateX(-50%) scale(1, -1);
       -ms-transform: translateX(-50%) scale(1, -1);
           transform: translateX(-50%) scale(1, -1);
 }
 .case-hero__roulette--vertical {
   position: relative;
-  max-width: 93.6rem;
+  max-width: 101.6rem;
 }
 .case-hero__roulette--vertical::before {
-  left: -2rem;
+  left: -1.6rem;
   top: 50%;
   -webkit-transform: translate(0, -50%) rotate(-90deg);
       -ms-transform: translate(0, -50%) rotate(-90deg);
@@ -10199,7 +10213,7 @@ span.draw-item__start-price svg {
 }
 .case-hero__roulette--vertical::after {
   left: auto;
-  right: -2rem;
+  right: -1.6rem;
   top: 50%;
   -webkit-transform: translate(0, -50%) rotate(90deg);
       -ms-transform: translate(0, -50%) rotate(90deg);
@@ -10311,8 +10325,8 @@ span.draw-item__start-price svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 2.8rem;
-  padding-top: 2.8rem;
+  padding-bottom: 1.6rem;
+  padding-top: 1.6rem;
   border-radius: 2.4rem;
   background: rgba(30, 30, 44, 0.9);
   -webkit-backdrop-filter: blur(0.6rem);
@@ -10428,10 +10442,10 @@ span.draw-item__start-price svg {
 .roulette-item {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 18.4rem;
-          flex: 0 0 18.4rem;
-  width: 18.4rem;
-  padding: 1.6rem 2rem 1.6rem;
+      -ms-flex: 0 0 20.4rem;
+          flex: 0 0 20.4rem;
+  width: 20.4rem;
+  padding: 1.8rem 1.6rem 2.2rem;
   border-radius: 1.2rem;
   cursor: pointer;
   text-align: center;
@@ -10627,8 +10641,8 @@ span.draw-item__start-price svg {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -10638,8 +10652,8 @@ span.draw-item__start-price svg {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 .roulette__win-item {
@@ -10685,7 +10699,7 @@ span.draw-item__start-price svg {
 }
 
 .roulette-item__title {
-  margin-top: 0.4rem;
+  margin-top: -0.6rem;
   font-size: 1.4rem;
   line-height: 112.5%;
 }
