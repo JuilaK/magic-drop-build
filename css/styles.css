@@ -10179,18 +10179,18 @@ span.draw-item__start-price svg {
           transform: translateX(-50%);
   position: absolute;
   left: 50%;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
   content: "";
   display: block;
   background: center/contain no-repeat url("../images/sprite.svg#arrow-roulette");
   z-index: 1;
 }
 .case-hero__roulette::before {
-  top: 0.4rem;
+  top: 0;
 }
 .case-hero__roulette::after {
-  bottom: 0.4rem;
+  bottom: 0;
   -webkit-transform: translateX(-50%) scale(1, -1);
       -ms-transform: translateX(-50%) scale(1, -1);
           transform: translateX(-50%) scale(1, -1);
@@ -10200,26 +10200,26 @@ span.draw-item__start-price svg {
   max-width: 101.6rem;
 }
 .case-hero__roulette--vertical::before {
-  left: -1.6rem;
+  left: -2rem;
   top: 50%;
   -webkit-transform: translate(0, -50%) rotate(-90deg);
       -ms-transform: translate(0, -50%) rotate(-90deg);
           transform: translate(0, -50%) rotate(-90deg);
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .case-hero__roulette--vertical::before {
     left: -1.6rem;
   }
 }
 .case-hero__roulette--vertical::after {
   left: auto;
-  right: -1.6rem;
+  right: -2rem;
   top: 50%;
   -webkit-transform: translate(0, -50%) rotate(90deg);
       -ms-transform: translate(0, -50%) rotate(90deg);
           transform: translate(0, -50%) rotate(90deg);
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .case-hero__roulette--vertical::after {
     right: -1.6rem;
   }
@@ -10325,8 +10325,8 @@ span.draw-item__start-price svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1.6rem;
-  padding-top: 1.6rem;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
   border-radius: 2.4rem;
   background: rgba(30, 30, 44, 0.9);
   -webkit-backdrop-filter: blur(0.6rem);
@@ -10641,8 +10641,8 @@ span.draw-item__start-price svg {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 
@@ -10652,8 +10652,8 @@ span.draw-item__start-price svg {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 .roulette__win-item {
