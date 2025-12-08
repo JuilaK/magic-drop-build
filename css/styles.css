@@ -27768,11 +27768,11 @@ dd.swap__skin-price svg {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  min-width: 33.3rem;
+  width: 33.3rem;
 }
 @media (max-width: 560px) {
   .giveaway__raffle-info {
-    min-width: 100%;
+    width: 100%;
   }
 }
 
