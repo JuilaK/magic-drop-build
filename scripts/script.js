@@ -820,6 +820,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     // END Case Accordions
 
+    // Swap
+    const swapBlock = document.querySelector('.js-swap');
+    const swapBtn = document.querySelector('.js-swap-btn');
+
+    swapBtn && swapBtn.addEventListener('click', () => {
+        swapBlock.classList.add('swap--done');
+    });
+    // END Swap
+
     // Tickets
     const ticketsContainer = document.querySelector('.giveaway--completed .js-giveaway-tickets');
     const tickets = document.querySelectorAll('.js-ticket');
