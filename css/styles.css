@@ -28426,71 +28426,6 @@ dd.swap__skin-price svg {
   border-bottom: thin solid #323243;
 }
 
-@-webkit-keyframes scaleCard {
-  0% {
-    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(2);
-            transform: rotateY(180deg) translate3d(0, 0, 0) scale(2);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
-            transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
-  }
-}
-
-@keyframes scaleCard {
-  0% {
-    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(2);
-            transform: rotateY(180deg) translate3d(0, 0, 0) scale(2);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
-            transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
-  }
-}
-@-webkit-keyframes scaleWinLabel {
-  0% {
-    -webkit-transform: translate(-50%, -90%);
-            transform: translate(-50%, -90%);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -90%) scale(0.7);
-            transform: translate(-50%, -90%) scale(0.7);
-  }
-}
-@keyframes scaleWinLabel {
-  0% {
-    -webkit-transform: translate(-50%, -90%);
-            transform: translate(-50%, -90%);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -90%) scale(0.7);
-            transform: translate(-50%, -90%) scale(0.7);
-  }
-}
-@-webkit-keyframes hiddenTextCard {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes hiddenTextCard {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 .giveaway__tickets {
   display: -ms-grid;
   display: grid;
@@ -28510,18 +28445,6 @@ dd.swap__skin-price svg {
     grid-template-columns: repeat(5, 1fr);
     margin-top: 1.6rem;
   }
-}
-.giveaway__tickets--multi .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user {
-  -webkit-animation: scaleCard 0.2s ease-out 2s forwards;
-          animation: scaleCard 0.2s ease-out 2s forwards;
-}
-.giveaway__tickets--multi .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user::before {
-  -webkit-animation: scaleWinLabel 0.2s ease-out 2s forwards;
-          animation: scaleWinLabel 0.2s ease-out 2s forwards;
-}
-.giveaway__tickets--multi .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-text {
-  -webkit-animation: hiddenTextCard 0.3s ease-out 2s forwards;
-          animation: hiddenTextCard 0.3s ease-out 2s forwards;
 }
 
 .giveaway__ticket {
@@ -28547,27 +28470,16 @@ dd.swap__skin-price svg {
   transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s;
   transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
 }
-.giveaway__ticket--open.giveaway__ticket--success {
-  -webkit-transform: rotateY(540deg);
-          transform: rotateY(540deg);
-  z-index: 10;
-}
 .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user {
-  -webkit-box-shadow: 0 0 1.6rem 0.2rem rgba(255, 229, 0, 0.5);
-          box-shadow: 0 0 1.6rem 0.2rem rgba(255, 229, 0, 0.5);
+  -webkit-box-shadow: 0 0 2rem 0.2rem rgba(255, 229, 0, 0.6);
+          box-shadow: 0 0 2rem 0.2rem rgba(255, 229, 0, 0.6);
   outline-color: #ffe500;
-  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.9);
-          transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.9);
-  -webkit-transition: outline-color 0.3s ease-out 0.5s, -webkit-box-shadow 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out;
-  transition: outline-color 0.3s ease-out 0.5s, -webkit-box-shadow 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out 0.5s, outline-color 0.3s ease-out 0.5s, transform 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out 0.5s, outline-color 0.3s ease-out 0.5s, transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out 0.5s, -webkit-transform 0.3s ease-out;
-}
-.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user::before {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.2s ease-out 0.5s, visibility 0s;
-  transition: opacity 0.2s ease-out 0.5s, visibility 0s;
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+          transform: rotateY(180deg) translate3d(0, 0, 0);
+  -webkit-transition: outline-color 0.3s ease-out 0.4s, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
+  transition: outline-color 0.3s ease-out 0.4s, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out 0.4s, outline-color 0.3s ease-out 0.4s, transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out 0.4s, outline-color 0.3s ease-out 0.4s, transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
 }
 .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-content {
   position: relative;
@@ -28586,26 +28498,6 @@ dd.swap__skin-price svg {
   -webkit-animation: explode 1.6s ease-out forwards;
           animation: explode 1.6s ease-out forwards;
   z-index: 0;
-}
-.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-text {
-  opacity: 1;
-  -webkit-transition: opacity 0.2s ease-out 0.5s;
-  transition: opacity 0.2s ease-out 0.5s;
-}
-.giveaway__ticket--success .giveaway__ticket-user::before {
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  height: 2rem;
-  content: "";
-  top: 0;
-  display: block;
-  background: center/contain no-repeat url(../images/img-win.svg);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translate(-50%, -90%);
-      -ms-transform: translate(-50%, -90%);
-          transform: translate(-50%, -90%);
 }
 .giveaway__ticket--close {
   pointer-events: none;
@@ -28714,29 +28606,6 @@ dd.swap__skin-price svg {
   border-radius: 1.2rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.giveaway__ticket-text {
-  margin-top: 0.2rem;
-  color: #FFFFFF;
-  font-size: 0.8rem;
-  text-align: center;
-  opacity: 0;
-}
-@media (max-width: 1280px) {
-  .giveaway__ticket-text {
-    font-size: 0.625vw;
-  }
-}
-@media (max-width: 768px) {
-  .giveaway__ticket-text {
-    font-size: 0.78125vw;
-  }
-}
-@media (max-width: 480px) {
-  .giveaway__ticket-text {
-    font-size: 1.25vw;
-  }
 }
 
 .giveaways {
