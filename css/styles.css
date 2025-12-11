@@ -28517,6 +28517,10 @@ dd.swap__skin-price svg {
   transition: box-shadow 0.3s ease-out 0.4s, outline-color 0.3s ease-out 0.4s, transform 0.3s ease-out;
   transition: box-shadow 0.3s ease-out 0.4s, outline-color 0.3s ease-out 0.4s, transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
 }
+.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user:hover {
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
+          transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
+}
 .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user::after {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -28617,11 +28621,6 @@ dd.swap__skin-price svg {
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   overflow: hidden;
-}
-.giveaway__ticket-user:hover {
-  outline-color: rgba(255, 255, 255, 0.7);
-  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
-          transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
 }
 .giveaway__ticket-user picture {
   width: 100%;
