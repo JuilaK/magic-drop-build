@@ -28462,6 +28462,27 @@ dd.swap__skin-price svg {
   border-bottom: thin solid #323243;
 }
 
+@-webkit-keyframes scaleCard {
+  0% {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.2);
+    transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
+    transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes scaleCard {
+  0% {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.2);
+    transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
+    transform: rotateY(180deg) translate3d(0, 0, 0) scale(1);
+  }
+}
 .giveaway__tickets {
   display: -ms-grid;
   display: grid;
@@ -28501,10 +28522,15 @@ dd.swap__skin-price svg {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   opacity: 0.6;
-  -webkit-transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
-  transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
-  transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s;
-  transition: opacity 0.3s ease-out, outline-color 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  -webkit-transition: opacity 0.3s ease-out, outline 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  transition: opacity 0.3s ease-out, outline 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+  transition: opacity 0.3s ease-out, outline 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s;
+  transition: opacity 0.3s ease-out, outline 0.3s ease-out, transform 0.3s ease-out, filter 0.5s ease-out 0.5s, -webkit-transform 0.3s ease-out, -webkit-filter 0.5s ease-out 0.5s;
+}
+.giveaway__ticket--open.giveaway__ticket--fail .giveaway__ticket-user:hover {
+  outline: 0.2rem solid #8484A7;
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.01);
+          transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.01);
 }
 .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user {
   -webkit-box-shadow: 0 0 2rem 0.2rem rgba(255, 229, 0, 0.6);
