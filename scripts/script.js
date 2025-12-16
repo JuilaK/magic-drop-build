@@ -849,6 +849,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         ticket.click();
                     }, i*75);
                 });
+                showWinConfetti();
                 observerTickets.unobserve(ticketsContainer);
             }
         });
@@ -896,4 +897,22 @@ function toggleTableOverlay() {
     } else if (!!skinTableWrap && (skinTableWrap.scrollHeight <= skinTable.clientHeight) && skinTable.classList.contains('skin-table--overlay')) {
         skinTable.classList.remove('skin-table--overlay');
     }
+}
+
+function showWinConfetti() {
+    const commonOptions = {
+        particleCount: 150,
+        spread: 70,
+        colors: ["#FFF500", "#B2FF00", "#FFFFFF"],
+    };
+    confetti({
+        ...commonOptions,
+        angle: 75,
+        origin: { x: 0, y: 1 },
+    });
+    confetti({
+        ...commonOptions,
+        angle: 120,
+        origin: { x: .98, y: 1 },
+    });
 }
