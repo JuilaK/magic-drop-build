@@ -10181,6 +10181,25 @@ span.draw-item__start-price svg {
     width: 100%;
   }
 }
+.roulettes-list--2 .roulette .case-hero__snow, .roulettes-list--3 .roulette:nth-child(2) .case-hero__snow, .roulettes-list--3 .roulette:nth-child(3) .case-hero__snow, .roulettes-list--4 .roulette .case-hero__snow {
+  height: 3rem;
+  background-position: top 0.5rem left 1.2rem, top right 1.2rem;
+  background-size: 14rem 2.1rem, 12rem 3rem;
+}
+@media (max-width: 1280px) {
+  .roulettes-list--2 .roulette .case-hero__snow, .roulettes-list--3 .roulette:nth-child(2) .case-hero__snow, .roulettes-list--3 .roulette:nth-child(3) .case-hero__snow, .roulettes-list--4 .roulette .case-hero__snow {
+    height: 5.8rem;
+    background-position: top 1rem left 1.2rem, top right 1.8rem;
+    background-size: 20.4rem 3rem, 20rem 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .roulettes-list--2 .roulette .case-hero__snow, .roulettes-list--3 .roulette:nth-child(2) .case-hero__snow, .roulettes-list--3 .roulette:nth-child(3) .case-hero__snow, .roulettes-list--4 .roulette .case-hero__snow {
+    height: 3rem;
+    background-position: top 0.5rem left 1.2rem, top right 1.2rem;
+    background-size: 14rem 2.1rem, 12rem 3rem;
+  }
+}
 .roulettes-list--3 .roulette:nth-child(4) {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -10198,6 +10217,33 @@ span.draw-item__start-price svg {
   -webkit-column-gap: 0;
      -moz-column-gap: 0;
           column-gap: 0;
+}
+
+.case-hero__snow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 5.8rem;
+  display: none;
+  background: top 1rem left 1.2rem/20.4rem 3rem no-repeat -webkit-image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top right 1.8rem/20rem 5rem no-repeat -webkit-image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  background: top 1rem left 1.2rem/20.4rem 3rem no-repeat image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top right 1.8rem/20rem 5rem no-repeat image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translateY(-28%);
+      -ms-transform: translateY(-28%);
+          transform: translateY(-28%);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .case-hero__snow {
+    height: 3rem;
+    background-position: top 0.5rem left 1.2rem, top right 1.2rem;
+    background-size: 14rem 2.1rem, 12rem 3rem;
+  }
+}
+
+.new-year .case-hero__snow {
+  display: block;
 }
 
 .case-hero__roulette {
@@ -26136,6 +26182,7 @@ dd.upgrade__skin-price svg {
 }
 
 .main-banner {
+  position: relative;
   margin-bottom: 6.4rem;
   margin-top: -9.6rem;
   padding-bottom: 6.4rem;
@@ -26262,6 +26309,38 @@ dd.upgrade__skin-price svg {
 @media (max-width: 480px) {
   .main-banner--halloween .main-banner__img {
     width: 54%;
+  }
+}
+
+.new-year .main-banner::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 6.9rem;
+  content: "";
+  display: block;
+  max-width: 166.4rem;
+  background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.8rem right 1rem/20.4rem 3rem no-repeat -webkit-image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top 0.4rem left 1.8rem/23.2rem 5.8rem no-repeat -webkit-image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.8rem right 1rem/20.4rem 3rem no-repeat image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top 0.4rem left 1.8rem/23.2rem 5.8rem no-repeat image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translate(-50%, 56%);
+      -ms-transform: translate(-50%, 56%);
+          transform: translate(-50%, 56%);
+}
+@media (max-width: 1280px) {
+  .new-year .main-banner::after {
+    background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+  }
+}
+@media (max-width: 768px) {
+  .new-year .main-banner::after {
+    width: 90%;
+    height: auto;
+    max-width: 53.5rem;
+    aspect-ratio: 8;
+    background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    background: top center/contain no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
   }
 }
 
@@ -28646,7 +28725,6 @@ dd.swap__skin-price svg {
   transition: outline-color 0.3s ease-out, -webkit-transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out;
   transition: outline-color 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  overflow: hidden;
 }
 .giveaway__ticket-user picture {
   width: 100%;
