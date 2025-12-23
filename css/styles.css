@@ -28512,18 +28512,6 @@ dd.upgrade__skin-price svg {
     padding-bottom: 4.8rem;
   }
 }
-.main-banner--halloween .main-banner__hero {
-  background-image: url("../images/main-banner-halloween.png");
-  background-image: -webkit-image-set(url("../images/main-banner-halloween.png") 1x, url("../images/main-banner-halloween@2x.png") 2x);
-  background-image: image-set(url("../images/main-banner-halloween.png") 1x, url("../images/main-banner-halloween@2x.png") 2x);
-}
-@supports (background-image: url("../images/main-banner-halloween.webp")) {
-  .main-banner--halloween .main-banner__hero {
-    background-image: url("../images/main-banner-halloween.webp");
-    background-image: -webkit-image-set(url("../images/main-banner-halloween.webp") 1x, url("../images/main-banner-halloween@2x.webp") 2x);
-    background-image: image-set(url("../images/main-banner-halloween.webp") 1x, url("../images/main-banner-halloween@2x.webp") 2x);
-  }
-}
 @media (max-width: 1500px) {
   .main-banner--halloween .main-banner__hero {
     padding-left: 2vw;
@@ -28537,17 +28525,19 @@ dd.upgrade__skin-price svg {
 @media (max-width: 768px) {
   .main-banner--halloween .main-banner__hero {
     aspect-ratio: 1.7;
-    background-position: bottom center;
-    background-image: url("../images/main-banner-halloween-mobile.png");
-    background-image: -webkit-image-set(url("../images/main-banner-halloween-mobile.png") 1x, url("../images/main-banner-halloween-mobile@2x.png") 2x);
-    background-image: image-set(url("../images/main-banner-halloween-mobile.png") 1x, url("../images/main-banner-halloween-mobile@2x.png") 2x);
   }
-  @supports (background-image: url("../images/main-banner-halloween-mobile.webp")) {
-    .main-banner--halloween .main-banner__hero {
-      background-image: url("../images/main-banner-halloween-mobile.webp");
-      background-image: -webkit-image-set(url("../images/main-banner-halloween-mobile.webp") 1x, url("../images/main-banner-halloween-mobile@2x.webp") 2x);
-      background-image: image-set(url("../images/main-banner-halloween-mobile.webp") 1x, url("../images/main-banner-halloween-mobile@2x.webp") 2x);
-    }
+}
+.main-banner--halloween .main-banner__hero::before {
+  background-image: url("../images/main-banner-halloween@2x.png");
+  background-image: -webkit-image-set(url("../images/main-banner-halloween@2x.webp") type("image/webp"), url("../images/main-banner-halloween@2x.png") type("image/png"));
+  background-image: image-set(url("../images/main-banner-halloween@2x.webp") type("image/webp"), url("../images/main-banner-halloween@2x.png") type("image/png"));
+}
+@media (max-width: 768px) {
+  .main-banner--halloween .main-banner__hero::before {
+    background-position: bottom center;
+    background-image: url("../images/main-banner-halloween-mobile@2x.png");
+    background-image: -webkit-image-set(url("../images/main-banner-halloween-mobile@2x.webp") type("image/webp"), url("../images/main-banner-halloween-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("../images/main-banner-halloween-mobile@2x.webp") type("image/webp"), url("../images/main-banner-halloween-mobile@2x.png") type("image/png"));
   }
 }
 .main-banner--halloween .main-banner__hero-wrap {
@@ -28580,33 +28570,15 @@ dd.upgrade__skin-price svg {
   color: #FFFFFF;
 }
 .main-banner--halloween .main-banner__img {
-  width: 48rem;
   margin-bottom: 0;
   -webkit-animation: displayHalloweenBannerImg 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.2s both;
           animation: displayHalloweenBannerImg 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.2s both;
   aspect-ratio: 1.3;
-  background-image: url("../images/halloween-img.png");
-  background-image: -webkit-image-set(url("../images/halloween-img.png") 1x, url("../images/halloween-img@2x.png") 2x);
-  background-image: image-set(url("../images/halloween-img.png") 1x, url("../images/halloween-img@2x.png") 2x);
+  background-image: url("../images/halloween-img@2x.png");
+  background-image: -webkit-image-set(url("../images/halloween-img@2x.webp") type("image/webp"), url("../images/halloween-img@2x.png") type("image/png"));
+  background-image: image-set(url("../images/halloween-img@2x.webp") type("image/webp"), url("../images/halloween-img@2x.png") type("image/png"));
   -webkit-filter: none;
           filter: none;
-}
-@supports (background-image: url("../images/halloween-img.webp")) {
-  .main-banner--halloween .main-banner__img {
-    background-image: url("../images/halloween-img.webp");
-    background-image: -webkit-image-set(url("../images/halloween-img.webp") 1x, url("../images/halloween-img@2x.webp") 2x);
-    background-image: image-set(url("../images/halloween-img.webp") 1x, url("../images/halloween-img@2x.webp") 2x);
-  }
-}
-@media (max-width: 1280px) {
-  .main-banner--halloween .main-banner__img {
-    width: 40rem;
-  }
-}
-@media (max-width: 1024px) {
-  .main-banner--halloween .main-banner__img {
-    width: 28rem;
-  }
 }
 @media (max-width: 768px) {
   .main-banner--halloween .main-banner__img {
@@ -28616,6 +28588,108 @@ dd.upgrade__skin-price svg {
 @media (max-width: 480px) {
   .main-banner--halloween .main-banner__img {
     width: 54%;
+  }
+}
+.main-banner--newyear .main-banner__hero {
+  padding-left: 13vw;
+}
+@media (max-width: 1900px) {
+  .main-banner--newyear .main-banner__hero {
+    padding-left: 13vw;
+  }
+}
+@media (max-width: 1500px) {
+  .main-banner--newyear .main-banner__hero {
+    padding-left: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .main-banner--newyear .main-banner__hero {
+    padding-left: 0;
+  }
+}
+.main-banner--newyear .main-banner__hero::before {
+  background-image: url("../images/main-banner-new-year@2x.png");
+  background-image: -webkit-image-set(url("../images/main-banner-new-year@2x.webp") type("image/webp"), url("../images/main-banner-new-year@2x.png") type("image/png"));
+  background-image: image-set(url("../images/main-banner-new-year@2x.webp") type("image/webp"), url("../images/main-banner-new-year@2x.png") type("image/png"));
+}
+@media (max-width: 768px) {
+  .main-banner--newyear .main-banner__hero::before {
+    background-image: url("../images/main-banner-new-year-mobile@2x.png");
+    background-image: -webkit-image-set(url("../images/main-banner-new-year-mobile@2x.webp") type("image/webp"), url("../images/main-banner-new-year-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("../images/main-banner-new-year-mobile@2x.webp") type("image/webp"), url("../images/main-banner-new-year-mobile@2x.png") type("image/png"));
+  }
+}
+.main-banner--newyear .main-banner__hero-wrap {
+  width: 60.5rem;
+  padding-top: 6.4rem;
+}
+@media (max-width: 1900px) {
+  .main-banner--newyear .main-banner__hero-wrap {
+    width: 54rem;
+  }
+}
+@media (max-width: 1280px) {
+  .main-banner--newyear .main-banner__hero-wrap {
+    width: 48rem;
+  }
+}
+@media (max-width: 1024px) {
+  .main-banner--newyear .main-banner__hero-wrap {
+    padding-top: 3.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-banner--newyear .main-banner__hero-wrap {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+}
+.main-banner--newyear .main-banner__img {
+  margin-bottom: -6.4rem;
+  aspect-ratio: 1.56;
+  background-image: url("../images/magic-christmas-img@2x.png");
+  background-image: -webkit-image-set(url("../images/magic-christmas-img@2x.webp") type("image/webp"), url("../images/magic-christmas-img@2x.png") type("image/png"));
+  background-image: image-set(url("../images/magic-christmas-img@2x.webp") type("image/webp"), url("../images/magic-christmas-img@2x.png") type("image/png"));
+  -webkit-animation: displayHalloweenBannerImg 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.2s both;
+          animation: displayHalloweenBannerImg 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.2s both;
+}
+@media (max-width: 1900px) {
+  .main-banner--newyear .main-banner__img {
+    margin-bottom: -3.6vw;
+    width: 90%;
+  }
+}
+@media (max-width: 1280px) {
+  .main-banner--newyear .main-banner__img {
+    margin-bottom: -4vw;
+  }
+}
+@media (max-width: 768px) {
+  .main-banner--newyear .main-banner__img {
+    width: 42%;
+  }
+}
+@media (max-width: 480px) {
+  .main-banner--newyear .main-banner__img {
+    width: 56%;
+  }
+}
+.main-banner--newyear .main-banner__desc {
+  -webkit-animation: displayHalloweenBannerText 0.6s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.4s both;
+          animation: displayHalloweenBannerText 0.6s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.4s both;
+  color: #FFFFFF;
+}
+.main-banner--newyear .main-banner__controls {
+  -webkit-animation: displayBannerText 0.6s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.4s both;
+          animation: displayBannerText 0.6s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.4s both;
+}
+@media (max-width: 480px) {
+  .main-banner--newyear .main-banner__controls {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -28658,20 +28732,6 @@ dd.upgrade__skin-price svg {
   width: 100%;
   padding-left: 36rem;
   aspect-ratio: 2.8;
-  background-position: bottom right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../images/main-banner.png");
-  background-image: -webkit-image-set(url("../images/main-banner.png") 1x, url("../images/main-banner@2x.png") 2x);
-  background-image: image-set(url("../images/main-banner.png") 1x, url("../images/main-banner@2x.png") 2x);
-  z-index: -1;
-}
-@supports (background-image: url("../images/main-banner.webp")) {
-  .main-banner__hero {
-    background-image: url("../images/main-banner.webp");
-    background-image: -webkit-image-set(url("../images/main-banner.webp") 1x, url("../images/main-banner@2x.webp") 2x);
-    background-image: image-set(url("../images/main-banner.webp") 1x, url("../images/main-banner@2x.webp") 2x);
-  }
 }
 @media (max-width: 1900px) {
   .main-banner__hero {
@@ -28693,22 +28753,31 @@ dd.upgrade__skin-price svg {
 @media (max-width: 768px) {
   .main-banner__hero {
     aspect-ratio: 1.5;
-    background-position: center;
-    background-image: url("../images/main-banner-mobile.png");
-    background-image: -webkit-image-set(url("../images/main-banner-mobile.png") 1x, url("../images/main-banner-mobile@2x.png") 2x);
-    background-image: image-set(url("../images/main-banner-mobile.png") 1x, url("../images/main-banner-mobile@2x.png") 2x);
-  }
-  @supports (background-image: url("../images/main-banner-mobile.webp")) {
-    .main-banner__hero {
-      background-image: url("../images/main-banner-mobile.webp");
-      background-image: -webkit-image-set(url("../images/main-banner-mobile.webp") 1x, url("../images/main-banner-mobile@2x.webp") 2x);
-      background-image: image-set(url("../images/main-banner-mobile.webp") 1x, url("../images/main-banner-mobile@2x.webp") 2x);
-    }
   }
 }
 @media (max-width: 480px) {
   .main-banner__hero {
     aspect-ratio: 1.1;
+  }
+}
+.main-banner__hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/main-banner@2x.png");
+  background-image: -webkit-image-set(url("../images/main-banner@2x.webp") type("image/webp"), url("../images/main-banner@2x.png") type("image/png"));
+  background-image: image-set(url("../images/main-banner@2x.webp") type("image/webp"), url("../images/main-banner@2x.png") type("image/png"));
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .main-banner__hero::before {
+    background-position: center;
+    background-image: url("../images/main-banner-mobile@2x.png");
+    background-image: -webkit-image-set(url("../images/main-banner-mobile@2x.webp") type("image/webp"), url("../images/main-banner-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("../images/main-banner-mobile@2x.webp") type("image/webp"), url("../images/main-banner-mobile@2x.png") type("image/png"));
   }
 }
 
@@ -28850,7 +28919,7 @@ dd.upgrade__skin-price svg {
   }
 }
 .main-banner__img {
-  width: 36rem;
+  width: 100%;
   aspect-ratio: 1.48;
   margin-bottom: 3.2rem;
   -webkit-animation: displayBannerImg 0.8s cubic-bezier(0.47, 1.8, 0.4, 0.8) 0.2s both;
@@ -28858,23 +28927,16 @@ dd.upgrade__skin-price svg {
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../images/magic-cases-img.png");
-  background-image: -webkit-image-set(url("../images/magic-cases-img.png") 1x, url("../images/magic-cases-img@2x.png") 2x);
-  background-image: image-set(url("../images/magic-cases-img.png") 1x, url("../images/magic-cases-img@2x.png") 2x);
+  background-image: url("../images/magic-cases-img@2x.png");
+  background-image: -webkit-image-set(url("../images/magic-cases-img@2x.webp") type("image/webp"), url("../images/magic-cases-img@2x.png") type("image/png"));
+  background-image: image-set(url("../images/magic-cases-img@2x.webp") type("image/webp"), url("../images/magic-cases-img@2x.png") type("image/png"));
   -webkit-filter: drop-shadow(0 1.7rem 6rem #080C1A);
           filter: drop-shadow(0 1.7rem 6rem #080C1A);
   will-change: transform;
 }
-@supports (background-image: url("../images/magic-cases-img.webp")) {
-  .main-banner__img {
-    background-image: url("../images/magic-cases-img.webp");
-    background-image: -webkit-image-set(url("../images/magic-cases-img.webp") 1x, url("../images/magic-cases-img@2x.webp") 2x);
-    background-image: image-set(url("../images/magic-cases-img.webp") 1x, url("../images/magic-cases-img@2x.webp") 2x);
-  }
-}
 @media (max-width: 1280px) {
   .main-banner__img {
-    width: 32rem;
+    width: 100%;
     margin-bottom: 1.6rem;
   }
 }
@@ -28909,6 +28971,117 @@ dd.upgrade__skin-price svg {
     max-width: 30rem;
     font-size: 1.4rem;
   }
+}
+
+.main-banner__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  pointer-events: auto;
+}
+
+.main-banner__btn {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 20rem;
+  cursor: pointer;
+}
+.main-banner__btn::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  display: block;
+  border-radius: 0.8rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+  background-size: 300% 300%;
+  -webkit-animation: diamondShine 3s ease-in-out infinite;
+          animation: diamondShine 3s ease-in-out infinite;
+  -webkit-mask: none;
+          mask: none;
+}
+
+.main-banner__timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+}
+@media (max-width: 370px) {
+  .main-banner__timer {
+    -webkit-column-gap: 0.2rem;
+       -moz-column-gap: 0.2rem;
+            column-gap: 0.2rem;
+  }
+}
+
+.main-banner__timer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 3.6rem;
+  height: 100%;
+  padding: 0.8rem 0.6rem 0.6rem;
+  background: #161623;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #262638;
+          box-shadow: inset 0 0.2rem 0 0 #262638;
+}
+@media (max-width: 370px) {
+  .main-banner__timer-item {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+}
+.main-banner__timer-item--day {
+  min-width: 5.6rem;
+}
+.main-banner__timer-item span {
+  display: block;
+  font-weight: 900;
+  line-height: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-banner__timer-item span:last-child {
+  margin-top: 0.2rem;
+  color: #323243;
+  font-size: 1rem;
+}
+
+.main-banner__separator::before, .main-banner__separator::after {
+  width: 0.6rem;
+  height: 0.6rem;
+  content: "";
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D2D), to(#171724));
+  background: linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
+  border-radius: 0.2rem;
+}
+.main-banner__separator::after {
+  margin-top: 0.4rem;
 }
 
 .main-banner__cases-list {
