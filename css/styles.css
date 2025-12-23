@@ -6482,12 +6482,18 @@ span.header__volume-value {
 .cases-list {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 2.4rem 1rem;
   margin-top: 2.8rem;
   overflow: hidden;
   -webkit-transition: max-height 0.6s ease;
   transition: max-height 0.6s ease;
+}
+@media (max-width: 1500px) {
+  .cases-list {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  }
 }
 @media (max-width: 768px) {
   .cases-list {
@@ -6567,7 +6573,7 @@ span.header__volume-value {
 
 .case__body {
   position: relative;
-  padding: 5.6rem 2.1rem 5.3rem;
+  padding: 5.6rem 1.2rem 5.3rem;
   border-radius: 1.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#0C0C1B));
   background: linear-gradient(180deg, #161622 0%, #0C0C1B 100%);
@@ -6781,9 +6787,9 @@ span.header__volume-value {
 }
 @media (max-width: 768px) {
   .case__img {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    width: calc(100% + 4rem);
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    width: calc(100% + 2.4rem);
   }
 }
 .case__img img {
