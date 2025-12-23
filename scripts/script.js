@@ -856,6 +856,35 @@ window.addEventListener('DOMContentLoaded', () => {
         }, {});
     !!ticketsContainer && observerTickets.observe(ticketsContainer);  
     // END Tickets
+
+    //Horizontal scroll for wheel
+    const scrollContainers = document.querySelectorAll('.js-scroll-container');
+    let isDownCursor = false;
+    let startScrollX = 0;
+    let startScrollLeft = 0;
+
+    scrollContainers.forEach(container => {
+        container.addEventListener('mousedown', (e) => {
+            isDownCursor = true;
+            container.classList.add('is-dragging');
+            startScrollX = e.pageX;
+            startScrollLeft = container.scrollLeft;
+            e.preventDefault();
+        });
+
+        container.addEventListener('mouseup', () => {
+            isDownCursor = false;
+            container.classList.remove('is-dragging');
+        });
+
+        container.addEventListener('mousemove', (e) => {
+            if (!isDownCursor) return;
+
+            const walk = e.pageX - startScrollX;
+            container.scrollLeft = startScrollLeft - walk;
+        });
+    })
+    //END Horizontal scroll for wheel
 })
 
 function fix100vh() {
