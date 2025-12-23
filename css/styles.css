@@ -31084,6 +31084,21 @@ dd.swap__skin-price svg {
     margin-top: 1.6rem;
   }
 }
+.giveaway__tickets--speed .giveaway__ticket--open.giveaway__ticket--success {
+  -webkit-transform: rotateY(540deg);
+          transform: rotateY(540deg);
+  z-index: 10;
+}
+.giveaway__tickets--speed .giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user {
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.2);
+          transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.2);
+  -webkit-animation: scaleCard 0.2s ease-out 1s forwards;
+          animation: scaleCard 0.2s ease-out 1s forwards;
+  -webkit-transition: outline-color 0.3s ease-out 0.4s, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
+  transition: outline-color 0.3s ease-out 0.4s, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out 0.4s, outline-color 0.3s ease-out 0.4s, transform 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out 0.4s, outline-color 0.3s ease-out 0.4s, transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out 0.4s, -webkit-transform 0.3s ease-out;
+}
 
 .giveaway__ticket {
   position: relative;
@@ -31128,7 +31143,7 @@ dd.swap__skin-price svg {
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
           transform: rotateY(180deg) translate3d(0, 0, 0) scale(1.05);
 }
-.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-user::after {
+.giveaway__ticket--open.giveaway__ticket--success .giveaway__ticket-content::after {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -31240,6 +31255,12 @@ dd.swap__skin-price svg {
   border-radius: 1.2rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.giveaway__ticket-content {
+  position: relative;
+  display: block;
+  overflow: hidden;
 }
 
 .giveaways {
