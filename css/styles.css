@@ -32834,9 +32834,6 @@ span.event__banner-xp-currency {
 .event__prize-tooltip .tooltip__body li + li, .event__prize-tooltip .tooltip__body span + li {
   margin-top: 0.2rem;
 }
-.event__prize-tooltip .tooltip__body li::before {
-  content: "-";
-}
 .event__prize-tooltip .tooltip__body a {
   display: inline;
   color: #9ca6ff;
