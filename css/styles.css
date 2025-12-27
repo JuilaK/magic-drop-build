@@ -21137,16 +21137,148 @@ dd.upgrade__skin-price svg {
   padding-top: 0;
 }
 .modal--premium .modal__wrap {
-  width: 51rem;
+  width: 89rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .modal--premium .modal__wrap {
     width: 90%;
+  }
+}
+.modal--premium .modal__dialog::before {
+  position: absolute;
+  top: 1.6rem;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+  height: 6.9rem;
+  background: top right 1rem/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.5rem left 1rem/20.4rem 3rem no-repeat -webkit-image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x);
+  background: top right 1rem/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.5rem left 1rem/20.4rem 3rem no-repeat image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x);
+  -webkit-transform: translateY(-65%);
+      -ms-transform: translateY(-65%);
+          transform: translateY(-65%);
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .modal--premium .modal__dialog::before {
+    background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+  }
+}
+@media (max-width: 768px) {
+  .modal--premium .modal__dialog::before {
+    width: 90%;
+    height: auto;
+    left: 50%;
+    right: auto;
+    max-width: 53.5rem;
+    aspect-ratio: 8;
+    background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    background: top center/contain no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    -webkit-transform: translate(-50%, -68%);
+        -ms-transform: translate(-50%, -68%);
+            transform: translate(-50%, -68%);
+  }
+}
+.modal--premium .modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+.modal--premium picture {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 37.2rem;
+          flex: 0 0 37.2rem;
+  margin-top: -6.4rem;
+}
+@media (max-width: 1024px) {
+  .modal--premium picture {
+    -ms-flex-preferred-size: 32rem;
+        flex-basis: 32rem;
+  }
+}
+@media (max-width: 768px) {
+  .modal--premium picture {
+    display: none;
+  }
+}
+.modal--premium img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.932;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal--premium .modal__premium-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.modal--premium .modal__title {
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .modal--premium .modal__title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+.modal--premium .modal__text {
+  margin-left: 0;
+  font-size: 1.6rem;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .modal--premium .modal__text {
+    margin-left: auto;
+    font-size: 1.4rem;
+    text-align: center;
   }
 }
 .modal--premium .modal__btns {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 0;
+  padding-top: 4.8rem;
+}
+@media (max-width: 768px) {
+  .modal--premium .modal__btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 3.2rem;
+  }
+}
+.modal--premium .modal__btns .btn {
+  min-width: 20rem;
 }
 .modal textarea {
   height: auto;

@@ -4681,26 +4681,29 @@
                 <span class="modal__close-btn-icon"></span>
             </button>
             <div class="modal__content">
-                <h2 class="modal__title">Перейти на Премиум</h2>
-                <p class="modal__text">
-                    Небольшая информацию о том, что пользователь получает в случае приобретения Премиума
-                </p>
-                <div class="modal__btns">
-                    <button type="button" class="modal__sell-btn btn btn--bg-yellow">
-                        Купить за 
-                        <span class="modal__btn-price">
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                            </svg>
-                            <span>100 000.24</span>
-                        </span>
-                    </button>
-                    <button type="button" class="btn js-modal-close">
-                        <svg aria-hidden="true" class="dark-grey">
-                            <use xlink:href="images/sprite.svg#close-circle"></use>
-                        </svg>
-                        Cancel
-                    </button>
+                <picture>
+                    <source 
+                        srcset="./images/event/modal-img.webp ./images/event/modal-img@2x.webp 2x" 
+                        type="image/webp">
+                    <img 
+                        src="./images/event/modal-img.png" 
+                        srcset="./images/event/modal-img@2x.png 2x" 
+                        alt="" 
+                        aria-hidden="true">
+                </picture>
+                <div class="modal__premium-content">
+                    <h2 class="modal__title">Перейти на Премиум</h2>
+                    <p class="modal__text">
+                        Небольшая информацию о том, что пользователь получает в случае приобретения Премиума
+                    </p>
+                    <div class="modal__btns">
+                        <button type="button" class="btn btn--gr-yellow">
+                            <span>Upgrade to Premium</span>
+                        </button>
+                        <button type="button" class="btn js-modal-close">
+                            Cancel
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
