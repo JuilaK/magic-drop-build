@@ -210,7 +210,7 @@
 								<span>Розыгрыши</span>
 							</a>
 						</li>
-						<li class="header__nav-promo">
+						<!-- <li class="header__nav-promo">
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
 									<svg aria-hidden="true" class="dark-grey">
@@ -221,6 +221,15 @@
 									</svg>
 								</span>
 								<span>Партнерская программа</span>
+							</a>
+						</li> -->
+						<li class="header__nav-promo">
+							<a href="#" class="header__nav-link header__nav-link--event">
+								<picture class="header__nav-link-img">
+									<source srcset="./images/icon-wheel-2.webp" type="image/webp">
+									<img src="./images/icon-wheel-2.png" alt="Колесо. Spin the reel">
+								</picture>
+								<span>Ивенты</span>
 							</a>
 						</li>
 					</ul>
@@ -936,18 +945,6 @@
 							<span class="header__promo-link-subtitle">Промокод</span>
 						</span>
 					</a>
-				</li>
-				<li>
-					<a href=".#" class="header__promo-link">
-						<picture class="header__promo-img">
-							<source srcset="./images/icon-wheel.webp" type="image/webp">
-							<img src="./images/icon-wheel.png" alt="Колесо. Spin the reel">
-						</picture>
-						<span>
-							<span class="header__promo-link-title">Колесо</span>
-							<span class="header__promo-link-subtitle">Вращать барабан</span>
-						</span>
-					</a>
 				</li> -->
 				<li>
 					<a href=".#" class="header__promo-link">
@@ -956,12 +953,24 @@
 							<img src="./images/icon-raffles.png" alt="Розыгрыши. Spin the reel">
 						</picture>
 						<span>
-							<span class="header__promo-link-title">Розыгрыши</span>
+							<span class="header__promo-link-title">Раздачи скинов</span>
 							<span class="header__promo-link-subtitle">Вращать барабан</span>
 						</span>
 					</a>
 				</li>
 				<li>
+					<a href=".#" class="header__promo-link header__promo-link--event" style="background-image: url('./images/bg/bg-btn-event.jpg')">
+						<picture class="header__promo-img">
+							<source srcset="./images/icon-wheel-2.webp" type="image/webp">
+							<img src="./images/icon-wheel-2.png" alt="Колесо. Spin the reel">
+						</picture>
+						<span>
+							<span class="header__promo-link-title">Колесо</span>
+							<span class="header__promo-link-subtitle">Вращать барабан</span>
+						</span>
+					</a>
+				</li>
+				<!-- <li>
 					<a href=".#" class="header__promo-link">
 						<picture class="header__promo-img">
 							<source srcset="./images/icon-partner.webp" type="image/webp">
@@ -972,7 +981,7 @@
 							<span class="header__promo-link-subtitle">Пригласить друга</span>
 						</span>
 					</a>
-				</li>
+				</li> -->
 			</ul>
 			
 			<div class="header__promo-controls">
@@ -1587,6 +1596,7 @@
 </article>
             </li>
         </ul>
+        <div></div>
         <div class="skins-slider__no-drop js-no-drop-tab-content" style="display:none">
             <svg aria-hidden="true" class="light-grey">
                 <use xlink:href="images/sprite.svg#question"></use>
