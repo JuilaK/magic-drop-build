@@ -885,6 +885,21 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     })
     //END Horizontal scroll for wheel
+
+    // Calculate event progress
+    const scaleXpArray = [100, 500, 700, 1000, 1100, 1500, 1700, 2000, 2100, 2500];
+    const currentXp = 570; // Текущее количество XP юзера
+    const currentLvl = 2; // Номер последнего полученного уровня 
+    const scaleStep = 100 / (scaleXpArray.length - 0.5); // Расстояние в процентах между уровнями на шкале
+    let progress = 0; // Итоговое значение прогресса
+    if (currentLvl < 1) {
+        progress = 0.5*scaleStep*currentXp/scaleXpArray[currentLvl];
+    } else {
+        const delta = scaleXpArray[currentLvl] - scaleXpArray[currentLvl - 1];
+        const deltaPercent = scaleStep*(currentXp - scaleXpArray[currentLvl - 1])/delta;
+        progress = scaleStep*(currentLvl - 0.5) + deltaPercent;
+    }
+    document.documentElement.style.setProperty('--event-progress', `${progress}%`);
 })
 
 function fix100vh() {

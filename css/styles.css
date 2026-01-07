@@ -856,6 +856,7 @@ address {
   --skin-drop-padding: 20;
   --skin-drop-height: 191;
   --skin-img-height: 115;
+  --event-progress: 25%;
 }
 @media (max-width: 768px) {
   :root {
@@ -33173,6 +33174,7 @@ span.event__banner-xp-currency {
   top: 50%;
   right: 0;
   left: 0;
+  width: calc(100% - 1.55rem);
   height: 0.8rem;
   background-color: #323243;
   border-radius: 0.4rem;
@@ -33182,11 +33184,13 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 768px) {
   .event__rewards-progress-bar {
+    width: calc(100% - 1.2rem);
     height: 0.4rem;
   }
 }
 
 .event__rewards-progress-current {
+  width: calc(var(--event-progress) - 0.5rem);
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#ffe500), color-stop(96.53%, #ffe500), color-stop(98.7%, #fff492), to(#fff));
   background: linear-gradient(90deg, #ffe500 0%, #ffe500 96.53%, #fff492 98.7%, #fff 100%);
