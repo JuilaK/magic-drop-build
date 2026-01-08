@@ -856,7 +856,7 @@ address {
   --skin-drop-padding: 20;
   --skin-drop-height: 191;
   --skin-img-height: 115;
-  --event-progress: 25%;
+  --event-progress: 0%;
 }
 @media (max-width: 768px) {
   :root {
