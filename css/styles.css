@@ -926,6 +926,9 @@ svg.yellow {
 svg.dark-yellow {
   fill: #ccb800;
 }
+svg.dark-green {
+  fill: #7cad09;
+}
 svg.green {
   fill: #B2FF00;
 }
@@ -32583,6 +32586,15 @@ span.event__banner-xp-currency {
     min-height: 45.2rem;
   }
 }
+.event__tabs-container:has(.event__redeem.open) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .event__tabs-container::after {
   position: absolute;
   top: 1.6rem;
@@ -32629,11 +32641,6 @@ span.event__banner-xp-currency {
   display: flex;
 }
 
-.event__rewards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .event__rewards--up-xp .event__pass {
   margin-top: 4rem;
 }
@@ -32844,7 +32851,8 @@ span.event__banner-xp-currency {
   will-change: background-size;
 }
 .event__prize--used .event__prize-img-wrap,
-.event__prize--used .event__prize-info {
+.event__prize--used .event__prize-info, .event__prize--activated .event__prize-img-wrap,
+.event__prize--activated .event__prize-info {
   opacity: 0.2;
 }
 
@@ -33133,7 +33141,7 @@ span.event__banner-xp-currency {
   font-size: 1.2rem;
 }
 
-.event__prize-used {
+.event__prize-done {
   position: absolute;
   inset: 0;
   display: -webkit-box;
@@ -33152,12 +33160,24 @@ span.event__banner-xp-currency {
   row-gap: 0.4rem;
 }
 
-.event__prize-used-text {
+.event__prize-done-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
   color: #8484A7;
   font-size: 1rem;
 }
 
-.event__prize-used-data {
+.event__prize-done-data {
   color: #8484A7;
   font-size: 1.2rem;
 }
@@ -33490,7 +33510,13 @@ span.event__banner-xp-currency {
 
 .event__redeem {
   position: relative;
+  width: 100%;
   padding-top: 0.8rem;
+}
+.event__redeem:has(.event__redeem-empty) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media (max-width: 768px) {
   .event__redeem {
@@ -33517,6 +33543,22 @@ span.event__banner-xp-currency {
   right: 0;
   background: -webkit-gradient(linear, right top, left top, from(#161622), to(rgba(22, 22, 34, 0)));
   background: linear-gradient(270deg, #161622 0%, rgba(22, 22, 34, 0) 100%);
+}
+
+.event__redeem-empty {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  padding: 1.6rem;
+  color: #8484A7;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .event__redeem-empty {
+    font-size: 1.8rem;
+  }
 }
 
 .event__redeem-list {
@@ -33559,11 +33601,11 @@ span.event__banner-xp-currency {
   }
 }
 @media (any-hover: hover) {
-  .event__redeem-items .event__prize--used:hover .event__prize-content {
+  .event__redeem-items .event__prize--used:hover .event__prize-content, .event__redeem-items .event__prize--activated:hover .event__prize-content {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .event__redeem-items .event__prize--used:hover .event__prize-img {
+  .event__redeem-items .event__prize--used:hover .event__prize-img, .event__redeem-items .event__prize--activated:hover .event__prize-img {
     -webkit-transform: rotate(0);
         -ms-transform: rotate(0);
             transform: rotate(0);
