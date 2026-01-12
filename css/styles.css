@@ -1913,6 +1913,31 @@ img {
   height: 2rem;
 }
 
+.btn__key {
+  position: absolute;
+  top: 0;
+  right: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  background-color: #323243;
+  border: thin solid #494968;
+  border-radius: 0.4rem;
+  color: #8484A7 !important;
+  font-size: 1.1rem !important;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .btn__key {
+    display: none;
+  }
+}
+.btn__key svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #8484A7;
+}
+
 input,
 textarea {
   width: 100%;
@@ -11188,7 +11213,7 @@ span.draw-item__start-price svg {
 }
 @media (max-width: 768px) {
   .win__item {
-    width: 21rem;
+    width: 26rem;
   }
 }
 @media (max-width: 480px) {
@@ -11475,14 +11500,8 @@ span.draw-item__start-price svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.4rem;
-}
-@media (max-width: 480px) {
-  .win__item-buy {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .win__item-price {
@@ -11517,6 +11536,13 @@ span.draw-item__start-price svg {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+.win__item-buy-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.4rem;
 }
 
 .win__item-btn {
@@ -11608,9 +11634,9 @@ span.draw-item__start-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 3.2rem;
-     -moz-column-gap: 3.2rem;
-          column-gap: 3.2rem;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 2.4rem;
