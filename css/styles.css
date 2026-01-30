@@ -4314,7 +4314,6 @@ textarea {
 .header__promo-link-subtitle {
   display: block;
   padding-right: 1.4rem;
-  text-align: right;
 }
 
 .header__promo-link-title {
@@ -4332,6 +4331,7 @@ textarea {
   font-size: 1rem;
   font-weight: 500;
   line-height: 120%;
+  text-align: right;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
@@ -4417,6 +4417,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
 }
 @media (max-width: 1280px) {
   .header__promo-code {
@@ -29466,6 +29467,9 @@ dd.upgrade__skin-price svg {
           box-shadow: none;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
+}
+.main-banner__cases-list .case__body::before {
+  content: none !important;
 }
 
 .swap {
