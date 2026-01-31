@@ -900,6 +900,31 @@ window.addEventListener('DOMContentLoaded', () => {
         progress = scaleStep*(currentLvl - 0.5) + deltaPercent;
     }
     document.documentElement.style.setProperty('--event-progress', `${progress}%`);
+    // END Calculate event progress
+
+    // Show and hidden Up btn
+    const upBtn = document.querySelector('.js-up-btn');
+
+    !!upBtn && upBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    function displayUpBtn() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const headerHeight = header.offsetHeight;
+        
+        if ((scrollTop >= headerHeight) && !upBtn.classList.contains('up-btn--show')) {
+            upBtn.classList.add('up-btn--show');
+        } else if ((scrollTop < headerHeight) && upBtn.classList.contains('up-btn--show')) {
+            upBtn.classList.remove('up-btn--show');
+        }
+    }
+
+    window.addEventListener('scroll', displayUpBtn);
+    // END Show and hidden Up btn
 })
 
 function fix100vh() {
