@@ -11024,6 +11024,7 @@ span.draw-item__start-price svg {
 .roulette-item__img-wrap {
   width: 97%;
   aspect-ratio: 1;
+  font-size: 0;
 }
 
 .roulette-item__img {
