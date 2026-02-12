@@ -8577,6 +8577,24 @@ span.draw-item__start-price svg {
   }
 }
 
+.skin__blue-status {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #1161FA;
+  background: #074ACB;
+  -webkit-box-shadow: 0 0 0.8rem 0 rgba(7, 74, 203, 0.5);
+          box-shadow: 0 0 0.8rem 0 rgba(7, 74, 203, 0.5);
+  color: #FFFFFF;
+  height: 2.4rem;
+  padding: 0 0.4rem;
+  font-size: 1.2rem;
+}
+
 .skin__status {
   display: inline-block;
   padding: 0.4rem 0.6rem;
