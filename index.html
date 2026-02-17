@@ -3547,5 +3547,71 @@
     </svg>
     Наверх
 </button>
+    <div class="modal js-modal" data-modal-name="currency">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Выбор валюты</h2>  
+                <p class="modal__text">Для дальнейшего совершения операций на сайте, вам необходимо выбрать основную валюту.</p>
+                <p class="modal__text modal__text--warning">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#warning-red"></use>
+                    </svg>
+                    Отнеситеcь к выбору ответственно! Дальнейшая смена валюты невозможна!
+                </p>
+                <div class="currency-list">
+    <div class="currency-item">
+        <input type="radio" name="currency-list" id="currency-rub" checked>
+        <label for="currency-rub">
+            <span class="currency-item__name">Рубли</span>
+            <span class="currency-item__currency">rub</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub"></use>
+            </svg>
+        </label>
+    </div>
+    <div class="currency-item">
+        <input type="radio" name="currency-list" id="currency-usd">
+        <label for="currency-usd">
+            <span class="currency-item__name">Доллары</span>
+            <span class="currency-item__currency">usd</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-dollar"></use>
+            </svg>
+        </label>
+    </div>
+    <div class="currency-item">
+        <input type="radio" name="currency-list" id="currency-eur">
+        <label for="currency-eur">
+            <span class="currency-item__name">Евро</span>
+            <span class="currency-item__currency">eur</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-eur"></use>
+            </svg>
+        </label>
+    </div>
+</div>
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--bg-blue">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#file-check-blue"></use>
+                        </svg>
+                        Сохранить
+                    </button>
+                    <button type="button" class="btn js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#close-circle"></use>
+                        </svg>
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
