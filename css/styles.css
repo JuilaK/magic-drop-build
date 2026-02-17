@@ -14525,6 +14525,13 @@ span.draw-item__start-price svg {
     padding: 1.6rem;
   }
 }
+@media (any-hover: hover) {
+  .upgrade__skin:hover .upgrade__skin-img {
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
 .upgrade__skin::before {
   content: "";
   position: absolute;
@@ -14756,6 +14763,11 @@ span.draw-item__start-price svg {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  will-change: transform;
 }
 .upgrade__skin-img img {
   width: 18rem;
