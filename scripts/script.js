@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const slideContainer = document.querySelector('.skins-slider.splide');
     const slideDrawItemContainer = document.querySelector('.draw-item__slider');
     const slideGiveawaysItemContainer = document.querySelector('.giveaways-distr__slider');
+    const slideHeroBannersContainer = document.querySelector('.hero-banners__slider');
 
     if (!!slideContainer) {
         const splide = new Splide( '.skins-slider.splide', {
@@ -103,8 +104,30 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    if (!!slideHeroBannersContainer) {
+        const splide = new Splide( '.hero-banners__slider', {
+            perPage: 1,
+            type: 'loop',
+            paginationKeyboard: true,
+            autoplay: true,
+            interval: 2500,
+        } );
+        splide.mount();
+    }
+
     //END Splide slider
 
+    const tabsList = document.querySelectorAll('.skins-list__tabs-wrap .tab');
+    const tabsListContent = document.querySelectorAll('.splide__track > *');
+
+    tabsList.forEach((tab, i) => {
+        tab.addEventListener('click', () => {
+            tabsListContent.forEach(content => {
+                content.style.display = "none";
+            });
+            tabsListContent[i].style.display = '';
+        });
+    });
     // Set height for Your Drop
     const noDropContent = document.querySelector('.js-no-drop-tab-content');
     const skinsSliderTrack = document.querySelector('.js-skins-slider .splide__track');
