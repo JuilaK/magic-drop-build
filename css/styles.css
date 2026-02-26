@@ -9385,8 +9385,8 @@ span.draw-item__start-price svg {
 }
 @-webkit-keyframes showRoulette2 {
   0% {
-    -webkit-transform: translate(20%, 0);
-            transform: translate(20%, 0);
+    -webkit-transform: translate(30%, 0);
+            transform: translate(30%, 0);
     opacity: 0;
   }
   100% {
@@ -9397,8 +9397,8 @@ span.draw-item__start-price svg {
 }
 @keyframes showRoulette2 {
   0% {
-    -webkit-transform: translate(20%, 0);
-            transform: translate(20%, 0);
+    -webkit-transform: translate(30%, 0);
+            transform: translate(30%, 0);
     opacity: 0;
   }
   100% {
@@ -9411,16 +9411,16 @@ span.draw-item__start-price svg {
   position: relative;
 }
 .case-container.open .case-hero__roulette {
-  -webkit-animation: showRoulette 0.6s both;
-          animation: showRoulette 0.6s both;
+  -webkit-animation: showRoulette 0.8s both;
+          animation: showRoulette 0.8s both;
 }
 .case-container.open .case-hero__roulette.another-animation {
   -webkit-animation: showRoulette2 0.2s ease-in both;
           animation: showRoulette2 0.2s ease-in both;
 }
 .case-container.open .case-hero__roulette-btn {
-  -webkit-animation: showRouletteBtn 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8) both;
-          animation: showRouletteBtn 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8) both;
+  -webkit-animation: showRouletteBtn 0.3s cubic-bezier(0.47, 1.8, 0.4, 0.8) both;
+          animation: showRouletteBtn 0.3s cubic-bezier(0.47, 1.8, 0.4, 0.8) both;
 }
 .case-container.open .case-hero__flag {
   opacity: 0;
@@ -9459,20 +9459,20 @@ span.draw-item__start-price svg {
 }
 @media (max-width: 1500px) {
   .case-container.open .case-hero__bg-img {
-    -webkit-animation: hiddenRhombus 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.3s;
-            animation: hiddenRhombus 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.3s;
+    -webkit-animation: hiddenRhombus 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.5s;
+            animation: hiddenRhombus 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus 0.2s ease-out both 0.5s;
   }
 }
 @media (max-width: 1500px) {
   .case-container.open picture:nth-of-type(2) .case-hero__bg-img {
-    -webkit-animation: hiddenRhombus2 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus2 0.2s ease-out both 0.3s;
-            animation: hiddenRhombus2 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus2 0.2s ease-out both 0.3s;
+    -webkit-animation: hiddenRhombus2 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus2 0.2s ease-out both 0.5s;
+            animation: hiddenRhombus2 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, showRhombus2 0.2s ease-out both 0.5s;
   }
 }
 .case-container.open .case-hero__img,
 .case-container.open .case-hero__img-sm {
-  -webkit-animation: hiddenCaseImg2 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-          animation: hiddenCaseImg2 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  -webkit-animation: hiddenCaseImg2 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: hiddenCaseImg2 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 .case-container.open .case-hero__img-rock {
   opacity: 0;
@@ -9480,10 +9480,10 @@ span.draw-item__start-price svg {
   -webkit-transform: translateY(2rem);
       -ms-transform: translateY(2rem);
           transform: translateY(2rem);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .case-container.open .case-hero__controls {
   opacity: 0;
@@ -9491,10 +9491,10 @@ span.draw-item__start-price svg {
   -webkit-transform: translateY(2rem);
       -ms-transform: translateY(2rem);
           transform: translateY(2rem);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.3s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0s linear 0.5s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .case-container--magic-1.open .case-hero__images picture, .case-container--magic-2.open .case-hero__images picture, .case-container--magic-3.open .case-hero__images picture {
   -webkit-transition: -webkit-transform 0.3s ease-out 3s;
@@ -9760,6 +9760,10 @@ span.draw-item__start-price svg {
     top: 0;
   }
 }
+.case-hero--roulette-1 .win .win__content {
+  border: none;
+  background-color: #0C0C1B;
+}
 @media (max-width: 1024px) {
   .case-hero--roulette-1 .win .win__content {
     display: -webkit-box;
@@ -9768,9 +9772,6 @@ span.draw-item__start-price svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
 }
 @media (max-width: 1024px) {
@@ -9860,8 +9861,8 @@ span.draw-item__start-price svg {
   }
 }
 .case-hero--roulette-1 .win--open .win__item {
-  -webkit-transform: scale(1) rotateY(-540deg);
-          transform: scale(1) rotateY(-540deg);
+  -webkit-transform: scale(1) rotateY(-180deg);
+          transform: scale(1) rotateY(-180deg);
 }
 .case-hero--roulette-1 .win--open .win__item .win__item-card::after {
   -webkit-animation: shadowSingleWinItem 1.2s ease-out both;
