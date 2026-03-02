@@ -40,9 +40,8 @@
 				</a>
 			</div>
 			<div class="header__nav-wrap js-header-nav">
-				<div class="header__top-btns-wrap tablet">
-					
-					
+				
+					<div class="header__top-btns-wrap tablet">
 						<!-- <a href=".#" class="btn btn--purple btn--font-black">
 							<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 							<span>370</span>
@@ -62,33 +61,8 @@
 								</svg>
 							</span>
 						</a>
-						<div class="header__profile">
-							<div>
-								<span class="header__profile-name">lok'tar ogar magicdrop-ru</span>
-								<span class="header__profile-money">
-									<span>123 456,78</span>
-									<svg aria-hidden="true">
-										<use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-									</svg>
-								</span>
-							</div>
-							<div class="header__profile-img-wrap">
-								<button type="button" class="header__profile-img-btn">
-									<picture class="header__profile-img">
-										<source srcset="./images/avatar.webp" type="image/webp">
-										<img src="./images/avatar.jpg" class="image" alt="Avatar">
-									</picture>
-								</button>
-								<button type="button" class="btn btn--icon header__logout-btn">
-									<svg aria-hidden="true" class="black">
-										<use xlink:href="images/sprite.svg#logout"></use>
-									</svg>
-									Logout
-								</button>
-							</div>
-						</div>
-					
-				</div>
+					</div>
+				
 				<nav class="header__nav">
 					<ul>
 						<li>
@@ -148,16 +122,16 @@
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
 									<svg aria-hidden="true" class="dark-grey">
-										<use xlink:href="images/sprite.svg#live-trades"></use>
+										<use xlink:href="images/sprite.svg#swap"></use>
 									</svg>
-									<svg aria-hidden="true">
-										<use xlink:href="images/sprite.svg#live-trades-yellow"></use>
+									<svg aria-hidden="true" class="yellow">
+										<use xlink:href="images/sprite.svg#swap"></use>
 									</svg>
 								</span>
-								<span>Live трейды</span>
+								<span>Обмен</span>
 							</a>
 						</li>
-						<!-- <li>
+						<li>
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
 									<svg aria-hidden="true" class="dark-grey">
@@ -169,8 +143,21 @@
 								</span>
 								<span>Сражения</span>
 							</a>
-						</li> -->
-						<li>
+						</li>
+						<li class="tablet">
+							<a href="#" class="header__nav-link">
+								<span class="header__nav-link-svg">
+									<svg aria-hidden="true" class="dark-grey">
+										<use xlink:href="images/sprite.svg#live-trades"></use>
+									</svg>
+									<svg aria-hidden="true">
+										<use xlink:href="images/sprite.svg#live-trades-yellow"></use>
+									</svg>
+								</span>
+								<span>Live трейды</span>
+							</a>
+						</li>
+						<li class="tablet">
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
 									<svg aria-hidden="true" class="dark-grey">
@@ -183,7 +170,7 @@
 								<span>Топ игроки</span>
 							</a>
 						</li>
-						<li>
+						<li class="tablet">
 							<a href="#" class="header__nav-link">
 								<span class="header__nav-link-svg">
 									<svg aria-hidden="true" class="dark-grey">
@@ -488,20 +475,20 @@
 					</ul>
 				</div>
 			</div>
-			<div class="header__top-btns-wrap desktop-lg">
-				
+			
+			<div class="header__top-btns-wrap">
 				
 					<!-- <a href=".#" class="btn btn--purple btn--font-black">
 						<img src="./images/svg/diamond-purple.svg" alt="" aria-hidden="true">
 						370
 					</a> -->
-					<a href=".#" class="header__coin-btn">
+					<a href=".#" class="header__coin-btn desktop-lg">
 						<svg aria-hidden="true">
 							<use xlink:href="images/sprite.svg#token-yellow"></use>
 						</svg>
 						<span>370</span>
 					</a>
-					<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon">
+					<a href=".#" class="header__pay-btn btn btn--gr-yellow btn--icon desktop-lg">
 						<img src="./images/svg/wallet.svg" alt="" aria-hidden="true">
 						Pay
 						<span class="btn__plus-icon" aria-hidden="true">
@@ -934,56 +921,31 @@
 	<div class="header__promo ">
 		<div class="header__promo-wrap">
 			<ul class="header__promo-nav">
-				<!-- <li>
-					<a href=".#" class="header__promo-link">
-						<picture class="header__promo-img">
-							<source srcset="./images/icon-bonus.webp" type="image/webp">
-							<img src="./images/icon-bonus.png" alt="Бонус промокод">
-						</picture>
-						<span class="header__promo-link-info">
-							<span class="header__promo-link-title">Бонус</span>
-							<span class="header__promo-link-subtitle">Промокод</span>
-						</span>
-					</a>
-				</li> -->
 				<li>
 					<a href=".#" class="header__promo-link">
-						<picture class="header__promo-img">
-							<source srcset="./images/icon-raffles.webp" type="image/webp">
-							<img src="./images/icon-raffles.png" alt="Розыгрыши. Spin the reel">
-						</picture>
-						<span>
-							<span class="header__promo-link-title">Раздачи скинов</span>
-							<span class="header__promo-link-subtitle">Вращать барабан</span>
-						</span>
+						<svg aria-hidden="true" class="header__promo-link-icon">
+							<use xlink:href="images/sprite.svg#live-trades"></use>
+						</svg>
+						<span class="header__promo-link-title">Live трейды</span>
 					</a>
 				</li>
 				<li>
-					<a href=".#" class="header__promo-link header__promo-link--event" style="background-image: url('./images/bg/bg-btn-event.jpg')">
-						<picture class="header__promo-img">
-							<source srcset="./images/icon-wheel-2.webp" type="image/webp">
-							<img src="./images/icon-wheel-2.png" alt="Колесо. Spin the reel">
-						</picture>
-						<span>
-							<span class="header__promo-link-title">Колесо</span>
-							<span class="header__promo-link-subtitle">Вращать барабан</span>
-						</span>
+					<a href=".#" class="header__promo-link">
+						<svg aria-hidden="true" class="header__promo-link-icon">
+							<use xlink:href="images/sprite.svg#trophy"></use>
+						</svg>
+						<span class="header__promo-link-title">Топ игроки</span>
 					</a>
 				</li>
-				<!-- <li>
+				<li>
 					<a href=".#" class="header__promo-link">
-						<picture class="header__promo-img">
-							<source srcset="./images/icon-partner.webp" type="image/webp">
-							<img src="./images/icon-partner.png" alt="Партнеры. Пригласи друга">
-						</picture>
-						<span>
-							<span class="header__promo-link-title">Партнеры</span>
-							<span class="header__promo-link-subtitle">Пригласить друга</span>
-						</span>
+						<svg aria-hidden="true" class="header__promo-link-icon">
+							<use xlink:href="images/sprite.svg#provably-fair"></use>
+						</svg>
+						<span class="header__promo-link-title">Provably fair</span>
 					</a>
-				</li> -->
+				</li>
 			</ul>
-			
 			<div class="header__promo-controls">
 				<div>
 					<!-- <a href=".#" class="header__promo-social-link">
@@ -1012,7 +974,7 @@
 					</a> -->
 					<button type="button" class="header__promo-social-link btn btn--icon" data-modal-trigger="telegram-subscribe">
 						<svg aria-hidden="true" class="dark-grey">
-							<use xlink:href="images/sprite.svg#telegram"></use>
+							<use xlink:href="images/sprite.svg#telegram-blue"></use>
 						</svg>
 						Telegram
 					</button>
@@ -4442,13 +4404,14 @@
         </div>
     </div>
 </div>
-    <div class="win-rare js-win-rare ">
+    <div class="win-rare js-win-rare  ">
     <video 
         control="false" 
         preload="metadata" 
         playsinline
         class="win-rare__video js-win-rare-video">
         <source src="./videos/win-rare.mp4" type="video/mp4">
+        
     </video>
     <div class="win-rare__content">
         <div class="container">
@@ -4500,6 +4463,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--covert  js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4543,6 +4518,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--classified is-rare js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4586,6 +4573,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--restricted is-rare js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4629,6 +4628,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--milspec is-rare js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4672,6 +4683,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--classified is-rare js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4715,6 +4738,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--covert  js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4758,6 +4793,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--rare is-rare js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4801,6 +4848,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--milspec  js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4844,6 +4903,18 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article><article class="win-rare__item win-rare__item--restricted  js-win-rare-item">
     <div class="win-rare__item-wrapper">
         <div class="win-rare__item-back"></div>
@@ -4887,8 +4958,37 @@
             <button type="button" class="win-rare__item-btn btn btn--yellow btn--sm">Продать</button>
         </div>
     
+    
+    <div class="tooltip tooltip--center win-rare__item-tooltip">
+        <div class="tooltip__body" role="tooltip">
+            <p class="white">Вы можете проверить честность через Provably Fair</p>
+        </div>
+        <a href="#" class="btn btn--sm btn--icon btn--grey tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably Fair
+        </a>
+    </div>
 </article>
             </div>
+        </div>
+        <div class="win-rare__btns">
+            <button type="button" class="btn btn--bg-yellow">
+                <span>Продать все за</span>
+                <span class="btn-price">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                    <span>100 000.24</span>    
+                </span>
+            </button>
+            <button type="button" class="btn btn--bg-grey btn--upper">
+                Повторить
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#repeat-yellow"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </div>
