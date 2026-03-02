@@ -2569,7 +2569,10 @@ textarea {
   background: center/contain no-repeat url("../images/sprite.svg#coin-rub-grey");
 }
 .range-inputs--usd label::before {
-  background: center/contain no-repeat url("../images/sprite.svg#coin-dollar-grey");
+  background: center/contain no-repeat url("../images/sprite.svg#coin-usd-grey");
+}
+.range-inputs--eur label::before {
+  background: center/contain no-repeat url("../images/sprite.svg#coin-eur-grey");
 }
 .range-inputs--md label::before {
   background: center/contain no-repeat url("../images/sprite.svg#coin-md-grey");
