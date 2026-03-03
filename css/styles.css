@@ -30004,6 +30004,7 @@ dd.upgrade__skin-price svg {
 
 .hero-banners__slide-desc {
   max-width: 32rem;
+  font-weight: 300;
   opacity: 0.86;
 }
 @media (max-width: 768px) {
@@ -30119,7 +30120,7 @@ dd.upgrade__skin-price svg {
   margin-top: 0.8rem;
   font-size: 1.6rem;
   font-weight: 300;
-  opacity: 0.5;
+  opacity: 0.86;
 }
 
 .hero-banners__banner-btn {
@@ -30149,6 +30150,7 @@ dd.upgrade__skin-price svg {
   border: none;
   border-radius: 0.8rem;
   cursor: pointer;
+  font-size: 1.4rem;
   text-transform: uppercase;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
@@ -30159,6 +30161,8 @@ dd.upgrade__skin-price svg {
   }
 }
 .hero-banners__banner-btn svg {
+  width: 2rem;
+  height: 2rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
