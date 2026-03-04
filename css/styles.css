@@ -4326,6 +4326,7 @@ textarea {
   gap: 2.4rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  z-index: 1;
 }
 @media (max-width: 1024px) {
   .header__promo-nav {
