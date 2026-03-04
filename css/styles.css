@@ -17031,7 +17031,8 @@ dd.upgrade__skin-price svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 4rem 1.6rem;
-  margin-top: 5.6rem;
+  margin: 5.6rem auto 0;
+  max-width: 80rem;
 }
 
 .top-players__item {
