@@ -21,6 +21,166 @@ window.addEventListener('DOMContentLoaded', () => {
         !!noDropContent && setHeightForNoDropContent();
     });
 
+    // Spine animation
+    const spineContainer = document.querySelector('.js-upgrade-spine');
+
+    const createSpineAnimation = ({ canvasName, basePath }) => {
+        const ATLAS_PATH = `${basePath}/FullScreen_Spine.atlas`;
+        const JSON_PATH  = `${basePath}/FullScreen_Spine.json`;
+        const ANIM_NAME  = 'animation';
+
+        const canvas = document.querySelector(`.${canvasName}`);
+        const getSize = () => ({
+            w: spineContainer.clientWidth*1.5,
+            h: spineContainer.clientHeight*1.5,
+        });
+
+        const updateCanvasSize = () => {
+            const { w, h } = getSize();
+            // Обновляем только если размер реально изменился
+            if (canvas.width !== w || canvas.height !== h) {
+            canvas.width  = w;
+            canvas.height = h;
+            }
+        };
+
+        const updateCamera = (w, h) => {
+            renderer.camera.position.x    = w / 2;
+            renderer.camera.position.y    = h / 2;
+            renderer.camera.viewportWidth  = w;
+            renderer.camera.viewportHeight = h;
+            renderer.camera.update();
+        };
+
+        const gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: false });
+        if (!gl) {
+            console.error(`WebGL не поддерживается для ${canvasName}`);
+            return;
+        }
+
+        const renderer = new spine.webgl.SceneRenderer(canvas, gl);
+        const assetManager = new spine.webgl.AssetManager(gl);
+
+        assetManager.loadText(JSON_PATH);
+        assetManager.loadTextureAtlas(ATLAS_PATH);
+
+        const resizeObserver = new ResizeObserver(() => {
+            updateCanvasSize();
+            updateCamera(canvas.width, canvas.height);
+        });
+        resizeObserver.observe(spineContainer);
+
+        updateCanvasSize();
+
+        return new Promise((resolve) => {
+            requestAnimationFrame(waitForAssets);
+
+            function waitForAssets() {
+                if (!assetManager.isLoadingComplete()) {
+                    requestAnimationFrame(waitForAssets);
+                    return;
+                }
+                if (assetManager.hasErrors()) {
+                    console.error(`Ошибки загрузки ${canvasId}:`, assetManager.getErrors());
+                    return;
+                }
+                updateCanvasSize();
+                init(resolve);
+            }
+
+            function init(resolve) {
+                const atlasLoader  = new spine.AtlasAttachmentLoader(assetManager.get(ATLAS_PATH));
+                const skeletonJson = new spine.SkeletonJson(atlasLoader);
+                skeletonJson.scale = 1;
+
+                const skeletonData = skeletonJson.readSkeletonData(assetManager.get(JSON_PATH));
+                const skeleton     = new spine.Skeleton(skeletonData);
+                skeleton.scaleY    = -1;
+
+                const animState = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
+                animState.setAnimation(0, ANIM_NAME, true);
+
+                skeleton.setToSetupPose();
+                skeleton.updateWorldTransform();
+                const offset = new spine.Vector2();
+                const size   = new spine.Vector2();
+                skeleton.getBounds(offset, size);
+
+                const boundsCenterX = offset.x + size.x / 2;
+                const boundsCenterY = offset.y + size.y / 2;
+
+                updateCamera(canvas.width, canvas.height);
+
+                let lastTime = Date.now() / 1000;
+                requestAnimationFrame(render);
+                let firstRender = true;
+
+                function render() {
+                    const now   = Date.now() / 1000;
+                    const delta = now - lastTime;
+                    lastTime    = now;
+
+                    const w     = canvas.width;
+                    const h     = canvas.height;
+                    let scale = 0;
+
+                    if (canvasName == "js-spine-body") {
+                        scale = Math.min(w / size.x, h / size.y) * 0.9;
+                        skeleton.y = h / 2 + boundsCenterY * scale - 30;
+                    } else if (canvasName == "js-spine-arms") {
+                        scale = Math.min(w / size.x, h / size.y) * 0.89;
+                        skeleton.y = h / 2 + boundsCenterY * scale;
+                    } else {
+                        scale = Math.min(w / size.x, h / size.y);
+                        skeleton.y = h / 2 + boundsCenterY * scale;
+                    }
+                
+                    skeleton.x      = w / 2 - boundsCenterX * scale;
+                    skeleton.scaleX = scale;
+                    skeleton.scaleY = scale;
+
+                    updateCamera(w, h);
+
+                    gl.viewport(0, 0, w, h);
+                    gl.clearColor(0, 0, 0, 0);
+                    gl.clear(gl.COLOR_BUFFER_BIT);
+
+                    animState.update(delta);
+                    animState.apply(skeleton);
+                    skeleton.updateWorldTransform();
+
+                    renderer.begin();
+                    renderer.drawSkeleton(skeleton, true);
+                    renderer.end();
+
+                    if (firstRender) {
+                        firstRender = false;
+                        resolve();
+                    }
+
+                    requestAnimationFrame(render);
+                }
+            }
+        })
+    }
+
+    const displaySpineAnimation = () => {
+        if (!!spineContainer && window.innerWidth > 1440) {
+            const bodyReady = createSpineAnimation({ canvasName: 'js-spine-body', basePath: 'spine/body' });
+            const armsReady = createSpineAnimation({ canvasName: 'js-spine-arms', basePath: 'spine/arms' });
+
+            // Показываем оба canvas только когда обе анимации готовы
+            Promise.all([bodyReady, armsReady]).then(() => {
+                document.querySelector('.js-spine-body').style.opacity = '1';
+                document.querySelector('.js-spine-arms').style.opacity = '1';
+            });
+        }
+    }
+
+    window.addEventListener('resize', displaySpineAnimation);
+    displaySpineAnimation();
+    // END Spine animation
+
     // Splide slider
 
     const slideContainer = document.querySelector('.skins-slider.splide');
@@ -493,9 +653,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const upgradeBlock = document.querySelector('.js-upgrade');
     const upgradeBtn = document.querySelector('.js-upgrade-btn');
     const upgradeBtns = document.querySelector('.js-upgrade-btns');
+    const upgradeWinBtns = document.querySelector('.js-upgrade-win-btns');
     const upgradeFailBtns = document.querySelector('.js-upgrade-fail-btns');
     const upgradeWin = document.querySelector('.js-upgrade-win');
-    const upgradeFail = document.querySelector('.js-upgrade-fail');
     const upgradeSellBtn = document.querySelector('.js-upgrade-sell-btn');
     const upgradeRepeatBtn = document.querySelector('.js-upgrade-repeat-btn');
     const upgradeCloseBtn = document.querySelector('.js-upgrade-close-btn');
@@ -510,10 +670,10 @@ window.addEventListener('DOMContentLoaded', () => {
         upgradeBlock.classList.add('upgrade--win');
         const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
         setTimeout(() => {
-            upgradeBtn.classList.add('upgrade__btn--hide');
-            uprgadeFast.classList.add('upgrade__btn--hide');
-            upgradeBtns.classList.add('upgrade__btns--show');
+            upgradeBtns.classList.add('upgrade__btns--hide');
+            upgradeWinBtns.classList.add('upgrade__btns--show');
             upgradeWin.classList.add('upgrade__win--open');
+            showWinConfetti();
         }, duration);
         
     });
@@ -522,9 +682,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (upgradeBlock.classList.contains('upgrade--win')) {
             upgradeBlock.classList.remove('upgrade--win');
         }
-        upgradeBtn.classList.remove('upgrade__btn--hide');
-        uprgadeFast.classList.add('upgrade__btn--hide');
-        upgradeBtns.classList.remove('upgrade__btns--show');
+        upgradeBtns.classList.remove('upgrade__btns--hide');
+        upgradeWinBtns.classList.remove('upgrade__btns--show');
         upgradeWin.classList.remove('upgrade__win--open')
     });
 
@@ -533,17 +692,16 @@ window.addEventListener('DOMContentLoaded', () => {
         const durationAnimation = (6*360 + parseInt(angle))/360;
         document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
 
-        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 1750 : (durationAnimation + 2)*1000;
+        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
         if (upgradeBlock.classList.contains('upgrade--win')) {
             upgradeBlock.classList.remove('upgrade--win');
         }
         if (upgradeBlock.classList.contains('upgrade--fail')) {
             upgradeBlock.classList.remove('upgrade--fail');
         }
-        if (upgradeBtn.classList.contains('upgrade__btn--hide')) {
-            upgradeBtn.classList.remove('upgrade__btn--hide');
-            uprgadeFast.classList.remove('upgrade__btn--hide');
-            upgradeBtns.classList.remove('upgrade__btns--show');
+        if (upgradeBtns.classList.contains('upgrade__btns--hide')) {
+            upgradeBtns.classList.remove('upgrade__btns--hide');
+            upgradeWinBtns.classList.remove('upgrade__btns--show');
         }
         if (upgradeWin.classList.contains('upgrade__win--open')) {
             upgradeWin.classList.remove('upgrade__win--open')
@@ -552,9 +710,7 @@ window.addEventListener('DOMContentLoaded', () => {
         upgradeBlock.classList.add('upgrade--fail');
 
         setTimeout(() => {
-            upgradeFail.classList.add('upgrade__fail--open');
-            upgradeBtn.classList.add('upgrade__btn--hide');
-            uprgadeFast.classList.add('upgrade__btn--hide');
+            upgradeBtns.classList.add('upgrade__btns--hide');
             upgradeFailBtns.classList.add('upgrade__btns--show');
         }, duration);
         
@@ -564,10 +720,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (upgradeBlock.classList.contains('upgrade--fail')) {
             upgradeBlock.classList.remove('upgrade--fail');
         }
-        upgradeBtn.classList.remove('upgrade__btn--hide');
-        uprgadeFast.classList.remove('upgrade__btn--hide');
+        upgradeBtns.classList.remove('upgrade__btns--hide');
         upgradeFailBtns.classList.remove('upgrade__btns--show');
-        upgradeFail.classList.remove('upgrade__fail--open')
     });
 
     !!uprgadeFastCheckbox && uprgadeFastCheckbox.addEventListener('change', () => {

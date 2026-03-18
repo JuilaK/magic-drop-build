@@ -1,0 +1,55 @@
+
+FullScreen_Spine.png
+size: 2017,1027
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 4, 81
+  size: 1434, 942
+  orig: 1434, 942
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 1442, 642
+  size: 381, 451
+  orig: 381, 451
+  offset: 0, 0
+  index: -1
+Head_Glow
+  rotate: true
+  xy: 1442, 257
+  size: 381, 451
+  orig: 381, 451
+  offset: 0, 0
+  index: -1
+L_Arm
+  rotate: false
+  xy: 1442, 4
+  size: 263, 249
+  orig: 263, 249
+  offset: 0, 0
+  index: -1
+L_P_5
+  rotate: false
+  xy: 1897, 769
+  size: 116, 123
+  orig: 116, 123
+  offset: 0, 0
+  index: -1
+R_Arm
+  rotate: false
+  xy: 1709, 4
+  size: 226, 249
+  orig: 226, 249
+  offset: 0, 0
+  index: -1
+R_P_5
+  rotate: false
+  xy: 1897, 896
+  size: 116, 127
+  orig: 116, 127
+  offset: 0, 0
+  index: -1
