@@ -6092,23 +6092,27 @@ span.header__volume-value {
             box-shadow: inset 0 0 10.8rem 0 rgba(255, 229, 0, 0.2);
   }
 }
-.cases__magic-block {
+.cases__magic-block,
+.cases__premium-block {
   margin-top: 6.4rem;
   padding: 3.2rem;
   border-radius: 1.6rem;
 }
 @media (max-width: 1280px) {
-  .cases__magic-block {
+  .cases__magic-block,
+  .cases__premium-block {
     padding: 1.6rem;
   }
 }
 @media (max-width: 768px) {
-  .cases__magic-block {
+  .cases__magic-block,
+  .cases__premium-block {
     margin-top: 4.8rem;
     padding: 1.6rem 0.8rem;
   }
 }
-.cases__magic-block .section-title {
+.cases__magic-block .section-title,
+.cases__premium-block .section-title {
   margin-top: 0;
   z-index: 1;
 }
@@ -6117,6 +6121,32 @@ span.header__volume-value {
   border: thin solid rgba(255, 229, 0, 0.6);
   -webkit-animation: displayMagicShadow 3s ease-out infinite;
           animation: displayMagicShadow 3s ease-out infinite;
+}
+
+.cases__premium-block {
+  background-color: #141420;
+  -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+.cases__premium-block .section-title {
+  color: #FFFFFF;
+  font-size: 3.2rem;
+}
+@media (max-width: 768px) {
+  .cases__premium-block .section-title {
+    font-size: 2.6rem;
+  }
+}
+.cases__premium-block .section-title svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .cases__premium-block .section-title svg {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
 }
 
 .cases__retro-block {
@@ -6842,6 +6872,20 @@ span.header__volume-value {
 }
 .cases-list--magic-card .case__body::after {
   content: none;
+}
+@media (any-hover: hover) {
+  .cases-list--premium-card .case:hover .case__body,
+  .cases-list--premium-card .case:hover .case__btn {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.cases-list--premium-card .case__body::after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#0c0c1b));
+  background: linear-gradient(180deg, #161622 0%, #0c0c1b 100%);
+  border: thin solid #DDC916;
 }
 
 .cases__item {
