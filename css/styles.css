@@ -12103,8 +12103,6 @@ span.draw-item__start-price svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 3.6rem 2.4rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 2.4rem;
   padding: 4rem 4.6rem;
   border-radius: 1.2rem;
@@ -12115,9 +12113,10 @@ span.draw-item__start-price svg {
 }
 @media (max-width: 1280px) {
   .profile-header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 1024px) {
@@ -12126,18 +12125,6 @@ span.draw-item__start-price svg {
   }
 }
 
-.profile-header__left-part {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 44rem;
-          flex: 0 1 44rem;
-  gap: 1.2rem 1.8rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
 @media (max-width: 1280px) {
   .profile-header__left-part {
     -webkit-box-pack: center;
@@ -12145,17 +12132,37 @@ span.draw-item__start-price svg {
             justify-content: center;
   }
 }
+
+.profile-header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 1280px) {
+  .profile-header__user {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (max-width: 768px) {
-  .profile-header__left-part {
-    -webkit-column-gap: 0.8rem;
-       -moz-column-gap: 0.8rem;
-            column-gap: 0.8rem;
+  .profile-header__user {
+    gap: 0.8rem;
   }
 }
 @media (max-width: 480px) {
-  .profile-header__left-part {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .profile-header__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -12169,8 +12176,8 @@ span.draw-item__start-price svg {
 }
 
 .profile-header__avatar {
-  width: 8.8rem;
-  height: 8.8rem;
+  width: 6.8rem;
+  height: 6.8rem;
   position: relative;
   display: block;
   border-radius: 1.2rem;
@@ -12210,6 +12217,7 @@ span.draw-item__start-price svg {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.8rem;
+  padding-top: 0.8rem;
 }
 @media (max-width: 480px) {
   .profile-header__user-info {
@@ -12220,6 +12228,7 @@ span.draw-item__start-price svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 0;
   }
 }
 
@@ -12304,14 +12313,13 @@ span.draw-item__start-price svg {
 }
 
 .profile-header__user-date {
-  margin-left: 4rem;
-  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  margin-top: 0.8rem;
   color: #8484A7;
   font-size: 1.2rem;
 }
 @media (max-width: 480px) {
   .profile-header__user-date {
-    margin-left: 0;
     text-align: center;
   }
 }
@@ -12327,16 +12335,21 @@ span.draw-item__start-price svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 1rem;
-     -moz-column-gap: 1rem;
-          column-gap: 1rem;
-  margin-top: 1.6rem;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0.8rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 1280px) {
   .profile-header__btns {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .profile-header__btns {
+    margin-top: 1.6rem;
   }
 }
 
@@ -12347,9 +12360,13 @@ span.draw-item__start-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 2.4rem 1.2rem;
+}
+@media (max-width: 1280px) {
+  .profile-header__params-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .profile-header__param {
