@@ -8471,6 +8471,10 @@ span.draw-item__start-price svg {
   -webkit-animation: displayHoverImg 0.6s forwards;
           animation: displayHoverImg 0.6s forwards;
 }
+.skin--inventory .skin__price svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
 .skin--inventory .tooltip__body {
   max-width: 20rem;
 }
@@ -8734,8 +8738,8 @@ span.draw-item__start-price svg {
   width: 1.6rem;
   height: 1.6rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 1.6rem;
-          flex: 0 0 1.6rem;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .skin__price span {
   color: #FFFFFF;
