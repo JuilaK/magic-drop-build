@@ -3061,8 +3061,9 @@ textarea {
 }
 @media (max-width: 1280px) {
   .header__logo-wrap {
-    width: 17rem;
+    width: 15rem;
     height: 8rem;
+    padding-left: 0.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -3203,7 +3204,7 @@ textarea {
 }
 @media (max-width: 1280px) {
   .header__nav-link {
-    width: 4.8rem;
+    width: 4.4rem;
   }
 }
 @media (max-width: 1024px) {
@@ -3457,6 +3458,17 @@ textarea {
     display: flex;
   }
 }
+.header__top-btns-wrap.tablet .header__logout-btn {
+  display: none;
+}
+@media (max-width: 480px) {
+  .header__top-btns-wrap.tablet .header__logout-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 1.8rem;
+  }
+}
 @media (max-width: 1024px) {
   .header__top-btns-wrap > .desktop-lg {
     display: none;
@@ -3587,6 +3599,9 @@ textarea {
 @media (max-width: 1280px) {
   .header__profile {
     margin-left: 2rem;
+    -webkit-column-gap: 0.8rem;
+       -moz-column-gap: 0.8rem;
+            column-gap: 0.8rem;
   }
 }
 @media (max-width: 1024px) {
@@ -3780,37 +3795,28 @@ textarea {
   z-index: 1;
 }
 
-.header__logout-btn {
-  position: absolute;
-  top: -0.6rem;
-  right: -0.6rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  padding: 0;
-  background: #C32319;
-  border: 0.2rem solid #DF2418;
-  border-radius: 0.8rem;
-  -webkit-box-shadow: 0 0 0.8rem 0 rgba(223, 36, 24, 0.45);
-          box-shadow: 0 0 0.8rem 0 rgba(223, 36, 24, 0.45);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  z-index: 1;
-}
-@media (any-hover: hover) {
-  .header__logout-btn:hover {
-    background: #C32319;
-    -webkit-box-shadow: 0 0 0.8rem 0 rgba(223, 36, 24, 0.45);
-            box-shadow: 0 0 0.8rem 0 rgba(223, 36, 24, 0.45);
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+@media (max-width: 768px) {
+  .header__logout-btn {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+  .header__logout-btn svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
-.header__logout-btn svg {
-  width: 1.4rem;
-  height: 1.4rem;
+@media (max-width: 480px) {
+  .header__logout-btn {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: none;
+  }
+  .header__logout-btn svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 .btn.header__burger {
