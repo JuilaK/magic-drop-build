@@ -15024,18 +15024,46 @@ span.draw-item__start-price svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 2.4rem;
   text-align: center;
+}
+.upgrade__skin-empty img {
+  width: 21rem;
+  height: 21rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .upgrade__skin-empty svg {
   width: 6.4rem;
   height: 6.4rem;
 }
 .upgrade__skin-empty p {
+  margin-top: -1.6rem;
   max-width: 20rem;
   color: #28283C;
   font-size: 1.4rem;
   line-height: 150%;
+}
+.upgrade__skin-empty--balance .upgrade__skin-empty-img picture:first-child {
+  opacity: 0;
+}
+.upgrade__skin-empty--balance .upgrade__skin-empty-img picture:last-child {
+  opacity: 1;
+}
+
+.upgrade__skin-empty-img {
+  display: -ms-grid;
+  display: grid;
+}
+.upgrade__skin-empty-img picture {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.upgrade__skin-empty-img picture:last-child {
+  opacity: 0;
 }
 
 .upgrade__skin-balance {

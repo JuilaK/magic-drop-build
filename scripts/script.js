@@ -661,7 +661,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const upgradeSellBtn = document.querySelector('.js-upgrade-sell-btn');
     const upgradeRepeatBtn = document.querySelector('.js-upgrade-repeat-btn');
     const upgradeCloseBtn = document.querySelector('.js-upgrade-close-btn');
-    const uprgadeFast = document.querySelector('.js-upgrade-fast');
     const uprgadeFastCheckbox = document.querySelector('.js-upgrade-fast-checkbox');
 
     upgradeBtn && upgradeBtn.addEventListener('click', () => {
@@ -733,6 +732,20 @@ window.addEventListener('DOMContentLoaded', () => {
             upgradeBlock.classList.remove('upgrade--fast');
         }
     });
+
+    const upgradeSkinBalance = document.querySelector('.js-upgrade-skin-balance');
+    const upgradeSkinBalanceInput = document.querySelector('.upgrade__range .js-range-slider input');
+    
+    const checkUpgradeBalanceValue = () => {
+        if (upgradeSkinBalanceInput.value > 0 && !upgradeSkinBalance.classList.contains('upgrade__skin-empty--balance')) {
+            upgradeSkinBalance.classList.add('upgrade__skin-empty--balance');
+        } else if (upgradeSkinBalanceInput.value == 0 && upgradeSkinBalance.classList.contains('upgrade__skin-empty--balance')) {
+            upgradeSkinBalance.classList.remove('upgrade__skin-empty--balance');
+        }
+    } 
+
+    !!upgradeSkinBalance && upgradeSkinBalanceInput.addEventListener('input', checkUpgradeBalanceValue);
+    !!upgradeSkinBalance && checkUpgradeBalanceValue();
     // END Upgrade
 
     // Create a contract
