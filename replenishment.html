@@ -1069,167 +1069,411 @@
 	</div>
 </header>
     <main>
-        <section class="replenishment container-xs">
-    <h1 class="page-title">
-        <svg aria-hidden="true" class="grey">
-            <use xlink:href="images/sprite.svg#coins"></use>
-        </svg>
-        Replenishment
-    </h1>
-    <div class="replenishment__body">
-        <div class="replenishment__links">
-            <ul class="replenishment-nav">
-                <li>
-                    <button type="button" class="replenishment-nav__btn replenishment-nav__btn--active">
-                        <span class="replenishment-nav__svg-wrap">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#card"></use>
-                            </svg>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#card-yellow"></use>
-                            </svg>
-                        </span>
-                        Bank cards
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="replenishment-nav__btn">
-                        <span class="replenishment-nav__svg-wrap">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#gun"></use>
-                            </svg>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#gun-yellow"></use>
-                            </svg>
-                        </span>
-                        Payment Skins
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="replenishment-nav__btn">
-                        <span class="replenishment-nav__svg-wrap">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#cryptocurrency"></use>
-                            </svg>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#cryptocurrency-yellow"></use>
-                            </svg>
-                        </span>
-                        Cryptocurrency
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="replenishment-nav__btn">
-                        <span class="replenishment-nav__svg-wrap">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#bank"></use>
-                            </svg>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#bank-yellow"></use>
-                            </svg>
-                        </span>
-                        Other methods
-                    </button>
-                </li>
-            </ul>
-            <a href="./payment-history.html" class="replenishment__history-btn btn">
-                <svg aria-hidden="true" class="dark-grey">
-                    <use xlink:href="images/sprite.svg#history"></use>
-                </svg>
-                Deposit history
-            </a>
-
-        </div>
-        <div class="replenishment__content">
-            <div class="payment-list">
-                <div class="payment-item">
-                    <input type="radio" name="payment-list" id="payment-sbp" checked>
-                    <label for="payment-sbp">
-                        <span class="payment-item__name">Система быстрых платежей</span>
-                        <span class="payment-item__currency">usd</span>
-                        <img src="./images/payment-logo/logo-sbp.svg" alt="Система быстрых платежей">
-                    </label>
+        <section class="replenishment">
+    <div class="container-xs">
+        <h1 class="page-title sr-only">Replenishment</h1>
+        <div class="replenishment__body">
+            <div class="replenishment__body-wrap">
+                <div class="replenishment__links">
+                    <div class="replenishment__links-wrap">
+                        <div class="replenishment__links-country">
+                            <div class="select js-select">
+                                <button
+                                    class="btn select__button js-select-btn"
+                                    role="combobox"
+                                    aria-label="dropdown button"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    aria-controls="select-dropdown">
+                                    <span class="select__selected-value js-selected-value">
+                                        <span class="replenishment__select-item-img">
+                                            <picture>
+                                                <source srcset="./images/icon-uk-lang.webp" type="image/webp">
+                                                <img src="./images/icon-uk-lang.png" alt="" aria-hidden="true">
+                                            </picture>
+                                        </span>
+                                        USA
+                                    </span>
+                                </button>
+                                <div class="select__dropdown">
+                                    <ul role="listbox" class="select__dropdown-wrap">
+                                        <li role="option">
+                                            <input type="radio" id="rus-country" name="country"/>
+                                            <label for="rus-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-ru-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-ru-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Россия
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="eng-country" name="country" checked/>
+                                            <label for="eng-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-uk-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-uk-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                USA
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="ukr-country" name="country"/>
+                                            <label for="ukr-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-ua-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-ua-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Україна
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="by-country" name="country"/>
+                                            <label for="by-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-by-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-by-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Беларусь
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="de-country" name="country"/>
+                                            <label for="de-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-de-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-de-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Deutschland
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="fr-country" name="country"/>
+                                            <label for="fr-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-fr-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-fr-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                France
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="es-country" name="country"/>
+                                            <label for="es-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-es-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-es-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                España
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="pt-country" name="country"/>
+                                            <label for="pt-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-pt-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-pt-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Portugal
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="pr-country" name="country"/>
+                                            <label for="pr-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-pr-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-pr-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Brasil
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="pl-country" name="country"/>
+                                            <label for="pl-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-pl-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-pl-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Polska
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="it-country" name="country"/>
+                                            <label for="it-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-it-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-it-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Italia
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="tr-country" name="country"/>
+                                            <label for="tr-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-tr-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-tr-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Türkiye
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="sv-country" name="country"/>
+                                            <label for="sv-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-sv-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-sv-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Sverige
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="cz-country" name="country"/>
+                                            <label for="cz-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-cz-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-cz-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Ελλάδα
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="cn-country" name="country"/>
+                                            <label for="cn-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-cn-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-cn-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                中國
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="th-country" name="country"/>
+                                            <label for="th-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-th-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-th-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                ประเทศไทย
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="jp-country" name="country"/>
+                                            <label for="jp-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-jp-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-jp-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                日本
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="kr-country" name="country"/>
+                                            <label for="kr-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-kr-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-kr-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                대한민국
+                                            </label>
+                                        </li>
+                                        <li role="option">
+                                            <input type="radio" id="kz-country" name="country"/>
+                                            <label for="kz-country">
+                                                <span class="replenishment__select-item-img">
+                                                    <picture>
+                                                        <source srcset="./images/icon-kz-lang.webp" type="image/webp">
+                                                        <img src="./images/icon-kz-lang.png" alt="" aria-hidden="true">
+                                                    </picture>
+                                                </span>
+                                                Қазақстан
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="replenishment-nav">
+                            <li>
+                                <button type="button" class="replenishment-nav__btn replenishment-nav__btn--active">
+                                    <span class="replenishment-nav__svg-wrap">
+                                        <svg aria-hidden="true" class="dark-grey">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#card-yellow"></use>
+                                        </svg>
+                                    </span>
+                                    Банковские карты
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="replenishment-nav__btn">
+                                    <span class="replenishment-nav__svg-wrap">
+                                        <svg aria-hidden="true" class="dark-grey">
+                                            <use xlink:href="images/sprite.svg#gun"></use>
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#gun-yellow"></use>
+                                        </svg>
+                                    </span>
+                                    Оплата скинами
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="replenishment-nav__btn">
+                                    <span class="replenishment-nav__svg-wrap">
+                                        <svg aria-hidden="true" class="dark-grey">
+                                            <use xlink:href="images/sprite.svg#cryptocurrency"></use>
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cryptocurrency-yellow"></use>
+                                        </svg>
+                                    </span>
+                                    Криптовалюта
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="replenishment-nav__btn">
+                                    <span class="replenishment-nav__svg-wrap">
+                                        <svg aria-hidden="true" class="dark-grey">
+                                            <use xlink:href="images/sprite.svg#bank"></use>
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#bank-yellow"></use>
+                                        </svg>
+                                    </span>
+                                    Другие методы
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="replenishment__links-text">
+                            <p>Для пополнения баланса вы будете перемещены на сайт платёжной системы.</p>
+                            <p>Баланс пополняется моментально, но если этого не произошло в течение часа напишите нам на почту <a href="mailto:support@topskin.net">support@topskin.net</a>, указав подробные данные платежа и свой ID на сайтe <span>1372787</span>.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="payment-item">
-                    <input type="radio" name="payment-list" id="payment-mir">
-                    <label for="payment-mir">
-                        <span class="payment-item__name">Система Мир</span>
-                        <span class="payment-item__currency">usd</span>
-                        <img src="./images/payment-logo/logo-mir.png" alt="Система быстрых платежей">
+                <div class="replenishment__content">
+                    <div class="payment-list">
+                        <div class="payment-item">
+                            <input type="radio" name="payment-list" id="payment-sbp" checked>
+                            <label for="payment-sbp">
+                                <span class="payment-item__name">Система быстрых платежей</span>
+                                <span class="payment-item__currency">usd</span>
+                                <img src="./images/payment-logo/logo-sbp.svg" alt="Система быстрых платежей">
+                            </label>
+                        </div>
+                        <div class="payment-item">
+                            <input type="radio" name="payment-list" id="payment-mir">
+                            <label for="payment-mir">
+                                <span class="payment-item__name">Система Мир</span>
+                                <span class="payment-item__currency">usd</span>
+                                <img src="./images/payment-logo/logo-mir.png" alt="Система быстрых платежей">
+                            </label>
+                        </div>
+                        <div class="payment-item">
+                            <input type="radio" name="payment-list" id="payment-visa">
+                            <label for="payment-visa">
+                                <span class="payment-item__name">Система Виза, Мастеркард</span>
+                                <span class="payment-item__currency">usd</span>
+                                <img src="./images/payment-logo/logo-visa.png" alt="Система быстрых платежей">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="replenishment__promo">
+                        <div class="replenishment__input">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#discount"></use>
+                            </svg>
+                            <input type="text" placeholder="Promo code">
+                        </div>
+                        <div class="replenishment__bonus">
+                            <div class="replenishment__bonus-progress" style="width: 55%"></div>
+                            <span class="replenishment__bonus-text">Bonus for replenishment</span>
+                            <span class="replenishment__bonus-numb">55%</span>
+                        </div>
+                    </div>
+                    <div class="replenishment__amount">
+                        <div class="replenishment__input">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#coins"></use>
+                            </svg>
+                            <input type="text" placeholder="Replenishment amount">
+                        </div>
+                        <div class="replenishment__credit">
+                            <span class="replenishment__credit-text">На баланс поступит:</span>
+                            <div class="replenishment__credit-list">
+                                <span class="replenishment__credit-item">
+                                    <span>241</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#token-yellow"></use>
+                                    </svg>
+                                </span>
+                                <span class="replenishment__credit-item">
+                                    <span>7 000.24</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="replenishment__checkbox checkbox">
+                        <input type="checkbox">
+                        <span>I accept the terms of the <a href=".#">User Agreement</a></span>
                     </label>
-                </div>
-                <div class="payment-item">
-                    <input type="radio" name="payment-list" id="payment-visa">
-                    <label for="payment-visa">
-                        <span class="payment-item__name">Система Виза, Мастеркард</span>
-                        <span class="payment-item__currency">kzt</span>
-                        <img src="./images/payment-logo/logo-visa.png" alt="Система быстрых платежей">
-                    </label>
+                    <div class="replenishment__payment-btns">
+                        <button type="button" class="replenishment__pay-btn btn btn--gr-yellow">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#wallet"></use>
+                            </svg>
+                            <span>Пополнить</span>
+                        </button>
+                        <a href="./payment-history.html" class="replenishment__history-btn btn">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#history"></use>
+                            </svg>
+                            История платежей
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="replenishment__promo">
-                <div class="replenishment__input">
-                    <svg aria-hidden="true" class="dark-grey">
-                        <use xlink:href="images/sprite.svg#discount"></use>
-                    </svg>
-                    <input type="text" placeholder="Promo code">
-                </div>
-                <div class="replenishment__bonus">
-                    <div class="replenishment__bonus-progress" style="width: 55%"></div>
-                    <span class="replenishment__bonus-text">Bonus for replenishment</span>
-                    <span class="replenishment__bonus-numb">55%</span>
-                </div>
-            </div>
-            <div class="replenishment__amount">
-                <div class="replenishment__input">
-                    <svg aria-hidden="true" class="dark-grey">
-                        <use xlink:href="images/sprite.svg#coins"></use>
-                    </svg>
-                    <input type="text" placeholder="Replenishment amount">
-                </div>
-                <div class="replenishment__credit">
-                    <span class="replenishment__credit-text">
-                        На баланс будет зачислено
-                        <span class="replenishment__credit-price">
-                            <span>7,000.24</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                            </svg>
-                        </span>
-                        и
-                        <span class="replenishment__credit-price">
-                            <span>2</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#token-yellow"></use>
-                            </svg>
-                        </span>
-                    </span>
-                </div>
-            </div>
-            <span class="replenishment__desc">Добавьте еще 
-                <button type="button">
-                    <span>146</span>
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                    </svg>
-                </button>, чтобы получить
-                <span class="replenishment__desc-tokens">
-                    <span>2</span>
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#token-yellow"></use>
-                    </svg>
-                </span>
-            </span>
-            <label class="replenishment__checkbox checkbox">
-                <input type="checkbox">
-                <span>I accept the terms of the <a href=".#">User Agreement</a></span>
-            </label>
-            <button type="button" class="btn btn--gr-yellow">
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#wallet"></use>
-                </svg>
-                <span>Пополнить</span>
-            </button>
         </div>
     </div>
 </section>
