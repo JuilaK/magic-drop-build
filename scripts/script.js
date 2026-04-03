@@ -14,6 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (!!filtersContainer && filtersContainer.classList.contains('cases-filters--fixed')) {
             balanceBlock.style.transform = window.innerWidth > 768 ? `translateX(-50%) translateY(${filtersContainer.clientHeight}px)` : `translateX(-50%) translateY(-4px)`;
         }
+        const caseAccordionBtns = document.querySelectorAll('.js-case-accordion-btn');
+
         !!caseAccordionBtns && caseAccordionBtns.forEach(btn => {
             updateCaseBlocksMaxHeight(btn);
         });
@@ -1100,8 +1102,28 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    window.addEventListener('scroll', displayUpBtn);
+    !!upBtn && window.addEventListener('scroll', displayUpBtn);
     // END Show and hidden Up btn
+
+    const caseVideos = document.querySelectorAll('.js-case-video');
+    caseVideos?.forEach(caseItem => {
+        const video = caseItem.querySelector('video');
+        let playPromise = null;
+        video.addEventListener('loadeddata', () => {
+            caseItem.classList.add('case--video-loaded');
+        });
+
+        caseItem.addEventListener('mouseenter', () => {
+            playPromise = video.play();
+        });
+        caseItem.addEventListener('mouseleave', () => {
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    video.pause();
+                }).catch(() => {});
+            }
+        });
+    });
 })
 
 function fix100vh() {

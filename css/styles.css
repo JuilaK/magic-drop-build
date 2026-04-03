@@ -6870,6 +6870,17 @@ span.header__volume-value {
 .case--unavailable .case__body {
   cursor: default;
 }
+.case--video-loaded .case__content .case__img {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .case--video-loaded .case__content .case__img {
+    opacity: 1;
+  }
+}
+.case--video-loaded .case__content .case__video {
+  opacity: 1;
+}
 
 .case__body {
   position: relative;
@@ -6963,6 +6974,7 @@ span.header__volume-value {
   top: 3.6rem;
   margin: 0 auto;
   width: 70%;
+  z-index: 1;
 }
 .case__header--special {
   display: -webkit-inline-box;
@@ -7073,6 +7085,27 @@ span.header__volume-value {
   transition: opacity 0.3s ease-out;
 }
 
+.case__content {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.case__content .case__img {
+  z-index: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.case__content .case__video {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .case__content .case__video {
+    display: none;
+  }
+}
+
 .case__img {
   position: relative;
   display: block;
@@ -7104,6 +7137,19 @@ span.header__volume-value {
   -o-object-fit: contain;
      object-fit: contain;
   will-change: transform;
+}
+
+.case__video {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 132%;
+  aspect-ratio: 1;
+  z-index: 1;
 }
 
 .case__btn {
@@ -29928,13 +29974,13 @@ span.draw-item__start-price svg {
   transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
 }
 .main-banner__cases-list .case__body {
-  background: none;
+  background: #0C0C1B;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
-.main-banner__cases-list .case__body::before {
+.main-banner__cases-list .case__body::before, .main-banner__cases-list .case__body::after {
   content: none !important;
 }
 
