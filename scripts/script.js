@@ -128,7 +128,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                     if (canvasName == "js-spine-body") {
                         scale = Math.min(w / size.x, h / size.y) * 0.9;
-                        skeleton.y = h / 2 + boundsCenterY * scale - 30;
+                        skeleton.y = h / 2 + boundsCenterY * scale - 160;
                     } else if (canvasName == "js-spine-arms") {
                         scale = Math.min(w / size.x, h / size.y) * 0.89;
                         skeleton.y = h / 2 + boundsCenterY * scale;
