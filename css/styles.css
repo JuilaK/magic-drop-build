@@ -13941,6 +13941,7 @@ span.draw-item__start-price svg {
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
   width: 32%;
+  text-align: center;
 }
 .upgrade-card__skin::after {
   position: absolute;
@@ -14112,7 +14113,6 @@ span.draw-item__start-price svg {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: center;
 }
 
 .upgrade-card__skin-title {
@@ -14128,6 +14128,61 @@ span.draw-item__start-price svg {
   margin-top: 0.2rem;
   color: #8484A7;
   font-size: 1rem;
+}
+
+.upgrade-card__skin-add-balance {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: -0.8rem;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+  margin-bottom: -2rem;
+  padding: 0.1rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .upgrade-card__skin-add-balance {
+    -webkit-column-gap: 0.1rem;
+       -moz-column-gap: 0.1rem;
+            column-gap: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 1.2rem;
+  }
+}
+.upgrade-card__skin-add-balance--rub svg {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.upgrade-card__skin-add-balance svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .upgrade-card__skin-add-balance svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+.upgrade-card__skin-add-balance span {
+  font-size: 1.2rem;
+}
+@media (max-width: 480px) {
+  .upgrade-card__skin-add-balance span {
+    font-size: 1.1rem;
+  }
 }
 
 .upgrade-card__general-info {
@@ -14611,8 +14666,8 @@ span.draw-item__start-price svg {
 }
 @media (max-width: 1024px) {
   .upgrade__body {
-    -ms-grid-columns: 1fr 1.6rem 1fr;
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: calc(50% - 0.8rem) 1.6rem calc(50% - 0.8rem);
+    grid-template-columns: repeat(2, calc(50% - 0.8rem));
     gap: 2.4rem 1.6rem;
   }
 }
@@ -15038,12 +15093,6 @@ span.draw-item__start-price svg {
   row-gap: 2.4rem;
   text-align: center;
 }
-.upgrade__skin-empty img {
-  width: 21rem;
-  height: 21rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .upgrade__skin-empty svg {
   width: 6.4rem;
   height: 6.4rem;
@@ -15054,12 +15103,12 @@ span.draw-item__start-price svg {
   font-size: 1.4rem;
   line-height: 150%;
 }
-.upgrade__skin-empty--balance .upgrade__skin-empty-img picture:first-child,
-.upgrade__skin-empty--balance .upgrade__skin-empty-img svg:first-child {
+.upgrade__skin-empty--balance .upgrade__skin-empty-img > svg:first-child,
+.upgrade__skin-empty--balance .upgrade__skin-empty-img > img:first-child {
   opacity: 0;
 }
-.upgrade__skin-empty--balance .upgrade__skin-empty-img picture:last-child,
-.upgrade__skin-empty--balance .upgrade__skin-empty-img svg:last-child {
+.upgrade__skin-empty--balance .upgrade__skin-empty-img > svg:last-child,
+.upgrade__skin-empty--balance .upgrade__skin-empty-img > img:last-child {
   opacity: 1;
 }
 
@@ -15067,7 +15116,7 @@ span.draw-item__start-price svg {
   display: -ms-grid;
   display: grid;
 }
-.upgrade__skin-empty-img picture, .upgrade__skin-empty-img svg {
+.upgrade__skin-empty-img > svg, .upgrade__skin-empty-img > img {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -15075,8 +15124,24 @@ span.draw-item__start-price svg {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.upgrade__skin-empty-img picture:last-child, .upgrade__skin-empty-img svg:last-child {
+.upgrade__skin-empty-img > svg:last-child, .upgrade__skin-empty-img > img:last-child {
   opacity: 0;
+}
+
+.upgrade__skin-empty-img-gun,
+.upgrade__skin-empty-img-wallet {
+  margin: 0 auto;
+  height: 10.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.upgrade__skin-empty-img-gun {
+  aspect-ratio: 1.5;
+}
+
+.upgrade__skin-empty-img-wallet {
+  aspect-ratio: 0.82;
 }
 
 .upgrade__skin-balance {
@@ -15141,14 +15206,13 @@ span.draw-item__start-price svg {
   height: 1.6rem;
   content: "";
   display: block;
-  right: 0.8rem;
+  right: 0.6rem;
 }
 .upgrade__range-input input {
-  padding-left: 0.8rem;
-  padding-right: 2.4rem;
-  -ms-flex-preferred-size: 8.8rem;
-      flex-basis: 8.8rem;
+  width: 11.6rem;
   height: 3rem;
+  padding-left: 0.8rem;
+  padding-right: 2rem;
 }
 .upgrade__range-input--rub::before {
   background: center/contain no-repeat url("../images/sprite.svg#coin-rub-grey");
@@ -15313,7 +15377,11 @@ span.draw-item__start-price svg {
 }
 
 .upgrade__skin-title {
+  max-width: 100%;
   color: #8484A7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .upgrade__skin-price {
@@ -15323,20 +15391,20 @@ span.draw-item__start-price svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 0.8rem;
-     -moz-column-gap: 0.8rem;
-          column-gap: 0.8rem;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
   margin-top: 0.8rem;
   font-weight: 900;
 }
 .upgrade__skin-price span {
   color: #FFFFFF;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 900;
 }
 .upgrade__skin-price svg {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2rem;
+  height: 2rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -15653,13 +15721,8 @@ span.draw-item__start-price svg {
 .upgrade__provability-title {
   position: relative;
   display: block;
-  margin-top: -4rem;
+  margin-top: -3.2rem;
   color: #D3D3FF;
-}
-@media (max-width: 1280px) {
-  .upgrade__provability-title {
-    margin-top: -3.6rem;
-  }
 }
 @media (max-width: 480px) {
   .upgrade__provability-title {
@@ -15670,18 +15733,12 @@ span.draw-item__start-price svg {
 .upgrade__provability-numb {
   position: relative;
   display: block;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   color: #9EFFA7;
-  font-size: 6.4rem;
+  font-size: 3.6rem;
   font-weight: 900;
   -webkit-text-decoration: uppercase;
           text-decoration: uppercase;
-}
-@media (max-width: 1280px) {
-  .upgrade__provability-numb {
-    margin-top: 1.6rem;
-    font-size: 5.6rem;
-  }
 }
 @media (max-width: 480px) {
   .upgrade__provability-numb {
