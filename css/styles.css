@@ -14287,6 +14287,16 @@ span.draw-item__start-price svg {
   height: 4.8rem;
   margin-top: -1.2rem;
 }
+.upgrade-card__skin-balance picture {
+  width: 80%;
+  display: block;
+}
+.upgrade-card__skin-balance img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .upgrade-card__footer {
   display: -webkit-box;
@@ -15093,55 +15103,69 @@ span.draw-item__start-price svg {
   row-gap: 2.4rem;
   text-align: center;
 }
-.upgrade__skin-empty svg {
-  width: 6.4rem;
-  height: 6.4rem;
-}
-.upgrade__skin-empty p {
+.upgrade__skin-empty > p {
   max-width: 20rem;
   color: #28283C;
   font-size: 1.4rem;
   line-height: 150%;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
 }
-.upgrade__skin-empty--balance .upgrade__skin-empty-img > svg:first-child,
-.upgrade__skin-empty--balance .upgrade__skin-empty-img > img:first-child {
+.upgrade__skin-empty--balance > p {
   opacity: 0;
 }
-.upgrade__skin-empty--balance .upgrade__skin-empty-img > svg:last-child,
-.upgrade__skin-empty--balance .upgrade__skin-empty-img > img:last-child {
+.upgrade__skin-empty--balance .upgrade__skin-empty-img-gun {
+  opacity: 0;
+}
+.upgrade__skin-empty--balance .upgrade__skin-empty-img-coins {
   opacity: 1;
 }
 
 .upgrade__skin-empty-img {
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
-.upgrade__skin-empty-img > svg, .upgrade__skin-empty-img > img {
+
+.upgrade__skin-empty-img-gun,
+.upgrade__skin-empty-img-coins {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.upgrade__skin-empty-img > svg:last-child, .upgrade__skin-empty-img > img:last-child {
-  opacity: 0;
-}
-
-.upgrade__skin-empty-img-gun,
-.upgrade__skin-empty-img-wallet {
-  margin: 0 auto;
-  height: 10.4rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 
 .upgrade__skin-empty-img-gun {
+  height: 10.4rem;
   aspect-ratio: 1.5;
 }
 
-.upgrade__skin-empty-img-wallet {
-  aspect-ratio: 0.82;
+.upgrade__skin-empty-img-coins {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 2rem);
+  width: 50%;
+  aspect-ratio: 1.33;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (max-width: 1440px) {
+  .upgrade__skin-empty-img-coins {
+    left: 50%;
+  }
+}
+.upgrade__skin-empty-img-coins img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .upgrade__skin-balance {
