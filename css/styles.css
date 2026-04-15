@@ -30196,6 +30196,7 @@ span.draw-item__start-price svg {
 @media (max-width: 768px) {
   .hero-banners__slider .splide__pagination {
     top: auto;
+    right: 0;
     bottom: 0.6rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -30280,8 +30281,42 @@ span.draw-item__start-price svg {
     padding: 2.4rem;
   }
 }
+@media (max-width: 768px) {
+  .hero-banners__slide {
+    padding-bottom: 3.2rem;
+  }
+}
 .hero-banners__slide--telegram .hero-banners__slide-desc {
   max-width: 31rem;
+}
+.hero-banners__slide.another {
+  background: radial-gradient(164.4% 123.58% at 67.16% 103.74%, #1e1e43 0%, #0c0c1b 100%);
+  overflow: hidden;
+}
+.hero-banners__slide.another .hero-banners__slide-img {
+  z-index: 0;
+}
+.hero-banners__slide.another .hero-banners__slide-img::before {
+  content: none;
+}
+@media (max-width: 768px) {
+  .hero-banners__slide.another .hero-banners__slide-img::before {
+    content: none;
+  }
+}
+@media (max-width: 480px) {
+  .hero-banners__slide.another .hero-banners__slide-img {
+    left: -50%;
+  }
+}
+.hero-banners__slide.another .hero-banners__slide-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom right;
+     object-position: bottom right;
+}
+.hero-banners__slide.another .hero-banners__slide-info {
+  z-index: 1;
 }
 
 .hero-banners__slide-img {
@@ -30292,11 +30327,14 @@ span.draw-item__start-price svg {
 .hero-banners__slide-img::before {
   position: absolute;
   inset: 0;
-  background-color: rgba(12, 12, 27, 0.3);
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(12, 12, 27, 0.9)), color-stop(80%, rgba(12, 12, 27, 0.1)));
+  background-image: linear-gradient(90deg, rgba(12, 12, 27, 0.9) 0%, rgba(12, 12, 27, 0.1) 80%);
 }
 @media (max-width: 768px) {
   .hero-banners__slide-img::before {
-    content: "";
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(12, 12, 27, 0.6)), to(rgba(12, 12, 27, 0.6)));
+    background-image: linear-gradient(90deg, rgba(12, 12, 27, 0.6) 0%, rgba(12, 12, 27, 0.6) 100%);
   }
 }
 .hero-banners__slide-img img {
@@ -30307,11 +30345,23 @@ span.draw-item__start-price svg {
   -o-object-position: top right;
      object-position: top right;
 }
+@media (max-width: 480px) {
+  .hero-banners__slide-img img {
+    -o-object-position: top center;
+       object-position: top center;
+  }
+}
+@media (max-width: 480px) {
+  .hero-banners__slide-img--mobile-img img {
+    -o-object-position: 80% top;
+       object-position: 80% top;
+  }
+}
 
 .hero-banners__slide-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -30326,6 +30376,42 @@ span.draw-item__start-price svg {
   .hero-banners__slide-info {
     row-gap: 1.2rem;
   }
+}
+.hero-banners__slide-info--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero-banners__slide-info--center .hero-banners__slide-img-title {
+  width: 90%;
+}
+
+.hero-banners__slide-img-title {
+  margin-top: -2.4rem;
+  width: 40rem;
+  max-width: 40rem;
+  aspect-ratio: 1.76;
+}
+@media (max-width: 1024px) {
+  .hero-banners__slide-img-title {
+    margin-top: -0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-banners__slide-img-title {
+    width: 70%;
+  }
+}
+@media (max-width: 370px) {
+  .hero-banners__slide-img-title {
+    width: 85%;
+  }
+}
+.hero-banners__slide-img-title > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero-banners__slide-title {
@@ -30371,6 +30457,19 @@ span.draw-item__start-price svg {
   margin-top: -0.4rem;
 }
 
+.hero-banners__slide-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
 .hero-banners__slide-btn {
   margin-top: auto;
   width: 18rem;
@@ -30391,6 +30490,18 @@ span.draw-item__start-price svg {
             box-shadow: none;
     background: rgba(255, 255, 255, 0.7);
     color: #0C0C1B;
+  }
+}
+.hero-banners__slide-btn--accent {
+  background: #fcb72f;
+  color: #22180d;
+}
+@media (any-hover: hover) {
+  .hero-banners__slide-btn--accent:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #fdb312;
+    color: #22180d;
   }
 }
 
