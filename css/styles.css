@@ -14683,8 +14683,8 @@ span.draw-item__start-price svg {
 }
 @media (max-width: 768px) {
   .upgrade__body {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
     row-gap: 1.6rem;
   }
 }
