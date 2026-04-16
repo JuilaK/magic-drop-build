@@ -15169,11 +15169,8 @@ span.draw-item__start-price svg {
 }
 
 .upgrade__skin-balance {
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
   position: absolute;
-  left: 50%;
+  left: calc(50% - 1rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15187,10 +15184,24 @@ span.draw-item__start-price svg {
   -webkit-column-gap: 0.2rem;
      -moz-column-gap: 0.2rem;
           column-gap: 0.2rem;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 1440px) {
+  .upgrade__skin-balance {
+    left: 50%;
+  }
 }
 .upgrade__skin-balance span {
   font-size: 1.4rem;
   font-weight: 600;
+}
+.upgrade__skin-balance svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .upgrade__range {
@@ -15361,7 +15372,7 @@ span.draw-item__start-price svg {
   width: 80%;
   aspect-ratio: 1.36;
   background: radial-gradient(50% 50% at 50% 50%, #0b0b1a 0%, rgba(11, 11, 26, 0) 100%);
-  opacity: 0.78;
+  opacity: 0.6;
 }
 .upgrade__skin-img::after {
   -webkit-transform: translate(-50%, -50%);
@@ -15387,8 +15398,9 @@ span.draw-item__start-price svg {
   z-index: 1;
 }
 .upgrade__skin-img img {
-  display: inline-block;
   width: 86%;
+  height: auto;
+  display: inline-block;
   max-width: 31.6rem;
   aspect-ratio: 1;
   -o-object-fit: contain;
@@ -15403,6 +15415,7 @@ span.draw-item__start-price svg {
 .upgrade__skin-title {
   max-width: 100%;
   color: #8484A7;
+  font-size: 1.4rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -15423,12 +15436,12 @@ span.draw-item__start-price svg {
 }
 .upgrade__skin-price span {
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 900;
 }
 .upgrade__skin-price svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
