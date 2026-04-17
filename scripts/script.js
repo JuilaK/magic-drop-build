@@ -746,6 +746,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
     !!upgradeSkinBalance && upgradeSkinBalanceInput.addEventListener('input', checkUpgradeBalanceValue);
     !!upgradeSkinBalance && checkUpgradeBalanceValue();
+
+    const upgradeCoefficientes = document.querySelectorAll(".js-upgrade .js-coefficient");
+    const upgradeRightSkin = document.querySelector('.js-upgrade-skin');
+
+    !!upgradeCoefficientes && upgradeCoefficientes.forEach(coefficient => {
+        coefficient.addEventListener('change', (event) => {
+            upgradeRightSkin.classList.add('upgrade__skin--change');
+            setTimeout(() => {
+                    upgradeRightSkin.classList.remove('upgrade__skin--change');
+            }, 600);
+        });
+    });
     // END Upgrade
 
     // Create a contract
@@ -982,7 +994,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
             previousCheckedId = currentCheckedId;
         });
-    })
+    });
     
     // Case Accordions
     const caseAccordionBtns = document.querySelectorAll('.js-case-accordion-btn');

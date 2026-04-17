@@ -864,7 +864,7 @@ address {
   --skin-drop-height: 191;
   --skin-img-height: 115;
   --event-progress: 0%;
-  --provability-zone: 0%;
+  --provability-zone: 0;
 }
 @media (max-width: 768px) {
   :root {
@@ -14892,6 +14892,29 @@ span.draw-item__start-price svg {
   }
 }
 
+@-webkit-keyframes changeUpgradeSkin {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(25deg) scale(0.6);
+            transform: rotate(25deg) scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes changeUpgradeSkin {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(25deg) scale(0.6);
+            transform: rotate(25deg) scale(0.6);
+    opacity: 0;
+  }
+}
 .upgrade__skin {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15075,6 +15098,10 @@ span.draw-item__start-price svg {
     background: -webkit-gradient(linear, left top, left bottom, from(#B2FF00), to(rgba(18, 18, 31, 0)));
     background: linear-gradient(180deg, #B2FF00 0%, rgba(18, 18, 31, 0) 100%);
   }
+}
+.upgrade__skin--change .upgrade__skin-img-wrap {
+  -webkit-animation: changeUpgradeSkin 0.6s linear forwards;
+          animation: changeUpgradeSkin 0.6s linear forwards;
 }
 
 .upgrade__skin-desc {
@@ -15351,8 +15378,8 @@ span.draw-item__start-price svg {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-bottom: -0.8rem;
-  margin-top: -1.6rem;
+  margin-bottom: -2.4rem;
+  margin-top: -0.8rem;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
@@ -15391,6 +15418,7 @@ span.draw-item__start-price svg {
 }
 .upgrade__skin-img .upgrade__skin-img-wrap {
   position: relative;
+  width: 100%;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
@@ -15398,7 +15426,7 @@ span.draw-item__start-price svg {
   z-index: 1;
 }
 .upgrade__skin-img img {
-  width: 86%;
+  width: 77%;
   height: auto;
   display: inline-block;
   max-width: 31.6rem;
@@ -15604,11 +15632,13 @@ span.draw-item__start-price svg {
   position: absolute;
   left: 50%;
   width: 100%;
-  height: var(--provability-zone);
+  height: 100%;
   content: "";
   display: block;
   bottom: 0;
   background: bottom center/cover no-repeat url("../images/upgrade/upgrade-progress-bg.svg");
+  -webkit-mask: conic-gradient(from calc(180deg - 360deg * var(--provability-zone) / 2), #000 0 calc(360deg * var(--provability-zone)), transparent calc(360deg * var(--provability-zone)));
+  mask: conic-gradient(from calc(180deg - 360deg * var(--provability-zone) / 2), #000 0 calc(360deg * var(--provability-zone)), transparent calc(360deg * var(--provability-zone)));
 }
 .upgrade__provability-progress::after {
   -webkit-transform: translate(-50%, -50%);
@@ -15709,23 +15739,23 @@ span.draw-item__start-price svg {
 
 @-webkit-keyframes wave {
   0% {
-    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(0deg);
-            transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(0deg);
+    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(0deg);
+            transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(360deg);
-            transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(360deg);
+    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(360deg);
+            transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(360deg);
   }
 }
 
 @keyframes wave {
   0% {
-    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(0deg);
-            transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(0deg);
+    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(0deg);
+            transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(360deg);
-            transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem)) rotate(360deg);
+    -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(360deg);
+            transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem)) rotate(360deg);
   }
 }
 .upgrade__provability-chance {
@@ -15735,7 +15765,7 @@ span.draw-item__start-price svg {
   position: absolute;
   left: 50%;
   width: 100%;
-  height: calc(var(--provability-zone) * 1.2);
+  height: calc(var(--provability-zone) * 100% * 1.2);
   bottom: 0;
   background: bottom center/cover no-repeat url("../images/upgrade/upgrade-progress-bg-2.svg");
 }
@@ -15746,9 +15776,9 @@ span.draw-item__start-price svg {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem));
-      -ms-transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem));
-          transform: translate(-50%, calc(-90% - var(--provability-zone) / 25 + 0.8rem));
+  -webkit-transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem));
+      -ms-transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem));
+          transform: translate(-50%, calc(-90% - var(--provability-zone) * 100% / 25 + 0.8rem));
   border-radius: 43%;
   background-color: #19192A;
   -webkit-animation: wave 8s linear infinite;
