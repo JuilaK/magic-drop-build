@@ -14892,27 +14892,49 @@ span.draw-item__start-price svg {
   }
 }
 
-@-webkit-keyframes displayUpgradeSkin {
-  0%, 100% {
+@-webkit-keyframes hiddenUpgradeSkin {
+  0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  50% {
+  100% {
     -webkit-transform: rotate(25deg) scale(0.6);
             transform: rotate(25deg) scale(0.6);
     opacity: 0;
   }
 }
 
-@keyframes displayUpgradeSkin {
-  0%, 100% {
+@keyframes hiddenUpgradeSkin {
+  0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  50% {
+  100% {
     -webkit-transform: rotate(25deg) scale(0.6);
             transform: rotate(25deg) scale(0.6);
     opacity: 0;
+  }
+}
+@-webkit-keyframes displayUpgradeSkin {
+  0% {
+    -webkit-transform: rotate(25deg) scale(0.6);
+            transform: rotate(25deg) scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes displayUpgradeSkin {
+  0% {
+    -webkit-transform: rotate(25deg) scale(0.6);
+            transform: rotate(25deg) scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 .upgrade__skin {
@@ -15100,11 +15122,12 @@ span.draw-item__start-price svg {
   }
 }
 .upgrade__skin--hidden .upgrade__skin-img-wrap {
-  -webkit-animation: displayUpgradeSkin 0.3s linear forwards;
-          animation: displayUpgradeSkin 0.3s linear forwards;
+  -webkit-animation: hiddenUpgradeSkin 0.3s both;
+          animation: hiddenUpgradeSkin 0.3s both;
 }
 .upgrade__skin--display .upgrade__skin-img-wrap {
-  animation: displayUpgradeSkin 0.3s linear forwards reverse;
+  -webkit-animation: displayUpgradeSkin 0.3s both;
+          animation: displayUpgradeSkin 0.3s both;
 }
 
 .upgrade__skin-desc {
