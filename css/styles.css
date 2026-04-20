@@ -14892,7 +14892,7 @@ span.draw-item__start-price svg {
   }
 }
 
-@-webkit-keyframes changeUpgradeSkin {
+@-webkit-keyframes displayUpgradeSkin {
   0%, 100% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -14904,7 +14904,7 @@ span.draw-item__start-price svg {
   }
 }
 
-@keyframes changeUpgradeSkin {
+@keyframes displayUpgradeSkin {
   0%, 100% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -15099,9 +15099,12 @@ span.draw-item__start-price svg {
     background: linear-gradient(180deg, #B2FF00 0%, rgba(18, 18, 31, 0) 100%);
   }
 }
-.upgrade__skin--change .upgrade__skin-img-wrap {
-  -webkit-animation: changeUpgradeSkin 0.6s linear forwards;
-          animation: changeUpgradeSkin 0.6s linear forwards;
+.upgrade__skin--hidden .upgrade__skin-img-wrap {
+  -webkit-animation: displayUpgradeSkin 0.3s linear forwards;
+          animation: displayUpgradeSkin 0.3s linear forwards;
+}
+.upgrade__skin--display .upgrade__skin-img-wrap {
+  animation: displayUpgradeSkin 0.3s linear forwards reverse;
 }
 
 .upgrade__skin-desc {
@@ -15430,7 +15433,6 @@ span.draw-item__start-price svg {
   height: auto;
   display: inline-block;
   max-width: 31.6rem;
-  aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
 }

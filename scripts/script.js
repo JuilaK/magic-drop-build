@@ -752,10 +752,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     !!upgradeCoefficientes && upgradeCoefficientes.forEach(coefficient => {
         coefficient.addEventListener('change', (event) => {
-            upgradeRightSkin.classList.add('upgrade__skin--change');
+            upgradeRightSkin.classList.add('upgrade__skin--hidden');
             setTimeout(() => {
-                    upgradeRightSkin.classList.remove('upgrade__skin--change');
-            }, 600);
+                    upgradeRightSkin.classList.remove('upgrade__skin--hidden');
+                    upgradeRightSkin.classList.add('upgrade__skin--display');
+            }, 300);
         });
     });
     // END Upgrade
