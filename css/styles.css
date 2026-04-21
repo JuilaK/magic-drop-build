@@ -14559,6 +14559,10 @@ span.draw-item__start-price svg {
   margin: -16rem auto -28rem;
   overflow: hidden;
   pointer-events: none;
+  opacity: 0;
+}
+.upgrade__spine--ready {
+  opacity: 1;
 }
 @media (max-width: 1440px) {
   .upgrade__spine {
@@ -14580,14 +14584,12 @@ span.draw-item__start-price svg {
 
 .upgrade__spine-body,
 .upgrade__spine-arms {
+  display: block;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
   aspect-ratio: auto;
-  opacity: 0;
-  -webkit-transition: opacity 0.1s ease;
-  transition: opacity 0.1s ease;
 }
 
 .upgrade__spine-body {

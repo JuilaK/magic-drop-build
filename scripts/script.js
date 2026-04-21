@@ -59,18 +59,14 @@ window.addEventListener('DOMContentLoaded', () => {
             console.error(`WebGL не поддерживается для ${canvasName}`);
             return;
         }
+        gl.clearColor(0, 0, 0, 0);
+        gl.clear(gl.COLOR_BUFFER_BIT);
 
         const renderer = new spine.webgl.SceneRenderer(canvas, gl);
         const assetManager = new spine.webgl.AssetManager(gl);
 
         assetManager.loadText(JSON_PATH);
         assetManager.loadTextureAtlas(ATLAS_PATH);
-
-        const resizeObserver = new ResizeObserver(() => {
-            updateCanvasSize();
-            updateCamera(canvas.width, canvas.height);
-        });
-        resizeObserver.observe(spineContainer);
 
         updateCanvasSize();
 
@@ -157,7 +153,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
                     if (firstRender) {
                         firstRender = false;
-                        resolve();
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => resolve());
+                        });
                     }
 
                     requestAnimationFrame(render);
@@ -173,8 +171,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
             // Показываем оба canvas только когда обе анимации готовы
             Promise.all([bodyReady, armsReady]).then(() => {
-                document.querySelector('.js-spine-body').style.opacity = '1';
-                document.querySelector('.js-spine-arms').style.opacity = '1';
+                setTimeout(() => {
+                    spineContainer.classList.add('upgrade__spine--ready');
+                }, 300);
             });
         }
     }
