@@ -3426,12 +3426,6 @@ textarea {
 @media (max-width: 1024px) {
   .header__top-btns-wrap {
     margin-left: 0;
-    margin-bottom: 1.2rem;
-  }
-}
-@media (max-width: 768px) {
-  .header__top-btns-wrap {
-    margin-bottom: 0;
   }
 }
 .header__top-btns-wrap > .btn + .btn {
@@ -3623,10 +3617,10 @@ textarea {
 }
 @media (max-width: 480px) {
   .header__profile {
-    -webkit-column-gap: 0.8rem;
-       -moz-column-gap: 0.8rem;
-            column-gap: 0.8rem;
-    margin-left: 0.8rem;
+    -webkit-column-gap: 0.4rem;
+       -moz-column-gap: 0.4rem;
+            column-gap: 0.4rem;
+    margin-left: 0.4rem;
   }
 }
 
@@ -3718,7 +3712,7 @@ textarea {
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
   position: relative;
-  padding: 0.4rem;
+  padding: 0.6rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#1D1D2D), to(#171724));
   background: linear-gradient(180deg, #1D1D2D 0%, #171724 100%);
   border-radius: 0.8rem;
@@ -3746,8 +3740,8 @@ textarea {
 }
 
 .header__profile-img {
-  width: 4rem;
-  height: 4rem;
+  width: 4.4rem;
+  height: 4.4rem;
   position: relative;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -3841,9 +3835,9 @@ textarea {
     margin-left: 1.6rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 768px) {
   .btn.header__burger {
-    margin-left: 1.2rem;
+    margin-left: 0.8rem;
   }
 }
 
