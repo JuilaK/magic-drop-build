@@ -16248,6 +16248,43 @@ span.draw-item__start-price svg {
   color: #8484A7;
 }
 
+.upgrade__win-item-provably,
+.upgrade__fail-provably {
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .upgrade__win-item-provably,
+  .upgrade__fail-provably {
+    font-size: 0.9rem;
+  }
+}
+.upgrade__win-item-provably > a,
+.upgrade__fail-provably > a {
+  color: #ffe500;
+  font-size: 1rem;
+  text-decoration-line: underline;
+  white-space: nowrap;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+@media (max-width: 480px) {
+  .upgrade__win-item-provably > a,
+  .upgrade__fail-provably > a {
+    font-size: 0.9rem;
+  }
+}
+@media (any-hover: hover) {
+  .upgrade__win-item-provably > a:hover,
+  .upgrade__fail-provably > a:hover {
+    opacity: 1;
+  }
+}
+
 .upgrade__fail-msg {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -16279,6 +16316,11 @@ span.draw-item__start-price svg {
 .upgrade__fail-msg img {
   margin-top: 1.6rem;
   width: 90%;
+}
+
+.upgrade__fail-provably {
+  width: 88%;
+  color: #8484A7;
 }
 
 .upgrade-items {
