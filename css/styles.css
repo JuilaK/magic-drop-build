@@ -14521,8 +14521,8 @@ span.draw-item__start-price svg {
 .upgrade--fail .upgrade__fail-msg {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.3s ease-out var(--rotation-arrow-duration), visibility 0s ease-out;
-  transition: opacity 0.3s ease-out var(--rotation-arrow-duration), visibility 0s ease-out;
+  -webkit-transition: opacity 0.3s ease-out var(--rotation-arrow-duration), visibility 0s ease-out var(--rotation-arrow-duration);
+  transition: opacity 0.3s ease-out var(--rotation-arrow-duration), visibility 0s ease-out var(--rotation-arrow-duration);
 }
 .upgrade--fail.upgrade--fast .upgrade__provability-arrow {
   -webkit-animation: fastRoundArrow 0.75s ease-out forwards;
