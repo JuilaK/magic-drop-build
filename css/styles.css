@@ -33517,21 +33517,18 @@ dd.swap__skin-price svg {
 .event {
   overflow: hidden;
 }
-
-.event__banner {
-  position: relative;
-  margin-top: 2rem;
+.event--christmas .event__banner {
   background: top left/cover no-repeat -webkit-image-set(url("../images/event/bg-banner.webp") type("image/webp") 1x, url("../images/event/bg-banner@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner.jpg") type("image/jpg") 1x, url("../images/event/bg-banner@2x.jpg") type("image/jpg") 2x);
   background: top left/cover no-repeat image-set(url("../images/event/bg-banner.webp") type("image/webp") 1x, url("../images/event/bg-banner@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner.jpg") type("image/jpg") 1x, url("../images/event/bg-banner@2x.jpg") type("image/jpg") 2x);
   border-radius: 1.2rem;
 }
 @media (max-width: 768px) {
-  .event__banner {
+  .event--christmas .event__banner {
     background: top center/cover no-repeat -webkit-image-set(url("../images/event/bg-banner-mobile.webp") type("image/webp") 1x, url("../images/event/bg-banner-mobile@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-mobile.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-mobile@2x.jpg") type("image/jpg") 2x);
     background: top center/cover no-repeat image-set(url("../images/event/bg-banner-mobile.webp") type("image/webp") 1x, url("../images/event/bg-banner-mobile@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-mobile.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-mobile@2x.jpg") type("image/jpg") 2x);
   }
 }
-.event__banner::before {
+.event--christmas .event__banner::before {
   position: absolute;
   top: 0;
   left: 2%;
@@ -33546,11 +33543,11 @@ dd.swap__skin-price svg {
           transform: translateY(-43%);
 }
 @media (max-width: 768px) {
-  .event__banner::before {
+  .event--christmas .event__banner::before {
     content: none;
   }
 }
-.event__banner::after {
+.event--christmas .event__banner::after {
   position: absolute;
   top: 0;
   right: 2%;
@@ -33565,7 +33562,7 @@ dd.swap__skin-price svg {
           transform: translateY(-36%);
 }
 @media (max-width: 768px) {
-  .event__banner::after {
+  .event--christmas .event__banner::after {
     right: 50%;
     -webkit-transform: translate(50%, -36%);
         -ms-transform: translate(50%, -36%);
@@ -33573,6 +33570,461 @@ dd.swap__skin-price svg {
     width: 90%;
     max-width: 53.5rem;
   }
+}
+.event--christmas .event__banner-img {
+  width: 52.5rem;
+  aspect-ratio: 1.58;
+  background: center/contain no-repeat -webkit-image-set(url("../images/event/magic-christmas-text.webp") type("image/webp") 1x, url("../images/event/magic-christmas-text@2x.webp") type("image/webp") 2x, url("../images/event/magic-christmas-text.png") type("image/png") 1x, url("../images/event/magic-christmas-text@2x.png") type("image/png") 2x);
+  background: center/contain no-repeat image-set(url("../images/event/magic-christmas-text.webp") type("image/webp") 1x, url("../images/event/magic-christmas-text@2x.webp") type("image/webp") 2x, url("../images/event/magic-christmas-text.png") type("image/png") 1x, url("../images/event/magic-christmas-text@2x.png") type("image/png") 2x);
+}
+@media (max-width: 768px) {
+  .event--christmas .event__banner-img {
+    width: 50vw;
+  }
+}
+.event--christmas .event__drops::before, .event--christmas .event__drops::after {
+  position: absolute;
+  top: 4.8rem;
+  content: "";
+  display: block;
+  aspect-ratio: 0.43;
+  z-index: -1;
+}
+.event--christmas .event__drops::before {
+  left: -19rem;
+  width: 28.5rem;
+  background: bottom right/contain no-repeat -webkit-image-set(url("../images/event/character-1.webp") type("image/webp") 1x, url("../images/event/character-1@2x.webp") type("image/webp") 2x, url("../images/event/character-1.png") type("image/png") 1x, url("../images/event/character-1@2x.png") type("image/png") 2x);
+  background: bottom right/contain no-repeat image-set(url("../images/event/character-1.webp") type("image/webp") 1x, url("../images/event/character-1@2x.webp") type("image/webp") 2x, url("../images/event/character-1.png") type("image/png") 1x, url("../images/event/character-1@2x.png") type("image/png") 2x);
+}
+@media (max-width: 1900px) {
+  .event--christmas .event__drops::before {
+    left: -9vw;
+  }
+}
+@media (max-width: 1500px) {
+  .event--christmas .event__drops::before {
+    content: none;
+  }
+}
+.event--christmas .event__drops::after {
+  right: -19rem;
+  width: 28.3rem;
+  background: bottom left/contain no-repeat -webkit-image-set(url("../images/event/character-2.webp") type("image/webp") 1x, url("../images/event/character-2@2x.webp") type("image/webp") 2x, url("../images/event/character-2.png") type("image/png") 1x, url("../images/event/character-2@2x.png") type("image/png") 2x);
+  background: bottom left/contain no-repeat image-set(url("../images/event/character-2.webp") type("image/webp") 1x, url("../images/event/character-2@2x.webp") type("image/webp") 2x, url("../images/event/character-2.png") type("image/png") 1x, url("../images/event/character-2@2x.png") type("image/png") 2x);
+}
+@media (max-width: 1900px) {
+  .event--christmas .event__drops::after {
+    right: -9vw;
+  }
+}
+@media (max-width: 1500px) {
+  .event--christmas .event__drops::after {
+    content: none;
+  }
+}
+.event--christmas .event__tabs-container::after {
+  position: absolute;
+  top: 1.6rem;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+  height: 6.9rem;
+  background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.8rem right 1rem/20.4rem 3rem no-repeat -webkit-image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top 0.4rem left 1.8rem/20rem 5rem no-repeat -webkit-image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.8rem right 1rem/20.4rem 3rem no-repeat image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top 0.4rem left 1.8rem/20rem 5rem no-repeat image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translateY(calc(-1.6rem - 41%));
+      -ms-transform: translateY(calc(-1.6rem - 41%));
+          transform: translateY(calc(-1.6rem - 41%));
+  pointer-events: none;
+}
+@media (max-width: 1280px) {
+  .event--christmas .event__tabs-container::after {
+    background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+  }
+}
+@media (max-width: 768px) {
+  .event--christmas .event__tabs-container::after {
+    width: 90%;
+    height: auto;
+    left: 50%;
+    right: auto;
+    max-width: 53.5rem;
+    aspect-ratio: 8;
+    background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    background: top center/contain no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+    -webkit-transform: translate(-50%, calc(-0.8rem - 51%));
+        -ms-transform: translate(-50%, calc(-0.8rem - 51%));
+            transform: translate(-50%, calc(-0.8rem - 51%));
+  }
+}
+.event--christmas .event__prize-content {
+  background: center/100% 100% no-repeat -webkit-image-set(url("../images/event/ice-cover.webp") type("image/webp") 1x, url("../images/event/ice-cover@2x.webp") type("image/webp") 2x, url("../images/event/ice-cover.jpg") type("image/jpg") 1x, url("../images/event/ice-cover@2x.jpg") type("image/jpg") 2x);
+  background: center/100% 100% no-repeat image-set(url("../images/event/ice-cover.webp") type("image/webp") 1x, url("../images/event/ice-cover@2x.webp") type("image/webp") 2x, url("../images/event/ice-cover.jpg") type("image/jpg") 1x, url("../images/event/ice-cover@2x.jpg") type("image/jpg") 2x);
+}
+.event--christmas .event__leaders::before {
+  position: absolute;
+  top: 0;
+  right: 29%;
+  content: "";
+  display: block;
+  width: 23.2rem;
+  aspect-ratio: 4;
+  background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  background: top center/contain no-repeat image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translate(50%, -43%);
+      -ms-transform: translate(50%, -43%);
+          transform: translate(50%, -43%);
+}
+@media (max-width: 1024px) {
+  .event--christmas .event__leaders::before {
+    right: 50%;
+    width: 20rem;
+    -webkit-transform: translate(50%, -43%);
+        -ms-transform: translate(50%, -43%);
+            transform: translate(50%, -43%);
+  }
+}
+.event--christmas .event__how-block::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 55.2rem;
+  aspect-ratio: 8;
+  background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+  background: top center/contain no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
+  -webkit-transform: translate(-50%, -42%);
+      -ms-transform: translate(-50%, -42%);
+          transform: translate(-50%, -42%);
+}
+@media (max-width: 768px) {
+  .event--christmas .event__how-block::before {
+    width: 100%;
+  }
+}
+.event--spring {
+  margin-top: -6.4rem;
+  padding-top: 6.4rem;
+  background: top left/100% no-repeat image-set(url("../images/event/bg-banner-spring.webp") type("image/webp") 1x, url("../images/event/bg-banner-spring@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-spring.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-spring@2x.jpg") type("image/jpg") 2x), -webkit-gradient(linear, left top, left bottom, color-stop(90%, #080F08), to(#0C0C1B));
+  background: top left/100% no-repeat -webkit-image-set(url("../images/event/bg-banner-spring.webp") type("image/webp") 1x, url("../images/event/bg-banner-spring@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-spring.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-spring@2x.jpg") type("image/jpg") 2x), linear-gradient(180deg, #080F08 90%, #0C0C1B 100%);
+  background: top left/100% no-repeat image-set(url("../images/event/bg-banner-spring.webp") type("image/webp") 1x, url("../images/event/bg-banner-spring@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-spring.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-spring@2x.jpg") type("image/jpg") 2x), linear-gradient(180deg, #080F08 90%, #0C0C1B 100%);
+}
+@media (max-width: 768px) {
+  .event--spring {
+    margin-top: 0;
+    padding-top: 0;
+    background: top left/100% no-repeat -webkit-image-set(url("../images/event/bg-banner-spring-mobile.webp") type("image/webp") 1x, url("../images/event/bg-banner-spring-mobile@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-spring-mobile.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-spring-mobile@2x.jpg") type("image/jpg") 2x);
+    background: top left/100% no-repeat image-set(url("../images/event/bg-banner-spring-mobile.webp") type("image/webp") 1x, url("../images/event/bg-banner-spring-mobile@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-spring-mobile.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-spring-mobile@2x.jpg") type("image/jpg") 2x);
+  }
+}
+.event--spring .event__banner-img {
+  width: 53rem;
+  aspect-ratio: 1.75;
+  background: center/contain no-repeat -webkit-image-set(url("../images/event/spring-text.webp") type("image/webp") 1x, url("../images/event/spring-text@2x.webp") type("image/webp") 2x, url("../images/event/spring-text.png") type("image/png") 1x, url("../images/event/spring-text@2x.png") type("image/png") 2x);
+  background: center/contain no-repeat image-set(url("../images/event/spring-text.webp") type("image/webp") 1x, url("../images/event/spring-text@2x.webp") type("image/webp") 2x, url("../images/event/spring-text.png") type("image/png") 1x, url("../images/event/spring-text@2x.png") type("image/png") 2x);
+}
+@media (max-width: 768px) {
+  .event--spring .event__banner-img {
+    width: 50vw;
+  }
+}
+.event--spring .event__banner-desc,
+.event--spring .event__banner-xp-text,
+.event--spring span.event__banner-xp-current,
+.event--spring .event__banner-active {
+  color: #D5F8D5;
+}
+.event--spring .event__banner-lvl-block,
+.event--spring .event__banner-boost-block {
+  background: #080F08;
+}
+.event--spring .event__banner-lvl-line {
+  background-color: #3B4D3B;
+}
+.event--spring .event__drops::before, .event--spring .event__drops::after {
+  position: absolute;
+  top: 4.8rem;
+  content: "";
+  display: block;
+}
+.event--spring .event__drops::before {
+  left: -12rem;
+  width: 13rem;
+  aspect-ratio: 0.21;
+  background: bottom right/contain no-repeat -webkit-image-set(url("../images/event/spring-character-1.webp") type("image/webp") 1x, url("../images/event/spring-character-1@2x.webp") type("image/webp") 2x, url("../images/event/spring-character-1.png") type("image/png") 1x, url("../images/event/spring-character-1@2x.png") type("image/png") 2x);
+  background: bottom right/contain no-repeat image-set(url("../images/event/spring-character-1.webp") type("image/webp") 1x, url("../images/event/spring-character-1@2x.webp") type("image/webp") 2x, url("../images/event/spring-character-1.png") type("image/png") 1x, url("../images/event/spring-character-1@2x.png") type("image/png") 2x);
+}
+@media (max-width: 1900px) {
+  .event--spring .event__drops::before {
+    left: -7vw;
+  }
+}
+@media (max-width: 1500px) {
+  .event--spring .event__drops::before {
+    content: none;
+  }
+}
+.event--spring .event__drops::after {
+  right: -17.2rem;
+  width: 21.4rem;
+  aspect-ratio: 0.35;
+  background: bottom left/contain no-repeat -webkit-image-set(url("../images/event/spring-character-2.webp") type("image/webp") 1x, url("../images/event/spring-character-2@2x.webp") type("image/webp") 2x, url("../images/event/spring-character-2.png") type("image/png") 1x, url("../images/event/spring-character-2@2x.png") type("image/png") 2x);
+  background: bottom left/contain no-repeat image-set(url("../images/event/spring-character-2.webp") type("image/webp") 1x, url("../images/event/spring-character-2@2x.webp") type("image/webp") 2x, url("../images/event/spring-character-2.png") type("image/png") 1x, url("../images/event/spring-character-2@2x.png") type("image/png") 2x);
+}
+@media (max-width: 1500px) {
+  .event--spring .event__drops::after {
+    content: none;
+  }
+}
+.event--spring .event__tabs {
+  background: -webkit-gradient(linear, left top, left bottom, from(#101910), to(#152015));
+  background: linear-gradient(180deg, #101910 0%, #152015 100%);
+}
+@media (any-hover: hover) {
+  .event--spring .event__tabs .tab:hover label {
+    color: #FFFFFF;
+  }
+}
+.event--spring .event__tabs .tab label {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #1c2c1c, inset 0 -0.2rem 0 0 #162216, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #1c2c1c, inset 0 -0.2rem 0 0 #162216, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#182518), to(#141f14));
+  background: linear-gradient(180deg, #182518 0%, #141f14 100%);
+  color: #D5F8D5;
+}
+.event--spring .event__tabs .tab input:checked + label {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#080f08), to(#101910));
+  background: linear-gradient(180deg, #080f08 0%, #101910 100%);
+  color: #FFFFFF;
+}
+.event--spring .event__tabs-container {
+  padding-bottom: 3rem;
+  background: #152015;
+}
+.event--spring .event__tabs-container::after {
+  position: absolute;
+  top: -3.8rem;
+  right: 0;
+  bottom: -6.4rem;
+  left: 0;
+  content: "";
+  display: block;
+  background: top center/55.8rem 7.1rem no-repeat -webkit-image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x), bottom 1.8rem center/26rem 8rem no-repeat -webkit-image-set(url("../images/event/small-losa.webp") type("image/webp") 1x, url("../images/event/small-losa@2x.webp") type("image/webp") 2x, url("../images/event/small-losa.png") type("image/png") 1x, url("../images/event/small-losa@2x.png") type("image/png") 2x);
+  background: top center/55.8rem 7.1rem no-repeat image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x), bottom 1.8rem center/26rem 8rem no-repeat image-set(url("../images/event/small-losa.webp") type("image/webp") 1x, url("../images/event/small-losa@2x.webp") type("image/webp") 2x, url("../images/event/small-losa.png") type("image/png") 1x, url("../images/event/small-losa@2x.png") type("image/png") 2x);
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .event--spring .event__tabs-container::after {
+    width: 70%;
+    height: auto;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    top: 0;
+    max-width: 54rem;
+    aspect-ratio: 7.85;
+    background: top center/contain no-repeat -webkit-image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x);
+    background: top center/contain no-repeat image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+.event--spring .event__pass {
+  border-right-color: #080F08;
+}
+.event--spring .event__rewards--up-xp .event__rewards-items:first-child .event__prize-xp {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#080f08), to(#101910));
+  background: linear-gradient(180deg, #080f08 0%, #101910 100%);
+}
+.event--spring .event__rewards-point:not(.event__rewards-point--current, .event__rewards-point--active) {
+  background-image: url("../images/event/spring-point-shape.svg");
+}
+.event--spring .event__pass-img {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.event--spring .event__pass-img--free {
+  border: thin solid #D5F8D5;
+}
+.event--spring .event__pass-img--premium {
+  border: thin solid #DDC916;
+}
+.event--spring .event__pass-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event--spring .event__rewards-progress-bar {
+  background-color: #080F08;
+}
+.event--spring .event__rewards-scale::before {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(21, 32, 21, 0)), to(#152015));
+  background: linear-gradient(270deg, rgba(21, 32, 21, 0) 0%, #152015 100%);
+}
+.event--spring .event__rewards-scale::after {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(21, 32, 21, 0)), to(#152015));
+  background: linear-gradient(90deg, rgba(21, 32, 21, 0) 0%, #152015 100%);
+}
+.event--spring .event__rewards-scale-wrap::-webkit-scrollbar {
+  background-color: #080F08;
+}
+.event--spring .event__rewards-scale-wrap::-webkit-scrollbar-thumb {
+  background-color: #3B4D3B;
+}
+.event--spring .event__prize {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+.event--spring .event__prize--current .event__prize-content {
+  -webkit-box-shadow: inset 0 0 1.6rem rgba(213, 248, 213, 0.7), 0 0 1.6rem 0.2rem rgba(213, 248, 213, 0.3);
+          box-shadow: inset 0 0 1.6rem rgba(213, 248, 213, 0.7), 0 0 1.6rem 0.2rem rgba(213, 248, 213, 0.3);
+}
+.event--spring .event__prize-content {
+  background: center/100% 100% no-repeat -webkit-image-set(url("../images/event/spring-cover.webp") type("image/webp") 1x, url("../images/event/spring-cover@2x.webp") type("image/webp") 2x, url("../images/event/spring-cover.jpg") type("image/jpg") 1x, url("../images/event/spring-cover@2x.jpg") type("image/jpg") 2x);
+  background: center/100% 100% no-repeat image-set(url("../images/event/spring-cover.webp") type("image/webp") 1x, url("../images/event/spring-cover@2x.webp") type("image/webp") 2x, url("../images/event/spring-cover.jpg") type("image/jpg") 1x, url("../images/event/spring-cover@2x.jpg") type("image/jpg") 2x);
+}
+.event--spring .event__prize-xp > span,
+.event--spring .event__prize-subtitle,
+.event--spring .event__prize-tooltip span.event__prize-tooltip-title,
+.event--spring .event__section-text,
+.event--spring .event__mission-desc,
+.event--spring .event__prize-done-text,
+.event--spring .event__prize-done-data {
+  color: #D5F8D5;
+}
+.event--spring .event__prize-tooltip::before {
+  border-color: #182518;
+}
+.event--spring .event__prize-tooltip .tooltip__body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#182518), to(#141f14));
+  background: linear-gradient(180deg, #182518 0%, #141f14 100%);
+}
+.event--spring .event__mission-numb {
+  background-image: url("../images/event/spring-point-shape.svg");
+}
+.event--spring .event__mission-progress-bar {
+  background-color: #080F08;
+}
+.event--spring .event__missions::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 32, 21, 0)), to(#152015));
+  background: linear-gradient(180deg, rgba(21, 32, 21, 0) 0%, #152015 100%);
+}
+.event--spring .event__missions-list::-webkit-scrollbar,
+.event--spring .event__redeem-list::-webkit-scrollbar {
+  background-color: #080F08;
+}
+.event--spring .event__missions-list::-webkit-scrollbar-thumb,
+.event--spring .event__redeem-list::-webkit-scrollbar-thumb {
+  background-color: #3B4D3B;
+}
+.event--spring .event__redeem::before {
+  background: -webkit-gradient(linear, left top, right top, from(#152015), to(rgba(21, 32, 21, 0)));
+  background: linear-gradient(90deg, #152015 0%, rgba(21, 32, 21, 0) 100%);
+}
+.event--spring .event__redeem::after {
+  background: -webkit-gradient(linear, right top, left top, from(#152015), to(rgba(21, 32, 21, 0)));
+  background: linear-gradient(270deg, #152015 0%, rgba(21, 32, 21, 0) 100%);
+}
+.event--spring .event__redeem-empty {
+  color: #D5F8D5;
+}
+.event--spring .event__leaders {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#101910), to(#152015));
+  background-image: linear-gradient(180deg, #101910 0%, #152015 100%);
+}
+.event--spring .event__top-item {
+  background: top center/100% 100% no-repeat -webkit-image-set(url("../images/event/bg-spring-event-top.webp") type("image/webp") 1x, url("../images/event/bg-spring-event-top@2x.webp") type("image/webp") 2x, url("../images/event/bg-spring-event-top.jpg") type("image/jpg") 1x, url("../images/event/bg-spring-event-top@2x.jpg") type("image/jpg") 2x);
+  background: top center/100% 100% no-repeat image-set(url("../images/event/bg-spring-event-top.webp") type("image/webp") 1x, url("../images/event/bg-spring-event-top@2x.webp") type("image/webp") 2x, url("../images/event/bg-spring-event-top.jpg") type("image/jpg") 1x, url("../images/event/bg-spring-event-top@2x.jpg") type("image/jpg") 2x);
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+.event--spring .event__top-item-xp,
+.event--spring .event__top-item-price {
+  background-color: #152015;
+}
+.event--spring .event__top-item-xp,
+.event--spring .event__top-item-subtitle,
+.event--spring .event-leader__numb,
+.event--spring .event-leader__empty-user > span,
+.event--spring .event-leader__name,
+.event--spring .event-leader__skin-subtitle,
+.event--spring .event-leader__xp {
+  color: #D5F8D5;
+}
+.event--spring .event-leader,
+.event--spring .event__leaders-btn {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#080f08), to(#101910));
+  background: linear-gradient(180deg, #080f08 0%, #101910 100%);
+}
+.event--spring .event-leader__empty-user::before,
+.event--spring .event-leader__user::before,
+.event--spring .event-leader__xp {
+  background-color: #152015;
+}
+.event--spring .event__leaders-btn {
+  color: #D5F8D5;
+}
+@media (any-hover: hover) {
+  .event--spring .event__leaders-btn:hover {
+    -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015;
+            box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015;
+    background: -webkit-gradient(linear, left top, left bottom, from(#040804), to(#050a05));
+    background: linear-gradient(180deg, #040804 0%, #050a05 100%);
+  }
+}
+.event--spring .event__how-block {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#101910), to(#152015));
+  background-image: linear-gradient(180deg, #101910 0%, #152015 100%);
+}
+.event--spring .event__how-block::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 55.8rem;
+  aspect-ratio: 7.86;
+  background: top center/contain no-repeat -webkit-image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x);
+  background: top center/contain no-repeat image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .event--spring .event__how-block::before {
+    width: 70%;
+  }
+}
+.event--spring .event__how-item,
+.event--spring .event__rule-btn {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#080f08), to(#101910));
+  background: linear-gradient(180deg, #080f08 0%, #101910 100%);
+}
+.event--spring .event__how-item-title {
+  color: #FFFFFF;
+}
+.event--spring .event__how-item-text,
+.event--spring .event__rule-btn,
+.event--spring .event__rule-text p {
+  color: #D5F8D5;
+}
+.event--spring .event__rule-btn::after {
+  background-image: url("../images/sprite.svg#chevron-down-light-green");
+}
+
+.event__banner {
+  position: relative;
+  margin-top: 2rem;
 }
 
 .event__banner-wrap {
@@ -33607,18 +34059,6 @@ dd.swap__skin-price svg {
   .event__banner-wrap {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-  }
-}
-
-.event__banner-img {
-  width: 52.5rem;
-  aspect-ratio: 1.58;
-  background: center/contain no-repeat -webkit-image-set(url("../images/event/magic-christmas-text.webp") type("image/webp") 1x, url("../images/event/magic-christmas-text@2x.webp") type("image/webp") 2x, url("../images/event/magic-christmas-text.png") type("image/png") 1x, url("../images/event/magic-christmas-text@2x.png") type("image/png") 2x);
-  background: center/contain no-repeat image-set(url("../images/event/magic-christmas-text.webp") type("image/webp") 1x, url("../images/event/magic-christmas-text@2x.webp") type("image/webp") 2x, url("../images/event/magic-christmas-text.png") type("image/png") 1x, url("../images/event/magic-christmas-text@2x.png") type("image/png") 2x);
-}
-@media (max-width: 768px) {
-  .event__banner-img {
-    width: 50vw;
   }
 }
 
@@ -33878,46 +34318,6 @@ span.event__banner-xp-currency {
   position: relative;
   margin-top: 1.6rem;
 }
-.event__drops::before, .event__drops::after {
-  position: absolute;
-  top: 4.8rem;
-  content: "";
-  display: block;
-  aspect-ratio: 0.43;
-  z-index: -1;
-}
-.event__drops::before {
-  left: -19rem;
-  width: 28.5rem;
-  background: bottom right/contain no-repeat -webkit-image-set(url("../images/event/character-1.webp") type("image/webp") 1x, url("../images/event/character-1@2x.webp") type("image/webp") 2x, url("../images/event/character-1.png") type("image/png") 1x, url("../images/event/character-1@2x.png") type("image/png") 2x);
-  background: bottom right/contain no-repeat image-set(url("../images/event/character-1.webp") type("image/webp") 1x, url("../images/event/character-1@2x.webp") type("image/webp") 2x, url("../images/event/character-1.png") type("image/png") 1x, url("../images/event/character-1@2x.png") type("image/png") 2x);
-}
-@media (max-width: 1900px) {
-  .event__drops::before {
-    left: -9vw;
-  }
-}
-@media (max-width: 1500px) {
-  .event__drops::before {
-    content: none;
-  }
-}
-.event__drops::after {
-  right: -19rem;
-  width: 28.3rem;
-  background: bottom left/contain no-repeat -webkit-image-set(url("../images/event/character-2.webp") type("image/webp") 1x, url("../images/event/character-2@2x.webp") type("image/webp") 2x, url("../images/event/character-2.png") type("image/png") 1x, url("../images/event/character-2@2x.png") type("image/png") 2x);
-  background: bottom left/contain no-repeat image-set(url("../images/event/character-2.webp") type("image/webp") 1x, url("../images/event/character-2@2x.webp") type("image/webp") 2x, url("../images/event/character-2.png") type("image/png") 1x, url("../images/event/character-2@2x.png") type("image/png") 2x);
-}
-@media (max-width: 1900px) {
-  .event__drops::after {
-    right: -9vw;
-  }
-}
-@media (max-width: 1500px) {
-  .event__drops::after {
-    content: none;
-  }
-}
 
 .event__tabs {
   padding: 1.6rem;
@@ -33954,14 +34354,15 @@ span.event__banner-xp-currency {
   margin-top: 1.6rem;
   padding: 1.6rem;
   min-height: 54.2rem;
+  border-radius: 1.2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background-image: linear-gradient(180deg, #161622 0%, #12121f 100%);
-  border-radius: 1.2rem;
   -webkit-box-shadow: 0 0.4rem 7rem 0 #0c0c1b, 0 0.4rem 9rem 0 #0c0c1b;
           box-shadow: 0 0.4rem 7rem 0 #0c0c1b, 0 0.4rem 9rem 0 #0c0c1b;
 }
 @media (max-width: 768px) {
   .event__tabs-container {
+    min-height: 48rem;
     margin-top: 0.8rem;
   }
 }
@@ -33979,42 +34380,6 @@ span.event__banner-xp-currency {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.event__tabs-container::after {
-  position: absolute;
-  top: 1.6rem;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-  height: 6.9rem;
-  background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.8rem right 1rem/20.4rem 3rem no-repeat -webkit-image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top 0.4rem left 1.8rem/20rem 5rem no-repeat -webkit-image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
-  background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x), top 1.8rem right 1rem/20.4rem 3rem no-repeat image-set(url("../images/event/snowdrift-3.webp") type("image/webp") 1x, url("../images/event/snowdrift-3@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-3.png") type("image/png") 1x, url("../images/event/snowdrift-3@2x.png") type("image/png") 2x), top 0.4rem left 1.8rem/20rem 5rem no-repeat image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
-  -webkit-transform: translateY(calc(-1.6rem - 41%));
-      -ms-transform: translateY(calc(-1.6rem - 41%));
-          transform: translateY(calc(-1.6rem - 41%));
-  pointer-events: none;
-}
-@media (max-width: 1280px) {
-  .event__tabs-container::after {
-    background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
-    background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
-  }
-}
-@media (max-width: 768px) {
-  .event__tabs-container::after {
-    width: 90%;
-    height: auto;
-    left: 50%;
-    right: auto;
-    max-width: 53.5rem;
-    aspect-ratio: 8;
-    background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
-    background: top center/contain no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
-    -webkit-transform: translate(-50%, calc(-0.8rem - 51%));
-        -ms-transform: translate(-50%, calc(-0.8rem - 51%));
-            transform: translate(-50%, calc(-0.8rem - 51%));
-  }
 }
 .event__tabs-container > div {
   display: none;
@@ -34086,7 +34451,11 @@ span.event__banner-xp-currency {
 }
 
 .event__pass-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 23.1578947368rem;
+  font-size: 0;
 }
 @media (max-width: 768px) {
   .event__pass-img {
@@ -34099,13 +34468,6 @@ span.event__banner-xp-currency {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: none;
-}
-
-.event__pass-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0;
 }
 
 .event__rewards-scale {
@@ -34231,6 +34593,7 @@ span.event__banner-xp-currency {
   content: "";
   display: block;
   background: center/4.8rem 4.8rem no-repeat url("../images/sprite.svg#lock-white") rgba(12, 12, 27, 0.6);
+  border-radius: 1.2rem;
   -webkit-transition: background-size 0.2s ease-out;
   transition: background-size 0.2s ease-out;
   will-change: background-size;
@@ -34258,8 +34621,6 @@ span.event__banner-xp-currency {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 1.6rem;
-  background: center/100% 100% no-repeat -webkit-image-set(url("../images/event/ice-cover.webp") type("image/webp") 1x, url("../images/event/ice-cover@2x.webp") type("image/webp") 2x, url("../images/event/ice-cover.jpg") type("image/jpg") 1x, url("../images/event/ice-cover@2x.jpg") type("image/jpg") 2x);
-  background: center/100% 100% no-repeat image-set(url("../images/event/ice-cover.webp") type("image/webp") 1x, url("../images/event/ice-cover@2x.webp") type("image/webp") 2x, url("../images/event/ice-cover.jpg") type("image/jpg") 1x, url("../images/event/ice-cover@2x.jpg") type("image/jpg") 2x);
   border-radius: 1.2rem;
   opacity: 0.6;
   -webkit-transition: opacity 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
@@ -35078,29 +35439,6 @@ span.event__banner-xp-currency {
     padding: 0.8rem;
   }
 }
-.event__leaders::before {
-  position: absolute;
-  top: 0;
-  right: 29%;
-  content: "";
-  display: block;
-  width: 23.2rem;
-  aspect-ratio: 4;
-  background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
-  background: top center/contain no-repeat image-set(url("../images/event/snowdrift-2.webp") type("image/webp") 1x, url("../images/event/snowdrift-2@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-2.png") type("image/png") 1x, url("../images/event/snowdrift-2@2x.png") type("image/png") 2x);
-  -webkit-transform: translate(50%, -43%);
-      -ms-transform: translate(50%, -43%);
-          transform: translate(50%, -43%);
-}
-@media (max-width: 1024px) {
-  .event__leaders::before {
-    right: 50%;
-    width: 20rem;
-    -webkit-transform: translate(50%, -43%);
-        -ms-transform: translate(50%, -43%);
-            transform: translate(50%, -43%);
-  }
-}
 
 .event__leaders-top {
   display: -webkit-box;
@@ -35768,25 +36106,6 @@ span.event__banner-xp-currency {
 @media (max-width: 480px) {
   .event__how-block {
     padding: 0.8rem;
-  }
-}
-.event__how-block::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  content: "";
-  display: block;
-  width: 55.2rem;
-  aspect-ratio: 8;
-  background: top center/contain no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
-  background: top center/contain no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
-  -webkit-transform: translate(-50%, -42%);
-      -ms-transform: translate(-50%, -42%);
-          transform: translate(-50%, -42%);
-}
-@media (max-width: 768px) {
-  .event__how-block::before {
-    width: 100%;
   }
 }
 

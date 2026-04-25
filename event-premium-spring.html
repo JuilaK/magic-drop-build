@@ -1070,13 +1070,13 @@
 	</div>
 </header>
     <main>
-        <div class="event event--christmas">
+        <div class="event event--spring">
     <div class="container-sm">
         <section class="event__banner">
             <div class="event__banner-wrap">
                 <div class="event__banner-img"></div>
                 <div class="event__banner-info">
-                    <h1 class="event__banner-title">Magic christmas</h1>
+                    <h1 class="event__banner-title">Garden of Skins</h1>
                     <p class="event__banner-desc">Короткий текст рыба  для описания ивента про магические кейсы</p>
                     <div class="event__banner-xp">
                         <div class="event__banner-lvl-block">
@@ -1105,10 +1105,13 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="event__banner-btn btn btn--gr-yellow" data-modal-trigger="premium">
-                        <span>Upgrade to Premium</span>
-                    </button>
                     
+                    <p class="event__banner-active">
+                        <svg aria-hidden="true" class="yellow">
+                            <use xlink:href="images/sprite.svg#check-circle"></use>
+                        </svg>
+                        Премиум активирован
+                    </p>
                 </div>
             </div>
         </section>
@@ -1141,25 +1144,25 @@
                 </div>
             </div>
             <div class="event__tabs-container">
-                <div data-tab="event-drops-rewards" class="event__rewards ">
+                <div data-tab="event-drops-rewards" class="event__rewards event__rewards--up-xp">
                     <div class="event__pass">
-                        <picture class="event__pass-img">
-                            <source srcset="./images/event/free-pass.webp ./images/event/free-pass@2x.webp 2x" type="image/webp">
+                        <picture class="event__pass-img event__pass-img--free">
+                            <source srcset="./images/event/spring-free-pass.webp ./images/event/spring-free-pass@2x.webp 2x" type="image/webp">
                             <img 
-                                src="./images/event/free-pass.png" 
-                                srcset="./images/event/free-pass@2x.png 2x"
+                                src="./images/event/spring-free-pass.jpg" 
+                                srcset="./images/event/spring-free-pass@2x.jpg 2x"
                                 alt="Free pass">
                         </picture>
                         <img 
-                            src="./images/event/separator.svg"
+                            src="./images/event/spring-separator.svg"
                             class="event__pass-separator"  
                             alt="" 
                             aria-hidden="true">
-                        <picture class="event__pass-img">
-                            <source srcset="./images/event/premium-pass.webp ./images/event/premium-pass@2x.webp 2x" type="image/webp">
+                        <picture class="event__pass-img event__pass-img--premium">
+                            <source srcset="./images/event/spring-premium-pass.webp ./images/event/spring-premium-pass@2x.webp 2x" type="image/webp">
                             <img 
-                                src="./images/event/premium-pass.png"
-                                srcset="./images/event/premium-pass@2x.png 2x"
+                                src="./images/event/spring-premium-pass.jpg"
+                                srcset="./images/event/spring-premium-pass@2x.jpg 2x"
                                 alt="Premium pass">
                         </picture>
                     </div>
@@ -1717,8 +1720,7 @@
                             </div>
                             <div class="event__rewards-items">
                                 
-                                
-                                    <article class="event__prize event__prize--locked">
+                                    <article class="event__prize event__prize--active">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -1773,7 +1775,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize event__prize--current">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -1827,7 +1829,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -1881,7 +1883,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -1935,7 +1937,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -1989,7 +1991,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -2038,7 +2040,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -2087,7 +2089,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -2136,7 +2138,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -2191,7 +2193,7 @@
         </button>
     </div>
     
-</article><article class="event__prize event__prize--locked">
+</article><article class="event__prize ">
     <div class="event__prize-xp">
         <span>1000</span>XP
     </div>
@@ -2256,6 +2258,7 @@
     </div>
     
 </article>
+                                
                                 
                             </div>
                         </div>
@@ -2404,15 +2407,1154 @@
                 </div>
                 <div data-tab="event-drops-redeem" class="event__redeem">
                     
-                        <span class="event__redeem-empty">У вас пока нет наград</span>
-                    
-                    
+                    <div class="event__redeem-list js-scroll-container">
+                        <div class="event__redeem-items">
+                            <article class="event__prize event__prize--used">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-covert.png" 
+                srcset="./images/skins/bg-skin-covert@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+                alt="Asiimov P90">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">P90</div>
+            <h3 class="event__prize-title ">Asiimov</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+      
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+        <div class="event__prize-done">
+            
+            
+                <svg aria-hidden="true" class="dark-green">
+                    <use xlink:href="images/sprite.svg#check-circle"></use>
+                </svg>
+                <span class="event__prize-done-text">Использовано</span>
+            
+            <span class="event__prize-done-data">22.12.25 11:24</span>
+        </div>
+    
+</article><article class="event__prize event__prize--activated">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-gloves.png" 
+                srcset="./images/skins/bg-skin-gloves@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+                alt="Asiimov P90">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">P90</div>
+            <h3 class="event__prize-title ">Asiimov</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+      
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+        <div class="event__prize-done">
+            
+                <svg aria-hidden="true" class="dark-yellow">
+                    <use xlink:href="images/sprite.svg#hourglass-circle"></use>
+                </svg>
+                <span class="event__prize-done-text">Активировано</span>
+            
+            
+            <span class="event__prize-done-data">22.12.25 11:24</span>
+        </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+                alt="Tiger Strike Specialist 100000">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">Specialist 100000</div>
+            <h3 class="event__prize-title ">Tiger Strike</h3>
+            <span class="event__prize-price">
+                <span>100.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-uncommon.png" 
+                srcset="./images/skins/bg-skin-uncommon@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/400fx400f 2x"
+                alt="Пиксельный камуфляж «Розовый» Водительские перчатки">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">Водительские перчатки</div>
+            <h3 class="event__prize-title ">Пиксельный камуфляж «Розовый»</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-covert.png" 
+                srcset="./images/skins/bg-skin-covert@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+                alt="Asiimov P90">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">P90</div>
+            <h3 class="event__prize-title ">Asiimov</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-gloves.png" 
+                srcset="./images/skins/bg-skin-gloves@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+                alt="Asiimov P90">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">P90</div>
+            <h3 class="event__prize-title ">Asiimov</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+                alt="Tiger Strike Specialist 100000">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">Specialist 100000</div>
+            <h3 class="event__prize-title ">Tiger Strike</h3>
+            <span class="event__prize-price">
+                <span>100.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
+                alt="Tiger Strike Specialist 100000">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">Specialist 100000</div>
+            <h3 class="event__prize-title ">Tiger Strike</h3>
+            <span class="event__prize-price">
+                <span>100.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-uncommon.png" 
+                srcset="./images/skins/bg-skin-uncommon@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/400fx400f 2x"
+                alt="Пиксельный камуфляж «Розовый» Водительские перчатки">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">Водительские перчатки</div>
+            <h3 class="event__prize-title ">Пиксельный камуфляж «Розовый»</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-covert.png" 
+                srcset="./images/skins/bg-skin-covert@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
+                alt="Asiimov P90">
+        </div>
+        <div class="event__prize-info">
+            <div class="event__prize-subtitle">P90</div>
+            <h3 class="event__prize-title ">Asiimov</h3>
+            <span class="event__prize-price">
+                <span>100 000.24</span>
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                </svg>
+            </span>
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article>
+                        </div>
+                        <div class="event__redeem-items">
+                            <article class="event__prize event__prize--used">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-covert.png" 
+                srcset="./images/skins/bg-skin-covert@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-1.png" 
+                srcset="./images/event/prize-1@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Зеркальная копия</h3>
+            
+        </div>      
+    </div>
+      
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        При открытии кейса до 50
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                        вы получаете полную копию
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+        <div class="event__prize-done">
+            
+            
+                <svg aria-hidden="true" class="dark-green">
+                    <use xlink:href="images/sprite.svg#check-circle"></use>
+                </svg>
+                <span class="event__prize-done-text">Использовано</span>
+            
+            <span class="event__prize-done-data">22.12.25 11:24</span>
+        </div>
+    
+</article><article class="event__prize event__prize--used">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-gloves.png" 
+                srcset="./images/skins/bg-skin-gloves@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-2.png" 
+                srcset="./images/event/prize-2@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Боевой инстинкт</h3>
+            
+        </div>      
+    </div>
+      
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Отмена неуспешного апгрейда до 50
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+        <div class="event__prize-done">
+            
+            
+                <svg aria-hidden="true" class="dark-green">
+                    <use xlink:href="images/sprite.svg#check-circle"></use>
+                </svg>
+                <span class="event__prize-done-text">Использовано</span>
+            
+            <span class="event__prize-done-data">22.12.25 11:24</span>
+        </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-3.png" 
+                srcset="./images/event/prize-3@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Скины для апгрейда</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-uncommon.png" 
+                srcset="./images/skins/bg-skin-uncommon@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-4.png" 
+                srcset="./images/event/prize-4@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Скины для контракта</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-covert.png" 
+                srcset="./images/skins/bg-skin-covert@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-5.png" 
+                srcset="./images/event/prize-5@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Жетон в подарок</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Открой любой кейс за 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-gloves.png" 
+                srcset="./images/skins/bg-skin-gloves@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-6.png" 
+                srcset="./images/event/prize-6@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Бонусный баланс</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>Определенная сумма на баланс</li>
+                </ul>
+            
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-7.png" 
+                srcset="./images/event/prize-7@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Скидка на кейс</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>Cкидка на определенный кейс в количество <span>100</span>%</li>
+                </ul>
+            
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-8.png" 
+                srcset="./images/event/prize-8@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Кейс в подарок</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>Открой кейс <a href="#">Зимний Кейс</a> бесплатно</li>
+                </ul>
+            
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-9.png" 
+                srcset="./images/event/prize-9@2x.png 2x"
+                alt="" aria-hidden="true">
+            
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Второй шанс</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        При открытии кейса до 200
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>, 
+                        в случае неокупа получаете шанс открыть этот кейс еще раз бесплатно.
+                    </li>
+                </ul>
+            
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article><article class="event__prize event__prize--for-use">
+    
+    <div class="event__prize-content">
+        <div class="event__prize-img-wrap">
+            <img 
+                class="event__prize-img-bg"
+                src="./images/skins/bg-skin-rare.png" 
+                srcset="./images/skins/bg-skin-rare@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="./images/event/prize-10.png" 
+                srcset="./images/event/prize-10@2x.png 2x"
+                alt="" aria-hidden="true">
+            <img 
+                class="event__prize-img"
+                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/200fx200f" 
+                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/400fx400f 2x"
+                alt="Скин в подарок Скин в подарок2">
+        </div>
+        <div class="event__prize-info">
+            
+            <h3 class="event__prize-title event__prize-title--prize">Скин в подарок</h3>
+            
+        </div>      
+    </div>
+    <button type="button" class="event__prize-use-btn btn btn--gr-yellow"><span>Активировать</span></button>  
+    <div class="event__prize-tooltip tooltip tooltip--right">
+        <div class="tooltip__body" role="tooltip">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                <span class="event__prize-tooltip-title">Условия получения:</span>
+                <ul>
+                    <li>
+                        Мин.цена 50
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        Макс.цена 500
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            
+        </div>
+        <button type="button" class="tooltip__toggle">
+            <svg aria-hidden="true" class="white">
+                <use xlink:href="images/sprite.svg#info"></use>
+            </svg>
+        </button>
+    </div>
+    
+</article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <section class="event__section">
             <h2 class="event__section-title">
-                <img src="./images/event/crown.svg" alt="" aria-hidden="true">
+                <picture>
+                    <source srcset="./images/event/spring-crown.webp" type="image/webp">
+                    <img src="./images/event/spring-crown.png" width="34" height="34" alt="" aria-hidden="true">
+                </picture>
                 Таблица лидеров
             </h2>
             <p class="event__section-text">Короткий текст рыба  для описания ивента про магические кейсы</p>
@@ -2998,23 +4140,26 @@
         </section>
         <section class="event__section">
             <h2 class="event__section-title">
-                <img src="./images/event/question.svg" alt="" aria-hidden="true">
+                <picture>
+                    <source srcset="./images/event/spring-question.webp" type="image/webp">
+                    <img src="./images/event/spring-question.png" width="34" height="34" alt="" aria-hidden="true">
+                </picture>
                 Как это работает?
             </h2>
             <div class="event__how-block">
                 <ul class="event__how-list">
                     <li class="event__how-item">
-                        <img src="./images/event/crown.svg" alt="" aria-hidden="true">
+                        <img src="./images/event/spring-crown.png" alt="" aria-hidden="true">
                         <h3 class="event__how-item-title">Зарабатывайте очки</h3>
                         <p class="event__how-item-text">Короткий текст рыба  для описания ивента про магические кейсы</p>
                     </li>
                     <li class="event__how-item">
-                        <img src="./images/event/double-chevron-up.svg" alt="" aria-hidden="true">
+                        <img src="./images/event/spring-double-chevron-up.png" alt="" aria-hidden="true">
                         <h3 class="event__how-item-title">Зарабатывайте очки</h3>
                         <p class="event__how-item-text">Короткий текст рыба  для описания ивента про магические кейсы</p>
                     </li>
                     <li class="event__how-item">
-                        <img src="./images/event/gift.svg" alt="" aria-hidden="true">
+                        <img src="./images/event/spring-gift.png" alt="" aria-hidden="true">
                         <h3 class="event__how-item-title">Зарабатывайте очки</h3>
                         <p class="event__how-item-text">Короткий текст рыба  для описания ивента про магические кейсы</p>
                     </li>
