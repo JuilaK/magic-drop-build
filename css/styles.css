@@ -22031,15 +22031,90 @@ span.draw-item__start-price svg {
 .modal--conditions .modal__btns {
   padding-top: 0;
 }
-.modal--premium .modal__wrap {
+.modal--christmas-premium .modal__wrap, .modal--spring-premium .modal__wrap {
   width: 89rem;
 }
 @media (max-width: 1024px) {
-  .modal--premium .modal__wrap {
+  .modal--christmas-premium .modal__wrap, .modal--spring-premium .modal__wrap {
     width: 90%;
   }
 }
-.modal--premium .modal__dialog::before {
+.modal--christmas-premium .modal__content, .modal--spring-premium .modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+.modal--christmas-premium img, .modal--spring-premium img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+.modal--christmas-premium .modal__premium-content, .modal--spring-premium .modal__premium-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.modal--christmas-premium .modal__title, .modal--spring-premium .modal__title {
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .modal--christmas-premium .modal__title, .modal--spring-premium .modal__title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+.modal--christmas-premium .modal__text, .modal--spring-premium .modal__text {
+  margin-left: 0;
+  font-size: 1.6rem;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .modal--christmas-premium .modal__text, .modal--spring-premium .modal__text {
+    margin-left: auto;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+.modal--christmas-premium .modal__btns, .modal--spring-premium .modal__btns {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 0;
+  padding-top: 4.8rem;
+}
+@media (max-width: 768px) {
+  .modal--christmas-premium .modal__btns, .modal--spring-premium .modal__btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 3.2rem;
+  }
+}
+.modal--christmas-premium .modal__btns .btn, .modal--spring-premium .modal__btns .btn {
+  min-width: 20rem;
+}
+.modal--christmas-premium .modal__dialog::before {
   position: absolute;
   top: 1.6rem;
   right: 0;
@@ -22055,13 +22130,13 @@ span.draw-item__start-price svg {
   pointer-events: none;
 }
 @media (max-width: 1024px) {
-  .modal--premium .modal__dialog::before {
+  .modal--christmas-premium .modal__dialog::before {
     background: top center/55.2rem 6.9rem no-repeat -webkit-image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
     background: top center/55.2rem 6.9rem no-repeat image-set(url("../images/event/snowdrift-1.webp") type("image/webp") 1x, url("../images/event/snowdrift-1@2x.webp") type("image/webp") 2x, url("../images/event/snowdrift-1.png") type("image/png") 1x, url("../images/event/snowdrift-1@2x.png") type("image/png") 2x);
   }
 }
 @media (max-width: 768px) {
-  .modal--premium .modal__dialog::before {
+  .modal--christmas-premium .modal__dialog::before {
     width: 90%;
     height: auto;
     left: 50%;
@@ -22075,17 +22150,7 @@ span.draw-item__start-price svg {
             transform: translate(-50%, -68%);
   }
 }
-.modal--premium .modal__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 1.6rem;
-     -moz-column-gap: 1.6rem;
-          column-gap: 1.6rem;
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
-}
-.modal--premium picture {
+.modal--christmas-premium picture {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22099,81 +22164,90 @@ span.draw-item__start-price svg {
   margin-top: -6.4rem;
 }
 @media (max-width: 1024px) {
-  .modal--premium picture {
+  .modal--christmas-premium picture {
     -ms-flex-preferred-size: 32rem;
         flex-basis: 32rem;
   }
 }
 @media (max-width: 768px) {
-  .modal--premium picture {
+  .modal--christmas-premium picture {
     display: none;
   }
 }
-.modal--premium img {
+.modal--christmas-premium img {
   position: relative;
   width: 100%;
   aspect-ratio: 0.932;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
-.modal--premium .modal__premium-content {
+.modal--spring-premium .modal__dialog {
+  background: -webkit-gradient(linear, left top, left bottom, from(#101910), to(#152015));
+  background: linear-gradient(180deg, #101910 0%, #152015 100%);
+}
+.modal--spring-premium .modal__dialog::before {
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  width: 80%;
+  height: 7.1rem;
+  content: "";
+  display: block;
+  background: right/contain no-repeat -webkit-image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x);
+  background: right/contain no-repeat image-set(url("../images/event/large-losa.webp") type("image/webp") 1x, url("../images/event/large-losa@2x.webp") type("image/webp") 2x, url("../images/event/large-losa.png") type("image/png") 1x, url("../images/event/large-losa@2x.png") type("image/png") 2x);
+  -webkit-transform: translateY(-52%);
+      -ms-transform: translateY(-52%);
+          transform: translateY(-52%);
+}
+@media (max-width: 768px) {
+  .modal--spring-premium .modal__dialog::before {
+    right: 50%;
+    -webkit-transform: translate(50%, -52%);
+        -ms-transform: translate(50%, -52%);
+            transform: translate(50%, -52%);
+  }
+}
+.modal--spring-premium .modal__content {
+  padding-left: 0.8rem;
+}
+.modal--spring-premium picture {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 39rem;
+          flex: 0 0 39rem;
+  margin-top: -6.4rem;
 }
-.modal--premium .modal__title {
-  padding: 0;
-  font-size: 3.2rem;
-  font-weight: 900;
-  text-align: left;
-  text-transform: uppercase;
-}
-@media (max-width: 768px) {
-  .modal--premium .modal__title {
-    font-size: 2.8rem;
-    text-align: center;
+@media (max-width: 1024px) {
+  .modal--spring-premium picture {
+    -ms-flex-preferred-size: 34rem;
+        flex-basis: 34rem;
   }
 }
-.modal--premium .modal__text {
-  margin-left: 0;
-  font-size: 1.6rem;
-  text-align: left;
-}
 @media (max-width: 768px) {
-  .modal--premium .modal__text {
-    margin-left: auto;
-    font-size: 1.4rem;
-    text-align: center;
+  .modal--spring-premium picture {
+    display: none;
   }
 }
-.modal--premium .modal__btns {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-bottom: 0;
-  padding-top: 4.8rem;
+.modal--spring-premium img {
+  position: relative;
+  width: 100%;
 }
-@media (max-width: 768px) {
-  .modal--premium .modal__btns {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 3.2rem;
+.modal--spring-premium .modal__btns .btn:not(:first-of-type) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#080f08));
+  background: linear-gradient(180deg, #080f08 0%);
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101910, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101910, inset 0 -0.2rem 0 0 #152015, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .modal--spring-premium .modal__btns .btn:not(:first-of-type):hover {
+    color: #FFFFFF;
   }
-}
-.modal--premium .modal__btns .btn {
-  min-width: 20rem;
 }
 .modal textarea {
   height: auto;
