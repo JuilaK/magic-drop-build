@@ -13931,10 +13931,9 @@ span.draw-item__start-price svg {
 }
 
 .upgrade-card__skin {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  width: 32%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 31%;
   text-align: center;
 }
 .upgrade-card__skin::after {
@@ -13957,7 +13956,7 @@ span.draw-item__start-price svg {
   z-index: 0;
 }
 .upgrade-card__skin:first-child {
-  padding: 1.2rem 1.2rem 2.4rem 2.4rem;
+  padding: 0.8rem 0.8rem 2.4rem 1.6rem;
 }
 @media (max-width: 480px) {
   .upgrade-card__skin:first-child {
@@ -13969,7 +13968,7 @@ span.draw-item__start-price svg {
   left: 0;
 }
 .upgrade-card__skin:last-child {
-  padding: 1.2rem 2.4rem 2.4rem 1.2rem;
+  padding: 0.8rem 1.6rem 2.4rem 0.8rem;
 }
 @media (max-width: 480px) {
   .upgrade-card__skin:last-child {
@@ -14046,17 +14045,19 @@ span.draw-item__start-price svg {
 }
 
 .upgrade-card__skin-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  padding: 0.4rem 0.6rem;
+  background: rgba(12, 12, 27, 0.55);
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+  border-radius: 0.8rem;
   white-space: nowrap;
 }
 @media (max-width: 480px) {
@@ -14065,7 +14066,7 @@ span.draw-item__start-price svg {
   }
 }
 .upgrade-card__skin-price span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   white-space: nowrap;
 }
 @media (max-width: 480px) {
@@ -14074,11 +14075,11 @@ span.draw-item__start-price svg {
   }
 }
 .upgrade-card__skin-price svg {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 1.6rem;
-          flex: 0 0 1.6rem;
+      -ms-flex: 0 0 1.8rem;
+          flex: 0 0 1.8rem;
   margin-right: 0.2rem;
 }
 @media (max-width: 480px) {
@@ -14091,8 +14092,8 @@ span.draw-item__start-price svg {
 .upgrade-card__skin-img {
   position: relative;
   display: block;
-  margin: 0 auto;
-  width: 90%;
+  margin: 0 auto -0.8rem;
+  width: 100%;
 }
 @media (max-width: 370px) {
   .upgrade-card__skin-img {
@@ -14237,13 +14238,10 @@ span.draw-item__start-price svg {
   z-index: 1;
 }
 .upgrade-card__status img {
-  max-width: 13.8rem;
   width: 100%;
-}
-@media (max-width: 480px) {
-  .upgrade-card__status img {
-    max-width: 10rem;
-  }
+  height: 3.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .upgrade-card__status--win .upgrade-card__status-chance span {
   color: #ffe500;
