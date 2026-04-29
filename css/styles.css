@@ -3250,11 +3250,17 @@ textarea {
             transform: rotate(5deg);
   }
 }
-.header__nav-link--event {
+.header__nav-link--event, .header__nav-link--spring-event {
   -webkit-column-gap: 0.8rem;
      -moz-column-gap: 0.8rem;
           column-gap: 0.8rem;
   padding-left: 1rem;
+}
+.header__nav-link.header__nav-link--spring-event::before {
+  background: center/cover no-repeat -webkit-image-set(url("../images/bg/bg-spring-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-spring-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.jpg") type("image/webp") 2x);
+  background: center/cover no-repeat image-set(url("../images/bg/bg-spring-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-spring-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.jpg") type("image/webp") 2x);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .header__nav-link.header__nav-link--active .header__nav-link-svg svg:last-child {
   opacity: 1;
@@ -3367,16 +3373,6 @@ textarea {
   top: 0;
   left: 0;
   opacity: 0;
-}
-
-.header__nav-promo {
-  display: none;
-}
-@media (max-width: 1280px) {
-  .header__nav-promo {
-    display: list-item;
-    position: relative;
-  }
 }
 
 .header__nav-separator {
