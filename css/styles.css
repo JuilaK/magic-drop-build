@@ -2002,6 +2002,10 @@ textarea {
   display: none;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .checkbox {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -14508,6 +14512,26 @@ span.draw-item__start-price svg {
     background: linear-gradient(180deg, rgba(221, 15, 27, 0.24) 0%, rgba(81, 15, 221, 0) 100%), radial-gradient(50% 50% at 50% 50%, #191927 0%, #10101D 100%), #0C0C1B;
   }
 }
+@-webkit-keyframes showFailProgressBg {
+  to {
+    background-image: url("../images/upgrade/upgrade-fail-progress-bg.svg");
+  }
+}
+@keyframes showFailProgressBg {
+  to {
+    background-image: url("../images/upgrade/upgrade-fail-progress-bg.svg");
+  }
+}
+@-webkit-keyframes showFailProgressBg2 {
+  to {
+    background-image: url("../images/upgrade/upgrade-fail-progress-bg-2.svg");
+  }
+}
+@keyframes showFailProgressBg2 {
+  to {
+    background-image: url("../images/upgrade/upgrade-fail-progress-bg-2.svg");
+  }
+}
 .upgrade {
   margin-top: -6.4rem;
   padding-bottom: 6.4rem;
@@ -14559,9 +14583,8 @@ span.draw-item__start-price svg {
   transition: opacity 0.3s ease-out var(--rotation-arrow-duration), visibility 0s ease-out var(--rotation-arrow-duration);
 }
 .upgrade--fail .upgrade__provability-chance {
-  background-image: url("../images/upgrade/upgrade-fail-progress-bg-2.svg");
-  -webkit-transition: background-image 0.3s ease-out var(--rotation-arrow-duration);
-  transition: background-image 0.3s ease-out var(--rotation-arrow-duration);
+  -webkit-animation: showFailProgressBg2 0.3s ease-out var(--rotation-arrow-duration) forwards;
+          animation: showFailProgressBg2 0.3s ease-out var(--rotation-arrow-duration) forwards;
 }
 .upgrade--fail .upgrade__provability-arrow {
   -webkit-animation: roundArrow var(--rotation-arrow-duration) ease-out forwards;
@@ -14573,9 +14596,8 @@ span.draw-item__start-price svg {
   transition: opacity 0.3s ease-out var(--rotation-arrow-duration);
 }
 .upgrade--fail .upgrade__provability-progress::before {
-  background-image: url("../images/upgrade/upgrade-fail-progress-bg.svg");
-  -webkit-transition: background-image 0.3s ease-out var(--rotation-arrow-duration);
-  transition: background-image 0.3s ease-out var(--rotation-arrow-duration);
+  -webkit-animation: showFailProgressBg 0.3s ease-out var(--rotation-arrow-duration) forwards;
+          animation: showFailProgressBg 0.3s ease-out var(--rotation-arrow-duration) forwards;
 }
 .upgrade--fail .upgrade__fail-msg {
   opacity: 1;
