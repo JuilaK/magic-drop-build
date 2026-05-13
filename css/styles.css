@@ -30673,6 +30673,12 @@ span.draw-item__start-price svg {
        object-position: 80% top;
   }
 }
+@media (max-width: 480px) {
+  .hero-banners__slide-img--mobile-right img {
+    -o-object-position: top right;
+       object-position: top right;
+  }
+}
 
 .hero-banners__slide-info {
   display: -webkit-inline-box;
