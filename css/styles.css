@@ -14626,8 +14626,8 @@ span.draw-item__start-price svg {
           animation: showFailProgressBg2 0.3s ease-out var(--rotation-arrow-duration) forwards;
 }
 .upgrade--fail .upgrade__provability-arrow {
-  -webkit-animation: roundArrow var(--rotation-arrow-duration) ease-out forwards;
-          animation: roundArrow var(--rotation-arrow-duration) ease-out forwards;
+  -webkit-animation: roundArrow var(--rotation-arrow-duration) cubic-bezier(0, 0, 0.15, 1) forwards;
+          animation: roundArrow var(--rotation-arrow-duration) cubic-bezier(0, 0, 0.15, 1) forwards;
 }
 .upgrade--fail .upgrade__provability-text {
   opacity: 0;
