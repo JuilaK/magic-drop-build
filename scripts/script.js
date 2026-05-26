@@ -1149,6 +1149,58 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // VIP club wheel
+    const vipClubBtn = document.querySelector('.js-vip-club-btn');
+    const vipClubItems = document.querySelectorAll('.js-vip-club-wheel-item');
+
+    !!vipClubBtn && vipClubBtn.addEventListener('click', () => {
+        const wheel = document.querySelector('.js-vip-club-wheel');
+        const matrix = new DOMMatrix(getComputedStyle(wheel).transform);
+        const currentAngle = Math.atan2(matrix.b, matrix.a) * (180 / Math.PI);
+
+        wheel.getAnimations().forEach(anim => anim.cancel());
+        vipClubItems.forEach(item => item.classList.remove('selected'));
+
+        const winner = getComputedStyle(wheel).getPropertyValue('--vip-wheel-winner');
+        const stepAngle = 360 / getComputedStyle(document.documentElement).getPropertyValue('--vip-wheel-count');
+        const finalAngle = currentAngle  - (currentAngle % 360) - 720 - (stepAngle * winner);
+
+        const anim = wheel.animate(
+            [
+                { transform: `rotate(${currentAngle}deg)` },
+                { transform: `rotate(${finalAngle }deg)` }
+            ],
+            {
+                duration: 6000,
+                easing: 'cubic-bezier(0.2, 0, 0.1, 1)',
+                fill: 'forwards'
+            }
+        );
+
+        anim.addEventListener('finish', () => {
+            vipClubBtn.disabled = false;
+            wheel.style.transform = `rotate(${finalAngle}deg)`;
+            anim.cancel();
+            vipClubItems[winner].classList.add('selected');
+        });
+    });
+    // END VIP club wheel
+
+    const revealUpItems = document.querySelectorAll('.js-reveal-up');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    !!revealUpItems && revealUpItems.forEach(el => revealObserver.observe(el));
 })
 
 function fix100vh() {
