@@ -1117,16 +1117,23 @@
             </svg>
             Provably fair
         </button>
-        <div class="case-hero__prize case-hero__prize--inactive">
-            <img 
-                class="case-hero__prize-img"
-                src="./images/event/prize-3.png" 
-                srcset="./images/event/prize-3@2x.png 2x"
-                alt="" aria-hidden="true">
-            <span class="case-hero__prize-title">Зеркальная копия</span>
-            <span class="case-hero__prize-text">Не применяется, так как активирован промокод</span>    
-        </div>
+        
         <div class="case-hero__img-wrap">
+            
+                <div class="case-hero__social-list">
+                    <a href=".#" class="case-hero__social-link btn btn--icon">
+                        <svg aria-hidden="true" class="white">
+                            <use xlink:href="images/sprite.svg#telegram-2"></use>
+                        </svg>
+                        Telegram
+                    </a>
+                    <a href=".#" class="case-hero__social-link btn btn--icon">
+                        <svg aria-hidden="true" class="light-blue">
+                            <use xlink:href="images/sprite.svg#vk"></use>
+                        </svg>
+                        Вконтанте
+                    </a>
+                </div>
             
             <div class="case-hero__flag">
                 <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
@@ -1142,17 +1149,19 @@
                 
                 
                     
-                    <picture>
-                        <source 
-                            srcset="./images/img-case.webp, ./images/img-case@2x.webp 2x" 
-                            type="image/webp">
-                        <img 
-                            src="./images/img-case.png" 
-                            srcset="./images/img-case@2x.png 2x" 
-                            alt="" 
-                            aria-hidden="true"
-                            class="case-hero__img">
-                    </picture>
+                        <picture>
+                            <source 
+                                srcset="./images/cases/telegram-case.webp, ./images/cases/telegram-case.webp 2x" 
+                                type="image/webp">
+                            <img 
+                                src="./images/cases/telegram-case.png" 
+                                srcset="./images/cases/telegram-case.png 2x" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="case-hero__img">
+                        </picture>
+                    
+                    
                     <picture>
                         <source 
                             srcset="./images/img-case-rock.webp, ./images/img-case-rock@2x.webp 2x" 
@@ -1191,6 +1200,18 @@
                         <input type="checkbox" checked>
                         <span>Fast</span>
                         <span class="btn__key" title="F">F</span>
+                    </label>
+                    <label class="case-hero__favorites">
+                        <input type="checkbox">
+                        <span class="case-hero__favorites-svg">
+                            <svg aria-hidden="true" class="grey">
+                                <use xlink:href="images/sprite.svg#heart-outline"></use>
+                            </svg>
+                            <svg aria-hidden="true" class="red">
+                                <use xlink:href="images/sprite.svg#heart"></use>
+                            </svg>
+                        </span>
+                        <span class="sr-only">Избранное</span>
                     </label>
                 </div>
             </div>
@@ -1468,111 +1489,6 @@
         </div>
     </div>
 </div>
-        <section class="case-free container-xxs">
-    <div class="case-free__content">
-        <h2 class="case-free__title">Открытие бесплатных кейсов</h2>
-        
-            <p class="case-free__timer-title">До следующей попытки осталось:</p>
-            <div class="case-free__timer">
-                <div class="case-free__timer-item">
-                    <span>1</span>
-                    <span>H</span>
-                </div>
-                <div class="case-free__timer-item">
-                    <span>2</span>
-                    <span>H</span>
-                </div>
-                <div class="case-free__separator"></div>
-                <div class="case-free__timer-item">
-                    <span>4</span>
-                    <span>M</span>
-                </div>
-                <div class="case-free__timer-item">
-                    <span>2</span>
-                    <span>M</span>
-                </div>
-                <div class="case-free__separator"></div>
-                <div class="case-free__timer-item">
-                    <span>3</span>
-                    <span>S</span>
-                </div>
-                <div class="case-free__timer-item">
-                    <span>7</span>
-                    <span>S</span>
-                </div>
-            </div>
-        
-        <div class="case-free__progress">
-            <div class="case-free__balance">
-                <div class="case-free__balance-info">
-                    <span>Текущий баланс пополнений:</span>
-                    <span class="case-free__balance-numb">
-                        <span>1300</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#coin-md-yellow"></use>
-                        </svg>
-                    </span>
-                </div>
-                <div class="case-free__balance-bar" style="--openings-count: 3;">
-                    <div class="case-free__balance-thumb" style="width: 72%;"></div>
-                    <div class="case-free__marks">
-                        <div class="case-free__mark case-free__mark--available case-free__mark--opened">
-                            <span class="case-free__mark-numb">1</span>
-                            <span class="case-free__mark-title">600р</span>
-                        </div>
-                        <div class="case-free__mark case-free__mark--available">
-                            <span class="case-free__mark-numb">2</span>
-                            <span class="case-free__mark-title">1200р</span>
-                        </div>
-                        <div class="case-free__mark">
-                            <span class="case-free__mark-numb">3</span>
-                            <span class="case-free__mark-title">1800р</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <span class="case-free__openings-title">Открыто:</span>
-                <span class="case-free__openings-count">
-                    <span class="green">2</span>
-                    из 
-                    <span>3</span>
-                </span>
-            </div>
-        </div>
-        <div class="case-free__conditions-title">
-            <h3>Условия открытия</h3>
-            <div class="case-free__tooltip tooltip tooltip--right tooltip--info">
-                <div class="tooltip__body" role="tooltip">
-                    <p>
-                        <span class="white">За 24 часа пополните баланс</span> на сумму не менее той, что указана в условиях, и кейс станет доступен для открытия.
-                        В противном случае прогресс пополнений будет обнулен
-                    </p>
-                </div>
-                <button type="button" class="tooltip__toggle">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#info"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul class="case-free__conditions">
-            <li>
-                <span class="case-free__condition-title">Пополнить баланс:</span>
-                <span class="case-free__conditions-balance">
-                    <span>600</span>
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-md-yellow"></use>
-                    </svg>
-                </span>
-            </li>
-            <li>
-                <span class="case-free__condition-title">Максимум открытий:</span>
-                <span>3</span>
-            </li>
-        </ul>
-    </div>
-</section>
         <section class="skins-slider splide container-sm js-skins-slider" aria-labelledby="last-top-drop-cards">
     <h2 id="last-top-drop-cards" class="section-title section-title--center section-title--light">
         <svg aria-hidden="true" class="grey">
@@ -4638,40 +4554,14 @@
     
     <div class="support__body js-support-body">
         <div class="support__header js-support-header">
-            <div class="support__tabs">
-                <input 
-                    type="radio" 
-                    name="support" 
-                    id="support-questions"
-                    class="js-tab"
-                    checked>
-                <label for="support-questions">
-                    <svg aria-hidden="true" class="grey">
-                        <use xlink:href="images/sprite.svg#question-2"></use>
-                    </svg>
-                    Вопросы
-                </label>
-                <input 
-                    type="radio" 
-                    name="support" 
-                    id="support-chat"
-                    class="js-tab">
-                <label for="support-chat">
-                    <svg aria-hidden="true" class="grey">
-                        <use xlink:href="images/sprite.svg#chat"></use>
-                    </svg>
-                    Чат
-                </label>
+            <div class="support__header-icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#chat"></use>
+                </svg>
             </div>
             <div>
-                <span class="support__subtitle">
-                    <span>Technical</span>
-                    <span>Operator</span>
-                </span>
-                <span class="support__title">
-                    <span>Support</span>
-                    <span>Assistance</span>
-                </span>
+                <span class="support__subtitle">Operator</span>
+                <span class="support__title">Assistance</span>
             </div>
             <button type="button" class="support__close-btn js-support-close">
                 Закрыть окно
@@ -4679,78 +4569,70 @@
             </button>
         </div>
         <div class="support__content">
-            <div data-tab="support-questions">
-                
-                
-                    <div class="support__accordion">
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">01.</span>
-                                <span class="support__accordion-title">Are there any age restrictions?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">02.</span>
-                                <span class="support__accordion-title">Can I join as a spectator?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">03.</span>
-                                <span class="support__accordion-title">What games are included in the events?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">04.</span>
-                                <span class="support__accordion-title">Can I cancel my registration?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">05.</span>
-                                <span class="support__accordion-title">Do you organize offline or online tournaments?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-            </div>
-            <div class="support__chat" data-tab="support-chat">
+            <div class="support__chat">
                 <div class="support__messages js-support-messages">
                     <div class="support__message">
                         <span class="support__message-author">Martin (Moderator)</span>
                         <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
                         <span class="support__message-data">07:21</span>
                     </div>
+                    <div class="support__chapter">
+                        <h3 class="support__chapter-title">Выбрать тему:</h3>
+                        <ul class="support__chapter-list">
+                            <li><button type="button" class="btn">Пополнение</button></li>
+                            <li><button type="button" class="btn">Ошибка</button></li>
+                            <li><button type="button" class="btn">Сотрудничество</button></li>
+                            <li><button type="button" class="btn">Бонус</button></li>
+                            <li><button type="button" class="btn">Другое</button></li>
+                        </ul>
+                    </div>
                     <div class="support__message support__message--right">
-                        <span class="support__message-author">Martin (Moderator)</span>
-                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-author">Ingrid</span>
+                        <p class="support__message-text">Сотрудничество</p>
                         <span class="support__message-data">07:21</span>
                     </div>
                     <div class="support__message">
                         <span class="support__message-author">Martin (Moderator)</span>
-                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <p class="support__message-text">Здравствуйте! По вопросам сотрудничества отправьте, пожалуйста, ваше предложение в Telegram:<br>
+                            YouTube — <a href="https://t.me/magicdrop_video" target="_blank" rel="noopener noreferrer">https://t.me/magicdrop_video</a><br>
+                            Twitch — <a href="https://t.me/magicdrop_streams" target="_blank" rel="noopener noreferrer">https://t.me/magicdrop_streams</a><br>
+                            Укажите, пожалуйста: канал/ник, тематика, средняя аудитория, формат сотрудничества и желаемые условия. Спасибо за внимание к MAGICDROP</p>
                         <span class="support__message-data">07:21</span>
                     </div>
+                    <div class="support__chapter">
+                        <h3 class="support__chapter-title">Выбрать тему:</h3>
+                        <ul class="support__chapter-list">
+                            <li><button type="button" class="btn">Пополнение</button></li>
+                            <li><button type="button" class="btn">Ошибка</button></li>
+                            <li><button type="button" class="btn">Сотрудничество</button></li>
+                            <li><button type="button" class="btn">Бонус</button></li>
+                            <li><button type="button" class="btn">Другое</button></li>
+                        </ul>
+                    </div>
                     <div class="support__message support__message--right">
+                        <span class="support__message-author">Ingrid</span>
+                        <p class="support__message-text">Ошибка</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__chapter">
+                        <h3 class="support__chapter-title">Выбрать вопрос:</h3>
+                        <ul class="support__chapter-list">
+                            <li><button type="button" class="btn">Ошибка проверки ссылки / обмены заблокированы в Steam</button></li>
+                            <li><button type="button" class="btn">Ошибка 4</button></li>
+                            <li><button type="button" class="btn">Ошибка отправки</button></li>
+                            <li><button type="button" class="btn">Ошибка 500 / Ошибка 14 / Ошибка 18</button></li>
+                            <li><button type="button" class="btn">Другое</button></li>
+                            <li><button type="button" class="support__chapter-another btn">Выбрать другую тему</button></li>
+                        </ul>
+                    </div>
+                    <div class="support__message support__message--right">
+                        <span class="support__message-author">Ingrid</span>
+                        <p class="support__message-text">Ошибка проверки ссылки / обмены заблокированы в Steam</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message">
                         <span class="support__message-author">Martin (Moderator)</span>
-                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <p class="support__message-text">Похоже, у вас в настройках Steam заблокированы обмены. Попробуйте отправить предложение обмена другу — система сообщит причину блокировки. Проверьте настройки приватности и статус обменов, затем создайте новую трейд‑ссылку</p>
                         <span class="support__message-data">07:21</span>
                     </div>
                 </div>
