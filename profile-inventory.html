@@ -1085,7 +1085,7 @@
 	</div>
 </header>
     <main>
-        <div class="container-md">
+        <div class="container-sm">
     <div class="profile-header profile-header--vip">
         <div class="profile-header__left-part">
             <div class="profile-header__user">
@@ -1117,21 +1117,19 @@
                         </button>
                     </span>
                     <div class="profile-header__user-date">Присоединился <span>02.07.2024</span></div>
-                    <form class="profile-header__form">
-                        <div class="profile-header__input">
-                            <label for="profile-promocode" class="sr-only">Промокод</label>
-                            <input type="text" id="profile-promocode" placeholder="Промокод">
-                        </div>
-                        <button type="button" class="btn">Активировать</button>
-                    </form>
-                    <form class="profile-header__form">
-                        <div class="profile-header__input">
-                            <label for="profile-trade-link" class="sr-only">Промокод</label>
-                            <input type="text" id="profile-trade-link" placeholder="Trade-ссылка">
-                        </div>
-                        <button type="button" class="btn">Сохранить</button>
-                    </form>
                     <div class="profile-header__btns">
+                        <button type="button" class="btn btn--sm" data-modal-trigger="settings">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#settings-2"></use>
+                            </svg>
+                            Трейд-ссылка
+                        </button>
+                        <button type="button" class="btn btn--sm" data-modal-trigger="promocode">
+                            <svg aria-hidden="true" class="dark-grey">
+                                <use xlink:href="images/sprite.svg#discount"></use>
+                            </svg>
+                            Активировать промокод
+                        </button>
                         <button type="button" class="btn btn--sm" data-modal-trigger="currency">
                             <svg aria-hidden="true" class="dark-grey">
                                 <use xlink:href="images/sprite.svg#coins-swap"></use>
@@ -1152,31 +1150,16 @@
                                 VIP
                             </button>
                         
+                        <button type="button" class="btn btn--sm btn--red">
+                            <svg aria-hidden="true" class="white">
+                                <use xlink:href="images/sprite.svg#logout"></use>
+                            </svg>
+                            Выход
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        
-            <div class="profile-header__progress">
-                <div>
-                    <span class="profile-header__balance-title">Баланс:</span>
-                    <span class="profile-header__balance-total">
-                        <picture>
-                            <source srcset="./images/magic-coin.webp" type="image/webp">
-                            <img src="./images/magic-coin.png" width="48" height="48" alt="" aria-hidden="true">
-                        </picture>
-                        <span>370</span>
-                    </span>
-                </div>
-                <div>
-                    <span class="profile-header__level"><span>2</span> Уровень</span>
-                    <div>
-                        <span  class="profile-header__level-text">До следующего уровня:</span>
-                        <span class="profile-header__level-money"><span>480</span>P</span>
-                    </div>
-                </div>
-            </div>
-        
         <ul class="profile-header__params-list">
             <li class="profile-header__param">
                 <div class="profile-header__param-svg">
@@ -1224,6 +1207,27 @@
                 <span class="profile-header__param-title">Battles</span>
             </li> -->
         </ul>
+        
+            <div class="profile-header__progress">
+                <div>
+                    <span class="profile-header__balance-title">Баланс:</span>
+                    <span class="profile-header__balance-total">
+                        <picture>
+                            <source srcset="./images/magic-coin.webp" type="image/webp">
+                            <img src="./images/magic-coin.png" width="48" height="48" alt="" aria-hidden="true">
+                        </picture>
+                        <span>370</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="profile-header__level"><span>2</span> Уровень</span>
+                    <div>
+                        <span  class="profile-header__level-text">До следующего уровня:</span>
+                        <span class="profile-header__level-money"><span>480</span>P</span>
+                    </div>
+                </div>
+            </div>
+        
     </div>
 </div>
         <div class="container-sm">
@@ -1334,18 +1338,6 @@
 </ul>
         <div class="profile__content">
             <div class="profile__content--inventory">
-                <div class="profile__content-controls">
-                    <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span>Доступно для продажи</span>
-                    </label>
-                    <button type="button" class="btn btn--bg-grey btn--upper" data-modal-trigger="sell-all">
-                        Продать все
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                        </svg>
-                    </button>
-                </div>
                 <div class="profile__inventory">
                     
                         <section>
@@ -1651,12 +1643,26 @@
                         </section>
                     
                     <section>
-                        <h2 class="profile__title">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#inventory"></use>
-                            </svg>
-                            Inventory
-                        </h2>
+                        <div class="profile__header">
+                            <h2 class="profile__title">
+                                <svg aria-hidden="true" class="dark-grey">
+                                    <use xlink:href="images/sprite.svg#inventory"></use>
+                                </svg>
+                                Inventory
+                            </h2>
+                            <div class="profile__header-controls">
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Доступно для продажи</span>
+                                </label>
+                                <button type="button" class="btn btn--bg-grey btn--upper" data-modal-trigger="sell-all">
+                                    Продать все
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                         
                         
                             <div class="profile__inventory-list">
@@ -3870,6 +3876,69 @@
                             <use xlink:href="images/sprite.svg#close-circle"></use>
                         </svg>
                         Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal js-modal" data-modal-name="promocode">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Введите промокод</h2>
+                <input type="text" placeholder="Промокод" class="mt-32">
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--bg-blue js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#file-check-blue"></use>
+                        </svg>
+                        Активировать
+                    </button>
+                    <button type="button" class="btn js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#close-circle"></use>
+                        </svg>
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal modal--settings js-modal" data-modal-name="settings">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Settings</h2>
+                <p class="modal__text">
+                    Please enter your Trade URL 
+                </p>
+                <img src="./images/modals/img-modal-settings.png" alt="" aria-hidden="true">
+                <div class="modal__input-wrap">
+                    <a href=".#" class="modal__link">What is this?</a>
+                    <input type="text" placeholder="https://steamcommunity.com/tradeoffer/new/">
+                </div>
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--bg-blue">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#file-check-blue"></use>
+                        </svg>
+                        Save
+                    </button>
+                    <button type="button" class="btn js-modal-close">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#close-circle"></use>
+                        </svg>
+                        Cancel
                     </button>
                 </div>
             </div>
