@@ -13381,6 +13381,14 @@ main:has(.profile-header--vip) {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+}
+@media (max-width: 768px) {
+  .profile__content {
+    margin-top: 2.4rem;
+    width: 100%;
+  }
+}
+.profile__content--trades, .profile__content--upgrade, .profile__content--contracts {
   padding: 2.4rem 1.6rem 2.4rem;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #161622), color-stop(90%, #111120), to(rgba(17, 17, 32, 0.5)));
   background-image: linear-gradient(180deg, #161622 30%, #111120 90%, rgba(17, 17, 32, 0.5) 100%);
@@ -13389,20 +13397,12 @@ main:has(.profile-header--vip) {
           box-shadow: 0 0.2rem 0 0 #181825 inset;
 }
 @media (max-width: 768px) {
-  .profile__content {
-    margin-top: 2.4rem;
+  .profile__content--trades, .profile__content--upgrade, .profile__content--contracts {
     padding: 0;
-    width: 100%;
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-}
-.profile__content:has(.profile__inventory) {
-  padding: 0;
-  background-image: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .profile__header {
