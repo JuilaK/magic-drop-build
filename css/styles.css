@@ -975,6 +975,9 @@ svg.light-blue {
 svg.red {
   fill: #ff121d;
 }
+svg.violet {
+  fill: #7E57C2;
+}
 
 .container {
   margin: 0 auto;
@@ -3830,6 +3833,7 @@ input[type=number] {
 }
 
 .header__profile-img-btn {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3893,6 +3897,34 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.6rem;
+  z-index: 1;
+}
+
+.header__profile-vip {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -0.6rem;
+  height: 1.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#DDC916), to(#DDC916));
+  background: linear-gradient(0deg, #DDC916 0%, #DDC916 100%);
+  border-radius: 0.3rem;
+  color: #161622;
+  font-size: 0.8rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -10563,16 +10595,30 @@ span.draw-item__start-price svg {
   }
 }
 
+.case-hero__social-link {
+  background: rgba(0, 4, 40, 0.6);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
 .case-hero__social-link svg {
-  -webkit-transition: -webkit-filter 0.3s ease-out;
-  transition: -webkit-filter 0.3s ease-out;
-  transition: filter 0.3s ease-out;
-  transition: filter 0.3s ease-out, -webkit-filter 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 @media (any-hover: hover) {
+  .case-hero__social-link:hover {
+    background: rgba(50, 50, 67, 0.7);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .case-hero__social-link:hover svg {
-    -webkit-filter: drop-shadow(0 0 0.8rem rgba(255, 255, 255, 0.6));
-            filter: drop-shadow(0 0 0.8rem rgba(255, 255, 255, 0.6));
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -39098,12 +39144,24 @@ span.vip-club__wheel-btn-price img {
   width: 4.4rem;
   height: 4.4rem;
   position: relative;
+  display: block;
   padding: 0.2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background-image: linear-gradient(180deg, #161622 0%, #12121f 100%);
   border-radius: 0.5rem;
   -webkit-box-shadow: inset 0 0.1rem 0 0 #181825, inset 0 -0.1rem 0 0 #141421;
           box-shadow: inset 0 0.1rem 0 0 #181825, inset 0 -0.1rem 0 0 #141421;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .vip-club__win-item-user:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 .vip-club__win-item-user::after {
   -webkit-transform: translate(-50%, -50%);
