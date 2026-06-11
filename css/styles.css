@@ -12839,6 +12839,7 @@ main:has(.profile-header--vip) {
   -webkit-column-gap: 0.4rem;
      -moz-column-gap: 0.4rem;
           column-gap: 0.4rem;
+  margin-top: 0.4rem;
   padding-left: 0.4rem;
   color: #8484A7;
   font-size: 1.4rem;
@@ -12849,7 +12850,6 @@ main:has(.profile-header--vip) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 0.4rem;
   }
 }
 .profile-header__user-id > span {
@@ -12890,7 +12890,7 @@ main:has(.profile-header--vip) {
 }
 .profile-header__user-date span {
   color: #8484A7;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .profile-header__btns {
