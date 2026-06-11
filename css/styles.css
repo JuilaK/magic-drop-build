@@ -3364,7 +3364,7 @@ input[type=number] {
             transform: rotate(5deg);
   }
 }
-.header__nav-link--event, .header__nav-link--spring-event, .header__nav-link--vip {
+.header__nav-link--event, .header__nav-link--spring-event, .header__nav-link--summer-event, .header__nav-link--vip {
   -webkit-column-gap: 0.8rem;
      -moz-column-gap: 0.8rem;
           column-gap: 0.8rem;
@@ -3377,6 +3377,12 @@ input[type=number] {
 .header__nav-link.header__nav-link--spring-event::before {
   background: center/cover no-repeat -webkit-image-set(url("../images/bg/bg-spring-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-spring-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.jpg") type("image/webp") 2x);
   background: center/cover no-repeat image-set(url("../images/bg/bg-spring-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-spring-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-spring-event-btn@2x.jpg") type("image/webp") 2x);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.header__nav-link.header__nav-link--summer-event::before {
+  background: center/cover no-repeat -webkit-image-set(url("../images/bg/bg-summer-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-summer-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.jpg") type("image/webp") 2x);
+  background: center/cover no-repeat image-set(url("../images/bg/bg-summer-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-summer-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.jpg") type("image/webp") 2x);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -22678,15 +22684,15 @@ main:has(.profile-header--vip) {
 .modal--conditions .modal__btns {
   padding-top: 0;
 }
-.modal--christmas-premium .modal__wrap, .modal--spring-premium .modal__wrap {
+.modal--christmas-premium .modal__wrap, .modal--spring-premium .modal__wrap, .modal--summer-premium .modal__wrap {
   width: 89rem;
 }
 @media (max-width: 1024px) {
-  .modal--christmas-premium .modal__wrap, .modal--spring-premium .modal__wrap {
+  .modal--christmas-premium .modal__wrap, .modal--spring-premium .modal__wrap, .modal--summer-premium .modal__wrap {
     width: 90%;
   }
 }
-.modal--christmas-premium .modal__content, .modal--spring-premium .modal__content {
+.modal--christmas-premium .modal__content, .modal--spring-premium .modal__content, .modal--summer-premium .modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22696,13 +22702,13 @@ main:has(.profile-header--vip) {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
 }
-.modal--christmas-premium img, .modal--spring-premium img {
+.modal--christmas-premium img, .modal--spring-premium img, .modal--summer-premium img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: bottom center;
      object-position: bottom center;
 }
-.modal--christmas-premium .modal__premium-content, .modal--spring-premium .modal__premium-content {
+.modal--christmas-premium .modal__premium-content, .modal--spring-premium .modal__premium-content, .modal--summer-premium .modal__premium-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22716,7 +22722,7 @@ main:has(.profile-header--vip) {
   padding-bottom: 4rem;
   padding-top: 4rem;
 }
-.modal--christmas-premium .modal__title, .modal--spring-premium .modal__title {
+.modal--christmas-premium .modal__title, .modal--spring-premium .modal__title, .modal--summer-premium .modal__title {
   padding: 0;
   font-size: 3.2rem;
   font-weight: 900;
@@ -22724,24 +22730,24 @@ main:has(.profile-header--vip) {
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
-  .modal--christmas-premium .modal__title, .modal--spring-premium .modal__title {
+  .modal--christmas-premium .modal__title, .modal--spring-premium .modal__title, .modal--summer-premium .modal__title {
     font-size: 2.8rem;
     text-align: center;
   }
 }
-.modal--christmas-premium .modal__text, .modal--spring-premium .modal__text {
+.modal--christmas-premium .modal__text, .modal--spring-premium .modal__text, .modal--summer-premium .modal__text {
   margin-left: 0;
   font-size: 1.6rem;
   text-align: left;
 }
 @media (max-width: 768px) {
-  .modal--christmas-premium .modal__text, .modal--spring-premium .modal__text {
+  .modal--christmas-premium .modal__text, .modal--spring-premium .modal__text, .modal--summer-premium .modal__text {
     margin-left: auto;
     font-size: 1.4rem;
     text-align: center;
   }
 }
-.modal--christmas-premium .modal__btns, .modal--spring-premium .modal__btns {
+.modal--christmas-premium .modal__btns, .modal--spring-premium .modal__btns, .modal--summer-premium .modal__btns {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -22751,14 +22757,14 @@ main:has(.profile-header--vip) {
   padding-top: 4.8rem;
 }
 @media (max-width: 768px) {
-  .modal--christmas-premium .modal__btns, .modal--spring-premium .modal__btns {
+  .modal--christmas-premium .modal__btns, .modal--spring-premium .modal__btns, .modal--summer-premium .modal__btns {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 3.2rem;
   }
 }
-.modal--christmas-premium .modal__btns .btn, .modal--spring-premium .modal__btns .btn {
+.modal--christmas-premium .modal__btns .btn, .modal--spring-premium .modal__btns .btn, .modal--summer-premium .modal__btns .btn {
   min-width: 20rem;
 }
 .modal--christmas-premium .modal__dialog::before {
@@ -22855,6 +22861,11 @@ main:has(.profile-header--vip) {
 .modal--spring-premium .modal__content {
   padding-left: 0.8rem;
 }
+@media (max-width: 768px) {
+  .modal--spring-premium .modal__content {
+    padding-left: 2.4rem;
+  }
+}
 .modal--spring-premium picture {
   position: relative;
   display: -webkit-box;
@@ -22893,6 +22904,86 @@ main:has(.profile-header--vip) {
 }
 @media (any-hover: hover) {
   .modal--spring-premium .modal__btns .btn:not(:first-of-type):hover {
+    color: #FFFFFF;
+  }
+}
+.modal--summer-premium .modal__dialog {
+  background: -webkit-gradient(linear, left top, left bottom, from(#101419), to(#151920));
+  background: linear-gradient(180deg, #101419 0%, #151920 100%);
+}
+.modal--summer-premium .modal__dialog::before {
+  position: absolute;
+  top: 0;
+  left: min(42rem, 48%);
+  width: 30.1rem;
+  height: 9.7rem;
+  content: "";
+  display: block;
+  background: bottom center/contain no-repeat -webkit-image-set(url("../images/event/summer-losa-2.webp") type("image/webp") 1x, url("../images/event/summer-losa-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-2.png") type("image/png") 1x, url("../images/event/summer-losa-2@2x.png") type("image/png") 2x);
+  background: bottom center/contain no-repeat image-set(url("../images/event/summer-losa-2.webp") type("image/webp") 1x, url("../images/event/summer-losa-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-2.png") type("image/png") 1x, url("../images/event/summer-losa-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+@media (max-width: 768px) {
+  .modal--summer-premium .modal__dialog::before {
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+}
+@media (max-width: 480px) {
+  .modal--summer-premium .modal__dialog::before {
+    width: 80%;
+  }
+}
+.modal--summer-premium .modal__content {
+  padding-left: 0.8rem;
+}
+@media (max-width: 768px) {
+  .modal--summer-premium .modal__content {
+    padding-left: 2.4rem;
+  }
+}
+.modal--summer-premium picture {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 38.5rem;
+          flex: 0 0 38.5rem;
+  margin-top: -7.8rem;
+}
+@media (max-width: 1024px) {
+  .modal--summer-premium picture {
+    -ms-flex-preferred-size: 34rem;
+        flex-basis: 34rem;
+  }
+}
+@media (max-width: 768px) {
+  .modal--summer-premium picture {
+    display: none;
+  }
+}
+.modal--summer-premium img {
+  position: relative;
+  width: 100%;
+}
+.modal--summer-premium .modal__btns .btn:not(:first-of-type) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#03070C));
+  background: linear-gradient(180deg, #03070C 0%);
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #151920, inset 0 -0.2rem 0 0 #101419, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #151920, inset 0 -0.2rem 0 0 #101419, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+@media (any-hover: hover) {
+  .modal--summer-premium .modal__btns .btn:not(:first-of-type):hover {
     color: #FFFFFF;
   }
 }
@@ -31266,6 +31357,34 @@ main:has(.profile-header--vip) {
 .hero-banners__slide.another .hero-banners__slide-info {
   z-index: 1;
 }
+@media (max-width: 480px) {
+  .hero-banners__slide--summer .hero-banners__slide-img img {
+    -o-object-position: 80% top;
+       object-position: 80% top;
+  }
+}
+.hero-banners__slide--summer .hero-banners__slide-img-title {
+  margin-bottom: -1.6rem;
+  margin-top: 0;
+  width: 34rem;
+  aspect-ratio: 1.54;
+}
+@media (max-width: 768px) {
+  .hero-banners__slide--summer .hero-banners__slide-img-title {
+    width: 80%;
+    margin-bottom: -0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-banners__slide--summer .hero-banners__slide-img-title {
+    width: 70%;
+  }
+}
+.hero-banners__slide--summer .hero-banners__slide-info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .hero-banners__slide-img {
   position: absolute;
@@ -31334,6 +31453,11 @@ main:has(.profile-header--vip) {
 .hero-banners__slide-info--center .hero-banners__slide-img-title {
   width: 90%;
 }
+@media (max-width: 480px) {
+  .hero-banners__slide-info--center .hero-banners__slide-img-title {
+    width: 70%;
+  }
+}
 
 .hero-banners__slide-img-title {
   margin-top: -2.4rem;
@@ -31349,11 +31473,6 @@ main:has(.profile-header--vip) {
 @media (max-width: 768px) {
   .hero-banners__slide-img-title {
     width: 70%;
-  }
-}
-@media (max-width: 370px) {
-  .hero-banners__slide-img-title {
-    width: 85%;
   }
 }
 .hero-banners__slide-img-title > img {
@@ -31630,6 +31749,11 @@ main:has(.profile-header--vip) {
             justify-content: center;
   }
 }
+@media (max-width: 480px) {
+  .hero-banners__slide-timer {
+    margin: 0 -1.6rem;
+  }
+}
 @media (max-width: 370px) {
   .hero-banners__slide-timer {
     -webkit-column-gap: 0.2rem;
@@ -31662,7 +31786,7 @@ main:has(.profile-header--vip) {
   -webkit-box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
           box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 370px) {
+@media (max-width: 480px) {
   .hero-banners__slide-timer-item {
     padding-left: 0.4rem;
     padding-right: 0.4rem;
@@ -31672,7 +31796,7 @@ main:has(.profile-header--vip) {
   min-width: 5.6rem;
   margin-right: 0.8rem;
 }
-@media (max-width: 370px) {
+@media (max-width: 480px) {
   .hero-banners__slide-timer-item--day {
     margin-right: 0.4rem;
   }
@@ -34928,8 +35052,8 @@ dd.swap__skin-price svg {
   .event--spring .event__leaders-btn:hover {
     -webkit-box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015;
             box-shadow: inset 0 0.2rem 0 0 #152015, inset 0 -0.2rem 0 0 #152015;
-    background: -webkit-gradient(linear, left top, left bottom, from(#040804), to(#050a05));
-    background: linear-gradient(180deg, #040804 0%, #050a05 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#040608), to(#05060a));
+    background: linear-gradient(180deg, #040608 0%, #05060a 100%);
   }
 }
 .event--spring .event__how-block {
@@ -34972,6 +35096,382 @@ dd.swap__skin-price svg {
 }
 .event--spring .event__rule-btn::after {
   background-image: url("../images/sprite.svg#chevron-down-light-green");
+}
+.event--summer {
+  margin-top: -6.4rem;
+  padding-top: 6.4rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, transparent), to(#0C0C1B)), top left/100% no-repeat image-set(url("../images/event/bg-banner-summer.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer@2x.jpg") type("image/jpg") 2x), top 49.6vw left/100% no-repeat image-set(url("../images/event/bg-banner-summer-2.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer-2@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer-2.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer-2@2x.jpg") type("image/jpg") 2x), -webkit-gradient(linear, left top, left bottom, color-stop(90%, #03070C), to(#0C0C1B));
+  background: linear-gradient(180deg, transparent 90%, #0C0C1B 100%), top left/100% no-repeat -webkit-image-set(url("../images/event/bg-banner-summer.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer@2x.jpg") type("image/jpg") 2x), top 49.6vw left/100% no-repeat -webkit-image-set(url("../images/event/bg-banner-summer-2.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer-2@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer-2.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer-2@2x.jpg") type("image/jpg") 2x), linear-gradient(180deg, #03070C 90%, #0C0C1B 100%);
+  background: linear-gradient(180deg, transparent 90%, #0C0C1B 100%), top left/100% no-repeat image-set(url("../images/event/bg-banner-summer.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer@2x.jpg") type("image/jpg") 2x), top 49.6vw left/100% no-repeat image-set(url("../images/event/bg-banner-summer-2.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer-2@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer-2.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer-2@2x.jpg") type("image/jpg") 2x), linear-gradient(180deg, #03070C 90%, #0C0C1B 100%);
+}
+@media (max-width: 768px) {
+  .event--summer {
+    margin-top: 0;
+    padding-top: 0;
+    background: top left/100% no-repeat -webkit-image-set(url("../images/event/bg-banner-summer-mobile.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer-mobile@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer-mobile.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer-mobile@2x.jpg") type("image/jpg") 2x);
+    background: top left/100% no-repeat image-set(url("../images/event/bg-banner-summer-mobile.webp") type("image/webp") 1x, url("../images/event/bg-banner-summer-mobile@2x.webp") type("image/webp") 2x, url("../images/event/bg-banner-summer-mobile.jpg") type("image/jpg") 1x, url("../images/event/bg-banner-summer-mobile@2x.jpg") type("image/jpg") 2x);
+  }
+}
+.event--summer .event__banner-img {
+  width: 61.1rem;
+  aspect-ratio: 1.83;
+  background: center/contain no-repeat -webkit-image-set(url("../images/event/summer-text.webp") type("image/webp") 1x, url("../images/event/summer-text@2x.webp") type("image/webp") 2x, url("../images/event/summer-text.png") type("image/png") 1x, url("../images/event/summer-text@2x.png") type("image/png") 2x);
+  background: center/contain no-repeat image-set(url("../images/event/summer-text.webp") type("image/webp") 1x, url("../images/event/summer-text@2x.webp") type("image/webp") 2x, url("../images/event/summer-text.png") type("image/png") 1x, url("../images/event/summer-text@2x.png") type("image/png") 2x);
+}
+@media (max-width: 768px) {
+  .event--summer .event__banner-img {
+    width: 60vw;
+  }
+}
+.event--summer .event__banner-desc,
+.event--summer .event__banner-xp-text,
+.event--summer span.event__banner-xp-current,
+.event--summer .event__banner-active,
+.event--summer .event__banner-timer-item span:last-child {
+  color: #AAC2E0;
+}
+.event--summer .event__banner-lvl-block,
+.event--summer .event__banner-boost-block,
+.event--summer .event__banner-timer-item {
+  background: #03070C;
+}
+.event--summer .event__drops::before, .event--summer .event__drops::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+}
+.event--summer .event__drops::before {
+  left: 0;
+  width: 62.7rem;
+  aspect-ratio: 0.83;
+  background: bottom right/contain no-repeat -webkit-image-set(url("../images/event/summer-character-1.webp") type("image/webp") 1x, url("../images/event/summer-character-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-character-1.png") type("image/png") 1x, url("../images/event/summer-character-1@2x.png") type("image/png") 2x);
+  background: bottom right/contain no-repeat image-set(url("../images/event/summer-character-1.webp") type("image/webp") 1x, url("../images/event/summer-character-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-character-1.png") type("image/png") 1x, url("../images/event/summer-character-1@2x.png") type("image/png") 2x);
+  -webkit-transform: translateX(-55%);
+      -ms-transform: translateX(-55%);
+          transform: translateX(-55%);
+}
+@media (max-width: 1500px) {
+  .event--summer .event__drops::before {
+    content: none;
+  }
+}
+.event--summer .event__drops::after {
+  right: 0;
+  width: 73.1rem;
+  aspect-ratio: 0.97;
+  background: bottom left/contain no-repeat -webkit-image-set(url("../images/event/summer-character-2.webp") type("image/webp") 1x, url("../images/event/summer-character-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-character-2.png") type("image/png") 1x, url("../images/event/summer-character-2@2x.png") type("image/png") 2x);
+  background: bottom left/contain no-repeat image-set(url("../images/event/summer-character-2.webp") type("image/webp") 1x, url("../images/event/summer-character-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-character-2.png") type("image/png") 1x, url("../images/event/summer-character-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translateX(57%);
+      -ms-transform: translateX(57%);
+          transform: translateX(57%);
+}
+@media (max-width: 1500px) {
+  .event--summer .event__drops::after {
+    content: none;
+  }
+}
+.event--summer .event__tabs {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#101419), to(#151920));
+  background: linear-gradient(180deg, #101419 0%, #151920 100%);
+  z-index: 1;
+}
+@media (any-hover: hover) {
+  .event--summer .event__tabs .tab:hover label {
+    color: #FFFFFF;
+  }
+}
+.event--summer .event__tabs .tab label {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #1c282c, inset 0 -0.2rem 0 0 #161f22, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #1c282c, inset 0 -0.2rem 0 0 #161f22, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1B252D), to(#141D24));
+  background: linear-gradient(180deg, #1B252D 0%, #141D24 100%);
+  color: #AAC2E0;
+}
+.event--summer .event__tabs .tab input:checked + label {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#03070C), to(#0D0F16));
+  background: linear-gradient(180deg, #03070C 0%, #0D0F16 100%);
+  color: #FFFFFF;
+}
+.event--summer .event__tabs-container {
+  position: relative;
+  padding-bottom: 3rem;
+  background: #151920;
+  z-index: 1;
+}
+.event--summer .event__pass {
+  border-right-color: #03070C;
+}
+.event--summer .event__rewards-progress-bar {
+  background-color: #03070C;
+}
+.event--summer .event__rewards--up-xp .event__rewards-items:first-child .event__prize-xp {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#03070C), to(#0D0F16));
+  background: linear-gradient(180deg, #03070C 0%, #0D0F16 100%);
+}
+.event--summer .event__rewards-point:not(.event__rewards-point--current, .event__rewards-point--active) {
+  background-image: url("../images/event/summer-point-shape.svg");
+}
+.event--summer .event__rewards-scale::before {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(21, 25, 32, 0)), to(#151920));
+  background: linear-gradient(270deg, rgba(21, 25, 32, 0) 0%, #151920 100%);
+}
+.event--summer .event__rewards-scale::after {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(21, 25, 32, 0)), to(#151920));
+  background: linear-gradient(90deg, rgba(21, 25, 32, 0) 0%, #151920 100%);
+}
+.event--summer .event__rewards-scale-wrap::-webkit-scrollbar {
+  background-color: #03070C;
+}
+.event--summer .event__rewards-scale-wrap::-webkit-scrollbar-thumb {
+  background-color: #42546B;
+}
+.event--summer .event__prize {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+.event--summer .event__prize--current .event__prize-content {
+  -webkit-box-shadow: inset 0 0 1.2rem rgba(170, 194, 224, 0.7), 0 0 1.2rem 0.2rem rgba(170, 194, 224, 0.3);
+          box-shadow: inset 0 0 1.2rem rgba(170, 194, 224, 0.7), 0 0 1.2rem 0.2rem rgba(170, 194, 224, 0.3);
+}
+.event--summer .event__prize-content {
+  background: center/100% 100% no-repeat -webkit-image-set(url("../images/event/summer-cover.webp") type("image/webp") 1x, url("../images/event/summer-cover@2x.webp") type("image/webp") 2x, url("../images/event/summer-cover.jpg") type("image/jpg") 1x, url("../images/event/summer-cover@2x.jpg") type("image/jpg") 2x);
+  background: center/100% 100% no-repeat image-set(url("../images/event/summer-cover.webp") type("image/webp") 1x, url("../images/event/summer-cover@2x.webp") type("image/webp") 2x, url("../images/event/summer-cover.jpg") type("image/jpg") 1x, url("../images/event/summer-cover@2x.jpg") type("image/jpg") 2x);
+}
+.event--summer .event__prize-xp > span,
+.event--summer .event__prize-subtitle,
+.event--summer .event__prize-tooltip span.event__prize-tooltip-title,
+.event--summer .event__section-text,
+.event--summer .event__mission-desc,
+.event--summer .event__prize-done-text,
+.event--summer .event__prize-done-data {
+  color: #AAC2E0;
+}
+.event--summer .event__prize-tooltip::before {
+  border-color: #1B252D;
+}
+.event--summer .event__prize-tooltip .tooltip__body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1B252D), to(#141D24));
+  background: linear-gradient(180deg, #1B252D 0%, #141D24 100%);
+}
+.event--summer .event__mission-numb {
+  background-image: url("../images/event/summer-point-shape.svg");
+}
+.event--summer .event__mission-progress-bar {
+  background-color: #03070C;
+}
+.event--summer .event__missions::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 25, 32, 0)), to(#151920));
+  background: linear-gradient(180deg, rgba(21, 25, 32, 0) 0%, #151920 100%);
+}
+.event--summer .event__missions-list::-webkit-scrollbar,
+.event--summer .event__redeem-list::-webkit-scrollbar {
+  background-color: #03070C;
+}
+.event--summer .event__missions-list::-webkit-scrollbar-thumb,
+.event--summer .event__redeem-list::-webkit-scrollbar-thumb {
+  background-color: #42546B;
+}
+.event--summer .event__redeem::before {
+  background: -webkit-gradient(linear, left top, right top, from(#151920), to(rgba(21, 25, 32, 0)));
+  background: linear-gradient(90deg, #151920 0%, rgba(21, 25, 32, 0) 100%);
+}
+.event--summer .event__redeem::after {
+  background: -webkit-gradient(linear, right top, left top, from(#151920), to(rgba(21, 25, 32, 0)));
+  background: linear-gradient(270deg, #151920 0%, rgba(21, 25, 32, 0) 100%);
+}
+.event--summer .event__redeem-empty {
+  color: #AAC2E0;
+}
+.event--summer .event__section-header {
+  position: relative;
+  padding-left: 23%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .event--summer .event__section-header {
+    padding-left: 0;
+  }
+}
+.event--summer .event__section-header .event__section-title {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .event--summer .event__section-header .event__section-title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.event--summer .event__section-header .event__section-text {
+  margin-left: 0;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .event--summer .event__section-header .event__section-text {
+    margin-left: auto;
+    text-align: center;
+  }
+}
+.event--summer .event__leaders {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#101419), to(#151920));
+  background-image: linear-gradient(180deg, #101419 0%, #151920 100%);
+}
+.event--summer .event__leaders::before, .event--summer .event__leaders::after {
+  content: "";
+  display: block;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.event--summer .event__leaders::before {
+  position: absolute;
+  top: -24rem;
+  left: 0;
+  height: 24rem;
+  background: bottom left 7%/22.1rem 7rem no-repeat -webkit-image-set(url("../images/event/summer-losa-1.webp") type("image/webp") 1x, url("../images/event/summer-losa-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-1.png") type("image/png") 1x, url("../images/event/summer-losa-1@2x.png") type("image/png") 2x), bottom right 18%/46.7rem 24rem no-repeat -webkit-image-set(url("../images/event/summer-leaders-img-1.webp") type("image/webp") 1x, url("../images/event/summer-leaders-img-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-leaders-img-1.png") type("image/png") 1x, url("../images/event/summer-leaders-img-1@2x.png") type("image/png") 2x);
+  background: bottom left 7%/22.1rem 7rem no-repeat image-set(url("../images/event/summer-losa-1.webp") type("image/webp") 1x, url("../images/event/summer-losa-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-1.png") type("image/png") 1x, url("../images/event/summer-losa-1@2x.png") type("image/png") 2x), bottom right 18%/46.7rem 24rem no-repeat image-set(url("../images/event/summer-leaders-img-1.webp") type("image/webp") 1x, url("../images/event/summer-leaders-img-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-leaders-img-1.png") type("image/png") 1x, url("../images/event/summer-leaders-img-1@2x.png") type("image/png") 2x);
+}
+@media (max-width: 1382px) {
+  .event--summer .event__leaders::before {
+    background-position-x: left 7%, right 2%;
+  }
+}
+@media (max-width: 1024px) {
+  .event--summer .event__leaders::before {
+    background-position-x: left, right;
+    background-size: 16rem 5rem, 32rem 16.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .event--summer .event__leaders::before {
+    background: bottom left 5%/14rem 4.34rem no-repeat -webkit-image-set(url("../images/event/summer-losa-1.webp") type("image/webp") 1x, url("../images/event/summer-losa-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-1.png") type("image/png") 1x, url("../images/event/summer-losa-1@2x.png") type("image/png") 2x), bottom right 5%/14rem 4.34rem no-repeat -webkit-image-set(url("../images/event/summer-losa-2.webp") type("image/webp") 1x, url("../images/event/summer-losa-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-2.png") type("image/png") 1x, url("../images/event/summer-losa-2@2x.png") type("image/png") 2x);
+    background: bottom left 5%/14rem 4.34rem no-repeat image-set(url("../images/event/summer-losa-1.webp") type("image/webp") 1x, url("../images/event/summer-losa-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-1.png") type("image/png") 1x, url("../images/event/summer-losa-1@2x.png") type("image/png") 2x), bottom right 5%/14rem 4.34rem no-repeat image-set(url("../images/event/summer-losa-2.webp") type("image/webp") 1x, url("../images/event/summer-losa-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-2.png") type("image/png") 1x, url("../images/event/summer-losa-2@2x.png") type("image/png") 2x);
+  }
+}
+.event--summer .event__leaders::after {
+  position: absolute;
+  top: -12rem;
+  right: 0;
+  height: 28.8rem;
+  background: top right 18%/46.7rem 28.8rem no-repeat -webkit-image-set(url("../images/event/summer-leaders-img-2.webp") type("image/webp") 1x, url("../images/event/summer-leaders-img-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-leaders-img-2.png") type("image/png") 1x, url("../images/event/summer-leaders-img-2@2x.png") type("image/png") 2x);
+  background: top right 18%/46.7rem 28.8rem no-repeat image-set(url("../images/event/summer-leaders-img-2.webp") type("image/webp") 1x, url("../images/event/summer-leaders-img-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-leaders-img-2.png") type("image/png") 1x, url("../images/event/summer-leaders-img-2@2x.png") type("image/png") 2x);
+}
+@media (max-width: 1382px) {
+  .event--summer .event__leaders::after {
+    background-position-x: right 2%;
+  }
+}
+@media (max-width: 1024px) {
+  .event--summer .event__leaders::after {
+    top: -8rem;
+    background-position-x: right;
+    background-size: 32rem 19.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .event--summer .event__leaders::after {
+    content: none;
+  }
+}
+.event--summer .event__top-item {
+  background: top center/100% 100% no-repeat -webkit-image-set(url("../images/event/bg-summer-event-top.webp") type("image/webp") 1x, url("../images/event/bg-summer-event-top@2x.webp") type("image/webp") 2x, url("../images/event/bg-summer-event-top.jpg") type("image/jpg") 1x, url("../images/event/bg-summer-event-top@2x.jpg") type("image/jpg") 2x);
+  background: top center/100% 100% no-repeat image-set(url("../images/event/bg-summer-event-top.webp") type("image/webp") 1x, url("../images/event/bg-summer-event-top@2x.webp") type("image/webp") 2x, url("../images/event/bg-summer-event-top.jpg") type("image/jpg") 1x, url("../images/event/bg-summer-event-top@2x.jpg") type("image/jpg") 2x);
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+.event--summer .event__top-item-xp,
+.event--summer .event__top-item-price {
+  background-color: #101419;
+}
+.event--summer .event__top-item-emty-user,
+.event--summer .event__top-item-xp,
+.event--summer .event__top-item-subtitle,
+.event--summer .event-leader__numb,
+.event--summer .event-leader__empty-user > span,
+.event--summer .event-leader__name,
+.event--summer .event-leader__skin-subtitle,
+.event--summer .event-leader__xp {
+  color: #AAC2E0;
+}
+.event--summer .event-leader,
+.event--summer .event__leaders-btn {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#03070C), to(#0D0F16));
+  background: linear-gradient(180deg, #03070C 0%, #0D0F16 100%);
+}
+.event--summer .event-leader__empty-user::before,
+.event--summer .event-leader__user::before,
+.event--summer .event-leader__xp {
+  background-color: #101419;
+}
+.event--summer .event__leaders-btn {
+  color: #AAC2E0;
+}
+@media (any-hover: hover) {
+  .event--summer .event__leaders-btn:hover {
+    -webkit-box-shadow: inset 0 0.2rem 0 0 #151c20, inset 0 -0.2rem 0 0 #151c20;
+            box-shadow: inset 0 0.2rem 0 0 #151c20, inset 0 -0.2rem 0 0 #151c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#040608), to(#05080a));
+    background: linear-gradient(180deg, #040608 0%, #05080a 100%);
+  }
+}
+.event--summer .event__how-block {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#101419), to(#151920));
+  background-image: linear-gradient(180deg, #101419 0%, #151920 100%);
+}
+.event--summer .event__how-block::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9.7rem;
+  content: "";
+  display: block;
+  background: bottom left calc(45% - 22.1rem)/22.1rem 7rem no-repeat -webkit-image-set(url("../images/event/summer-losa-1.webp") type("image/webp") 1x, url("../images/event/summer-losa-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-1.png") type("image/png") 1x, url("../images/event/summer-losa-1@2x.png") type("image/png") 2x), bottom right calc(50% - 30.1rem)/30.1rem 9.7rem no-repeat -webkit-image-set(url("../images/event/summer-losa-2.webp") type("image/webp") 1x, url("../images/event/summer-losa-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-2.png") type("image/png") 1x, url("../images/event/summer-losa-2@2x.png") type("image/png") 2x);
+  background: bottom left calc(45% - 22.1rem)/22.1rem 7rem no-repeat image-set(url("../images/event/summer-losa-1.webp") type("image/webp") 1x, url("../images/event/summer-losa-1@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-1.png") type("image/png") 1x, url("../images/event/summer-losa-1@2x.png") type("image/png") 2x), bottom right calc(50% - 30.1rem)/30.1rem 9.7rem no-repeat image-set(url("../images/event/summer-losa-2.webp") type("image/webp") 1x, url("../images/event/summer-losa-2@2x.webp") type("image/webp") 2x, url("../images/event/summer-losa-2.png") type("image/png") 1x, url("../images/event/summer-losa-2@2x.png") type("image/png") 2x);
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+@media (max-width: 1024px) {
+  .event--summer .event__how-block::before {
+    background-position: bottom left calc(40% - 16rem), bottom right calc(40% - 16rem);
+    background-size: 16rem 5rem, 16rem 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .event--summer .event__how-block::before {
+    background-position: bottom left 5%, bottom right 5%;
+    background-size: 14rem 4.34rem, 14rem 4.34rem;
+  }
+}
+.event--summer .event__how-item,
+.event--summer .event__rule-btn {
+  -webkit-box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 0.2rem 0 0 #101419, inset 0 -0.2rem 0 0 #151920, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#03070C), to(#0D0F16));
+  background: linear-gradient(180deg, #03070C 0%, #0D0F16 100%);
+}
+.event--summer .event__how-item-title {
+  color: #FFFFFF;
+}
+.event--summer .event__how-item-text,
+.event--summer .event__rule-btn,
+.event--summer .event__rule-text p {
+  color: #AAC2E0;
+}
+.event--summer .event__rule-btn::after {
+  background-image: url("../images/sprite.svg#chevron-down-light-blue");
 }
 
 .event__banner {
