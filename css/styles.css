@@ -22141,6 +22141,34 @@ main:has(.profile-header--vip) {
             transform: scale(1);
   }
 }
+@-webkit-keyframes balloon-float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes balloon-float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22937,6 +22965,86 @@ main:has(.profile-header--vip) {
 @media (any-hover: hover) {
   .modal--summer-premium .modal__btns .btn:not(:first-of-type):hover {
     color: #FFFFFF;
+  }
+}
+.modal--birthday .modal__wrap {
+  width: 89rem;
+}
+@media (max-width: 1024px) {
+  .modal--birthday .modal__wrap {
+    width: 90%;
+  }
+}
+.modal--birthday .modal__dialog {
+  background: top right/cover no-repeat -webkit-image-set(url("../images/modals/img-modal-birthday.webp") type("image/webp") 1x, url("../images/modals/img-modal-birthday@2x.webp") type("image/webp") 2x, url("../images/modals/img-modal-birthday.jpg") type("image/jpg") 1x, url("../images/modals/img-modal-birthday@2x.jpg") type("image/jpg") 2x) #0C0C1B;
+  background: top right/cover no-repeat image-set(url("../images/modals/img-modal-birthday.webp") type("image/webp") 1x, url("../images/modals/img-modal-birthday@2x.webp") type("image/webp") 2x, url("../images/modals/img-modal-birthday.jpg") type("image/jpg") 1x, url("../images/modals/img-modal-birthday@2x.jpg") type("image/jpg") 2x) #0C0C1B;
+}
+@media (max-width: 768px) {
+  .modal--birthday .modal__dialog {
+    background-position-x: center;
+  }
+}
+.modal--birthday .modal__dialog::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(4rem 100% at left, #ffae00, transparent 70%), radial-gradient(4rem 100% at right, #ffae00, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+  -webkit-filter: blur(1.6rem);
+          filter: blur(1.6rem);
+}
+.modal--birthday .modal__content {
+  padding: 2.4rem 4rem 0;
+}
+@media (max-width: 480px) {
+  .modal--birthday .modal__content {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+.modal--birthday .modal__birthday-10-img {
+  position: relative;
+  display: block;
+  margin-bottom: -3.2rem;
+  margin-left: -2%;
+  height: auto;
+  -webkit-animation: balloon-float 5s ease-in-out infinite;
+          animation: balloon-float 5s ease-in-out infinite;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .modal--birthday .modal__birthday-10-img {
+    margin-bottom: -2.4rem;
+  }
+}
+.modal--birthday .modal__birthday-md-img {
+  height: auto;
+}
+.modal--birthday .modal__text {
+  margin-left: 0;
+  margin-top: 1.6rem;
+  max-width: 32rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: left;
+}
+@media (max-width: 480px) {
+  .modal--birthday .modal__text {
+    font-size: 1.8rem;
+  }
+}
+.modal--birthday .modal__btns {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 4rem;
+}
+@media (max-width: 480px) {
+  .modal--birthday .modal__btns {
+    padding-bottom: 2.4rem;
   }
 }
 .modal--vip-club .modal__content {
