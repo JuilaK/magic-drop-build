@@ -23484,8 +23484,16 @@ main:has(.profile-header--vip) {
 }
 
 .modal__vip-sum {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
   position: relative;
-  display: inline-block;
   margin-top: 1.2rem;
   font-size: 3.2rem;
   font-weight: 900;
@@ -23500,6 +23508,12 @@ main:has(.profile-header--vip) {
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
+}
+.modal__vip-sum svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .modal__vip-lvl {
