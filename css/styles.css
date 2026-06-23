@@ -25383,8 +25383,9 @@ main:has(.profile-header--vip) {
 }
 .win-rare--open .win-rare__content {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-out 4.8s;
-  transition: opacity 0.3s ease-out 4.8s;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out 4.8s, visibility 0s ease-out 4.8s;
+  transition: opacity 0.3s ease-out 4.8s, visibility 0s ease-out 4.8s;
 }
 .win-rare--open .win-rare__item {
   opacity: 1;
@@ -25459,8 +25460,9 @@ main:has(.profile-header--vip) {
 }
 .win-rare--open.win-rare--many-items .win-rare__content {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out;
 }
 .win-rare--open.win-rare--many-items .win-rare__item:nth-child(1) {
   -webkit-transition: opacity 0.2s ease-out 0.15s, -webkit-transform 0.2s ease-out 0.15s;
@@ -27695,6 +27697,11 @@ main:has(.profile-header--vip) {
   -webkit-animation: diamondShine 3.6s ease-in-out infinite;
           animation: diamondShine 3.6s ease-in-out infinite;
 }
+@media (min-width: 1900px) {
+  .win-rare--open.win-rare--many-items .win-rare__item.is-rare .win-rare__item-bg::after {
+    border-radius: min(0.8vw, 3.2rem);
+  }
+}
 .win-rare--open.win-rare--many-items.win-rare--newyear .win-rare__item:nth-child(1) {
   -webkit-transition: opacity 0.2s ease-out 6.35s, -webkit-transform 0.2s ease-out 6.35s;
   transition: opacity 0.2s ease-out 6.35s, -webkit-transform 0.2s ease-out 6.35s;
@@ -29917,6 +29924,176 @@ main:has(.profile-header--vip) {
   -webkit-transition: opacity 0.3s ease-out 21.75s, visibility 0s;
   transition: opacity 0.3s ease-out 21.75s, visibility 0s;
 }
+.win-rare--open.win-rare--top-skin .win-rare__content {
+  -webkit-transition-delay: 12s, 12s;
+          transition-delay: 12s, 12s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(1) {
+  -webkit-transition: opacity 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, transform 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(1) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.2s;
+  transition: -webkit-transform 0.8s ease-out 12.2s;
+  transition: transform 0.8s ease-out 12.2s;
+  transition: transform 0.8s ease-out 12.2s, -webkit-transform 0.8s ease-out 12.2s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, transform 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(2) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.4s;
+  transition: -webkit-transform 0.8s ease-out 12.4s;
+  transition: transform 0.8s ease-out 12.4s;
+  transition: transform 0.8s ease-out 12.4s, -webkit-transform 0.8s ease-out 12.4s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, transform 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(3) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.6s;
+  transition: -webkit-transform 0.8s ease-out 12.6s;
+  transition: transform 0.8s ease-out 12.6s;
+  transition: transform 0.8s ease-out 12.6s, -webkit-transform 0.8s ease-out 12.6s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, transform 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(4) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.8s;
+  transition: -webkit-transform 0.8s ease-out 12.8s;
+  transition: transform 0.8s ease-out 12.8s;
+  transition: transform 0.8s ease-out 12.8s, -webkit-transform 0.8s ease-out 12.8s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, transform 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(5) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13s;
+  transition: -webkit-transform 0.8s ease-out 13s;
+  transition: transform 0.8s ease-out 13s;
+  transition: transform 0.8s ease-out 13s, -webkit-transform 0.8s ease-out 13s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, transform 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(6) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.2s;
+  transition: -webkit-transform 0.8s ease-out 13.2s;
+  transition: transform 0.8s ease-out 13.2s;
+  transition: transform 0.8s ease-out 13.2s, -webkit-transform 0.8s ease-out 13.2s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, transform 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(7) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.4s;
+  transition: -webkit-transform 0.8s ease-out 13.4s;
+  transition: transform 0.8s ease-out 13.4s;
+  transition: transform 0.8s ease-out 13.4s, -webkit-transform 0.8s ease-out 13.4s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(8) {
+  -webkit-transition: opacity 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, transform 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(8) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.6s;
+  transition: -webkit-transform 0.8s ease-out 13.6s;
+  transition: transform 0.8s ease-out 13.6s;
+  transition: transform 0.8s ease-out 13.6s, -webkit-transform 0.8s ease-out 13.6s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(9) {
+  -webkit-transition: opacity 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, transform 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(9) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.8s;
+  transition: -webkit-transform 0.8s ease-out 13.8s;
+  transition: transform 0.8s ease-out 13.8s;
+  transition: transform 0.8s ease-out 13.8s, -webkit-transform 0.8s ease-out 13.8s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(10) {
+  -webkit-transition: opacity 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, transform 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(10) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 14s;
+  transition: -webkit-transform 0.8s ease-out 14s;
+  transition: transform 0.8s ease-out 14s;
+  transition: transform 0.8s ease-out 14s, -webkit-transform 0.8s ease-out 14s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(11) {
+  -webkit-transition: opacity 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, transform 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+}
+.win-rare--open.win-rare--top-skin .win-rare__item:nth-child(11) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 14.2s;
+  transition: -webkit-transform 0.8s ease-out 14.2s;
+  transition: transform 0.8s ease-out 14.2s;
+  transition: transform 0.8s ease-out 14.2s, -webkit-transform 0.8s ease-out 14.2s;
+}
+.win-rare--top-skin .win-rare__item--open .win-rare__item-wrapper {
+  -webkit-transform: rotateY(180deg) !important;
+          transform: rotateY(180deg) !important;
+  -webkit-transition: -webkit-transform 0.3s ease-out !important;
+  transition: -webkit-transform 0.3s ease-out !important;
+  transition: transform 0.3s ease-out !important;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out !important;
+}
+.win-rare--top-skin .win-rare__item-wrapper {
+  -webkit-transform: scale(0.6) translate3d(0, 1rem, 0);
+          transform: scale(0.6) translate3d(0, 1rem, 0);
+}
 .win-rare--many-items .win-rare__content {
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
@@ -29931,12 +30108,28 @@ main:has(.profile-header--vip) {
   width: 18rem;
   pointer-events: none;
 }
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item {
+    width: min(9.6vw, 32rem);
+  }
+}
 .win-rare--many-items .win-rare__item-card-wrapper {
   padding: 1.6rem 1.2rem 2.4rem;
+}
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-card-wrapper {
+    padding: min(0.8vw, 2.8rem) min(0.64vw, 2.4rem) min(1.25vw, 4rem);
+  }
 }
 .win-rare--many-items .win-rare__item-chance {
   top: 1.6rem;
   font-size: 1.2rem;
+}
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-chance {
+    top: min(0.9vw, 3rem);
+    font-size: min(0.7vw, 2.4rem);
+  }
 }
 .win-rare--many-items .win-rare__item-info {
   margin-top: 0.4rem;
@@ -29947,34 +30140,75 @@ main:has(.profile-header--vip) {
 .win-rare--many-items .win-rare__item-title {
   font-size: 1.3rem;
 }
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-subtitle,
+  .win-rare--many-items .win-rare__item-title {
+    font-size: min(0.7vw, 2.4rem);
+  }
+}
 .win-rare--many-items .win-rare__item-price {
   -webkit-column-gap: 0.2rem;
      -moz-column-gap: 0.2rem;
           column-gap: 0.2rem;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+  height: 2.4rem;
+}
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-price {
+    height: min(1.3vw, 5rem);
+    padding-left: min(0.3vw, 1rem);
+    padding-right: min(0.3vw, 1rem);
+  }
 }
 .win-rare--many-items .win-rare__item-price span {
   font-size: 1.2rem;
 }
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-price span {
+    font-size: min(0.7vw, 2.4rem);
+  }
+}
 .win-rare--many-items .win-rare__item-price svg {
   width: 1.4rem;
   height: 1.4rem;
+}
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-price svg {
+    width: min(0.72vw, 2.8rem);
+    height: min(0.72vw, 2.8rem);
+  }
 }
 .win-rare--many-items .win-rare__item-btn {
   padding: 0 0.6rem;
   height: 2.4rem;
   pointer-events: all;
 }
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-btn {
+    height: min(1.3vw, 5rem);
+    padding-left: min(0.4vw, 1.6rem);
+    padding-right: min(0.4vw, 1.6rem);
+    border-radius: min(0.4vw, 1.4rem);
+  }
+}
 .win-rare--many-items .win-rare__item-buy {
   margin-top: 0.4rem;
 }
-.win-rare--many-items .win-rare__item-price {
+.win-rare--many-items .win-rare__item-sold {
   height: 2.4rem;
 }
+@media (min-width: 1900px) {
+  .win-rare--many-items .win-rare__item-sold {
+    height: min(1.3vw, 5rem);
+    padding-left: min(0.4vw, 1.6rem);
+    padding-right: min(0.4vw, 1.6rem);
+    border-radius: min(0.4vw, 1.4rem);
+  }
+}
 .win-rare--newyear .win-rare__content {
-  -webkit-transition: opacity 0.3s ease-out 6s;
-  transition: opacity 0.3s ease-out 6s;
+  -webkit-transition-delay: 6s, 6s;
+          transition-delay: 6s, 6s;
 }
 .win-rare--newyear .win-rare__item:nth-child(1) {
   -webkit-transition: opacity 0.2s ease-out 6.4s, -webkit-transform 0.2s ease-out 6.4s;
@@ -30160,12 +30394,23 @@ main:has(.profile-header--vip) {
   width: 4rem;
   height: 4rem;
 }
+@media (min-width: 1900px) {
+  .win-rare__header svg {
+    width: min(2.2vw, 7.2rem);
+    height: min(2.2vw, 7.2rem);
+  }
+}
 
 .win-rare__title {
   font-size: 1.6rem;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 1900px) {
+  .win-rare__title {
+    font-size: min(1vw, 3.2rem);
+  }
 }
 
 .win-rare__desc {
@@ -30175,6 +30420,12 @@ main:has(.profile-header--vip) {
   font-size: 1.4rem;
   line-height: 120%;
   text-align: center;
+}
+@media (min-width: 1900px) {
+  .win-rare__desc {
+    max-width: min(24vw, 80rem);
+    font-size: min(0.7vw, 2.4rem);
+  }
 }
 
 .win-rare__content {
@@ -30195,9 +30446,10 @@ main:has(.profile-header--vip) {
   padding-top: 5.6rem;
   background-color: rgba(12, 12, 27, 0.3);
   opacity: 0;
+  visibility: hidden;
   overflow-y: auto;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
 }
 .win-rare__content::-webkit-scrollbar {
   width: 0.6rem;
@@ -30209,9 +30461,12 @@ main:has(.profile-header--vip) {
   border-radius: 2.2rem;
 }
 .win-rare__content .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: auto;
+}
+@media (min-width: 1900px) {
+  .win-rare__content .container {
+    max-width: min(88vw, 276rem);
+  }
 }
 
 .win-rare__item {
@@ -30226,6 +30481,11 @@ main:has(.profile-header--vip) {
   transition: opacity 0s, -webkit-transform 0s;
   transition: opacity 0s, transform 0s;
   transition: opacity 0s, transform 0s, -webkit-transform 0s;
+}
+@media (min-width: 1900px) {
+  .win-rare__item {
+    width: min(14vw, 48rem);
+  }
 }
 @media (any-hover: hover) {
   .win-rare__item:hover .win-rare__item-back {
@@ -30263,7 +30523,8 @@ main:has(.profile-header--vip) {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
-.win-rare__item--open .win-rare__item-buy {
+.win-rare__item--open .win-rare__item-buy,
+.win-rare__item--open .win-rare__item-tooltip {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-out 0.3s, visibility 0s;
@@ -30279,6 +30540,11 @@ main:has(.profile-header--vip) {
   background-size: 300% 300%;
   -webkit-animation: diamondShine 3.6s ease-in-out infinite;
           animation: diamondShine 3.6s ease-in-out infinite;
+}
+@media (min-width: 1900px) {
+  .win-rare__item--open.is-rare .win-rare__item-bg::after {
+    border-radius: min(1.2vw, 4rem);
+  }
 }
 
 @-webkit-keyframes diamondShine {
@@ -30381,11 +30647,21 @@ main:has(.profile-header--vip) {
   padding: 2.4rem 2rem 3.6rem;
   min-width: 0;
 }
+@media (min-width: 1900px) {
+  .win-rare__item-card-wrapper {
+    padding: min(1.2vw, 4rem) min(1vw, 3.6rem) min(1.6vw, 5.6rem);
+  }
+}
 .win-rare__item-card-wrapper::before {
   width: 100%;
   height: 1.2rem;
   content: "";
   display: block;
+}
+@media (min-width: 1900px) {
+  .win-rare__item-card-wrapper::before {
+    height: min(0.7vw, 2.4rem);
+  }
 }
 
 .win-rare__item-img {
@@ -30418,6 +30694,12 @@ main:has(.profile-header--vip) {
   overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
+}
+@media (min-width: 1900px) {
+  .win-rare__item-subtitle,
+  .win-rare__item-title {
+    font-size: min(0.8vw, 2.8rem);
+  }
 }
 
 .win-rare__item-subtitle {
@@ -30468,6 +30750,12 @@ main:has(.profile-header--vip) {
   -webkit-animation: pulseChance 2s ease-out infinite;
           animation: pulseChance 2s ease-out infinite;
 }
+@media (min-width: 1900px) {
+  .win-rare__item-chance {
+    top: min(1.2vw, 4rem);
+    font-size: min(0.8vw, 2.8rem);
+  }
+}
 
 .win-rare__item-sold {
   display: -webkit-inline-box;
@@ -30485,6 +30773,15 @@ main:has(.profile-header--vip) {
   opacity: 0;
   visibility: hidden;
 }
+@media (min-width: 1900px) {
+  .win-rare__item-sold {
+    height: min(1.6vw, 5.6rem);
+    padding-left: min(0.4vw, 2.2rem);
+    padding-right: min(0.4vw, 2.2rem);
+    font-size: min(0.7vw, 2.8rem);
+    border-radius: min(0.4vw, 1.4rem);
+  }
+}
 
 .win-rare__item-buy {
   display: -webkit-box;
@@ -30500,6 +30797,11 @@ main:has(.profile-header--vip) {
   margin-top: 0.8rem;
   opacity: 0;
   visibility: hidden;
+}
+@media (min-width: 1900px) {
+  .win-rare__item-buy {
+    gap: min(0.2vw, 2.4rem);
+  }
 }
 @media (max-width: 768px) {
   .win-rare__item-buy {
@@ -30527,11 +30829,24 @@ main:has(.profile-header--vip) {
   border-radius: 0.6rem;
   border: 0.2rem solid rgba(255, 255, 255, 0.04);
 }
+@media (min-width: 1900px) {
+  .win-rare__item-price {
+    height: min(1.6vw, 5.6rem);
+    padding-left: min(0.4vw, 2.2rem);
+    padding-right: min(0.4vw, 2.2rem);
+    border-radius: min(0.4vw, 1.4rem);
+  }
+}
 .win-rare__item-price span {
   color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 700;
   white-space: nowrap;
+}
+@media (min-width: 1900px) {
+  .win-rare__item-price span {
+    font-size: min(0.8vw, 2.8rem);
+  }
 }
 .win-rare__item-price svg {
   width: 1.6rem;
@@ -30540,12 +30855,27 @@ main:has(.profile-header--vip) {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
+@media (min-width: 1900px) {
+  .win-rare__item-price svg {
+    width: min(0.9vw, 3.2rem);
+    height: min(0.9vw, 3.2rem);
+  }
+}
 
 .win-rare__item-btn {
   height: 2.6rem;
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
+}
+@media (min-width: 1900px) {
+  .win-rare__item-btn {
+    height: min(1.6vw, 5.6rem);
+    padding-left: min(0.4vw, 2.2rem);
+    padding-right: min(0.4vw, 2.2rem);
+    border-radius: min(0.4vw, 1.4rem);
+    font-size: min(0.7vw, 2.4rem);
+  }
 }
 
 .win-rare__item-tooltip {
@@ -30566,6 +30896,30 @@ main:has(.profile-header--vip) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 71, 0.8)), to(#202031));
   background: linear-gradient(180deg, rgba(54, 54, 71, 0.8) 0%, #202031 100%);
 }
+@media (min-width: 1900px) {
+  .win-rare__item-tooltip .tooltip__body {
+    width: min(9.6vw, 80rem);
+  }
+}
+@media (min-width: 1900px) {
+  .win-rare__item-tooltip .tooltip__body p {
+    font-size: min(0.76vw, 2.4rem);
+  }
+}
+@media (min-width: 1900px) {
+  .win-rare__item-tooltip .tooltip__toggle {
+    width: min(1.6vw, 5rem);
+    height: min(1.6vw, 5rem);
+  }
+}
+@media (min-width: 1900px) {
+  .win-rare__item-tooltip .tooltip__toggle > svg {
+    width: min(0.8vw, 5rem);
+    height: min(0.8vw, 5rem);
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
 
 .win-rare__sum {
   margin: 4rem auto -1.6rem;
@@ -30575,6 +30929,11 @@ main:has(.profile-header--vip) {
   display: inline-block;
   color: #8484A7;
   font-size: 1.4rem;
+}
+@media (min-width: 1900px) {
+  .win-rare__sum p {
+    font-size: min(0.7vw, 2.4rem);
+  }
 }
 .win-rare__sum span {
   display: -webkit-inline-box;
@@ -30589,12 +30948,23 @@ main:has(.profile-header--vip) {
   color: #FFFFFF;
   font-size: 1.4rem;
 }
+@media (min-width: 1900px) {
+  .win-rare__sum span {
+    font-size: min(0.7vw, 2.4rem);
+  }
+}
 .win-rare__sum svg {
   width: 1.6rem;
   height: 1.6rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+@media (min-width: 1900px) {
+  .win-rare__sum svg {
+    width: min(0.9vw, 3.2rem);
+    height: min(0.9vw, 3.2rem);
+  }
 }
 
 .win-rare__sum-bg p {
@@ -30605,6 +30975,12 @@ main:has(.profile-header--vip) {
   -webkit-box-shadow: 0 0.2rem 0 0 #181825 inset;
           box-shadow: 0 0.2rem 0 0 #181825 inset;
 }
+@media (min-width: 1900px) {
+  .win-rare__sum-bg p {
+    padding: min(1.1vw, 3.6rem) min(1.3vw, 4.8rem);
+    border-radius: min(0.6vw, 1.6rem);
+  }
+}
 .win-rare__sum-bg span {
   font-weight: 700;
 }
@@ -30613,6 +30989,22 @@ main:has(.profile-header--vip) {
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
+}
+@media (min-width: 1900px) {
+  .win-rare__btn .btn {
+    height: 2.5vw;
+    padding: 0 1vw;
+    font-size: min(0.9vw, 2.8rem);
+  }
+  .win-rare__btn .btn > span {
+    font-size: min(0.9vw, 2.8rem);
+  }
+  .win-rare__btn .btn > svg {
+    width: min(1.2vw, 5.6rem);
+    height: min(1.2vw, 5.6rem);
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
 }
 
 .win-rare__btns {
@@ -30625,6 +31017,32 @@ main:has(.profile-header--vip) {
   gap: 0.8rem 1.6rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 2.4rem;
+}
+@media (min-width: 1900px) {
+  .win-rare__btns .btn {
+    height: 2.5vw;
+    padding: 0 1vw;
+    font-size: min(0.9vw, 2.8rem);
+  }
+  .win-rare__btns .btn > span {
+    font-size: min(0.9vw, 2.8rem);
+  }
+  .win-rare__btns .btn > svg {
+    width: min(1.2vw, 5.6rem);
+    height: min(1.2vw, 5.6rem);
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+@media (min-width: 1900px) {
+  .win-rare__btns .btn-price > svg {
+    width: min(1vw, 5rem);
+    height: min(1vw, 5rem);
+  }
+  .win-rare__btns .btn-price > span {
+    font-size: min(0.9vw, 2.8rem);
+  }
 }
 
 .main-banner {
