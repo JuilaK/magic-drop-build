@@ -22982,7 +22982,7 @@ main:has(.profile-header--vip) {
     width: 90%;
   }
 }
-.modal--birthday .modal__dialog::after, .modal--steam-alert .modal__dialog::after {
+.modal--birthday .modal__dialog::after, .modal--steam-alert .modal__dialog::after, .modal--vip-invite .modal__dialog::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -22991,23 +22991,23 @@ main:has(.profile-header--vip) {
   -webkit-filter: blur(1.6rem);
           filter: blur(1.6rem);
 }
-.modal--birthday .modal__content, .modal--steam-alert .modal__content {
+.modal--birthday .modal__content, .modal--steam-alert .modal__content, .modal--vip-invite .modal__content {
   padding: 2.4rem 4rem 0;
 }
 @media (max-width: 480px) {
-  .modal--birthday .modal__content, .modal--steam-alert .modal__content {
+  .modal--birthday .modal__content, .modal--steam-alert .modal__content, .modal--vip-invite .modal__content {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
 }
-.modal--birthday .modal__title, .modal--steam-alert .modal__title {
+.modal--birthday .modal__title, .modal--steam-alert .modal__title, .modal--vip-invite .modal__title {
   padding: 0.8rem 0 0;
   font-size: 4rem;
   font-weight: 1000;
   text-align: left;
   text-transform: uppercase;
 }
-.modal--birthday .modal__text, .modal--steam-alert .modal__text {
+.modal--birthday .modal__text, .modal--steam-alert .modal__text, .modal--vip-invite .modal__text {
   margin-left: 0;
   margin-top: 1.6rem;
   max-width: 32rem;
@@ -23018,18 +23018,18 @@ main:has(.profile-header--vip) {
   text-align: left;
 }
 @media (max-width: 480px) {
-  .modal--birthday .modal__text, .modal--steam-alert .modal__text {
+  .modal--birthday .modal__text, .modal--steam-alert .modal__text, .modal--vip-invite .modal__text {
     font-size: 1.8rem;
   }
 }
-.modal--birthday .modal__btns, .modal--steam-alert .modal__btns {
+.modal--birthday .modal__btns, .modal--steam-alert .modal__btns, .modal--vip-invite .modal__btns {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-bottom: 4rem;
 }
 @media (max-width: 480px) {
-  .modal--birthday .modal__btns, .modal--steam-alert .modal__btns {
+  .modal--birthday .modal__btns, .modal--steam-alert .modal__btns, .modal--vip-invite .modal__btns {
     padding-bottom: 2.4rem;
   }
 }
@@ -23063,10 +23063,29 @@ main:has(.profile-header--vip) {
 .modal--birthday .modal__birthday-md-img {
   height: auto;
 }
-.modal--steam-alert .modal__dialog {
+.modal--steam-alert .modal__dialog, .modal--vip-invite .modal__dialog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.modal--steam-alert .modal__content, .modal--vip-invite .modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal--steam-alert .modal__btns, .modal--vip-invite .modal__btns {
+  margin-top: auto;
+}
+@media (max-width: 370px) {
+  .modal--steam-alert .modal__btns .btn, .modal--vip-invite .modal__btns .btn {
+    min-width: 100%;
+  }
+}
+.modal--steam-alert .modal__dialog {
   min-height: min(46rem, 100vh - 6rem);
   background: center right/cover no-repeat -webkit-image-set(url("../images/modals/img-modal-steam-alert.webp") type("image/webp") 1x, url("../images/modals/img-modal-steam-alert@2x.webp") type("image/webp") 2x, url("../images/modals/img-modal-steam-alert.jpg") type("image/jpg") 1x, url("../images/modals/img-modal-steam-alert@2x.jpg") type("image/jpg") 2x) #0C0C1B;
   background: center right/cover no-repeat image-set(url("../images/modals/img-modal-steam-alert.webp") type("image/webp") 1x, url("../images/modals/img-modal-steam-alert@2x.webp") type("image/webp") 2x, url("../images/modals/img-modal-steam-alert.jpg") type("image/jpg") 1x, url("../images/modals/img-modal-steam-alert@2x.jpg") type("image/jpg") 2x) #0C0C1B;
@@ -23079,27 +23098,41 @@ main:has(.profile-header--vip) {
 .modal--steam-alert .modal__dialog::after {
   background: radial-gradient(4rem 100% at left, #FA3922, transparent 70%), radial-gradient(4rem 100% at right, #FA3922, transparent 70%);
 }
-.modal--steam-alert .modal__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.modal--vip-invite .modal__wrap {
+  width: 84rem;
 }
-.modal--steam-alert .modal__btns {
-  margin-top: auto;
-}
-@media (max-width: 370px) {
-  .modal--steam-alert .modal__btns .btn {
-    min-width: 100%;
+@media (max-width: 1024px) {
+  .modal--vip-invite .modal__wrap {
+    width: 90%;
   }
 }
-.modal--vip-club .modal__content {
-  text-align: center;
+.modal--vip-invite .modal__dialog {
+  min-height: min(42rem, 100vh - 6rem);
+  background: center right/cover no-repeat -webkit-image-set(url("../images/modals/img-modal-vip-invite.webp") type("image/webp") 1x, url("../images/modals/img-modal-vip-invite@2x.webp") type("image/webp") 2x, url("../images/modals/img-modal-vip-invite.jpg") type("image/jpg") 1x, url("../images/modals/img-modal-vip-invite@2x.jpg") type("image/jpg") 2x) #0C0C1B;
+  background: center right/cover no-repeat image-set(url("../images/modals/img-modal-vip-invite.webp") type("image/webp") 1x, url("../images/modals/img-modal-vip-invite@2x.webp") type("image/webp") 2x, url("../images/modals/img-modal-vip-invite.jpg") type("image/jpg") 1x, url("../images/modals/img-modal-vip-invite@2x.jpg") type("image/jpg") 2x) #0C0C1B;
 }
-.modal--vip-club .modal__title {
+@media (max-width: 768px) {
+  .modal--vip-invite .modal__dialog {
+    background-position-x: right 40%;
+  }
+}
+.modal--vip-invite .modal__dialog::after {
+  background: radial-gradient(4rem 100% at left, #001ba1, transparent 70%), radial-gradient(4rem 100% at right, #001ba1, transparent 70%);
+}
+.modal--vip-invite .modal__title {
+  font-size: 9.4rem;
+  font-style: italic;
+}
+@media (max-width: 480px) {
+  .modal--vip-invite .modal__title {
+    font-size: 7.2rem;
+  }
+}
+.modal--vip-invite .modal__text {
+  color: #8484A7;
+  font-weight: 400;
+}
+.modal--vip-invite .modal__title, .modal--vip-club .modal__title {
   display: inline-block;
   position: relative;
   padding: 0;
@@ -23108,18 +23141,12 @@ main:has(.profile-header--vip) {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-size: 8rem;
   font-style: italic;
   font-weight: 1000;
   line-height: 100%;
   text-transform: uppercase;
 }
-@media (max-width: 480px) {
-  .modal--vip-club .modal__title {
-    font-size: 6.4rem;
-  }
-}
-.modal--vip-club .modal__title::before {
+.modal--vip-invite .modal__title::before, .modal--vip-club .modal__title::before {
   position: absolute;
   inset: 0;
   content: attr(data-text);
@@ -23134,6 +23161,17 @@ main:has(.profile-header--vip) {
   -webkit-animation: shine 6s linear infinite;
           animation: shine 6s linear infinite;
   pointer-events: none;
+}
+.modal--vip-club .modal__content {
+  text-align: center;
+}
+.modal--vip-club .modal__title {
+  font-size: 8rem;
+}
+@media (max-width: 480px) {
+  .modal--vip-club .modal__title {
+    font-size: 6.4rem;
+  }
 }
 .modal--vip-club img {
   width: calc(100% + 8.4rem);
