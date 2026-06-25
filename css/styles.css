@@ -30551,6 +30551,9 @@ main:has(.profile-header--vip) {
 .win-rare__item--restricted .win-rare__item-chance {
   color: #FF55FF;
 }
+.win-rare__item--uncommon .win-rare__item-chance {
+  color: #01FFFF;
+}
 .win-rare__item--rare .win-rare__item-chance {
   color: #FFFF54;
 }
