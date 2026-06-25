@@ -16046,7 +16046,7 @@ main:has(.profile-header--vip) {
   display: block;
   width: 90%;
   aspect-ratio: 1.53;
-  background: center/contain no-repeat url("../images/logos/logo-short-white.svg");
+  background: center/contain no-repeat url("../images/logos/logo-short-lg-white.svg");
   mix-blend-mode: overlay;
   opacity: 0.03;
 }
