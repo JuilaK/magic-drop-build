@@ -10044,7 +10044,7 @@ span.draw-item__start-price svg {
   --imageTranslate: 90%;
 }
 .case-container .case-hero {
-  min-height: 49.6rem;
+  min-height: 51.8rem;
 }
 @media (max-width: 1500px) {
   .case-container .case-hero {
@@ -10060,15 +10060,16 @@ span.draw-item__start-price svg {
   }
 }
 .case-container .case-hero__img-rock {
-  width: 44rem;
-  height: 25.8rem;
+  display: block;
   margin-top: -20rem;
+  width: 48rem;
+  height: auto;
+  aspect-ratio: 1.7;
 }
 @media (max-width: 1500px) {
   .case-container .case-hero__img-rock {
-    width: 42rem;
-    height: 24.8rem;
     margin-top: -19rem;
+    width: 42rem;
   }
 }
 .case-container .case-hero--roulette {
@@ -10331,13 +10332,16 @@ span.draw-item__start-price svg {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 3.2rem;
+  bottom: 4.6rem;
   left: 0;
   text-align: center;
   z-index: -1;
+  -webkit-transition: bottom 0s linear 0.3s;
+  transition: bottom 0s linear 0.3s;
 }
 @media (max-width: 1500px) {
   .case-hero__rhombus {
+    bottom: 3.4rem;
     top: 3.2rem;
   }
 }
