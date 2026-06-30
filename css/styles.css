@@ -1014,6 +1014,20 @@ svg.violet {
   }
 }
 
+.container-lg {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 200rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+@media (max-width: 1280px) {
+  .container-lg {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
 .container-md {
   margin: 0 auto;
   width: 100%;
@@ -6393,7 +6407,7 @@ span.header__volume-value {
      -moz-column-gap: 1.6rem;
           column-gap: 1.6rem;
   width: calc(100% - 6.4rem);
-  max-width: 166.4rem;
+  max-width: 193.6rem;
   padding: 1.3rem 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background: linear-gradient(180deg, #161622 0%, #12121f 100%);
@@ -31953,8 +31967,14 @@ main:has(.profile-header--vip) {
           flex-direction: column;
   gap: 1.6rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 54.4rem;
-          flex: 0 0 54.4rem;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+@media (max-width: 1900px) {
+  .hero-banners__column {
+    -ms-flex-preferred-size: 54.4rem;
+        flex-basis: 54.4rem;
+  }
 }
 @media (max-width: 1440px) {
   .hero-banners__column {
@@ -32375,7 +32395,12 @@ main:has(.profile-header--vip) {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
-  padding: 3.2rem;
+  padding: 3.2rem 3.2rem 3.2rem 10%;
+}
+@media (max-width: 1900px) {
+  .hero-banners__banner {
+    padding-left: 3.2rem;
+  }
 }
 @media (max-width: 1440px) {
   .hero-banners__banner {
