@@ -661,21 +661,29 @@ window.addEventListener('DOMContentLoaded', () => {
     const upgradeRepeatBtn = document.querySelector('.js-upgrade-repeat-btn');
     const upgradeCloseBtn = document.querySelector('.js-upgrade-close-btn');
     const uprgadeFastCheckbox = document.querySelector('.js-upgrade-fast-checkbox');
-
+    const upgradeMagicToggle = document.querySelector('.js-upgrade-magic-toggle');
+    
     upgradeBtn && upgradeBtn.addEventListener('click', () => {
-        const angle = getComputedStyle(upgradeBlock).getPropertyValue('--rotation-arrow-round');
-        const durationAnimation = (6*360 + parseInt(angle))/360;
-        document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
+        if (!upgradeBlock.classList.contains('upgrade--magic')) {
+            const angle = getComputedStyle(upgradeBlock).getPropertyValue('--rotation-arrow-round');
+            const durationAnimation = (6*360 + parseInt(angle))/360;
+            document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
 
-        upgradeBlock.classList.add('upgrade--win');
-        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
-        setTimeout(() => {
-            upgradeBtns.classList.add('upgrade__btns--hide');
-            upgradeWinBtns.classList.add('upgrade__btns--show');
-            upgradeWin.classList.add('upgrade__win--open');
-            showWinConfetti();
-        }, duration);
-        
+            upgradeBlock.classList.add('upgrade--win');
+            const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
+            setTimeout(() => {
+                upgradeBtns.classList.add('upgrade__btns--hide');
+                upgradeWinBtns.classList.add('upgrade__btns--show');
+                upgradeWin.classList.add('upgrade__win--open');
+                showWinConfetti();
+            }, duration);
+        } else {
+            upgradeBlock.classList.add('upgrade--win');
+            setTimeout(() => {
+                upgradeBtns.classList.add('upgrade__btns--hide');
+                upgradeWinBtns.classList.add('upgrade__btns--show');
+            }, 3000);
+        }
     });
 
     upgradeSellBtn && upgradeSellBtn.addEventListener('click', () => {
@@ -688,32 +696,39 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     upgradeRepeatBtn && upgradeRepeatBtn.addEventListener('click', () => {
-        const angle = getComputedStyle(upgradeBlock).getPropertyValue('--rotation-arrow-round');
-        const durationAnimation = (6*360 + parseInt(angle))/360;
-        document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
+        if (!upgradeBlock.classList.contains('upgrade--magic')) {
+            const angle = getComputedStyle(upgradeBlock).getPropertyValue('--rotation-arrow-round');
+            const durationAnimation = (6*360 + parseInt(angle))/360;
+            document.documentElement.style.setProperty('--rotation-arrow-duration', `${durationAnimation}s`);
 
-        const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
-        if (upgradeBlock.classList.contains('upgrade--win')) {
-            upgradeBlock.classList.remove('upgrade--win');
-        }
-        if (upgradeBlock.classList.contains('upgrade--fail')) {
-            upgradeBlock.classList.remove('upgrade--fail');
-        }
-        if (upgradeBtns.classList.contains('upgrade__btns--hide')) {
-            upgradeBtns.classList.remove('upgrade__btns--hide');
-            upgradeWinBtns.classList.remove('upgrade__btns--show');
-        }
-        if (upgradeWin.classList.contains('upgrade__win--open')) {
-            upgradeWin.classList.remove('upgrade__win--open')
-        }
-        void upgradeBlock.offsetWidth;
-        upgradeBlock.classList.add('upgrade--fail');
+            const duration = upgradeBlock.classList.contains('upgrade--fast') ? 750 : durationAnimation*1000;
+            if (upgradeBlock.classList.contains('upgrade--win')) {
+                upgradeBlock.classList.remove('upgrade--win');
+            }
+            if (upgradeBlock.classList.contains('upgrade--fail')) {
+                upgradeBlock.classList.remove('upgrade--fail');
+            }
+            if (upgradeBtns.classList.contains('upgrade__btns--hide')) {
+                upgradeBtns.classList.remove('upgrade__btns--hide');
+                upgradeWinBtns.classList.remove('upgrade__btns--show');
+            }
+            if (upgradeWin.classList.contains('upgrade__win--open')) {
+                upgradeWin.classList.remove('upgrade__win--open')
+            }
+            void upgradeBlock.offsetWidth;
+            upgradeBlock.classList.add('upgrade--fail');
 
-        setTimeout(() => {
-            upgradeBtns.classList.add('upgrade__btns--hide');
-            upgradeFailBtns.classList.add('upgrade__btns--show');
-        }, duration);
-        
+            setTimeout(() => {
+                upgradeBtns.classList.add('upgrade__btns--hide');
+                upgradeFailBtns.classList.add('upgrade__btns--show');
+            }, duration);
+        } else {
+            if (upgradeBlock.classList.contains('upgrade--win')) {
+                upgradeBlock.classList.remove('upgrade--win');
+                upgradeBtns.classList.remove('upgrade__btns--hide');
+                upgradeWinBtns.classList.remove('upgrade__btns--show');
+            }
+        }
     });
 
     upgradeCloseBtn && upgradeCloseBtn.addEventListener('click', () => {
@@ -758,6 +773,19 @@ window.addEventListener('DOMContentLoaded', () => {
             }, 300);
         });
     });
+
+    !!upgradeMagicToggle && upgradeMagicToggle.addEventListener('change', (event) => {
+        if (event.target.checked) {
+            upgradeBlock.classList.add('upgrade--magic');
+        } else {
+            upgradeBlock.classList.remove('upgrade--magic');
+
+            if (upgradeBlock.classList.contains('upgrade--win')){
+                upgradeBlock.classList.remove('upgrade--win');
+            }
+        }
+    });
+
     // END Upgrade
 
     // Create a contract
