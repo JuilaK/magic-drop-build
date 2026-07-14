@@ -31484,6 +31484,164 @@ main:has(.profile-header--vip) {
   transition: transform 0.8s ease-out 16.2s;
   transition: transform 0.8s ease-out 16.2s, -webkit-transform 0.8s ease-out 16.2s;
 }
+.win-rare--open.win-rare--birthday .win-rare__content {
+  -webkit-transition-delay: 12s, 12s;
+          transition-delay: 12s, 12s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(1) {
+  -webkit-transition: opacity 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, transform 0.2s ease-out 12.2s;
+  transition: opacity 0.2s ease-out 12.2s, transform 0.2s ease-out 12.2s, -webkit-transform 0.2s ease-out 12.2s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(1) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.2s;
+  transition: -webkit-transform 0.8s ease-out 12.2s;
+  transition: transform 0.8s ease-out 12.2s;
+  transition: transform 0.8s ease-out 12.2s, -webkit-transform 0.8s ease-out 12.2s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, transform 0.2s ease-out 12.4s;
+  transition: opacity 0.2s ease-out 12.4s, transform 0.2s ease-out 12.4s, -webkit-transform 0.2s ease-out 12.4s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(2) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.4s;
+  transition: -webkit-transform 0.8s ease-out 12.4s;
+  transition: transform 0.8s ease-out 12.4s;
+  transition: transform 0.8s ease-out 12.4s, -webkit-transform 0.8s ease-out 12.4s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, transform 0.2s ease-out 12.6s;
+  transition: opacity 0.2s ease-out 12.6s, transform 0.2s ease-out 12.6s, -webkit-transform 0.2s ease-out 12.6s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(3) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.6s;
+  transition: -webkit-transform 0.8s ease-out 12.6s;
+  transition: transform 0.8s ease-out 12.6s;
+  transition: transform 0.8s ease-out 12.6s, -webkit-transform 0.8s ease-out 12.6s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, transform 0.2s ease-out 12.8s;
+  transition: opacity 0.2s ease-out 12.8s, transform 0.2s ease-out 12.8s, -webkit-transform 0.2s ease-out 12.8s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(4) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 12.8s;
+  transition: -webkit-transform 0.8s ease-out 12.8s;
+  transition: transform 0.8s ease-out 12.8s;
+  transition: transform 0.8s ease-out 12.8s, -webkit-transform 0.8s ease-out 12.8s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, transform 0.2s ease-out 13s;
+  transition: opacity 0.2s ease-out 13s, transform 0.2s ease-out 13s, -webkit-transform 0.2s ease-out 13s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(5) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13s;
+  transition: -webkit-transform 0.8s ease-out 13s;
+  transition: transform 0.8s ease-out 13s;
+  transition: transform 0.8s ease-out 13s, -webkit-transform 0.8s ease-out 13s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, transform 0.2s ease-out 13.2s;
+  transition: opacity 0.2s ease-out 13.2s, transform 0.2s ease-out 13.2s, -webkit-transform 0.2s ease-out 13.2s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(6) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.2s;
+  transition: -webkit-transform 0.8s ease-out 13.2s;
+  transition: transform 0.8s ease-out 13.2s;
+  transition: transform 0.8s ease-out 13.2s, -webkit-transform 0.8s ease-out 13.2s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, transform 0.2s ease-out 13.4s;
+  transition: opacity 0.2s ease-out 13.4s, transform 0.2s ease-out 13.4s, -webkit-transform 0.2s ease-out 13.4s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(7) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.4s;
+  transition: -webkit-transform 0.8s ease-out 13.4s;
+  transition: transform 0.8s ease-out 13.4s;
+  transition: transform 0.8s ease-out 13.4s, -webkit-transform 0.8s ease-out 13.4s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(8) {
+  -webkit-transition: opacity 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, transform 0.2s ease-out 13.6s;
+  transition: opacity 0.2s ease-out 13.6s, transform 0.2s ease-out 13.6s, -webkit-transform 0.2s ease-out 13.6s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(8) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.6s;
+  transition: -webkit-transform 0.8s ease-out 13.6s;
+  transition: transform 0.8s ease-out 13.6s;
+  transition: transform 0.8s ease-out 13.6s, -webkit-transform 0.8s ease-out 13.6s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(9) {
+  -webkit-transition: opacity 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, transform 0.2s ease-out 13.8s;
+  transition: opacity 0.2s ease-out 13.8s, transform 0.2s ease-out 13.8s, -webkit-transform 0.2s ease-out 13.8s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(9) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 13.8s;
+  transition: -webkit-transform 0.8s ease-out 13.8s;
+  transition: transform 0.8s ease-out 13.8s;
+  transition: transform 0.8s ease-out 13.8s, -webkit-transform 0.8s ease-out 13.8s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(10) {
+  -webkit-transition: opacity 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, transform 0.2s ease-out 14s;
+  transition: opacity 0.2s ease-out 14s, transform 0.2s ease-out 14s, -webkit-transform 0.2s ease-out 14s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(10) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 14s;
+  transition: -webkit-transform 0.8s ease-out 14s;
+  transition: transform 0.8s ease-out 14s;
+  transition: transform 0.8s ease-out 14s, -webkit-transform 0.8s ease-out 14s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(11) {
+  -webkit-transition: opacity 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, transform 0.2s ease-out 14.2s;
+  transition: opacity 0.2s ease-out 14.2s, transform 0.2s ease-out 14.2s, -webkit-transform 0.2s ease-out 14.2s;
+}
+.win-rare--open.win-rare--birthday .win-rare__item:nth-child(11) .win-rare__item-wrapper {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s ease-out 14.2s;
+  transition: -webkit-transform 0.8s ease-out 14.2s;
+  transition: transform 0.8s ease-out 14.2s;
+  transition: transform 0.8s ease-out 14.2s, -webkit-transform 0.8s ease-out 14.2s;
+}
 .win-rare--top-skin .win-rare__item--open .win-rare__item-wrapper, .win-rare--premium .win-rare__item--open .win-rare__item-wrapper {
   -webkit-transform: rotateY(180deg) !important;
           transform: rotateY(180deg) !important;
