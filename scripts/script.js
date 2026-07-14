@@ -1116,6 +1116,52 @@ window.addEventListener('DOMContentLoaded', () => {
             container.scrollLeft = startScrollLeft - walk;
         });
     })
+
+    !!scrollContainers && scrollContainers.forEach(initHorizontalScroll);
+
+    function initHorizontalScroll(container) {
+        const tolerance = 2;
+        const btnStart = container.querySelector('.js-scroll-btn-start');
+        const btnEnd = container.querySelector('.js-scroll-btn-end');
+
+        const updateButtons = () => {
+            const maxScroll = container.scrollWidth - container.clientWidth;
+
+            btnStart.classList.toggle(
+                'event__scroll-btn--hide',
+                container.scrollLeft <= tolerance
+            );
+
+            btnEnd.classList.toggle(
+                'event__scroll-btn--hide',
+                container.scrollLeft >= maxScroll - tolerance
+            );
+        };
+
+        btnStart.addEventListener('click', () => {
+            container.scrollTo({
+                left: 0,
+                behavior: 'smooth',
+            });
+        });
+
+        btnEnd.addEventListener('click', () => {
+            container.scrollTo({
+                left: container.scrollWidth,
+                behavior: 'smooth',
+            });
+        });
+
+        container.addEventListener('scroll', updateButtons, {
+            passive: true,
+        });
+
+        const resizeObserver = new ResizeObserver(updateButtons);
+
+        resizeObserver.observe(container);
+
+        updateButtons();
+    };
     //END Horizontal scroll for wheel
 
     // Calculate event progress
