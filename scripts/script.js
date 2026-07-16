@@ -679,9 +679,11 @@ window.addEventListener('DOMContentLoaded', () => {
             }, duration);
         } else {
             upgradeBlock.classList.add('upgrade--win');
+            upgradeBlock.classList.add('upgrade--fast-rotate');
             setTimeout(() => {
                 upgradeBtns.classList.add('upgrade__btns--hide');
                 upgradeWinBtns.classList.add('upgrade__btns--show');
+                upgradeBlock.classList.remove('upgrade--fast-rotate');
             }, 3000);
         }
     });

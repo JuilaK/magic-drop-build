@@ -15762,70 +15762,54 @@ main:has(.profile-header--vip) {
     --rotate-magic-logo-angle: 360deg;
   }
 }
-@-webkit-keyframes lightMagicLogo {
-  0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-  }
-  30% {
-    -webkit-filter: brightness(6) drop-shadow(0 0 18px white) drop-shadow(0 0 40px white);
-            filter: brightness(6) drop-shadow(0 0 18px white) drop-shadow(0 0 40px white);
-  }
-  100% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-  }
-}
-@keyframes lightMagicLogo {
-  0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-  }
-  30% {
-    -webkit-filter: brightness(6) drop-shadow(0 0 18px white) drop-shadow(0 0 40px white);
-            filter: brightness(6) drop-shadow(0 0 18px white) drop-shadow(0 0 40px white);
-  }
-  100% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-  }
-}
 @-webkit-keyframes magicIconFlash {
   0% {
+    background-image: url("../images/upgrade/upgrade-gun.svg");
+    opacity: 0.21;
     -webkit-filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
             filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
   30% {
+    background-image: url("../images/upgrade/upgrade-gun.svg");
     -webkit-filter: brightness(4) drop-shadow(0 0 0.8rem #FFFFFF);
             filter: brightness(4) drop-shadow(0 0 0.8rem #FFFFFF);
+    opacity: 1;
     -webkit-transform: translate(-50%, -50%) scale(1.1);
             transform: translate(-50%, -50%) scale(1.1);
   }
   100% {
+    background-image: url("../images/upgrade/upgrade-gun.svg");
     -webkit-filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
             filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+    opacity: 0.21;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
 }
 @keyframes magicIconFlash {
   0% {
+    background-image: url("../images/upgrade/upgrade-gun.svg");
+    opacity: 0.21;
     -webkit-filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
             filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
   30% {
+    background-image: url("../images/upgrade/upgrade-gun.svg");
     -webkit-filter: brightness(4) drop-shadow(0 0 0.8rem #FFFFFF);
             filter: brightness(4) drop-shadow(0 0 0.8rem #FFFFFF);
+    opacity: 1;
     -webkit-transform: translate(-50%, -50%) scale(1.1);
             transform: translate(-50%, -50%) scale(1.1);
   }
   100% {
+    background-image: url("../images/upgrade/upgrade-gun.svg");
     -webkit-filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
             filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+    opacity: 0.21;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
@@ -15870,6 +15854,18 @@ main:has(.profile-header--vip) {
             transform: translate(-50%, -50%) scale(1);
   }
 }
+@-webkit-keyframes hideMagicDot {
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes hideMagicDot {
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
 .upgrade {
   margin-top: -6.4rem;
   padding-bottom: 6.4rem;
@@ -15881,6 +15877,9 @@ main:has(.profile-header--vip) {
   .upgrade {
     padding-top: 12.8rem;
   }
+}
+.upgrade .container {
+  position: relative;
 }
 .upgrade--win .upgrade__spine::before {
   -webkit-animation: fade 0.2s ease-out var(--rotation-arrow-duration) forwards;
@@ -15987,9 +15986,11 @@ main:has(.profile-header--vip) {
   height: 100%;
   -webkit-animation: rotateRing 12s linear infinite;
           animation: rotateRing 12s linear infinite;
-  background: center/cover no-repeat url("../images/upgrade/upgrade-magic-smoke.png");
+  background: center/cover no-repeat -webkit-image-set(url("../images/upgrade/upgrade-magic-smoke.webp") type("image/webp"), url("../images/upgrade/upgrade-magic-smoke.png") type("image/png"));
+  background: center/cover no-repeat image-set(url("../images/upgrade/upgrade-magic-smoke.webp") type("image/webp"), url("../images/upgrade/upgrade-magic-smoke.png") type("image/png"));
   border-radius: 50%;
   mix-blend-mode: screen;
+  will-change: transform;
 }
 .upgrade--magic .upgrade__provability-body::after {
   position: absolute;
@@ -16007,7 +16008,7 @@ main:has(.profile-header--vip) {
 }
 .upgrade--magic .upgrade__provability-chance {
   height: 100%;
-  background: center/cover no-repeat url("../images/upgrade/upgrade-magic-progress-bg-2.svg");
+  background: none;
 }
 .upgrade--magic .upgrade__provability-chance::before {
   -webkit-transform: translate(-50%, -50%);
@@ -16020,11 +16021,11 @@ main:has(.profile-header--vip) {
   height: 100%;
   content: "";
   display: block;
-  -webkit-animation: rotateRing 16s linear infinite;
-          animation: rotateRing 16s linear infinite;
-  background: center/cover no-repeat url("../images/upgrade/upgrade-magic-smoke-2.png");
+  -webkit-animation: rotateRing 5s linear infinite;
+          animation: rotateRing 5s linear infinite;
+  background: conic-gradient(transparent, transparent 75%, #C09F4E);
   border-radius: 50%;
-  mix-blend-mode: screen;
+  will-change: transform;
 }
 .upgrade--magic .upgrade__provability-chance::after {
   -webkit-transform: translate(-50%, -50%);
@@ -16036,12 +16037,43 @@ main:has(.profile-header--vip) {
   content: "";
   width: 45%;
   aspect-ratio: 0.74;
-  -webkit-animation: rotateMagicLogo 2s linear infinite;
-          animation: rotateMagicLogo 2s linear infinite;
-  background: conic-gradient(from var(--rotate-magic-logo-angle), transparent, transparent 20%, #DFB25D);
-  -webkit-mask: center/contain no-repeat url("../images/upgrade/upgrade-question.svg");
-  mask: center/contain no-repeat url("../images/upgrade/upgrade-question.svg");
+  background: center/contain no-repeat url("../images/upgrade/upgrade-question.svg");
   will-change: transform;
+}
+.upgrade--magic .upgrade__provability-dots {
+  position: absolute;
+  inset: 0;
+}
+.upgrade--magic .upgrade__provability-dots::before, .upgrade--magic .upgrade__provability-dots::after {
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  position: absolute;
+  display: block;
+  background: center/contain no-repeat url("../images/upgrade/upgrade-magic-dot.svg");
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+  transition: -webkit-transform 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+  transition: transform 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+  transition: transform 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8), -webkit-transform 0.2s cubic-bezier(0.47, 1.8, 0.4, 0.8);
+}
+.upgrade--magic .upgrade__provability-dots:first-of-type::before {
+  top: 50%;
+  left: 10%;
+}
+.upgrade--magic .upgrade__provability-dots:first-of-type::after {
+  top: 27%;
+  left: 58%;
+}
+.upgrade--magic .upgrade__provability-dots:last-of-type::before {
+  top: 10%;
+  left: 59%;
+}
+.upgrade--magic .upgrade__provability-dots:last-of-type::after {
+  top: 70%;
+  left: 70%;
 }
 .upgrade--magic .upgrade__part-right .upgrade__skin::before, .upgrade--magic .upgrade__part-right .upgrade__skin::after {
   content: none;
@@ -16103,6 +16135,12 @@ main:has(.profile-header--vip) {
   -webkit-transition: opacity 0.3s ease-out, visibility 0s;
   transition: opacity 0.3s ease-out, visibility 0s;
 }
+.upgrade--magic .upgrade__note {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
+}
 .upgrade--magic.upgrade--win .upgrade__part-right .upgrade__skin-img-wrap img {
   -webkit-animation: none;
           animation: none;
@@ -16115,12 +16153,41 @@ main:has(.profile-header--vip) {
   content: none;
 }
 .upgrade--magic.upgrade--win .upgrade__provability-chance::after {
-  width: 70%;
+  width: 60%;
   aspect-ratio: 1.77;
-  -webkit-mask: center/contain no-repeat url("../images/upgrade/upgrade-gun.svg");
-  mask: center/contain no-repeat url("../images/upgrade/upgrade-gun.svg");
-  -webkit-animation: magicIconFlash 0.8s ease-out, rotateMagicLogo 8s linear infinite;
-          animation: magicIconFlash 0.8s ease-out, rotateMagicLogo 8s linear infinite;
+  background: center/contain no-repeat url("../images/upgrade/upgrade-magic-mode-text.svg");
+  -webkit-animation: magicIconFlash 0.8s ease-out 3s forwards;
+          animation: magicIconFlash 0.8s ease-out 3s forwards;
+  -webkit-mask: none;
+  mask: none;
+  will-change: transform;
+}
+.upgrade--magic.upgrade--win.upgrade--fast-rotate .upgrade__provability-chance::before {
+  -webkit-animation-duration: 2.6s;
+          animation-duration: 2.6s;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-dots::before, .upgrade--magic.upgrade--win .upgrade__provability-dots::after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: hideMagicDot 0.2s ease-out 3s forwards;
+          animation: hideMagicDot 0.2s ease-out 3s forwards;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-dots:first-of-type::before {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-dots:first-of-type::after {
+  -webkit-transition-delay: 1.6s;
+          transition-delay: 1.6s;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-dots:last-of-type::before {
+  -webkit-transition-delay: 1.8s;
+          transition-delay: 1.8s;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-dots:last-of-type::after {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 .upgrade--magic.upgrade--win .upgrade__magic-logo {
   opacity: 1;
@@ -16790,6 +16857,7 @@ main:has(.profile-header--vip) {
   top: 50%;
   left: 50%;
   mix-blend-mode: screen;
+  opacity: 0.7;
   will-change: transform;
 }
 .upgrade__magic-ring:first-child {
@@ -17650,6 +17718,7 @@ main:has(.profile-header--vip) {
   display: none;
   gap: 1.6rem;
   margin: 1.8rem auto 0;
+  z-index: 3;
 }
 @media (max-width: 1440px) {
   .upgrade__btns {
@@ -18092,6 +18161,118 @@ main:has(.profile-header--vip) {
 .upgrade__fail-provably {
   width: 88%;
   color: #8484A7;
+}
+
+.upgrade__note {
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  padding: 1.2rem 1.6rem;
+  max-width: 60rem;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#111120));
+  background-image: linear-gradient(180deg, #161622 0%, #111120 100%);
+  border-radius: 0.8rem;
+  -webkit-transform: translate(-50%, 100%);
+      -ms-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  z-index: 2;
+}
+.upgrade__note svg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.4rem;
+          flex: 0 0 2.4rem;
+}
+
+.upgrade__note-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+  width: 100%;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  padding: 0;
+}
+.upgrade__note-header[aria-expanded=true]::after {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.upgrade__note-header svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.upgrade__note-header::after {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  background: center/cover no-repeat url("../images/sprite.svg#chevron-down");
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.upgrade__note-header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+  text-align: left;
+}
+
+.upgrade__note-title {
+  color: #8484A7;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media (max-width: 480px) {
+  .upgrade__note-title {
+    font-size: 1.4rem;
+  }
+}
+
+.upgrade__note-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+.upgrade__note-text {
+  padding-top: 0.8rem;
+  text-align: left;
+}
+.upgrade__note-text p {
+  margin-top: 0.2rem;
+  color: #8484A7;
+  font-size: 1.4rem;
+  line-height: 120%;
 }
 
 .upgrade-items {
