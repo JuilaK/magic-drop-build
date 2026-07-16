@@ -3498,7 +3498,7 @@ input[type=number] {
             transform: rotate(5deg);
   }
 }
-.header__nav-link--event, .header__nav-link--spring-event, .header__nav-link--summer-event, .header__nav-link--vip {
+.header__nav-link--event, .header__nav-link--spring-event, .header__nav-link--summer-event, .header__nav-link--vip, .header__nav-link--birthday-event {
   -webkit-column-gap: 0.8rem;
      -moz-column-gap: 0.8rem;
           column-gap: 0.8rem;
@@ -3517,6 +3517,12 @@ input[type=number] {
 .header__nav-link.header__nav-link--summer-event::before {
   background: center/cover no-repeat -webkit-image-set(url("../images/bg/bg-summer-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-summer-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.jpg") type("image/webp") 2x);
   background: center/cover no-repeat image-set(url("../images/bg/bg-summer-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-summer-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-summer-event-btn@2x.jpg") type("image/webp") 2x);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.header__nav-link.header__nav-link--birthday-event::before {
+  background: center/cover no-repeat -webkit-image-set(url("../images/bg/bg-birthday-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-birthday-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-birthday-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-birthday-event-btn@2x.jpg") type("image/webp") 2x);
+  background: center/cover no-repeat image-set(url("../images/bg/bg-birthday-event-btn.webp") type("image/webp") 1x, url("../images/bg/bg-birthday-event-btn@2x.webp") type("image/webp") 2x, url("../images/bg/bg-birthday-event-btn.jpg") type("image/webp") 1x, url("../images/bg/bg-birthday-event-btn@2x.jpg") type("image/webp") 2x);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
