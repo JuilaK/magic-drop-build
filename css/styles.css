@@ -32845,8 +32845,8 @@ main:has(.profile-header--vip) {
   }
 }
 .main-banner--birthday .main-banner__hero::before {
-  background-image: -webkit-image-set(url("../images/main-banner-birthday.webp") type("image/webp"), url("../images/main-banner-birthday.png") type("image/png"));
-  background-image: image-set(url("../images/main-banner-birthday.webp") type("image/webp"), url("../images/main-banner-birthday.png") type("image/png"));
+  background-image: -webkit-image-set(url("../images/main-banner-birthday.webp") type("image/webp"), url("../images/main-banner-birthday.jpg") type("image/jpg"));
+  background-image: image-set(url("../images/main-banner-birthday.webp") type("image/webp"), url("../images/main-banner-birthday.jpg") type("image/jpg"));
 }
 @media (max-width: 768px) {
   .main-banner--birthday .main-banner__hero::before {
@@ -32944,6 +32944,28 @@ main:has(.profile-header--vip) {
   .main-banner--birthday .main-banner__img {
     width: 40%;
   }
+}
+.main-banner--birthday .main-banner__timer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-banner--birthday .main-banner__timer-item {
+  background: rgba(12, 12, 27, 0.4);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  -webkit-box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
+}
+.main-banner--birthday .main-banner__timer-item span:last-child {
+  color: rgba(253, 179, 18, 0.7);
+}
+.main-banner--birthday .main-banner__separator::before, .main-banner--birthday .main-banner__separator::after {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  -webkit-box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
 }
 .main-banner--birthday .main-banner__controls {
   -ms-flex-wrap: wrap;
@@ -43484,53 +43506,53 @@ span.vip-club__wheel-btn-price img {
 }
 .balloon:nth-child(1) {
   --x: 1vw;
-  --duration: 2.2s;
-  --sway-duration: 2.3s;
+  --duration: 2.4s;
+  --sway-duration: 2.9s;
 }
 .balloon:nth-child(2) {
   --x: 11vw;
-  --duration: 2.1s;
-  --sway-duration: 2.2s;
-}
-.balloon:nth-child(3) {
-  --x: 21vw;
-  --duration: 2.4s;
-  --sway-duration: 2.8s;
-}
-.balloon:nth-child(4) {
-  --x: 31vw;
-  --duration: 2.9s;
-  --sway-duration: 2.7s;
-}
-.balloon:nth-child(5) {
-  --x: 41vw;
-  --duration: 2.3s;
-  --sway-duration: 2.3s;
-}
-.balloon:nth-child(6) {
-  --x: 51vw;
-  --duration: 2.9s;
-  --sway-duration: 2.2s;
-}
-.balloon:nth-child(7) {
-  --x: 61vw;
-  --duration: 2.8s;
-  --sway-duration: 2.4s;
-}
-.balloon:nth-child(8) {
-  --x: 71vw;
   --duration: 2.5s;
   --sway-duration: 2.6s;
 }
+.balloon:nth-child(3) {
+  --x: 21vw;
+  --duration: 2.3s;
+  --sway-duration: 2.1s;
+}
+.balloon:nth-child(4) {
+  --x: 31vw;
+  --duration: 2.4s;
+  --sway-duration: 2.5s;
+}
+.balloon:nth-child(5) {
+  --x: 41vw;
+  --duration: 2.1s;
+  --sway-duration: 2.1s;
+}
+.balloon:nth-child(6) {
+  --x: 51vw;
+  --duration: 2.5s;
+  --sway-duration: 2.5s;
+}
+.balloon:nth-child(7) {
+  --x: 61vw;
+  --duration: 2.7s;
+  --sway-duration: 2.9s;
+}
+.balloon:nth-child(8) {
+  --x: 71vw;
+  --duration: 2.9s;
+  --sway-duration: 2.7s;
+}
 .balloon:nth-child(9) {
   --x: 81vw;
-  --duration: 3s;
-  --sway-duration: 2.1s;
+  --duration: 2.7s;
+  --sway-duration: 2.3s;
 }
 .balloon:nth-child(10) {
   --x: 91vw;
   --duration: 2.1s;
-  --sway-duration: 2.8s;
+  --sway-duration: 2.5s;
 }
 .balloon picture {
   -ms-grid-row: 1;
