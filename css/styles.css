@@ -1016,10 +1016,6 @@ body {
   background-color: #0C0C1B;
 }
 
-.birthday main {
-  overflow-x: hidden;
-}
-
 ::-moz-selection {
   background: #45454f;
   color: #FFFFFF;
@@ -6245,20 +6241,26 @@ span.header__volume-value {
 .birthday .cases::before {
   position: absolute;
   top: -2rem;
-  left: 3.2rem;
+  left: 0;
   background: center/contain no-repeat -webkit-image-set(url("../images/birthday/balloon-yellow.webp") type("image/webp"), url("../images/birthday/balloon-yellow.png") type("image/png"));
   background: center/contain no-repeat image-set(url("../images/birthday/balloon-yellow.webp") type("image/webp"), url("../images/birthday/balloon-yellow.png") type("image/png"));
   -webkit-animation: balloon-float-left 4s ease-in-out infinite;
           animation: balloon-float-left 4s ease-in-out infinite;
+  -webkit-transform: translateX(3.2rem);
+      -ms-transform: translateX(3.2rem);
+          transform: translateX(3.2rem);
 }
 .birthday .cases::after {
   position: absolute;
   top: 40rem;
-  right: 6.4rem;
+  right: 0;
   background: center/contain no-repeat -webkit-image-set(url("../images/birthday/balloon-blue.webp") type("image/webp"), url("../images/birthday/balloon-blue.png") type("image/png"));
   background: center/contain no-repeat image-set(url("../images/birthday/balloon-blue.webp") type("image/webp"), url("../images/birthday/balloon-blue.png") type("image/png"));
   -webkit-animation: balloon-float-right 4s ease-in-out infinite;
           animation: balloon-float-right 4s ease-in-out infinite;
+  -webkit-transform: translateX(-6.4rem);
+      -ms-transform: translateX(-6.4rem);
+          transform: translateX(-6.4rem);
 }
 
 .cases-header {
@@ -7970,7 +7972,7 @@ span.header__volume-value {
 .birthday .draws-list::before {
   position: absolute;
   top: -2rem;
-  right: 6.4rem;
+  right: 0;
   content: "";
   display: block;
   width: 18rem;
@@ -7979,6 +7981,9 @@ span.header__volume-value {
   background: center/contain no-repeat image-set(url("../images/birthday/balloon-red.webp") type("image/webp"), url("../images/birthday/balloon-red.png") type("image/png"));
   -webkit-animation: balloon-float-right 4s ease-in-out infinite;
           animation: balloon-float-right 4s ease-in-out infinite;
+  -webkit-transform: translateX(6.4rem);
+      -ms-transform: translateX(6.4rem);
+          transform: translateX(6.4rem);
 }
 @media (max-width: 2100px) {
   .birthday .draws-list::before {
@@ -8876,6 +8881,10 @@ span.draw-item__start-price svg {
   font-size: 1.6rem;
 }
 
+.birthday:has(.skins-list) main {
+  overflow-x: clip;
+}
+
 .skins-list {
   position: relative;
   display: -ms-grid;
@@ -8978,20 +8987,26 @@ span.draw-item__start-price svg {
 .birthday .skins-slider::before {
   position: absolute;
   top: 2rem;
-  left: 6.4rem;
+  left: 0;
   background: center/contain no-repeat -webkit-image-set(url("../images/birthday/balloon-blue.webp") type("image/webp"), url("../images/birthday/balloon-blue.png") type("image/png"));
   background: center/contain no-repeat image-set(url("../images/birthday/balloon-blue.webp") type("image/webp"), url("../images/birthday/balloon-blue.png") type("image/png"));
   -webkit-animation: balloon-float-left 4s ease-in-out infinite;
           animation: balloon-float-left 4s ease-in-out infinite;
+  -webkit-transform: translateX(6.4rem);
+      -ms-transform: translateX(6.4rem);
+          transform: translateX(6.4rem);
 }
 .birthday .skins-slider::after {
   position: absolute;
   top: 2rem;
-  left: -6.4rem;
+  left: 0;
   background: center/contain no-repeat -webkit-image-set(url("../images/birthday/balloon-yellow.webp") type("image/webp"), url("../images/birthday/balloon-yellow.png") type("image/png"));
   background: center/contain no-repeat image-set(url("../images/birthday/balloon-yellow.webp") type("image/webp"), url("../images/birthday/balloon-yellow.png") type("image/png"));
   -webkit-animation: balloon-float-left 4s ease-in-out infinite;
           animation: balloon-float-left 4s ease-in-out infinite;
+  -webkit-transform: translateX(-6.4rem);
+      -ms-transform: translateX(-6.4rem);
+          transform: translateX(-6.4rem);
 }
 
 .skins-slider__no-drop {
@@ -11602,6 +11617,41 @@ span.draw-item__start-price svg {
   .case-hero__roulettes-list {
     margin-top: 3.2rem;
   }
+}
+
+.birthday .case-hero__roulettes-list::before, .birthday .case-hero__roulettes-list::after {
+  content: "";
+  display: block;
+  z-index: -1;
+}
+@media (max-width: 1900px) {
+  .birthday .case-hero__roulettes-list::before, .birthday .case-hero__roulettes-list::after {
+    content: none;
+  }
+}
+.birthday .case-hero__roulettes-list::before {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 13.3rem;
+  aspect-ratio: 0.44;
+  background: bottom/contain no-repeat -webkit-image-set(url("../images/cases/person-1.webp") type("image/webp"), url("../images/cases/person-1.png") type("image/png"));
+  background: bottom/contain no-repeat image-set(url("../images/cases/person-1.webp") type("image/webp"), url("../images/cases/person-1.png") type("image/png"));
+  -webkit-transform: translateX(-9.6rem);
+      -ms-transform: translateX(-9.6rem);
+          transform: translateX(-9.6rem);
+}
+.birthday .case-hero__roulettes-list::after {
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
+  width: 11.2rem;
+  aspect-ratio: 0.39;
+  background: bottom/contain no-repeat -webkit-image-set(url("../images/cases/person-2.webp") type("image/webp"), url("../images/cases/person-2.png") type("image/png"));
+  background: bottom/contain no-repeat image-set(url("../images/cases/person-2.webp") type("image/webp"), url("../images/cases/person-2.png") type("image/png"));
+  -webkit-transform: translateX(7.2rem);
+      -ms-transform: translateX(7.2rem);
+          transform: translateX(7.2rem);
 }
 
 .roulettes-list--1 .roulette__win-item {
