@@ -38025,7 +38025,7 @@ dd.swap__skin-price svg {
           justify-content: center;
 }
 .event--birthday .event__banner-timer-item {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(12, 12, 27, 0.4);
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   -webkit-box-shadow: inset 0 0.2rem 0 0 rgba(255, 255, 255, 0.2);
