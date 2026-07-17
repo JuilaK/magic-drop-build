@@ -3121,7 +3121,7 @@ input[type=number] {
   }
 }
 
-.js-reveal-up, .vip-club__wheel {
+.js-reveal-up {
   opacity: 0;
   -webkit-transform: translateY(2.4rem);
       -ms-transform: translateY(2.4rem);
@@ -3133,7 +3133,7 @@ input[type=number] {
   will-change: opacity, transform;
 }
 
-.js-reveal-up.is-visible, .is-visible.vip-club__wheel {
+.js-reveal-up.is-visible {
   opacity: 1;
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -42545,6 +42545,18 @@ span.event__banner-xp-currency {
     background: none;
   }
 }
+.vip-club__wheel--show-prize .vip-club__wheel-info-wrap {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+}
+.vip-club__wheel--show-prize .vip-club__wheel-prize {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
+}
 
 .vip-club__wheel-wrap {
   display: -ms-grid;
@@ -42952,6 +42964,8 @@ span.event__banner-xp-currency {
   max-width: 30rem;
   margin: 0 auto;
   text-align: center;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s;
+  transition: opacity 0.3s ease-out, visibility 0s;
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-info-wrap {
@@ -43157,6 +43171,132 @@ span.vip-club__wheel-btn-price img {
   span.vip-club__wheel-btn-price img {
     width: 2.4rem;
     height: 2.4rem;
+  }
+}
+
+.vip-club__wheel-prize {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+}
+
+.vip-club__wheel-prize-title {
+  font-weight: 900;
+  font-size: 4.4rem;
+  text-transform: uppercase;
+}
+@media (max-width: 1900px) {
+  .vip-club__wheel-prize-title {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .vip-club__wheel-prize-title {
+    font-size: 1.8rem;
+  }
+}
+
+.vip-club__wheel-prize-subtitle {
+  margin-top: 1.4rem;
+  color: #8484A7;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media (max-width: 1900px) {
+  .vip-club__wheel-prize-subtitle {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .vip-club__wheel-prize-subtitle {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+  }
+}
+
+.vip-club__wheel-prize-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 24rem;
+  aspect-ratio: 1;
+}
+@media (max-width: 1900px) {
+  .vip-club__wheel-prize-img {
+    width: 16rem;
+  }
+}
+@media (max-width: 1024px) {
+  .vip-club__wheel-prize-img {
+    width: 10rem;
+  }
+}
+.vip-club__wheel-prize-img img {
+  height: auto;
+}
+.vip-club__wheel-prize-img img:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.vip-club__wheel-prize-desc {
+  color: #8484A7;
+  font-size: 2.4rem;
+}
+@media (max-width: 1900px) {
+  .vip-club__wheel-prize-desc {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .vip-club__wheel-prize-desc {
+    font-size: 1.4rem;
+  }
+}
+
+.vip-club__wheel-prize-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.8rem;
+     -moz-column-gap: 0.8rem;
+          column-gap: 0.8rem;
+  margin-top: 2rem;
+}
+@media (max-width: 1024px) {
+  .vip-club__wheel-prize-btns {
+    margin-top: 0.8rem;
+  }
+}
+.vip-club__wheel-prize-btns .btn {
+  min-width: 16rem;
+}
+@media (max-width: 1024px) {
+  .vip-club__wheel-prize-btns .btn {
+    min-width: 0;
   }
 }
 

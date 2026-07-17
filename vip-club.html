@@ -1074,7 +1074,7 @@
         </button>
     </div>
 </section>
-        <section class="vip-club__cases container-lg">
+        <section class="vip-club__cases container">
     <h2 class="sr-only">Vip Cases</h2>
     <div class="vip-club__cases-title js-reveal-up">
         <div class="vip-club__cases-title-wrap">
@@ -1549,12 +1549,12 @@
         </div>
     </div>
 </section>
-        <div class="vip-club__wheel">
+        <div class="vip-club__wheel js-reveal-up js-vip-club-wheel">
     <section class="container-md">
         <div class="vip-club__wheel-wrap">
             <div class="vip-club__wheel-container">
                 <div class="vip-club__wheel-track">
-                    <div class="vip-club__wheel-track-wrap js-vip-club-wheel" style="--vip-wheel-winner: 0">
+                    <div class="vip-club__wheel-track-wrap js-vip-club-wheel-track" style="--vip-wheel-winner: 0">
                         <ul>
                             <li class="vip-club__wheel-item vip-club__wheel-item--orange js-vip-club-wheel-item">
     <div class="vip-club__wheel-item-bg">
@@ -1949,7 +1949,29 @@
                         </span>
                     </button>
                 </div>
-    
+                <div class="vip-club__wheel-prize">
+                    <h2 class="vip-club__wheel-prize-title">Поздравляем!</h2>
+                    <p class="vip-club__wheel-prize-subtitle">Ваш выигрыш</p>
+                    <div class="vip-club__wheel-prize-img">
+                        <img 
+                            src="./images/vip-club/prize-4.png" 
+                            srcset="./images/vip-club/prize-4@2x.png 2x"
+                            alt="Бонус к пополнению 15%"
+                            width="240"
+                            height="240">
+                        <img 
+                            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/160fx160f" 
+                            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/240fx240f"
+                            alt="" aria-hidden="true"
+                            width="280"
+                            height="280">
+                    </div>
+                    <p class="vip-club__wheel-prize-desc">Бонус к пополнению 15%</p>
+                    <div class="vip-club__wheel-prize-btns">
+                        <button type="button" class="btn btn--gr-yellow js-vip-club-use-btn"><span>Использовать</span></button>
+                        <button type="button" class="btn btn--bg-grey js-vip-club-more-btn"><span>Крутить еще</span></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -2106,7 +2128,7 @@
     </div>
 </section>
 </div>
-        <section class="vip-club__prizes">
+        <section class="vip-club__prizes js-reveal-up">
     <div class="container">
         <div class="vip-club__prizes-wrap">
             <h2 class="vip-club__prizes-title">Мои призы</h2>

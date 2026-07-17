@@ -1227,22 +1227,25 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // VIP club wheel
+    const wheel = document.querySelector('.js-vip-club-wheel');
     const vipClubBtn = document.querySelector('.js-vip-club-btn');
+    const vipClubMoreBtn = document.querySelector('.js-vip-club-more-btn');
+    const vipClubUseBtn = document.querySelector('.js-vip-club-use-btn');
+    const wheelTrack = document.querySelector('.js-vip-club-wheel-track');
     const vipClubItems = document.querySelectorAll('.js-vip-club-wheel-item');
 
     !!vipClubBtn && vipClubBtn.addEventListener('click', () => {
-        const wheel = document.querySelector('.js-vip-club-wheel');
-        const matrix = new DOMMatrix(getComputedStyle(wheel).transform);
+        const matrix = new DOMMatrix(getComputedStyle(wheelTrack).transform);
         const currentAngle = Math.atan2(matrix.b, matrix.a) * (180 / Math.PI);
 
-        wheel.getAnimations().forEach(anim => anim.cancel());
+        wheelTrack.getAnimations().forEach(anim => anim.cancel());
         vipClubItems.forEach(item => item.classList.remove('selected'));
 
-        const winner = getComputedStyle(wheel).getPropertyValue('--vip-wheel-winner');
+        const winner = getComputedStyle(wheelTrack).getPropertyValue('--vip-wheel-winner');
         const stepAngle = 360 / getComputedStyle(document.documentElement).getPropertyValue('--vip-wheel-count');
         const finalAngle = currentAngle  - (currentAngle % 360) - 720 - (stepAngle * winner);
 
-        const anim = wheel.animate(
+        const anim = wheelTrack.animate(
             [
                 { transform: `rotate(${currentAngle}deg)` },
                 { transform: `rotate(${finalAngle }deg)` }
@@ -1256,10 +1259,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
         anim.addEventListener('finish', () => {
             vipClubBtn.disabled = false;
-            wheel.style.transform = `rotate(${finalAngle}deg)`;
+            wheelTrack.style.transform = `rotate(${finalAngle}deg)`;
             anim.cancel();
             vipClubItems[winner].classList.add('selected');
+            wheel.classList.add('vip-club__wheel--show-prize');
         });
+    });
+
+    !!vipClubMoreBtn && vipClubMoreBtn.addEventListener('click', () => {
+        wheel.classList.remove('vip-club__wheel--show-prize');
+        vipClubBtn.click();
+    });
+
+    !!vipClubUseBtn && vipClubUseBtn.addEventListener('click', () => {
+        wheel.classList.remove('vip-club__wheel--show-prize');
+        vipClubItems.forEach(item => item.classList.remove('selected'));
     });
     // END VIP club wheel
 
@@ -1273,7 +1287,8 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.15
+        threshold: 0,
+        rootMargin: '0px 0px -15% 0px'
     });
 
     !!revealUpItems && revealUpItems.forEach(el => revealObserver.observe(el));
