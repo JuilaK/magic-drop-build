@@ -15665,6 +15665,16 @@ main:has(.profile-header--vip) {
     background-image: url("../images/upgrade/upgrade-fail-progress-bg-2.svg");
   }
 }
+@-webkit-keyframes showMagicWinBg {
+  to {
+    background: #2c6538;
+  }
+}
+@keyframes showMagicWinBg {
+  to {
+    background: #2c6538;
+  }
+}
 @-webkit-keyframes displayUpgradeImgSkin {
   0% {
     opacity: 0;
@@ -16151,6 +16161,21 @@ main:has(.profile-header--vip) {
 }
 .upgrade--magic.upgrade--win .upgrade__part-right .upgrade__skin-img::after {
   content: none;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-progress::before {
+  -webkit-animation: showMagicWinBg 0.2s ease-out 3s forwards;
+          animation: showMagicWinBg 0.2s ease-out 3s forwards;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-info {
+  background: #2c6538;
+  -webkit-transition: background 0.2s ease-out 3s;
+  transition: background 0.2s ease-out 3s;
+}
+.upgrade--magic.upgrade--win .upgrade__provability-chance::before {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s ease-out 3s, visibility 0s ease-out 3.2s;
+  transition: opacity 0.2s ease-out 3s, visibility 0s ease-out 3.2s;
 }
 .upgrade--magic.upgrade--win .upgrade__provability-chance::after {
   width: 60%;
@@ -18165,22 +18190,31 @@ main:has(.profile-header--vip) {
 
 .upgrade__note {
   position: absolute;
+  right: 10.6rem;
   bottom: -0.8rem;
-  left: 50%;
   padding: 1.2rem 1.6rem;
-  max-width: 60rem;
+  max-width: 34rem;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#111120));
   background-image: linear-gradient(180deg, #161622 0%, #111120 100%);
   border-radius: 0.8rem;
-  -webkit-transform: translate(-50%, 100%);
-      -ms-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
   transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
   z-index: 2;
+}
+@media (max-width: 1440px) {
+  .upgrade__note {
+    right: 50%;
+    max-width: 40rem;
+    -webkit-transform: translate(50%, 100%);
+        -ms-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
+  }
 }
 .upgrade__note svg {
   -webkit-box-flex: 0;
