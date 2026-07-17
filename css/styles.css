@@ -31879,7 +31879,7 @@ main:has(.profile-header--vip) {
   transition: transform 0.8s ease-out 14.2s;
   transition: transform 0.8s ease-out 14.2s, -webkit-transform 0.8s ease-out 14.2s;
 }
-.win-rare--top-skin .win-rare__item--open .win-rare__item-wrapper, .win-rare--premium .win-rare__item--open .win-rare__item-wrapper {
+.win-rare--top-skin .win-rare__item--open .win-rare__item-wrapper, .win-rare--premium .win-rare__item--open .win-rare__item-wrapper, .win-rare--birthday .win-rare__item--open .win-rare__item-wrapper {
   -webkit-transform: rotateY(180deg) !important;
           transform: rotateY(180deg) !important;
   -webkit-transition: -webkit-transform 0.3s ease-out !important;
@@ -31887,7 +31887,7 @@ main:has(.profile-header--vip) {
   transition: transform 0.3s ease-out !important;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out !important;
 }
-.win-rare--top-skin .win-rare__item-wrapper, .win-rare--premium .win-rare__item-wrapper {
+.win-rare--top-skin .win-rare__item-wrapper, .win-rare--premium .win-rare__item-wrapper, .win-rare--birthday .win-rare__item-wrapper {
   -webkit-transform: scale(0.6) translate3d(0, 1rem, 0);
           transform: scale(0.6) translate3d(0, 1rem, 0);
 }
