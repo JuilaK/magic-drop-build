@@ -11619,17 +11619,17 @@ span.draw-item__start-price svg {
   }
 }
 
-.birthday .case-hero__roulettes-list::before, .birthday .case-hero__roulettes-list::after {
+.birthday .roulettes-list--1::before, .birthday .roulettes-list--1::after {
   content: "";
   display: block;
   z-index: -1;
 }
 @media (max-width: 1900px) {
-  .birthday .case-hero__roulettes-list::before, .birthday .case-hero__roulettes-list::after {
+  .birthday .roulettes-list--1::before, .birthday .roulettes-list--1::after {
     content: none;
   }
 }
-.birthday .case-hero__roulettes-list::before {
+.birthday .roulettes-list--1::before {
   position: absolute;
   top: 0.8rem;
   left: 0;
@@ -11641,7 +11641,7 @@ span.draw-item__start-price svg {
       -ms-transform: translateX(-9.6rem);
           transform: translateX(-9.6rem);
 }
-.birthday .case-hero__roulettes-list::after {
+.birthday .roulettes-list--1::after {
   position: absolute;
   top: 2.4rem;
   right: 0;
