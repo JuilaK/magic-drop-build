@@ -10570,6 +10570,47 @@ span.draw-item__start-price svg {
 .case-container--magic-3.open .case-hero__images picture:nth-child(3) {
   --imageTranslate: 90%;
 }
+.case-container--birthday {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+.case-container--birthday .case-hero {
+  margin-top: -6.4rem;
+  padding-top: 10rem;
+}
+@media (max-width: 1024px) {
+  .case-container--birthday .case-hero {
+    padding-top: 14rem;
+  }
+}
+.case-container--birthday .case-hero__provably-btn {
+  top: 10rem;
+}
+@media (max-width: 1024px) {
+  .case-container--birthday .case-hero__provably-btn {
+    top: 8rem;
+  }
+}
+.case-container--birthday .case-hero__bg-img {
+  height: 100%;
+}
+.case-container--birthday .case-hero__rhombus picture:nth-of-type(2) .case-hero__bg-img {
+  display: none;
+}
+.case-container--birthday .case-hero__img {
+  margin-top: -4rem;
+}
+.case-container--birthday .case-hero__roulettes-win {
+  margin-top: 6.4rem;
+}
+@media (max-width: 1024px) {
+  .case-container--birthday .case-hero__roulettes-list {
+    margin-top: 0;
+  }
+}
+.case-container--birthday .case-hero--roulette .case-hero__flag {
+  display: none;
+}
 .case-container .case-hero {
   min-height: 51.8rem;
 }
@@ -10926,6 +10967,19 @@ span.draw-item__start-price svg {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+.case-hero__title {
+  color: #8484A7;
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  .case-hero__title {
+    font-size: 2rem;
   }
 }
 
