@@ -24540,12 +24540,12 @@ main:has(.profile-header--vip) {
 .modal--birthday .modal__birthday-md-img {
   height: auto;
 }
-.modal--steam-alert .modal__dialog, .modal--vip-invite .modal__dialog {
+.modal--steam-alert .modal__dialog, .modal--vip-invite .modal__dialog, .modal--mistery-upgrade .modal__dialog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.modal--steam-alert .modal__content, .modal--vip-invite .modal__content {
+.modal--steam-alert .modal__content, .modal--vip-invite .modal__content, .modal--mistery-upgrade .modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24554,11 +24554,11 @@ main:has(.profile-header--vip) {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.modal--steam-alert .modal__btns, .modal--vip-invite .modal__btns {
+.modal--steam-alert .modal__btns, .modal--vip-invite .modal__btns, .modal--mistery-upgrade .modal__btns {
   margin-top: auto;
 }
 @media (max-width: 370px) {
-  .modal--steam-alert .modal__btns .btn, .modal--vip-invite .modal__btns .btn {
+  .modal--steam-alert .modal__btns .btn, .modal--vip-invite .modal__btns .btn, .modal--mistery-upgrade .modal__btns .btn {
     min-width: 100%;
   }
 }
@@ -24662,6 +24662,71 @@ main:has(.profile-header--vip) {
     width: calc(100% + 4.8rem);
     margin: 0 -2.4rem -7rem;
     max-width: calc(100% + 4.8rem);
+  }
+}
+.modal--mistery-upgrade .modal__wrap {
+  width: 84rem;
+}
+@media (max-width: 1024px) {
+  .modal--mistery-upgrade .modal__wrap {
+    width: 90%;
+  }
+}
+.modal--mistery-upgrade .modal__dialog {
+  min-height: min(42rem, 100vh - 6rem);
+  background: center right/cover no-repeat -webkit-image-set(url("../images/banners/banner-main-mistery-upgrade.webp") type("image/webp"), url("../images/banners/banner-main-mistery-upgrade.jpg") type("image/jpg"));
+  background: center right/cover no-repeat image-set(url("../images/banners/banner-main-mistery-upgrade.webp") type("image/webp"), url("../images/banners/banner-main-mistery-upgrade.jpg") type("image/jpg"));
+}
+@media (max-width: 768px) {
+  .modal--mistery-upgrade .modal__dialog {
+    background-position-x: right 40%;
+  }
+}
+.modal--mistery-upgrade .modal__title {
+  max-width: 39rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 5.2rem;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-animation: pulseSlideTitle 3s ease-out infinite;
+          animation: pulseSlideTitle 3s ease-out infinite;
+}
+@media (max-width: 480px) {
+  .modal--mistery-upgrade .modal__title {
+    padding-top: 2.4rem;
+    font-size: 3.6rem;
+  }
+}
+.modal--mistery-upgrade .modal__text {
+  margin-left: 0;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: left;
+}
+@media (max-width: 480px) {
+  .modal--mistery-upgrade .modal__text {
+    font-size: 1.4rem;
+  }
+}
+.modal--mistery-upgrade .modal__btns {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media (max-width: 480px) {
+  .modal--mistery-upgrade .modal__btns {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 2.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .modal--mistery-upgrade .modal__btns .btn {
+    width: auto;
   }
 }
 .modal--lvl-silver .modal__dialog {

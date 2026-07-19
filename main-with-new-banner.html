@@ -1069,7 +1069,7 @@
     <div class="hero-banners__slider splide">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide">
+                <li class="splide__slide" data-modal-trigger="mistery-upgrade">
                     <div class="hero-banners__slide hero-banners__slide--mistery">
                         <picture class="hero-banners__slide-img hero-banners__slide-img--mobile-img">
                             <source srcset="./images/banners/banner-main-mistery-upgrade.webp" type="image/webp">
@@ -1082,7 +1082,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide" data-modal-trigger="vip-invite">
                     <div class="hero-banners__slide hero-banners__slide--vip">
                         <picture class="hero-banners__slide-img hero-banners__slide-img--mobile-img">
                             <source srcset="./images/banners/banner-main-vip-club.webp" type="image/webp">
@@ -4318,44 +4318,59 @@
         </div>
     </div>
 </div>
+    <div class="modal modal--vip-invite js-modal" data-modal-name="vip-invite">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <p class="modal__text">Вступай в наш</p>
+                <h2 class="modal__title" data-text="VIP Клуб">VIP Клуб</h2>
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--gr-yellow">
+                        <span>Продолжить</span>
+                    </button>
+                    <button type="button" class="btn">
+                        <span>Отменить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal modal--mistery-upgrade js-modal" data-modal-name="mistery-upgrade">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Mistery upgrade</h2>
+                <p class="modal__text">Уже на сайте MagicDrop</p>
+                <div class="modal__btns">
+                    <button type="button" class="btn btn--gr-yellow">
+                        <span>Открыть кейсы</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="support">
     
     <div class="support__body js-support-body">
         <div class="support__header js-support-header">
-            <div class="support__tabs">
-                <input 
-                    type="radio" 
-                    name="support" 
-                    id="support-questions"
-                    class="js-tab"
-                    checked>
-                <label for="support-questions">
-                    <svg aria-hidden="true" class="grey">
-                        <use xlink:href="images/sprite.svg#question-2"></use>
-                    </svg>
-                    Вопросы
-                </label>
-                <input 
-                    type="radio" 
-                    name="support" 
-                    id="support-chat"
-                    class="js-tab">
-                <label for="support-chat">
-                    <svg aria-hidden="true" class="grey">
-                        <use xlink:href="images/sprite.svg#chat"></use>
-                    </svg>
-                    Чат
-                </label>
+            <div class="support__header-icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#chat"></use>
+                </svg>
             </div>
             <div>
-                <span class="support__subtitle">
-                    <span>Technical</span>
-                    <span>Operator</span>
-                </span>
-                <span class="support__title">
-                    <span>Support</span>
-                    <span>Assistance</span>
-                </span>
+                <span class="support__subtitle">Operator</span>
+                <span class="support__title">Assistance</span>
             </div>
             <button type="button" class="support__close-btn js-support-close">
                 Закрыть окно
@@ -4363,78 +4378,70 @@
             </button>
         </div>
         <div class="support__content">
-            <div data-tab="support-questions">
-                
-                
-                    <div class="support__accordion">
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">01.</span>
-                                <span class="support__accordion-title">Are there any age restrictions?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">02.</span>
-                                <span class="support__accordion-title">Can I join as a spectator?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">03.</span>
-                                <span class="support__accordion-title">What games are included in the events?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">04.</span>
-                                <span class="support__accordion-title">Can I cancel my registration?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                        <div class="support__accordion-item">
-                            <button class="support__accordion-header js-accordion-btn" aria-expanded="false">
-                                <span class="support__accordion-numb">05.</span>
-                                <span class="support__accordion-title">Do you organize offline or online tournaments?</span>
-                            </button>
-                            <div class="support__accordion-content">
-                                <p>- Primarily CS:GO, but more games may be added.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-            </div>
-            <div class="support__chat" data-tab="support-chat">
+            <div class="support__chat">
                 <div class="support__messages js-support-messages">
                     <div class="support__message">
                         <span class="support__message-author">Martin (Moderator)</span>
                         <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
                         <span class="support__message-data">07:21</span>
                     </div>
+                    <div class="support__chapter">
+                        <h3 class="support__chapter-title">Выбрать тему:</h3>
+                        <ul class="support__chapter-list">
+                            <li><button type="button" class="btn">Пополнение</button></li>
+                            <li><button type="button" class="btn">Ошибка</button></li>
+                            <li><button type="button" class="btn">Сотрудничество</button></li>
+                            <li><button type="button" class="btn">Бонус</button></li>
+                            <li><button type="button" class="btn">Другое</button></li>
+                        </ul>
+                    </div>
                     <div class="support__message support__message--right">
-                        <span class="support__message-author">Martin (Moderator)</span>
-                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <span class="support__message-author">Ingrid</span>
+                        <p class="support__message-text">Сотрудничество</p>
                         <span class="support__message-data">07:21</span>
                     </div>
                     <div class="support__message">
                         <span class="support__message-author">Martin (Moderator)</span>
-                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <p class="support__message-text">Здравствуйте! По вопросам сотрудничества отправьте, пожалуйста, ваше предложение в Telegram:<br>
+                            YouTube — <a href="https://t.me/magicdrop_video" target="_blank" rel="noopener noreferrer">https://t.me/magicdrop_video</a><br>
+                            Twitch — <a href="https://t.me/magicdrop_streams" target="_blank" rel="noopener noreferrer">https://t.me/magicdrop_streams</a><br>
+                            Укажите, пожалуйста: канал/ник, тематика, средняя аудитория, формат сотрудничества и желаемые условия. Спасибо за внимание к MAGICDROP</p>
                         <span class="support__message-data">07:21</span>
                     </div>
+                    <div class="support__chapter">
+                        <h3 class="support__chapter-title">Выбрать тему:</h3>
+                        <ul class="support__chapter-list">
+                            <li><button type="button" class="btn">Пополнение</button></li>
+                            <li><button type="button" class="btn">Ошибка</button></li>
+                            <li><button type="button" class="btn">Сотрудничество</button></li>
+                            <li><button type="button" class="btn">Бонус</button></li>
+                            <li><button type="button" class="btn">Другое</button></li>
+                        </ul>
+                    </div>
                     <div class="support__message support__message--right">
+                        <span class="support__message-author">Ingrid</span>
+                        <p class="support__message-text">Ошибка</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__chapter">
+                        <h3 class="support__chapter-title">Выбрать вопрос:</h3>
+                        <ul class="support__chapter-list">
+                            <li><button type="button" class="btn">Ошибка проверки ссылки / обмены заблокированы в Steam</button></li>
+                            <li><button type="button" class="btn">Ошибка 4</button></li>
+                            <li><button type="button" class="btn">Ошибка отправки</button></li>
+                            <li><button type="button" class="btn">Ошибка 500 / Ошибка 14 / Ошибка 18</button></li>
+                            <li><button type="button" class="btn">Другое</button></li>
+                            <li><button type="button" class="support__chapter-another btn">Выбрать другую тему</button></li>
+                        </ul>
+                    </div>
+                    <div class="support__message support__message--right">
+                        <span class="support__message-author">Ingrid</span>
+                        <p class="support__message-text">Ошибка проверки ссылки / обмены заблокированы в Steam</p>
+                        <span class="support__message-data">07:21</span>
+                    </div>
+                    <div class="support__message">
                         <span class="support__message-author">Martin (Moderator)</span>
-                        <p class="support__message-text">Hello! I will be glad to answer all your questions!</p>
+                        <p class="support__message-text">Похоже, у вас в настройках Steam заблокированы обмены. Попробуйте отправить предложение обмена другу — система сообщит причину блокировки. Проверьте настройки приватности и статус обменов, затем создайте новую трейд‑ссылку</p>
                         <span class="support__message-data">07:21</span>
                     </div>
                 </div>
