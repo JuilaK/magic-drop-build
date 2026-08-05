@@ -43130,6 +43130,8 @@ span.event__banner-xp-currency {
           box-shadow: none;
 }
 .vip-club__cases-list .case__body {
+  padding-bottom: 1.2rem;
+  padding-top: 3.6rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#0c0c1b));
   background: linear-gradient(180deg, #161622 0%, #0c0c1b 100%);
 }
@@ -43151,10 +43153,10 @@ span.event__banner-xp-currency {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 2.4rem;
-     -moz-column-gap: 2.4rem;
-          column-gap: 2.4rem;
-  font-size: 3.2rem;
+  -webkit-column-gap: 1.2rem;
+     -moz-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+  font-size: 2.4rem;
   font-weight: 900;
   line-height: 90%;
   text-align: left;
@@ -43165,7 +43167,6 @@ span.event__banner-xp-currency {
     -webkit-column-gap: 0.8rem;
        -moz-column-gap: 0.8rem;
             column-gap: 0.8rem;
-    font-size: 2.4rem;
   }
 }
 .vip-club__title picture {
@@ -43175,7 +43176,7 @@ span.event__banner-xp-currency {
 }
 .vip-club__title img {
   width: auto;
-  height: 4rem;
+  height: 2.8rem;
   max-width: none;
 }
 @media (max-width: 480px) {
@@ -43216,7 +43217,7 @@ span.event__banner-xp-currency {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 4.8rem;
+  margin-top: 2.8rem;
 }
 @media (max-width: 480px) {
   .vip-club__adv-list {
@@ -43283,8 +43284,8 @@ span.event__banner-xp-currency {
 
 .vip-club__adv-title {
   position: relative;
-  max-width: 22rem;
-  font-size: 2.4rem;
+  max-width: 20rem;
+  font-size: 1.8rem;
   z-index: 1;
 }
 @media (max-width: 768px) {
@@ -43327,7 +43328,7 @@ span.event__banner-xp-currency {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
   gap: 1.6rem 1rem;
-  margin-top: 4.8rem;
+  margin-top: 2.8rem;
 }
 @media (max-width: 480px) {
   .vip-club__lvl-list {
@@ -43405,7 +43406,7 @@ span.event__banner-xp-currency {
 .vip-club__lvl-item-wrap {
   position: relative;
   height: 100%;
-  padding: 1.6rem 2.4rem 2.4rem;
+  padding: 0.8rem 2.4rem 2.4rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
   background-image: linear-gradient(180deg, #161622 0%, #12121f 100%);
   border-radius: 1.2rem;
@@ -43464,26 +43465,39 @@ span.event__banner-xp-currency {
 }
 
 .vip-club__lvl-item-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
   margin-top: 0.8rem;
-  font-size: 3.2rem;
-  font-weight: 900;
 }
 @media (max-width: 1280px) {
   .vip-club__lvl-item-price {
     margin-top: 0.6rem;
-    font-size: 3rem;
   }
 }
 .vip-club__lvl-item-price span {
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.vip-club__lvl-item-price svg {
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 .vip-club__lvl-item-text {
   position: relative;
   color: #8484A7;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 @media (max-width: 1280px) {
@@ -43503,28 +43517,17 @@ span.event__banner-xp-currency {
   -webkit-column-gap: 0.8rem;
      -moz-column-gap: 0.8rem;
           column-gap: 0.8rem;
-  margin-top: 1.6rem;
+  margin-top: 1.2rem;
   color: #8484A7;
-  font-size: 2.2rem;
   text-align: left;
 }
-@media (max-width: 1280px) {
-  .vip-club__lvl-item-list li {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  .vip-club__lvl-item-list li {
-    font-size: 1.8rem;
-  }
-}
 .vip-club__lvl-item-list li::before {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
   content: "";
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-bottom: -0.4rem;
+  margin-top: -0.1rem;
   background: center/contain no-repeat url("../images/vip-club/icon-available.svg");
 }
 @media (max-width: 1280px) {
@@ -43609,10 +43612,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-container {
+    width: 141rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-container {
     width: 117.6rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-container {
+    width: 94rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-container {
     width: 70.2rem;
   }
@@ -43648,11 +43661,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-track::before, .vip-club__wheel-track::after {
-    bottom: -1.2rem;
+    width: 34.6rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-track::before, .vip-club__wheel-track::after {
     width: 29.6rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-track::before, .vip-club__wheel-track::after {
+    width: 23.4rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-track::before, .vip-club__wheel-track::after {
     width: 17rem;
   }
@@ -43692,10 +43714,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-track-wrap {
+    border-width: 26.288rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-track-wrap {
     border-width: 21.2rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-track-wrap {
+    border-width: 16.96rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-track-wrap {
     border-width: 12.72rem;
   }
@@ -43737,15 +43769,27 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-item {
+    --outer-r: calc(65rem - .8rem);
+    height: 23.28rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-item {
     --outer-r: calc(54.2rem - .8rem);
     height: 19.4rem;
   }
 }
 @media (max-width: 1024px) {
   .vip-club__wheel-item {
+    --outer-r: calc((54.2rem - .8rem)*.8);
+    height: 15.52rem;
+    padding-bottom: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .vip-club__wheel-item {
     --outer-r: calc((54.2rem - .8rem)*.6);
     height: 11.64rem;
-    padding-bottom: 1.2rem;
   }
 }
 .vip-club__wheel-item:nth-child(1) {
@@ -43895,10 +43939,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-item-img {
+    width: 15rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-item-img {
     width: 12.5rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-item-img {
+    width: 10rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-item-img {
     top: 0.48rem;
     width: 7.5rem;
@@ -43932,6 +43986,11 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-item-title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-item-title {
     font-size: 1rem;
   }
 }
@@ -43961,10 +44020,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-info {
+    padding-top: 25.44rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-info {
     padding-top: 21.2rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-info {
+    padding-top: 20.16rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-info {
     padding-top: 17.52rem;
   }
@@ -43984,10 +44053,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-info::before {
+    top: 28.64rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-info::before {
     top: 24.4rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-info::before {
+    top: 18.96rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-info::before {
     top: 14.32rem;
     width: 20%;
@@ -44001,7 +44080,7 @@ span.event__banner-xp-currency {
   -webkit-transition: opacity 0.3s ease-out, visibility 0s;
   transition: opacity 0.3s ease-out, visibility 0s;
 }
-@media (max-width: 1900px) {
+@media (max-width: 1280px) {
   .vip-club__wheel-info-wrap {
     max-width: 21rem;
   }
@@ -44014,10 +44093,20 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-title {
+    font-size: 4.8rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-title {
     font-size: 3.2rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-title {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-title {
     font-size: 2.4rem;
   }
@@ -44032,12 +44121,21 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-text {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-text {
     font-size: 1rem;
   }
 }
 @media (max-width: 1024px) {
   .vip-club__wheel-text {
     margin-top: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .vip-club__wheel-text {
     font-size: 0.8rem;
   }
 }
@@ -44063,6 +44161,12 @@ span.event__banner-xp-currency {
   text-transform: uppercase;
 }
 @media (max-width: 1900px) {
+  .vip-club__wheel-balance {
+    min-width: 24rem;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1280px) {
   .vip-club__wheel-balance {
     min-width: 18.6rem;
     font-size: 1.4rem;
@@ -44111,6 +44215,12 @@ span.event__banner-xp-currency {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-balance-count img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-balance-count img {
     width: 2.4rem;
     height: 2.4rem;
   }
@@ -44121,6 +44231,11 @@ span.event__banner-xp-currency {
   line-height: 129%;
 }
 @media (max-width: 1900px) {
+  .vip-club__wheel-balance-count span {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1280px) {
   .vip-club__wheel-balance-count span {
     font-size: 1.4rem;
   }
@@ -44137,6 +44252,11 @@ span.event__banner-xp-currency {
           box-shadow: inset 0 0.2rem 0 0 #181825, inset 0 -0.2rem 0 0 #141421, 0 0 4.2rem 0 rgba(237, 149, 25, 0.24);
 }
 @media (max-width: 1900px) {
+  .vip-club__wheel-btn {
+    min-width: 24rem;
+  }
+}
+@media (max-width: 1280px) {
   .vip-club__wheel-btn {
     min-width: 18.6rem;
     height: 4.8rem;
@@ -44167,6 +44287,11 @@ span.vip-club__wheel-btn-title {
 }
 @media (max-width: 1900px) {
   span.vip-club__wheel-btn-title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1280px) {
+  span.vip-club__wheel-btn-title {
     font-size: 1.4rem;
   }
 }
@@ -44188,6 +44313,11 @@ span.vip-club__wheel-btn-price span {
     font-size: 1.6rem;
   }
 }
+@media (max-width: 1280px) {
+  span.vip-club__wheel-btn-price span {
+    font-size: 1.4rem;
+  }
+}
 span.vip-club__wheel-btn-price picture {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44202,6 +44332,12 @@ span.vip-club__wheel-btn-price img {
       flex-shrink: 0;
 }
 @media (max-width: 1900px) {
+  span.vip-club__wheel-btn-price img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+@media (max-width: 1280px) {
   span.vip-club__wheel-btn-price img {
     width: 2.4rem;
     height: 2.4rem;
@@ -44229,10 +44365,20 @@ span.vip-club__wheel-btn-price img {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-prize-title {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-prize-title {
     font-size: 3.2rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-prize-title {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-prize-title {
     font-size: 1.8rem;
   }
@@ -44246,10 +44392,20 @@ span.vip-club__wheel-btn-price img {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-prize-subtitle {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-prize-subtitle {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-prize-subtitle {
+    margin-top: 0.6rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-prize-subtitle {
     margin-top: 0.4rem;
     font-size: 1rem;
@@ -44273,10 +44429,20 @@ span.vip-club__wheel-btn-price img {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-prize-img {
+    width: 20rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-prize-img {
     width: 16rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-prize-img {
+    width: 12rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-prize-img {
     width: 10rem;
   }
@@ -44299,10 +44465,20 @@ span.vip-club__wheel-btn-price img {
 }
 @media (max-width: 1900px) {
   .vip-club__wheel-prize-desc {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1280px) {
+  .vip-club__wheel-prize-desc {
     font-size: 1.8rem;
   }
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-prize-desc {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-prize-desc {
     font-size: 1.4rem;
   }
@@ -44321,6 +44497,11 @@ span.vip-club__wheel-btn-price img {
   margin-top: 2rem;
 }
 @media (max-width: 1024px) {
+  .vip-club__wheel-prize-btns {
+    margin-top: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
   .vip-club__wheel-prize-btns {
     margin-top: 0.8rem;
   }
@@ -44394,8 +44575,8 @@ span.vip-club__wheel-btn-price img {
 }
 .vip-club__win-item::before {
   position: absolute;
-  right: -22rem;
   bottom: -26rem;
+  left: -22rem;
   width: 25.5rem;
   height: 25.5rem;
   content: "";
@@ -44406,8 +44587,8 @@ span.vip-club__wheel-btn-price img {
 }
 .vip-club__win-item::after {
   position: absolute;
+  right: -6rem;
   bottom: -7rem;
-  left: -6rem;
   width: 16rem;
   height: 16rem;
   content: "";
@@ -44437,8 +44618,8 @@ span.vip-club__wheel-btn-price img {
 
 .vip-club__win-item-img {
   position: absolute;
+  right: -3rem;
   bottom: -5rem;
-  left: -3rem;
   width: 16rem;
   height: 16rem;
   display: -ms-grid;
@@ -44464,8 +44645,8 @@ span.vip-club__wheel-btn-price img {
 }
 
 .vip-club__win-item-info {
-  margin-left: 12rem;
-  padding: 1.6rem 0.8rem 1.6rem 0;
+  position: relative;
+  padding: 1.6rem;
 }
 
 .vip-club__win-item-user {
@@ -44518,6 +44699,7 @@ span.vip-club__wheel-btn-price img {
 
 .vip-club__win-item-title {
   margin-top: 0.8rem;
+  max-width: 10.4rem;
   color: #8484A7;
   font-size: 1.2rem;
   font-weight: 300;
@@ -44703,6 +44885,14 @@ span.vip-club__wheel-btn-price img {
   font-weight: 300;
   line-height: 117%;
   text-transform: uppercase;
+}
+
+.vip-club__prizes-item-promo {
+  padding: 0.4rem 0.6rem;
+  border: thin solid #8484A7;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .vip-club__prizes-use-btn {

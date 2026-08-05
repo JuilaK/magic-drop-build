@@ -1268,7 +1268,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     !!vipClubMoreBtn && vipClubMoreBtn.addEventListener('click', () => {
         wheel.classList.remove('vip-club__wheel--show-prize');
-        vipClubBtn.click();
     });
 
     !!vipClubUseBtn && vipClubUseBtn.addEventListener('click', () => {
