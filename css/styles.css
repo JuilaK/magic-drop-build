@@ -6514,7 +6514,6 @@ span.header__volume-value {
   }
 }
 .cases__retro-block .case__body {
-  padding-bottom: 3.2rem;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -7523,7 +7522,7 @@ span.header__volume-value {
 
 .case__body {
   position: relative;
-  padding: 5.6rem 1.2rem 5.3rem;
+  padding: 5.6rem 1.2rem 2.2rem;
   border-radius: 1.2rem;
   cursor: pointer;
   text-align: center;
