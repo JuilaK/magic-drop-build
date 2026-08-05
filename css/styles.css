@@ -13645,17 +13645,27 @@ main:has(.profile-header--vip) {
 }
 
 .profile-header__level-money {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.1rem;
+     -moz-column-gap: 0.1rem;
+          column-gap: 0.1rem;
+}
+.profile-header__level-money span {
   color: #ffe500;
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 113%;
-  text-align: center;
 }
-.profile-header__level-money span {
-  color: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.profile-header__level-money svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .profile-header__params-list {
