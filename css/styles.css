@@ -13212,7 +13212,7 @@ main:has(.js-case-container-magic .roulettes-list--2 ~ .win--open) .case-text {
   }
 }
 
-main:has(.profile-header--vip) {
+main:has(.profile-header--vip-bg) {
   margin-top: -6.4rem;
   padding-bottom: 4rem;
   padding-top: 6.4rem;
@@ -13221,7 +13221,7 @@ main:has(.profile-header--vip) {
   background: center bottom/100% 8rem no-repeat linear-gradient(180deg, rgba(12, 12, 27, 0) 0%, #0C0C1B 100%), center top/100% no-repeat image-set(url("../images/bg/bg-profile-vip.webp") type("image/webp") 1x, url("../images/bg/bg-profile-vip@2x.webp") type("image/webp") 2x, url("../images/bg/bg-profile-vip.jpg") type("image/jpg") 1x, url("../images/bg/bg-profile-vip@2x.jpg") type("image/jpg") 2x);
 }
 @media (max-width: 1280px) {
-  main:has(.profile-header--vip) {
+  main:has(.profile-header--vip-bg) {
     padding-bottom: 0;
     background: none;
   }
