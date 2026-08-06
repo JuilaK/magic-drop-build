@@ -43496,14 +43496,10 @@ span.event__banner-xp-currency {
 
 .vip-club__lvl-item-text {
   position: relative;
+  display: inline-block;
+  margin-top: 0.4rem;
   color: #8484A7;
-  font-size: 1.8rem;
   font-weight: 300;
-}
-@media (max-width: 1280px) {
-  .vip-club__lvl-item-text {
-    font-size: 2.2rem;
-  }
 }
 
 .vip-club__lvl-item-list {
