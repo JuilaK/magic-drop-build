@@ -15830,16 +15830,6 @@ main:has(.profile-header--vip-bg) {
     background-image: url("../images/upgrade/upgrade-fail-progress-bg-2.svg");
   }
 }
-@-webkit-keyframes showMagicWinBg {
-  to {
-    background: #2c6538;
-  }
-}
-@keyframes showMagicWinBg {
-  to {
-    background: #2c6538;
-  }
-}
 @-webkit-keyframes displayUpgradeImgSkin-1 {
   0%, 100% {
     opacity: 0;
@@ -17206,15 +17196,6 @@ main:has(.profile-header--vip-bg) {
 }
 .upgrade--magic.upgrade--win .upgrade__part-right .upgrade__skin-img::after {
   content: none;
-}
-.upgrade--magic.upgrade--win .upgrade__provability-progress::before {
-  -webkit-animation: showMagicWinBg 0.2s ease-out 3s forwards;
-          animation: showMagicWinBg 0.2s ease-out 3s forwards;
-}
-.upgrade--magic.upgrade--win .upgrade__provability-info {
-  background: #2c6538;
-  -webkit-transition: background 0.2s ease-out 3s;
-  transition: background 0.2s ease-out 3s;
 }
 .upgrade--magic.upgrade--win .upgrade__provability-chance::before {
   opacity: 0;
