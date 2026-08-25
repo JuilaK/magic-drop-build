@@ -6617,8 +6617,24 @@ span.header__volume-value {
           column-gap: 2rem;
 }
 .cases__ts-block .cases-header picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
+}
+.cases__ts-block .cases-header picture::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.15) 55%, transparent 70%);
+  background-size: 200% 100%;
+  mask: center/contain no-repeat url("../images/cases/cases-ts-logo.png");
+  -webkit-mask: center/contain no-repeat url("../images/cases/cases-ts-logo.png");
+  -webkit-animation: shine 5s linear infinite;
+          animation: shine 5s linear infinite;
+  pointer-events: none;
 }
 .cases__ts-block .cases-header img {
   width: 7.2rem;
