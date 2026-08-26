@@ -35295,19 +35295,19 @@ main:has(.profile-header--vip-bg) {
   }
 }
 .main-banner__banners .hero-banners__banner--partners .hero-banners__banner-img {
-  height: 117%;
+  height: 110%;
 }
 @media (max-width: 1280px) {
   .main-banner__banners .hero-banners__banner--partners .hero-banners__banner-img {
-    height: 110%;
+    height: 100%;
   }
 }
 .main-banner__banners .hero-banners__banner--promo .hero-banners__banner-img {
-  height: 130%;
+  height: 110%;
 }
 @media (max-width: 1280px) {
   .main-banner__banners .hero-banners__banner--promo .hero-banners__banner-img {
-    height: 110%;
+    height: 100%;
   }
 }
 .main-banner__banners .hero-banners__banner-info {
@@ -35906,20 +35906,20 @@ main:has(.profile-header--vip-bg) {
   }
 }
 .hero-banners__banner--promo {
-  background: right bottom/auto 100% no-repeat url("../images/banners/banner-promo-gr.svg"), linear-gradient(315deg, #1e1e43 32.69%, #0c0c1b 100%);
+  background: right bottom/100% 100% no-repeat url("../images/banners/banner-promo-gr.svg"), linear-gradient(315deg, #20272f 32.69%, #0b1015 100%);
 }
 .hero-banners__banner--promo .hero-banners__banner-img {
-  height: 110%;
-  aspect-ratio: 1.166;
+  height: 100%;
+  aspect-ratio: 1.24;
 }
 .hero-banners__banner--partners {
   -ms-grid-column: 2;
   grid-column: 2;
-  background: right bottom/auto 100% no-repeat url("../images/banners/banner-partner-gr.svg"), linear-gradient(315deg, #1e1e43 32.69%, #0c0c1b 100%);
+  background: right bottom/100% 100% no-repeat url("../images/banners/banner-partner-gr.svg"), linear-gradient(315deg, #20272f 32.69%, #4C414D 100%);
 }
 .hero-banners__banner--partners .hero-banners__banner-img {
-  height: 110%;
-  aspect-ratio: 1.29;
+  height: 100%;
+  aspect-ratio: 1.24;
 }
 
 .hero-banners__banner-info {
