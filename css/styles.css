@@ -13810,8 +13810,8 @@ main:has(.profile-header--vip-bg) {
   margin-top: 0.4rem;
 }
 .profile-header__balance-total picture {
-  width: 4.4rem;
-  height: 4.4rem;
+  width: 2.8rem;
+  height: 2.8rem;
   display: block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -13834,7 +13834,7 @@ main:has(.profile-header--vip-bg) {
   display: inline-block;
   margin-bottom: 0.6rem;
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 .profile-header__level span {
   font-weight: inherit;
@@ -14295,7 +14295,7 @@ main:has(.profile-header--vip-bg) {
 @media (max-width: 768px) {
   .profile__content--trades, .profile__content--upgrade, .profile__content--contracts {
     padding: 0;
-    background-color: transparent;
+    background-image: none;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
