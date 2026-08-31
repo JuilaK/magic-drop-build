@@ -6593,10 +6593,14 @@ span.header__volume-value {
 
 .cases__ts-block {
   position: relative;
-  background: center top/cover no-repeat -webkit-image-set(url("../images/cases/cases-ts-bg.webp") type("image/webp"), url("../images/cases/cases-ts-bg.jpg") type("image/jpg"));
-  background: center top/cover no-repeat image-set(url("../images/cases/cases-ts-bg.webp") type("image/webp"), url("../images/cases/cases-ts-bg.jpg") type("image/jpg"));
+  background: center top/cover no-repeat url("../images/cases/cases-ts-bg.png");
   -webkit-box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 -0.2rem 0 0 #191927 inset, 0 0.2rem 0 0 #202032 inset, 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 768px) {
+  .cases__ts-block {
+    background-image: url("../images/cases/cases-ts-bg-mobile.png");
+  }
 }
 .cases__ts-block::after {
   content: "";
