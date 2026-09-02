@@ -9639,6 +9639,13 @@ span.draw-item__start-price svg {
     padding: 0.4rem 1.2rem 1.6rem;
   }
 }
+.skin--small .skin__phase {
+  margin: -2.3rem 0 0.6rem;
+}
+.skin--small .skin__phase > span {
+  padding: 0.1rem 0.6rem 0.3rem;
+  font-size: 1rem;
+}
 .skin--small .skin__title {
   font-size: 1.2rem;
 }
@@ -9782,6 +9789,17 @@ span.draw-item__start-price svg {
      object-fit: contain;
 }
 
+.skin__phase {
+  margin: -2.3rem 0 0.3rem;
+}
+.skin__phase > span {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.7);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+
 .skin__title,
 .skin__subtitle {
   width: 100%;
@@ -9791,7 +9809,6 @@ span.draw-item__start-price svg {
 }
 
 .skin__title {
-  margin-top: -0.8rem;
   font-size: 1.6rem;
   line-height: 112.5%;
 }
@@ -9802,7 +9819,7 @@ span.draw-item__start-price svg {
 }
 
 .skin__subtitle {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   color: #353749;
   font-size: 1.2rem;
   line-height: 150%;
@@ -12561,6 +12578,18 @@ span.draw-item__start-price svg {
   z-index: 1;
 }
 
+.roulette-item__phase {
+  position: relative;
+  margin: -2.7rem 0 1.1rem;
+  z-index: 1;
+}
+.roulette-item__phase > span {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.6);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+
 .roulette-item__title {
   margin-top: -0.6rem;
   font-size: 1.4rem;
@@ -13052,6 +13081,16 @@ span.draw-item__start-price svg {
   .win__item-card {
     padding-top: 2.4rem;
   }
+}
+
+.win__item-phase {
+  margin: -2.4rem 0 0.8rem;
+}
+.win__item-phase > span {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.6);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .win__item-chance {
@@ -14625,6 +14664,17 @@ main:has(.profile-header--vip-bg) {
   }
 }
 
+.contract-item__skin-phase {
+  display: block;
+  margin: -3rem 0 1.4rem;
+}
+.contract-item__skin-phase > span {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.6);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+
 .contract-item__title,
 .contract-item__subtitle {
   width: 100%;
@@ -14634,7 +14684,7 @@ main:has(.profile-header--vip-bg) {
 }
 
 .contract-item__title {
-  margin-top: -1.6rem;
+  margin-top: -0.8rem;
   font-size: 1.6rem;
   line-height: 112.5%;
 }
@@ -15904,6 +15954,23 @@ main:has(.profile-header--vip-bg) {
     width: 1.2rem;
     height: 1.2rem;
   }
+}
+
+.upgrade-card__skin-phase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: -3rem 0 0.2rem;
+}
+.upgrade-card__skin-phase span {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.6);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .upgrade-card__skin-img {
@@ -33917,6 +33984,9 @@ main:has(.profile-header--vip-bg) {
     height: min(0.7vw, 2.4rem);
   }
 }
+.win-rare__item-card-wrapper:has(.win-rare__item-chance) .win-rare__item-phase {
+  top: 3.2rem;
+}
 
 .win-rare__item-img {
   width: 100%;
@@ -34009,6 +34079,19 @@ main:has(.profile-header--vip-bg) {
     top: min(1.2vw, 4rem);
     font-size: min(0.8vw, 2.8rem);
   }
+}
+
+.win-rare__item-phase {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 1.6rem;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.91);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .win-rare__item-sold {
@@ -41357,6 +41440,17 @@ span.event__banner-xp-currency {
           justify-content: flex-end;
   width: 100%;
   min-height: 3.2rem;
+}
+
+.event__prize-phase {
+  margin: -2.4rem 0 -0.4rem;
+}
+.event__prize-phase > span {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(12, 12, 27, 0.6);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .event__prize-title,
