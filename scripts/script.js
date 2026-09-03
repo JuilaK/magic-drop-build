@@ -24,162 +24,25 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Spine animation
-    const spineContainer = document.querySelector('.js-upgrade-spine');
+    const spineContainer = document.querySelector('.js-spine-animation');
+    let upgradeBodySpine = null;
+    let upgradeHandsSpine = null;
 
-    const createSpineAnimation = ({ canvasName, basePath }) => {
-        const ATLAS_PATH = `${basePath}/FullScreen_Spine.atlas`;
-        const JSON_PATH  = `${basePath}/FullScreen_Spine.json`;
-        const ANIM_NAME  = 'animation';
+    if (!!spineContainer && (typeof spine !== 'undefined')) {
+        Promise.all([
+            spine.getSkeleton('upgrade-body').whenReady,
+            spine.getSkeleton('upgrade-hands').whenReady
+        ]).then(([body, hands]) => {
+            upgradeBodySpine = body;
+            upgradeHandsSpine = hands;
 
-        const canvas = document.querySelector(`.${canvasName}`);
-        const getSize = () => ({
-            w: spineContainer.clientWidth*1.5,
-            h: spineContainer.clientHeight*1.5,
+            const bodyTrack = body.state.setAnimation(0, 'idle', true);
+            const handsTrack = hands.state.setAnimation(0, 'idle', true);
+
+            bodyTrack.trackTime = 0;
+            handsTrack.trackTime = 0;
         });
-
-        const updateCanvasSize = () => {
-            const { w, h } = getSize();
-            // Обновляем только если размер реально изменился
-            if (canvas.width !== w || canvas.height !== h) {
-            canvas.width  = w;
-            canvas.height = h;
-            }
-        };
-
-        const updateCamera = (w, h) => {
-            renderer.camera.position.x    = w / 2;
-            renderer.camera.position.y    = h / 2;
-            renderer.camera.viewportWidth  = w;
-            renderer.camera.viewportHeight = h;
-            renderer.camera.update();
-        };
-
-        const gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: false });
-        if (!gl) {
-            console.error(`WebGL не поддерживается для ${canvasName}`);
-            return;
-        }
-        gl.clearColor(0, 0, 0, 0);
-        gl.clear(gl.COLOR_BUFFER_BIT);
-
-        const renderer = new spine.webgl.SceneRenderer(canvas, gl);
-        const assetManager = new spine.webgl.AssetManager(gl);
-
-        assetManager.loadText(JSON_PATH);
-        assetManager.loadTextureAtlas(ATLAS_PATH);
-
-        updateCanvasSize();
-
-        return new Promise((resolve) => {
-            requestAnimationFrame(waitForAssets);
-
-            function waitForAssets() {
-                if (!assetManager.isLoadingComplete()) {
-                    requestAnimationFrame(waitForAssets);
-                    return;
-                }
-                if (assetManager.hasErrors()) {
-                    console.error(`Ошибки загрузки ${canvasId}:`, assetManager.getErrors());
-                    return;
-                }
-                updateCanvasSize();
-                init(resolve);
-            }
-
-            function init(resolve) {
-                const atlasLoader  = new spine.AtlasAttachmentLoader(assetManager.get(ATLAS_PATH));
-                const skeletonJson = new spine.SkeletonJson(atlasLoader);
-                skeletonJson.scale = 1;
-
-                const skeletonData = skeletonJson.readSkeletonData(assetManager.get(JSON_PATH));
-                const skeleton     = new spine.Skeleton(skeletonData);
-                skeleton.scaleY    = -1;
-
-                const animState = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
-                animState.setAnimation(0, ANIM_NAME, true);
-
-                skeleton.setToSetupPose();
-                skeleton.updateWorldTransform();
-                const offset = new spine.Vector2();
-                const size   = new spine.Vector2();
-                skeleton.getBounds(offset, size);
-
-                const boundsCenterX = offset.x + size.x / 2;
-                const boundsCenterY = offset.y + size.y / 2;
-
-                updateCamera(canvas.width, canvas.height);
-
-                let lastTime = Date.now() / 1000;
-                requestAnimationFrame(render);
-                let firstRender = true;
-
-                function render() {
-                    const now   = Date.now() / 1000;
-                    const delta = now - lastTime;
-                    lastTime    = now;
-
-                    const w     = canvas.width;
-                    const h     = canvas.height;
-                    let scale = 0;
-
-                    if (canvasName == "js-spine-body") {
-                        scale = Math.min(w / size.x, h / size.y) * 0.9;
-                        skeleton.y = h / 2 + boundsCenterY * scale - 160;
-                    } else if (canvasName == "js-spine-arms") {
-                        scale = Math.min(w / size.x, h / size.y) * 0.89;
-                        skeleton.y = h / 2 + boundsCenterY * scale;
-                    } else {
-                        scale = Math.min(w / size.x, h / size.y);
-                        skeleton.y = h / 2 + boundsCenterY * scale;
-                    }
-                
-                    skeleton.x      = w / 2 - boundsCenterX * scale;
-                    skeleton.scaleX = scale;
-                    skeleton.scaleY = scale;
-
-                    updateCamera(w, h);
-
-                    gl.viewport(0, 0, w, h);
-                    gl.clearColor(0, 0, 0, 0);
-                    gl.clear(gl.COLOR_BUFFER_BIT);
-
-                    animState.update(delta);
-                    animState.apply(skeleton);
-                    skeleton.updateWorldTransform();
-
-                    renderer.begin();
-                    renderer.drawSkeleton(skeleton, true);
-                    renderer.end();
-
-                    if (firstRender) {
-                        firstRender = false;
-                        requestAnimationFrame(() => {
-                            requestAnimationFrame(() => resolve());
-                        });
-                    }
-
-                    requestAnimationFrame(render);
-                }
-            }
-        })
     }
-
-    const displaySpineAnimation = () => {
-        if (!!spineContainer && window.innerWidth > 1440) {
-            const bodyReady = createSpineAnimation({ canvasName: 'js-spine-body', basePath: 'spine/body' });
-            const armsReady = createSpineAnimation({ canvasName: 'js-spine-arms', basePath: 'spine/arms' });
-
-            // Показываем оба canvas только когда обе анимации готовы
-            Promise.all([bodyReady, armsReady]).then(() => {
-                setTimeout(() => {
-                    spineContainer.classList.add('upgrade__spine--ready');
-                }, 300);
-            });
-        }
-    }
-
-    window.addEventListener('resize', displaySpineAnimation);
-    displaySpineAnimation();
     // END Spine animation
 
     // Splide slider
@@ -674,7 +537,8 @@ window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 upgradeBtns.classList.add('upgrade__btns--hide');
                 upgradeWinBtns.classList.add('upgrade__btns--show');
-                upgradeWin.classList.add('upgrade__win--open');
+                upgradeBodySpine.state.setAnimation(0, 'win', true);
+                upgradeHandsSpine.state.setAnimation(0, 'win', true);
                 showWinConfetti();
             }, duration);
         } else {
@@ -683,6 +547,8 @@ window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 upgradeBtns.classList.add('upgrade__btns--hide');
                 upgradeWinBtns.classList.add('upgrade__btns--show');
+                upgradeBodySpine.state.setAnimation(0, 'magic_win', true);
+                upgradeHandsSpine.state.setAnimation(0, 'magic_win', true);
                 upgradeBlock.classList.remove('upgrade--fast-rotate');
             }, 3000);
         }
@@ -694,7 +560,8 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         upgradeBtns.classList.remove('upgrade__btns--hide');
         upgradeWinBtns.classList.remove('upgrade__btns--show');
-        upgradeWin.classList.remove('upgrade__win--open')
+        upgradeBodySpine.state.setAnimation(0, 'idle', true);
+        upgradeHandsSpine.state.setAnimation(0, 'idle', true);
     });
 
     upgradeRepeatBtn && upgradeRepeatBtn.addEventListener('click', () => {
@@ -714,17 +581,20 @@ window.addEventListener('DOMContentLoaded', () => {
                 upgradeBtns.classList.remove('upgrade__btns--hide');
                 upgradeWinBtns.classList.remove('upgrade__btns--show');
             }
-            if (upgradeWin.classList.contains('upgrade__win--open')) {
-                upgradeWin.classList.remove('upgrade__win--open')
-            }
+            upgradeBodySpine.state.setAnimation(0, 'idle', true);
+            upgradeHandsSpine.state.setAnimation(0, 'idle', true);
             void upgradeBlock.offsetWidth;
             upgradeBlock.classList.add('upgrade--fail');
 
             setTimeout(() => {
                 upgradeBtns.classList.add('upgrade__btns--hide');
                 upgradeFailBtns.classList.add('upgrade__btns--show');
+                upgradeBodySpine.state.setAnimation(0, 'loss', true);
+                upgradeHandsSpine.state.setAnimation(0, 'loss', true);
             }, duration);
         } else {
+            upgradeBodySpine.state.setAnimation(0, 'magic_idle', true);
+            upgradeHandsSpine.state.setAnimation(0, 'magic_idle', true);
             if (upgradeBlock.classList.contains('upgrade--win')) {
                 upgradeBlock.classList.remove('upgrade--win');
                 upgradeBtns.classList.remove('upgrade__btns--hide');
@@ -736,6 +606,8 @@ window.addEventListener('DOMContentLoaded', () => {
     upgradeCloseBtn && upgradeCloseBtn.addEventListener('click', () => {
         if (upgradeBlock.classList.contains('upgrade--fail')) {
             upgradeBlock.classList.remove('upgrade--fail');
+            upgradeBodySpine.state.setAnimation(0, 'idle', true);
+            upgradeHandsSpine.state.setAnimation(0, 'idle', true);
         }
         upgradeBtns.classList.remove('upgrade__btns--hide');
         upgradeFailBtns.classList.remove('upgrade__btns--show');
@@ -779,8 +651,12 @@ window.addEventListener('DOMContentLoaded', () => {
     !!upgradeMagicToggle && upgradeMagicToggle.addEventListener('change', (event) => {
         if (event.target.checked) {
             upgradeBlock.classList.add('upgrade--magic');
+            upgradeBodySpine.state.setAnimation(0, 'magic_idle', true);
+            upgradeHandsSpine.state.setAnimation(0, 'magic_idle', true);
         } else {
             upgradeBlock.classList.remove('upgrade--magic');
+            upgradeBodySpine.state.setAnimation(0, 'idle', true);
+            upgradeHandsSpine.state.setAnimation(0, 'idle', true);
 
             if (upgradeBlock.classList.contains('upgrade--win')){
                 upgradeBlock.classList.remove('upgrade--win');

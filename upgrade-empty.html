@@ -29,7 +29,7 @@
     
     
     
-        <script src="./libs/spine/spine-webgl.js"></script>
+        <script src="./libs/spine/spine-webcomponents.min.js"></script>
     
     <script defer src="./scripts/script.js"></script>
 </head>
@@ -1114,9 +1114,17 @@
             <img src="./images/svg/upgrade-yellow-arrow.svg" alt="" aria-hidden="true">
             Апгрейд
         </h1>
-        <div class="upgrade__spine js-upgrade-spine">
-            <canvas class="upgrade__spine-body js-spine-body"></canvas>
-            <canvas class="upgrade__spine-arms js-spine-arms"></canvas>
+        <div class="upgrade__spine-body js-spine-animation">
+            <spine-skeleton
+                identifier="upgrade-body"
+                class="upgrade__spine-skel"
+                overlay-id="body"
+                atlas="./spine/body/character_body.atlas"
+                skeleton="./spine/body/character_body.json"
+                fit="contain"
+                animation-bounds="magic_idle">
+            </spine-skeleton>
+            <spine-overlay overlay-id="body"></spine-overlay>
         </div>
         <div class="upgrade__body">
             <div class="upgrade__part-left">
@@ -1317,28 +1325,6 @@
                     </div>
                 </div>
             </div>
-            <div class="upgrade__win upgrade__win--gloves js-upgrade-win">
-                <div class="upgrade__win-item">
-                    <div class="upgrade__win-item-back"></div>
-                    <div class="upgrade__win-item-card">
-                        <div class="upgrade__win-item-bg-wrap">
-                            <div class="upgrade__win-item-bg">
-                                <img src="./images/skins/bg.gif" alt="" aria-hidden="true">
-                            </div>
-                        </div>
-                        <div class="upgrade__win-item-img">
-                            <img 
-                                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/368fx276f" 
-                                alt="SCAR-20 | Jungle Whirlwind"
-                                width="368"
-                                height="276">
-                        </div>
-                        <span class="upgrade__win-item-title">Jungle Whirlwind</span>     
-                        <span class="upgrade__win-item-subtitle">SCAR-20</span>
-                        <span class="upgrade__win-item-provably">Вы можете проверить честность через <a href="#">Provably Fair</a></span>  
-                    </div>
-                </div>
-            </div>
             <div class="upgrade__note">
                 <button class="upgrade__note-header js-accordion-btn" aria-expanded="false">
                     <div class="upgrade__note-header-wrap">
@@ -1354,6 +1340,18 @@
                     </div>
                 </div>
             </div> 
+        </div>
+        <div class="upgrade__spine-hands js-spine-animation">
+            <spine-skeleton
+                identifier="upgrade-hands"
+                class="upgrade__spine-skel"
+                overlay-id="hands"
+                atlas="./spine/hands/character_hands.atlas"
+                skeleton="./spine/hands/character_hands.json"
+                fit="contain"
+                animation-bounds="magic_idle">
+            </spine-skeleton>
+            <spine-overlay overlay-id="hands"></spine-overlay>
         </div>
     </div>
 </div>
