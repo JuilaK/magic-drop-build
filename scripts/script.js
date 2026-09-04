@@ -114,17 +114,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 type: 'loop',
                 paginationKeyboard: true,
                 autoplay: true,
-                interval: 2500,
+                speed: 2000,
+                interval: 4000,
             } );
             giveawaysSplide.mount();
-            giveawaysSplide.on('move', () => {
-                const activeSlide = giveawaysSplide.Components.Elements.slides[giveawaysSplide.index];
-                const activeSlideType = activeSlide.dataset.slideSkinType;
-                setTimeout(() => {
-                    giveawaysSplide.root.offsetParent.setAttribute('data-skin-type', activeSlideType);
-                }, 50);
-            });
-            
         }
     }
 
