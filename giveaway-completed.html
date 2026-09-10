@@ -26,7 +26,7 @@
     <link rel="preload" href="./fonts/Gotham-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/Gotham-Black.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./css/styles.css">
-    
+    <script defer src="./libs/splide/splide.min.js"></script>
     
     
     <script defer src="./scripts/script.js"></script>
@@ -1106,123 +1106,190 @@
 	</div>
 </header>
     <main>
-        <div class="giveaway giveaway--completed">
-    <div class="giveaway__banner">
-        <div class="container-md">
-            <h1 class="giveaway__banner-title">CS2 skins <span>giveaway</span></h1>
-            <div class="giveaway__banner-desc">
-                <p>Top up your balance, receive tickets and participate in skin giveaways!</p>
-                <p>Account ticket limit <span>100</span></p>
-                <p>Don't forget to use tickets in the giveaways, because this is your chance to get a free skin</p>
+        <div class="giveaway giveaway--completed giveaway--quickly">
+    <div class="giveaway__hero container">
+        <div class="giveaway__info">
+            <h1 class="giveaway__title">RARE giveaway</h1>
+            <ul class="giveaway__params">
+                <li class="giveaway__param">
+                    <h2 class="giveaway__param-title">Кол-во участников:</h2>
+                    <div class="giveaway__param-count">
+                        <svg class="giveaway__param-progress" style="--progress: 50;">
+                            <circle
+                                class="giveaway__param-progress-bg"
+                                pathLength="100"
+                                cx="9"
+                                cy="9"
+                                r="7"
+                            />
+                            <circle
+                                class="giveaway__param-progress-value"
+                                pathLength="100"
+                                cx="9"
+                                cy="9"
+                                r="7"
+                            />
+                        </svg>
+                        <span>
+                            <span class="giveaway__param-count-current">25</span>\<span>50</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="giveaway__param">
+                    <h2 class="giveaway__param-title">Минимальный вход:</h2>
+                    <span class="giveaway__param-value">
+                        <span>20</span>
+                        <picture>
+                            <source srcset="./images/ticket.webp" type="image/webp">
+                            <img src="./images/ticket.png" alt="Magic Drop жетон">
+                        </picture>
+                    </span>
+                </li>
+                <li class="giveaway__param">
+                    <h2 class="giveaway__param-title">Максимальный вход:</h2>
+                    <span class="giveaway__param-value">
+                        <span>20</span>
+                        <picture>
+                            <source srcset="./images/ticket.webp" type="image/webp">
+                            <img src="./images/ticket.png" alt="Magic Drop жетон">
+                        </picture>
+                    </span>
+                </li>
+                <li class="giveaway__param">
+                    <h2 class="giveaway__param-title">Стоимость участия:</h2>
+                    <span class="giveaway__param-value">
+                        <span>10</span>
+                        <svg aria-hidden="true" class="giveaway__param-coin">
+                            <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="giveaway__skins">
+            <div class="giveaway-slider js-giveaway-slider">
+                <ul class="giveaway-slider__viewport">
+                    <li class="giveaway-slide js-giveaway-slide" data-skin-type="covert">
+                        <div class="giveaway-slide__phase">blackpearl</div>
+                        <img 
+                            class="giveaway-slide__img"
+                            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/692fx518f" 
+                            width="346"
+                            height="259"
+                            alt="Tiger Strike Specialist 100000">
+                        <div class="giveaway-slide__info">
+                            <span class="giveaway-slide__subtitle">AUG</span>     
+                            <h3 class="giveaway-slide__title">Syd Mead</h3>
+                            <div class="giveaway-slide__price">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                                </svg>
+                                <span>470</span>
+                            </div>  
+                        </div>
+                        <svg
+                            class="giveaway-slide__line"
+                            viewBox="0 0 110 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 2 Q55 6 108 2"
+                                stroke-width="4"
+                            />
+                        </svg>    
+                    </li>
+                    <li class="giveaway-slide js-giveaway-slide" data-skin-type="restricted">
+                        <img 
+                            class="giveaway-slide__img"
+                            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/692fx518f" 
+                            width="346"
+                            height="259"
+                            alt="Tiger Strike Specialist 100000">
+                        <div class="giveaway-slide__info">
+                            <span class="giveaway-slide__subtitle">AUG</span>     
+                            <h3 class="giveaway-slide__title">Syd Mead</h3>
+                            <div class="giveaway-slide__price">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                                </svg>
+                                <span>470</span>
+                            </div>  
+                        </div>
+                        <svg
+                            class="giveaway-slide__line"
+                            viewBox="0 0 110 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 2 Q55 6 108 2"
+                                stroke-width="4"
+                            />
+                        </svg>     
+                    </li> 
+                    <li class="giveaway-slide js-giveaway-slide" data-skin-type="rare">
+                        <img 
+                            class="giveaway-slide__img"
+                            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJhoWPn_jgDLbUkmJE5Ysi3u-Y84_w2gXs_xFlYGHxJtWcJlM8aQ3R-VLox-rpg568upqfwXNmpGB8slz_mxD0/692fx518f" 
+                            width="346"
+                            height="259"
+                            alt="Tiger Strike Specialist 100000">
+                        <div class="giveaway-slide__info">
+                            <span class="giveaway-slide__subtitle">AUG</span>     
+                            <h3 class="giveaway-slide__title">Syd Mead</h3>
+                            <div class="giveaway-slide__price">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                                </svg>
+                                <span>470</span>
+                            </div>  
+                        </div> 
+                        <svg
+                            class="giveaway-slide__line"
+                            viewBox="0 0 110 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M2 2 Q55 6 108 2"
+                                stroke-width="4"
+                            />
+                        </svg>    
+                    </li>
+                </ul>
+                <div class="giveaway-slider__arrows">
+                    <button class="btn btn--icon giveaway-slider__arrow giveaway-slider__arrow--prev js-giveaway-arrow-prev">
+                        <svg aria-hidden="true" class="grey">
+                            <use xlink:href="images/sprite.svg#chevron-left"></use>
+                        </svg>
+                        Предыдущий слайд
+                    </button>
+                    <button class="btn btn--icon giveaway-slider__arrow giveaway-slider__arrow--next js-giveaway-arrow-next">
+                        <svg aria-hidden="true" class="grey">
+                            <use xlink:href="images/sprite.svg#chevron-right"></use>
+                        </svg>
+                        Следующий слайд
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="giveaway__content container-md">
-        <div class="giveaway__raffle">
-            <div class="giveaway__skins">
-                <div class="giveaway__skin">
-                    <div class="giveaway__skin-empty">1</div>
-                    <article class="giveaway__skin-item giveaway__skin-item--covert">
-                        <div class="giveaway__skin-item-img">
-                            <img 
-                                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/200fx200f" 
-                                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/400fx400f 2x"
-                                alt="Syd Mead"> 
-                        </div>
-                        <div class="giveaway__skin-item-info">
-                            <h3 class="giveaway__skin-item-title">Syd Mead</h3>
-                            <div class="giveaway__skin-item-subtitle">AUG</div>
-                            <span class="giveaway__skin-item-price">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                                </svg>
-                                <span>100 566.24</span>
-                            </span>
-                        </div>
-                    </article>
-                </div>
-                <div class="giveaway__skin">
-                    <div class="giveaway__skin-empty">2</div>
-                    <article class="giveaway__skin-item giveaway__skin-item--gloves">
-                        <div class="giveaway__skin-item-img">
-                            <img 
-                                src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
-                                srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/400fx400f 2x"
-                                alt="Tiger Strike"> 
-                        </div>
-                        <div class="giveaway__skin-item-info">
-                            <h3 class="giveaway__skin-item-title">Tiger Strike</h3>
-                            <div class="giveaway__skin-item-subtitle">Specialist 100000</div>
-                            <span class="giveaway__skin-item-price">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                                </svg>
-                                <span>100 566.24</span>
-                            </span>
-                        </div>
-                    </article>
-                </div>
-                <div class="giveaway__skin">
-                    <div class="giveaway__skin-empty">3</div>
-                </div>
-            </div>
-            <div class="giveaway__raffle-info">
-                <div class="giveaway__raffle-info-header">
-                    <span class="giveaway__raffle-info-title">Каждый час</span>
-                    
-                        <span class="giveaway__raffle-info-status">
-                            <svg aria-hidden="true" class="grey">
-                                <use xlink:href="images/sprite.svg#check-circle"></use>
-                            </svg>
-                            Завершено
-                        </span>
-                    
-                </div>
-                <dl>
-                    
-                        <div class="giveaway__raffle-info-item">
-                            <dt>Хэш:</dt>
-                            <dd>
-                                <span class="giveaway__raffle-info-hash">#2a008c08663b6044765bac17</span>
-                            </dd>
-                        </div>
-                    
-                    <div class="giveaway__raffle-info-item">
-                        <dt>Количество участников:</dt>
-                        <dd>
-                            <span class="giveaway__raffle-info-count">
-                                <span>10</span>\<span>50</span>
-                            </span>
-                            <picture>
-                                <source srcset="./images/ticket.webp" type="image/webp">
-                                <img src="./images/ticket.png" alt="Magic Drop билет">
-                            </picture>
-                        </dd>
-                    </div>
-                    <div class="giveaway__raffle-info-item">
-                        <dt>Минимальный вход:</dt>
-                        <dd>
-                            <span>20</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#token-yellow"></use>
-                            </svg>
-                        </dd>
-                    </div>
-                    <div class="giveaway__raffle-info-item">
-                        <dt>Максимальный вход:</dt>
-                        <dd>
-                            <span>2000</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#token-yellow"></use>
-                            </svg>
-                        </dd>
-                    </div>
-                </dl>
-            </div>
-        </div>
+    <div class="container-sm">
         <div class="giveaway__provably">
             <div class="giveaway__provably-header">
-                <h2 class="giveaway__provably-title">Provably Fair</h2>
+                <div class="giveaway__provably-title-wrap">
+                    <h2 class="giveaway__provably-title">Provably Fair</h2>
+                    <button type="button" class="giveaway__provably-btn btn btn--sm js-provably-accordion-btn" aria-expanded="false">
+                        <span class="btn-title">
+                            <span>Свернуть</span>
+                            <span>Подробнее</span>
+                        </span>
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
                 <div class="giveaway__provably-skins">
                     <div class="giveaway__provably-skin giveaway__provably-skin--covert">
                         <span class="giveaway__provably-skin-numb">1</span>
@@ -1264,7 +1331,7 @@
                     </div>
                 </div>
             </div>
-            <div class="giveaway__provably-table">
+            <div class="giveaway__provably-table js-provably-accordion-table">
                 <table>
                     <tbody>
                         <tr>

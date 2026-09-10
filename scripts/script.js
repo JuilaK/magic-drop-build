@@ -132,6 +132,157 @@ window.addEventListener('DOMContentLoaded', () => {
         splide.mount();
     }
 
+    const slideGiveawaySkinsContainer = document.querySelector('.js-giveaway-slider');
+
+    if (!!slideGiveawaySkinsContainer) {
+        const slides = [...slideGiveawaySkinsContainer.querySelectorAll('.js-giveaway-slide')];
+        const prevButton = slideGiveawaySkinsContainer.querySelector('.js-giveaway-arrow-prev');
+        const nextButton = slideGiveawaySkinsContainer.querySelector('.js-giveaway-arrow-next');
+        
+        const ANIMATION_DURATION = 700;
+        const AUTOPLAY_INTERVAL = 2500;
+        const SLIDE_COUNT = slides.length;
+
+        let currentIndex = 0;
+        let isAnimating = false;
+        let autoplayTimer = null; 
+        let isHovered = false;
+
+        const positions = ['is-left', 'is-center', 'is-right'];
+
+        const setPosition = (slide, position) => {
+            slide.classList.remove(...positions);
+
+            if (position) {
+                slide.classList.add(position);
+            }
+        };
+
+        const getIndex = (index) => {
+            return (index + SLIDE_COUNT) % SLIDE_COUNT;
+        };
+
+        const render = () => {
+            slides.forEach((slide) => {
+                setPosition(slide, null);
+            });
+
+            if (SLIDE_COUNT === 1) {
+                setPosition(slides[0], 'is-center');
+
+                return;
+            }
+
+            if (SLIDE_COUNT === 2) {
+                const centerIndex = currentIndex;
+                const rightIndex = getIndex(currentIndex + 1);
+
+                setPosition(slides[centerIndex], 'is-center');
+                setPosition(slides[rightIndex], 'is-right');
+
+                return;
+            }
+
+            const leftIndex = getIndex(currentIndex - 1);
+            const centerIndex = currentIndex;
+            const rightIndex = getIndex(currentIndex + 1);
+
+            setPosition(slides[leftIndex], 'is-left');
+            setPosition(slides[centerIndex], 'is-center');
+            setPosition(slides[rightIndex], 'is-right');
+        };
+
+        const stopAutoplay = () => { 
+            if (autoplayTimer) { 
+                clearInterval(autoplayTimer); autoplayTimer = null; 
+            } 
+        };
+
+        const startAutoplay = () => { 
+            if (SLIDE_COUNT <= 1 || isHovered) { return; } 
+            stopAutoplay(); 
+            autoplayTimer = setInterval(() => { 
+                goTo('next'); 
+            }, AUTOPLAY_INTERVAL); 
+        };
+
+        const goTo = (direction) => {
+            if (isAnimating || SLIDE_COUNT <= 1) {
+                return;
+            }
+
+            isAnimating = true;
+
+            if (direction === 'next') {
+                currentIndex = getIndex(currentIndex + 1);
+            } else {
+                currentIndex = getIndex(currentIndex - 1);
+            }
+
+            render();
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, ANIMATION_DURATION);
+        };
+        render();
+        startAutoplay();
+
+        nextButton?.addEventListener('click', () => goTo('next'));
+        prevButton?.addEventListener('click', () => goTo('prev'));
+
+        slideGiveawaySkinsContainer.addEventListener('mouseenter', () => { 
+            isHovered = true; 
+            stopAutoplay(); 
+        });
+
+        slideGiveawaySkinsContainer.addEventListener('mouseleave', () => { 
+            isHovered = false; 
+            startAutoplay(); 
+        });
+
+        let startX = 0;
+        let startY = 0;
+        let isPointerDown = false;
+
+        const SWIPE_THRESHOLD = 50;
+
+        slideGiveawaySkinsContainer.addEventListener('pointerdown', (event) => {
+            startX = event.clientX;
+            startY = event.clientY;
+            isPointerDown = true;
+        });
+
+        slideGiveawaySkinsContainer.addEventListener('pointerup', (event) => {
+            if (!isPointerDown) {
+                return;
+            }
+
+            isPointerDown = false;
+
+            const deltaX = event.clientX - startX;
+            const deltaY = event.clientY - startY;
+
+            if (Math.abs(deltaX) < SWIPE_THRESHOLD) {
+                return;
+            }
+
+            if (Math.abs(deltaX) < Math.abs(deltaY)) {
+                return;
+            }
+
+            if (deltaX < 0) {
+                goTo('next');
+            } else {
+                goTo('prev');
+            }
+        });
+
+        slideGiveawaySkinsContainer.addEventListener('pointercancel', () => {
+            isPointerDown = false;
+        });
+    }
+
     //END Splide slider
 
     const tabsList = document.querySelectorAll('.skins-list__tabs-wrap .tab');
@@ -923,6 +1074,23 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     // END Case Accordions
 
+    // Provably Accordions
+    const provablyAccordionBtn = document.querySelector('.js-provably-accordion-btn');
+    const provablyAccordionTable = document.querySelector('.js-provably-accordion-table');
+
+    !!provablyAccordionBtn && provablyAccordionBtn.addEventListener('click', () => {
+        const expanded = provablyAccordionBtn.getAttribute('aria-expanded') === 'true';
+
+        if (!expanded) {
+            provablyAccordionBtn.setAttribute('aria-expanded', !expanded);
+            provablyAccordionTable.style.maxHeight = provablyAccordionTable.scrollHeight + 'px';
+        } else {
+            provablyAccordionBtn.setAttribute('aria-expanded', !expanded);
+            provablyAccordionTable.style.maxHeight = '0';
+        }
+    });
+    // END Provably Accordions
+
     // Swap
     const swapBlock = document.querySelector('.js-swap');
     const swapBtn = document.querySelector('.js-swap-btn');
@@ -939,7 +1107,11 @@ window.addEventListener('DOMContentLoaded', () => {
     !!tickets && tickets.forEach(ticket => {
         ticket.addEventListener('click', () => {
             if (!ticket.classList.contains('giveaway__ticket--open')) {
-                ticket.classList.add('giveaway__ticket--open')
+                ticket.classList.add('giveaway__ticket--open');
+
+                if (ticket.classList.contains('giveaway__ticket--success')) {
+                    showWinConfetti();
+                }
             }
         });
     });
@@ -1204,10 +1376,16 @@ function toggleTableOverlay() {
 }
 
 function showWinConfetti() {
+    const scale = Math.min(
+        Math.max(window.innerWidth / 1920, 1),
+        1.75
+    );
+
     const commonOptions = {
-        particleCount: 150,
-        spread: 70,
+        particleCount: 200 * scale,
+        spread: 100 * scale,
         colors: ["#FFF500", "#B2FF00", "#FFFFFF"],
+        scalar: scale,
     };
     confetti({
         ...commonOptions,
