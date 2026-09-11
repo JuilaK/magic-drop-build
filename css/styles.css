@@ -38541,9 +38541,9 @@ span.giveaway__param-count-current {
   gap: 2.4rem 1.2rem;
   margin-top: 4rem;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1720px) {
   .giveaways__list {
-    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
   }
 }
 .giveaways__list--active {
@@ -38662,6 +38662,57 @@ span.giveaway__param-count-current {
           animation: pulseSlideLine 1.3s ease-in-out infinite;
 }
 @media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=common].is-active) .giveaways-distr__btn:hover, .giveaways-distr--quickly:has([data-slide-skin-type=covert].is-active) .giveaways-distr__btn:hover, .giveaways-distr--quickly:has([data-slide-skin-type=milspec].is-active) .giveaways-distr__btn:hover, .giveaways-distr--quickly:has([data-slide-skin-type=uncommon].is-active) .giveaways-distr__btn:hover, .giveaways-distr--quickly:has([data-slide-skin-type=restricted].is-active) .giveaways-distr__btn:hover, .giveaways-distr--quickly:has([data-slide-skin-type=classified].is-active) .giveaways-distr__btn:hover {
+    color: #FFFFFF;
+  }
+  .giveaways-distr--quickly:has([data-slide-skin-type=common].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--quickly:has([data-slide-skin-type=covert].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--quickly:has([data-slide-skin-type=milspec].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--quickly:has([data-slide-skin-type=uncommon].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--quickly:has([data-slide-skin-type=restricted].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--quickly:has([data-slide-skin-type=classified].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg {
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+  .giveaways-distr--quickly:has([data-slide-skin-type=common].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--quickly:has([data-slide-skin-type=covert].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--quickly:has([data-slide-skin-type=milspec].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--quickly:has([data-slide-skin-type=uncommon].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--quickly:has([data-slide-skin-type=restricted].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--quickly:has([data-slide-skin-type=classified].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value {
+    stroke: #FFFFFF;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=common].is-active) .giveaways-distr__btn:hover {
+    background: #45454f;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=covert].is-active) .giveaways-distr__btn:hover {
+    background: #DD0F1B;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=milspec].is-active) .giveaways-distr__btn:hover {
+    background: #0F23DD;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=restricted].is-active) .giveaways-distr__btn:hover {
+    background: #510FDD;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=uncommon].is-active) .giveaways-distr__btn:hover {
+    background: #00C2FF;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=rare].is-active) .giveaways-distr__btn:hover {
+    background: #FFF500;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=classified].is-active) .giveaways-distr__btn:hover {
+    background: #FA00FF;
+  }
+}
+@media (any-hover: hover) {
+  .giveaways-distr--quickly:has([data-slide-skin-type=gloves].is-active) .giveaways-distr__btn:hover {
+    background: #B2FF00;
+  }
+}
+@media (any-hover: hover) {
   .giveaways-distr--secret .giveaways-distr__btn:hover {
     background: #ef2d37;
   }
@@ -38676,55 +38727,38 @@ span.giveaway__param-count-current {
   }
 }
 @media (any-hover: hover) {
+  .giveaways-distr--phases:has([data-slide-skin-type=sapphire].is-active) .giveaways-distr__btn:hover, .giveaways-distr--phases:has([data-slide-skin-type=emerald].is-active) .giveaways-distr__btn:hover, .giveaways-distr--phases:has([data-slide-skin-type=ruby].is-active) .giveaways-distr__btn:hover, .giveaways-distr--phases:has([data-slide-skin-type=blackpearl].is-active) .giveaways-distr__btn:hover {
+    color: #FFFFFF;
+  }
+  .giveaways-distr--phases:has([data-slide-skin-type=sapphire].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--phases:has([data-slide-skin-type=emerald].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--phases:has([data-slide-skin-type=ruby].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg, .giveaways-distr--phases:has([data-slide-skin-type=blackpearl].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg {
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+  .giveaways-distr--phases:has([data-slide-skin-type=sapphire].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--phases:has([data-slide-skin-type=emerald].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--phases:has([data-slide-skin-type=ruby].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value, .giveaways-distr--phases:has([data-slide-skin-type=blackpearl].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value {
+    stroke: #FFFFFF;
+  }
+}
+@media (any-hover: hover) {
   .giveaways-distr--phases:has([data-slide-skin-type=sapphire].is-active) .giveaways-distr__btn:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(-76.13%, #0052b4), color-stop(96.52%, #3692ff));
     background: linear-gradient(180deg, #0052b4 -76.13%, #3692ff 96.52%);
-    color: #FFFFFF;
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=sapphire].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg {
-    stroke: rgba(255, 255, 255, 0.2);
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=sapphire].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value {
-    stroke: #FFFFFF;
   }
 }
 @media (any-hover: hover) {
   .giveaways-distr--phases:has([data-slide-skin-type=emerald].is-active) .giveaways-distr__btn:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(-76.13%, #24691e), color-stop(96.52%, #70D067));
     background: linear-gradient(180deg, #24691e -76.13%, #70D067 96.52%);
-    color: #FFFFFF;
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=emerald].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg {
-    stroke: rgba(255, 255, 255, 0.2);
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=emerald].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value {
-    stroke: #FFFFFF;
   }
 }
 @media (any-hover: hover) {
   .giveaways-distr--phases:has([data-slide-skin-type=ruby].is-active) .giveaways-distr__btn:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(-76.13%, #801a1a), color-stop(96.52%, #F55050));
     background: linear-gradient(180deg, #801a1a -76.13%, #F55050 96.52%);
-    color: #FFFFFF;
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=ruby].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg {
-    stroke: rgba(255, 255, 255, 0.2);
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=ruby].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value {
-    stroke: #FFFFFF;
   }
 }
 @media (any-hover: hover) {
   .giveaways-distr--phases:has([data-slide-skin-type=blackpearl].is-active) .giveaways-distr__btn:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(-76.13%, #5e3755), color-stop(96.52%, #8A5F80));
     background: linear-gradient(180deg, #5e3755 -76.13%, #8A5F80 96.52%);
-    color: #FFFFFF;
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=blackpearl].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-bg {
-    stroke: rgba(255, 255, 255, 0.2);
-  }
-  .giveaways-distr--phases:has([data-slide-skin-type=blackpearl].is-active) .giveaways-distr__btn:hover .giveaways-distr__progress-value {
-    stroke: #FFFFFF;
   }
 }
 .giveaways-distr--phases.giveaways-distr--passed .giveaways-distr__phase {
@@ -38737,8 +38771,13 @@ span.giveaway__param-count-current {
 .giveaways-distr--passed .giveaways-distr__slider .splide__arrows {
   top: calc(50% + 2.4rem);
 }
+.giveaways-distr--passed .giveaways-distr__slider .splide__pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .giveaways-distr--passed .giveaways-distr__img-wrap {
-  padding-top: 7.2rem;
+  padding-top: 8.8rem;
 }
 .giveaways-distr--passed .giveaways-distr__price {
   position: absolute;
@@ -38761,9 +38800,6 @@ span.giveaway__param-count-current {
             transform: translate(-50%, -1.6rem) scaleX(1.2);
     opacity: 0;
   }
-}
-.giveaways-distr__slider {
-  padding-bottom: 2rem;
 }
 .giveaways-distr__slider .splide__arrows {
   -webkit-transform: translateY(-50%);
@@ -38797,8 +38833,13 @@ span.giveaway__param-count-current {
   padding-top: 2.4rem;
 }
 .giveaways-distr__slider .splide__pagination {
-  bottom: 0;
+  bottom: auto;
+  left: 1rem;
+  top: 3.2rem;
   padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .giveaways-distr__slider .splide__pagination__page {
   background: none;
@@ -38963,7 +39004,7 @@ span.giveaway__param-count-current {
   position: relative;
   margin-bottom: calc(-4% - 2.4rem);
   padding-bottom: 2.4rem;
-  padding-top: 3.8rem;
+  padding-top: 6.4rem;
   text-align: center;
 }
 @media (max-width: 480px) {
@@ -38973,7 +39014,7 @@ span.giveaway__param-count-current {
 }
 
 .giveaways-distr__img {
-  width: 52%;
+  width: 75%;
   height: auto;
   position: relative;
   margin-bottom: -7%;
@@ -38981,7 +39022,7 @@ span.giveaway__param-count-current {
 }
 
 .giveaways-distr__img-bg {
-  width: 66%;
+  width: 75%;
   height: auto;
   pointer-events: none;
 }
