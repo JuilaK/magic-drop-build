@@ -36955,7 +36955,7 @@ dd.swap__skin-price svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 2.4rem;
+  row-gap: 1.6rem;
   -ms-flex-preferred-size: 14.4rem;
       flex-basis: 14.4rem;
   position: relative;
@@ -37104,8 +37104,7 @@ span.giveaway__param-count-current {
   display: block;
   height: 100%;
   aspect-ratio: 3.31;
-  background: center bottom/contain no-repeat -webkit-image-set(url("../images/giveaways/bg-giveaway-slider.webp") type("image/webp"), url("../images/giveaways/bg-giveaway-slider.jpg") type("image/jpeg"));
-  background: center bottom/contain no-repeat image-set(url("../images/giveaways/bg-giveaway-slider.webp") type("image/webp"), url("../images/giveaways/bg-giveaway-slider.jpg") type("image/jpeg"));
+  background: center bottom/contain no-repeat url("../images/giveaways/bg-giveaway-slider.jpg");
   -webkit-transform: translateX(37%);
       -ms-transform: translateX(37%);
           transform: translateX(37%);
@@ -37113,9 +37112,8 @@ span.giveaway__param-count-current {
 }
 @media (max-width: 1024px) {
   .giveaway__skins::before {
-    background: -webkit-gradient(linear, left top, left bottom, from(#0c0c1b), color-stop(20%, rgba(12, 12, 27, 0))), center bottom/contain no-repeat image-set(url("../images/giveaways/bg-giveaway-slider.webp") type("image/webp"), url("../images/giveaways/bg-giveaway-slider.jpg") type("image/jpeg"));
-    background: linear-gradient(180deg, #0c0c1b 0%, rgba(12, 12, 27, 0) 20%), center bottom/contain no-repeat -webkit-image-set(url("../images/giveaways/bg-giveaway-slider.webp") type("image/webp"), url("../images/giveaways/bg-giveaway-slider.jpg") type("image/jpeg"));
-    background: linear-gradient(180deg, #0c0c1b 0%, rgba(12, 12, 27, 0) 20%), center bottom/contain no-repeat image-set(url("../images/giveaways/bg-giveaway-slider.webp") type("image/webp"), url("../images/giveaways/bg-giveaway-slider.jpg") type("image/jpeg"));
+    background: -webkit-gradient(linear, left top, left bottom, from(#0c0c1b), color-stop(20%, rgba(12, 12, 27, 0))), center bottom/contain no-repeat url("../images/giveaways/bg-giveaway-slider.jpg");
+    background: linear-gradient(180deg, #0c0c1b 0%, rgba(12, 12, 27, 0) 20%), center bottom/contain no-repeat url("../images/giveaways/bg-giveaway-slider.jpg");
   }
 }
 .giveaway__skins::after {
@@ -37595,6 +37593,7 @@ span.giveaway__param-count-current {
   background: linear-gradient(180deg, rgba(29, 29, 45, 0.15) 0%, rgba(23, 23, 36, 0.15) 100%), rgba(11, 11, 24, 0.45);
   border: thin solid #1D1D2D;
   border-radius: 0.8rem;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .giveaway__provably-skin {
@@ -38093,10 +38092,16 @@ span.giveaway__param-count-current {
 .giveaway__tickets {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr;
-  grid-template-columns: repeat(10, 1fr);
+  -ms-grid-columns: 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr 1.4rem 1fr;
+  grid-template-columns: repeat(15, 1fr);
   gap: 1.4rem;
   margin-top: 2.4rem;
+}
+@media (max-width: 1280px) {
+  .giveaway__tickets {
+    -ms-grid-columns: (1fr)[10];
+    grid-template-columns: repeat(10, 1fr);
+  }
 }
 @media (max-width: 768px) {
   .giveaway__tickets {
