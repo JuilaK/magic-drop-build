@@ -15639,8 +15639,9 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item, .top-player__content {
   position: relative;
   padding: 1rem 1rem 1.6rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f)), -webkit-gradient(linear, left top, left bottom, from(#121221), to(rgba(18, 18, 33, 0)));
-  background: linear-gradient(180deg, #161622 0%, #12121f 100%), linear-gradient(180deg, #121221 0%, rgba(18, 18, 33, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67))) #12121f;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%) #12121f;
+  border: thin solid #1d1d2d;
   border-radius: 1.2rem;
   -webkit-box-shadow: 0 0.4rem 0 0 #0f0f1b;
           box-shadow: 0 0.4rem 0 0 #0f0f1b;
@@ -15648,19 +15649,12 @@ main:has(.profile-header--vip-bg) {
 }
 .trades-top__item::before, .top-player__content::before {
   position: absolute;
-  top: 0;
-  left: 50%;
+  inset: 0;
   content: "";
-  display: block;
-  width: 53%;
-  aspect-ratio: 123/200;
-  border-radius: 100%;
-  -webkit-filter: blur(8rem);
-          filter: blur(8rem);
-  -webkit-transform: translate(-50%, -40%);
-      -ms-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
-  z-index: 1;
+  background: linear-gradient(155.12deg, rgba(255, 255, 255, 0) -16.39%, rgb(255, 255, 255) 13.47%, rgba(255, 255, 255, 0) 24.44%, rgb(255, 255, 255) 50.03%, rgba(255, 255, 255, 0) 75.02%, rgb(255, 255, 255) 100%);
+  border-radius: 1.2rem;
+  mix-blend-mode: overlay;
+  opacity: 0.74;
 }
 .trades-top__item::after, .top-player__content::after {
   -webkit-transform: translateX(-50%);
@@ -15675,29 +15669,110 @@ main:has(.profile-header--vip-bg) {
   bottom: 0;
   border-radius: 0.6rem 0.6rem 0 0;
 }
-.trades-top__item--common::after, .trades-top__item--common::before {
+.trades-top__item--common {
+  background-color: #2b2e3d;
+}
+.trades-top__item--common::after {
   background-color: #5a5a65;
 }
-.trades-top__item--covert::after, .trades-top__item--covert::before {
+.trades-top__item--common .trades-top__item-border::before, .trades-top__item--common .top-player__border::before {
+  background-color: #2b2e3d;
+}
+.trades-top__item--covert {
+  background-color: #662325;
+}
+.trades-top__item--covert::after {
   background-color: #F34950;
 }
-.trades-top__item--milspec::after, .trades-top__item--milspec::before {
+.trades-top__item--covert .trades-top__item-border::before, .trades-top__item--covert .top-player__border::before {
+  background-color: #662325;
+}
+.trades-top__item--milspec {
+  background-color: #253179;
+}
+.trades-top__item--milspec::after {
   background-color: #5169F7;
 }
-.trades-top__item--restricted::after, .trades-top__item--restricted::before {
+.trades-top__item--milspec .trades-top__item-border::before, .trades-top__item--milspec .top-player__border::before {
+  background-color: #253179;
+}
+.trades-top__item--restricted {
+  background-color: #492976;
+}
+.trades-top__item--restricted::after {
   background-color: #9147F6;
 }
-.trades-top__item--uncommon::after, .trades-top__item--uncommon::before {
+.trades-top__item--restricted .trades-top__item-border::before, .trades-top__item--restricted .top-player__border::before {
+  background-color: #492976;
+}
+.trades-top__item--uncommon {
+  background-color: #236266;
+}
+.trades-top__item--uncommon::after {
   background-color: #36a2c3;
 }
-.trades-top__item--rare::after, .trades-top__item--rare::before {
+.trades-top__item--uncommon .trades-top__item-border::before, .trades-top__item--uncommon .top-player__border::before {
+  background-color: #236266;
+}
+.trades-top__item--rare {
+  background-color: #825517;
+}
+.trades-top__item--rare::after {
   background-color: #FFAE50;
 }
-.trades-top__item--classified::after, .trades-top__item--classified::before {
+.trades-top__item--rare .trades-top__item-border::before, .trades-top__item--rare .top-player__border::before {
+  background-color: #A96F1E;
+}
+.trades-top__item--classified {
+  background-color: #5a2366;
+}
+.trades-top__item--classified::after {
   background-color: #DD2CDE;
 }
-.trades-top__item--gloves::after, .trades-top__item--gloves::before {
+.trades-top__item--classified .trades-top__item-border::before, .trades-top__item--classified .top-player__border::before {
+  background-color: #5a2366;
+}
+.trades-top__item--gloves {
+  background-color: #4f6623;
+}
+.trades-top__item--gloves::after {
   background-color: #accf5b;
+}
+.trades-top__item--gloves .trades-top__item-border::before, .trades-top__item--gloves .top-player__border::before {
+  background-color: #4f6623;
+}
+
+.trades-top__item-border, .top-player__border {
+  position: absolute;
+  inset: 0;
+  border: 0.6rem solid rgba(0, 0, 0, 0.34);
+  border-radius: 1.2rem;
+}
+.trades-top__item-border::before, .top-player__border::before, .trades-top__item-border::after, .top-player__border::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  padding: 0.1rem;
+  border-radius: 0.6rem;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+.trades-top__item-border::before, .top-player__border::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67))) #12121f;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%) #12121f;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+.trades-top__item-border::after, .top-player__border::after {
+  background: linear-gradient(155.12deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 8%, rgb(255, 255, 255) 32%, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 61%, rgba(255, 255, 255, 0) 80%, rgb(255, 255, 255) 100%);
+  mix-blend-mode: overlay;
 }
 
 .trades-top__item-top {
@@ -15756,18 +15831,18 @@ main:has(.profile-header--vip-bg) {
   position: absolute;
   top: 46%;
   left: 50%;
-  width: 155%;
+  width: 152%;
   aspect-ratio: 1.53;
-  background: center/contain no-repeat url("../images/logos/logo-short-black.svg");
-  -webkit-transform: translate(-50%, -50%) rotate(-22deg);
-      -ms-transform: translate(-50%, -50%) rotate(-22deg);
-          transform: translate(-50%, -50%) rotate(-22deg);
-  opacity: 0.7;
+  background: center/contain no-repeat url("../images/logos/logo-short-gr-white.svg");
+  -webkit-transform: translate(-50%, -50%) rotate(-15deg);
+      -ms-transform: translate(-50%, -50%) rotate(-15deg);
+          transform: translate(-50%, -50%) rotate(-15deg);
+  mix-blend-mode: overlay;
   z-index: 0;
 }
 
 .trades-top__item-skin, .top-player__skin {
-  width: 75%;
+  width: 85%;
   height: auto;
   display: block;
   position: relative;
@@ -21112,29 +21187,77 @@ main:has(.profile-header--vip-bg) {
 .top-player {
   position: relative;
 }
-.top-player--common .top-player__content::after, .top-player--common .top-player__content::before {
+.top-player--common .top-player__content {
+  background-color: #2b2e3d;
+}
+.top-player--common .top-player__content::after {
   background-color: #5a5a65;
 }
-.top-player--covert .top-player__content::after, .top-player--covert .top-player__content::before {
+.top-player--common .top-player__content .top-player__border::before {
+  background-color: #2b2e3d;
+}
+.top-player--covert .top-player__content {
+  background-color: #662325;
+}
+.top-player--covert .top-player__content::after {
   background-color: #F34950;
 }
-.top-player--milspec .top-player__content::after, .top-player--milspec .top-player__content::before {
+.top-player--covert .top-player__content .top-player__border::before {
+  background-color: #662325;
+}
+.top-player--milspec .top-player__content {
+  background-color: #253179;
+}
+.top-player--milspec .top-player__content::after {
   background-color: #5169F7;
 }
-.top-player--restricted .top-player__content::after, .top-player--restricted .top-player__content::before {
+.top-player--milspec .top-player__content .top-player__border::before {
+  background-color: #253179;
+}
+.top-player--restricted .top-player__content {
+  background-color: #492976;
+}
+.top-player--restricted .top-player__content::after {
   background-color: #9147F6;
 }
-.top-player--uncommon .top-player__content::after, .top-player--uncommon .top-player__content::before {
+.top-player--restricted .top-player__content .top-player__border::before {
+  background-color: #492976;
+}
+.top-player--uncommon .top-player__content {
+  background-color: #236266;
+}
+.top-player--uncommon .top-player__content::after {
   background-color: #36a2c3;
 }
-.top-player--rare .top-player__content::after, .top-player--rare .top-player__content::before {
+.top-player--uncommon .top-player__content .top-player__border::before {
+  background-color: #236266;
+}
+.top-player--rare .top-player__content {
+  background-color: #825517;
+}
+.top-player--rare .top-player__content::after {
   background-color: #FFAE50;
 }
-.top-player--classified .top-player__content::after, .top-player--classified .top-player__content::before {
+.top-player--rare .top-player__content .top-player__border::before {
+  background-color: #A96F1E;
+}
+.top-player--classified .top-player__content {
+  background-color: #5a2366;
+}
+.top-player--classified .top-player__content::after {
   background-color: #DD2CDE;
 }
-.top-player--gloves .top-player__content::after, .top-player--gloves .top-player__content::before {
+.top-player--classified .top-player__content .top-player__border::before {
+  background-color: #5a2366;
+}
+.top-player--gloves .top-player__content {
+  background-color: #4f6623;
+}
+.top-player--gloves .top-player__content::after {
   background-color: #accf5b;
+}
+.top-player--gloves .top-player__content .top-player__border::before {
+  background-color: #4f6623;
 }
 .top-player--gold .top-player__place::before {
   background-color: #DDC916;
@@ -21161,8 +21284,8 @@ main:has(.profile-header--vip-bg) {
 
 .top-player__date {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 1.2rem;
+  left: 1.2rem;
 }
 
 .top-player__user {
