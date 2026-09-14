@@ -29,6 +29,8 @@
     <script defer src="./libs/splide/splide.min.js"></script>
     
     
+        <script src="./libs/spine/spine-webcomponents.min.js"></script>
+    
     <script defer src="./scripts/script.js"></script>
 </head>
 <body class="birthday">
@@ -1106,36 +1108,25 @@
 	</div>
 </header>
     <main>
-        <div class="case-container js-case-container">
-    <div class="case-hero__rhombus">
-        <picture>
-            <source 
-                srcset="./images/bg/bg-case-hero@2x.webp" 
-                type="image/webp">
-            <img 
-                src="./images/bg/bg-case-hero@2x.jpg" 
-                alt="" 
-                aria-hidden="true"
-                class="case-hero__bg-img">
-        </picture>
-        <picture>
-            <source 
-                srcset="./images/bg/bg-case-hero-2@2x.webp" 
-                type="image/webp">
-            <img 
-                src="./images/bg/bg-case-hero-2@2x.png" 
-                alt="" 
-                aria-hidden="true"
-                class="case-hero__bg-img">
-        </picture>
+        <div class="case-container js-case-container" data-decor-type="decor-standart">
+    <div class="case-hero__bg">
+        <div class="case-hero__bg-img"></div>
     </div>
     <div class="case-hero container-xl js-case-hero">
-        <button type="button" class="case-hero__provably-btn btn">
-            <svg aria-hidden="true" class="dark-grey">
-                <use xlink:href="images/sprite.svg#provably-fair"></use>
-            </svg>
-            Provably fair
-        </button>
+        <div class="case-hero__info">
+            <button type="button" class="btn">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#provably-fair"></use>
+                </svg>
+                Provably fair
+            </button>
+            <button type="button" class="btn" data-modal-trigger="case-decor">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#settings-2"></use>
+                </svg>
+                Оформление
+            </button>
+        </div>
         <div class="case-hero__prize case-hero__prize--inactive">
             <img 
                 class="case-hero__prize-img"
@@ -1147,16 +1138,20 @@
         </div>
         <div class="case-hero__img-wrap">
             
-            <div class="case-hero__flag">
-                <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
-                <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
-                <button type="button" class="case-hero__flag-btn btn btn--icon">
-                    <svg aria-hidden="true" class="light-grey">
-                        <use xlink:href="images/sprite.svg#question"></use>
-                    </svg>
-                    Info
-                </button>
-            </div>
+                <div class="case-hero__rock">
+                    <spine-skeleton
+                        class="case-hero__spine-skel"
+                        overlay-id="rock"
+                        atlas="./spine/rock/smoke.atlas"
+                        skeleton="./spine/rock/smoke.json"
+                        fit="contain"
+                        animation="idle">
+                    </spine-skeleton>
+                    <spine-overlay overlay-id="rock"></spine-overlay>
+                </div>
+            
+            <h1 class="case-hero__title">OPERATION BROKEN FANG CASE</h1>
+            
             <div class="case-hero__img-case">
                 
                 
@@ -1171,17 +1166,6 @@
                             alt="" 
                             aria-hidden="true"
                             class="case-hero__img">
-                    </picture>
-                    <picture>
-                        <source 
-                            srcset="./images/img-case-rock.webp, ./images/img-case-rock@2x.webp 2x" 
-                            type="image/webp">
-                        <img 
-                            src="./images/img-case-rock.png" 
-                            srcset="./images/img-case-rock@2x.png 2x" 
-                            alt="" 
-                            aria-hidden="true"
-                            class="case-hero__img-rock">
                     </picture>
                 
             </div>
@@ -1216,20 +1200,18 @@
         </div>
     </div>
     <div class="case-hero case-hero--roulette case-hero--roulette-1 container-xl js-case-hero-roulette">
-        <button type="button" class="case-hero__provably-btn btn">
-            <svg aria-hidden="true" class="dark-grey">
-                <use xlink:href="images/sprite.svg#provably-fair"></use>
-            </svg>
-            Provably fair
-        </button>
-        <div class="case-hero__flag">
-            <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
-            <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
-            <button type="button" class="case-hero__flag-btn btn btn--icon">
-                <svg aria-hidden="true" class="light-grey">
-                    <use xlink:href="images/sprite.svg#question"></use>
+        <div class="case-hero__info">
+            <button type="button" class="btn">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#provably-fair"></use>
                 </svg>
-                Info
+                Provably fair
+            </button>
+            <button type="button" class="btn" data-modal-trigger="case-decor">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#provably-fair"></use>
+                </svg>
+                Оформление
             </button>
         </div>
         <div class="case-hero__roulettes-list roulettes-list--1">
@@ -4712,6 +4694,65 @@
                             <use xlink:href="images/sprite.svg#telegram-yellow"></use>
                         </svg>
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal modal--case-decor js-modal" data-modal-name="case-decor">
+    <div class="modal__wrap">
+        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="modal__close-btn js-modal-close">
+                Закрыть модальное окно
+                <span class="modal__close-btn-icon"></span>
+            </button>
+            <div class="modal__content">
+                <h2 class="modal__title">Оформление профиля</h2>
+                <div class="modal__case-decor-list">
+                    <div class="case-decors js-case-decors">
+    <input type="radio" name="case-decors" id="decor-standart" checked>
+    <label class="case-decors__item" for="decor-standart">
+        <picture>
+            <source srcset="./images/cases/case-decor-standart.webp" type="image/webp">
+            <img 
+                src="./images/cases/case-decor-standart.jpg" 
+                class="case-decors__item-img"
+                width="205" 
+                height="132" 
+                alt=""
+                aria-hidden="true">
+        </picture>
+        <span class="case-decors__item-title">Основной</span>
+    </label>
+    <input type="radio" name="case-decors" id="decor-hangar">
+    <label class="case-decors__item" for="decor-hangar">
+        <picture>
+            <source srcset="./images/cases/case-decor-hangar.webp" type="image/webp">
+            <img 
+                src="./images/cases/case-decor-hangar.jpg" 
+                class="case-decors__item-img"
+                width="205" 
+                height="132" 
+                alt=""
+                aria-hidden="true">
+        </picture>
+        <span class="case-decors__item-title">Ангар</span>
+    </label>
+    <input type="radio" name="case-decors" id="decor-agents">
+    <label class="case-decors__item" for="decor-agents">
+        <picture>
+            <source srcset="./images/cases/case-decor-agents.webp" type="image/webp">
+            <img 
+                src="./images/cases/case-decor-agents.jpg" 
+                class="case-decors__item-img" 
+                width="205" 
+                height="132" 
+                alt=""
+                aria-hidden="true">
+        </picture>
+        <span class="case-decors__item-title">VIP</span>
+    </label>
+</div>
                 </div>
             </div>
         </div>

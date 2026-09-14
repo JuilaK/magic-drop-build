@@ -29,6 +29,8 @@
     <script defer src="./libs/splide/splide.min.js"></script>
     
     
+        <script src="./libs/spine/spine-webcomponents.min.js"></script>
+    
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
@@ -1106,161 +1108,138 @@
 	</div>
 </header>
     <main>
-        <div class="case-hero container">
-    <button type="button" class="case-hero__provably-btn btn">
-        <svg aria-hidden="true" class="dark-grey">
-            <use xlink:href="images/sprite.svg#provably-fair"></use>
-        </svg>
-        Provably fair
-    </button>
-    <div class="case-hero__prize case-hero__prize--inactive">
-        <img 
-            class="case-hero__prize-img"
-            src="./images/event/prize-3.png" 
-            srcset="./images/event/prize-3@2x.png 2x"
-            alt="" aria-hidden="true">
-        <span class="case-hero__prize-title">Зеркальная копия</span>
-        <span class="case-hero__prize-text">Не применяется, так как активирован промокод</span>    
+        <div class="case-container js-case-container" data-decor-type="decor-standart">
+    <div class="case-hero__bg">
+        <div class="case-hero__bg-img"></div>
     </div>
-    <div class="case-hero__img-wrap">
-        <picture>
-            <source 
-                srcset="./images/bg/bg-case-hero@2x.webp" 
-                type="image/webp">
-            <img 
-                src="./images/bg/bg-case-hero@2x.jpg" 
-                alt="" 
-                aria-hidden="true"
-                class="case-hero__bg-img">
-        </picture>
-        <picture>
-            <source 
-                srcset="./images/bg/bg-case-hero-2@2x.webp" 
-                type="image/webp">
-            <img 
-                src="./images/bg/bg-case-hero-2@2x.png"  
-                alt="" 
-                aria-hidden="true"
-                class="case-hero__bg-img">
-        </picture>
-        <div class="case-hero__flag">
-            <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
-            <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
-            <span class="case-hero__flag-sticker">
-                <svg aria-hidden="true">
+    <div class="case-hero container-xl">
+        <div class="case-hero__bg">
+            <div class="case-hero__bg-img"></div>
+        </div>
+        <div class="case-hero__info">
+            <button type="button" class="case-hero__provably-btn btn">
+                <svg aria-hidden="true" class="dark-grey">
                     <use xlink:href="images/sprite.svg#provably-fair"></use>
                 </svg>
-                Шанс окупиться 33,6%
-            </span>
-            <button type="button" class="case-hero__flag-btn btn btn--icon">
-                <svg aria-hidden="true" class="light-grey">
-                    <use xlink:href="images/sprite.svg#question"></use>
-                </svg>
-                Info
+                Provably fair
             </button>
         </div>
-        <div class="case-hero__img-case">
-            
-            
-                <picture>
-                    <source 
-                        srcset="./images/img-case.webp, ./images/img-case@2x.webp 2x" 
-                        type="image/webp">
-                    <img 
-                        src="./images/img-case.png" 
-                        srcset="./images/img-case@2x.png 2x" 
-                        alt="" 
-                        aria-hidden="true"
-                        class="case-hero__img">
-                </picture>
-                <picture>
-                    <source 
-                        srcset="./images/img-case-rock.webp, ./images/img-case-rock@2x.webp 2x" 
-                        type="image/webp">
-                    <img 
-                        src="./images/img-case-rock.png" 
-                        srcset="./images/img-case-rock@2x.png 2x" 
-                        alt="" 
-                        aria-hidden="true"
-                        class="case-hero__img-rock">
-                </picture>
-            
+        <div class="case-hero__prize case-hero__prize--inactive">
+            <img 
+                class="case-hero__prize-img"
+                src="./images/event/prize-3.png" 
+                srcset="./images/event/prize-3@2x.png 2x"
+                alt="" aria-hidden="true">
+            <span class="case-hero__prize-title">Зеркальная копия</span>
+            <span class="case-hero__prize-text">Не применяется, так как активирован промокод</span>    
         </div>
-    </div>
-    <div class="case-hero__controls">
-        
-            <div class="case-hero__controls-wrap">
-                <div class="case-hero__multiple-btns">
-                    <button type="button" class="btn btn--active"><span>X1</span></button>
-                    <button type="button" class="btn"><span>X2</span></button>
-                    <button type="button" class="btn"><span>X3</span></button>
-                    <button type="button" class="btn"><span>X4</span></button>
-                    <button type="button" class="btn"><span>X5</span></button>
-                    <button type="button" class="btn"><span>X10</span></button>
-                    <button type="button" class="btn"><span>X25</span></button>
-                    <button type="button" class="btn"><span>X50</span></button>
-                    <button type="button" class="btn"><span>X100</span></button>
+        <div class="case-hero__img-wrap">
+            
+                <div class="case-hero__rock">
+                    <spine-skeleton
+                        class="case-hero__spine-skel"
+                        overlay-id="rock"
+                        atlas="./spine/rock/smoke.atlas"
+                        skeleton="./spine/rock/smoke.json"
+                        fit="contain"
+                        animation="idle">
+                    </spine-skeleton>
+                    <spine-overlay overlay-id="rock"></spine-overlay>
                 </div>
-                <button type="button" class="case-hero__btn btn btn--lg btn--bg-grey js-open-win-rare">
-                    Open for 
-                    <span class="case-hero__btn-text">
-                        <span class="case-hero__old-price">15.00</span>
-                        <span>10.50</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
-                        </svg>
-                    </span>
-                </button>
-                <div class="case-hero__checkbox-wrap">
-                    <label class="case-hero__checkbox">
-                        <input type="checkbox" checked>
-                        <span>Fast</span>
-                    </label>
-                    <button type="button" class="btn btn--bg-green">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#key-green"></use>
-                        </svg>
-                        Code
+            
+            <h1 class="case-hero__title">OPERATION BROKEN FANG CASE</h1>
+            <div class="case-hero__img-case">
+                
+                
+                    <picture>
+                        <source 
+                            srcset="./images/img-case.webp, ./images/img-case@2x.webp 2x" 
+                            type="image/webp">
+                        <img 
+                            src="./images/img-case.png" 
+                            srcset="./images/img-case@2x.png 2x" 
+                            alt="" 
+                            aria-hidden="true"
+                            class="case-hero__img">
+                    </picture>
+                
+            </div>
+        </div>
+        <div class="case-hero__controls">
+            
+                <div class="case-hero__controls-wrap">
+                    <div class="case-hero__multiple-btns">
+                        <button type="button" class="btn btn--active"><span>X1</span></button>
+                        <button type="button" class="btn"><span>X2</span></button>
+                        <button type="button" class="btn"><span>X3</span></button>
+                        <button type="button" class="btn"><span>X4</span></button>
+                        <button type="button" class="btn"><span>X5</span></button>
+                        <button type="button" class="btn"><span>X10</span></button>
+                        <button type="button" class="btn"><span>X25</span></button>
+                        <button type="button" class="btn"><span>X50</span></button>
+                        <button type="button" class="btn"><span>X100</span></button>
+                    </div>
+                    <button type="button" class="case-hero__btn btn btn--lg btn--bg-grey js-open-win-rare">
+                        Open for 
+                        <span class="case-hero__btn-text">
+                            <span class="case-hero__old-price">15.00</span>
+                            <span>10.50</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
+                            </svg>
+                        </span>
                     </button>
+                    <div class="case-hero__checkbox-wrap">
+                        <label class="case-hero__checkbox">
+                            <input type="checkbox" checked>
+                            <span>Fast</span>
+                        </label>
+                        <button type="button" class="btn btn--bg-green">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#key-green"></use>
+                            </svg>
+                            Code
+                        </button>
+                    </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="case-hero__timer-container">
+            <p class="case-hero__timer-title">Время действия скидки на открытие кейса:</p>
+            <div class="case-hero__timer">
+                <div class="case-hero__timer-item">
+                    <span>1</span>
+                    <span>H</span>
+                </div>
+                <div class="case-hero__timer-item">
+                    <span>2</span>
+                    <span>H</span>
+                </div>
+                <div class="case-hero__separator"></div>
+                <div class="case-hero__timer-item">
+                    <span>4</span>
+                    <span>M</span>
+                </div>
+                <div class="case-hero__timer-item">
+                    <span>2</span>
+                    <span>M</span>
+                </div>
+                <div class="case-hero__separator"></div>
+                <div class="case-hero__timer-item">
+                    <span>3</span>
+                    <span>S</span>
+                </div>
+                <div class="case-hero__timer-item">
+                    <span>7</span>
+                    <span>S</span>
                 </div>
             </div>
-        
-        
-        
-    </div>
-    <div class="case-hero__timer-container">
-        <p class="case-hero__timer-title">Время действия скидки на открытие кейса:</p>
-        <div class="case-hero__timer">
-            <div class="case-hero__timer-item">
-                <span>1</span>
-                <span>H</span>
-            </div>
-            <div class="case-hero__timer-item">
-                <span>2</span>
-                <span>H</span>
-            </div>
-            <div class="case-hero__separator"></div>
-            <div class="case-hero__timer-item">
-                <span>4</span>
-                <span>M</span>
-            </div>
-            <div class="case-hero__timer-item">
-                <span>2</span>
-                <span>M</span>
-            </div>
-            <div class="case-hero__separator"></div>
-            <div class="case-hero__timer-item">
-                <span>3</span>
-                <span>S</span>
-            </div>
-            <div class="case-hero__timer-item">
-                <span>7</span>
-                <span>S</span>
-            </div>
+    
         </div>
-
     </div>
-</div>
+</div>    
 
     <section class="case-text container-xxs">
         <div class="case-text__content">
@@ -1272,6 +1251,7 @@
             <p class="case-text__desc">Магические кейсы - настоящее чудо текущего времени. Одно открытие этого кейса совершенно случайно может преобразоваться в несколько. Не упускайте этот волшебный момент!</p>
         </div>
     </section>
+
 
         <section class="skins-slider splide container-sm js-skins-slider" aria-labelledby="last-top-drop-cards">
     <h2 id="last-top-drop-cards" class="section-title section-title--center section-title--light">
@@ -4520,7 +4500,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                <span class="win-rare__item-phase">blackpearl</span>
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -4528,6 +4507,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    <span class="win-rare__item-phase"><span>blackpearl</span></span>
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -4576,7 +4556,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                <span class="win-rare__item-phase">blackpearl</span>
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -4584,6 +4563,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    <span class="win-rare__item-phase"><span>blackpearl</span></span>
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -4632,7 +4612,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -4640,6 +4619,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -4688,7 +4668,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -4696,6 +4675,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -4744,7 +4724,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -4752,6 +4731,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -4800,7 +4780,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -4808,6 +4787,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -4856,7 +4836,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -4864,6 +4843,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -4912,7 +4892,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
@@ -4920,6 +4899,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -4968,7 +4948,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -4976,6 +4955,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5024,7 +5004,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -5032,6 +5011,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -5080,7 +5060,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -5088,6 +5067,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -5136,7 +5116,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5144,6 +5123,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5192,7 +5172,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -5200,6 +5179,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5248,7 +5228,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -5256,6 +5235,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -5304,7 +5284,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5312,6 +5291,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5360,7 +5340,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -5368,6 +5347,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5416,7 +5396,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5424,6 +5403,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5472,7 +5452,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
@@ -5480,6 +5459,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -5528,7 +5508,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5536,6 +5515,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5584,7 +5564,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -5592,6 +5571,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -5640,7 +5620,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -5648,6 +5627,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -5696,7 +5676,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5704,6 +5683,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5752,7 +5732,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -5760,6 +5739,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5808,7 +5788,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -5816,6 +5795,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -5864,7 +5844,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5872,6 +5851,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5920,7 +5900,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -5928,6 +5907,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -5976,7 +5956,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -5984,6 +5963,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6032,7 +6012,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
@@ -6040,6 +6019,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -6088,7 +6068,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -6096,6 +6075,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6144,7 +6124,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -6152,6 +6131,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -6200,7 +6180,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -6208,6 +6187,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -6256,7 +6236,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -6264,6 +6243,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6312,7 +6292,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -6320,6 +6299,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6368,7 +6348,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -6376,6 +6355,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>
@@ -6424,7 +6404,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -6432,6 +6411,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6480,7 +6460,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJP49GzmpSemsj4OrzZgiVQ7Z0m2bmY8Yj03VW1qUE5ZGr1LdKVJwJtM1nSr1TrwOa9jJO47smf1zI97bfHT4k6/300fx300f" 
@@ -6488,6 +6467,7 @@
                         alt="Momentum AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6536,7 +6516,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -6544,6 +6523,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6592,7 +6572,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/200fx200f" 
@@ -6600,6 +6579,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -6648,7 +6628,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFABz7PLddgJR9diJmYWKk8j4OrzZgiUHsMEj07zDod332wfk_EJkMGqidYHAdQE9Zw6F8gW3k-vpg8S57cnM1zI97WffW7KT/300fx300f" 
@@ -6656,6 +6635,7 @@
                         alt="Syd Mead AUG">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         AUG
                     </div>
@@ -6704,7 +6684,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 <div class="win-rare__item-chance">0.002949%</div>
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf1OD3cicVueOilYOfnvT1J4Tck29Y_cg_2bDDoIqk2VXk_kdtMWvwdY_GI1VtYg7T_1Tskry-hpS8uZ7OznIw6z5iuyhhvQy0nA/300fx300f" 
@@ -6712,6 +6691,7 @@
                         alt="Tacticat CZ75-Auto">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         CZ75-Auto
                     </div>

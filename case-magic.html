@@ -29,6 +29,8 @@
     <script defer src="./libs/splide/splide.min.js"></script>
     
     
+        <script src="./libs/spine/spine-webcomponents.min.js"></script>
+    
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
@@ -1107,44 +1109,33 @@
 </header>
     <main>
         <div class="case-container case-container--magic-3 js-case-container-magic">
-    <div class="case-hero container js-case-hero">
-        <button type="button" class="case-hero__provably-btn btn">
-            <svg aria-hidden="true" class="dark-grey">
-                <use xlink:href="images/sprite.svg#provably-fair"></use>
-            </svg>
-            Provably fair
-        </button>
+    <div class="case-hero__bg">
+        <div class="case-hero__bg-img"></div>
+    </div>
+    <div class="case-hero container-xl js-case-hero">
+        <div class="case-hero__info">
+            <button type="button" class="case-hero__provably-btn btn">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#provably-fair"></use>
+                </svg>
+                Provably fair
+            </button>
+        </div>
         <div class="case-hero__img-wrap">
-            <picture>
-                <source 
-                    srcset="./images/bg/bg-case-hero@2x.webp" 
-                    type="image/webp">
-                <img 
-                    src="./images/bg/bg-case-hero@2x.jpg"  
-                    alt="" 
-                    aria-hidden="true"
-                    class="case-hero__bg-img">
-            </picture>
-            <picture>
-                <source 
-                    srcset="./images/bg/bg-case-hero-2@2x.webp" 
-                    type="image/webp">
-                <img 
-                    src="./images/bg/bg-case-hero-2@2x.png" 
-                    alt="" 
-                    aria-hidden="true"
-                    class="case-hero__bg-img">
-            </picture>
-            <div class="case-hero__flag">
-                <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
-                <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
-                <button type="button" class="case-hero__flag-btn btn btn--icon">
-                    <svg aria-hidden="true" class="light-grey">
-                        <use xlink:href="images/sprite.svg#question"></use>
-                    </svg>
-                    Info
-                </button>
-            </div>
+            
+                <div class="case-hero__rock">
+                    <spine-skeleton
+                        class="case-hero__spine-skel"
+                        overlay-id="rock"
+                        atlas="./spine/rock/smoke.atlas"
+                        skeleton="./spine/rock/smoke.json"
+                        fit="contain"
+                        animation="idle">
+                    </spine-skeleton>
+                    <spine-overlay overlay-id="rock"></spine-overlay>
+                </div>
+            
+            <h1 class="case-hero__title">OPERATION BROKEN FANG CASE</h1>
             <div class="case-hero__img-case">
                 
                 
@@ -1181,17 +1172,6 @@
                                 class="case-hero__img">
                         </picture>
                     </div>
-                    <picture>
-                        <source 
-                            srcset="./images/img-case-rock.webp, ./images/img-case-rock@2x.webp 2x" 
-                            type="image/webp">
-                        <img 
-                            src="./images/img-case-rock.png" 
-                            srcset="./images/img-case-rock@2x.png 2x" 
-                            alt="" 
-                            aria-hidden="true"
-                            class="case-hero__img-rock">
-                    </picture>
                 
             </div>
         </div>
@@ -1217,20 +1197,12 @@
         </div>
     </div>
     <div class="case-hero case-hero--roulette container js-case-hero-roulette">
-        <button type="button" class="case-hero__provably-btn btn">
-            <svg aria-hidden="true" class="dark-grey">
-                <use xlink:href="images/sprite.svg#provably-fair"></use>
-            </svg>
-            Provably fair
-        </button>
-        <div class="case-hero__flag">
-            <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
-            <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
-            <button type="button" class="case-hero__flag-btn btn btn--icon">
-                <svg aria-hidden="true" class="light-grey">
-                    <use xlink:href="images/sprite.svg#question"></use>
+        <div class="case-hero__info">
+            <button type="button" class="case-hero__provably-btn btn">
+                <svg aria-hidden="true" class="dark-grey">
+                    <use xlink:href="images/sprite.svg#provably-fair"></use>
                 </svg>
-                Info
+                Provably fair
             </button>
         </div>
         <div class="case-hero__roulettes-list roulettes-list--2">

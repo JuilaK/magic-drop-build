@@ -29,6 +29,8 @@
     <script defer src="./libs/splide/splide.min.js"></script>
     
     
+        <script src="./libs/spine/spine-webcomponents.min.js"></script>
+    
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
@@ -1106,44 +1108,33 @@
 	</div>
 </header>
     <main>
-        <div class="case-hero container">
-    <button type="button" class="case-hero__provably-btn btn">
-        <svg aria-hidden="true" class="dark-grey">
-            <use xlink:href="images/sprite.svg#provably-fair"></use>
-        </svg>
-        Provably fair
-    </button>
+        <div class="case-hero container-xl">
+    <div class="case-hero__bg">
+        <div class="case-hero__bg-img"></div>
+    </div>
+    <div class="case-hero__info">
+        <button type="button" class="case-hero__provably-btn btn">
+            <svg aria-hidden="true" class="dark-grey">
+                <use xlink:href="images/sprite.svg#provably-fair"></use>
+            </svg>
+            Provably fair
+        </button>
+    </div>
     <div class="case-hero__img-wrap">
-        <picture>
-            <source 
-                srcset="./images/bg/bg-case-hero@2x.webp" 
-                type="image/webp">
-            <img 
-                src="./images/bg/bg-case-hero@2x.jpg"  
-                alt="" 
-                aria-hidden="true"
-                class="case-hero__bg-img">
-        </picture>
-        <picture>
-            <source 
-                srcset="./images/bg/bg-case-hero-2@2x.webp" 
-                type="image/webp">
-            <img 
-                src="./images/bg/bg-case-hero-2@2x.png" 
-                alt="" 
-                aria-hidden="true"
-                class="case-hero__bg-img">
-        </picture>
-        <div class="case-hero__flag">
-            <span class="case-hero__flag-badge case-hero__flag-badge--new">New</span>
-            <span class="case-hero__flag-title">OPERATION BROKEN FANG CASE</span>
-            <button type="button" class="case-hero__flag-btn btn btn--icon">
-                <svg aria-hidden="true" class="light-grey">
-                    <use xlink:href="images/sprite.svg#question"></use>
-                </svg>
-                Info
-            </button>
-        </div>
+        
+            <div class="case-hero__rock">
+                <spine-skeleton
+                    class="case-hero__spine-skel"
+                    overlay-id="rock"
+                    atlas="./spine/rock/smoke.atlas"
+                    skeleton="./spine/rock/smoke.json"
+                    fit="contain"
+                    animation="idle">
+                </spine-skeleton>
+                <spine-overlay overlay-id="rock"></spine-overlay>
+            </div>
+        
+        <h1 class="case-hero__title">OPERATION BROKEN FANG CASE</h1>
         <div class="case-hero__img-case">
             
                 <picture>
@@ -1156,18 +1147,6 @@
                         aria-hidden="true"
                         class="case-hero__img-retro">
                 </picture>
-                <picture>
-                    <source 
-                        srcset="./images/img-case-rock.webp, ./images/img-case-rock@2x.webp 2x" 
-                        type="image/webp">
-                    <img 
-                        src="./images/img-case-rock.png" 
-                        srcset="./images/img-case-rock@2x.png 2x" 
-                        alt="" 
-                        aria-hidden="true"
-                        class="case-hero__img-rock">
-                </picture>
-            
             
             
         </div>
@@ -4474,6 +4453,9 @@
         
         
         
+        
+        
+            
     </video>
     <div class="win-rare__content">
         <div class="container">
@@ -4497,7 +4479,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -4505,6 +4486,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -4553,7 +4535,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -4561,6 +4542,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>
@@ -4609,7 +4591,6 @@
             </picture>
             <div class="win-rare__item-card-wrapper">
                 
-                
                 <div class="win-rare__item-img">
                     <img 
                         src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDK_YkW5D18pji-fG8LP4jVC9vh5yN2ild4XAJwRraAyF8wLrx-buhMDt7pvLynI16SN25HuPzhewhxhFbfsv26KGW3ZMYA/300fx300f" 
@@ -4617,6 +4598,7 @@
                         alt="Tiger Strike Specialist 100000">    
                 </div>
                 <div class="win-rare__item-info">
+                    
                     <div class="win-rare__item-subtitle">
                         Specialist 100000
                     </div>

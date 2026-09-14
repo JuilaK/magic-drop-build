@@ -24,11 +24,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Spine animation
-    const spineContainer = document.querySelector('.js-spine-animation');
+    const spineContainers = document.querySelectorAll('.js-spine-animation');
     let upgradeBodySpine = null;
     let upgradeHandsSpine = null;
 
-    if (!!spineContainer && (typeof spine !== 'undefined')) {
+    if ((spineContainers.length != 0) && (typeof spine !== 'undefined')) {
         Promise.all([
             spine.getSkeleton('upgrade-body').whenReady,
             spine.getSkeleton('upgrade-hands').whenReady
@@ -975,17 +975,28 @@ window.addEventListener('DOMContentLoaded', () => {
             caseContainer.classList.add("open");
             setTimeout(() => {
                 caseHero.style.display = 'none';
-                caseRoulette.style.display = 'block';
+                caseRoulette.style.display = 'flex';
             }, 300);
         } else if (!!caseContainerMagic) {
             caseContainerMagic.classList.add("open");
             setTimeout(() => {
                 caseHero.style.display = 'none';
-                caseRoulette.style.display = 'block';
+                caseRoulette.style.display = 'flex';
             }, 3300);
         }
     });
     //END Open case
+
+    // Change case decor
+    const caseDecors = document.querySelector(".js-case-decors");
+    !!caseDecors && caseDecors.addEventListener('change', (event) => {
+        if (!event.target.matches('input[type="radio"]')) {
+            return;
+        }
+
+        caseContainer.dataset.decorType = event.target.id;
+    });
+    // END Change case decor
 
     // Open win cards
     const openWinRareBtn = document.querySelector(".js-open-win-rare");
