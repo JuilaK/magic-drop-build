@@ -5312,17 +5312,14 @@ span.header__volume-value {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .footer__statistics {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     -webkit-column-gap: 1.6rem;
        -moz-column-gap: 1.6rem;
             column-gap: 1.6rem;
-  }
-}
-@media (max-width: 370px) {
-  .footer__statistics {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 }
 
