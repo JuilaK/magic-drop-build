@@ -15632,13 +15632,11 @@ main:has(.profile-header--vip-bg) {
 
 .trades-top__item, .top-player__content {
   position: relative;
-  padding: 1rem 1rem 1.6rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67))) #12121f;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%) #12121f;
+  padding: 1rem 1rem 2.4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67))) #2B2B4B;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%) #2B2B4B;
   border: thin solid #1d1d2d;
   border-radius: 1.2rem;
-  -webkit-box-shadow: 0 0.4rem 0 0 #0f0f1b;
-          box-shadow: 0 0.4rem 0 0 #0f0f1b;
   overflow: hidden;
 }
 .trades-top__item::before, .top-player__content::before {
@@ -15656,15 +15654,13 @@ main:has(.profile-header--vip-bg) {
           transform: translateX(-50%);
   position: absolute;
   left: 50%;
-  width: 11.4rem;
-  height: 0.4rem;
+  width: 80%;
+  height: 0.6rem;
   content: "";
   display: block;
   bottom: 0;
+  max-width: 11.4rem;
   border-radius: 0.6rem 0.6rem 0 0;
-}
-.trades-top__item--common {
-  background-color: #2b2e3d;
 }
 .trades-top__item--common::after {
   background-color: #5a5a65;
@@ -15672,8 +15668,8 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--common .trades-top__item-border::before, .trades-top__item--common .top-player__border::before {
   background-color: #2b2e3d;
 }
-.trades-top__item--covert {
-  background-color: #662325;
+.trades-top__item--common .trades-top__item-content::before, .trades-top__item--common .top-player__content-wrap::before, .trades-top__item--common .trades-top__item-content::after, .trades-top__item--common .top-player__content-wrap::after {
+  background-color: #5a5a65;
 }
 .trades-top__item--covert::after {
   background-color: #F34950;
@@ -15681,8 +15677,8 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--covert .trades-top__item-border::before, .trades-top__item--covert .top-player__border::before {
   background-color: #662325;
 }
-.trades-top__item--milspec {
-  background-color: #253179;
+.trades-top__item--covert .trades-top__item-content::before, .trades-top__item--covert .top-player__content-wrap::before, .trades-top__item--covert .trades-top__item-content::after, .trades-top__item--covert .top-player__content-wrap::after {
+  background-color: #F34950;
 }
 .trades-top__item--milspec::after {
   background-color: #5169F7;
@@ -15690,8 +15686,8 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--milspec .trades-top__item-border::before, .trades-top__item--milspec .top-player__border::before {
   background-color: #253179;
 }
-.trades-top__item--restricted {
-  background-color: #492976;
+.trades-top__item--milspec .trades-top__item-content::before, .trades-top__item--milspec .top-player__content-wrap::before, .trades-top__item--milspec .trades-top__item-content::after, .trades-top__item--milspec .top-player__content-wrap::after {
+  background-color: #5169F7;
 }
 .trades-top__item--restricted::after {
   background-color: #9147F6;
@@ -15699,8 +15695,8 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--restricted .trades-top__item-border::before, .trades-top__item--restricted .top-player__border::before {
   background-color: #492976;
 }
-.trades-top__item--uncommon {
-  background-color: #236266;
+.trades-top__item--restricted .trades-top__item-content::before, .trades-top__item--restricted .top-player__content-wrap::before, .trades-top__item--restricted .trades-top__item-content::after, .trades-top__item--restricted .top-player__content-wrap::after {
+  background-color: #9147F6;
 }
 .trades-top__item--uncommon::after {
   background-color: #36a2c3;
@@ -15708,8 +15704,8 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--uncommon .trades-top__item-border::before, .trades-top__item--uncommon .top-player__border::before {
   background-color: #236266;
 }
-.trades-top__item--rare {
-  background-color: #825517;
+.trades-top__item--uncommon .trades-top__item-content::before, .trades-top__item--uncommon .top-player__content-wrap::before, .trades-top__item--uncommon .trades-top__item-content::after, .trades-top__item--uncommon .top-player__content-wrap::after {
+  background-color: #36a2c3;
 }
 .trades-top__item--rare::after {
   background-color: #FFAE50;
@@ -15717,8 +15713,8 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--rare .trades-top__item-border::before, .trades-top__item--rare .top-player__border::before {
   background-color: #A96F1E;
 }
-.trades-top__item--classified {
-  background-color: #5a2366;
+.trades-top__item--rare .trades-top__item-content::before, .trades-top__item--rare .top-player__content-wrap::before, .trades-top__item--rare .trades-top__item-content::after, .trades-top__item--rare .top-player__content-wrap::after {
+  background-color: #FFAE50;
 }
 .trades-top__item--classified::after {
   background-color: #DD2CDE;
@@ -15726,14 +15722,39 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--classified .trades-top__item-border::before, .trades-top__item--classified .top-player__border::before {
   background-color: #5a2366;
 }
-.trades-top__item--gloves {
-  background-color: #4f6623;
+.trades-top__item--classified .trades-top__item-content::before, .trades-top__item--classified .top-player__content-wrap::before, .trades-top__item--classified .trades-top__item-content::after, .trades-top__item--classified .top-player__content-wrap::after {
+  background-color: #DD2CDE;
 }
 .trades-top__item--gloves::after {
   background-color: #accf5b;
 }
 .trades-top__item--gloves .trades-top__item-border::before, .trades-top__item--gloves .top-player__border::before {
   background-color: #4f6623;
+}
+.trades-top__item--gloves .trades-top__item-content::before, .trades-top__item--gloves .top-player__content-wrap::before, .trades-top__item--gloves .trades-top__item-content::after, .trades-top__item--gloves .top-player__content-wrap::after {
+  background-color: #accf5b;
+}
+
+.trades-top__item-content::before, .top-player__content-wrap::before, .roulette-item__content::before, .trades-top__item-content::after, .top-player__content-wrap::after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  top: 0;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  -webkit-filter: blur(6rem);
+          filter: blur(6rem);
+  -webkit-transform: translate(-50%, -35%);
+      -ms-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
+  z-index: 0;
+}
+.trades-top__item-content::before, .top-player__content-wrap::before {
+  width: 120%;
+  opacity: 0.46;
+}
+.trades-top__item-content::after, .top-player__content-wrap::after {
+  width: 80%;
 }
 
 .trades-top__item-border, .top-player__border {
@@ -15816,15 +15837,16 @@ main:has(.profile-header--vip-bg) {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-.trades-top__item-img {
+.trades-top__item-img, .top-player__img {
   position: relative;
   margin-top: -2%;
+  z-index: 1;
 }
 
 .trades-top__item-logo, .top-player__logo {
   position: absolute;
-  top: 46%;
-  left: 50%;
+  top: 42%;
+  left: 55%;
   width: 152%;
   aspect-ratio: 1.53;
   background: center/contain no-repeat url("../images/logos/logo-short-gr-white.svg");
@@ -15832,21 +15854,20 @@ main:has(.profile-header--vip-bg) {
       -ms-transform: translate(-50%, -50%) rotate(-15deg);
           transform: translate(-50%, -50%) rotate(-15deg);
   mix-blend-mode: overlay;
-  z-index: 0;
+  z-index: 1;
 }
 
 .trades-top__item-skin, .top-player__skin {
   width: 85%;
   height: auto;
   display: block;
-  position: relative;
   margin: 0 auto;
   text-align: center;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  z-index: 1;
+  will-change: transform;
 }
 @media (any-hover: hover) {
   .trades-top__item-skin:hover, .top-player__skin:hover {
@@ -15863,6 +15884,7 @@ main:has(.profile-header--vip-bg) {
 }
 
 .trades-top__item-title, .top-player__title {
+  position: relative;
   width: 92%;
   margin: 0 auto;
   white-space: nowrap;
@@ -15871,6 +15893,7 @@ main:has(.profile-header--vip-bg) {
 }
 
 .trades-top__item-subtitle, .top-player__subtitle {
+  position: relative;
   margin: 0.2rem auto 0;
   width: 92%;
   color: rgba(255, 255, 255, 0.3);
@@ -21181,17 +21204,14 @@ main:has(.profile-header--vip-bg) {
 .top-player {
   position: relative;
 }
-.top-player--common .top-player__content {
-  background-color: #2b2e3d;
-}
 .top-player--common .top-player__content::after {
   background-color: #5a5a65;
 }
 .top-player--common .top-player__content .top-player__border::before {
   background-color: #2b2e3d;
 }
-.top-player--covert .top-player__content {
-  background-color: #662325;
+.top-player--common .top-player__content .top-player__content-wrap::before, .top-player--common .top-player__content .top-player__content-wrap::after {
+  background-color: #5a5a65;
 }
 .top-player--covert .top-player__content::after {
   background-color: #F34950;
@@ -21199,8 +21219,8 @@ main:has(.profile-header--vip-bg) {
 .top-player--covert .top-player__content .top-player__border::before {
   background-color: #662325;
 }
-.top-player--milspec .top-player__content {
-  background-color: #253179;
+.top-player--covert .top-player__content .top-player__content-wrap::before, .top-player--covert .top-player__content .top-player__content-wrap::after {
+  background-color: #F34950;
 }
 .top-player--milspec .top-player__content::after {
   background-color: #5169F7;
@@ -21208,8 +21228,8 @@ main:has(.profile-header--vip-bg) {
 .top-player--milspec .top-player__content .top-player__border::before {
   background-color: #253179;
 }
-.top-player--restricted .top-player__content {
-  background-color: #492976;
+.top-player--milspec .top-player__content .top-player__content-wrap::before, .top-player--milspec .top-player__content .top-player__content-wrap::after {
+  background-color: #5169F7;
 }
 .top-player--restricted .top-player__content::after {
   background-color: #9147F6;
@@ -21217,8 +21237,8 @@ main:has(.profile-header--vip-bg) {
 .top-player--restricted .top-player__content .top-player__border::before {
   background-color: #492976;
 }
-.top-player--uncommon .top-player__content {
-  background-color: #236266;
+.top-player--restricted .top-player__content .top-player__content-wrap::before, .top-player--restricted .top-player__content .top-player__content-wrap::after {
+  background-color: #9147F6;
 }
 .top-player--uncommon .top-player__content::after {
   background-color: #36a2c3;
@@ -21226,8 +21246,8 @@ main:has(.profile-header--vip-bg) {
 .top-player--uncommon .top-player__content .top-player__border::before {
   background-color: #236266;
 }
-.top-player--rare .top-player__content {
-  background-color: #825517;
+.top-player--uncommon .top-player__content .top-player__content-wrap::before, .top-player--uncommon .top-player__content .top-player__content-wrap::after {
+  background-color: #36a2c3;
 }
 .top-player--rare .top-player__content::after {
   background-color: #FFAE50;
@@ -21235,8 +21255,8 @@ main:has(.profile-header--vip-bg) {
 .top-player--rare .top-player__content .top-player__border::before {
   background-color: #A96F1E;
 }
-.top-player--classified .top-player__content {
-  background-color: #5a2366;
+.top-player--rare .top-player__content .top-player__content-wrap::before, .top-player--rare .top-player__content .top-player__content-wrap::after {
+  background-color: #FFAE50;
 }
 .top-player--classified .top-player__content::after {
   background-color: #DD2CDE;
@@ -21244,14 +21264,17 @@ main:has(.profile-header--vip-bg) {
 .top-player--classified .top-player__content .top-player__border::before {
   background-color: #5a2366;
 }
-.top-player--gloves .top-player__content {
-  background-color: #4f6623;
+.top-player--classified .top-player__content .top-player__content-wrap::before, .top-player--classified .top-player__content .top-player__content-wrap::after {
+  background-color: #DD2CDE;
 }
 .top-player--gloves .top-player__content::after {
   background-color: #accf5b;
 }
 .top-player--gloves .top-player__content .top-player__border::before {
   background-color: #4f6623;
+}
+.top-player--gloves .top-player__content .top-player__content-wrap::before, .top-player--gloves .top-player__content .top-player__content-wrap::after {
+  background-color: #accf5b;
 }
 .top-player--gold .top-player__place::before {
   background-color: #DDC916;
