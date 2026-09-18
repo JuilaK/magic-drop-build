@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
         fix100vh();
         setTooltipPosition();
         toggleTableOverlay();
-        if (filtersContainer && filtersContainer.classList.contains('cases-filters--open-filters')) {
+        if (!!filtersContainer && filtersContainer.classList.contains('cases-filters--open-filters')) {
             filtersContainer.classList.remove('cases-filters--open-filters');
         }
         setBalanceBlock();
@@ -979,10 +979,6 @@ window.addEventListener('DOMContentLoaded', () => {
             }, 300);
         } else if (!!caseContainerMagic) {
             caseContainerMagic.classList.add("open");
-            setTimeout(() => {
-                caseHero.style.display = 'none';
-                caseRoulette.style.display = 'flex';
-            }, 3300);
         }
     });
     //END Open case
