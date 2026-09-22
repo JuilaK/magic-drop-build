@@ -13515,22 +13515,12 @@ span.draw-item__start-price svg {
   line-height: 128.5%;
 }
 
-main:has(.roulettes-list--1 ~ .win--open):not(:has(.case-free, .js-case-container-magic)) .skins-slider .section-title,
-main:has(.roulettes-list--1 ~ .win--open):not(:has(.case-free, .js-case-container-magic)) .skins-list__tabs,
 main:has(.roulettes-list--2 ~ .win--open):not(:has(.case-free, .js-case-container-magic)) .skins-slider .section-title,
 main:has(.roulettes-list--2 ~ .win--open):not(:has(.case-free, .js-case-container-magic)) .skins-list__tabs {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
   transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
-}
-
-@media (max-width: 1024px) {
-  main:has(.roulettes-list--1 ~ .win--open):not(:has(.case-free, .js-case-container-magic)) .skins-slider .section-title,
-  main:has(.roulettes-list--1 ~ .win--open):not(:has(.case-free, .js-case-container-magic)) .skins-list__tabs {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -13541,19 +13531,11 @@ main:has(.roulettes-list--2 ~ .win--open):not(:has(.case-free, .js-case-containe
   }
 }
 
-main:has(.js-case-container-magic .roulettes-list--1 ~ .win--open) .case-text,
 main:has(.js-case-container-magic .roulettes-list--2 ~ .win--open) .case-text {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
   transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
-}
-
-@media (max-width: 1024px) {
-  main:has(.js-case-container-magic .roulettes-list--1 ~ .win--open) .case-text {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 @media (max-width: 1280px) {
