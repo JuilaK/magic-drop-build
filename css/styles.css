@@ -11030,6 +11030,9 @@ span.draw-item__start-price svg {
   top: calc(100% - 3.2rem);
   padding: 0;
   background: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out 0.3s;
+  transition: opacity 0.5s ease-out 0.3s;
 }
 @media (max-width: 1024px) {
   .case-hero--roulette-1 .win__list {
@@ -11168,6 +11171,9 @@ span.draw-item__start-price svg {
   transition: opacity 0.5s ease-out;
 }
 .case-hero--roulette-1 .win--open {
+  opacity: 1;
+}
+.case-hero--roulette-1 .win--open .win__btns {
   opacity: 1;
 }
 .case-hero--roulette-1 .win--open .win__item {
