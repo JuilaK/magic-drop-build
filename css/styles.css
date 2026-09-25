@@ -15834,17 +15834,21 @@ main:has(.profile-header--vip-bg) {
 }
 
 .trades-top__item-logo, .top-player__logo {
+  z-index: 1;
+}
+.trades-top__item-logo::before, .top-player__logo::before {
   position: absolute;
   top: 42%;
   left: 55%;
   width: 152%;
   aspect-ratio: 1.53;
+  content: "";
   background: center/contain no-repeat url("../images/logos/logo-short-gr-white.svg");
   -webkit-transform: translate(-50%, -50%) rotate(-15deg);
       -ms-transform: translate(-50%, -50%) rotate(-15deg);
           transform: translate(-50%, -50%) rotate(-15deg);
   mix-blend-mode: overlay;
-  z-index: 1;
+  will-change: transform;
 }
 
 .trades-top__item-skin, .top-player__skin {
