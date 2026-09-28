@@ -116,6 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 autoplay: true,
                 speed: 2000,
                 interval: 4000,
+                updateOnMove: true
             } );
             giveawaysSplide.mount();
         }
