@@ -15594,6 +15594,17 @@ main:has(.profile-header--vip-bg) {
   mix-blend-mode: luminosity;
 }
 
+.trade__quality {
+  font-size: 1.2rem;
+}
+
+.trade__phase {
+  padding: 0.4rem 0.6rem;
+  background-color: rgba(12, 12, 27, 0.7);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+
 .trade__name {
   color: #8484A7;
   font-size: 1.4rem;
