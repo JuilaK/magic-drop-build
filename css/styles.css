@@ -25102,15 +25102,34 @@ main:has(.profile-header--vip-bg) {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 3.8rem 6rem;
-  max-width: 44rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 8rem 3.2rem 6.4rem;
+  max-width: 40rem;
   pointer-events: none;
   z-index: 1000;
 }
+@media (max-width: 1280px) {
+  .notifications {
+    padding: 8rem 1.6rem 6.4rem;
+  }
+}
 @media (max-width: 1024px) {
   .notifications {
-    padding: 2.4rem 1.6rem;
     max-width: 35.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .notifications {
+    padding-top: 6.4rem;
   }
 }
 
@@ -25220,6 +25239,65 @@ main:has(.profile-header--vip-bg) {
           box-shadow: 0 0 1.6rem 0 #181825, 0 0.2rem 0 0 #181825 inset, 0 -0.2rem 0 0 #141421 inset, 0 0.2rem 0 0 rgba(255, 255, 255, 0.03) inset;
   text-align: center;
 }
+.notification--new {
+  width: 130%;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
+  padding-right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121f));
+  background: linear-gradient(180deg, #161622 0%, #12121f 100%);
+  border: none;
+  -webkit-filter: none;
+          filter: none;
+}
+@media (max-width: 480px) {
+  .notification--new {
+    width: 100%;
+  }
+}
+.notification--new .notification__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  z-index: 1;
+}
+.notification--new .notification__title {
+  width: 100%;
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.notification--new .notification__link {
+  height: 4.2rem;
+  padding: 0 1.4rem;
+}
+.notification--new .notification__link span {
+  color: #161119;
+  font-weight: 700;
+}
+.notification--new .notification__img {
+  width: 25.4rem;
+  height: 18.4rem;
+  margin: -5rem 0 -2rem -4rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-bottom-right-radius: 0.8rem;
+  overflow: clip;
+}
+@media (max-width: 480px) {
+  .notification--new .notification__img {
+    width: 60%;
+    height: 13rem;
+  }
+}
+.notification--new .notification__img img {
+  width: 140%;
+  height: 140%;
+  -webkit-transform: translate(5%, 0);
+      -ms-transform: translate(5%, 0);
+          transform: translate(5%, 0);
+}
 
 .notification__close-btn {
   position: absolute;
@@ -25232,6 +25310,7 @@ main:has(.profile-header--vip-bg) {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 @media (any-hover: hover) {
   .notification__close-btn:hover .notification__close-btn-icon {
