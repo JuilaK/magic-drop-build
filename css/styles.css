@@ -15839,6 +15839,7 @@ main:has(.profile-header--vip-bg) {
   border: thin solid #1d1d2d;
   border-radius: 1.2rem;
   overflow: hidden;
+  isolation: isolate;
 }
 .trades-top__item::before, .top-player__content::before {
   position: absolute;
@@ -16055,6 +16056,7 @@ main:has(.profile-header--vip-bg) {
 
 .trades-top__item-logo, .top-player__logo {
   z-index: 1;
+  pointer-events: none;
 }
 .trades-top__item-logo::before, .top-player__logo::before {
   position: absolute;
@@ -16064,11 +16066,11 @@ main:has(.profile-header--vip-bg) {
   aspect-ratio: 1.53;
   content: "";
   background: center/contain no-repeat url("../images/logos/logo-short-gr-white.svg");
-  -webkit-transform: translate(-50%, -50%) rotate(-15deg);
-      -ms-transform: translate(-50%, -50%) rotate(-15deg);
-          transform: translate(-50%, -50%) rotate(-15deg);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-15deg);
+          transform: translate3d(-50%, -50%, 0) rotate(-15deg);
   mix-blend-mode: overlay;
-  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .trades-top__item-skin, .top-player__skin {
