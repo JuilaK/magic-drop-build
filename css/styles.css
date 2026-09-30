@@ -9677,11 +9677,14 @@ span.draw-item__start-price svg {
             transform: rotate(5deg) scale(1.02);
   }
 }
+.skin--case-content .skin__phase {
+  position: static;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
 .skin--case-content .skin__quality {
-  bottom: 5.8rem;
-  left: auto;
-  right: 1.4rem;
-  top: auto;
+  position: static;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
@@ -9701,19 +9704,17 @@ span.draw-item__start-price svg {
 .skin--inventory .skin__content {
   padding: 2.4rem 1.2rem 1.6rem;
 }
+.skin--inventory .skin__phase {
+  position: static;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
 .skin--inventory .skin__quality {
-  bottom: 5.6rem;
-  left: auto;
-  right: 1.4rem;
-  top: auto;
+  position: static;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-}
-@media (max-width: 768px) {
-  .skin--inventory .skin__quality {
-    bottom: 5.4rem;
-  }
 }
 .skin--inventory .skin__price svg {
   width: 1.8rem;
@@ -9985,28 +9986,55 @@ span.draw-item__start-price svg {
   }
 }
 .skin__case img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.skin__phase {
+.skin__params {
   position: relative;
   z-index: 1;
 }
-.skin__phase > span {
+
+.skin__params-wrap {
   position: absolute;
   left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+  -webkit-transform: translate(-50%, calc(-100% - 0.1rem));
+      -ms-transform: translate(-50%, calc(-100% - 0.1rem));
+          transform: translate(-50%, calc(-100% - 0.1rem));
+}
+
+.skin__phase {
   display: inline-block;
   padding: 0.4rem 0.6rem;
   background-color: rgba(12, 12, 27, 0.7);
   border-radius: 0.7rem;
   font-size: 1.1rem;
-  -webkit-transform: translate(-50%, calc(-100% - 0.1rem));
-      -ms-transform: translate(-50%, calc(-100% - 0.1rem));
-          transform: translate(-50%, calc(-100% - 0.1rem));
+}
+
+.skin__quality {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 1.2rem;
+  font-size: 1.1rem;
+  z-index: 1;
 }
 
 .skin__title,
@@ -10243,6 +10271,21 @@ span.draw-item__start-price svg {
   right: 1.2rem;
   z-index: 2;
 }
+.skin__tooltip::before {
+  border-color: #202031 transparent transparent;
+}
+@media (any-hover: hover) {
+  .skin__tooltip:hover .tooltip__toggle {
+    opacity: 0.7;
+  }
+}
+.skin__tooltip .tooltip__toggle {
+  opacity: 0.4;
+}
+.skin__tooltip .tooltip__body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 71, 0.8)), to(#202031));
+  background: linear-gradient(180deg, rgba(54, 54, 71, 0.8) 0%, #202031 100%);
+}
 
 .skin__controls {
   position: absolute;
@@ -10253,8 +10296,21 @@ span.draw-item__start-price svg {
           column-gap: 0.4rem;
   z-index: 2;
 }
+.skin__controls .tooltip::before {
+  border-color: #202031 transparent transparent;
+}
+@media (any-hover: hover) {
+  .skin__controls .tooltip:hover .tooltip__toggle {
+    opacity: 0.7;
+  }
+}
 .skin__controls .tooltip__toggle {
   font-size: 0;
+  opacity: 0.4;
+}
+.skin__controls .tooltip__body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 71, 0.8)), to(#202031));
+  background: linear-gradient(180deg, rgba(54, 54, 71, 0.8) 0%, #202031 100%);
 }
 .skin__controls .tooltip + .tooltip {
   margin-top: 0.2rem;
