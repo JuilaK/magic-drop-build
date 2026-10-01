@@ -9507,6 +9507,9 @@ span.draw-item__start-price svg {
 .skin--common .skin__content::before, .skin--common .skin__content::after {
   background-color: #5a5a65;
 }
+.skin--common .skin__logo {
+  background-image: url("../images/skins/logo-common.svg");
+}
 .skin--common .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#45454f), to(rgba(69, 69, 79, 0)));
   background: linear-gradient(-90deg, #45454f 0%, rgba(69, 69, 79, 0) 100%);
@@ -9528,6 +9531,9 @@ span.draw-item__start-price svg {
 }
 .skin--covert .skin__content::before, .skin--covert .skin__content::after {
   background-color: #F34950;
+}
+.skin--covert .skin__logo {
+  background-image: url("../images/skins/logo-covert.svg");
 }
 .skin--covert .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#db101c), to(rgba(117, 9, 15, 0)));
@@ -9551,6 +9557,9 @@ span.draw-item__start-price svg {
 .skin--milspec .skin__content::before, .skin--milspec .skin__content::after {
   background-color: #5169F7;
 }
+.skin--milspec .skin__logo {
+  background-image: url("../images/skins/logo-milspec.svg");
+}
 .skin--milspec .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#1023db), to(rgba(16, 35, 219, 0)));
   background: linear-gradient(-90deg, #1023db 0%, rgba(16, 35, 219, 0) 100%);
@@ -9572,6 +9581,9 @@ span.draw-item__start-price svg {
 }
 .skin--restricted .skin__content::before, .skin--restricted .skin__content::after {
   background-color: #9147F6;
+}
+.skin--restricted .skin__logo {
+  background-image: url("../images/skins/logo-restricted.svg");
 }
 .skin--restricted .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#5110dc), to(rgba(81, 16, 220, 0)));
@@ -9595,6 +9607,9 @@ span.draw-item__start-price svg {
 .skin--uncommon .skin__content::before, .skin--uncommon .skin__content::after {
   background-color: #36a2c3;
 }
+.skin--uncommon .skin__logo {
+  background-image: url("../images/skins/logo-uncommon.svg");
+}
 .skin--uncommon .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#01c0fd), to(rgba(1, 192, 253, 0)));
   background: linear-gradient(-90deg, #01c0fd 0%, rgba(1, 192, 253, 0) 100%);
@@ -9615,6 +9630,9 @@ span.draw-item__start-price svg {
 }
 .skin--rare .skin__content::before, .skin--rare .skin__content::after {
   background-color: #FFAE50;
+}
+.skin--rare .skin__logo {
+  background-image: url("../images/skins/logo-rare.svg");
 }
 .skin--rare .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#fcf201), to(rgba(117, 93, 9, 0)));
@@ -9637,6 +9655,9 @@ span.draw-item__start-price svg {
 .skin--classified .skin__content::before, .skin--classified .skin__content::after {
   background-color: #DD2CDE;
 }
+.skin--classified .skin__logo {
+  background-image: url("../images/skins/logo-classified.svg");
+}
 .skin--classified .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#f701fc), to(rgba(117, 9, 100, 0)));
   background: linear-gradient(-90deg, #f701fc 0%, rgba(117, 9, 100, 0) 100%);
@@ -9658,6 +9679,9 @@ span.draw-item__start-price svg {
 }
 .skin--gloves .skin__content::before, .skin--gloves .skin__content::after {
   background-color: #accf5b;
+}
+.skin--gloves .skin__logo {
+  background-image: url("../images/skins/logo-gloves.svg");
 }
 .skin--gloves .skin__badge {
   background: -webkit-gradient(linear, right top, left top, from(#83BC00), to(rgba(117, 9, 100, 0)));
@@ -9879,23 +9903,11 @@ span.draw-item__start-price svg {
   left: 55%;
   width: 152%;
   aspect-ratio: 1.53;
-  background: center/contain no-repeat url("../images/logos/logo-short-gr-white.svg");
-  -webkit-transform: translate(-50%, -50%) rotate(-15deg);
-      -ms-transform: translate(-50%, -50%) rotate(-15deg);
-          transform: translate(-50%, -50%) rotate(-15deg);
-  mix-blend-mode: overlay;
-  z-index: 1;
-}
-
-.skin__quality {
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  position: absolute;
-  left: 50%;
-  top: 1.2rem;
-  font-size: 1.1rem;
-  z-index: 1;
+  background: center/contain no-repeat url("../images/skins/logo-common.svg");
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-15deg);
+          transform: translate3d(-50%, -50%, 0) rotate(-15deg);
+  pointer-events: none;
+  opacity: 0.7;
 }
 
 .skin__badge {
@@ -16485,6 +16497,9 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--common .trades-top__item-content::before, .trades-top__item--common .top-player__content-wrap::before, .trades-top__item--common .trades-top__item-content::after, .trades-top__item--common .top-player__content-wrap::after {
   background-color: #5a5a65;
 }
+.trades-top__item--common .trades-top__item-logo, .trades-top__item--common .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-common.svg");
+}
 .trades-top__item--covert::after {
   background-color: #F34950;
 }
@@ -16494,6 +16509,9 @@ main:has(.profile-header--vip-bg) {
 }
 .trades-top__item--covert .trades-top__item-content::before, .trades-top__item--covert .top-player__content-wrap::before, .trades-top__item--covert .trades-top__item-content::after, .trades-top__item--covert .top-player__content-wrap::after {
   background-color: #F34950;
+}
+.trades-top__item--covert .trades-top__item-logo, .trades-top__item--covert .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-covert.svg");
 }
 .trades-top__item--milspec::after {
   background-color: #5169F7;
@@ -16505,6 +16523,9 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--milspec .trades-top__item-content::before, .trades-top__item--milspec .top-player__content-wrap::before, .trades-top__item--milspec .trades-top__item-content::after, .trades-top__item--milspec .top-player__content-wrap::after {
   background-color: #5169F7;
 }
+.trades-top__item--milspec .trades-top__item-logo, .trades-top__item--milspec .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-milspec.svg");
+}
 .trades-top__item--restricted::after {
   background-color: #9147F6;
 }
@@ -16514,6 +16535,9 @@ main:has(.profile-header--vip-bg) {
 }
 .trades-top__item--restricted .trades-top__item-content::before, .trades-top__item--restricted .top-player__content-wrap::before, .trades-top__item--restricted .trades-top__item-content::after, .trades-top__item--restricted .top-player__content-wrap::after {
   background-color: #9147F6;
+}
+.trades-top__item--restricted .trades-top__item-logo, .trades-top__item--restricted .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-restricted.svg");
 }
 .trades-top__item--uncommon::after {
   background-color: #36a2c3;
@@ -16525,6 +16549,9 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--uncommon .trades-top__item-content::before, .trades-top__item--uncommon .top-player__content-wrap::before, .trades-top__item--uncommon .trades-top__item-content::after, .trades-top__item--uncommon .top-player__content-wrap::after {
   background-color: #36a2c3;
 }
+.trades-top__item--uncommon .trades-top__item-logo, .trades-top__item--uncommon .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-uncommon.svg");
+}
 .trades-top__item--rare::after {
   background-color: #FFAE50;
 }
@@ -16534,6 +16561,9 @@ main:has(.profile-header--vip-bg) {
 }
 .trades-top__item--rare .trades-top__item-content::before, .trades-top__item--rare .top-player__content-wrap::before, .trades-top__item--rare .trades-top__item-content::after, .trades-top__item--rare .top-player__content-wrap::after {
   background-color: #FFAE50;
+}
+.trades-top__item--rare .trades-top__item-logo, .trades-top__item--rare .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-rare.svg");
 }
 .trades-top__item--classified::after {
   background-color: #DD2CDE;
@@ -16545,6 +16575,9 @@ main:has(.profile-header--vip-bg) {
 .trades-top__item--classified .trades-top__item-content::before, .trades-top__item--classified .top-player__content-wrap::before, .trades-top__item--classified .trades-top__item-content::after, .trades-top__item--classified .top-player__content-wrap::after {
   background-color: #DD2CDE;
 }
+.trades-top__item--classified .trades-top__item-logo, .trades-top__item--classified .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-classified.svg");
+}
 .trades-top__item--gloves::after {
   background-color: #accf5b;
 }
@@ -16554,6 +16587,9 @@ main:has(.profile-header--vip-bg) {
 }
 .trades-top__item--gloves .trades-top__item-content::before, .trades-top__item--gloves .top-player__content-wrap::before, .trades-top__item--gloves .trades-top__item-content::after, .trades-top__item--gloves .top-player__content-wrap::after {
   background-color: #accf5b;
+}
+.trades-top__item--gloves .trades-top__item-logo, .trades-top__item--gloves .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-gloves.svg");
 }
 
 .trades-top__item-content::before, .top-player__content-wrap::before, .trades-top__item-content::after, .top-player__content-wrap::after {
@@ -16666,22 +16702,16 @@ main:has(.profile-header--vip-bg) {
 }
 
 .trades-top__item-logo, .top-player__logo {
-  z-index: 1;
-  pointer-events: none;
-}
-.trades-top__item-logo::before, .top-player__logo::before {
   position: absolute;
   top: 42%;
   left: 55%;
   width: 152%;
   aspect-ratio: 1.53;
-  content: "";
-  background: center/contain no-repeat url("../images/logos/logo-short-gr-white.svg");
+  background: center/contain no-repeat url("../images/skins/logo-common.svg");
   -webkit-transform: translate3d(-50%, -50%, 0) rotate(-15deg);
           transform: translate3d(-50%, -50%, 0) rotate(-15deg);
-  mix-blend-mode: overlay;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  pointer-events: none;
+  opacity: 0.7;
 }
 
 .trades-top__item-skin, .top-player__skin {
@@ -22073,6 +22103,9 @@ main:has(.profile-header--vip-bg) {
 .top-player--common .top-player__content .top-player__content-wrap::before, .top-player--common .top-player__content .top-player__content-wrap::after {
   background-color: #5a5a65;
 }
+.top-player--common .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-common.svg");
+}
 .top-player--covert .top-player__content::after {
   background-color: #F34950;
 }
@@ -22082,6 +22115,9 @@ main:has(.profile-header--vip-bg) {
 }
 .top-player--covert .top-player__content .top-player__content-wrap::before, .top-player--covert .top-player__content .top-player__content-wrap::after {
   background-color: #F34950;
+}
+.top-player--covert .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-covert.svg");
 }
 .top-player--milspec .top-player__content::after {
   background-color: #5169F7;
@@ -22093,6 +22129,9 @@ main:has(.profile-header--vip-bg) {
 .top-player--milspec .top-player__content .top-player__content-wrap::before, .top-player--milspec .top-player__content .top-player__content-wrap::after {
   background-color: #5169F7;
 }
+.top-player--milspec .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-milspec.svg");
+}
 .top-player--restricted .top-player__content::after {
   background-color: #9147F6;
 }
@@ -22102,6 +22141,9 @@ main:has(.profile-header--vip-bg) {
 }
 .top-player--restricted .top-player__content .top-player__content-wrap::before, .top-player--restricted .top-player__content .top-player__content-wrap::after {
   background-color: #9147F6;
+}
+.top-player--restricted .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-restricted.svg");
 }
 .top-player--uncommon .top-player__content::after {
   background-color: #36a2c3;
@@ -22113,6 +22155,9 @@ main:has(.profile-header--vip-bg) {
 .top-player--uncommon .top-player__content .top-player__content-wrap::before, .top-player--uncommon .top-player__content .top-player__content-wrap::after {
   background-color: #36a2c3;
 }
+.top-player--uncommon .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-uncommon.svg");
+}
 .top-player--rare .top-player__content::after {
   background-color: #FFAE50;
 }
@@ -22122,6 +22167,9 @@ main:has(.profile-header--vip-bg) {
 }
 .top-player--rare .top-player__content .top-player__content-wrap::before, .top-player--rare .top-player__content .top-player__content-wrap::after {
   background-color: #FFAE50;
+}
+.top-player--rare .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-rare.svg");
 }
 .top-player--classified .top-player__content::after {
   background-color: #DD2CDE;
@@ -22133,6 +22181,9 @@ main:has(.profile-header--vip-bg) {
 .top-player--classified .top-player__content .top-player__content-wrap::before, .top-player--classified .top-player__content .top-player__content-wrap::after {
   background-color: #DD2CDE;
 }
+.top-player--classified .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-classified.svg");
+}
 .top-player--gloves .top-player__content::after {
   background-color: #accf5b;
 }
@@ -22142,6 +22193,9 @@ main:has(.profile-header--vip-bg) {
 }
 .top-player--gloves .top-player__content .top-player__content-wrap::before, .top-player--gloves .top-player__content .top-player__content-wrap::after {
   background-color: #accf5b;
+}
+.top-player--gloves .top-player__content .top-player__logo {
+  background: center/contain no-repeat url("../images/skins/logo-gloves.svg");
 }
 .top-player--gold .top-player__place::before {
   background-color: #DDC916;
