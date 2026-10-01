@@ -15657,8 +15657,13 @@ main:has(.profile-header--vip-bg) {
 .trade__phase {
   padding: 0.4rem 0.6rem;
   background-color: rgba(12, 12, 27, 0.7);
-  border-radius: 0.7rem;
+  border-radius: 0.4rem;
   font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .trade__phase {
+    font-size: 1.1rem;
+  }
 }
 
 .trade__name {
