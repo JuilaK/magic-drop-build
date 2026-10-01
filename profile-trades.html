@@ -1184,150 +1184,179 @@
 </header>
     <main>
         <div class="container-sm">
-    <div class="profile-header profile-header--vip ">
-        <div class="profile-header__left-part">
-            <div class="profile-header__user">
-                <div class="profile-header__avatar-wrap">
-                    <a href=".#" class="profile-header__avatar">
-                        <picture>
-                            <source srcset="./images/avatar.webp" type="image/webp">
-                            <img src="./images/avatar.jpg" class="image" alt="Avatar">
-                        </picture>
-                    </a>
-                    
-                        <span class="profile-header__avatar-vip">VIP</span>
-                    
-                </div>
-                <div>
-                    <div class="profile-header__user-info">
-                        <a href=".#" class="profile-header__steam-link">
-                            <img src="./images/svg/steam-yellow.svg" alt="" aria-hidden="true">
+    <div class="profile-header  ">
+        <div class="profile-header__content">
+            <div class="profile-header__left-part">
+                <div class="profile-header__user">
+                    <div class="profile-header__avatar-wrap">
+                        <a href=".#" class="profile-header__avatar">
+                            <picture>
+                                <source srcset="./images/avatar.webp" type="image/webp">
+                                <img src="./images/avatar.jpg" class="image" alt="Avatar">
+                            </picture>
                         </a>
-                        <a href=".#" class="profile-header__user-name">Aleksandr</a>
+                        
+                            <span class="profile-header__avatar-vip">VIP</span>
+                        
                     </div>
-                    <span class="profile-header__user-id">
-                        ID: <span>1750572</span>
-                        <button type="button" class="profile-header__copy-btn">
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#copy"></use>
-                            </svg>
-                            Копировать
-                        </button>
-                    </span>
-                    <div class="profile-header__user-date">Присоединился <span>02.07.2024</span></div>
-                    <div class="profile-header__btns">
-                        <button type="button" class="btn btn--sm" data-modal-trigger="settings">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#settings-2"></use>
-                            </svg>
-                            Трейд-ссылка
-                        </button>
-                        <button type="button" class="btn btn--sm" data-modal-trigger="promocode">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#discount"></use>
-                            </svg>
-                            Активировать промокод
-                        </button>
-                        <button type="button" class="btn btn--sm" data-modal-trigger="currency">
-                            <svg aria-hidden="true" class="dark-grey">
-                                <use xlink:href="images/sprite.svg#coins-swap"></use>
-                            </svg>
-                            Изменить валюту
-                        </button>
-                        <button type="button" class="btn btn--sm">
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#telegram"></use>
-                            </svg>
-                            Telegram
-                        </button>
-                        
-                            <button type="button" class="btn btn--sm btn--gr-yellow">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#telegram"></use>
+                    <div class="profile-header__user-wrap">
+                        <div class="profile-header__user-header">
+                            <div class="profile-header__user-info">
+                                <a href=".#" class="profile-header__steam-link">
+                                    <img src="./images/svg/steam-yellow.svg" alt="" aria-hidden="true">
+                                </a>
+                                <a href=".#" class="profile-header__user-name">Aleksandr</a>
+                            </div>
+                            <div class="profile-header__user-btns">
+                                <button type="button" class="btn btn--icon" data-modal-trigger="currency">
+                                    <svg aria-hidden="true" class="grey">
+                                        <use xlink:href="images/sprite.svg#settings-2"></use>
+                                    </svg>
+                                    Настройки
+                                </button>
+                                <button type="button" class="btn btn--icon">
+                                    <svg aria-hidden="true" class="grey">
+                                        <use xlink:href="images/sprite.svg#logout"></use>
+                                    </svg>
+                                    Выход
+                                </button>
+                            </div>
+                        </div>
+                        <span class="profile-header__user-id">
+                            ID: <span>1750572</span>
+                            <button type="button" class="profile-header__copy-btn">
+                                <svg aria-hidden="true" class="grey">
+                                    <use xlink:href="images/sprite.svg#copy-2"></use>
                                 </svg>
-                                <span>VIP</span>
+                                Копировать
                             </button>
-                        
-                        <button type="button" class="btn btn--sm btn--grey">
-                            <svg aria-hidden="true" class="white">
-                                <use xlink:href="images/sprite.svg#logout"></use>
-                            </svg>
-                            Выход
-                        </button>
+                        </span>
+                        <div class="profile-header__user-date">Присоединился <span>02.07.2024</span></div>
+                        <div class="profile-header__btns">
+                            <button type="button" class="btn" data-modal-trigger="settings">
+                                <svg aria-hidden="true" class="grey">
+                                    <use xlink:href="images/sprite.svg#steam"></use>
+                                </svg>
+                                Трейд-ссылка
+                            </button>
+                            <button type="button" class="btn">
+                                <svg aria-hidden="true" class="grey">
+                                    <use xlink:href="images/sprite.svg#telegram-2"></use>
+                                </svg>
+                                Привязать TG
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <ul class="profile-header__params-list">
+                    <li class="profile-header__param">
+                        <div class="profile-header__param-svg">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#cases-yellow"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="profile-header__param-numb">1.570</span>
+                            <span class="profile-header__param-title">Cases</span>
+                        </div>
+                    </li>
+                    <li class="profile-header__param">
+                        <div class="profile-header__param-svg">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#upgrade-yellow"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="profile-header__param-numb">240</span>
+                            <span class="profile-header__param-title">Upgrade</span>
+                        </div>
+                    </li>
+                    <li class="profile-header__param">
+                        <div class="profile-header__param-svg">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#contracts-yellow"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="profile-header__param-numb">301</span>
+                            <span class="profile-header__param-title">Contracts</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-header__case">
+                <div class="profile-header__case-blur">
+                    <picture>
+                        <source srcset="./images/cases/ruby.webp" type="image/webp">
+                        <img src="./images/cases/ruby.png" width="300" height="300" alt="Рубиновый кейс">
+                    </picture>
+                </div>
+                <div class="profile-header__case-img">
+                    <picture>
+                        <source srcset="./images/cases/ruby.webp" type="image/webp">
+                        <img src="./images/cases/ruby.png" width="300" height="300" alt="Рубиновый кейс">
+                    </picture>
+                </div>
+                <span class="profile-header__case-title">Лучший кейс</span>
+                <h2 class="profile-header__case-name">Рубиновый</h2>
+                <a href="#" class="profile-header__case-link btn btn--gr-yellow"><span>Открыть кейс</span></a>
+            </div>
+            <div class="profile-header__promo">
+                <div class="profile-header__total">
+                    <span class="profile-header__total-title">Выведено</span>
+                    <span class="profile-header__total-sum">
+                        <span>1929.32</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
+                        </svg>
+                    </span>
+                    <div class="profile-header__total-items">
+                        <span>10</span> предметов
+                    </div>
+                </div>
+                <form action="" class="profile-header__promocode">
+                    <input type="text" placeholder="Введите промокод">
+                    <button type="button">Активировать</button>
+                </form>
             </div>
         </div>
-        <ul class="profile-header__params-list">
-            <li class="profile-header__param">
-                <div class="profile-header__param-svg">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#cases-yellow"></use>
-                    </svg>
-                </div>
-                <span class="profile-header__param-numb">1.570</span>
-                <span class="profile-header__param-title">Cases</span>
-            </li>
-            <li class="profile-header__param">
-                <div class="profile-header__param-svg">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#contracts-yellow"></use>
-                    </svg>
-                </div>
-                <span class="profile-header__param-numb">301</span>
-                <span class="profile-header__param-title">Contracts</span>
-            </li>
-            <li class="profile-header__param">
-                <div class="profile-header__param-svg">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#upgrade-yellow"></use>
-                    </svg>
-                </div>
-                <span class="profile-header__param-numb">240</span>
-                <span class="profile-header__param-title">Upgrade</span>
-            </li>
-            <li class="profile-header__param">
-                <div class="profile-header__param-svg">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#live-trades-yellow"></use>
-                    </svg>
-                </div>
-                <span class="profile-header__param-numb">107</span>
-                <span class="profile-header__param-title">Live trades</span>
-            </li>
-            <!-- <li class="profile-header__param">
-                <div class="profile-header__param-svg">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#battles-yellow"></use>
-                    </svg>
-                </div>
-                <span class="profile-header__param-numb">32</span>
-                <span class="profile-header__param-title">Battles</span>
-            </li> -->
-        </ul>
         
-            <div class="profile-header__progress">
-                <div>
-                    <span class="profile-header__balance-title">Баланс:</span>
-                    <span class="profile-header__balance-total">
-                        <picture>
-                            <source srcset="./images/magic-coin.webp" type="image/webp">
-                            <img src="./images/magic-coin.png" width="48" height="48" alt="" aria-hidden="true">
-                        </picture>
-                        <span>370</span>
-                    </span>
-                </div>
-                <div>
-                    <span class="profile-header__level"><span>2</span> Уровень</span>
+            <div class="profile-header__vip">
+                <div class="profile-header__progress">
                     <div>
-                        <span  class="profile-header__level-text">До следующего уровня:</span>
-                        <span class="profile-header__level-money">
-                            <span>480</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                            </svg>
+                        <span class="profile-header__level"><span>2</span> Уровень</span>
+                        <div>
+                            <span  class="profile-header__level-text">До следующего уровня:</span>
+                            <span class="profile-header__level-money">
+                                <span>480</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                                </svg>
+                            </span>
+                            <div class="profile-header__progress-total">
+                                <div class="profile-header__progress-current" style="width:60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-header__balance">
+                        <span class="profile-header__balance-title">Баланс:</span>
+                        <span class="profile-header__balance-total">
+                            <picture>
+                                <source srcset="./images/magic-coin.webp" type="image/webp">
+                                <img src="./images/magic-coin.png" width="48" height="48" alt="" aria-hidden="true">
+                            </picture>
+                            <span>370</span>
                         </span>
                     </div>
+                </div>
+                <div class="profile-header__vip-tg">
+                    <p class="profile-header__vip-tg-title">Канал для VIP игроков</p>
+                    <a href="#" class="profile-header__vip-tg-btn btn">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#telegram-2"></use>
+                        </svg>
+                        TELEGRAM
+                    </a>
                 </div>
             </div>
         
@@ -2054,34 +2083,6 @@
                             <use xlink:href="images/sprite.svg#file-check-blue"></use>
                         </svg>
                         Сохранить
-                    </button>
-                    <button type="button" class="btn js-modal-close">
-                        <svg aria-hidden="true" class="dark-grey">
-                            <use xlink:href="images/sprite.svg#close-circle"></use>
-                        </svg>
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="modal js-modal" data-modal-name="promocode">
-    <div class="modal__wrap">
-        <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
-            <button type="button" class="modal__close-btn js-modal-close">
-                Закрыть модальное окно
-                <span class="modal__close-btn-icon"></span>
-            </button>
-            <div class="modal__content">
-                <h2 class="modal__title">Введите промокод</h2>
-                <input type="text" placeholder="Промокод" class="mt-32">
-                <div class="modal__btns">
-                    <button type="button" class="btn btn--bg-blue js-modal-close">
-                        <svg aria-hidden="true" class="dark-grey">
-                            <use xlink:href="images/sprite.svg#file-check-blue"></use>
-                        </svg>
-                        Активировать
                     </button>
                     <button type="button" class="btn js-modal-close">
                         <svg aria-hidden="true" class="dark-grey">
