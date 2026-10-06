@@ -16869,12 +16869,24 @@ main:has(.profile-header--vip-bg) {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+@media (max-width: 480px) {
+  .upgrade-card__body {
+    -webkit-column-gap: 0.2rem;
+       -moz-column-gap: 0.2rem;
+            column-gap: 0.2rem;
+  }
+}
 
 .upgrade-card__skin {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 31%;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .upgrade-card__skin {
+    width: 32%;
+  }
 }
 .upgrade-card__skin::after {
   position: absolute;
@@ -16992,7 +17004,9 @@ main:has(.profile-header--vip-bg) {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  font-size: 1.6rem;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
   padding: 0.4rem 0.6rem;
   background: rgba(12, 12, 27, 0.55);
   -webkit-backdrop-filter: blur(0.2rem);
@@ -17000,32 +17014,29 @@ main:has(.profile-header--vip-bg) {
   border-radius: 0.8rem;
   white-space: nowrap;
 }
-@media (max-width: 480px) {
-  .upgrade-card__skin-price {
-    font-size: 1rem;
-  }
-}
 .upgrade-card__skin-price span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   white-space: nowrap;
 }
 @media (max-width: 480px) {
   .upgrade-card__skin-price span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .upgrade-card__skin-price svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 1.8rem;
-          flex: 0 0 1.8rem;
+      -ms-flex: 0 0 1.6rem;
+          flex: 0 0 1.6rem;
   margin-right: 0.2rem;
 }
 @media (max-width: 480px) {
   .upgrade-card__skin-price svg {
     width: 1.2rem;
     height: 1.2rem;
+    -ms-flex-preferred-size: 1.2rem;
+        flex-basis: 1.2rem;
   }
 }
 
