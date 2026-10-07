@@ -1300,6 +1300,31 @@
                     </div>
                 </div>
             </div> 
+            <div class="upgrade__modal js-modal" data-modal-name="upgrade-agreement">
+                <div class="upgrade__modal-dialog js-modal-dialog" role="dialog" aria-modal="true">
+                    <button type="button" class="modal__close-btn js-modal-close">
+                        Закрыть модальное окно
+                        <span class="modal__close-btn-icon"></span>
+                    </button>
+                    <p class="upgrade__modal-text">Вы собираетесь использовать
+                        <span class="upgrade__modal-sum">
+                            <span>10 000</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
+                            </svg>
+                        </span>
+                        в этом апгрейде, что составляет более 50% вашего баланса.
+                    </p>
+                    <p class="upgrade__modal-text">Вы уверены, что хотите продолжить?</p>
+                    <label class="upgrade__modal-checkbox checkbox">
+                        <input type="checkbox">
+                        <span>Больше не показывать это предупреждение</span>
+                    </label>
+                    <button type="button" class="upgrade__modal-btn btn btn--gr-yellow js-upgrade-btn js-modal-close">
+                        <span>Продолжить</span>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="upgrade__spine-hands js-spine-animation">
             <spine-skeleton

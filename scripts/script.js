@@ -340,22 +340,15 @@ window.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if (e.code === "Escape" && header.classList.contains('header--menu-open')) { 
             closeMenu();
-            document.body.style.overflow = '';
         }
     });
 
     function closeMenu(){
         header.classList.remove('header--menu-open');
-        if (document.body.style.overflow === 'hidden') {
-            document.body.style.overflow = '';
-        }
     }
 
     function openMenu(){
         header.classList.add('header--menu-open');
-        if (document.documentElement.clientWidth < 756) {
-            document.body.style.overflow = 'hidden';
-        }
     }
     // End Open and close menu
 
@@ -464,8 +457,10 @@ window.addEventListener('DOMContentLoaded', () => {
         const target = e.currentTarget;
         const modalTarget = document.querySelector(`[data-modal-name=${target.dataset.modalTrigger}]`);
         modalTarget.classList.add('modal--open');
-        document.body.style.overflow = 'hidden';  
-        toggleTableOverlay();    
+        if(target.dataset.modalTrigger !== "upgrade-agreement") {
+            document.body.style.overflow = 'hidden';  
+            toggleTableOverlay();    
+        }
     }
 
     function closeModal(modal) {

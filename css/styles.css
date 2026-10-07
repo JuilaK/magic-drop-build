@@ -18991,6 +18991,7 @@ main:has(.profile-header--vip-bg) {
 }
 
 .upgrade__body {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 44rem 36rem 44rem;
@@ -19133,6 +19134,91 @@ main:has(.profile-header--vip-bg) {
     -ms-grid-row: 3;
     grid-row: 3;
   }
+}
+
+.upgrade__modal {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 12, 27, 0.6);
+  -webkit-backdrop-filter: blur(0.6rem);
+          backdrop-filter: blur(0.6rem);
+  border-radius: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  transition: opacity 0.3s ease-out, visibility 0s ease-out 0.3s;
+  z-index: 1;
+}
+
+.upgrade__modal-dialog {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 96%;
+  max-width: 45rem;
+  padding: 5.6rem 4rem 4rem;
+  background: center/cover no-repeat url("../images/bg/bg-modal.jpg"), -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121F));
+  background: center/cover no-repeat url("../images/bg/bg-modal.jpg"), linear-gradient(180deg, #161622 0%, #12121F 100%);
+  border-radius: 1.2rem;
+  text-align: left;
+}
+@media (max-width: 1500px) {
+  .upgrade__modal-dialog {
+    bottom: 5.6rem;
+    top: auto;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+@media (max-width: 480px) {
+  .upgrade__modal-dialog {
+    padding: 4rem 2.4rem 3.2rem;
+  }
+}
+
+.upgrade__modal-text {
+  line-height: 120%;
+}
+.upgrade__modal-text + .upgrade__modal-text {
+  margin-top: 0.8rem;
+}
+
+.upgrade__modal-sum {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.2rem;
+     -moz-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+.upgrade__modal-sum > span {
+  white-space: nowrap;
+}
+.upgrade__modal-sum > svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: -0.1rem;
+}
+
+.upgrade__modal-checkbox {
+  margin-top: 1.6rem;
+}
+
+.upgrade__modal-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 22rem;
+  margin: 2.4rem auto 0;
 }
 
 .upgrade__clear-btn {
