@@ -26402,6 +26402,13 @@ main:has(.profile-header--vip-bg) {
   top: -4rem;
   right: 0;
 }
+.modal--sell-all .modal__content, .modal--sell .modal__content {
+  overflow: clip;
+}
+.modal--sell-all .modal__title, .modal--sell .modal__title {
+  position: relative;
+  z-index: 1;
+}
 .modal--sell-all .modal__btns, .modal--sell .modal__btns {
   -webkit-column-gap: 0.8rem;
      -moz-column-gap: 0.8rem;
@@ -26409,7 +26416,6 @@ main:has(.profile-header--vip-bg) {
 }
 .modal--sell-all .modal__btns .btn, .modal--sell .modal__btns .btn {
   min-width: 0;
-  padding: 0 0.8rem;
 }
 .modal--contract-skin .modal__text {
   margin-top: 3.2rem;
@@ -27810,58 +27816,83 @@ main:has(.profile-header--vip-bg) {
   position: relative;
   margin-top: 0.8rem;
   text-align: center;
+  will-change: transform;
 }
-.modal__skin--common {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(69, 69, 79, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin::before {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 2.45;
+  border-radius: 50%;
+  -webkit-filter: blur(6rem);
+          filter: blur(6rem);
+  -webkit-transform: translate(-50%, -55%);
+      -ms-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+  opacity: 0.4;
 }
-.modal__skin--common .modal__skin-bg {
+.modal__skin::after {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 130%;
+  aspect-ratio: 1.35;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.modal__skin--common::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-common.svg");
+}
+.modal__skin--common::before {
   background-color: #45454f;
 }
-.modal__skin--covert {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(221, 15, 27, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--covert::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-covert.svg");
 }
-.modal__skin--covert .modal__skin-bg {
+.modal__skin--covert::before {
   background-color: #DD0F1B;
 }
-.modal__skin--milspec {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(15, 35, 221, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--milspec::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-milspec.svg");
 }
-.modal__skin--milspec .modal__skin-bg {
+.modal__skin--milspec::before {
   background-color: #0F23DD;
 }
-.modal__skin--restricted {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(81, 15, 221, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--restricted::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-restricted.svg");
 }
-.modal__skin--restricted .modal__skin-bg {
+.modal__skin--restricted::before {
   background-color: #510FDD;
 }
-.modal__skin--uncommon {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(0, 194, 255, 0.3) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--uncommon::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-uncommon.svg");
 }
-.modal__skin--uncommon .modal__skin-bg {
+.modal__skin--uncommon::before {
   background-color: #00C2FF;
 }
-.modal__skin--rare {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(255, 215, 0, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--rare::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-rare.svg");
 }
-.modal__skin--rare .modal__skin-bg {
-  background-color: #ffea00;
-  -webkit-filter: brightness(2.2);
-          filter: brightness(2.2);
+.modal__skin--rare::before {
+  background-color: #FFF500;
 }
-.modal__skin--classified {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(250, 0, 255, 0.5) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--classified::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-classified.svg");
 }
-.modal__skin--classified .modal__skin-bg {
+.modal__skin--classified::before {
   background-color: #FA00FF;
 }
-.modal__skin--gloves {
-  background: radial-gradient(50% 55% at 50% 50%, rgba(128, 255, 0, 0.3) 0%, rgba(10, 10, 26, 0) 100%);
+.modal__skin--gloves::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-gloves.svg");
 }
-.modal__skin--gloves .modal__skin-bg {
+.modal__skin--gloves::before {
   background-color: #B2FF00;
-  -webkit-filter: brightness(1.8);
-          filter: brightness(1.8);
 }
 
 .modal__skin-bg-wrap {
@@ -27903,8 +27934,8 @@ main:has(.profile-header--vip-bg) {
 }
 
 .modal__skin-img {
-  width: 20rem;
-  height: 20rem;
+  width: 24rem;
+  height: 24rem;
   position: relative;
   margin: 0 auto;
 }
@@ -27918,6 +27949,7 @@ main:has(.profile-header--vip-bg) {
 }
 
 .modal__skin-title {
+  position: relative;
   margin-top: -2.4rem;
   display: block;
   color: #FFF;
@@ -27926,6 +27958,7 @@ main:has(.profile-header--vip-bg) {
 }
 
 .modal__skin-subtitle {
+  position: relative;
   display: block;
   color: rgba(255, 255, 255, 0.3);
   font-size: 1.2rem;
