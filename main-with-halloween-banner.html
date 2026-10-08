@@ -3436,11 +3436,17 @@
         <div class="cases__secret-block-wrap">
             <h2 class="sr-only">Секретный кейс</h2>
             <div class="cases__secret-title">
-                <picture>
-                    <source srcset="./images/cases/secret-title.webp" type="image/webp">
-                    <img src="./images/cases/secret-title.png" width="470" height="410" alt="Секретный кейс">
-                </picture>
+                <spine-overlay overlay-id="secret-text"></spine-overlay>
+                <spine-skeleton
+                    class="cases__secret-title-img"
+                    overlay-id="secret-text"
+                    atlas="./spine/secret-text/board.atlas"
+                    skeleton="./spine/secret-text/board.json"
+                    fit="contain"
+                    animation="idle">
+                </spine-skeleton>
             </div>
+            
             <a href=".#" class="cases__secret-btn btn">Открыть</a>
         </div>
     </div>
