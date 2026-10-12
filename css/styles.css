@@ -11506,6 +11506,20 @@ span.draw-item__start-price svg {
     margin-top: 0;
   }
 }
+.case-container--xray .case-hero__scanner {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s ease-out 0.2s;
+  transition: opacity 0.2s ease-out, visibility 0s ease-out 0.2s;
+}
+.case-container--xray .case-hero__scanner::after {
+  -webkit-animation: frame-scan 3s ease-in-out 4 alternate;
+          animation: frame-scan 3s ease-in-out 4 alternate;
+}
+.case-container--xray .case-hero__skin-wrap {
+  -webkit-animation: skin-scan 3s ease-in-out 4 alternate;
+          animation: skin-scan 3s ease-in-out 4 alternate;
+}
 .case-container[data-decor-type=decor-standart] .case-hero__bg-img {
   background: center bottom/100% 100% no-repeat url("../images/cases/case-standart-bg.jpg");
 }
@@ -11911,6 +11925,7 @@ span.draw-item__start-price svg {
 }
 
 .case-hero__img-case {
+  position: relative;
   width: 100%;
   padding-bottom: 8.8rem;
 }
@@ -12297,6 +12312,8 @@ span.draw-item__start-price svg {
   -webkit-transform: translateX(60%);
       -ms-transform: translateX(60%);
           transform: translateX(60%);
+  z-index: 1;
+  pointer-events: none;
 }
 @media (max-width: 1500px) {
   .case-hero__prize {
@@ -12337,6 +12354,11 @@ span.draw-item__start-price svg {
   font-size: 1.1rem;
   line-height: 110%;
   text-align: center;
+}
+
+.case-hero__prize-btn {
+  margin-top: 0.8rem;
+  pointer-events: all;
 }
 
 .case-hero__controls {
@@ -12683,6 +12705,193 @@ span.draw-item__start-price svg {
 }
 .case-hero__checkbox .btn__key::after, .case-hero__checkbox .btn__key::before {
   content: none;
+}
+
+@-webkit-keyframes skin-scan {
+  0% {
+    clip-path: inset(0 0 calc(100% - 9rem) 0);
+  }
+  100% {
+    clip-path: inset(calc(100% - 9rem) 0 0 0);
+  }
+}
+
+@keyframes skin-scan {
+  0% {
+    clip-path: inset(0 0 calc(100% - 9rem) 0);
+  }
+  100% {
+    clip-path: inset(calc(100% - 9rem) 0 0 0);
+  }
+}
+@-webkit-keyframes frame-scan {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  to {
+    -webkit-transform: translate(-50%, var(--scanner-travel));
+            transform: translate(-50%, var(--scanner-travel));
+  }
+}
+@keyframes frame-scan {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  to {
+    -webkit-transform: translate(-50%, var(--scanner-travel));
+            transform: translate(-50%, var(--scanner-travel));
+  }
+}
+.case-hero__scanner {
+  --scanner-travel: 27rem;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 46rem;
+  aspect-ratio: 1;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s ease-out;
+  transition: opacity 0.2s ease-out, visibility 0s ease-out;
+}
+@media (max-width: 1024px) {
+  .case-hero__scanner {
+    --scanner-travel: 20rem;
+    width: 36rem;
+  }
+}
+.case-hero__scanner::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: "";
+  width: 90%;
+  aspect-ratio: 3.2;
+  background: center top/100% 100% no-repeat url("../images/cases/scanner-border.png");
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.case-hero__skin-wrap {
+  clip-path: inset(0 0 calc(100% - 9rem) 0);
+}
+
+.case-hero__skin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3% auto 0;
+  width: 80%;
+  aspect-ratio: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#12121F));
+  background-image: linear-gradient(180deg, #161622 0%, #12121F 100%);
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 0 2.4rem 4.2rem 0 rgba(0, 0, 0, 0.25), 0 0.2rem 0 0 rgba(255, 255, 255, 0.03) inset;
+          box-shadow: 0 2.4rem 4.2rem 0 rgba(0, 0, 0, 0.25), 0 0.2rem 0 0 rgba(255, 255, 255, 0.03) inset;
+  overflow: hidden;
+  will-change: transform;
+}
+.case-hero__skin::before {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 2.45;
+  border-radius: 50%;
+  -webkit-filter: blur(6rem);
+          filter: blur(6rem);
+  opacity: 0.4;
+}
+.case-hero__skin::after {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 130%;
+  aspect-ratio: 1.35;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.case-hero__skin--common::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-common.svg");
+}
+.case-hero__skin--common::before {
+  background-color: #45454f;
+}
+.case-hero__skin--covert::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-covert.svg");
+}
+.case-hero__skin--covert::before {
+  background-color: #DD0F1B;
+}
+.case-hero__skin--milspec::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-milspec.svg");
+}
+.case-hero__skin--milspec::before {
+  background-color: #0F23DD;
+}
+.case-hero__skin--restricted::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-restricted.svg");
+}
+.case-hero__skin--restricted::before {
+  background-color: #510FDD;
+}
+.case-hero__skin--uncommon::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-uncommon.svg");
+}
+.case-hero__skin--uncommon::before {
+  background-color: #00C2FF;
+}
+.case-hero__skin--rare::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-rare.svg");
+}
+.case-hero__skin--rare::before {
+  background-color: #FFF500;
+}
+.case-hero__skin--classified::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-classified.svg");
+}
+.case-hero__skin--classified::before {
+  background-color: #FA00FF;
+}
+.case-hero__skin--gloves::after {
+  background: center/contain no-repeat url("../images/cases/win-rare-gloves.svg");
+}
+.case-hero__skin--gloves::before {
+  background-color: #B2FF00;
+}
+.case-hero__skin img {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
 }
 
 .case-hero__roulettes-list {

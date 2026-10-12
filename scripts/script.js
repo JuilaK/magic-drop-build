@@ -965,9 +965,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const openCaseBtn = document.querySelector(".js-open-case");
     const caseHero = document.querySelector(".js-case-hero");
     const caseRoulette = document.querySelector(".js-case-hero-roulette");
+    const caseXrayBtn = document.querySelector(".js-case-hero-xray-btn");
 
     !!openCaseBtn && openCaseBtn.addEventListener("click", () => {
         if(!!caseContainer) {
+            if (caseContainer.classList.contains("case-container--xray")) {
+                caseContainer.classList.remove("case-container--xray");
+            }
             caseContainer.classList.add("open");
             setTimeout(() => {
                 caseHero.style.display = 'none';
@@ -978,6 +982,14 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     //END Open case
+
+    // Case XRay
+    !!caseXrayBtn && caseXrayBtn.addEventListener("click", () => {
+        if (!caseContainer.classList.contains("case-container--xray")) {
+            caseContainer.classList.add("case-container--xray");
+        }
+    });
+    // END Case XRay
 
     // Change case decor
     const caseDecors = document.querySelector(".js-case-decors");
