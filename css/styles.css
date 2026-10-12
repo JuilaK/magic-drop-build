@@ -22658,6 +22658,31 @@ main:has(.profile-header--vip-bg) {
     padding-top: 4rem;
   }
 }
+.top-players--halloween .top-players__characters {
+  margin-top: -20%;
+}
+.top-players--halloween .top-players__characters picture:nth-child(3) {
+  width: 23%;
+}
+.top-players--halloween .top-players__characters picture:first-child {
+  bottom: 6rem;
+  width: 30%;
+  -webkit-transform: translateX(-25%);
+      -ms-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+.top-players--halloween .top-players__characters picture:nth-child(2) {
+  left: 30%;
+}
+.top-players--halloween .top-players__characters picture:nth-child(4) {
+  bottom: 0rem;
+  right: 30%;
+  width: 20%;
+}
+.top-players--halloween .top-players__characters picture:last-child {
+  right: -1%;
+  width: 22%;
+}
 
 .top-players__title {
   display: -webkit-box;
