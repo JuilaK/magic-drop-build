@@ -1,0 +1,23 @@
+pennywise.png
+size:1884,1376
+filter:Linear,Linear
+pma:true
+scale:0.9
+bg
+bounds:2,2,1877,966
+clown
+bounds:724,970,401,743
+rotate:90
+clown hand
+bounds:168,1222,149,216
+offsets:1,1,150,224
+rotate:90
+flash
+bounds:2,1313,58,58
+moon
+bounds:386,1037,334,336
+offsets:1,1,336,338
+rotate:90
+pumpkin
+bounds:62,1274,104,97
+offsets:1,1,106,99
