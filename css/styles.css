@@ -10690,10 +10690,8 @@ span.draw-item__start-price svg {
   }
 }
 .secret-skin {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  position: relative;
+  padding-top: calc(100% - 4rem + 6rem);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.8s ease-out;
@@ -10701,6 +10699,11 @@ span.draw-item__start-price svg {
   transition: transform 0.8s ease-out;
   transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
   will-change: transform;
+}
+@media (max-width: 768px) {
+  .secret-skin {
+    padding-top: calc(100% - 3.2rem + 7.4rem);
+  }
 }
 @media (any-hover: hover) {
   .secret-skin--active:hover .secret-skin__back {
@@ -10737,23 +10740,21 @@ span.draw-item__start-price svg {
           transform: rotateY(180deg);
 }
 .secret-skin .skin {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: 1/1;
+  position: absolute;
+  inset: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
           transform: rotateY(180deg) translate3d(0, 0, 0);
   will-change: transform;
 }
+.secret-skin .skin__content {
+  height: 100%;
+}
 
 .secret-skin__back {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: 1/1;
+  position: absolute;
+  inset: 0;
   padding: 0.4rem;
   background: center/cover no-repeat url("../images/skins/bg-back-skin.jpg");
   border-radius: 1.2rem;
@@ -12661,10 +12662,16 @@ span.draw-item__start-price svg {
   right: 0.6rem;
 }
 .case-hero__balance-range-input input {
-  width: 7.8rem;
+  width: 8.2rem;
   height: 3rem;
   padding-left: 0.8rem;
-  padding-right: 2rem;
+  padding-right: 0.8rem;
+}
+@media (max-width: 1280px) {
+  .case-hero__balance-range-input input {
+    width: 10rem;
+    padding-right: 2.4rem;
+  }
 }
 .case-hero__balance-range-input--rub::before {
   background: center/contain no-repeat url("../images/sprite.svg#coin-rub-grey");
@@ -49565,6 +49572,7 @@ span.vip-club__wheel-btn-price img {
 }
 .choose-skin__filters .range-inputs {
   margin-right: auto;
+  width: 23rem;
 }
 
 .choose-skin__search {
@@ -49635,6 +49643,9 @@ span.vip-club__wheel-btn-price img {
     -ms-grid-columns: 1fr 1rem 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.choose-skin__skins-list .loader-container {
+  grid-column: 1/-1;
 }
 @media (any-hover: hover) {
   .choose-skin__skins-list .skin:hover .skin__img img {
