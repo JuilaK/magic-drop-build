@@ -11460,6 +11460,17 @@ span.draw-item__start-price svg {
     max-width: 192rem;
   }
 }
+.case-container--secret.case-container.open ~ .skins-slider {
+  margin-top: 0;
+}
+.case-container--secret.case-container.open ~ .secret-how {
+  padding-top: 8rem;
+}
+@media (max-width: 1024px) {
+  .case-container--secret.case-container.open ~ .secret-how {
+    padding-top: 4rem;
+  }
+}
 .case-container--secret.case-container .case-hero {
   padding-top: 5.6rem;
   max-width: 192rem;
@@ -13248,6 +13259,9 @@ span.draw-item__start-price svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 0.1rem;
+     -moz-column-gap: 0.1rem;
+          column-gap: 0.1rem;
   width: 100%;
   padding: 2rem;
 }
@@ -13281,21 +13295,44 @@ span.draw-item__start-price svg {
   width: 100%;
   min-width: 0;
 }
-@media (max-width: 768px) {
-  .case-hero__roulette--vertical .roulette-item {
-    padding-bottom: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  .case-hero__roulette--vertical .roulette-item {
-    padding: 1.2rem;
-  }
-}
 .case-hero__roulette--vertical .roulette-item.roulette__win-item {
   -webkit-animation: none;
           animation: none;
   z-index: auto;
   outline: none;
+}
+@media (max-width: 768px) {
+  .case-hero__roulette--vertical .roulette-item__content {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .case-hero__roulette--vertical .roulette-item__content {
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .case-hero__roulette--vertical .roulette-item__back {
+    padding-top: calc((100% - 2.2rem) * 0.95 + 5.2rem);
+  }
+}
+@media (max-width: 480px) {
+  .case-hero__roulette--vertical .roulette-item__back {
+    padding-top: calc((100% - 2.6rem) * 0.95 + 2.4rem);
+  }
+}
+.case-hero__roulette--vertical .roulette-item__back-text {
+  font-size: 12rem;
+}
+@media (max-width: 768px) {
+  .case-hero__roulette--vertical .roulette-item__back-text {
+    font-size: 14vw;
+  }
+}
+@media (max-width: 480px) {
+  .case-hero__roulette--vertical .roulette-item__back-text {
+    font-size: 10vw;
+  }
 }
 @media (max-width: 480px) {
   .case-hero__roulette--vertical .roulette-item__title, .case-hero__roulette--vertical .roulette-item__subtitle {
@@ -13468,8 +13505,6 @@ span.draw-item__start-price svg {
       -ms-flex: 0 0 21.6rem;
           flex: 0 0 21.6rem;
   width: 21.6rem;
-  padding: 1rem 1rem 2.4rem;
-  background-color: #2B2B4B;
   border: thin solid #1d1d2d;
   border-radius: 1.2rem;
   overflow: hidden;
@@ -13660,6 +13695,61 @@ span.draw-item__start-price svg {
 }
 .roulette-item--gloves.roulette__win-item {
   outline: 0.2rem solid #B2FF00;
+}
+
+.roulette-item__content {
+  padding: 1rem 1rem 2.4rem;
+}
+
+.roulette-item__back {
+  padding-top: calc((100% - 2rem) * 0.95 + 5.6rem);
+  background: center/cover no-repeat url("../images/skins/bg-back-skin.jpg");
+}
+
+.roulette-item__back-text {
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #29293A;
+  font-size: 15rem;
+  font-weight: 900;
+}
+@media (max-width: 480px) {
+  .roulette-item__back-text {
+    font-size: 12rem;
+  }
+}
+.roulette-item__back-text::before {
+  content: "";
+  position: absolute;
+  inset: 0.4rem;
+  border-radius: 0.8rem;
+  padding: 0.1rem;
+  background: linear-gradient(140deg, #b3b3df 0%, rgba(113, 113, 158, 0) 55%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.roulette-item__back-text::after {
+  content: "";
+  position: absolute;
+  inset: 0.7rem;
+  border-radius: 0.8rem;
+  padding: 0.1rem;
+  background: linear-gradient(-40deg, #b3b3df 0%, rgba(113, 113, 158, 0) 55%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 @-webkit-keyframes scaleSkin {
