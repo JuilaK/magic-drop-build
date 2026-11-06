@@ -11460,6 +11460,11 @@ span.draw-item__start-price svg {
     max-width: 192rem;
   }
 }
+.case-container--secret.case-container.open .case-hero__bg {
+  opacity: 0.2;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
 .case-container--secret.case-container.open ~ .skins-slider {
   margin-top: 0;
 }
