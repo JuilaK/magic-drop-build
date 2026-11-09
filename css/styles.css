@@ -11356,6 +11356,11 @@ span.draw-item__start-price svg {
     margin-top: 8rem;
   }
 }
+.case-container.blackout .case-hero__bg {
+  opacity: 0.2;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
 .case-container--magic-1.open .case-hero__rock, .case-container--magic-2.open .case-hero__rock, .case-container--magic-3.open .case-hero__rock {
   -webkit-transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s, visibility 0s linear 1.9s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s;
   transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s, visibility 0s linear 1.9s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s;
@@ -11491,11 +11496,6 @@ span.draw-item__start-price svg {
   .case-container--secret.case-container {
     max-width: 192rem;
   }
-}
-.case-container--secret.case-container.open .case-hero__bg {
-  opacity: 0.2;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
 }
 .case-container--secret.case-container.open ~ .skins-slider {
   margin-top: 0;
