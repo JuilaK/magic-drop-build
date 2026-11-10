@@ -11814,7 +11814,7 @@ span.draw-item__start-price svg {
   }
 }
 .case-hero--roulette-1 .win__item {
-  width: 42rem;
+  width: 36rem;
   -webkit-transform: scale(0.6);
       -ms-transform: scale(0.6);
           transform: scale(0.6);
@@ -11877,7 +11877,7 @@ span.draw-item__start-price svg {
   position: relative;
   display: -ms-grid;
   display: grid;
-  padding-top: 2.4rem;
+  padding-top: 4rem;
   background: none;
   will-change: transform;
 }
@@ -11926,7 +11926,7 @@ span.draw-item__start-price svg {
   }
 }
 .case-hero--roulette-1 .win__item-info {
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
 }
 @media (max-width: 768px) {
   .case-hero--roulette-1 .win__item-info {
@@ -11958,8 +11958,6 @@ span.draw-item__start-price svg {
   position: relative;
   width: 100%;
   aspect-ratio: 1;
-  text-align: center;
-  overflow: clip;
 }
 .case-hero--roulette-1 .win__item-img {
   -webkit-transform: translate(-50%, -50%);
@@ -11968,9 +11966,8 @@ span.draw-item__start-price svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 110%;
-  height: 110%;
-  max-width: none;
+  width: 100%;
+  height: 100%;
 }
 .case-hero--roulette-1 .win__item-phase {
   margin-top: -3.2rem;
@@ -11990,11 +11987,11 @@ span.draw-item__start-price svg {
 }
 .case-hero--roulette-1 .win__item-title {
   margin-bottom: 0.4rem;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 @media (max-width: 1280px) {
   .case-hero--roulette-1 .win__item-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 768px) {
