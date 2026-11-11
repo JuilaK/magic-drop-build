@@ -41744,6 +41744,12 @@ span.giveaway__param-count-current {
 .giveaways__block + .giveaways__block {
   margin-top: 5.6rem;
 }
+.giveaways__block--winner .giveaways__title {
+  color: #8484A7;
+}
+.giveaways__block--winner .giveaways__list {
+  opacity: 0.6;
+}
 
 .giveaways__title {
   font-size: 2.4rem;
