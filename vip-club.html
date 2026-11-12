@@ -36,6 +36,8 @@
     <script defer src="./libs/splide/splide.min.js"></script>
     
     
+        <script src="./libs/spine/spine-webcomponents.min.js"></script>
+    
     <script defer src="./scripts/script.js"></script>
 </head>
 <body>
@@ -1166,6 +1168,17 @@
 </header>
     <main>
         <section class="vip-club__hero">
+    <div class="vip-club__spine">
+        <spine-skeleton
+            class="vip-club__spine-skel"
+            overlay-id="vip-banner"
+            atlas="./spine/vip-banner/vip-club.atlas"
+            skeleton="./spine/vip-banner/vip-club.json"
+            fit="cover"
+            animation="idle_action">
+        </spine-skeleton>
+        <spine-overlay overlay-id="vip-banner"></spine-overlay>
+    </div>
     <div class="container">
         <h2 class="vip-club__hero-subtitle">Вступай в наш</h2>
         <h1 class="vip-club__hero-title" data-text="Vip клуб">Vip клуб</h1>
@@ -1175,25 +1188,19 @@
     </div>
 </section>
         <section class="vip-club__cases container">
-    <h2 class="sr-only">Vip Cases</h2>
-    <div class="vip-club__cases-title js-reveal-up">
-        <div class="vip-club__cases-title-wrap">
-            <span class="vip-club__cases-title-spark"></span>
-            <span class="vip-club__cases-title-spark"></span>
-            <span class="vip-club__cases-title-spark"></span>
-            <span class="vip-club__cases-title-spark"></span>
-            <span class="vip-club__cases-title-spark"></span>
-            <picture>
-                <source srcset="./images/cases/title-vip-cases.webp" type="image/webp">
-                <img src="./images/cases/title-vip-cases.png" class="image" width="1193" height="903">
-            </picture>
-        </div>
+    <div class="cases-header js-reveal-up">
+        <h2 class="section-title">
+            <svg aria-hidden="true" class="yellow">
+                <use xlink:href="images/sprite.svg#diamond"></use>
+            </svg>
+            VIP Кейсы
+        </h2>
     </div>
     <div class="vip-club__cases-list js-reveal-up">
-        <article class="case case--silver     js-case-magic">
+        <article class="case case--silver     ">
     
     <div class="case__body">
-        <span class="case__count-coins">1</span>
+        
         
         
         
@@ -1201,6 +1208,7 @@
                 <source srcset="./images/cases/silver-case.webp" type="image/webp">
                 <img src="./images/cases/silver-case.png" alt="OPERATION BROKEN FANG CASE">
             </picture>
+        
         
         
         
@@ -1234,10 +1242,11 @@
         </div>
     
     
-</article><article class="case case--gold     js-case-magic">
+    
+</article><article class="case case--gold     ">
     
     <div class="case__body">
-        <span class="case__count-coins">2</span>
+        
         
         
         
@@ -1245,6 +1254,7 @@
                 <source srcset="./images/cases/gold-case.webp" type="image/webp">
                 <img src="./images/cases/gold-case.jpg" alt="Moon Knight Moon Knight Moon">
             </picture>
+        
         
         
         
@@ -1285,10 +1295,11 @@
         </div>
     
     
-</article><article class="case case--platinum     js-case-magic">
+    
+</article><article class="case case--platinum     ">
     
     <div class="case__body">
-        <span class="case__count-coins">5</span>
+        
         
         
         
@@ -1296,6 +1307,7 @@
                 <source srcset="./images/cases/platinum-case.webp" type="image/webp">
                 <img src="./images/cases/platinum-case.jpg" alt="Moon Knight">
             </picture>
+        
         
         
         
@@ -1355,10 +1367,11 @@
         </div>
     
     
-</article><article class="case case--elite     js-case-magic">
+    
+</article><article class="case case--elite     ">
     
     <div class="case__body">
-        <span class="case__count-coins">10</span>
+        
         
         
         
@@ -1366,6 +1379,7 @@
                 <source srcset="./images/cases/elite-case.webp" type="image/webp">
                 <img src="./images/cases/elite-case.jpg" alt="Moon Knight">
             </picture>
+        
         
         
         
@@ -1456,229 +1470,289 @@
         </div>
     
     
+    
+</article>
+    </div>
+    <div class="cases-header js-reveal-up">
+        <h2 class="section-title">
+            <svg aria-hidden="true" class="yellow">
+                <use xlink:href="images/sprite.svg#diamond"></use>
+            </svg>
+            Еще КЕЙСЫ
+        </h2>
+    </div>
+    <div class="vip-club__cases-list js-reveal-up">
+        <article class="case case--with-anim     ">
+    
+    <div class="case__body">
+        
+        
+        <span class="case__badge case__badge--new-animation ">new-animation</span>
+        
+        
+            <div>
+                <picture class="case__img">
+                    <source srcset="./images/vip-club/case-vip-1.webp" type="image/webp">
+                    <img src="./images/vip-club/case-vip-1.png" alt="Moon Knight">
+                </picture>
+                <div class="case__spine">
+                    <spine-skeleton
+                        class="case__spine-skel"
+                        overlay-id="case-vip-1"
+                        atlas="./spine/cases/case-vip-1.atlas"
+                        skeleton="./spine/cases/case-vip-1.json"
+                        fit="contain"
+                        animation="idle_action">
+                    </spine-skeleton>
+                    <spine-overlay overlay-id="case-vip-1"></spine-overlay>
+                </div>
+            </div>
+        
+        
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>0.25</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+    
+    
+</article><article class="case      case--coming-soon">
+    
+    <div class="case__body">
+        
+        
+        
+        
+            <picture class="case__img">
+                <source srcset="./images/vip-club/case-vip-2.webp" type="image/webp">
+                <img src="./images/vip-club/case-vip-2.png" alt="Moon Knight">
+            </picture>
+        
+        
+        
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+        <span class="case__unavailable-text">Coming soon</span>
+    
+</article><article class="case      case--coming-soon">
+    
+    <div class="case__body">
+        
+        
+        
+        
+            <picture class="case__img">
+                <source srcset="./images/vip-club/case-vip-3.webp" type="image/webp">
+                <img src="./images/vip-club/case-vip-3.png" alt="Moon Knight">
+            </picture>
+        
+        
+        
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+        <span class="case__unavailable-text">Coming soon</span>
+    
+</article><article class="case      case--coming-soon">
+    
+    <div class="case__body">
+        
+        
+        <span class="case__badge case__badge--hot ">hot</span>
+        
+            <picture class="case__img">
+                <source srcset="./images/vip-club/case-vip-4.webp" type="image/webp">
+                <img src="./images/vip-club/case-vip-4.png" alt="Moon Knight">
+            </picture>
+        
+        
+        
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+        <span class="case__unavailable-text">Coming soon</span>
+    
+</article>
+    </div>
+    <div class="cases-header js-reveal-up">
+        <h2 class="section-title">
+            <svg aria-hidden="true" class="yellow">
+                <use xlink:href="images/sprite.svg#diamond"></use>
+            </svg>
+            VIP GABE CASES
+        </h2>
+    </div>
+    <div class="vip-club__case js-reveal-up">
+        <article class="case      ">
+    
+    <div class="case__body">
+        
+        
+        <span class="case__badge  case__badge--animation">new animation</span>
+        
+            <picture class="case__img">
+                <source srcset="./images/vip-club/case-urus.webp" type="image/webp">
+                <img src="./images/vip-club/case-urus.png" alt="Moon Knight">
+            </picture>
+        
+        
+        
+        
+        <div class="case__header ">
+            <div>
+                
+                <h2 class="case__title">Moon Knight</h2>
+            </div>
+        </div>
+    </div>
+    
+        <a href="./case.html" class="case__btn btn">
+            
+            <span>0.25</span>
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+            </svg>
+        </a>
+    
+    
+    
+    
 </article>
     </div>
 </section>
-        <section class="vip-club__adv container">
-    <h2 class="vip-club__title js-reveal-up">
-        <picture>
-            <source srcset="./images/vip-club/icon-crown.webp" type="image/webp">
-            <img src="./images/vip-club/icon-crown.png" width="40" height="40" alt="" aria-hidden="true">
-        </picture>
-        <span data-text="Преимущества">Преимущества</span>
-    </h2>
-    <ul class="vip-club__adv-list js-reveal-up">
-        <li class="vip-club__adv-item">
-            <picture>
-                <source srcset="./images/vip-club/advantage-1@2x.webp" 
-                        type="image/webp">
-                <img 
-                    src="./images/vip-club/advantage-1@2x.jpg"
-                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
-            </picture>
-            <h3 class="vip-club__adv-title">Выделенный менеджер<br>24/7</h3>
-            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
-                <div class="tooltip__body" role="tooltip">
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <button type="button" class="tooltip__toggle">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#info"></use>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="vip-club__adv-item">
-            <picture>
-                <source srcset="./images/vip-club/advantage-2@2x.webp" type="image/webp">
-                <img 
-                    src="./images/vip-club/advantage-2@2x.jpg" 
-                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
-            </picture>
-            <h3 class="vip-club__adv-title">VIP кейсы с повышенными шансами</h3>
-            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
-                <div class="tooltip__body" role="tooltip">
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <button type="button" class="tooltip__toggle">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#info"></use>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="vip-club__adv-item">
-            <picture>
-                <source srcset="./images/vip-club/advantage-3@2x.webp" type="image/webp">
-                <img 
-                    src="./images/vip-club/advantage-3@2x.jpg" 
-                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
-            </picture>
-            <h3 class="vip-club__adv-title">Vip интерфейс</h3>
-            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
-                <div class="tooltip__body" role="tooltip">
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <button type="button" class="tooltip__toggle">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#info"></use>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="vip-club__adv-item">
-            <picture>
-                <source srcset="./images/vip-club/advantage-4@2x.webp" type="image/webp">
-                <img 
-                    src="./images/vip-club/advantage-4@2x.jpg"
-                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
-            </picture>
-            <h3 class="vip-club__adv-title">Получай кешбек монетами за открытие кейсов</h3>
-            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
-                <div class="tooltip__body" role="tooltip">
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <button type="button" class="tooltip__toggle">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#info"></use>
-                    </svg>
-                </button>
-            </div>
-        </li>
-        <li class="vip-club__adv-item">
-            <picture>
-                <source srcset="./images/vip-club/advantage-5@2x.webp" type="image/webp">
-                <img 
-                    src="./images/vip-club/advantage-5@2x.jpg"
-                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
-            </picture>
-            <h3 class="vip-club__adv-title">Используй монеты для колеса бонусов</h3>
-            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
-                <div class="tooltip__body" role="tooltip">
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <button type="button" class="tooltip__toggle">
-                    <svg aria-hidden="true" class="white">
-                        <use xlink:href="images/sprite.svg#info"></use>
-                    </svg>
-                </button>
-            </div>
-        </li>
-    </ul>
-</section>
-        <section class="vip-club__lvl container">
-    <h2 class="vip-club__title js-reveal-up">
-        <picture>
-            <source srcset="./images/vip-club/icon-level.webp" type="image/webp">
-            <img src="./images/vip-club/icon-level.png" width="48" height="40" alt="" aria-hidden="true">
-        </picture>
-        <span data-text="Уровни">Уровни</span>
-    </h2>
-    <div class="vip-club__lvl-list js-reveal-up">
-        <div class="vip-club__lvl-item vip-club__lvl-item--silver">
-            <div class="vip-club__lvl-item-wrap">
-                <picture class="vip-club__lvl-item-img">
-                    <source srcset="./images/vip-club/lvl-silver.webp" type="image/webp">
-                    <img src="./images/vip-club/lvl-silver.png" width="222" height="222" alt="" aria-hidden="true">
-                </picture>
-                <h3 class="vip-club__lvl-item-title">Silver</h3>
-                <div class="vip-club__lvl-item-price">
-                    <span>35000</span>
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
-                    </svg>
-                </div>
-                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
-                <ul class="vip-club__lvl-item-list">
-                    <li>Бонус к пополнению 21%</li>
-                    <li>Кешбек 2 монеты</li>
-                    <li>Первый VIP кейс</li>
-                    <li class="unavailable">VIP менеджер</li>
-                    <li class="unavailable">VIP интерфейс</li>
-                </ul>
-            </div>
+        <section class="vip-club__shop container-sm js-reveal-up">
+    <h2 class="vip-club__shop-title">Обмен монет</h2>
+    <div class="vip-club__shop-content">
+        <div class="vip-club__shop-person">
+            <spine-skeleton
+                class="vip-club__shop-spine-skel"
+                overlay-id="person"
+                atlas="./spine/vip-shop/vip_shop.atlas"
+                skeleton="./spine/vip-shop/char1.json"
+                fit="contain"
+                animation="export/idle_action">
+            </spine-skeleton>
+            <spine-overlay overlay-id="person"></spine-overlay>
         </div>
-        <div class="vip-club__lvl-item vip-club__lvl-item--gold">
-            <div class="vip-club__lvl-item-wrap">
-                <picture class="vip-club__lvl-item-img">
-                    <source srcset="./images/vip-club/lvl-gold.webp" type="image/webp">
-                    <img src="./images/vip-club/lvl-gold.png" width="222" height="222" alt="" aria-hidden="true">
-                </picture>
-                <h3 class="vip-club__lvl-item-title">Gold</h3>
-                <div class="vip-club__lvl-item-price">
-                    <span>100000</span>
+        <div class="vip-club__shop-list">
+            <div class="vip-club__shop-item">
+                <div class="vip-club__shop-item-product">
+                    <div class="vip-club__shop-item-value">
+                        <span>100</span>
+                        <picture>
+                            <source srcset="./images/vip-club/coin-1.webp" type="image/webp">
+                            <img src="./images/vip-club/coin-1." width="48" height="48" alt="Magic drop coin">
+                        </picture>
+                    </div>
+                    <picture class="vip-club__shop-item-img">
+                        <source srcset="./images/vip-club/product-1.webp" type="image/webp">
+                        <img src="./images/vip-club/product-1.png" width="205" height="144" alt="" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="vip-club__shop-item-price">
+                    <span>1 777</span>
                     <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
                     </svg>
                 </div>
-                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
-                <ul class="vip-club__lvl-item-list">
-                    <li>Бонус к пополнению 22%</li>
-                    <li>Кешбек 3 монеты</li>
-                    <li>Второй VIP кейс</li>
-                    <li>VIP менеджер</li>
-                    <li>VIP интерфейс</li>
-                </ul>
+                <button type="button" class="btn btn--gr-yellow"><span>Купить</span></button>
             </div>
-        </div>
-        <div class="vip-club__lvl-item vip-club__lvl-item--platinum">
-            <div class="vip-club__lvl-item-wrap">
-                <picture class="vip-club__lvl-item-img">
-                    <source srcset="./images/vip-club/lvl-platinum.webp" type="image/webp">
-                    <img src="./images/vip-club/lvl-platinum.png" width="222" height="222" alt="" aria-hidden="true">
-                </picture>
-                <h3 class="vip-club__lvl-item-title">Platinum</h3>
-                <div class="vip-club__lvl-item-price">
-                    <span>300000</span>
+            <div class="vip-club__shop-item">
+                <div class="vip-club__shop-item-product">
+                    <div class="vip-club__shop-item-value">
+                        <span>100</span>
+                        <picture>
+                            <source srcset="./images/vip-club/coin-1.webp" type="image/webp">
+                            <img src="./images/vip-club/coin-1." width="48" height="48" alt="Magic drop coin">
+                        </picture>
+                    </div>
+                    <picture class="vip-club__shop-item-img">
+                        <source srcset="./images/vip-club/product-2.webp" type="image/webp">
+                        <img src="./images/vip-club/product-2.png" width="205" height="144" alt="" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="vip-club__shop-item-price">
+                    <span>1 777</span>
                     <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
                     </svg>
                 </div>
-                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
-                <ul class="vip-club__lvl-item-list">
-                    <li>Бонус к пополнению 23%</li>
-                    <li>Кешбек 5 монеты</li>
-                    <li>Третий VIP кейс</li>
-                    <li>VIP менеджер</li>
-                    <li>VIP интерфейс</li>
-                    <li>Перчатки в подарок</li>
-                </ul>
+                <button type="button" class="btn btn--gr-yellow"><span>Купить</span></button>
             </div>
-        </div>
-        <div class="vip-club__lvl-item vip-club__lvl-item--elite">
-            <div class="vip-club__lvl-item-wrap">
-                <picture class="vip-club__lvl-item-img">
-                    <source srcset="./images/vip-club/lvl-elite.webp" type="image/webp">
-                    <img src="./images/vip-club/lvl-elite.png" width="222" height="222" alt="" aria-hidden="true">
-                </picture>
-                <h3 class="vip-club__lvl-item-title">Elite</h3>
-                <div class="vip-club__lvl-item-price">
-                    <span>450000</span>
+            <div class="vip-club__shop-item">
+                <div class="vip-club__shop-item-product">
+                    <div class="vip-club__shop-item-value">
+                        <span>100</span>
+                        <picture>
+                            <source srcset="./images/vip-club/coin-1.webp" type="image/webp">
+                            <img src="./images/vip-club/coin-1." width="48" height="48" alt="Magic drop coin">
+                        </picture>
+                    </div>
+                    <picture class="vip-club__shop-item-img">
+                        <source srcset="./images/vip-club/product-3.webp" type="image/webp">
+                        <img src="./images/vip-club/product-3.png" width="205" height="144" alt="" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="vip-club__shop-item-price">
+                    <span>1 777</span>
                     <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                        <use xlink:href="images/sprite.svg#coin-usd-yellow"></use>
                     </svg>
                 </div>
-                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
-                <ul class="vip-club__lvl-item-list">
-                    <li>Бонус к пополнению 25%</li>
-                    <li>Кешбек 7 монеты</li>
-                    <li>Четвертый VIP кейс</li>
-                    <li>VIP менеджер</li>
-                    <li>VIP интерфейс</li>
-                    <li>Нож в подарок</li>
-                </ul>
+                <button type="button" class="btn btn--gr-yellow"><span>Купить</span></button>
             </div>
         </div>
     </div>
 </section>
-        <div class="vip-club__wheel js-reveal-up js-vip-club-wheel">
-    <section class="container-md">
-        <div class="vip-club__wheel-wrap">
-            <div class="vip-club__wheel-container">
-                <div class="vip-club__wheel-track">
-                    <div class="vip-club__wheel-track-wrap js-vip-club-wheel-track" style="--vip-wheel-winner: 0">
-                        <ul>
-                            <li class="vip-club__wheel-item vip-club__wheel-item--orange js-vip-club-wheel-item">
+        <div class="vip-club__wheel container-lg js-reveal-up js-vip-club-wheel">
+    <h2 class="vip-club__wheel-main-title">Колесо бонусов</h2>
+    <div class="vip-club__wheel-wrap">
+        <div class="vip-club__wheel-container">
+            <div class="vip-club__wheel-track">
+                <div class="vip-club__wheel-track-wrap js-vip-club-wheel-track" style="--vip-wheel-winner: 0">
+                    <ul>
+                        <li class="vip-club__wheel-item vip-club__wheel-item--orange js-vip-club-wheel-item">
     <div class="vip-club__wheel-item-bg">
         <img 
             src="./images/vip-club/bg-wheel-item-orange.svg" 
@@ -2042,61 +2116,60 @@
     </div>
     <span class="vip-club__wheel-item-title">+30% к депозиту</span>
 </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="vip-club__wheel-info">
-                <div class="vip-club__wheel-info-wrap">
-                    <h2 class="vip-club__wheel-title">Колесо<br>Бонусов</h2>
-                    <p class="vip-club__wheel-text">Открывай VIP кейсы, копи монеты и крути колесо бонусов</p>
-                    <div class="vip-club__wheel-balance">
-                        Баланс 
-                        <div class="vip-club__wheel-balance-count">
-                            <span>15</span>
-                            <picture>
-                                <source srcset="./images/magic-coin-2.webp" type="image/webp">
-                                <img src="./images/magic-coin-2.png" width="48" height="48" alt="Монета">
-                            </picture>
-                        </div>
-                    </div>
-                    <button type="button" class="vip-club__wheel-btn btn js-vip-club-btn">
-                        <span class="vip-club__wheel-btn-title">Открыть за</span>
-                        <span class="vip-club__wheel-btn-price">
-                            <span>25</span>
-                            <picture>
-                                <source srcset="./images/magic-coin-2.webp" type="image/webp">
-                                <img src="./images/magic-coin-2.png" width="48" height="48" alt="Монета">
-                            </picture>
-                        </span>
-                    </button>
-                </div>
-                <div class="vip-club__wheel-prize">
-                    <h2 class="vip-club__wheel-prize-title">Поздравляем!</h2>
-                    <p class="vip-club__wheel-prize-subtitle">Ваш выигрыш</p>
-                    <div class="vip-club__wheel-prize-img">
-                        <img 
-                            src="./images/vip-club/prize-4.png" 
-                            srcset="./images/vip-club/prize-4@2x.png 2x"
-                            alt="Бонус к пополнению 15%"
-                            width="240"
-                            height="240">
-                        <img 
-                            src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/160fx160f" 
-                            srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/240fx240f"
-                            alt="" aria-hidden="true"
-                            width="280"
-                            height="280">
-                    </div>
-                    <p class="vip-club__wheel-prize-desc">Бонус к пополнению 15%</p>
-                    <div class="vip-club__wheel-prize-btns">
-                        <button type="button" class="btn btn--gr-yellow js-vip-club-use-btn"><span>Использовать</span></button>
-                        <button type="button" class="btn btn--bg-grey js-vip-club-more-btn"><span>Крутить еще</span></button>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="vip-club__wheel-info">
+            <div class="vip-club__wheel-info-wrap">
+                <h2 class="vip-club__wheel-title">Колесо<br>Бонусов</h2>
+                <p class="vip-club__wheel-text">Открывай VIP кейсы, копи монеты и крути колесо бонусов</p>
+                <div class="vip-club__wheel-balance">
+                    Баланс 
+                    <div class="vip-club__wheel-balance-count">
+                        <span>15</span>
+                        <picture>
+                            <source srcset="./images/magic-coin-2.webp" type="image/webp">
+                            <img src="./images/magic-coin-2.png" width="48" height="48" alt="Монета">
+                        </picture>
+                    </div>
+                </div>
+                <button type="button" class="vip-club__wheel-btn btn js-vip-club-btn">
+                    <span class="vip-club__wheel-btn-title">Открыть за</span>
+                    <span class="vip-club__wheel-btn-price">
+                        <span>25</span>
+                        <picture>
+                            <source srcset="./images/magic-coin-2.webp" type="image/webp">
+                            <img src="./images/magic-coin-2.png" width="48" height="48" alt="Монета">
+                        </picture>
+                    </span>
+                </button>
+            </div>
+            <div class="vip-club__wheel-prize">
+                <h2 class="vip-club__wheel-prize-title">Поздравляем!</h2>
+                <p class="vip-club__wheel-prize-subtitle">Ваш выигрыш</p>
+                <div class="vip-club__wheel-prize-img">
+                    <img 
+                        src="./images/vip-club/prize-4.png" 
+                        srcset="./images/vip-club/prize-4@2x.png 2x"
+                        alt="Бонус к пополнению 15%"
+                        width="240"
+                        height="240">
+                    <img 
+                        src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/160fx160f" 
+                        srcset="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3cjxQ7dGzmL-HnvD8J_WIzmkJ68B32rDH84r3iwDlqRZkMWj2dtTEdwVoN1_ZqwPrkuu61MK8ot2Xnglxl-Ds/240fx240f"
+                        alt="" aria-hidden="true"
+                        width="280"
+                        height="280">
+                </div>
+                <p class="vip-club__wheel-prize-desc">Бонус к пополнению 15%</p>
+                <div class="vip-club__wheel-prize-btns">
+                    <button type="button" class="btn btn--gr-yellow js-vip-club-use-btn"><span>Использовать</span></button>
+                    <button type="button" class="btn btn--bg-grey js-vip-club-more-btn"><span>Крутить еще</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="vip-club__win">
     <div class="container">
         <div class="vip-club__win-wrap">
@@ -2477,6 +2550,218 @@
                         </svg>
                     </button>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="vip-club__adv container">
+    <h2 class="vip-club__title js-reveal-up">
+        <picture>
+            <source srcset="./images/vip-club/icon-crown.webp" type="image/webp">
+            <img src="./images/vip-club/icon-crown.png" width="40" height="40" alt="" aria-hidden="true">
+        </picture>
+        <span data-text="Преимущества">Преимущества</span>
+    </h2>
+    <ul class="vip-club__adv-list js-reveal-up">
+        <li class="vip-club__adv-item">
+            <picture>
+                <source srcset="./images/vip-club/advantage-1@2x.webp" 
+                        type="image/webp">
+                <img 
+                    src="./images/vip-club/advantage-1@2x.jpg"
+                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
+            </picture>
+            <h3 class="vip-club__adv-title">Выделенный менеджер<br>24/7</h3>
+            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
+                <div class="tooltip__body" role="tooltip">
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" class="tooltip__toggle">
+                    <svg aria-hidden="true" class="white">
+                        <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="vip-club__adv-item">
+            <picture>
+                <source srcset="./images/vip-club/advantage-2@2x.webp" type="image/webp">
+                <img 
+                    src="./images/vip-club/advantage-2@2x.jpg" 
+                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
+            </picture>
+            <h3 class="vip-club__adv-title">VIP кейсы с повышенными шансами</h3>
+            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
+                <div class="tooltip__body" role="tooltip">
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" class="tooltip__toggle">
+                    <svg aria-hidden="true" class="white">
+                        <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="vip-club__adv-item">
+            <picture>
+                <source srcset="./images/vip-club/advantage-3@2x.webp" type="image/webp">
+                <img 
+                    src="./images/vip-club/advantage-3@2x.jpg" 
+                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
+            </picture>
+            <h3 class="vip-club__adv-title">Vip интерфейс</h3>
+            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
+                <div class="tooltip__body" role="tooltip">
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" class="tooltip__toggle">
+                    <svg aria-hidden="true" class="white">
+                        <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="vip-club__adv-item">
+            <picture>
+                <source srcset="./images/vip-club/advantage-4@2x.webp" type="image/webp">
+                <img 
+                    src="./images/vip-club/advantage-4@2x.jpg"
+                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
+            </picture>
+            <h3 class="vip-club__adv-title">Получай кешбек монетами за открытие кейсов</h3>
+            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
+                <div class="tooltip__body" role="tooltip">
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" class="tooltip__toggle">
+                    <svg aria-hidden="true" class="white">
+                        <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="vip-club__adv-item">
+            <picture>
+                <source srcset="./images/vip-club/advantage-5@2x.webp" type="image/webp">
+                <img 
+                    src="./images/vip-club/advantage-5@2x.jpg"
+                    class="vip-club__adv-img" width="320" height="247" alt="" aria-hidden="true">
+            </picture>
+            <h3 class="vip-club__adv-title">Используй монеты для колеса бонусов</h3>
+            <div class="vip-club__adv-tooltip tooltip tooltip--right tooltip--down">
+                <div class="tooltip__body" role="tooltip">
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <button type="button" class="tooltip__toggle">
+                    <svg aria-hidden="true" class="white">
+                        <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+    </ul>
+</section>
+        <section class="vip-club__lvl container">
+    <h2 class="vip-club__title js-reveal-up">
+        <picture>
+            <source srcset="./images/vip-club/icon-level.webp" type="image/webp">
+            <img src="./images/vip-club/icon-level.png" width="48" height="40" alt="" aria-hidden="true">
+        </picture>
+        <span data-text="Уровни">Уровни</span>
+    </h2>
+    <div class="vip-club__lvl-list js-reveal-up">
+        <div class="vip-club__lvl-item vip-club__lvl-item--silver">
+            <div class="vip-club__lvl-item-wrap">
+                <picture class="vip-club__lvl-item-img">
+                    <source srcset="./images/vip-club/lvl-silver.webp" type="image/webp">
+                    <img src="./images/vip-club/lvl-silver.png" width="222" height="222" alt="" aria-hidden="true">
+                </picture>
+                <h3 class="vip-club__lvl-item-title">Silver</h3>
+                <div class="vip-club__lvl-item-price">
+                    <span>35000</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                </div>
+                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
+                <ul class="vip-club__lvl-item-list">
+                    <li>Бонус к пополнению 21%</li>
+                    <li>Кешбек 2 монеты</li>
+                    <li>Первый VIP кейс</li>
+                    <li class="unavailable">VIP менеджер</li>
+                    <li class="unavailable">VIP интерфейс</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vip-club__lvl-item vip-club__lvl-item--gold">
+            <div class="vip-club__lvl-item-wrap">
+                <picture class="vip-club__lvl-item-img">
+                    <source srcset="./images/vip-club/lvl-gold.webp" type="image/webp">
+                    <img src="./images/vip-club/lvl-gold.png" width="222" height="222" alt="" aria-hidden="true">
+                </picture>
+                <h3 class="vip-club__lvl-item-title">Gold</h3>
+                <div class="vip-club__lvl-item-price">
+                    <span>100000</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                </div>
+                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
+                <ul class="vip-club__lvl-item-list">
+                    <li>Бонус к пополнению 22%</li>
+                    <li>Кешбек 3 монеты</li>
+                    <li>Второй VIP кейс</li>
+                    <li>VIP менеджер</li>
+                    <li>VIP интерфейс</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vip-club__lvl-item vip-club__lvl-item--platinum">
+            <div class="vip-club__lvl-item-wrap">
+                <picture class="vip-club__lvl-item-img">
+                    <source srcset="./images/vip-club/lvl-platinum.webp" type="image/webp">
+                    <img src="./images/vip-club/lvl-platinum.png" width="222" height="222" alt="" aria-hidden="true">
+                </picture>
+                <h3 class="vip-club__lvl-item-title">Platinum</h3>
+                <div class="vip-club__lvl-item-price">
+                    <span>300000</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                </div>
+                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
+                <ul class="vip-club__lvl-item-list">
+                    <li>Бонус к пополнению 23%</li>
+                    <li>Кешбек 5 монеты</li>
+                    <li>Третий VIP кейс</li>
+                    <li>VIP менеджер</li>
+                    <li>VIP интерфейс</li>
+                    <li>Перчатки в подарок</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vip-club__lvl-item vip-club__lvl-item--elite">
+            <div class="vip-club__lvl-item-wrap">
+                <picture class="vip-club__lvl-item-img">
+                    <source srcset="./images/vip-club/lvl-elite.webp" type="image/webp">
+                    <img src="./images/vip-club/lvl-elite.png" width="222" height="222" alt="" aria-hidden="true">
+                </picture>
+                <h3 class="vip-club__lvl-item-title">Elite</h3>
+                <div class="vip-club__lvl-item-price">
+                    <span>450000</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#coin-rub-yellow"></use>
+                    </svg>
+                </div>
+                <span class="vip-club__lvl-item-text">Сумма пополнений</span>
+                <ul class="vip-club__lvl-item-list">
+                    <li>Бонус к пополнению 25%</li>
+                    <li>Кешбек 7 монеты</li>
+                    <li>Четвертый VIP кейс</li>
+                    <li>VIP менеджер</li>
+                    <li>VIP интерфейс</li>
+                    <li>Нож в подарок</li>
+                </ul>
             </div>
         </div>
     </div>
