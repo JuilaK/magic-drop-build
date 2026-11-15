@@ -3363,10 +3363,23 @@
     <div class="modal__wrap">
         <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
             <div class="modal__content">
-                <picture>
+                <picture class="modal__img">
                     <source srcset="./images/modals/img-modal-consent.webp" type="image/webp">
-                    <img src="./images/modals/img-modal-consent.png" alt="" aria-hidden="true">
+                    <img src="./images/modals/img-modal-consent.png" alt="" aria-hidden="true" width="800" height="766">
                 </picture>
+                <div class="modal__spine">
+                    <div class="modal__spine-wrap">
+                        <spine-skeleton
+                            class="modal__spine-skel"
+                            overlay-id="modal-characters"
+                            atlas="./spine/auth/consent_duo.atlas"
+                            skeleton="./spine/auth/consent_duo.json"
+                            fit="contain"
+                            animation="idle_breath">
+                        </spine-skeleton>
+                        <spine-overlay overlay-id="modal-characters"></spine-overlay>
+                    </div>
+                </div>
                 <h2 class="modal__title">Confirm your consent</h2>
                 <div class="modal__checkboxes">
                     <label class="checkbox">
