@@ -15889,9 +15889,6 @@ main:has(.profile-header--vip-bg) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161622), to(#111120));
   background-image: linear-gradient(180deg, #161622 0%, #111120 100%);
   border-radius: 0.8rem;
-  border: thin solid rgba(221, 201, 22, 0.8);
-  -webkit-box-shadow: 0 0 0.8rem 0 rgba(221, 201, 22, 0.1), 0 0 0.8rem 0 rgba(221, 201, 22, 0.1);
-          box-shadow: 0 0 0.8rem 0 rgba(221, 201, 22, 0.1), 0 0 0.8rem 0 rgba(221, 201, 22, 0.1);
 }
 
 .profile-note__header {
@@ -15943,9 +15940,9 @@ main:has(.profile-header--vip-bg) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 0.8rem;
      -moz-column-gap: 0.8rem;
           column-gap: 0.8rem;
@@ -15954,12 +15951,7 @@ main:has(.profile-header--vip-bg) {
 
 .profile-note__title {
   font-size: 1.6rem;
-}
-
-.profile-note__title-attention {
-  display: block;
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
+  line-height: 120%;
 }
 
 .profile-note__content {
