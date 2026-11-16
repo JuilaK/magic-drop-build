@@ -1165,12 +1165,13 @@
 	</div>
 </header>
     <main>
-        <section class="promo__hero container-sm">
+        <section class="promo__hero  container-sm">
     <h2 class="promo__hero-subtitle">Партнерская раздача</h2>
     <h1 class="promo__hero-title">Розыгрышы от <span>Aunkere</span></h1>
     <div class="promo__hero-timer-container">
         <div class="promo__hero-timer-header">
-            <div class="promo__hero-status">Идет набор</div>
+            <div class="promo__hero-status promo__hero-status--in-progress">Идет набор</div>
+            
             <p class="promo__hero-timer-title">До старта:</p>
         </div>
         <div class="case-hero__timer">
@@ -1206,7 +1207,7 @@
         <div class="promo__prize">
             <div class="promo__prize-wrap">
                 <h3 class="promo__prize-title">Приз</h3>
-                <div class="promo__prize-skin" data-modal-trigger="secret-skin">
+                <div class="promo__prize-skin" data-modal-trigger="promo">
                     <div class="promo__prize-skin-back"></div>
                     
                 </div>
@@ -1220,6 +1221,15 @@
                     <span class="promo__count-title">Участников</span>
                     <span class="promo__count-numb">952</span>
                     <span class="promo__count-chance">шанс <span>0.52%</span></span>
+                    <a href="#" class="promo__user">
+                        <span class="promo__user-avatar">
+                            <picture>
+                                <source srcset="./images/avatar-3.webp" type="image/webp">
+                                <img src="./images/avatar-3.jpg" alt="Avatar">
+                            </picture>
+                        </span>
+                        <span class="promo__user-title">Jeorge_2006</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1255,6 +1265,7 @@
         </div>
         <div class="promo__code-btns">
             <button type="button" class="btn btn--gr-yellow"><span>Учавствовать</span></button>
+            
             <button type="button" class="btn">Войти</button>
         </div>
     </div>
@@ -1268,6 +1279,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <td></td>
                     <td>Игрок</td>
                     <td>ID</td>
                     <td>Дата и время</td>
@@ -1276,25 +1288,69 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span>ginny</span></td>
+                    <td><span>1</span></td>
+                    <td>
+                        <a href=".#" class="table__user">
+                            <span class="table__user-avatar">
+                                <picture>
+                                    <source srcset="./images/avatar.webp" type="image/webp">
+                                    <img src="./images/avatar.jpg" alt="Avatar">
+                                </picture>
+                            </span>
+                            <span>ginny</span>
+                        </a>
+                    </td>
                     <td><span>1055840</span></td>
                     <td><span>2026-10-25 23:09:04</span></td>
                     <td class="table__chance"><span>0.49%</span></td>
                 </tr>
                 <tr>
-                    <td><span>IMMERSION</span></td>
+                    <td><span>2</span></td>
+                    <td>
+                        <a href=".#" class="table__user">
+                            <span class="table__user-avatar">
+                                <picture>
+                                    <source srcset="./images/avatar-2.webp" type="image/webp">
+                                    <img src="./images/avatar-2.jpg" alt="Avatar">
+                                </picture>
+                            </span>
+                            <span>IMMERSION</span>
+                        </a>
+                    </td>
                     <td><span>568052</span></td>
                     <td><span>2026-10-25 22:26:35</span></td>
                     <td class="table__chance"><span>0.49%</span></td>
                 </tr>
                 <tr>
-                    <td><span>Amislaw#11</span></td>
+                    <td><span>3</span></td>
+                    <td>
+                        <a href=".#" class="table__user">
+                            <span class="table__user-avatar">
+                                <picture>
+                                    <source srcset="./images/avatar-3.webp" type="image/webp">
+                                    <img src="./images/avatar-3.jpg" alt="Avatar">
+                                </picture>
+                            </span>
+                            <span>Amislaw#11</span>
+                        </a>
+                    </td>
                     <td><span>2556818</span></td>
                     <td><span>2026-10-25 21:43:06</span></td>
                     <td class="table__chance"><span>0.49%</span></td>
                 </tr>
-                <tr>
-                    <td><span>Jeorge_2006</span></td>
+                <tr class="">
+                    <td><span>4</span></td>
+                    <td>
+                        <a href=".#" class="table__user">
+                            <span class="table__user-avatar">
+                                <picture>
+                                    <source srcset="./images/avatar-3.webp" type="image/webp">
+                                    <img src="./images/avatar-3.jpg" alt="Avatar">
+                                </picture>
+                            </span>
+                            <span>Jeorge_2006</span>
+                        </a>
+                    </td>
                     <td><span>1797403</span></td>
                     <td><span>2026-10-25 21:43:06</span></td>
                     <td class="table__chance"><span>0.49%</span></td>
@@ -3090,7 +3146,7 @@
         <span>An error occurred, please try again.</span>
     </div>
 </div>
-    <div class="modal modal--secret-skin js-modal" data-modal-name="secret-skin">
+    <div class="modal modal--promo js-modal" data-modal-name="promo">
     <div class="modal__wrap">
         <div class="modal__dialog js-modal-dialog" role="dialog" aria-modal="true">
             <button type="button" class="modal__close-btn js-modal-close">
@@ -3098,6 +3154,20 @@
                 <span class="modal__close-btn-icon"></span>
             </button>
             <div class="modal__content">
+                <h2 class="modal__title">Параметры розыгрыша</h2>
+                <div class="modal__input-wrap">
+                    <label>
+                        Депозит для участия
+                        <input type="text" placeholder="Минимальная сумма">
+                        <svg aria-hidden="true" class="dark-grey">
+                            <use xlink:href="images/sprite.svg#coin-rub"></use>
+                        </svg>
+                    </label>
+                    <label>
+                        Завершение розыгрыша
+                        <input type="datetime-local" placeholder="Дата и время">
+                    </label>
+                </div> 
                 <h2 class="modal__title">Выбор скина</h2>  
                 <div class="choose-skin">
     <div class="choose-skin__filters">
@@ -3888,7 +3958,7 @@
 </div>   
                 <div class="modal__btns">
                     <button type="button" class="btn btn--gr-yellow">
-                        <span>Подтвердить</span>
+                        <span>Запустить розыгрыш</span>
                     </button>
                 </div>
             </div>
