@@ -3163,10 +3163,54 @@
                             <use xlink:href="images/sprite.svg#coin-rub"></use>
                         </svg>
                     </label>
-                    <label>
+                    <div class="modal__select-wrap">
                         Завершение розыгрыша
-                        <input type="datetime-local" placeholder="Дата и время">
-                    </label>
+                        <div class="modal__select select js-select">
+                            <button
+                                class="btn select__button js-select-btn"
+                                role="combobox"
+                                aria-label="dropdown button"
+                                aria-haspopup="listbox"
+                                aria-expanded="false"
+                                aria-controls="select-dropdown">
+                                <span class="select__selected-value js-selected-value">Через 24 часа</span>
+                            </button>
+                            <div class="select__dropdown">
+                                <ul role="listbox" class="select__dropdown-wrap">
+                                    <li role="option">
+                                        <input type="radio" id="duration-1" name="duration"/>
+                                        <label for="duration-1">
+                                            Через 1 час
+                                        </label>
+                                    </li>
+                                    <li role="option">
+                                        <input type="radio" id="duration-2" name="duration"/>
+                                        <label for="duration-2">
+                                            Через 2 час
+                                        </label>
+                                    </li>
+                                    <li role="option">
+                                        <input type="radio" id="duration-3" name="duration"/>
+                                        <label for="duration-3">
+                                            Через 3 час
+                                        </label>
+                                    </li>
+                                    <li role="option">
+                                        <input type="radio" id="duration-6" name="duration"/>
+                                        <label for="duration-6">
+                                            Через 6 час
+                                        </label>
+                                    </li>
+                                    <li role="option">
+                                        <input type="radio" id="duration-24" name="duration"/>
+                                        <label for="duration-24">
+                                            Через 24 час
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
                 </div> 
                 <h2 class="modal__title">Выбор скина</h2>  
                 <div class="choose-skin">
