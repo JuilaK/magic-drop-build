@@ -15760,8 +15760,8 @@ main:has(.profile-header--vip-bg) {
 .profile-header__vip-tg {
   min-height: 11.2rem;
   padding: 1.6rem 11% 1.6rem 1.6rem;
-  background: right center/auto 100% no-repeat -webkit-image-set(url("../images/bg/bg-vip-tg.webp") type("image/webp"), url("../images/bg/bg-vip-tg.png") type("image/png")), linear-gradient(120.94deg, #dda516 0%, #ddc916 100%);
-  background: right center/auto 100% no-repeat image-set(url("../images/bg/bg-vip-tg.webp") type("image/webp"), url("../images/bg/bg-vip-tg.png") type("image/png")), linear-gradient(120.94deg, #dda516 0%, #ddc916 100%);
+  background: right center/auto 100% no-repeat -webkit-image-set(url("../images/bg/bg-vip-tg.webp") type("image/webp"), url("../images/bg/bg-vip-tg.png") type("image/png")), linear-gradient(120.94deg, #12336a 0%, #0d0f2f 100%);
+  background: right center/auto 100% no-repeat image-set(url("../images/bg/bg-vip-tg.webp") type("image/webp"), url("../images/bg/bg-vip-tg.png") type("image/png")), linear-gradient(120.94deg, #12336a 0%, #0d0f2f 100%);
   border-radius: 0.4rem 1.2rem 1.2rem 0.4rem;
 }
 @media (max-width: 768px) {
@@ -15774,7 +15774,7 @@ main:has(.profile-header--vip-bg) {
 
 .profile-header__vip-tg-title {
   max-width: 13rem;
-  color: #161119;
+  color: #E4F7FF;
   font-weight: 900;
   line-height: 113%;
   text-transform: uppercase;
@@ -15799,17 +15799,18 @@ main:has(.profile-header--vip-bg) {
           column-gap: 0.4rem;
   height: 3.4rem;
   padding: 0 0.8rem;
-  background-color: #161119;
-  color: #DDC916;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
+  background: #E4F7FF;
+  color: #0C0C1B;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
 @media (any-hover: hover) {
   .profile-header__vip-tg-btn:hover {
-    color: #FFFFFF;
+    background: #FFFFFF;
+    color: #12336a;
   }
   .profile-header__vip-tg-btn:hover svg {
-    fill: #FFFFFF;
+    fill: #12336a;
     -webkit-transition: fill 0.2s ease-out;
     transition: fill 0.2s ease-out;
   }
@@ -15819,7 +15820,7 @@ main:has(.profile-header--vip-bg) {
   height: 1.6rem;
   -ms-flex-preferred-size: 1.6rem;
       flex-basis: 1.6rem;
-  fill: #DDC916;
+  fill: #0C0C1B;
 }
 
 .profile-header__params-list {
