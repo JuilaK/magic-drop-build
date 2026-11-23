@@ -8663,6 +8663,9 @@ span.header__volume-value {
   margin-top: 1.4rem;
   overflow-x: clip;
 }
+.draws-list:not(:first-child) {
+  margin-top: 4.8rem;
+}
 
 .draws-list__wrap {
   position: relative;
