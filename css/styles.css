@@ -11844,6 +11844,30 @@ span.draw-item__start-price svg {
     display: none;
   }
 }
+.case-container[data-decor-type=decor-dust] .case-hero__bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(12, 12, 27, 0)), to(rgba(12, 12, 27, 0.5))), center bottom/cover no-repeat url("../images/cases/case-dust-bg.jpg");
+  background: linear-gradient(180deg, rgba(12, 12, 27, 0) 80%, rgba(12, 12, 27, 0.5) 100%), center bottom/cover no-repeat url("../images/cases/case-dust-bg.jpg");
+}
+.case-container[data-decor-type=decor-miragecs] .case-hero__bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(12, 12, 27, 0)), to(rgba(12, 12, 27, 0.5))), center bottom/cover no-repeat url("../images/cases/case-miragecs-bg.jpg");
+  background: linear-gradient(180deg, rgba(12, 12, 27, 0) 80%, rgba(12, 12, 27, 0.5) 100%), center bottom/cover no-repeat url("../images/cases/case-miragecs-bg.jpg");
+}
+.case-container[data-decor-type=decor-nukecs] .case-hero__bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(12, 12, 27, 0)), to(rgba(12, 12, 27, 0.5))), center bottom/cover no-repeat url("../images/cases/case-nukecs-bg.jpg");
+  background: linear-gradient(180deg, rgba(12, 12, 27, 0) 80%, rgba(12, 12, 27, 0.5) 100%), center bottom/cover no-repeat url("../images/cases/case-nukecs-bg.jpg");
+}
+.case-container[data-decor-type=decor-infernocs] .case-hero__bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(12, 12, 27, 0)), to(rgba(12, 12, 27, 0.5))), center bottom/cover no-repeat url("../images/cases/case-infernocs-bg.jpg");
+  background: linear-gradient(180deg, rgba(12, 12, 27, 0) 80%, rgba(12, 12, 27, 0.5) 100%), center bottom/cover no-repeat url("../images/cases/case-infernocs-bg.jpg");
+}
+.case-container[data-decor-type=decor-cachecs] .case-hero__bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(12, 12, 27, 0)), to(rgba(12, 12, 27, 0.5))), center bottom/cover no-repeat url("../images/cases/case-cachecs-bg.jpg");
+  background: linear-gradient(180deg, rgba(12, 12, 27, 0) 80%, rgba(12, 12, 27, 0.5) 100%), center bottom/cover no-repeat url("../images/cases/case-cachecs-bg.jpg");
+}
+.case-container[data-decor-type=decor-cobbestone] .case-hero__bg-img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(12, 12, 27, 0)), to(rgba(12, 12, 27, 0.5))), center bottom/cover no-repeat url("../images/cases/case-cobbestone-bg.jpg");
+  background: linear-gradient(180deg, rgba(12, 12, 27, 0) 80%, rgba(12, 12, 27, 0.5) 100%), center bottom/cover no-repeat url("../images/cases/case-cobbestone-bg.jpg");
+}
 .case-container .case-hero {
   min-height: 70.4rem;
 }
